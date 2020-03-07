@@ -1,0 +1,47 @@
+---
+description: “查询状态图例”提供有关正在执行的查询的详细信息。
+solution: Analytics
+title: 查询状态图例
+topic: Data workbench
+uuid: 6a0285c8-3ced-4c12-8f0c-e86d70d9e044
+translation-type: tm+mt
+source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+
+---
+
+
+# 查询状态图例{#query-status-legend}
+
+“查询状态图例”提供有关正在执行的查询的详细信息。
+
+![](assets/vis_StatusLegend.png)
+
+The following table lists the tasks that can be completed using the [!DNL Query Status Legend].
+
+<table id="table_BD9330D4B3014A84B24EF0E71872F627"> 
+ <thead> 
+  <tr> 
+   <th colname="col1" class="entry"> 若要执行此任务... </th> 
+   <th colname="col2" class="entry"> 执行此操作... </th> 
+  </tr> 
+ </thead>
+ <tbody> 
+  <tr> 
+   <td colname="col1"> <p>查看本地采样大小与整体数据集大小的比率，后跟以 MB 为单位的本地采样大小 </p> </td> 
+   <td colname="col2"> <p>查看“<span class="wintitle">本地示例</span>”字段。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p>查看当前所有查询的最小完成百分比 </p> </td> 
+   <td colname="col2"> <p>查看“<span class="wintitle">查询完成</span>”字段。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p>识别群集内某客户端的主服务器 </p> </td> 
+   <td colname="col2"> <p>查看“<span class="wintitle">主服务器</span>”字段。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p>确定查询的大小 </p> </td> 
+   <td colname="col2"> <p>查看“<span class="wintitle">查询结果</span>”字段。该字段显示当前查询的大小，并为您提供一种方式，可查看添加（或删除）量度、做出选择或对工作区进行任何其他更改会对查询大小造成多大的影响。 </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
