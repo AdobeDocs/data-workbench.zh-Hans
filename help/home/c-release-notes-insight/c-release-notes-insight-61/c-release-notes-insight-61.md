@@ -1,0 +1,75 @@
+---
+description: Data Workbench 6.1 发行说明包括新功能、升级要求、缺陷修复和已知问题。
+solution: Analytics
+title: Data Workbench 6.1 发行说明
+topic: Data workbench
+uuid: 5bfb558a-ce85-4b4a-95dc-ccef337c4d1b
+translation-type: tm+mt
+source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+
+---
+
+
+# Data Workbench 6.1 发行说明{#data-workbench-release-notes}
+
+Data Workbench 6.1 发行说明包括新增功能、升级要求、错误修复和已知问题。
+
+## 新增功能 {#section-1225066ea8f44cf68e42e019d0bca816}
+
+Data Workbench 6.1 包括以下新增功能：
+
+| 功能 | 描述 |
+|--- |--- |
+| 64 位 Windows 升级 | Data Workbench 服务器、报表服务器和客户端组件在升级后，只能在 64 位 Windows 操作系统上运行。 |
+| 倾向评分 | 通过为受众评分，可以确定客户的忠诚度，以及从统计的角度确定哪些客户可能会转化销售或与案例或营销活动交互。倾向评分现在包括以下视图，可用于查看模型和显示选定量度的易变的关联。<ul><li>模型查看器对使用倾向评分生成的逻辑回归模型进行检查，并显示每个输入变量（包括常数项）的系数加权及其统计误差范围。 </li><li>提升图和增益图用于评估打分的数据模型的潜在增长。</li><li>混淆矩阵提供以下四个计数的组合：实际正值 (AP)、实际负值 (AN)、预测正值 (PP) 和预测负值 (PN)。</li> <li>从 v6.1 开始，可使用保存选项保存两种类型的倾向得分：维度，或维度和量度。</li><li>现在您可以通过按住 Ctrl-Alt 并进行拖放，在倾向评分和聚类生成器中添加元素。以前添加表格元素时，必须将表格拖动到“元素”框中。</li></ul> |
+| Data Workbench 现在支持中文 | Data Workbench 的客户端应用程序现在支持简体中文。数据工作台还支持将输入法编辑器(IME)作为国际语言的辅助文本输入过程。 |
+| 数学函数 | 现在可以向量度、数学变换和工作表单元格添加数学函数以进一步计算数据集。 |
+| 统计标注 | 表格现在可为量度列提供统计汇总标注。标注可显示该列的平均值、标准偏差、最小与最大值、方差和总数。标注可纳入任何选择和评估中。 |
+| 关联矩阵过滤器 | 已使用二进制过滤器对关联矩阵进行了更新，以便限制一个或两个关联量度的值，从而更好地进行比较。此外，现在还可以通过按住 Ctrl + Alt 并将元素拖动到要计算的矩阵列或行来从“维度”表添加“维度”元素。 |
+| 在漏斗可视化中隐藏流失标签 | 通过右键单击标题并选择隐藏流失，可在漏斗可视化中切换显示和隐藏流失标签。 |
+
+## 排序表格列{#sorting-table-columns}
+
+按字母顺序或按自然顺序排序表格列。
+
+To better select elements in a Dimension table, you can order the first column alphabetically or by ordinals by selecting the **[!UICONTROL Sort]** menu option.
+
+按自然顺序（默认）对列进行排序时，将显示 # 字符。
+
+**选择排序选项**
+
+To change sorting options between ordinal and alphabet, right-click and select **[!UICONTROL Sort]**. 单击箭头可按相反顺序排序。
+
+![](assets/sort_table_alpha.png)
+
+>[!NOTE]
+>
+>可以通过单击列的名称，按顺序对其他列进行排序。
+
+## 在漏斗中隐藏流失标签
+
+在漏斗可视化中切换打开流失标签。
+
+漏斗可视化确定客户在与您的网站或跨渠道营销活动进行交互时，在哪里放弃了营销活动或偏离了定义的转化路径。漏斗可视化的左侧显示访问或访客的结果，而右侧显示放弃指定路径的访客的“流失”。
+
+![](assets/c_funnel_hide_fallout.png)
+
+When in a **[!UICONTROL Funnel]** visualization, you can right-click the title and select **[!UICONTROL Hide Fallout]** from the menu to hide the fallout labels.
+
+## 已知问题 {#section-ff2180c6871c413480e15fa915c253b9}
+
+* 导入工作区时，即使导入成功也会显示错误消息。
+
+   解决方案：单击“确定”忽略该错误。工作区会成功导入。
+
+**简体中文本地化问题**
+
+* 在“评分”可视化中设置目标时，单击“提交”后显示的对话框标题和消息不可读。
+
+   解决方案：无.
+* 在“工作表”可视化中使用自动换行时，本地化的字词不会正确换行。字符串中会出现额外的垃圾字符。
+
+   解决方案：无
+* 如果安装目录的名称中包含非英语字符，则无法启动 [!DNL Insight.exe]。
+
+   解决方案：保留默认名称，或在文件夹路径中仅使用英语字符进行重命名以启动可执行文件。
