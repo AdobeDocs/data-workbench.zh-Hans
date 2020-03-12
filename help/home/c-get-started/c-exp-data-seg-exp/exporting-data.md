@@ -53,8 +53,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
    >
    >使用 keygen 生成 SSH 密钥的示例：
    >
-   >
-   ```
+   >```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
