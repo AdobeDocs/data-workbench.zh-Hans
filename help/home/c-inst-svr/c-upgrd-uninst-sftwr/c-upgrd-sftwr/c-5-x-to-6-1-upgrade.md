@@ -180,8 +180,7 @@ Follow these steps to update the **[!UICONTROL Server v6.1]** components:
    >
    >例如，要启动简体中文版，请创建一个用于传入命令行设置的的快捷方式。
    >
-   >
-   ```
+   >```
    >Insight.exe -zh-cn
    >```
    >
