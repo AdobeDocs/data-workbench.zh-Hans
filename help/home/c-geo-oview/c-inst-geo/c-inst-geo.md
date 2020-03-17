@@ -5,7 +5,7 @@ title: 安装Data Workbench地理位置
 topic: Data workbench
 uuid: 2c3d2e4a-97a7-4afc-b72d-c012db77e535
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 要完成这些步骤，您必须有权访问Data Workbench Server上的文件。
 
-如果您订阅了两个可选数据服务之一，则还必须安装数据服务配置文件及其查找文件。 有关这些服务的详细信息，请参 [阅使用数据服务](../../../home/c-geo-oview/c-wk-data-svcs/c-wk-data-svcs.md)。
+如果您订阅了两个可选数据服务之一，则还必须安装数据服务配置文件及其查找文件。
 
 有关安装、配置和运行 Data Workbench[!DNL Geography] 的系统要求的信息，请参阅“最低系统要求”**&#x200B;文档。
 
