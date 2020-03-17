@@ -5,7 +5,7 @@ title: 详细状态界面
 topic: Data workbench
 uuid: c4d375d9-431f-4b0a-ba15-b7a10501b2e2
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
 
 ---
 
@@ -69,7 +69,7 @@ The following table lists the tasks that can be completed using the [!DNL Detail
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;13.0&nbsp;sec
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Log&nbsp;Processing\ProfileName&nbsp;0.8&nbsp;sec
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;0.8&nbsp;sec</code> </p> <p>完成查询所花费的时间通常与所有维度的总大小成正比。在查看每个维度的大小之后，可以评估特定维度的作用和使用频度是否足以证明维度的性能成本的合理性。如果不能证明，则可以在“<span class="wintitle">配置文件管理器</span>”中删除该维度。请参阅<a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-prof-mgr.md"> Profile Manager</a>。 </p> <p>元素名称列表过大（即大于 128 MB）的维度可能导致“内存不足”错误，即使总地址空间使用量还未达到限制也是如此。 </p> <p>此外，如果您使用的是Data Workbench服务器群集，但没有使用集中标准化，则元素名称列表较大的维会对发送内存预算产生重大影响。 有关集中标准化的详细信息，请参阅《数据集配置指南》<i></i>。如果对于群集中所有服务器，用于存储所有元素名称列表所需的内存量加起来超过 100 MB，则即使在查询活动不多的情况下也可能会收到“已超出发送内存预算”错误消息。例如，如果您有一个四服务器群集，每个服务器上用于存储元素名称列表的内在量超过 25 MB，则可能收到错误消息。 </p> </td> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;0.8&nbsp;sec</code> </p> <p>完成查询所花费的时间通常与所有维度的总大小成正比。在查看每个维度的大小之后，可以评估特定维度的作用和使用频度是否足以证明维度的性能成本的合理性。如果不能证明，则可以在“<span class="wintitle">配置文件管理器</span>”中删除该维度。<p>元素名称列表过大（即大于 128 MB）的维度可能导致“内存不足”错误，即使总地址空间使用量还未达到限制也是如此。 </p> <p>此外，如果您使用的是Data Workbench服务器群集，但没有使用集中标准化，则元素名称列表较大的维会对发送内存预算产生重大影响。 有关集中标准化的详细信息，请参阅《数据集配置指南》<i></i>。如果对于群集中所有服务器，用于存储所有元素名称列表所需的内存量加起来超过 100 MB，则即使在查询活动不多的情况下也可能会收到“已超出发送内存预算”错误消息。例如，如果您有一个四服务器群集，每个服务器上用于存储元素名称列表的内在量超过 25 MB，则可能收到错误消息。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>监视日志处理和转换所花费的时间 </p> </td> 
