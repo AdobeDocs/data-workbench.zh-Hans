@@ -3,7 +3,7 @@ description: 升级Data Workbench 6.3的服务器组件。
 title: DWB Server升级6.2到6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 79d5a2f44ade88f25f7621a4738d14c43777fc9f
 
 ---
 
@@ -22,26 +22,27 @@ If you have customized profiles that take precedence over the default files prov
    1. Change the data type for **[!UICONTROL Proxy Password]** from &quot; [!DNL string"] to &quot; [!DNL EncryptedString]&quot; in the *Workstation Configuration* section.
 
       ```
-      Proxy User Name = string: 
-      Proxy Password = EncryptedString:   ( 
-      
-<i>from Proxy Password = String</i>)Use Address File = bool:true&quot;
+        Proxy User Name = string: 
+        Proxy Password = EncryptedString:   ( 
+        from Proxy Password = String) 
+        Use Address File = bool: true
+      ```
 
-    1. 添加新条目以启用新的名称值对转换：*BuildNameValuePair*和*ExtractNameValuePairs*。
-    
-    打开工作区，右键单击**管理员** > **配置文件管理器**。
-    
-    在**Context**下，单击**Base**列中的**meta.cfg**文件，然后单击**Make Local**。 在“用户”表列中，右键单击并选择“打开”**>“在工作站中”**。
-    
-    ![](assets/meta_cfg.png)
-    
-    * In the new window, click **metadata** and add acceptable children templates.
-    
-    ![](assets/meta_cfg_child.png)
-    
-    *打开**转换**并添加新模板。
-    
-    ![](assets/meta_cfg_template.png)
+   1. 为启用新的名称值对转换而添加新条目：*BuildNameValuePair* 和 *ExtractNameValuePairs*。
+
+      打开工作区，右键单击&#x200B;**管理员** > **配置文件管理器**。
+
+      在&#x200B;**上下文**&#x200B;的下方，单击&#x200B;**基本**&#x200B;列中的 **meta.cfg** 文件，然后单击&#x200B;**制作本地副本**。在“用户”表格列中，选择&#x200B;**打开** > **在工作站中**。
+
+      ![](assets/meta_cfg.png)
+
+      * 在新窗口中，单击&#x200B;**元数据**，然后添加可接受的子模板。
+
+         ![](assets/meta_cfg_child.png)
+
+      * 打开&#x200B;**转换**，并添加新模板。
+
+         ![](assets/meta_cfg_template.png)
 
 * **为实现快速合并的改进而进行更新**。为下列配置文件添加参数或更改值，以便在转换过程中利用 Data Workbench 中的速度改进。
 
