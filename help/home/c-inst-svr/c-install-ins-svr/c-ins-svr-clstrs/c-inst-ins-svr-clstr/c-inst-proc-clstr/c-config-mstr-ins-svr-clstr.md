@@ -4,7 +4,7 @@ solution: Insight
 title: 为群集配置主Insight Server
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **将处理添加到[!DNL Insight Servers]地址文件**
 
-1. 启动 [!DNL Insight] 并加载配置配置文件（如果尚未打开），方法是右键单击标题栏，然后单击 **[!UICONTROL Switch Profile]** > **[!UICONTROL Configuration]**。
+1. 开始 [!DNL Insight] 并加载配置用户档案（如果尚未打开），方法是右键单击标题栏并单击 **[!UICONTROL Switch Profile]** > **[!UICONTROL Configuration]**。
 
 1. 在“ [!DNL Insight]>”选项卡 [!DNL Admin] 中， [!DNL Dataset and Profile] 单击缩略图以打开“服 **[!UICONTROL Servers Manager]** 务器管理器”工作区。
 
@@ -78,7 +78,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ## 更新群集的访问控制文件 {#section-fce1367d92a445168c35e9ca506e7d6b}
 
-要在群 [!DNL Insight Servers] 集中使用，群集中的 [!DNL Insight Server] 每个（包括主）都必须属于群集服务器 [!DNL Insight Server]访问控制组。 群集服务器组标识允许参加群集的服务器（按IP地址）。 尽管此文件在主设备上进行维护和管 [!DNL Insight Server]理，但群集中的所有成员都 [!DNL Insight Servers] 使用它。
+要在群 [!DNL Insight Servers] 集中使用，群集中 [!DNL Insight Server] 的每个(包括主服务器 [!DNL Insight Server])必须属于群集服务器访问控制组。 群集服务器组标识允许参加群集的服务器（按IP地址）。 尽管此文件在主设备上进行维护和管 [!DNL Insight Server]理，但群集中的所有成员都 [!DNL Insight Servers] 使用它。
 
 **编辑访问控制文件**
 
@@ -86,14 +86,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. 右键单击主视图的图标，然 [!DNL Insight Server] 后单击 **[!UICONTROL Server Files]**。
 
-1. 在中， [!DNL Server Files Manager]打开“访问控制”目录。
+1. 在中， [!DNL Server Files Manager]打开访问控制目录。
 1. 执行以下操作以打开文 [!DNL Access Control.cfg] 件：
 
    1. 右键单击服务器名称列中的复 *选标记* ，然后单击 **[!UICONTROL Make Local]**。
 
    1. 右键单击列中的复选标记， [!DNL Temp] 然后单击 **[!UICONTROL Open]** > **[!UICONTROL in Insight]**。
 
-1. 展开“访问控制组”结构，然后展开“访问组”（群集服务器）。
+1. 展开访问控制组结构，然后展开AccessGroup（群集服务器）。
 1. 对于群 [!DNL Insight Server] 集中的每个(包括主群集 [!DNL Insight Server])，请执行以下操作：
 
    1. 右键单击 **[!UICONTROL Members]** 并单击 **[!UICONTROL Add New]** > **[!UICONTROL New Member]**。
@@ -114,7 +114,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 您可以使用以下过程配置文件的中心副 [!DNL Synchronize.cfg] 本。 此文件的中心副本将保留在主文件上 [!DNL Insight Server]。 群集中 [!DNL Insight Servers] 的处理会启动与主设备的通信， [!DNL Insight Server] 以检索此文件的更新副本。
 
-文 [!DNL Synchronize.cfg] 件指定主视图的位置 [!DNL Insight Server]。 它还标识群集中每个处理从主设备检索 [!DNL Insight Servers] 的管理文件集 [!DNL Insight Server]。 处理过程 [!DNL Insight Servers] 会在文件开始时自动从主 [!DNL Insight Server] 设备下载这些文件。 当文件发生更改时，他们还会从主文件中动态检索 [!DNL Insight Server] 这些文件的更新副本。
+文 [!DNL Synchronize.cfg] 件指定主视图的位置 [!DNL Insight Server]。 它还标识群集中每个处理从主设备检索 [!DNL Insight Servers] 的管理文件集 [!DNL Insight Server]。 当这些文 [!DNL Insight Servers] 件开始时，处理过程会自 [!DNL Insight Server] 动从主文件下载。 当文件发生更改时，他们还会从主文件中动态检索 [!DNL Insight Server] 这些文件的更新副本。
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. 展开组件结构。
 1. 在“群集主服务器地址”参数中，指定主服务器（主服务器）的IP地址 **[!UICONTROL Insight Server]**。
 
-   ![](assets/cfg_cluster_SyncFile_(CentralCopy).png)
+   ![](assets/cfg_cluster_SyncFile_CentralCopy.png)
 
    要创建记录每次在主设备与处理设备之间进行同 [!DNL Insight Server] 步的日志 [!DNL Insight Servers]，请确保将“启用同步日志”参数设置为“true”。
 
@@ -145,7 +145,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    1. 右键单 **[!UICONTROL (modified)]** 击窗口顶部，然后单击 **[!UICONTROL Save]**。
 
-   1. In [!DNL Server Files Manager], right-click the check mark for the file in the [!DNL Temp] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+   1. 在 [!DNL Server Files Manager]中，右键单击列中文件的复选标记， [!DNL Temp] 然后单击 **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*。
 
 ## 配置数据集(temp.db)的位置 {#section-5ec257a4b4c64fb58baec1f12119a822}
 
@@ -169,7 +169,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    1. 右键单击列中的复选标记， [!DNL Temp]然后单击 **[!UICONTROL Open]** > **[!UICONTROL in Insight]**。
 
-1. 展开DiskSpaceManagerComponent结构，然后展开“Disk Files”列表。
+1. 展开DiskSpaceManagerComponent结构，然后展开“磁盘文件”列表。
 1. 编辑条目0以更改文件的位 [!DNL temp.db] 置。
 1. 如果您希望跨多个驱 [!DNL temp.db] 动器进行分发，请使用以下步骤为每个额外驱动器创建一个额外的条目。
 
@@ -184,5 +184,5 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    1. 右键单 **[!UICONTROL (modified)]** 击窗口顶部，然后单击 **[!UICONTROL Save]**。
 
-   1. In [!DNL Server Files Manager], right-click the check mark for the file in the [!DNL Temp] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+   1. 在 [!DNL Server Files Manager]中，右键单击列中文件的复选标记， [!DNL Temp] 然后单击 **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*。
 
