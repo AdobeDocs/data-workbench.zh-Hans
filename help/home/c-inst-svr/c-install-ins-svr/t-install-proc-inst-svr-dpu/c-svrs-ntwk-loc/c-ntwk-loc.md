@@ -1,17 +1,17 @@
 ---
-description: 从概念上讲，地址文件与联网计算机上的ETC\HOSTS文件具有相同的用途。
+description: 从概念上讲，地址文件与联网计算机上的ETC&bsol;HOSTS文件具有相同的用途。
 solution: Insight
 title: 网络位置
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
+source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
 
 ---
 
 
 # 网络位置{#network-locations}
 
-从概念上讲，地址文件与联网计算机上的ETC\HOSTS文件具有相同的用途。
+从概念上讲，地址文件与联网计算机上的ETC&amp;bsol;HOSTS文件具有相同的用途。
 
 但是，与描述单个名称集合的HOSTS文件不同，地址文件包含多个名称集合（称为网络位置）。
 
