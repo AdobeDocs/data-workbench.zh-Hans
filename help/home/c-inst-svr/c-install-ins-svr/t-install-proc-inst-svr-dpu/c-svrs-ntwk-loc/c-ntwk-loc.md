@@ -4,7 +4,7 @@ solution: Insight
 title: 网络位置
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
 
 ---
 
@@ -48,9 +48,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"> 为NetworkLocation指定名称。 分配给NetworkLocation的名称在地址文件中必须是唯一的。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Parent（父项） </td> 
+   <td colname="col1"> 父项 </td> 
    <td colname="col2"> <p>指定其成员包含在此NetworkLocation中的另一个NetworkLocation的名称。 此参数使一个NetworkLocation能够扩展另一个。 </p> <p>可以将“Parent（父）”参数设置为“DNS”，以将NetworkLocation扩展到客户端的普通DNS系统。 </p> <p>示例：父项=字符串：DNS </p> <p>当DNS是父代时，当客户端无法通过NetworkLocation解析该名称时，客户端会尝试使用客户端计算机的DNS系统解析公用名称。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
