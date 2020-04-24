@@ -5,18 +5,18 @@ title: 定义其他帐户
 topic: Data workbench
 uuid: 5ad98b52-267c-4c36-b43a-ae6ad415de8e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: e4f2c653c00c21180b14bf67cc116d832bddd028
 
 ---
 
 
-# 定义其他帐户{#define-additional-accounts}
+# 定义其他帐户
 
 用户在访问报告门户时必须具有有效的帐户并提供帐户名称和密码。
 
 默认情况下，在中启用用户身份验证 [!DNL Report Portal]。
 
-数据库文件中将保 [!DNL Report Portal] 留有效帐户的列表 [!DNL portal.mdb]。 [!DNL Report Portal] 使用一个帐户安装，并具有管理权限：
+数据库文件中将 [!DNL Report Portal] 保留有效帐户的列表 [!DNL portal.mdb]。 [!DNL Report Portal] 使用一个帐户安装，并具有管理权限：
 
 * 帐户名称：测试
 * 密码：用户
