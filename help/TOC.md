@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: analytics
 audience: end-user
-user-guide-title: Data Workbench Help
+user-guide-title: Data Workbench 帮助
 translation-type: tm+mt
-source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
+source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
 
 ---
 
@@ -89,15 +89,15 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [配置要导出的区段](home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md)
       + [创建维以便与段导出一起使用](home/c-get-started/c-exp-data-seg-exp/c-dim-sgmt-expt.md)
       + [拥有自定义标题的区段导出](home/c-get-started/c-exp-data-seg-exp/c-segment-export.md)
-      + [使用S/FTP交付导出区段](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
-      + [档案和受众导出](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
+      + [使用S/FTP投放导出区段](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
+      + [用户档案和受众导出](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
       + [导出到 Analytics 核心服务](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
-      + [导出到Adobe Target](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
-      + [区段导出向导](home/c-get-started/c-exp-data-seg-exp/segment-export.md)
+      + [导出到Adobe目标](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
+      + [细分导出向导](home/c-get-started/c-exp-data-seg-exp/segment-export.md)
    + [分析报告](home/c-get-started/c-template-report-types.md)
    + 归因报告 {#attribution-reports}
       + [使用归因报告](home/c-get-started/c-attribution-profiles/c-attribution-profiles.md)
-      + [归因配置文件概述](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
+      + [归因用户档案概述](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
       + [部署归因配置文件](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-profile-deploy.md)
       + [归因模型](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-models.md)
       + [最适合归因](home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md)
@@ -157,7 +157,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + Filter editors {#filter-editors}
          + [过滤器编辑器概述](home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md)
          + [使用过滤器条件](home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-con.md)
-         + [保存和加载滤镜](home/c-get-started/c-analysis-vis/c-filter-editors/t-save-filters.md)
+         + [保存和加载过滤器](home/c-get-started/c-analysis-vis/c-filter-editors/t-save-filters.md)
          + [手动编辑过滤器文件](home/c-get-started/c-analysis-vis/c-filter-editors/c-edit-filter-files.md)
          + [将过滤器应用于工作区](home/c-get-started/c-analysis-vis/c-filter-editors/c-app-filters-wksps.md)
       + 漏斗可视化 {#funnel-visualization}
@@ -196,10 +196,10 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [创建路径浏览器](home/c-get-started/c-analysis-vis/c-path-browsers/c-create-path-browsers.md)
          + [显示度量信息](home/c-get-started/c-analysis-vis/c-path-browsers/c-disp-metric-info.md)
          + [扩展路径](home/c-get-started/c-analysis-vis/c-path-browsers/c-ex-paths.md)
-         + [显示路径的开始和结束](home/c-get-started/c-analysis-vis/c-path-browsers/c-disp-starts-.md)
+         + [显示路径的开始和结尾](home/c-get-started/c-analysis-vis/c-path-browsers/c-disp-starts-.md)
          + [更改路径浏览器的根](home/c-get-started/c-analysis-vis/c-path-browsers/c-chg-root.md)
          + [选择路径](home/c-get-started/c-analysis-vis/c-path-browsers/t-sel-paths.md)
-         + [查看路径中的更多元素](home/c-get-started/c-analysis-vis/c-path-browsers/c-el-paths.md)
+         + [视图路径中的更多元素](home/c-get-started/c-analysis-vis/c-path-browsers/c-el-paths.md)
       + [圆形分析图](home/c-get-started/c-analysis-vis/c-pie-chart.md)
       + Process map {#process-maps}
          + [流程图概述](home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md)
@@ -269,7 +269,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + Administrative interfaces {#admin-ui}
       + [管理界面](home/c-get-started/c-admin-intrf/c-admin-intrf.md)
       + [开放式管理界面](home/c-get-started/c-admin-intrf/c-op-admin-intrf.md)
-      + [数据集架构界面](home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md)
+      + [数据集模式界面](home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md)
       + [查询状态图例](home/c-get-started/c-admin-intrf/c-query-stat-lgnd.md)
       + 查询队列 {#query-que}
          + [查询队列概述](home/c-get-started/c-admin-intrf/c-query-que/c-query-que.md)
@@ -279,10 +279,10 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [处理图例](home/c-get-started/c-admin-intrf/c-pro-lgd.md)
       + [详细状态界面](home/c-get-started/c-admin-intrf/c-det-stat-interf.md)
       + 配置文件管理器 {#profile-mgr}
-         + [在用户配置文件中创建文件夹](home/c-get-started/c-admin-intrf/c-prof-mgr/t-fldrs-user-prof.md)
-         + [修改用户配置文件中的本地文件](home/c-get-started/c-admin-intrf/c-prof-mgr/c-mod-files-user-prof.md)
-         + [将文件发布到工作配置文件](home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md)
-         + [从工作配置文件中删除文件](home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md)
+         + [在用户用户档案中创建文件夹](home/c-get-started/c-admin-intrf/c-prof-mgr/t-fldrs-user-prof.md)
+         + [在用户用户档案中修改本地文件](home/c-get-started/c-admin-intrf/c-prof-mgr/c-mod-files-user-prof.md)
+         + [将文件发布到工作用户档案](home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md)
+         + [从工作用户档案中删除文件](home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md)
          + [通过清空文件（零字节）来隐藏文件](home/c-get-started/c-admin-intrf/c-prof-mgr/c-empty-files.md)
          + [将文件复制并粘贴为附件](home/c-get-started/c-admin-intrf/c-prof-mgr/c-cpy-pastet.md)
          + [使用派生的指标](home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md)
@@ -292,14 +292,14 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [数据集管理器](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dataset-mgrs.md)
          + 依赖关系图 {#dep-maps}
             + [依赖关系图](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dep-maps.md)
-            + [显示配置文件组件](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-prof-comp.md)
+            + [显示用户档案组件](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-prof-comp.md)
             + [数据集组件](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-dataset-comp.md)
             + [查询模型组件](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-qry-mod-comp.md)
             + [工作区和可视化](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-wksps-vis.md)
-            + [查看节点详细信息](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-view-node-dtls.md)
+            + [视图节点详细信息](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-view-node-dtls.md)
             + [显示高亮显示的节点](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-hltd-nodes.md)
             + [在地图中搜索](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md)
-            + [编辑配置文件组件](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-edit-prof-comp.md)
+            + [编辑用户档案组件](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-edit-prof-comp.md)
             + [文件块](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-wkg-file-blocks.md)
             + [显示性能数据](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md)
             + [打开字段查看器](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-opn-field-vwrs.md)
@@ -319,9 +319,9 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [自定义菜单](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md)
          + [创建工作区菜单和菜单项](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-wksp-menus-itms.md)
          + [使用order.txt文件自定义菜单](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md)
-      + 自定义配置文件管理器和服务器文件管理器 {#cstm-prof-files-mgrs}
-         + [自定义配置文件管理器和服务器文件管理器](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-cstm-prof-files-mgrs.md)
-         + [创建Profile Manager](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-prof-mgrs.md)
+      + 自定义用户档案管理器和服务器文件管理器 {#cstm-prof-files-mgrs}
+         + [自定义用户档案管理器和服务器文件管理器](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-cstm-prof-files-mgrs.md)
+         + [创建用户档案管理器](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-prof-mgrs.md)
          + [创建服务器文件管理器](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md)
       + 自定义Worktop选项卡 {#cstm-wktp-tabs}
          + [自定义Worktop选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)
@@ -342,11 +342,11 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [配置页面叠加](home/c-get-started/c-intf-anlys-ftrs/c-config-pg-ovlys.md)
       + [配置路径浏览器](home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md)
       + [配置流程图](home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md)
-      + [配置数据集架构界面](home/c-get-started/c-intf-anlys-ftrs/t-dataset-schema-intf.md)
+      + [配置数据集模式界面](home/c-get-started/c-intf-anlys-ftrs/t-dataset-schema-intf.md)
       + [本地化时间维度](home/c-get-started/c-intf-anlys-ftrs/dwb-format-time-dimensions.md)
    + [配置参数](home/c-get-started/c-insght-config-param.md)
    + Query language syntax {#qry-lang-syntx}
-      + [查询语言语法](home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md)
+      + [查询语语法](home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md)
       + [任何表达式的语法](home/c-get-started/c-qry-lang-syntx/c-syntx-exp.md)
       + [标识符的语法](home/c-get-started/c-qry-lang-syntx/c-syntx-id.md)
       + [度量表达式的语法](home/c-get-started/c-qry-lang-syntx/c-syntx-mtrc-exp.md)
@@ -354,10 +354,11 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [过滤器表达式的语法](home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md)
       + [数学表达式的语法](home/c-get-started/c-qry-lang-syntx/c-math-expressions.md)
       + [统计标注](home/c-get-started/c-qry-lang-syntx/c-statistical-callouts.md)
-      + [正则表达式](home/c-get-started/c-qry-lang-syntx/c-search-regex.md)
+      + [常规表达式](home/c-get-started/c-qry-lang-syntx/c-search-regex.md)
 + Dataset configuration {#dataset}
    + [了解数据集构建](home/c-dataset-const-proc/c-dataset-constr.md)
    + [了解数据集配置](home/c-dataset-const-proc/c-dataset-config.md)
+   + [面向GDPR的数据工作台支持](home/c-dataset-const-proc/dwb-gdpr.md)
    + 日志处理配置文件 {#log-proc-config-file}
       + [关于日志处理配置文件](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [编辑日志处理配置文件](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
@@ -512,7 +513,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [安装报告服务器](home/c-rpt-oview/c-inst-rpt/c-inst-rpt.md)
       + [开始之前](home/c-rpt-oview/c-inst-rpt/c-before-begin.md)
       + [安装概述](home/c-rpt-oview/c-inst-rpt/t-install-oview.md)
-      + [安装报告程序文件](home/c-rpt-oview/c-inst-rpt/t-install-rpt-prg-files.md)
+      + [安装报告项目文件](home/c-rpt-oview/c-inst-rpt/t-install-rpt-prg-files.md)
       + 数字证书 {#digital-certs}
          + [下载和安装数字证书](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-install-dig-cert.md)
          + [了解数字证书](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-underst-dig-cert.md)
@@ -546,7 +547,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [将报告门户映射到虚拟目录(IIS 5.0)](home/c-rpt-oview/c-install-rpt-port/c-virtual-dir/c-map-rpt-port-vdir-5.md)
       + [编辑会话配置文件](home/c-rpt-oview/c-install-rpt-port/t-edit-sess-config-file.md)
       + [编辑Email.asp文件](home/c-rpt-oview/c-install-rpt-port/t-email-file.md)
-      + [编辑Profiles.xml文件](home/c-rpt-oview/c-install-rpt-port/t-edit-prof-file.md)
+      + [编辑用户档案.xml文件](home/c-rpt-oview/c-install-rpt-port/t-edit-prof-file.md)
       + [自定义Report Portal用户界面](home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md)
       + [设置数据库的权限](home/c-rpt-oview/c-install-rpt-port/t-set-data-perm.md)
       + [测试Report Portal](home/c-rpt-oview/c-install-rpt-port/t-test-rpt-port.md)
@@ -588,7 +589,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [获取表单字段输入](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-acq-frm-fld-inpt.md)
          + [一般信息](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-gen-info.md)
          + [ASP特定信息](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-asp.md)
-   + [跟踪Flash富媒体内容中的访客活动](home/c-undst-pg-tag/t-trk-vstr-act.md)
+   + [Flash富媒体内容中的跟踪访客活动](home/c-undst-pg-tag/t-trk-vstr-act.md)
    + [第三方页面标记的P3P注意事项](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [页面标记变量映射工作表](home/c-undst-pg-tag/c-pg-tag-wkst.md)
 + Metrics, dimensions, and filters {#metrics}
@@ -600,19 +601,19 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [关于内置指标、维度和过滤器](home/c-about/c-builtin-metrics-dims/c-builtin-metrics-dims.md)
       + [内置指标](home/c-about/c-builtin-metrics-dims/c-builtin-metrics.md)
       + [内置维度](home/c-about/c-builtin-metrics-dims/c-builtin-dims.md)
-      + [内置的配置文件过滤器](home/c-about/c-builtin-metrics-dims/c-builtin-filters.md)
-   + 基线配置文件 {#baseline-profiles}
-      + [基线配置文件概述](home/c-about/c-about-baseline-profiles/c-about-baseline-profiles.md)
-      + [流量配置文件指标](home/c-about/c-about-baseline-profiles/c-traffic-profile.md)
-      + [流量配置文件维度](home/c-about/c-about-baseline-profiles/c-traffic-profile-dims.md)
-      + [价值档案指标](home/c-about/c-about-baseline-profiles/c-value-profile-metrics.md)
-      + [值配置文件维](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
-      + [营销档案维度](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
+      + [内置用户档案过滤器](home/c-about/c-builtin-metrics-dims/c-builtin-filters.md)
+   + 基线用户档案 {#baseline-profiles}
+      + [基线用户档案概述](home/c-about/c-about-baseline-profiles/c-about-baseline-profiles.md)
+      + [流量用户档案指标](home/c-about/c-about-baseline-profiles/c-traffic-profile.md)
+      + [流量用户档案维度](home/c-about/c-about-baseline-profiles/c-traffic-profile-dims.md)
+      + [价值用户档案指标](home/c-about/c-about-baseline-profiles/c-value-profile-metrics.md)
+      + [值用户档案维](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
+      + [营销用户档案维度](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
 + Geography {#geography}
    + [关于数据工作台地理位置](home/c-geo-oview/c-geo-oview.md)
    + 安装Data Workbench地理位置 {#install-geography}
       + [安装Data Workbench地理位置](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
-      + [安装地理位置配置文件](home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)
+      + [安装地理用户档案](home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)
       + [安装地理位置查找文件](home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)
       + [安装 Terrain Images.cfg 文件](home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md)
    + 图像层 {#imagery-layers}
@@ -640,7 +641,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [关于数据服务](home/c-geo-oview/c-wk-data-svcs/c-abt-data-svcs.md)
       + 安装数据服务 {#install-data-service}
          + [在Data Workbench Server上安装Data Service](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-install-data-svc.md)
-         + [安装数据服务配置文件](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)
+         + [安装数据服务用户档案](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)
          + [安装Data Service查找文件](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)
       + [更新数据服务文件](home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md)
    + 升级和卸载Data Workbench地理位置 {#upgrade-uninstall-geo}
@@ -648,7 +649,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [卸载Data Workbench地理位置](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
 + Controlled experiments {#experiments}
    + [关于Data Workbench控制的实验](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
-   + [网站如何识别访客？](home/c-undst-ctrld-exp/c-id-vstrs.md)
+   + [网站如何识别访客?](home/c-undst-ctrld-exp/c-id-vstrs.md)
    + [受控实验如何工作？](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
    + [我该测试什么？](home/c-undst-ctrld-exp/c-wht-test-.md)
    + [有哪些要求？](home/c-undst-ctrld-exp/c-reqs-.md)
@@ -660,8 +661,8 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + 创建受控实验 {#create-controlled-experiment}
       + [创建受控实验](home/c-undst-ctrld-exp/t-crt-ctrld-exp/t-crt-ctrld-exp.md)
       + [定义目标](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-dfn-obj.md)
-      + [形成假设](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-frm-hyp.md)
-      + [确定需要的访客数量](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-nmbr-vstrs-nd.md)
+      + [形成假设验证](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-frm-hyp.md)
+      + [确定需要的访客数](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-nmbr-vstrs-nd.md)
       + [创建测试内容](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-crt-test-cnt.md)
       + [配置和部署实验](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md)
    + [验证实验](home/c-undst-ctrld-exp/c-val-exp.md)
@@ -679,7 +680,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [关于Insight Server许可证单元](home/c-inst-svr/c-install-ins-svr/c-abt-inst-svr-lic-units.md)
       + Insight Server DPU {#insight-server-dpu}
          + [Insight Server DPU的安装过程](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-proc-inst-svr-dpu.md)
-         + [安装Insight Server程序文件](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-prgm-files.md)
+         + [安装Insight Server项目文件](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-prgm-files.md)
          + 数字证书 {#dig-certs}
             + [下载和安装数字证书](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md)
             + [字符串加密](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/string-encryption.md)
@@ -693,7 +694,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
             + [Insight Server的多个IP地址](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-svrs-ntwk-loc/c-mltpl-ip-addr.md)
             + [Insight Server上安装的地址文件](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-svrs-ntwk-loc/c-addr-file-inst.md)
          + [配置数据集(temp.db)的位置](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-cfg-loc-dtst.md)
-         + [安装配置文件和查找文件](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-install-prof-lkup-files.md)
+         + [安装用户档案和查找文件](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-install-prof-lkup-files.md)
          + [将Insight Server注册为Windows服务](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-reg-wdws-svc.md)
       + [Insight Server FSU的安装过程](home/c-inst-svr/c-install-ins-svr/t-inst-proc-fsu.md)
       + [后续步骤](home/c-inst-svr/c-install-ins-svr/c-nxt-stps.md)
@@ -705,7 +706,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
             + [安装主Insight Server](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-ins-mstr-ins-svr.md)
             + [为群集配置主Insight Server](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md)
             + [安装和配置Processing Insight Server](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-inst-proc-ins-svrs.md)
-            + [配置要在群集上运行的配置文件](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-prof-run-clstr.md)
+            + [将用户档案配置为在群集上运行](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-prof-run-clstr.md)
          + 将Insight Server添加到现有群集 {#add-server-cluster}
             + [将Insight Server添加到现有群集](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-ins-svrs-ex-clstr.md)
             + [将Insight Server DPU添加到现有群集](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-dpu-ex-clstr.md)
@@ -726,7 +727,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [备份事件数据](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/c-bk-up-evt-data.md)
       + [监视内存使用情况](home/c-inst-svr/c-admin-inst-svr/t-mntr-mry-usg.md)
       + [配置管理警报](home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md)
-      + [监视管理事件](home/c-inst-svr/c-admin-inst-svr/t-mntr-adm-evts.md)
+      + [监测管理事件](home/c-inst-svr/c-admin-inst-svr/t-mntr-adm-evts.md)
       + [监视审计日志](home/c-inst-svr/c-admin-inst-svr/t-mntr-adt-lgs.md)
       + [配置通信](home/c-inst-svr/c-admin-inst-svr/t-config-com.md)
       + [配置DPU.cfg](home/c-inst-svr/c-admin-inst-svr/t-config-dpu.md)
@@ -745,7 +746,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + 配置 {#configure}
          + [配置Repeater功能](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-cnfg-rptr-fntly.md)
          + [为Repeater配置Insight Server FSU](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-fsu-rptr.md)
-         + [为目标计算机配置访问控制](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
+         + [为目标机配置访问控制](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
          + [在Insight和Repeater之间创建连接](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md)
          + [后续步骤](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-nxt-stps-reptr.md)
       + [管理中继器](home/c-inst-svr/c-rptr-fntly/c-admin-rptr.md)
@@ -803,7 +804,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [修改Java库路径](home/c-snsr-ovrvw/admin-sensor/modify-java-lib-path.md)
       + [确认数据收集器正在运行](home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md)
       + [确认数据发射机正在运行](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
-      + [监视管理事件](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
+      + [监测管理事件](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
       + [更改目标Data Workbench Server](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
       + 脱机传感器 {#offline}
          + [处理脱机传感器](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-ofln-snsrs.md)
@@ -824,25 +825,25 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [Txlogd.conf文件示例](home/c-snsr-ovrvw/sensor-sample-configs/txlogd-conf-samples.md)
    + [传感器发射器命令行选项](home/c-snsr-ovrvw/sensor-transmitter-options.md)
    + [传感器UNIX文件权限](home/c-snsr-ovrvw/sensor-unix-permissions.md)
-+ 安装监视配置文件 {#monitor}
-   + [安装监视配置文件](home/monitoring-installation/monitoring-installation.md)
++ 安装监视用户档案 {#monitor}
+   + [安装监视用户档案](home/monitoring-installation/monitoring-installation.md)
    + 工作区 {#workspace}
       + [用于监视Data Workbench Server的工作区](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
       + [Data Workbench历史工作区](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
-      + [数据工作台配置文件状态工作区](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
+      + [数据工作台用户档案状态工作区](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
       + [Data Workbench Server状态工作区](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
-   + 数据工作台配置文件维度和指标 {#monitoring-appendix}
-      + [数据工作台配置文件维度和指标](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
-      + [数据工作台历史配置文件中的维](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
-      + [数据工作台配置文件状态配置文件中的维](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [Data Workbench Server状态配置文件中的维](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
-      + [数据工作台历史监视配置文件中的指标](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
+   + 数据工作台用户档案维度和指标 {#monitoring-appendix}
+      + [数据工作台用户档案维度和指标](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
+      + [数据工作台历史用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
+      + [数据工作台用户档案状态用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
+      + [Data Workbench Server状态用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+      + [数据工作台历史监视用户档案中的指标](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + 功能板 {#dashboard}
    + [商机](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
    + [功能](home/c-adobe-data-workbench-dashboard/c-features.md)
    + [术语表](home/c-adobe-data-workbench-dashboard/c-glossary.md)
    + [快速入门](home/c-adobe-data-workbench-dashboard/t-getting-started/t-getting-started.md)
-   + [功能板用户界面](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
+   + [仪表板用户界面](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
    + 可视化 {#visualizations}
       + [可视化图表](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualizations.md)
       + 可视化类型 {#visualization-types}
@@ -869,32 +870,32 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + 功能板 {#dashboards}
       + [功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboards.md)
       + 查看功能板 {#viewing-dashboards}
-         + [打开和查看功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
+         + [打开和查看仪表板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
          + [快速访问菜单](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-quick-access-menu.md)
-         + 功能板浏览器] {#dashboard-browser}
-            + [功能板浏览器](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser.md)
-            + [功能板浏览器视图](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser-views.md)
-            + [在功能板浏览器中搜索](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-searching-within-the-dashboard-browser.md)
-         + [功能板超链接](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-hyperling.md)
-      + [查询到参数](home/c-adobe-data-workbench-dashboard/c-dashboards/c-query-to-parameter.md)
+         + 仪表板浏览器] {#dashboard-browser}
+            + [仪表板浏览器](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser.md)
+            + [仪表板浏览器视图](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser-views.md)
+            + [在仪表板浏览器中搜索](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-searching-within-the-dashboard-browser.md)
+         + [仪表板超链接](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-hyperling.md)
+      + [查询至参数](home/c-adobe-data-workbench-dashboard/c-dashboards/c-query-to-parameter.md)
       + [创建功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-creating-a-dashboard.md)
-      + [保存功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/t-saving-a-dashboard.md)
-      + [编辑或更新功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/t-editing-updating-a-dashboard.md)
-      + [制作功能板副本](home/c-adobe-data-workbench-dashboard/c-dashboards/t-making-a-copy-of-a-dashboard.md)
-      + [其他功能板功能](home/c-adobe-data-workbench-dashboard/c-dashboards/c-other-dashboard-functions.md)
-      + [功能板共享和访问控制](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboard-sharing-and-access-controls.md)
+      + [保存仪表板](home/c-adobe-data-workbench-dashboard/c-dashboards/t-saving-a-dashboard.md)
+      + [编辑或更新仪表板](home/c-adobe-data-workbench-dashboard/c-dashboards/t-editing-updating-a-dashboard.md)
+      + [制作仪表板副本](home/c-adobe-data-workbench-dashboard/c-dashboards/t-making-a-copy-of-a-dashboard.md)
+      + [其他仪表板函数](home/c-adobe-data-workbench-dashboard/c-dashboards/c-other-dashboard-functions.md)
+      + [仪表板共享和访问控制](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboard-sharing-and-access-controls.md)
    + 选择 {#select}
-      + [在功能板中进行选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md)
+      + [在仪表板中进行选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md)
       + [锁定的选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-locked-selections.md)
       + [应用选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/t-applying-selections.md)
       + [删除选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-removing-selections.md)
       + [确定选定内容](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-determining-whats-selected.md)
-      + [交叉配置文件选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-cross-profile-selections.md)
+      + [跨用户档案选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-cross-profile-selections.md)
    + [导出数据](home/c-adobe-data-workbench-dashboard/c-exporting-data.md)
-   + [功能板访问控件](home/c-adobe-data-workbench-dashboard/c-dashboard-access-controls.md)
+   + [仪表板访问控制](home/c-adobe-data-workbench-dashboard/c-dashboard-access-controls.md)
    + [用户帐户管理](home/c-adobe-data-workbench-dashboard/c-user-account-functions.md)
    + [帮助菜单](home/c-adobe-data-workbench-dashboard/c-help-menu.md)
-+ 功能板管理员 {#admin}
++ 仪表板管理员 {#admin}
    + [最低系统要求](home/c-preparing-for-dashboard-installation/c-minimum-system-requirements.md)
    + [下载必需和可选组件](home/c-preparing-for-dashboard-installation/c-download-required-and-optional-components.md)
    + [支持的浏览器](home/c-preparing-for-dashboard-installation/c-supported-browsers.md)
@@ -903,24 +904,24 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [启用IIS](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-enabling-iis.md)
       + [安装所需组件](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-installing-required-components.md)
    + 服务器通信 {#servers-communication}
-      + [与Data Workbench Server通信的仪表板](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
+      + [仪表板到Data Workbench Server通信](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [验证查询API启用](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
       + [配置访问控制](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + 仪表板部署 {#dashboard-deployment}
       + [仪表板部署](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
-      + [部署控制板](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
+      + [部署仪表板](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
       + [配置SQL Server](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-configuring-the-sql-server.md)
-      + [初始化功能板](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-initializing-the-dashboard.md)
-      + [添加功能板许可证密钥](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-add-dashboard-license-key.md)
+      + [初始化仪表板](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-initializing-the-dashboard.md)
+      + [添加仪表板许可密钥](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-add-dashboard-license-key.md)
    + [从“管理”控制台进行管理](home/c-preparing-for-dashboard-installation/c-managing-from-the-administration-console.md)
-   + 个人资料连接 {#profile-connections}
-      + [管理配置文件连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/c-managing-profile-connections.md)
-      + [添加配置文件连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-adding-a-profile-connection.md)
-      + [编辑配置文件连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-editing-a-profile.md)
-      + [删除配置文件连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-removing-a-profile-connection.md)
+   + 用户档案连接 {#profile-connections}
+      + [管理用户档案连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/c-managing-profile-connections.md)
+      + [添加用户档案连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-adding-a-profile-connection.md)
+      + [编辑用户档案连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-editing-a-profile.md)
+      + [删除用户档案连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-removing-a-profile-connection.md)
    + 架构 {#schema}
-      + [管理架构](home/c-preparing-for-dashboard-installation/c-managing-the-schema/c-managing-the-schema.md)
-      + [初始化和更新配置文件的架构定义](home/c-preparing-for-dashboard-installation/c-managing-the-schema/t-initializing-and-updating-a-profiles-schema-definition.md)
+      + [管理模式](home/c-preparing-for-dashboard-installation/c-managing-the-schema/c-managing-the-schema.md)
+      + [初始化和更新用户档案的模式定义](home/c-preparing-for-dashboard-installation/c-managing-the-schema/t-initializing-and-updating-a-profiles-schema-definition.md)
    + 文件夹 {#folders}
       + [管理文件夹](home/c-preparing-for-dashboard-installation/c-managing-folders/c-managing-folders.md)
       + [添加文件夹](home/c-preparing-for-dashboard-installation/c-managing-folders/t-adding-folders.md)
@@ -945,11 +946,11 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + [Data Workbench安装和配置](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
    + [DWB Managed Services的基本入门说明](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
    + [数据工作台架构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
-   + [架构设计可计数结构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
+   + [模式设计可数结构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
    + [数据工作台管理](home/dwb-implement-overview/dwb-implement-admin.md)
    + 配置和实施 {#implement-configure}
       + [数据工作台配置和实施](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
-      + [设置活动时间](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-event-time.md)
+      + [设置事件时间](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-event-time.md)
       + [维设置](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-dim-setup.md)
       + [指标设置](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-metric-setup.md)
       + [内部和外部FTP服务器的验证](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-validation-ftp.md)
@@ -961,9 +962,9 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [数据处理——构建主密钥](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-primary-key.md)
    + 功能的实施 {#feature-implemenatation}
       + [Data Workbench功能的实现](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
-      + [新架构的配置更改](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
+      + [新模式的配置更改](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [派生维设置](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Query API](https://www.adobe.io/)
 + [包含Analytics Data Feed的Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/insight_sc_implementation.pdf)
-+ [Data Workbench与Adobe Target集成](home/dwb-adobe-target.md)
++ [Data Workbench与Adobe目标集成](home/dwb-adobe-target.md)
 + [Data Workbench 术语表](dwb-glossary.md)
