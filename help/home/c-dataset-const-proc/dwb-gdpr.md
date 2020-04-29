@@ -4,7 +4,7 @@ solution: Analytics
 title: 面向GDPR的数据工作台支持
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
 
 ---
 
@@ -21,7 +21,7 @@ GDPR规定确定了负责实施GDPR的不同方的角色和义务(请参阅 [GDP
 * Adobe充当数据处理 **者** ，根据您与Adobe的协议，提供实施GDPR要求的软件和服务。
 * 在将Data Workbench与GDPR服务集成并符合GDPR标准之后，站点(数据主体 ****)的访客可以行使其“被数据处理者遗忘的权利”。 要实现被遗忘的权利，您作为数据控制者可以从UI或API将受质疑的访客ID上传到Adobe。 有关详细 [信息](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) ，请参阅Adobe Analytics GDPR Workflow文档 [，包括提交访](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) 问和删除请求部分。
 
->[!Note]
+>[!NOTE]
 >
 >对于其他数据源，您的组织将负责清除来自其他日志源（如CRM、POS、IVR和其他原始数据源）的受挑战的访客ID。 通过为每个数据源或其他自定义选项提供一组完整的 _替换文件，可以使用自定义范围的服务包为组织提供支持_ 。
 
