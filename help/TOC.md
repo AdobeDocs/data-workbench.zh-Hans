@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Data Workbench 帮助
 translation-type: tm+mt
-source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
+source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [Data Workbench 6.73 发行说明](home/c-release-notes-insight/dwb-6-73-release-notes.md)
    + [Data Workbench 6.72 发行说明](home/c-release-notes-insight/dwb-6-72-release-notes.md)
    + [Data Workbench 6.7 发行说明](home/c-release-notes-insight/dwb-6-7-release-notes.md)
-   + [Data Workbench Report Portal 2.1](home/c-release-notes-insight/reportserver-2-1.md)
+   + [数据工作台报表门户2.1](home/c-release-notes-insight/reportserver-2-1.md)
    + [Data Workbench 6.61 发行说明](home/c-release-notes-insight/c-6-6-1.md)
    + [Data Workbench 6.6 发行说明](home/c-release-notes-insight/c-6-6.md)
    + [Data Workbench 6.52 更新](home/c-release-notes-insight/c-6-52.md)
@@ -30,7 +30,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [Data Workbench 6.21 更新](home/c-release-notes-insight/c-6-2-1.md)
    + [Data Workbench 6.2 发行说明](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Data Workbench 6.11 更新](home/c-release-notes-insight/c-6-1-1.md)
-   + [2014年4月MR的数据源更新](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
+   + [2014年4月数据源更新](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
    + [Data Workbench 6.1 发行说明](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
    + [Data Workbench 6.0和6.0.4发行说明](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + 安装 {#install}
@@ -46,11 +46,11 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [配置与 Insight Server 的连接](home/c-install-insight/install-setup/c-conn-isvr.md)
       + [连接疑难排解](home/c-install-insight/install-setup/t-conn-trbsh.md)
    + 升级 Data Workbench {#upgrade-dwb}
-      + [升级Data Workbench概述](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
+      + [升级数据工作台概述](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [将 6.4 升级至 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [将 6.3 升级至 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
-      + [DWB服务器升级：6.2至6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
-      + [DWB服务器升级：6.1至6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
+      + [DWB服务器升级： 6.2至6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
+      + [DWB服务器升级： 6.1至6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
       + [从 Data Workbench 6.0 升级至 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
       + [从 Data Workbench 5.5 升级至 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
 + 客户 {#client}
@@ -58,7 +58,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [用户自供应](home/c-get-started/c-self-provisioning-users.md)
    + [脱机和联机工作](home/c-get-started/c-off-on.md)
    + [Profiles](home/c-get-started/c-work-prof.md)
-   + [Worktops](home/c-get-started/c-unstd-wktp.md)
+   + [工作台](home/c-get-started/c-unstd-wktp.md)
    + [文件版本控制](home/c-get-started/c-unstd-file-ver.md)
    + [使用Worktop缩略图菜单](home/c-get-started/c-wktp-thumb-menu.md)
    + [配置提要栏](home/c-get-started/c-config-sidebar.md)
@@ -66,7 +66,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [显示工作区概述](home/c-get-started/c-work-worksp/c-work-worksp.md)
       + [显示工作区](home/c-get-started/c-work-worksp/c-dis-worksp.md)
       + [创建工作区](home/c-get-started/c-work-worksp/c-create-worksp.md)
-      + [工作区“文件”菜单](home/c-get-started/c-work-worksp/c-use-wksp-file-menu.md)
+      + [工作区文件菜单](home/c-get-started/c-work-worksp/c-use-wksp-file-menu.md)
       + [重新调整工作区](home/c-get-started/c-work-worksp/c-refit-wksp.md)
       + [共享工作区](home/c-get-started/c-work-worksp/c-share-wksp.md)
       + [保存工作区](home/c-get-started/c-work-worksp/c-save-wksp.md)
@@ -75,7 +75,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [向工作区添加说明](home/c-get-started/c-work-worksp/t-add-wksp-desc.md)
       + [解锁工作区](home/c-get-started/c-work-worksp/c-unlock-wksp.md)
       + [删除工作区](home/c-get-started/c-work-worksp/c-del-wksp.md)
-      + [使用工作区“窗口”菜单](home/c-get-started/c-work-worksp/c-wksp-win-menu.md)
+      + [使用工作区窗口菜单](home/c-get-started/c-work-worksp/c-wksp-win-menu.md)
    + [Data Workbench Client的键盘快捷键](home/c-get-started/analytics-quick-keys-for-dataworkbench.md)
    + Working with windows in a workspace {#working-with-windows-workspace}
       + [在工作区中使用窗口概述](home/c-get-started/c-wk-win-wksp/c-wk-win-wksp.md)
@@ -84,11 +84,11 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [“窗口控件”菜单](home/c-get-started/c-wk-win-wksp/c-win-ctrls-menu.md)
       + [导出窗口数据](home/c-get-started/c-wk-win-wksp/c-exp-win-data.md)
    + 导出数据 {#export-data}
-      + [使用区段导出导出数据](home/c-get-started/c-exp-data-seg-exp/c-exp-data-seg-exp.md)
-      + [区段导出](home/c-get-started/c-exp-data-seg-exp/c-sgmt-expt.md)
+      + [使用细分导出导出导出数据](home/c-get-started/c-exp-data-seg-exp/c-exp-data-seg-exp.md)
+      + [段导出](home/c-get-started/c-exp-data-seg-exp/c-sgmt-expt.md)
       + [输出格式](home/c-get-started/c-exp-data-seg-exp/c-abt-otpt-frmt.md)
       + [配置要导出的区段](home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md)
-      + [创建维以便与段导出一起使用](home/c-get-started/c-exp-data-seg-exp/c-dim-sgmt-expt.md)
+      + [创建用于段导出的维](home/c-get-started/c-exp-data-seg-exp/c-dim-sgmt-expt.md)
       + [拥有自定义标题的区段导出](home/c-get-started/c-exp-data-seg-exp/c-segment-export.md)
       + [使用S/FTP投放导出区段](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
       + [用户档案和受众导出](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
@@ -112,7 +112,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [了解选择如何影响其他可视化](home/c-get-started/c-vis/c-sel-vis/c-sel-aff-vis.md)
          + [使用其他方法选择数据](home/c-get-started/c-vis/c-sel-vis/c-sel-data-other-mthd.md)
          + [缩放以查看可视化](home/c-get-started/c-vis/c-sel-vis/dwb-zoom-regression-view.md)
-      + [基准测试](home/c-get-started/c-vis/c-ustd-benchmks.md)
+      + [基准](home/c-get-started/c-vis/c-ustd-benchmks.md)
       + [度量和维度菜单](home/c-get-started/c-vis/c-met-dim-menus.md)
       + 子集 {#subsets}
          + [子集概述](home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md)
@@ -121,7 +121,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [创建子集](home/c-get-started/c-vis/c-wk-subsets/c-create-subsets.md)
          + [删除子集](home/c-get-started/c-vis/c-wk-subsets/c-rem-subsets.md)
       + [放大或缩小可视化](home/c-get-started/c-vis/c-zoom-vis.md)
-      + [将标注添加到工作区](home/c-get-started/c-vis/c-call-wkspc.md)
+      + [向工作区添加标注](home/c-get-started/c-vis/c-call-wkspc.md)
       + [对可视化添加注释](home/c-get-started/c-vis/c-present-layer.md)
       + [添加书签](home/c-get-started/c-vis/c-bookmark-about.md)
       + [量度维度向导](home/c-get-started/c-vis/dwb-create-metricdim/dwb-create-metricdim.md)
@@ -134,17 +134,17 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [注释概述](home/c-get-started/c-analysis-vis/c-annots/c-annots.md)
          + [文本批注](home/c-get-started/c-analysis-vis/c-annots/c-text-annots.md)
          + [图像注释](home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md)
-         + [动态标题注释](home/c-get-started/c-analysis-vis/c-annots/c-dyn-title-annots.md)
-      + [关联弦图可视化](home/c-get-started/c-analysis-vis/associations-chord.md)
+         + [动态标题批注](home/c-get-started/c-analysis-vis/c-annots/c-dyn-title-annots.md)
+      + [关联和弦可视化](home/c-get-started/c-analysis-vis/associations-chord.md)
       + [关联表可视化](home/c-get-started/c-analysis-vis/associations-visualization.md)
       + 访客聚类 {#visitor-cluster}
-         + [访客聚类概述](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
+         + [访客群集概述](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
          + [聚类 2.0](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-clustering-2.md)
          + [构建聚类](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-defining-clusters.md)
          + [浏览聚类](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-exploring-clusters.md)
       + [和弦可视化](home/c-get-started/c-analysis-vis/c-chord-visualization.md)
       + 关联矩阵 {#correlation-analysis}
-         + [关联矩阵概述](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md)
+         + [相关矩阵概述](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md)
          + [关于皮尔逊关联系数](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-pearsons.md)
          + [关联分析用例](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-use-cases.md)
          + [关联矩阵中的二进制过滤器](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-binary-filter.md)
@@ -159,7 +159,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [过滤器编辑器概述](home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md)
          + [使用过滤器条件](home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-con.md)
          + [保存和加载过滤器](home/c-get-started/c-analysis-vis/c-filter-editors/t-save-filters.md)
-         + [手动编辑过滤器文件](home/c-get-started/c-analysis-vis/c-filter-editors/c-edit-filter-files.md)
+         + [手动编辑筛选器文件](home/c-get-started/c-analysis-vis/c-filter-editors/c-edit-filter-files.md)
          + [将过滤器应用于工作区](home/c-get-started/c-analysis-vis/c-filter-editors/c-app-filters-wksps.md)
       + 漏斗可视化 {#funnel-visualization}
          + [漏斗可视化概述](home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization.md)
@@ -183,14 +183,14 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + Guided analysis {#guided-analysis}
          + [向导式分析概述](home/c-get-started/c-analysis-vis/c-guided-analysis/c-guided-analysis.md)
          + [统计措施](home/c-get-started/c-analysis-vis/c-guided-analysis/c-stat-measures.md)
-         + [显示“尺寸”(Dimension)菜单](home/c-get-started/c-analysis-vis/c-guided-analysis/t-disp-menu.md)
+         + [显示“尺寸”菜单](home/c-get-started/c-analysis-vis/c-guided-analysis/t-disp-menu.md)
       + [延迟分析](home/c-get-started/c-analysis-vis/c-latency.md)
       + [延迟表](home/c-get-started/c-analysis-vis/c-lat-tbls.md)
       + 图例 {#legends}
          + [图例概述](home/c-get-started/c-analysis-vis/c-legends/c-legends.md)
          + [颜色图例](home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md)
-         + [置信度图例](home/c-get-started/c-analysis-vis/c-legends/c-conf-leg.md)
-         + [量度图例](home/c-get-started/c-analysis-vis/c-legends/c-metric-leg.md)
+         + [信心图例](home/c-get-started/c-analysis-vis/c-legends/c-conf-leg.md)
+         + [度量图例](home/c-get-started/c-analysis-vis/c-legends/c-metric-leg.md)
          + [值图例](home/c-get-started/c-analysis-vis/c-legends/c-value-leg.md)
       + Path browsers {#path-browsers}
          + [路径浏览器](home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md)
@@ -212,7 +212,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [删除节点](home/c-get-started/c-analysis-vis/c-proc-maps/c-rem-nodes.md)
          + [标记节点](home/c-get-started/c-analysis-vis/c-proc-maps/c-label-nodes.md)
          + [从流程图中进行选择](home/c-get-started/c-analysis-vis/c-proc-maps/c-sel-proc-maps.md)
-         + [从流程图中保存维](home/c-get-started/c-analysis-vis/c-proc-maps/t-dim-proc-maps.md)
+         + [从流程图保存维](home/c-get-started/c-analysis-vis/c-proc-maps/t-dim-proc-maps.md)
          + [从流程图创建可视化](home/c-get-started/c-analysis-vis/c-proc-maps/c-vis-proc-maps.md)
          + [激活颜色链接](home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md)
          + [显示度量数量](home/c-get-started/c-analysis-vis/c-proc-maps/c-disp-metric-quantities.md)
@@ -225,19 +225,19 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [模型查看器](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md)
          + [复杂过滤器说明](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-complex-filter.md)
       + [雷达可视化](home/c-get-started/c-analysis-vis/t-radar-vis.md)
-      + [表格中的统计显示](home/c-get-started/c-analysis-vis/c-stat-disp-tables.md)
+      + [表中的统计显示](home/c-get-started/c-analysis-vis/c-stat-disp-tables.md)
       + 区段 {#segments}
          + [区段概述](home/c-get-started/c-analysis-vis/c-seg/c-seg.md)
          + [创建区段维](home/c-get-started/c-analysis-vis/c-seg/c-create-seg-dim.md)
-         + [重用区段可视化](home/c-get-started/c-analysis-vis/c-seg/c-reuse-seg-vis.md)
+         + [重用细分可视化](home/c-get-started/c-analysis-vis/c-seg/c-reuse-seg-vis.md)
       + 表格 {#tables}
          + [表概述](home/c-get-started/c-analysis-vis/c-tables/c-tables.md)
-         + [添加和更改量度](home/c-get-started/c-analysis-vis/c-tables/c-add-metrics.md)
+         + [添加和更改度量](home/c-get-started/c-analysis-vis/c-tables/c-add-metrics.md)
          + [添加、更改和移动维](home/c-get-started/c-analysis-vis/c-tables/c-add-chg-dim.md)
-         + [使数据适应窗口](home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md)
+         + [将数据调整到窗口](home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md)
          + [更改表显示](home/c-get-started/c-analysis-vis/c-tables/c-chg-tbl-disp.md)
          + [对表中的数据排序](home/c-get-started/c-analysis-vis/c-tables/c-sort-data.md)
-         + [遮罩数据](home/c-get-started/c-analysis-vis/c-tables/c-mask-data.md)
+         + [掩码数据](home/c-get-started/c-analysis-vis/c-tables/c-mask-data.md)
          + [启用系列图例](home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md)
          + [从表打开URI](home/c-get-started/c-analysis-vis/c-tables/c-open-uri-tbls.md)
          + [应用层次视图](home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md)
@@ -247,9 +247,9 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + 工作表 {#worksheets}
          + [工作表概述](home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md)
          + [工作表表达式](home/c-get-started/c-analysis-vis/c-wksts/c-wkst-exp.md)
-         + [创建度量指示符](home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md)
+         + [创建度量指标](home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md)
          + [创建输入单元格](home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md)
-         + [对工作表使用标注](home/c-get-started/c-analysis-vis/c-wksts/c-callouts-wksts.md)
+         + [在工作表中使用标注](home/c-get-started/c-analysis-vis/c-wksts/c-callouts-wksts.md)
          + [导出到Microsoft Excel](home/c-get-started/c-analysis-vis/c-wksts/c-exp-ms-excel.md)
    + 图像层 {#imagery-layers}
       + [关于图像层](home/c-get-started/c-im-layers/c-ustd-img-layers.md)
@@ -269,7 +269,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [使新的矢量图层可用](home/c-get-started/c-im-layers/c-vctr-layers/t-make-new-vctr-layer-av.md)
    + Administrative interfaces {#admin-ui}
       + [管理界面](home/c-get-started/c-admin-intrf/c-admin-intrf.md)
-      + [开放式管理界面](home/c-get-started/c-admin-intrf/c-op-admin-intrf.md)
+      + [开放管理界面](home/c-get-started/c-admin-intrf/c-op-admin-intrf.md)
       + [数据集模式界面](home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md)
       + [查询状态图例](home/c-get-started/c-admin-intrf/c-query-stat-lgnd.md)
       + 查询队列 {#query-que}
@@ -283,10 +283,10 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [在用户用户档案中创建文件夹](home/c-get-started/c-admin-intrf/c-prof-mgr/t-fldrs-user-prof.md)
          + [在用户用户档案中修改本地文件](home/c-get-started/c-admin-intrf/c-prof-mgr/c-mod-files-user-prof.md)
          + [将文件发布到工作用户档案](home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md)
-         + [从工作用户档案中删除文件](home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md)
+         + [从工作用户档案删除文件](home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md)
          + [通过清空文件（零字节）来隐藏文件](home/c-get-started/c-admin-intrf/c-prof-mgr/c-empty-files.md)
          + [将文件复制并粘贴为附件](home/c-get-started/c-admin-intrf/c-prof-mgr/c-cpy-pastet.md)
-         + [使用派生的指标](home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md)
+         + [使用派生指标](home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md)
          + [使用派生维](home/c-get-started/c-admin-intrf/c-prof-mgr/c-dvrd-dim.md)
          + [锁定工作站中的配置文件](home/c-get-started/c-admin-intrf/c-prof-mgr/dwb-profile-lock.md)
       + 数据集管理器 {#dataset-mgrs}
@@ -307,7 +307,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + 字段查看器 {#field-viewer}
             + [字段查看器](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-fld-vwrs/c-fld-vwrs.md)
             + [创建字段查看器](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-fld-vwrs/c-create-fld-vwr.md)
-            + [在字段查看器中过滤](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-fld-vwrs/c-fltr-fld-vwrr.md)
+            + [在字段查看器中进行过滤](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-fld-vwrs/c-fltr-fld-vwrr.md)
       + [服务器管理器](home/c-get-started/c-admin-intrf/c-svrs-mgr.md)
       + [远程桌面选项](home/c-get-started/c-admin-intrf/t-rmt-dsktp-opt.md)
       + [服务器文件管理器](home/c-get-started/c-admin-intrf/c-svr-files-mgr.md)
@@ -315,7 +315,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [配置选项](home/c-get-started/c-admin-intrf/c-config-opt.md)
    + Interface and analysis features {#ui-analysis-features}
       + [界面和分析功能](home/c-get-started/c-intf-anlys-ftrs/c-intf-anlys-ftrs.md)
-      + [在本地自定义数据工作台](home/c-get-started/c-intf-anlys-ftrs/c-cstm-lcl.md)
+      + [本地自定义数据工作台](home/c-get-started/c-intf-anlys-ftrs/c-cstm-lcl.md)
       + Customize menus {#custom-menus}
          + [自定义菜单](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md)
          + [创建工作区菜单和菜单项](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-wksp-menus-itms.md)
@@ -324,9 +324,9 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [自定义用户档案管理器和服务器文件管理器](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-cstm-prof-files-mgrs.md)
          + [创建用户档案管理器](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-prof-mgrs.md)
          + [创建服务器文件管理器](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md)
-      + 自定义Worktop选项卡 {#cstm-wktp-tabs}
-         + [自定义Worktop选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)
-         + [向Worktop添加选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-add-tabs.md)
+      + 自定义工作台选项卡 {#cstm-wktp-tabs}
+         + [自定义工作台选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)
+         + [向工作台添加选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-add-tabs.md)
          + [更改跳位顺序](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-chg-ordr-tabs.md)
          + [将子文件夹显示为子选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-sbfldrs-sbtabs.md)
          + [隐藏或删除选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-hide-rmv-tabs.md)
@@ -335,7 +335,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + 配置锁定的工作区 {#config-locked-wkspc}
          + [配置锁定的工作区](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md)
          + [Folder.lock和workspace.lock文件](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-fldr-wksp-files.md)
-         + [设置unlock参数](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-unlck-param.md)
+         + [设置解锁参数](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-unlck-param.md)
       + [配置打开功能](home/c-get-started/c-intf-anlys-ftrs/c-config-open-funct.md)
       + [配置标注](home/c-get-started/c-intf-anlys-ftrs/c-config-callouts.md)
       + [配置延迟表](home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md)
@@ -351,8 +351,8 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [任何表达式的语法](home/c-get-started/c-qry-lang-syntx/c-syntx-exp.md)
       + [标识符的语法](home/c-get-started/c-qry-lang-syntx/c-syntx-id.md)
       + [度量表达式的语法](home/c-get-started/c-qry-lang-syntx/c-syntx-mtrc-exp.md)
-      + [维表达式的语法](home/c-get-started/c-qry-lang-syntx/c-syntx-dim-exp.md)
-      + [过滤器表达式的语法](home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md)
+      + [维表达式语法](home/c-get-started/c-qry-lang-syntx/c-syntx-dim-exp.md)
+      + [筛选器表达式的语法](home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md)
       + [数学表达式的语法](home/c-get-started/c-qry-lang-syntx/c-math-expressions.md)
       + [统计标注](home/c-get-started/c-qry-lang-syntx/c-statistical-callouts.md)
       + [常规表达式](home/c-get-started/c-qry-lang-syntx/c-search-regex.md)
@@ -461,7 +461,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [准备重新处理或重新转换](home/c-dataset-const-proc/c-reproc-retrans/t-prep-reproc-retrans.md)
    + 数据集配置工具 {#dataset-config-tools}
       + [数据集配置工具](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md)
-      + 数据集配置界面 {#dataset-config-ui}
+      + 数据集配置接口 {#dataset-config-ui}
          + [使用数据集配置界面](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-config-int.md)
          + [数据集架构](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md)
          + [依赖关系图](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dep-maps.md)
@@ -485,9 +485,9 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [用于日志处理的特定于 Web 的设置](home/c-dataset-const-proc/c-config-web-data/c-web-spec-log-proc.md)
       + [用于转换的特定于 Web 的设置](home/c-dataset-const-proc/c-config-web-data/c-web-spec-transf.md)
    + [时区代码](home/c-dataset-const-proc/c-time-zone.md)
-+ 报告服务器 {#report-server}
++ 报表服务器 {#report-server}
    + [了解报表集](home/c-rpt-oview/c-underst-rpt-sets.md)
-   + [生成报告](home/c-rpt-oview/c-gen-rpts.md)
+   + [生成报表](home/c-rpt-oview/c-gen-rpts.md)
    + [分发报告](home/c-rpt-oview/c-distrib-rpts.md)
    + [报表集要求](home/c-rpt-oview/c-rpt-set-req.md)
    + 使用报表集 {#report-sets}
@@ -499,16 +499,16 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + 配置报告集 {#config-report-set}
          + [配置报告集](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/t-config-rpt-set.md)
          + [将报表生成为Microsoft Excel文件](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-gen-rpts-ex-files.md)
-         + [动态生成报告](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-dyn-gen-rpts.md)
+         + [动态生成报表](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-dyn-gen-rpts.md)
          + [将报表集发布到Data Workbench Server](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
       + [审核报表集状态](home/c-rpt-oview/c-work-rpt-sets/c-rev-rpt-set-stat.md)
       + 编辑现有Report.cfg文件 {#edit-existing-report-files}
          + [编辑现有Report.cfg文件](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md)
-         + [按电子邮件重新发送报告](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-res-rpts-email.md)
+         + [通过电子邮件重新发送报告](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-res-rpts-email.md)
          + [已完成报告的电子邮件通知](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-email-not-comp-rpt.md)
    + 报告门户 {#report-portal}
-      + [使用报告门户](home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md)
-      + [打开报告门户](home/c-rpt-oview/c-rpt-portal/t-open-rpt-port.md)
+      + [使用报表门户](home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md)
+      + [打开报表门户](home/c-rpt-oview/c-rpt-portal/t-open-rpt-port.md)
    + [报表门户中的高级搜索](home/c-rpt-oview/c-search-adv.md)
    + 安装报告服务器 {#install-report-server}
       + [安装报告服务器](home/c-rpt-oview/c-inst-rpt/c-inst-rpt.md)
@@ -520,29 +520,29 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [了解数字证书](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-underst-dig-cert.md)
          + [数字证书安装过程](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md)
       + [配置与Insight Server的连接](home/c-rpt-oview/c-inst-rpt/t-config-conn-ins-svr.md)
-      + [使用语言文件（.zbin文件）更新报告服务器](home/c-rpt-oview/c-inst-rpt/c-zbin-file-update.md)
+      + [使用语言文件（.zbin文件）更新报表服务器](home/c-rpt-oview/c-inst-rpt/c-zbin-file-update.md)
       + [启用对Data Workbench Server的访问](home/c-rpt-oview/c-inst-rpt/t-en-acc-ins-svr.md)
-      + [显示报告服务器状态](home/c-rpt-oview/c-inst-rpt/t-display-svr-st-rpt.md)
-      + [将Report Server注册为Windows服务](home/c-rpt-oview/c-inst-rpt/t-reg-rpt-win-svc.md)
-      + [升级和卸载Report Server](home/c-rpt-oview/c-inst-rpt/c-upgrade-uninstall-rpt.md)
-   + 管理报告服务器 {#admin-report-server}
-      + [管理报告服务器](home/c-rpt-oview/c-admin-rpt/c-admin-rpt.md)
+      + [显示报表服务器状态](home/c-rpt-oview/c-inst-rpt/t-display-svr-st-rpt.md)
+      + [将报表服务器注册为Windows服务](home/c-rpt-oview/c-inst-rpt/t-reg-rpt-win-svc.md)
+      + [升级和卸载报表服务器](home/c-rpt-oview/c-inst-rpt/c-upgrade-uninstall-rpt.md)
+   + 管理报表服务器 {#admin-report-server}
+      + [管理报表服务器](home/c-rpt-oview/c-admin-rpt/c-admin-rpt.md)
       + [配置Report.cfg文件](home/c-rpt-oview/c-admin-rpt/c-config-rpt-files.md)
       + [重新验证数字证书](home/c-rpt-oview/c-admin-rpt/c-reval-dig-cert.md)
       + [确认报表服务器正在运行](home/c-rpt-oview/c-admin-rpt/c-rpt-svc-run.md)
       + [监视磁盘空间](home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md)
-      + [重新启动报告服务器](home/c-rpt-oview/c-admin-rpt/t-restart-rpt.md)
-      + [审核报告状态](home/c-rpt-oview/c-admin-rpt/c-rev-rpt-st.md)
+      + [重新启动报表服务器](home/c-rpt-oview/c-admin-rpt/t-restart-rpt.md)
+      + [审核报表状态](home/c-rpt-oview/c-admin-rpt/c-rev-rpt-st.md)
       + 帐户 {#accounts}
          + [使用帐户](home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md)
          + [查看帐户](home/c-rpt-oview/c-admin-rpt/c-work-accts/c-view-accts.md)
          + [添加新帐户](home/c-rpt-oview/c-admin-rpt/c-work-accts/t-add-new-accts.md)
          + [编辑现有用户](home/c-rpt-oview/c-admin-rpt/c-work-accts/t-edit-ex-users.md)
-   + 安装Report Portal {#install-report-portal}
-      + [安装Report Portal](home/c-rpt-oview/c-install-rpt-port/c-install-rpt-port.md)
+   + 安装报告门户 {#install-report-portal}
+      + [安装报告门户](home/c-rpt-oview/c-install-rpt-port/c-install-rpt-port.md)
       + [安装Report Portal应用程序文件](home/c-rpt-oview/c-install-rpt-port/t-install-rpt-portal-app.md)
       + 映射报表门户页面 {#mapping-report-portal-pages}
-         + [将报告门户页面映射到虚拟目录](home/c-rpt-oview/c-install-rpt-port/c-virtual-dir/c-virtual-dir.md)
+         + [将报表门户页面映射到虚拟目录](home/c-rpt-oview/c-install-rpt-port/c-virtual-dir/c-virtual-dir.md)
          + [将报告门户映射到虚拟目录（IIS 7.0或更高版本）](home/c-rpt-oview/c-install-rpt-port/c-virtual-dir/c-map-rpt-port-vdir-7.md)
          + [将报告门户映射到虚拟目录(IIS 6.0)](home/c-rpt-oview/c-install-rpt-port/c-virtual-dir/c-map-rpt-port-vdir-6.md)
          + [将报告门户映射到虚拟目录(IIS 5.0)](home/c-rpt-oview/c-install-rpt-port/c-virtual-dir/c-map-rpt-port-vdir-5.md)
@@ -551,9 +551,9 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [编辑用户档案.xml文件](home/c-rpt-oview/c-install-rpt-port/t-edit-prof-file.md)
       + [自定义Report Portal用户界面](home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md)
       + [设置数据库的权限](home/c-rpt-oview/c-install-rpt-port/t-set-data-perm.md)
-      + [测试Report Portal](home/c-rpt-oview/c-install-rpt-port/t-test-rpt-port.md)
+      + [测试报告门户](home/c-rpt-oview/c-install-rpt-port/t-test-rpt-port.md)
       + [定义其他帐户](home/c-rpt-oview/c-install-rpt-port/c-def-addl-accts.md)
-   + 报告服务器参数参考 {#report-server-parameters}
+   + 报表服务器参数参考 {#report-server-parameters}
       + [Report Server.cfg参数](home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md)
       + [Report.cfg参数](home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md)
    + 报告示例文件 {#report-sample-files}
@@ -566,11 +566,11 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [如何获取此数据_](home/c-undst-pg-tag/t-how-acq-data-.md)
    + 实施参考页面标记 {#implement-ref-page-tags}
       + [实施参考页面标记](home/c-undst-pg-tag/c-imp-ref-pg-tags/c-imp-ref-pg-tags.md)
-      + [编辑参考页标记执行脚本](home/c-undst-pg-tag/c-imp-ref-pg-tags/t-edit-ref-pg-tag-ex-scrpt.md)
+      + [编辑引用页标签执行脚本](home/c-undst-pg-tag/c-imp-ref-pg-tags/t-edit-ref-pg-tag-ex-scrpt.md)
       + [添加引用页面标记执行调用](home/c-undst-pg-tag/c-imp-ref-pg-tags/c-ref-pg-tag-ex-calls.md)
       + [了解v1st Cookie](home/c-undst-pg-tag/c-imp-ref-pg-tags/c-undst-v1st-ck.md)
    + 获取基线测量 {#acquire-base-measures}
-      + [获取基准测量概览](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-bsln-msmts.md)
+      + [获取基线测量概览](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-bsln-msmts.md)
       + 获取页面请求数据 {#acquire-page-request}
          + [获取页面请求数据概述](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-acq-pg-req-data.md)
          + [了解查询字符串](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-undst-qry-strg.md)
@@ -590,7 +590,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [获取表单字段输入](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-acq-frm-fld-inpt.md)
          + [一般信息](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-gen-info.md)
          + [ASP特定信息](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-asp.md)
-   + [Flash富媒体内容中的跟踪访客活动](home/c-undst-pg-tag/t-trk-vstr-act.md)
+   + [跟踪Flash富媒体内容中的访客活动](home/c-undst-pg-tag/t-trk-vstr-act.md)
    + [第三方页面标记的P3P注意事项](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [页面标记变量映射工作表](home/c-undst-pg-tag/c-pg-tag-wkst.md)
 + Metrics, dimensions, and filters {#metrics}
@@ -606,14 +606,14 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + 基线用户档案 {#baseline-profiles}
       + [基线用户档案概述](home/c-about/c-about-baseline-profiles/c-about-baseline-profiles.md)
       + [流量用户档案指标](home/c-about/c-about-baseline-profiles/c-traffic-profile.md)
-      + [流量用户档案维度](home/c-about/c-about-baseline-profiles/c-traffic-profile-dims.md)
+      + [流量用户档案维](home/c-about/c-about-baseline-profiles/c-traffic-profile-dims.md)
       + [价值用户档案指标](home/c-about/c-about-baseline-profiles/c-value-profile-metrics.md)
       + [值用户档案维](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
       + [营销用户档案维度](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
 + Geography {#geography}
    + [关于数据工作台地理位置](home/c-geo-oview/c-geo-oview.md)
-   + 安装Data Workbench地理位置 {#install-geography}
-      + [安装Data Workbench地理位置](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
+   + 安装数据工作台地理位置 {#install-geography}
+      + [安装数据工作台地理位置](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
       + [安装地理用户档案](home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)
       + [安装地理位置查找文件](home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)
       + [安装 Terrain Images.cfg 文件](home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md)
@@ -643,19 +643,19 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + 安装数据服务 {#install-data-service}
          + [在Data Workbench Server上安装Data Service](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-install-data-svc.md)
          + [安装数据服务用户档案](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)
-         + [安装Data Service查找文件](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)
+         + [安装数据服务查找文件](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)
       + [更新数据服务文件](home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md)
    + 升级和卸载Data Workbench地理位置 {#upgrade-uninstall-geo}
       + [升级数据工作台地理位置](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
       + [卸载Data Workbench地理位置](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
 + Controlled experiments {#experiments}
-   + [关于Data Workbench控制的实验](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
+   + [关于数据工作台控制实验](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
    + [网站如何识别访客?](home/c-undst-ctrld-exp/c-id-vstrs.md)
-   + [受控实验如何工作？](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
+   + [控制实验如何工作？](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
    + [我该测试什么？](home/c-undst-ctrld-exp/c-wht-test-.md)
    + [有哪些要求？](home/c-undst-ctrld-exp/c-reqs-.md)
-   + 受控试验 {#controlled-experimentation}
-      + [启用受控试验](home/c-undst-ctrld-exp/t-en-ctrld-exp/t-en-ctrld-exp.md)
+   + 控制实验 {#controlled-experimentation}
+      + [实现受控试验](home/c-undst-ctrld-exp/t-en-ctrld-exp/t-en-ctrld-exp.md)
       + [修改ExpFile参数](home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md)
       + [修改ExpCookieURL参数（可选）](home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md)
       + [修改ExpPartialMatch参数（可选）](home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md)
@@ -669,7 +669,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [验证实验](home/c-undst-ctrld-exp/c-val-exp.md)
    + 查看结果 {#view-results}
       + [查看结果](home/c-undst-ctrld-exp/c-vw-rslts/c-vw-rslts.md)
-      + [Modifying Log Processing.cfg](home/c-undst-ctrld-exp/c-vw-rslts/t-mod-lg-proc.md)
+      + [修改Log Processing.cfg](home/c-undst-ctrld-exp/c-vw-rslts/t-mod-lg-proc.md)
       + [Modifying Transformation.cfg](home/c-undst-ctrld-exp/c-vw-rslts/t-mod-trfmtn.md)
       + [查看实验结果](home/c-undst-ctrld-exp/c-vw-rslts/c-vw-expt-rslts.md)
       + [评估实验](home/c-undst-ctrld-exp/c-vw-rslts/c-ev-exp.md)
@@ -686,7 +686,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
             + [下载和安装数字证书](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md)
             + [字符串加密](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/string-encryption.md)
             + [使用 Data Workbench 中的自定义证书](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md)
-            + [Windows证书存储区](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md)
+            + [Windows证书存储](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md)
          + [检查端口设置](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-chk-pt-stgs.md)
          + [更新访问控制文件](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-updt-accss-ctrl-file.md)
          + 服务器网络位置 {#server-network-location}
@@ -728,17 +728,17 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [备份事件数据](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/c-bk-up-evt-data.md)
       + [监视内存使用情况](home/c-inst-svr/c-admin-inst-svr/t-mntr-mry-usg.md)
       + [配置管理警报](home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md)
-      + [监测管理事件](home/c-inst-svr/c-admin-inst-svr/t-mntr-adm-evts.md)
+      + [监控管理事件](home/c-inst-svr/c-admin-inst-svr/t-mntr-adm-evts.md)
       + [监视审计日志](home/c-inst-svr/c-admin-inst-svr/t-mntr-adt-lgs.md)
       + [配置通信](home/c-inst-svr/c-admin-inst-svr/t-config-com.md)
       + [配置DPU.cfg](home/c-inst-svr/c-admin-inst-svr/t-config-dpu.md)
       + [重新启动服务](home/c-inst-svr/c-admin-inst-svr/t-rest-svc.md)
-   + 变换 {#transform}
-      + [变换](home/c-inst-svr/c-tfm/c-tfm.md)
+   + 转换 {#transform}
+      + [转换](home/c-inst-svr/c-tfm/c-tfm.md)
       + [配置转换](home/c-inst-svr/c-tfm/t-config-tfm.md)
       + [后续步骤](home/c-inst-svr/c-tfm/c-nxt-stps-tfm.md)
-   + Insight Server Replication Service {#insight-server-replication-service}
-      + [Insight Server Replication Service](home/c-inst-svr/c-ins-svr-rep-svc/c-ins-svr-rep-svc.md)
+   + Insight Server复制服务 {#insight-server-replication-service}
+      + [Insight Server复制服务](home/c-inst-svr/c-ins-svr-rep-svc/c-ins-svr-rep-svc.md)
       + [安装复制服务](home/c-inst-svr/c-ins-svr-rep-svc/c-inst-rep-svc.md)
       + [配置复制服务](home/c-inst-svr/c-ins-svr-rep-svc/t-config-rep-svc.md)
       + [后续步骤](home/c-inst-svr/c-ins-svr-rep-svc/c-nxt-stps-rep-svc.md)
@@ -751,8 +751,8 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [在Insight和Repeater之间创建连接](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md)
          + [后续步骤](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-nxt-stps-reptr.md)
       + [管理中继器](home/c-inst-svr/c-rptr-fntly/c-admin-rptr.md)
-   + 一般系统管理 {#general-syst-admin}
-      + [一般系统管理](home/c-inst-svr/c-gen-syst-admin/c-gen-syst-admin.md)
+   + General Systems Administration {#general-syst-admin}
+      + [General Systems Administration](home/c-inst-svr/c-gen-syst-admin/c-gen-syst-admin.md)
       + [确认您的系统是否正常](home/c-inst-svr/c-gen-syst-admin/c-cnfm-syst-hlthy.md)
       + [监视错误事件](home/c-inst-svr/c-gen-syst-admin/c-mntr-errs.md)
       + [监视端口和应用程序](home/c-inst-svr/c-gen-syst-admin/t-mntr-prts-apps.md)
@@ -760,14 +760,14 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [升级和卸载Adobe软件](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-uninst-sftwr.md)
       + 升级Insight Server {#upgrade-insight-server}
          + [升级Insight Server](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
-         + [DWB服务器升级：6.2至6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
-         + [DWB服务器升级：6.1至6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
+         + [DWB服务器升级： 6.2至6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
+         + [DWB服务器升级： 6.1至6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
          + 从 Data Workbench 6.0 升级至 6.1 {#upgrade-6-0-to-6-1}
             + [从 Data Workbench 6.0 升级至 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
             + [安装输入法编辑器](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
             + [DeviceAtlas 分配](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
          + [从 Data Workbench 5.5 升级至 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
-         + [DWB服务器升级：5.4至5.5](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
+         + [DWB服务器升级： 5.4至5.5](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
          + [升级转换](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-trfm.md)
          + [升级Repeater](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md)
       + [卸载软件](home/c-inst-svr/c-upgrd-uninst-sftwr/c-uninstl-sftwr.md)
@@ -804,13 +804,13 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [编辑传感器txlogd.conf文件](home/c-snsr-ovrvw/admin-sensor/t-edit-snsr-file.md)
       + [修改Java库路径](home/c-snsr-ovrvw/admin-sensor/modify-java-lib-path.md)
       + [确认数据收集器正在运行](home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md)
-      + [确认数据发射机正在运行](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
-      + [监测管理事件](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
-      + [更改目标Data Workbench Server](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
+      + [确认数据发射器正在运行](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
+      + [监控管理事件](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
+      + [更改目标数据工作台服务器](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
       + 脱机传感器 {#offline}
          + [处理脱机传感器](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-ofln-snsrs.md)
-         + [了解“开始”时间](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-as-of-tm.md)
-         + [了解原因](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-unstd-cause.md)
+         + [理解“开始”时间](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-as-of-tm.md)
+         + [理解原因](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-unstd-cause.md)
          + [解决问题](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-slv-pblm.md)
          + [使用Web服务器的多个实例](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-mltpl-inst-web-svr.md)
    + 传感器Txlogd.conf文件 {#sensor-txlogd-params}
@@ -830,14 +830,14 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [安装监视用户档案](home/monitoring-installation/monitoring-installation.md)
    + 工作区 {#workspace}
       + [用于监视Data Workbench Server的工作区](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
-      + [Data Workbench历史工作区](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
+      + [数据工作台历史工作区](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
       + [数据工作台用户档案状态工作区](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
-      + [Data Workbench Server状态工作区](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
-   + 数据工作台用户档案维度和指标 {#monitoring-appendix}
-      + [数据工作台用户档案维度和指标](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
+      + [数据工作台服务器状态工作区](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
+   + 用户档案工作台维度和指标 {#monitoring-appendix}
+      + [用户档案工作台维度和指标](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
       + [数据工作台历史用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
       + [数据工作台用户档案状态用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [Data Workbench Server状态用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+      + [数据工作台服务器状态用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
       + [数据工作台历史监视用户档案中的指标](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + 功能板 {#dashboard}
    + [商机](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
@@ -851,7 +851,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [可视化类型](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-visualization-types.md)
          + [柱状图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-column-charts.md)
          + [条形图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-bar-charts.md)
-         + [折线图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-line-charts.md)
+         + [线图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-line-charts.md)
          + [表格](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-dashboard-tables.md)
          + [量度图例](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-metric-legends.md)
          + [圆形分析图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-dashboard-pie-chart.md)
@@ -866,8 +866,8 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
          + [导出可视化](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-exporting-visualizations.md)
          + [配置可视化](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
          + [删除可视化](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
-         + [调整大小可视化](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
-         + [移动可视化](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
+         + [大小调整可视化](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
+         + [动态可视化](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
    + 功能板 {#dashboards}
       + [功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboards.md)
       + 查看功能板 {#viewing-dashboards}
@@ -913,8 +913,8 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [部署仪表板](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
       + [配置SQL Server](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-configuring-the-sql-server.md)
       + [初始化仪表板](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-initializing-the-dashboard.md)
-      + [添加仪表板许可密钥](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-add-dashboard-license-key.md)
-   + [从“管理”控制台进行管理](home/c-preparing-for-dashboard-installation/c-managing-from-the-administration-console.md)
+      + [添加仪表板许可证密钥](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-add-dashboard-license-key.md)
+   + [从管理控制台进行管理](home/c-preparing-for-dashboard-installation/c-managing-from-the-administration-console.md)
    + 用户档案连接 {#profile-connections}
       + [管理用户档案连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/c-managing-profile-connections.md)
       + [添加用户档案连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-adding-a-profile-connection.md)
@@ -943,10 +943,10 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [系统日志](home/c-preparing-for-dashboard-installation/c-system-logs.md)
 + 实施数据工作台 {#implement}
    + [实施Adobe Data Workbench](home/dwb-implement-overview/dwb-implement-overview.md)
-   + [Data Workbench发现和要求](home/dwb-implement-overview/dwb-implement-discovery.md)
-   + [Data Workbench安装和配置](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
+   + [数据工作台发现和要求](home/dwb-implement-overview/dwb-implement-discovery.md)
+   + [Data Workbench安装和预配](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
    + [DWB Managed Services的基本入门说明](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
-   + [数据工作台架构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
+   + [数据工作台体系结构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
    + [模式设计可数结构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
    + [数据工作台管理](home/dwb-implement-overview/dwb-implement-admin.md)
    + 配置和实施 {#implement-configure}
@@ -956,16 +956,16 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [指标设置](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-metric-setup.md)
       + [内部和外部FTP服务器的验证](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-validation-ftp.md)
       + [验证历史数据源](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-datafeeds-historical.md)
-      + [脚本编写到每周重新处理](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md)
+      + [脚本到每周重新处理](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md)
       + [SAINT浏览器脚本](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-saint-scripting.md)
       + [文件传输管理](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-file-transfer.md)
       + [查询API设置](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-query-api.md)
       + [数据处理——构建主密钥](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-primary-key.md)
    + 功能的实施 {#feature-implemenatation}
-      + [Data Workbench功能的实现](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
+      + [功能的数据工作台实现](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
       + [新模式的配置更改](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [派生维设置](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Query API](https://www.adobe.io/)
-+ [包含Analytics Data Feed的Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/insight_sc_implementation.pdf)
++ [包含Analytics Data Feed的Data Workbench](home/assets/insight_sc_implementation.pdf)
 + [Data Workbench与Adobe目标集成](home/dwb-adobe-target.md)
 + [Data Workbench 术语表](dwb-glossary.md)
