@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Data Workbench 帮助
 translation-type: tm+mt
-source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
+source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 
 ---
 
@@ -966,6 +966,5 @@ source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
       + [新模式的配置更改](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [派生维设置](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Query API](https://www.adobe.io/)
-+ [包含Analytics Data Feed的Data Workbench](home/assets/dwb-analytics-implementation.pdf)
 + [Data Workbench与Adobe目标集成](home/dwb-adobe-target.md)
 + [Data Workbench 术语表](dwb-glossary.md)
