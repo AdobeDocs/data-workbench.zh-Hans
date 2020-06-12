@@ -3,7 +3,10 @@ description: 按照这些步骤升级至 Data Workbench v6.4。
 title: 将 6.3 升级至 6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 74%
 
 ---
 
@@ -18,14 +21,14 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 >[!IMPORTANT]
 >
->建议您使用新安装的默认配置文件并自定义它们，而不是从以前的安装中移动文件，但以下除外：
+>建议您使用新安装的默认配置文件并对其进行自定义，而不是从以前的安装中移动文件，但这些情况除外：
 
 * 为下列可执行文件&#x200B;**添加** ***Windows Server 2012 中 MS 系统中心终端保护***&#x200B;的&#x200B;*已排除进程*：
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   该操作可以为这些界面可执行文件提供“白名单”权限。
+   这将为这些接口可执行文件启用允许列表权限。
 
 * **更新服务器上的&#x200B;*Trust_ca_cert.pem*证书**。
 * **重新组织归因配置文件**。
@@ -109,11 +112,11 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
       >[!NOTE]
       >
-      >如果在Windows Server 2012上运行Report Server，则需要安装Windows Server 2012 R2。
+      >如果在Windows Server 2012上运行报告服务器，则需要安装Windows Server 2012 R2。
 
    1. 指派“SYSTEM”作为这些文件夹的所有者。
 
-* **向 Report Server 添加字体。** 在**[!DNL ReportServer.cfg]**文件中，添加以下字体（适用于所有语言）:
+* **向 Report Server 添加字体。** 在***[!DNL ReportServer.cfg]*文件中，添加以下字体（适用于所有语言）:
 
    ```
    Fonts = vector: 3 items 
@@ -122,7 +125,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
      2 = string: MS Mincho
    ```
 
-* **更新您的Microsoft Excel **（如有必要）。
+* **更新Microsoft Excel **（如有必要）。
 
    随着 Data Workbench 6.4 的发布，对 Excel 2007 的支持已经终止。此外，由于 Data Workbench 只能在 Microsoft Windows 的 64 位体系结构中运行，因此建议您同时安装 Microsoft Excel 的 64 位版本。
 
