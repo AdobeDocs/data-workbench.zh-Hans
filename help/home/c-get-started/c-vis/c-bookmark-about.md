@@ -5,7 +5,10 @@ title: 添加书签
 topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 69%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **要删除书签：**
 
-* 在“书签”面板中，右键单击并选择“删 **[!UICONTROL 除”<bookmark title>]**要删除选定书签，或选择以删&#x200B;**[!UICONTROL Clear All Bookmarks]**除所有书签。
+* 在“书签”面板中，右键单击并选择“删 **[!UICONTROL 除”<bookmark title>]**要删除所选书签，或选择&#x200B;**[!UICONTROL Clear All Bookmarks]**删除所有书签。
 
 * You can also right-click on the workspace in the thumbnail view within the worktop and select **[!UICONTROL Clear Bookmark]**.
 
@@ -38,7 +41,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 >
 >* 可以保存 25 个书签。
 >* 如果您添加一个书签，然后移动了工作区的位置，则该书签将无效，必须从书签面板中删除该书签，然后再重置。
->
-
-
 
