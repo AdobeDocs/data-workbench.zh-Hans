@@ -3,8 +3,12 @@ cloud: experience-cloud
 product: analytics
 audience: end-user
 user-guide-title: Data Workbench 帮助
+user-guide-description: Learn about the multi-channel capabilities of Data Workbench. Includes Data Workbench Client, Installation, Dataset Configuration guides, and more.
 translation-type: tm+mt
-source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
+source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
+workflow-type: tm+mt
+source-wordcount: '3518'
+ht-degree: 25%
 
 ---
 
@@ -18,7 +22,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [Data Workbench 6.73 发行说明](home/c-release-notes-insight/dwb-6-73-release-notes.md)
    + [Data Workbench 6.72 发行说明](home/c-release-notes-insight/dwb-6-72-release-notes.md)
    + [Data Workbench 6.7 发行说明](home/c-release-notes-insight/dwb-6-7-release-notes.md)
-   + [数据工作台报表门户2.1](home/c-release-notes-insight/reportserver-2-1.md)
+   + [Data Workbench报告门户2.1](home/c-release-notes-insight/reportserver-2-1.md)
    + [Data Workbench 6.61 发行说明](home/c-release-notes-insight/c-6-6-1.md)
    + [Data Workbench 6.6 发行说明](home/c-release-notes-insight/c-6-6.md)
    + [Data Workbench 6.52 更新](home/c-release-notes-insight/c-6-52.md)
@@ -32,7 +36,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [Data Workbench 6.11 更新](home/c-release-notes-insight/c-6-1-1.md)
    + [2014年4月数据源更新](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
    + [Data Workbench 6.1 发行说明](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
-   + [Data Workbench 6.0和6.0.4发行说明](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
+   + [Data Workbench6.0和6.0.4发行说明](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + 安装 {#install}
    + [工作站要求](home/c-install-insight/c-data-workbench-client-install.md)
    + 工作站设置 {#workstation-setup}
@@ -46,7 +50,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [配置与 Insight Server 的连接](home/c-install-insight/install-setup/c-conn-isvr.md)
       + [连接疑难排解](home/c-install-insight/install-setup/t-conn-trbsh.md)
    + 升级 Data Workbench {#upgrade-dwb}
-      + [升级数据工作台概述](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
+      + [升级Data Workbench概述](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [将 6.4 升级至 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [将 6.3 升级至 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
       + [DWB服务器升级： 6.2至6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
@@ -76,7 +80,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [解锁工作区](home/c-get-started/c-work-worksp/c-unlock-wksp.md)
       + [删除工作区](home/c-get-started/c-work-worksp/c-del-wksp.md)
       + [使用工作区窗口菜单](home/c-get-started/c-work-worksp/c-wksp-win-menu.md)
-   + [Data Workbench Client的键盘快捷键](home/c-get-started/analytics-quick-keys-for-dataworkbench.md)
+   + [Data Workbench客户端的键盘快捷键](home/c-get-started/analytics-quick-keys-for-dataworkbench.md)
    + Working with windows in a workspace {#working-with-windows-workspace}
       + [在工作区中使用窗口概述](home/c-get-started/c-wk-win-wksp/c-wk-win-wksp.md)
       + [在工作区中操作窗口](home/c-get-started/c-wk-win-wksp/c-man-win-wksp.md)
@@ -93,9 +97,9 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [使用S/FTP投放导出区段](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
       + [用户档案和受众导出](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
       + [导出到 Analytics 核心服务](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
-      + [导出到Adobe目标](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
+      + [导出到Adobe Target](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
       + [细分导出向导](home/c-get-started/c-exp-data-seg-exp/segment-export.md)
-   + [分析报告](home/c-get-started/c-template-report-types.md)
+   + [Analytics报表](home/c-get-started/c-template-report-types.md)
    + 归因报告 {#attribution-reports}
       + [使用归因报告](home/c-get-started/c-attribution-profiles/c-attribution-profiles.md)
       + [归因用户档案概述](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
@@ -315,7 +319,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [配置选项](home/c-get-started/c-admin-intrf/c-config-opt.md)
    + Interface and analysis features {#ui-analysis-features}
       + [界面和分析功能](home/c-get-started/c-intf-anlys-ftrs/c-intf-anlys-ftrs.md)
-      + [本地自定义数据工作台](home/c-get-started/c-intf-anlys-ftrs/c-cstm-lcl.md)
+      + [在本地自定义Data Workbench](home/c-get-started/c-intf-anlys-ftrs/c-cstm-lcl.md)
       + Customize menus {#custom-menus}
          + [自定义菜单](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md)
          + [创建工作区菜单和菜单项](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-wksp-menus-itms.md)
@@ -359,7 +363,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 + Dataset configuration {#dataset}
    + [了解数据集构建](home/c-dataset-const-proc/c-dataset-constr.md)
    + [了解数据集配置](home/c-dataset-const-proc/c-dataset-config.md)
-   + [面向GDPR的数据工作台支持](home/c-dataset-const-proc/dwb-gdpr.md)
+   + [Data Workbench支持GDPR](home/c-dataset-const-proc/dwb-gdpr.md)
    + 日志处理配置文件 {#log-proc-config-file}
       + [关于日志处理配置文件](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [编辑日志处理配置文件](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
@@ -500,7 +504,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [配置报告集](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/t-config-rpt-set.md)
          + [将报表生成为Microsoft Excel文件](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-gen-rpts-ex-files.md)
          + [动态生成报表](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-dyn-gen-rpts.md)
-         + [将报表集发布到Data Workbench Server](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
+         + [将报表集发布到Data Workbench服务器](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
       + [审核报表集状态](home/c-rpt-oview/c-work-rpt-sets/c-rev-rpt-set-stat.md)
       + 编辑现有Report.cfg文件 {#edit-existing-report-files}
          + [编辑现有Report.cfg文件](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md)
@@ -521,7 +525,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [数字证书安装过程](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md)
       + [配置与Insight Server的连接](home/c-rpt-oview/c-inst-rpt/t-config-conn-ins-svr.md)
       + [使用语言文件（.zbin文件）更新报表服务器](home/c-rpt-oview/c-inst-rpt/c-zbin-file-update.md)
-      + [启用对Data Workbench Server的访问](home/c-rpt-oview/c-inst-rpt/t-en-acc-ins-svr.md)
+      + [启用对Data Workbench服务器的访问](home/c-rpt-oview/c-inst-rpt/t-en-acc-ins-svr.md)
       + [显示报表服务器状态](home/c-rpt-oview/c-inst-rpt/t-display-svr-st-rpt.md)
       + [将报表服务器注册为Windows服务](home/c-rpt-oview/c-inst-rpt/t-reg-rpt-win-svc.md)
       + [升级和卸载报表服务器](home/c-rpt-oview/c-inst-rpt/c-upgrade-uninstall-rpt.md)
@@ -594,7 +598,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [第三方页面标记的P3P注意事项](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [页面标记变量映射工作表](home/c-undst-pg-tag/c-pg-tag-wkst.md)
 + Metrics, dimensions, and filters {#metrics}
-   + [关于数据工作台指标、维度和过滤器](home/c-about/c-about.md)
+   + [关于Data Workbench指标、维度和过滤器](home/c-about/c-about.md)
    + [扩展指标、维度和过滤器](home/c-about/c-expand-capabilities.md)
    + [维类型](home/c-about/c-dimension-types.md)
    + [量度维度向导](home/c-about/metric-dim.md)
@@ -611,9 +615,9 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [值用户档案维](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
       + [营销用户档案维度](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
 + Geography {#geography}
-   + [关于数据工作台地理位置](home/c-geo-oview/c-geo-oview.md)
-   + 安装数据工作台地理位置 {#install-geography}
-      + [安装数据工作台地理位置](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
+   + [关于Data Workbench地理](home/c-geo-oview/c-geo-oview.md)
+   + 安装Data Workbench地理 {#install-geography}
+      + [安装Data Workbench地理](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
       + [安装地理用户档案](home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)
       + [安装地理位置查找文件](home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)
       + [安装 Terrain Images.cfg 文件](home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md)
@@ -641,15 +645,15 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + 数据服务 {#data-services}
       + [关于数据服务](home/c-geo-oview/c-wk-data-svcs/c-abt-data-svcs.md)
       + 安装数据服务 {#install-data-service}
-         + [在Data Workbench Server上安装Data Service](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-install-data-svc.md)
+         + [在Data Workbench服务器上安装数据服务](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-install-data-svc.md)
          + [安装数据服务用户档案](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)
          + [安装数据服务查找文件](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)
       + [更新数据服务文件](home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md)
    + 升级和卸载Data Workbench地理位置 {#upgrade-uninstall-geo}
-      + [升级数据工作台地理位置](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
-      + [卸载Data Workbench地理位置](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
+      + [升级Data Workbench地理](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
+      + [卸载Data Workbench地理](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
 + Controlled experiments {#experiments}
-   + [关于数据工作台控制实验](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
+   + [关于Data Workbench控制实验](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
    + [网站如何识别访客?](home/c-undst-ctrld-exp/c-id-vstrs.md)
    + [控制实验如何工作？](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
    + [我该测试什么？](home/c-undst-ctrld-exp/c-wht-test-.md)
@@ -676,8 +680,8 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [实验设计电子表格](home/c-undst-ctrld-exp/t-exp-dsn-spst.md)
 + 服务器管理和安装 {#server-admin-install}
    + [服务器系统要求](home/c-inst-svr/c-msr-server/c-msr-server.md)
-   + 安装Data Workbench Server {#install-servers}
-      + [安装Data Workbench Server](home/c-inst-svr/c-install-ins-svr/c-install-ins-svr.md)
+   + 安装Data Workbench服务器 {#install-servers}
+      + [安装Data Workbench服务器](home/c-inst-svr/c-install-ins-svr/c-install-ins-svr.md)
       + [关于Insight Server许可证单元](home/c-inst-svr/c-install-ins-svr/c-abt-inst-svr-lic-units.md)
       + Insight Server DPU {#insight-server-dpu}
          + [Insight Server DPU的安装过程](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-proc-inst-svr-dpu.md)
@@ -704,16 +708,16 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + 安装Insight Server群集 {#install-insight-server-cluster}
             + [安装Insight Server群集](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-ins-svr-clstr.md)
             + [群集的安装过程](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-inst-proc-clstr.md)
-            + [安装主Insight Server](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-ins-mstr-ins-svr.md)
-            + [为群集配置主Insight Server](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md)
+            + [安装主控Insight Server](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-ins-mstr-ins-svr.md)
+            + [为群集配置主控Insight Server](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md)
             + [安装和配置Processing Insight Server](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-inst-proc-ins-svrs.md)
             + [将用户档案配置为在群集上运行](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-prof-run-clstr.md)
          + 将Insight Server添加到现有群集 {#add-server-cluster}
             + [将Insight Server添加到现有群集](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-ins-svrs-ex-clstr.md)
             + [将Insight Server DPU添加到现有群集](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-dpu-ex-clstr.md)
             + [将Insight Server FSU添加到现有群集](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-fsu-ex-clstr.md)
-   + 管理Data Workbench Server {#admin-dwb-server}
-      + [管理Data Workbench Server](home/c-inst-svr/c-admin-inst-svr/c-admin-inst-svr.md)
+   + 管理Data Workbench服务器 {#admin-dwb-server}
+      + [管理Data Workbench服务器](home/c-inst-svr/c-admin-inst-svr/c-admin-inst-svr.md)
       + [重新验证数字证书](home/c-inst-svr/c-admin-inst-svr/c-reval-dgtl-cert.md)
       + [确认服务正在运行](home/c-inst-svr/c-admin-inst-svr/c-cfrm-svc-rng.md)
       + 访问控制 {#access-control}
@@ -806,7 +810,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [确认数据收集器正在运行](home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md)
       + [确认数据发射器正在运行](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
       + [监控管理事件](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
-      + [更改目标数据工作台服务器](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
+      + [更改目标Data Workbench服务器](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
       + 脱机传感器 {#offline}
          + [处理脱机传感器](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-ofln-snsrs.md)
          + [理解“开始”时间](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-as-of-tm.md)
@@ -829,16 +833,16 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 + 安装监视用户档案 {#monitor}
    + [安装监视用户档案](home/monitoring-installation/monitoring-installation.md)
    + 工作区 {#workspace}
-      + [用于监视Data Workbench Server的工作区](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
-      + [数据工作台历史工作区](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
-      + [数据工作台用户档案状态工作区](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
-      + [数据工作台服务器状态工作区](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
-   + 用户档案工作台维度和指标 {#monitoring-appendix}
-      + [用户档案工作台维度和指标](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
-      + [数据工作台历史用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
-      + [数据工作台用户档案状态用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [数据工作台服务器状态用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
-      + [数据工作台历史监视用户档案中的指标](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
+      + [用于监视Data Workbench服务器的工作区](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
+      + [Data Workbench历史工作区](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
+      + [Data Workbench用户档案状态工作区](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
+      + [Data Workbench服务器状态工作区](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
+   + Data Workbench用户档案维度和指标 {#monitoring-appendix}
+      + [Data Workbench用户档案维度和指标](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
+      + [Data Workbench历史用户档案中的维度](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
+      + [Data Workbench用户档案状态用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
+      + [Data Workbench服务器状态用户档案中的维](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+      + [Data Workbench历史监控用户档案中的指标](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + 功能板 {#dashboard}
    + [商机](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
    + [功能](home/c-adobe-data-workbench-dashboard/c-features.md)
@@ -905,7 +909,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [启用IIS](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-enabling-iis.md)
       + [安装所需组件](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-installing-required-components.md)
    + 服务器通信 {#servers-communication}
-      + [仪表板到Data Workbench Server通信](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
+      + [仪表板到Data Workbench服务器通信](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [验证查询API启用](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
       + [配置访问控制](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + 仪表板部署 {#dashboard-deployment}
@@ -941,16 +945,16 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [编辑用户组](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-editing-a-user-group.md)
       + [删除用户组](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-removing-a-user-group.md)
    + [系统日志](home/c-preparing-for-dashboard-installation/c-system-logs.md)
-+ 实施数据工作台 {#implement}
-   + [实施Adobe Data Workbench](home/dwb-implement-overview/dwb-implement-overview.md)
-   + [数据工作台发现和要求](home/dwb-implement-overview/dwb-implement-discovery.md)
-   + [Data Workbench安装和预配](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
++ 实施Data Workbench {#implement}
+   + [实施AdobeData Workbench](home/dwb-implement-overview/dwb-implement-overview.md)
+   + [Data Workbench发现和要求](home/dwb-implement-overview/dwb-implement-discovery.md)
+   + [Data Workbench安装和配置](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
    + [DWB Managed Services的基本入门说明](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
-   + [数据工作台体系结构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
+   + [Data Workbench架构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
    + [模式设计可数结构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
-   + [数据工作台管理](home/dwb-implement-overview/dwb-implement-admin.md)
+   + [Data Workbench管理](home/dwb-implement-overview/dwb-implement-admin.md)
    + 配置和实施 {#implement-configure}
-      + [数据工作台配置和实施](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
+      + [Data Workbench配置和实施](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
       + [设置事件时间](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-event-time.md)
       + [维设置](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-dim-setup.md)
       + [指标设置](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-metric-setup.md)
@@ -962,9 +966,9 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [查询API设置](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-query-api.md)
       + [数据处理——构建主密钥](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-primary-key.md)
    + 功能的实施 {#feature-implemenatation}
-      + [功能的数据工作台实现](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
+      + [Data Workbench功能实施](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
       + [新模式的配置更改](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [派生维设置](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Query API](https://www.adobe.io/)
-+ [Data Workbench与Adobe目标集成](home/dwb-adobe-target.md)
++ [Data Workbench与Adobe Target集成](home/dwb-adobe-target.md)
 + [Data Workbench 术语表](dwb-glossary.md)
