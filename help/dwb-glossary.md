@@ -2,8 +2,11 @@
 description: 'null'
 title: Data Workbench 术语表
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+workflow-type: ht
+source-wordcount: '4199'
+ht-degree: 100%
 
 ---
 
@@ -60,11 +63,11 @@ Data Workbench 中的一种图例，可显示选定量度的颜色渐变。颜�
 
 **置信度区间**
 
-一个值范围，指定包含相关比率或趋势的可能性。80% (p-value = .20)、95% (p-value = .05) 和 99% (p-value = .01) 置信度区间是最常用的区间。(来源: `http://www.nci.nih.gov/statistics/glossary`)
+一个值范围，指定包含相关比率或趋势的可能性。80% (p-value = .20)、95% (p-value = .05) 和 99% (p-value = .01) 置信度区间是最常用的区间。（来源：`http://www.nci.nih.gov/statistics/glossary`）
 
 **置信水平**
 
-调查结果中的取样错误处于指定范围内的可能性，通常以标准错误的形式表示（例如，1 个标准错误等于 68% 可能性，2 个标准错误等于 95.4% 可能性）。(来源: `http://www.magazine.org/research/3410.cfm`)
+调查结果中的取样错误处于指定范围内的可能性，通常以标准错误的形式表示（例如，1 个标准错误等于 68% 可能性，2 个标准错误等于 95.4% 可能性）。（来源：`http://www.magazine.org/research/3410.cfm`）
 
 **转化图**
 
@@ -112,7 +115,7 @@ Data Workbench 中的一种表格可视化，它显示与两个维度的交叉�
 
 **Data Warehouse**
 
-一个数据库，用于支持组织内的决策。数据仓库通常包含大量面向主题的时变性和非易失性数据，这些数据的构建方式便于进行快速联机查询和管理式归纳。
+一个数据库，用于支持组织内的决策。Data Warehouse 通常包含大量面向主题的时变性和非易失性数据，这些数据的构建方式便于进行快速联机查询和管理式归纳。
 
 **数据处理单元 (DPU)**
 
@@ -236,7 +239,7 @@ Data Workbench 中的一个窗口，允许分析师为数据集定义他们自�
 
 **自然顺序**
 
-它是指或表示一个系列中的数值顺序。(Source: `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) If a dimension is sorted ordinally in data workbench, the elements of the dimension are displayed in the order in which they are represented internally.
+它是指或表示一个系列中的数值顺序。（来源：`http://wordnet.princeton.edu/perl/webwn?s=ordinal`）如果维度在 Data Workbench 中按自然顺序排序，则维度的元素会以它们在内部呈现的顺序显示。
 
 **离群值**
 
@@ -344,7 +347,7 @@ Data Workbench 服务器中的一项功能，允许对具有大量事件数据�
 
 **VSL**
 
-日志文件. 一种文件类型，Data Workbench 服务器可在其中存储它们从传感器接收的事件数据。VSL 文件是经过压缩的，但可使用数据传输功能以未压缩的形式输出。VSL 是日志文件的文件扩展名。
+日志文件。一种文件类型，Data Workbench 服务器可在其中存储它们从传感器接收的事件数据。VSL 文件是经过压缩的，但可使用数据传输功能以未压缩的形式输出。VSL 是日志文件的文件扩展名。
 
 **假设分析**
 
