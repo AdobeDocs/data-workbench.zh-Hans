@@ -1,19 +1,22 @@
 ---
-description: 复制功能板的步骤。
+description: 复制仪表板的步骤。
 solution: Analytics
 title: 制作功能板副本
 topic: Data workbench
 uuid: ba47ded4-8676-48a7-853f-6321ea6eb601
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 99971eae6cf9c65a7a4a972b21a2b8ed4502c007
+workflow-type: tm+mt
+source-wordcount: '64'
+ht-degree: 18%
 
 ---
 
 
 # 制作功能板副本{#making-a-copy-of-a-dashboard}
 
-复制功能板的步骤。
+复制仪表板的步骤。
 
-1. 加载要复制的功能板。
-1. 从功能板界面顶部的功能板菜单中选择**[!UICONTROL Save As…]**。
-1. 显示窗 **[!UICONTROL Save Dashboard As…]** 口时，输入功能板副本的新名称。
+1. 加载要制作副本的仪表板。
+1. 从 **[!UICONTROL 仪表板界面顶部的]** “仪表板”菜单中选择“另存为……”。
+1. 当显 **[!UICONTROL 示“将仪表板另存为。.]** .”窗口时，为仪表板副本输入新名称。
