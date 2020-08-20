@@ -3,7 +3,10 @@ description: Data Workbench 6.2 发行说明包括新增功能、升级要求、
 title: Data Workbench 6.2 发行说明
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1267'
+ht-degree: 83%
 
 ---
 
@@ -37,11 +40,11 @@ Data Workbench 6.2 包含新的用户界面“书签”面板更新，在工作�
 **使用书签**
 
 1. 可通过单击工具栏右上角的书签图标 ![](assets/bookmark_icon.png)，为工作区创建书签。
-1. Click **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** in the left pane to open a list of bookmarks.
+1. 单击左侧窗格中的“**[!UICONTROL 添加]**”>**[!UICONTROL “书签”面板]**&#x200B;以打开书签列表。
 
    ![](assets/bookmarks_panel.png)
 
-1. To open a bookmarked workspace, click a workspace name in the **[!UICONTROL Bookmark Panel]**.
+1. 要打开添加了书签的工作区，请在&#x200B;**[!UICONTROL 书签面板]**&#x200B;中单击工作区名称。
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -49,25 +52,26 @@ Data Workbench 6.2 包含新的用户界面“书签”面板更新，在工作�
 
 **要删除书签：**
 
-* 在“书签”面板中，右键单击并选择“删 **[!UICONTROL 除”<bookmark title>]**要删除选定书签，或选择以删&#x200B;**[!UICONTROL Clear All Bookmarks]**除所有书签。
+* 在“书签”面板中，右键单击并选择“删 **[!UICONTROL 除”<bookmark title>]**要删除选定书签，或选择“清除**[!UICONTROL &#x200B;所有书签&#x200B;]**”以删除所有书签。
 
-* You can also right-click on the workspace in the thumbnail view within the worktop and select **[!UICONTROL Clear Bookmark]**.
+* 您也可以右键单击 Worktop 上缩略图中的工作区，并选择&#x200B;**[!UICONTROL 清除书签]**。
 
 >[!IMPORTANT]
 >
 >* 可以保存 25 个书签。
 >* 如果添加了书签，然后移动工作区的位置，书签将失效，必须从“书签”面板中将其删除并重置。
+
 >
 
 
 
 ## 工作区中的新图标 {#section-c108bbd1661249e79c146727ff3d2470}
 
-Data Workbench 6.2 现在将工作区中的文本替换为图标。You can still hover over and see the tool tip message identifying the icon, including **[!UICONTROL File]**, **[!UICONTROL Add]**, and **[!UICONTROL Export]**.
+Data Workbench 6.2 现在将工作区中的文本替换为图标。您仍然可以悬停鼠标并查看标识图标的工具提示消息，包括“**[!UICONTROL 文件]**”、“**[!UICONTROL 添加]**”和“**[!UICONTROL 导出]**”。
 
 ![](assets/new_icons.png)
 
-A new **[!UICONTROL Help]** icon is added to access the documentation and other knowledge centers, including the following links:
+添加了新的&#x200B;**[!UICONTROL 帮助]**&#x200B;图标以访问文档和其他知识中心，包括以下链接：
 
 <table id="table_64BBC67B1BB44B1197FF7E5E7B067696"> 
  <thead> 
@@ -78,11 +82,11 @@ A new **[!UICONTROL Help]** icon is added to access the documentation and other 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 市场营销 Reports &amp; Analytics </td> 
+   <td colname="col1"> Marketing Reports &amp; Analytics </td> 
    <td colname="col2">打开 <span class="uicontrol">Adobe Marketing Reports &amp; Analytics</span> 帮助页面。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 创意分享 </td> 
+   <td colname="col1"> Idea Exchange </td> 
    <td colname="col2">打开“<span class="uicontrol">创意分享登录</span>”。通过使用此在线门户，用户可以在 Data Workbench 中提供更新更改和增强创意。然后，所有用户可以对这些以客户为中心的创意进行投票。 </td> 
   </tr> 
   <tr> 
@@ -147,9 +151,9 @@ A new **[!UICONTROL Help]** icon is added to access the documentation and other 
 * 显示“412 配置冲突”消息的工作站连接错误现在替换为指定系统操作的用户友好的消息。
 * 现在，可以在 Report Server 中执行“post”命令。
 * 修复了简体中文客户端用户界面中的用户界面错误。
-* Adobe Analytics更新了支持Data Workbench的数据馈送，以利用与Adobe Experience Cloud集成的档案和受众。 所有 Data Workbench 用户需要在 2014 年 4 月 21 日之前准备好环境以完成此过渡。
+* Adobe Analytics更新了支持Data Workbench利用与Adobe Experience Cloud集成的用户档案和受众的数据源。 所有 Data Workbench 用户需要在 2014 年 4 月 21 日之前准备好环境以完成此过渡。
 
-   引入档案和受众是为了在Adobe Analytics中全面了解客户。 Adobe Experience Cloud中提供了这项新服务，可跨分析工具进一步提升价值，从而开始为Analytics中的这些功能奠定基础。 新的Experience Cloud访客标识符将添加到数据源中，并添加其他增强和改进以适应新的数据源和全局访客标识符。
+   用户档案和受众被引入Adobe Analytics，为整个的客户提供全面视图。 此新服务在Adobe Experience Cloud提供，可跨分析工具进一步提升价值，开始在Analytics中为这些功能奠定基础。 新Experience Cloud访客标识符将被添加到数据源，以及其他增强和改进，以适应新数据源和全局访客标识符。
 * 导入工作区时，即使导入成功也会显示错误消息。
 
 ## 更新要求 {#section-3cc74d08f7454d698b5a6d3f1dcde282}
@@ -157,7 +161,7 @@ A new **[!UICONTROL Help]** icon is added to access the documentation and other 
 * 为实施 Adobe SC 配置文件以使用 Analytics (SC/Insight) 数据源的用户配置了归因配置文件。默认情况下，将营销和转化事件作为在基于规则的模型中评估的默认交互。
 * For users of the Adobe SC profile upgrading to Data Workbench 6.2, if you are not using the default configurations, verify that the [!DNL x-bot_id] value in the [!DNL SC Fields.cfg] file is being decoded properly and that the [!DNL x-bot_id] field is listed properly in the [!DNL Decoding Instructions.cfg] and the [!DNL Exclude Hit.cfg] files. 只有在将配置文件修改为非默认配置时，才会出现问题。
 
-* If you have deleted unused fields in the **[!UICONTROL Dataset]** > **[!UICONTROL Log Processing** > **[!DNL SC Fields.cfg]** file for the Adobe SC profile, you will need to update to accommodate updated field values used for the Attribution profile.
+* If you have deleted unused fields in the **[!UICONTROL Dataset]** > **[!UICONTROL Log Processing]** > **[!DNL SC Fields.cfg]** file for the Adobe SC profile, you will need to update to accommodate updated field values used for the Attribution profile.
 
 ## 已知问题 {#section-dbb307639835493a83409f5f461932b8}
 
