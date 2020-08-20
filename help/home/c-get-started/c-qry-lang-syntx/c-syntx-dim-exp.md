@@ -1,24 +1,27 @@
 ---
 description: 维度表达式从不单独使用，但是可以在量度或过滤器表达式中调用维度的任何地方使用。
 solution: Analytics
-title: 维表达式的语法
+title: 维度表达式的语法
 topic: Data workbench
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1855'
+ht-degree: 92%
 
 ---
 
 
-# Syntax for dimension expressions{#syntax-for-dimension-expressions}
+# 维度表达式的语法{#syntax-for-dimension-expressions}
 
 维度表达式从不单独使用，但是可以在量度或过滤器表达式中调用维度的任何地方使用。
 
 1. 带下划线的字词应该在表达式文本中逐字输入。
-1. {TEXT}? 形式表示可选文本。
-1. {TEXT}* 形式表示可能不出现或出现多次的文本。
-1. {A | B | C |...} 形式表示完全由其中一个给定的选项（如 A 或 B 或 C....）组成的文本。
-1. [A,B) 形式表示数字的范围，从 A 开始到 B（但不包括 B）。
+1. The form `{TEXT}?` represents optional text.
+1. The form `{TEXT}*` represents text that may occur zero or more times.
+1. The form `{A | B | C |...}` represents text that consists of exactly one of the given options, such as A or B or C....
+1. The form `[A,B)` represents a range of numbers, from A up to but not including B.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
@@ -27,7 +30,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"> <p>标识符会引用一个已命名的维度。有关规范合法标识符的规则，请参阅 <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> 标识符的语法 </a>. </p> <p>示例：Sessions[ Session_Number = “1” ] 是会话数量为“1”的会话数。Session Number 是标识符引用的已命名维度。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>(Dimension) </p> </td> 
+   <td colname="col1"> <p>(维度) </p> </td> 
    <td colname="col2"> <p>(Dimension) 的结果与 Dimension 的结果相同。括号指定表达式中的运算顺序。 </p> <p>示例：Sessions[ (Page) = “/home” ] 是访问“/home”页面的会话数。 </p> </td> 
   </tr> 
   <tr> 
@@ -48,7 +51,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Size}? }?) </p> </td> 
-   <td colname="col2"> <p>定义其元素是数字范围（固定大小，如 [0-9], [10-19],...）的维度。Level 的元素与存储段维度（范围包括该级别元素的 Metric 值）的元素相关联。Format 是用于格式化 Metric 元素的 printf 格式字符串。 </p> <p>示例：如果 Page_Duration_Minutes 是表示每页上逗留分钟数的页面查看级别维度，则 bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) 是一个会话级别维度，表示每个会话中的逗留分钟数；其元素的间隔为 5 分钟 {[0-5), [5-10),...,[495-500)}。 </p> <p>Start 是第一个间隔的起始值（默认：0），Size 是间隔的大小（默认：1）。 </p> </td> 
+   <td colname="col2"> <p>定义其元素是数字范围（固定大小，如 [0-9], [10-19],...）的维度。Level 的元素与存储段维度（范围包括该级别元素的 Metric 值）的元素相关联。Format 是用于格式化 Metric 元素的 printf 格式字符串。 </p> <p>Example: If Page_Duration_Minutes is a Page View-level dimension representing the number of minutes spent on each page, then bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) is a Session-level dimension representing the number of minutes spent in each Session; its elements are 5 minute intervals <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start 是第一个间隔的起始值（默认：0），Size 是间隔的大小（默认：1）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}* )}* ) </p> </td> 
@@ -60,7 +63,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>cartesian_product(Separator {,Dim}*) </p> </td> 
-   <td colname="col2"> <p>定义其元素是所有给定维度元素组合（“笛卡尔积”）的维度。每个元素的名称是由对应输入维度元素的串联组成，并由给定的 Separator 字符串分隔。 </p> <p>例如，如果维度 D1 具有元素 {"a", "b"} 而维度 D2 具有元素 {"x", "y"}，则 cartesian product("-", D1, D2) 具有元素 {"a-x", "a-y", "b-x", "b-y"}。 </p> <p>注意，在内部处理每个输入维度时，假设其元素的数量是二的更高次幂。这将导致具有一些虚拟元素的笛卡尔积。在使用Data Workbench API时，根据输出格式，可能会忽略这些元素，或者它们显示为“#nnn”，其中nnn是元素的序号（客户端应忽略它）。 </p> <p>例如，在上面的示例中，如果 D2 具有三个元素 {"x", "y", "z"}，则在处理它时，将假设它具有四个元素，因而笛卡尔积具有元素 {"a-x", "a-y", "a-z", "#3", "b-x", "b-y", "b-z", "#7"}。 </p> <p>如果未给定维度，则结果是具有一个元素“#0”的维度，等同于无维度。 </p> </td> 
+   <td colname="col2"> <p>定义其元素是所有给定维度元素组合（“笛卡尔积”）的维度。每个元素的名称是由对应输入维度元素的串联组成，并由给定的 Separator 字符串分隔。 </p> <p>例如，如果维度 D1 具有元素 {"a", "b"} 而维度 D2 具有元素 {"x", "y"}，则 cartesian product("-", D1, D2) 具有元素 {"a-x", "a-y", "b-x", "b-y"}。 </p> <p>注意，在内部处理每个输入维度时，假设其元素的数量是二的更高次幂。这将导致具有一些虚拟元素的笛卡尔积。在使用Data WorkbenchAPI时，根据输出格式，这些元素可能会被忽略，或显示为“#nnn”，其中nnn是元素的序号（客户端应忽略它们）。 </p> <p>例如，在上面的示例中，如果 D2 具有三个元素 {"x", "y", "z"}，则在处理它时，将假设它具有四个元素，因而笛卡尔积具有元素 {"a-x", "a-y", "a-z", "#3", "b-x", "b-y", "b-z", "#7"}。 </p> <p>如果未给定维度，则结果是具有一个元素“#0”的维度，等同于无维度。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nearest_countable(Dim) </p> </td> 
