@@ -1,16 +1,19 @@
 ---
 description: 可以使用“量度编辑器”编辑量度，并将其保存在配置文件的“量度”目录中。
 solution: Analytics
-title: 度量表达式的语法
+title: 量度表达式的语法
 topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 91%
 
 ---
 
 
-# Syntax for metric expressions{#syntax-for-metric-expressions}
+# 量度表达式的语法{#syntax-for-metric-expressions}
 
 可以使用“量度编辑器”编辑量度，并将其保存在配置文件的“量度”目录中。
 
@@ -19,10 +22,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 注释：
 
 1. 带下划线的字词应该在表达式文本中逐字输入。
-1. {TEXT}? 形式表示可选文本。
-1. {TEXT}* 形式表示可能不出现或出现多次的文本。
-1. {A | B | C |...} 形式表示完全由其中一个给定的选项（如 A 或 B 或 C....）组成的文本。
-1. [A,B) 形式表示数字的范围，从 A 开始到 B（但不包括 B）。
+1. The form `{TEXT}?` represents optional text.
+1. The form `{TEXT}*` represents text that may occur zero or more times.
+1. The form `{A | B | C |...}` represents text that consists of exactly one of the given options, such as A or B or C....
+1. The form `[A,B)` represents a range of numbers, from A up to but not including B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
@@ -31,7 +34,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"> <p>标识符会引用一个已命名的量度。有关规范合法标识符的规则，请参阅 <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> 标识符的语法 </a>. </p> <p>示例：Revenue = Total_Price </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>(Metric) </p> </td> 
+   <td colname="col1"> <p>(量度) </p> </td> 
    <td colname="col2"> <p>(Metric) 的结果与 Metric 的结果相同。括号指定表达式中的运算顺序。 </p> <p>示例：Average = (A + B) / 2 </p> </td> 
   </tr> 
   <tr> 
@@ -68,7 +71,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>log (B, X) </p> </td> 
-   <td colname="col2"> <p>数学算法函数：量度 X 是参数，量度 B 是基数。 </p> <p>示例：dB = 20*log(Amplitude,10) </p> </td> 
+   <td colname="col2"> <p>数学算法函数：量度 X 是参数，量度 B 是基数。 </p> <p>示例：dB = 20*log（振幅，10） </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metric[Filter] </p> </td> 
@@ -79,7 +82,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"> <p>在“级别”维度上评估的量度。(M by X)[F] 的结果（使用过滤器“F”评估量度“M by X”的结果）是 M[F by X] 的结果（使用过滤器“F by X”评估量度“M”的结果）。 </p> <p>示例：AB_Visitors = </p> <p>(Visitors by Session)[Page="A" and Page="B"] = </p> <p>Visitors[(Page="A" and Page="B") by Session] = </p> <p>同一会话中访问页面 A 和页面 B 的访客数量。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>number </p> </td> 
+   <td colname="col1"> <p>数字 </p> </td> 
    <td colname="col2"> <p>具有固定值的量度。 </p> <p>示例：Pi = 3.1415 </p> </td> 
   </tr> 
   <tr> 
