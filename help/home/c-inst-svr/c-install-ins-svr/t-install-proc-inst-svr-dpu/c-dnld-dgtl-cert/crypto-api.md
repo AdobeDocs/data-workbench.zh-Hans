@@ -1,14 +1,17 @@
 ---
 description: Windows证书存储区允许您将客户端的证书和私钥存储在Windows证书存储区中，以便与服务器进行SSL通信。
-title: Windows证书存储区
+title: Windows 证书存储
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 82%
 
 ---
 
 
-# Windows证书存储区{#windows-certificate-store}
+# Windows 证书存储{#windows-certificate-store}
 
 Windows证书存储区允许您将客户端的证书和私钥存储在Windows证书存储区中，以便与服务器进行SSL通信。
 
@@ -40,9 +43,9 @@ Windows证书存储区允许您将客户端的证书和私钥存储在Windows证
 </filepath>>\Certificates\
 ```
 
-证书的名称 `<Common Name>.pem` 为(如 [!DNL Analytics Server 1.pem](不是文 [!DNL trust_ca_cert.pem] 件)。
+证书的名称 `<Common Name>.pem` 为( [!DNL Analytics Server 1.pem] 如(不 [!DNL trust_ca_cert.pem] 是文件)。
 
-在可以导入证书和私钥之前，必须先将它们从 [!DNL pem] 格式 [!DNL .pfx] 化，如 [!DNL pkcs12.pfx] )。
+在可以导入证书和私钥之前，必须先将它们从 [!DNL pem] 格式 [!DNL .pfx] ，如 [!DNL pkcs12.pfx] )。
 
 1. 打开命令提示符或终端，然后导航至目录：
 
