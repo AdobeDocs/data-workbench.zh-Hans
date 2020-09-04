@@ -5,16 +5,19 @@ title: 工作区“文件”菜单
 topic: Data workbench
 uuid: abbdb2db-d918-4edf-977c-1daaf8a71721
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 70%
 
 ---
 
 
-# Workspace File menu{#workspace-file-menu}
+# 工作区“文件”菜单{#workspace-file-menu}
 
 有关工作区“文件”菜单中可用菜单选项的信息。
 
-In the workspace, click **[!UICONTROL File]**.
+在工作区中，单击&#x200B;**[!UICONTROL 文件]**。
 
 ![](assets/mnu_file.png)
 
@@ -40,7 +43,7 @@ In the workspace, click **[!UICONTROL File]**.
 
 设置工作区的工作页面大小。可以为计算机屏幕、打印页面和报表选择“全屏”、“标准”或任何特定大小。“全屏”填充特定屏幕，“标准”是可以配置为适合您组织的标准屏幕大小的设置。默认“标准”设置填充使用 1024 x 768 分辨率时的屏幕。
 
-Workspaces that are copied, saved as [!DNL .png] files, or printed also use this page size for output. 大于Data Workbench可视化的页面大小使用滚动条，而较小的页面大小在屏幕中央，并在工作区周围显示浅灰色边框。
+Workspaces that are copied, saved as [!DNL .png] files, or printed also use this page size for output. 大于Data Workbench可视化的页面大小使用滚动条，而较小的页面大小在屏幕中居中并在工作区周围显示浅灰色边框。
 
 **描述**
 
@@ -51,7 +54,7 @@ Workspaces that are copied, saved as [!DNL .png] files, or printed also use this
 （仅当联机工作时显示。）在您继续工作的同时，使所选工作区中的查询在后台运行。选择该选项时，缩略图显示以下信息，该信息指示查询的进度：
 
 * “正在处理: *n%*”- 指示查询正在进行处理以及所完成处理的百分比。
-* “*n* MB 查询负载”- 查询结果的总大小。查询负载与Data Workbench Server的总内存负载成比例，但不直接相关。 作为指导原则，10 MB 或更高的查询负载可能会耗尽您的系统资源。所列的查询负载未考虑群集。
+* “*n* MB 查询负载”- 查询结果的总大小。查询负载与Data Workbench服务器的总内存负载成比例，但不直接相关。 作为指导原则，10 MB 或更高的查询负载可能会耗尽您的系统资源。所列的查询负载未考虑群集。
 
 >[!NOTE]
 >
@@ -59,14 +62,14 @@ Workspaces that are copied, saved as [!DNL .png] files, or printed also use this
 
 **关闭**
 
-关闭工作区。Click **[!UICONTROL Close]** > **[!UICONTROL Save]** to save the changes you have made in the workspace, or click **[!UICONTROL Close]** > **[!UICONTROL Don’t Save]** to return to the [!DNL Worktop] without saving the changes you have made in the workspace.
+关闭工作区。单击&#x200B;**[!UICONTROL 关闭]** > **[!UICONTROL 保存]**&#x200B;可保存您在工作区中进行的更改，或单击&#x200B;**[!UICONTROL 关闭]** > **[!UICONTROL 不保存]**&#x200B;可返回 [!DNL Worktop]，而不保存您在工作区中进行的更改。
 
 您也可以使用以下任一方法保存更改、关闭工作区并返回 [!DNL Worktop]：
 
-* 单击工作区左上角的Data Workbench徽标。
+* 单击工作区左上角的Data Workbench标志。
 * 如果您的鼠标具有导航按钮，则单击您鼠标上的后退按钮。
 
-You also can void your changes by closing the workspace without saving by pressing **[!UICONTROL `<Ctrl>`+<Backspace>]**。
+You also can void your changes by closing the workspace without saving by pressing **Ctrl+Backspace**.
 
 **从模板导出到 Excel**
 
