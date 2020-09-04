@@ -5,10 +5,10 @@ title: 添加书签
 topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 translation-type: tm+mt
-source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 69%
+source-wordcount: '218'
+ht-degree: 87%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 69%
 
    在为工作区添加书签之前，此图标显示为一本书。为工作区添加书签后，书签图标会变为一本带有标记页面的书。
 
-1. Click **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** in the left pane to open a list of bookmarks.
+1. 在左侧窗格中单击&#x200B;**[!UICONTROL 添加]** > **[!UICONTROL 书签面板]**&#x200B;可打开书签列表。
 
    ![](assets/bookmarks_panel.png)
 
-1. To open a bookmarked workspace, click a workspace name in the **[!UICONTROL Bookmark Panel]**.
+1. 要打开添加了书签的工作区，请在&#x200B;**[!UICONTROL 书签面板]**&#x200B;中单击工作区名称。
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -33,9 +33,9 @@ ht-degree: 69%
 
 **要删除书签：**
 
-* 在“书签”面板中，右键单击并选择“删 **[!UICONTROL 除”<bookmark title>]**要删除所选书签，或选择&#x200B;**[!UICONTROL Clear All Bookmarks]**删除所有书签。
+* In the Bookmark Panel, right-click and select **Remove`<bookmark title>`** to delete a selected bookmark, or select **[!UICONTROL Clear All Bookmarks]** to delete all bookmarks.
 
-* You can also right-click on the workspace in the thumbnail view within the worktop and select **[!UICONTROL Clear Bookmark]**.
+* 您也可以右键单击 Worktop 上缩略图中的工作区，并选择&#x200B;**[!UICONTROL 清除书签]**。
 
 >[!IMPORTANT]
 >
