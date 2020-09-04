@@ -3,7 +3,10 @@ description: Data Workbench 6.2 包含新的用户界面“书签”面板更新
 title: Data Workbench 客户端 UI 更新
 uuid: 1bc18c90-8b46-4c90-b7a7-2c6710e1e28c
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '564'
+ht-degree: 92%
 
 ---
 
@@ -19,11 +22,11 @@ Data Workbench 6.2 包含新的用户界面“书签”面板更新，在工作�
 **使用书签**
 
 1. 可通过单击工具栏右上角的书签图标 ![](assets/bookmark_icon.png)，为工作区创建书签。
-1. Click **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** in the left pane to open a list of bookmarks.
+1. 单击左侧窗格中的“**[!UICONTROL 添加]**”>**[!UICONTROL “书签”面板]**&#x200B;以打开书签列表。
 
    ![](assets/bookmarks_panel.png)
 
-1. To open a bookmarked workspace, click a workspace name in the **[!UICONTROL Bookmark Panel]**.
+1. 要打开添加了书签的工作区，请在&#x200B;**[!UICONTROL 书签面板]**&#x200B;中单击工作区名称。
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -31,25 +34,26 @@ Data Workbench 6.2 包含新的用户界面“书签”面板更新，在工作�
 
 **要删除书签：**
 
-* 在“书签”面板中，右键单击并选择“删 **[!UICONTROL 除”<bookmark title>]**要删除选定书签，或选择以删&#x200B;**[!UICONTROL Clear All Bookmarks]**除所有书签。
+* In the Bookmark Panel, right-click and select **Remove`<bookmark title>`** to delete a selected bookmark, or select **[!UICONTROL Clear All Bookmarks]** to delete all bookmarks.
 
-* You can also right-click on the workspace in the thumbnail view within the worktop and select **[!UICONTROL Clear Bookmark]**.
+* 您也可以右键单击 Worktop 上缩略图中的工作区，并选择&#x200B;**[!UICONTROL 清除书签]**。
 
 >[!IMPORTANT]
 >
 >* 可以保存 25 个书签。
 >* 如果添加了书签，然后移动工作区的位置，书签将失效，必须从“书签”面板中将其删除并重置。
+
 >
 
 
 
 ## 工作区中的新图标 {#section-c108bbd1661249e79c146727ff3d2470}
 
-Data Workbench 6.2 现在将工作区中的文本替换为图标。You can still hover over and see the tool tip message identifying the icon, including **[!UICONTROL File]**, **[!UICONTROL Add]**, and **[!UICONTROL Export]**.
+Data Workbench 6.2 现在将工作区中的文本替换为图标。您仍然可以悬停鼠标并查看标识图标的工具提示消息，包括“**[!UICONTROL 文件]**”、“**[!UICONTROL 添加]**”和“**[!UICONTROL 导出]**”。
 
 ![](assets/new_icons.png)
 
-A new **[!UICONTROL Help]** icon is added to access the documentation and other knowledge centers, including the following links:
+添加了新的&#x200B;**[!UICONTROL 帮助]**&#x200B;图标以访问文档和其他知识中心，包括以下链接：
 
 <table id="table_64BBC67B1BB44B1197FF7E5E7B067696"> 
  <thead> 
@@ -60,11 +64,11 @@ A new **[!UICONTROL Help]** icon is added to access the documentation and other 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 市场营销 Reports &amp; Analytics </td> 
+   <td colname="col1"> Marketing Reports &amp; Analytics </td> 
    <td colname="col2">打开 <span class="uicontrol">Adobe Marketing Reports &amp; Analytics</span> 帮助页面。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 创意分享 </td> 
+   <td colname="col1"> Idea Exchange </td> 
    <td colname="col2">打开“<span class="uicontrol">创意分享登录</span>”。通过使用此在线门户，用户可以在 Data Workbench 中提供更新更改和增强创意。然后，所有用户可以对这些以客户为中心的创意进行投票。 </td> 
   </tr> 
   <tr> 
