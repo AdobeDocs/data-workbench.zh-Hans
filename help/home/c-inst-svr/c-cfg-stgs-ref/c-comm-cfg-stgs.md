@@ -4,9 +4,9 @@ solution: Insight
 title: 通信配置设置
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 5%
 
 ---
@@ -34,11 +34,11 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> 访问控制文件 </td> 
-   <td colname="col2"> <p>访问控制.cfg <span class="filepath"> 文件的 </span> 位置。 默认位置是Insight Server <span class="filepath"> 或Repeater安 </span> 装目录中的 <span class="keyword"> 访问控制文 </span> 件夹， <span class="wintitle"> 该文 </span> 件夹位于Insight Server。 </p> <p>示例： <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>访问控制.cfg <span class="filepath"> 文件的 </span> 位置。 默认位置是Insight Server <span class="filepath"> 或Repeater安 </span> 装目录中的 <span class="keyword"> 访问控制文 </span> 件夹， <span class="wintitle"> 该文 </span> 件夹位于Insight Server。 </p> <p>示例：<code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 访问日志目录 </td> 
-   <td colname="col2"> <p>要将审核日志映射到的文件夹。 </p> <p>示例： <filepath></filepath> </p> <p> <p>注意： 您可以将审核日志映射到另一个本地驱动器(示例： <span class="filepath"> 字符串：P:\\Audit\\ </span>)，但不将审核日志映射到网络驱动器。 </p> </p> </td> 
+   <td colname="col2"> <p>要将审核日志映射到的文件夹。 </p> <p>示例：<code>Access Log Directory = string: Audit\\</code> </p> <p> <p>注意： 您可以将审核日志映射到另一个本地驱动器(示例： <span class="filepath"> 字符串：P:\\Audit\\ </span>)，但不将审核日志映射到网络驱动器。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 访问日志详细 </td> 
@@ -46,19 +46,19 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> IP接口 </td> 
-   <td colname="col2"> <p>当两个网卡可用于访问两个不同网络时使用的IP地址。 </p> <p>示例：我 <filepath></filepath><i>&lt; <span class="filepath"> IP 地址 </span>&gt;</i> </p> </td> 
+   <td colname="col2"> <p>当两个网卡可用于访问两个不同网络时使用的IP地址。 </p> <p>示例：<code>IP Interface = string: &lt; IP Address &gt;</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Port（端口） </td> 
-   <td colname="col2"> <p>Insight Server或Repeater监听的非安 <span class="keyword"> 全(HTTP) </span> 端 <span class="wintitle"> 口 </span> 。 默认端口为 80。输入值0将禁用非安全连接。 </p> <p>示例： <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Insight Server或Repeater监听的非安 <span class="keyword"> 全(HTTP) </span> 端 <span class="wintitle"> 口 </span> 。 默认端口为 80。输入值0将禁用非安全连接。 </p> <p>示例：<code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL密码 </td> 
-   <td colname="col2"> 一些环境需要比其他公司更强大的通信安全。 如果要使用特定的SSL密码套件，可使用此参数指定它。 <p>示例： <filepath></filepath> </p> </td> 
+   <td colname="col2"> 一些环境需要比其他公司更强大的通信安全。 如果要使用特定的SSL密码套件，可使用此参数指定它。 <p>示例：<code>SSL Ciphers = string: AES256-SHA256</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL端口 </td> 
-   <td colname="col2"> <p>Insight Server或Repeater监听的安 <span class="keyword"> 全(通 </span> 过SSL <span class="wintitle"> )端 </span> 口。 默认端口为 443。输入值0将禁用安全连接。 </p> <p>示例：<span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Insight Server或Repeater监听的安 <span class="keyword"> 全(通 </span> 过SSL <span class="wintitle"> )端 </span> 口。 默认端口为 443。输入值0将禁用安全连接。 </p> <p>示例：<span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
