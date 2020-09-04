@@ -3,7 +3,7 @@ description: Data Workbench 6.2 发行说明包括新增功能、升级要求、
 title: Data Workbench 6.2 发行说明
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 83%
@@ -52,7 +52,7 @@ Data Workbench 6.2 包含新的用户界面“书签”面板更新，在工作�
 
 **要删除书签：**
 
-* 在“书签”面板中，右键单击并选择“删 **[!UICONTROL 除”<bookmark title>]**要删除选定书签，或选择“清除**[!UICONTROL &#x200B;所有书签&#x200B;]**”以删除所有书签。
+* In the Bookmark Panel, right-click and select **Remove`<bookmark title>`** to delete a selected bookmark, or select **[!UICONTROL Clear All Bookmarks]** to delete all bookmarks.
 
 * 您也可以右键单击 Worktop 上缩略图中的工作区，并选择&#x200B;**[!UICONTROL 清除书签]**。
 
