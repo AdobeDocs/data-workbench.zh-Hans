@@ -1,10 +1,10 @@
 ---
 description: 目标运行Insight Server复制服务的Insight Server计算机必须能够读取此中继服务器上的日志文件。
-solution: Insight
+solution: Analytics
 title: 为目标计算机配置访问控制
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
 translation-type: tm+mt
-source-git-commit: 0276701151d1403926ce184069526ebdf3e28e36
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 6%
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 **配置访问控制以通过目标机访[!DNL Insight Server]问**
 
-1. 导览至您 [!DNL Access Control] 安装了repeater功能的目录中的文件夹。
+1. 导览至 [!DNL Access Control] 安装repeater功能的目录中的文件夹。
 
    示例：[!DNL D:\Adobe\Repeater\Access Control]
 
