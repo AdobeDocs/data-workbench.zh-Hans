@@ -1,10 +1,13 @@
 ---
 description: 日志 (.vsl) 文件包含由传感器从服务器收集并由 Data Workbench Server 用于数据集构建过程的事件数据字段。
-solution: Insight
+solution: Analytics
 title: 事件数据记录字段
 uuid: ad9e773c-a128-4094-9e20-45a6de025c8f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 58%
 
 ---
 
