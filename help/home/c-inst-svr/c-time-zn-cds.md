@@ -1,21 +1,24 @@
 ---
-description: 设置Insight Server中基于时间的参数的格式说明。
-solution: Insight
+description: 在Insight Server中设置有关基于时间的参数的说明的格式。
+solution: Analytics
 title: 时区代码
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 62%
 
 ---
 
 
 # 时区代码{#time-zone-codes}
 
-设置Insight Server中基于时间的参数的格式说明。
+在Insight Server中设置有关基于时间的参数的说明的格式。
 
 [!DNL Insight Server] 中大部分基于时间的参数都采用以下格式指定：
 
-*月DD,YYYY HH:MM:SS TimeZone*
+*月DD,YYYY HH:MM:SS时区*
 
 示例：August 13, 2013 22:30:00 EST
 
