@@ -1,18 +1,18 @@
 ---
 description: 当Insight和Report的用户要处理和访问的数据量超过单个Insight Server的容量时，需要Insight Server群集。
-solution: Insight
-title: 关于Insight Server群集
+solution: Analytics
+title: 关于 Insight Server 聚类
 uuid: d65e0fe5-f87d-4d8e-a208-9192e9d62fb5
 translation-type: tm+mt
-source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
 
-# 关于Insight Server群集{#about-insight-server-clusters}
+# 关于 Insight Server 聚类{#about-insight-server-clusters}
 
 当Insight和Report的用户要处理和访问的数据量超过单个Insight Server的容量时，需要Insight Server群集。
 
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->如果您使用的 [!DNL Insight Server] 是文件服务器单元(FSU),Adobe建议您将FSU配置为主控 [!DNL Insight Server]。 有关配置FSU的信息，请参阅《数据集配 *置指南》*。
+>如果您使用的是 [!DNL Insight Server] 文件服务器单元(FSU),Adobe建议您将FSU配置为主控 [!DNL Insight Server]。 有关配置FSU的信息，请参阅《数据集配 *置指南》*。
 
 主控管 [!DNL Insight Server] 理群集中的其他 [!DNL Insight Servers] 服务器(称为处理服务器，有时称为查询服务器)与和实例之间的 [!DNL Insight] 通信 [!DNL Report]。 对于给定数据集，对配置文件中指定的（一个或多个）指 [!DNL Insight Servers] 定(主控或处理)进行日志文 [!DNL Insight Server] 件处理。 在群集环境中工作时， [!DNL Insight] 将安装配置为访问主控, [!DNL Insight Server]但查询可以由群集中的任何一 [!DNL Insight Servers] 个成员处理。
 
@@ -41,4 +41,4 @@ ht-degree: 8%
 
 >[!IMPORTANT]
 >
->本章中的说明不适用于创建由五(5) [!DNL Insight Server] 个以上的群集 [!DNL Insight Servers]。 请联系Adobe，获取超过五个群集的系统要求和用户档案配置建议 [!DNL Insight Servers]。
+>本章中的说明不适用于创建由五(5) [!DNL Insight Server] 个以上的群集 [!DNL Insight Servers]。 请联系Adobe，以获取系统要求以及针对超过五个群集的用户档案配置建议 [!DNL Insight Servers]。
