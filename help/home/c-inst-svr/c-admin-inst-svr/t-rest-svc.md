@@ -1,10 +1,13 @@
 ---
 description: 重新启动Insight Server计算机时，必须先停止Insight Server服务。
-solution: Insight
+solution: Analytics
 title: 重新启动服务
 uuid: fda05e5a-9527-43e0-86c8-c4adba51955c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 11%
 
 ---
 
@@ -18,5 +21,5 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 **停止服[!DNL Insight Server]务**
 
 1. 单击 **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Services]**.
-1. 选择服 [!DNL Insight Server] 务并单击按 **[!UICONTROL Stop]** 钮。
-重新启动计算机 [!DNL Insight Server] 时，服务 [!DNL Insight Server] 会自动启动。
+1. 选择服 [!DNL Insight Server] 务并单击 **[!UICONTROL Stop]** 按钮。
+重新启动计算机 [!DNL Insight Server] 时，服务 [!DNL Insight Server] 会自动开始。
