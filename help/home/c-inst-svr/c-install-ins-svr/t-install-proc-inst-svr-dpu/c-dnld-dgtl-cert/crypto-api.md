@@ -1,32 +1,32 @@
 ---
-description: Windows证书存储区允许您将客户端的证书和私钥存储在Windows证书存储区中，以便与服务器进行SSL通信。
+description: 您可以将客户端的证书和私钥存储在 Windows 证书存储区，以便与服务器进行 SSL 通信。
 title: Windows 证书存储
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
 # Windows 证书存储{#windows-certificate-store}
 
-Windows证书存储区允许您将客户端的证书和私钥存储在Windows证书存储区中，以便与服务器进行SSL通信。
+您可以将客户端的证书和私钥存储在 Windows 证书存储区，以便与服务器进行 SSL 通信。
 
-适用于客户端的 Windows 证书存储区是一个全新功能，它允许您将 SSL 通信证书和私钥存储在 Windows 证书存储区中，而不是 `Insight/Certificates/<CertName>.pem` 文件中。如果您将证书存储区用于其他应用程序并希望在一个位置进行证书管理，或者将证书存储区用于希望享用 Windows 证书存储区提供的其他 Windows 审核日志服务的用户，则使用 Windows 证书存储区会是更好的选择。
+适用于客户端的 Windows 证书存储是一项新功能，该功能允许您将 SSL 通信证书和私钥存储在 Windows 证书存储区而非 `Insight/Certificates/<CertName>.pem` 文件中。如果您将证书存储区用于其他应用程序并希望在同一位置管理证书，或者，将证书存储区用于那些希望享用 Windows 证书存储区提供的额外 Windows 审核日志记录服务的用户，那么使用 Windows 证书存储区会是一种较适合的选择。
 
 >[!NOTE]
 >
->Licensing with the license server is still maintained using the existing `<Common Name>.pem` file, and that the certificate obtained from the certificate store will only be used for communication to the servers that you specify.
+>许可证服务器的授权功能仍将通过使用现有的 `<Common Name>.pem` 文件来维护，并且从证书存储区获得的证书将只能用于同您指定的服务器通信。
 
 ## 先决条件 {#section-69b18600052145ff8e5299b7123e69c5}
 
 1. 您必须具有 [!DNL certmgr.msc] 文件的访问权限，并且能够将证书和密钥导入 **Personal** 存储区。（对于大部分 Windows 用户而言，默认情况下应当将其设置为 True。）
 
 1. 执行配置的用户必须具有 **OpenSSL** 命令行工具的副本。
-1. 必须将服务器和客户端配置为使用自定义 SSL 证书，如[使用自定义证书](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd)中所述，它指明了应当将客户端证书存储在 Windows 证书存储区中，而不是存储在 **Certificates** 目录中。
+1. 必须将服务器和客户端配置为使用自定义 SSL 证书，如[使用自定义证书](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd)中所述，它指明了如何将客户端证书存储在 Windows 证书存储区，而不是存储在 **Certificates** 目录中。
 
 ## 配置 Windows 证书存储区 {#section-3629802122e947d4b4f63e8b732cfe27}
 
@@ -43,9 +43,9 @@ Windows证书存储区允许您将客户端的证书和私钥存储在Windows证
 </filepath>>\Certificates\
 ```
 
-证书的名称 `<Common Name>.pem` 为( [!DNL Analytics Server 1.pem] 如(不 [!DNL trust_ca_cert.pem] 是文件)。
+证书的名称为 `<Common Name>.pem`（如 [!DNL Analytics Server 1.pem]（不是 [!DNL trust_ca_cert.pem] 文件)）。
 
-在可以导入证书和私钥之前，必须先将它们从 [!DNL pem] 格式 [!DNL .pfx] ，如 [!DNL pkcs12.pfx] )。
+在可以导入证书和私钥之前，必须先将它们从 [!DNL pem] 格式转化为 [!DNL .pfx] 格式（如 [!DNL pkcs12.pfx]）。
 
 1. 打开命令提示符或终端，然后导航至目录：
 
@@ -53,13 +53,13 @@ Windows证书存储区允许您将客户端的证书和私钥存储在Windows证
    <CommonName>.pem c: cd \<DWB Install folder \Certificates
    ```
 
-1. Run [!DNL openssl] with the following arguments (with the actual [!DNL .pem] file name):
+1. 通过以下参数（以及实际的 [!DNL .pem] 文件名）运行 [!DNL openssl]：
 
    ```
    openssl pkcs12 -in "<Common Name>.pem" -export -out "<Common Name>.pfx"
    ```
 
-   如有提示，请按 **Enter** 以跳过输入导出密码的步骤。
+   如果出现系统提示，请按 **Enter** 以跳过输入导出密码的步骤。
 
 1. 从运行提示符、开始菜单或命令行中运行 [!DNL certmgr.msc]。
 1. 打开当前用户的 **Personal** 证书存储区。
@@ -72,7 +72,7 @@ Windows证书存储区允许您将客户端的证书和私钥存储在Windows证
 
    ![](assets/6_5_crypto_api_4.png)
 
-1. Click **Browse** and select the `<CommonName>.pfx` file you created previously. 为了进行查看，您需要将 X.509 证书的文件扩展下拉框更改为&#x200B;**个人信息交换**&#x200B;或&#x200B;**所有文件**。
+1. 单击&#x200B;**浏览**，并选择您此前创建的 `<CommonName>.pfx` 文件。为了进行查看，您需要将 X.509 证书的文件扩展下拉框更改为&#x200B;**个人信息交换**&#x200B;或&#x200B;**所有文件**。
 
    选择文件并单击&#x200B;**打开**，然后单击&#x200B;**下一步**。
 
@@ -88,7 +88,7 @@ Windows证书存储区允许您将客户端的证书和私钥存储在Windows证
 
    >[!NOTE]
    >
-   >Pay particular attention to the **Issued To** and **Issued By** fields. 下面的步骤将需要使用这些字段。
+   >请特别留意&#x200B;**颁发给**&#x200B;和&#x200B;**颁发者**&#x200B;字段。下面的步骤将需要使用这些字段。
 
 **步骤 2：编辑 Insight.cfg 文件。**
 
@@ -110,9 +110,9 @@ Windows证书存储区允许您将客户端的证书和私钥存储在Windows证
 
    >[!NOTE]
    >
-   >The name &quot;Personal&quot; in the Certificate Manager (certmgr.msc) actually refers to the certificate store named **My.**&#x200B;因此，如果您将 SSL 通信证书和私钥 (.PFX) 导入建议的 **Personal** 证书存储区，则必须将 **SSL CryptoAPI 证书存储区名称**&#x200B;字符串设置为“My”。将此参数设置为“Personal”并不会起作用。这是 Windows 证书存储区的特性。
+   >证书管理器 (certmgr.msc) 中的名称“Personal”实际上是指名为&#x200B;**“My”的证书存储区。**&#x200B;因此，如果您将 SSL 通信证书和私钥 (.PFX) 导入建议的 **Personal** 证书存储区，则必须将 **SSL CryptoAPI 证书存储区名称**&#x200B;字符串设置为“My”。将此参数设置为“Personal”并不会起作用。这是 Windows 证书存储区的特性。
 
-   可在此获取有关预定义系统存储区的完整列表：[https://msdn.microsoft.com/zh-cn/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx)。您的系统可能具有额外的证书存储区。如果您要使用的存储区不是“Personal”（例如 **My**），则必须获取证书存储区的规范名称，并在 [!DNL Insight.cfg] 文件中提供该名称。（Windows 文档对于系统存储区名称“My”的引用不一致，有时为“My”，有时为“MY”。此参数似乎不区分大小写。）
+   可在此获取有关预定义系统存储区的完整列表：[https://msdn.microsoft.com/zh-cn/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/zh-cn/library/windows/desktop/aa388136%28v=vs.85%29.aspx)。您的系统可能具有额外的证书存储区。如果您要使用的存储区不是“Personal”（例如 **My**），则必须获取证书存储区的规范名称，并在 [!DNL Insight.cfg] 文件中提供该名称。（Windows 文档对于系统存储区名称“My”的引用不一致，有时为“My”，有时为“MY”。此参数似乎不区分大小写。）
 
 1. 在添加了这些参数并验证值与 Windows 证书管理器中的列表匹配后，保存 [!DNL Insight.cfg] 文件。
 
@@ -128,4 +128,4 @@ ERROR Fatal error: the cert could not be found!
 
 >[!NOTE]
 >
->The L4 logging framework can be enabled by setting up the [!DNL L4.cfg] file (see your account manager to set this up).
+>通过设置 [!DNL L4.cfg] 文件可启用 L4 记录框架（请查看您的帐户管理器，以执行相应设置）。
