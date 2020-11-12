@@ -5,7 +5,10 @@ title: 测试运算条件
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1119'
+ht-degree: 71%
 
 ---
 
@@ -31,7 +34,7 @@ The parameters of the [!DNL Compare] condition are described in the following ta
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -41,9 +44,9 @@ The parameters of the [!DNL Compare] condition are described in the following ta
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关条件的说明。 </td> 
-   <td colname="col3"> Comments </td> 
+   <td colname="col3"> 评论 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Input A（输入 A） </td> 
@@ -86,9 +89,9 @@ The [!DNL Not Empty] condition checks a field to see if it contains a value or i
 
 The parameters of the [!DNL Not Empty] condition are described in the following table:
 
-| 参数 | 描述 | 默认值 |
+| 参数 | 描述 | 默认 |
 |---|---|---|
-| Comments（备注） | 可选。有关条件的说明。 | Comments |
+| 评论 | 可选。有关条件的说明。 | 评论 |
 | Input（输入） | 日志条目中用于检查内容的字段名称。 |  |
 
 此示例采用 x-some-field 作为其输入并测试该字段是否为空。如果该字段填充了内容，则满足条件。
@@ -106,7 +109,7 @@ The parameters of the [!DNL Range] condition are described in the following tabl
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -116,9 +119,9 @@ The parameters of the [!DNL Range] condition are described in the following tabl
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关条件的说明。 </td> 
-   <td colname="col3"> Comments </td> 
+   <td colname="col3"> 评论 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Input（输入） </td> 
@@ -127,12 +130,12 @@ The parameters of the [!DNL Range] condition are described in the following tabl
   </tr> 
   <tr> 
    <td colname="col1"> Min（最小） </td> 
-   <td colname="col2"> <p>范围的下限。 </p> <p> 此参数的值必须是一个文本值或字符串 - 而不是字段名称。如果对此字段使用日期，则必须指定时区。有关支持的时区缩写列表，请参阅<a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477">时区代码</a>。 </p> </td> 
+   <td colname="col2"> <p>范围的下限。 </p> <p> 此参数的值必须是一个文本值或字符串 - 而不是字段名称。如果对此字段使用日期，则必须指定时区。有关支持的时区缩写列表，请参阅 <a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> 时区代码</a>. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Max（最大） </td> 
-   <td colname="col2"> <p>范围的上限。 </p> <p> <p>注意：此参数的值必须是一个文本值或字符串 - 而不是字段名称。如果对此字段使用日期，则必须指定时区。有关支持的时区缩写列表，请参阅<a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477">时区代码</a>。 </p> </p> </td> 
+   <td colname="col2"> <p>范围的上限。 </p> <p> <p>注意：此参数的值必须是一个文本值或字符串 - 而不是字段名称。如果对此字段使用日期，则必须指定时区。有关支持的时区缩写列表，请参阅 <a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> 时区代码</a>. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -147,13 +150,13 @@ The parameters of the [!DNL Range] condition are described in the following tabl
 
 >[!NOTE]
 >
->如果“最小”或“最大”参数留空，则Data Workbench Server会替换可用的最小或最大整数值。 最小值为零 (0)，最大值为无限大。
+>如果“最小”或“最大”参数留空，则Data Workbench Server将替换可用的最小或最大整数值。 最小值为零 (0)，最大值为无限大。
 
 ![](assets/cfg_Condition_RangeCondition.png)
 
 ## 正则表达式 {#section-ae9c016502cb44128760c58f2d2d5297}
 
-条件 [!DNL Regular Expression] 测试使用正则表达式模式匹配(请参阅 [Regular Expressions](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c))来确定指定输入字段的值是否包含与Matches参数中指定的模式之一相匹配的字符串。
+条件 [!DNL Regular Expression] 测试使用常规表达式模式匹配(请参 [阅常规表达式](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c))来确定指定输入字段的值是否包含与“匹配”参数中指定的模式之一匹配的字符串。
 
 如果输入是字符串矢量，则只使用矢量中的第一个值进行测试。该条 [!DNL Regular Expression] 件执行完整字符串比较。 如果您要标识子字符串，则必须在字符串前后分别附加“.*”。
 
@@ -164,7 +167,7 @@ The parameters of the [!DNL Regular Expression] condition are described in the f
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -174,9 +177,9 @@ The parameters of the [!DNL Regular Expression] condition are described in the f
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关条件的说明。 </td> 
-   <td colname="col3"> Comments </td> 
+   <td colname="col3"> 评论 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Input（输入） </td> 
@@ -196,20 +199,20 @@ The parameters of the [!DNL Regular Expression] condition are described in the f
  </tbody> 
 </table>
 
-This example illustrates the use of the [!DNL Regular Expression] condition to match a field of data collected from website traffic. The condition returns true only if the cs(referrer-query) field contains a string matching the regular expression campaign=C[1-9][0-9]{4}. 此正则表达式将匹配任何包含“campaign=C12345”的字符串。但是，该模式不匹配字符串“campaign=C0123&amp;”，因为“C”之后的第一个字符不在 1-9 的范围之内。
+This example illustrates the use of the [!DNL Regular Expression] condition to match a field of data collected from website traffic. The condition returns true only if the cs(referrer-query) field contains a string matching the regular expression `campaign=C[1-9][0-9]{4}`. 此正则表达式将匹配任何包含“campaign=C12345”的字符串。但是，该模式不匹配字符串“campaign=C0123&amp;”，因为“C”之后的第一个字符不在 1-9 的范围之内。
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
 ## 字符串匹配 {#section-f8d132085c6b4500bfbe4515b848142f}
 
-条件 [!DNL String Match] 测试字符串是否相等。 它采用某个指定字段作为输入，测试每个日志条目中该字段的值是否与该运算的 Matches（匹配）参数中指定的字符串匹配。如果这些区分大小写的匹配字符串中有任何一个与所提供的输入字段中的值相同，则运算将返回 true。如果 [!DNL StringCondition] 不包含任何匹配字符串，则条件将返回 false。如果输入是字符串矢量，则只使用矢量中的第一个值（字符串）进行测试。
+条件 [!DNL String Match] 测试字符串等式。 它采用某个指定字段作为输入，测试每个日志条目中该字段的值是否与该运算的 Matches（匹配）参数中指定的字符串匹配。如果这些区分大小写的匹配字符串中有任何一个与所提供的输入字段中的值相同，则运算将返回 true。如果 [!DNL StringCondition] 不包含任何匹配字符串，则条件将返回 false。如果输入是字符串矢量，则只使用矢量中的第一个值（字符串）进行测试。
 
 <table id="table_BD599BAA5DD54B278813B6C38AC8DE6B"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -219,9 +222,9 @@ This example illustrates the use of the [!DNL Regular Expression] condition to m
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关条件的说明。 </td> 
-   <td colname="col3"> Comments </td> 
+   <td colname="col3"> 评论 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Input（输入） </td> 
