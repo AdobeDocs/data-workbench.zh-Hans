@@ -5,10 +5,10 @@ title: 测试运算条件
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: 1630f34588e4984226b70c963618856496b42346
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 71%
+source-wordcount: '1115'
+ht-degree: 68%
 
 ---
 
@@ -199,7 +199,7 @@ The parameters of the [!DNL Regular Expression] condition are described in the f
  </tbody> 
 </table>
 
-This example illustrates the use of the [!DNL Regular Expression] condition to match a field of data collected from website traffic. The condition returns true only if the cs(referrer-query) field contains a string matching the regular expression `campaign=C[1-9][0-9]{4}`. 此正则表达式将匹配任何包含“campaign=C12345”的字符串。但是，该模式不匹配字符串“campaign=C0123&amp;”，因为“C”之后的第一个字符不在 1-9 的范围之内。
+This example illustrates the use of the [!DNL Regular Expression] condition to match a field of data collected from website traffic. The condition returns true only if the cs(referrer-query) field contains a string matching the regular expression `campaign=C[1-9][0-9]{4}`. This regular expression matches any string containing `campaign=C12345`. However, the pattern would not match the string `campaign=C0123&` because the first character after the &quot;C&quot; is not in the range 1-9.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
