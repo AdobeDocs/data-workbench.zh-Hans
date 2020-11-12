@@ -1,11 +1,14 @@
 ---
 description: 日志源是指包含要用于构建数据集的数据的文件。
 solution: Analytics
-title: Log Sources（日志源）
+title: 日志源
 topic: Data workbench
 uuid: ea21c3d7-9188-4ba8-bacd-052d678bd799
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '3664'
+ht-degree: 83%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 * **Data Collected by [!DNL Sensors]: ** Data collected by [!DNL Sensors] from HTTP and application servers is transmitted to data workbench servers, which convert the data into highly compressed log ( [!DNL .vsl]) files. 请参阅 [传感器文件](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009)。
 
-* **Insight Server 提取的数据：** Data Workbench Server 会读取无格式文件、XML 文件或 ODBC 兼容数据库中包含的事件数据，并使用其解码器提取所需的数据元素。此类事件数据不必驻留在内存中，但包含该数据的记录必须包含跟踪ID。 请参 [阅日志文件](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)、 [XML日志源](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)和 [ODBC数据源](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)。
+* **Insight Server 提取的数据：** Data Workbench Server 会读取无格式文件、XML 文件或 ODBC 兼容数据库中包含的事件数据，并使用其解码器提取所需的数据元素。此类事件数据不必驻留内存，但包含数据的记录必须包含跟踪ID。 请参 [阅日志文](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)件 [、XML日志源](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)和 [ODBC](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)数据源。
 
 **添加日志源**
 
@@ -45,7 +48,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    >
    >A data workbench server [!DNL File Server Unit] can receive and store [!DNL Sensor] files, log files, and XML files and serve them to the data workbench server&#39;s [!DNL Data Processing Units] that construct the dataset. See [Configuring an Insight Server File Server Unit](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d).
 
-   You can open the configuration of any log source from a [!DNL Transformation Dependency Map]. 有关信息，请 [!DNL Transformation Dependency Map]参阅数 [据集配置工具](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)。
+   You can open the configuration of any log source from a [!DNL Transformation Dependency Map]. 有关信息， [!DNL Transformation Dependency Map]请参阅 [数据集配置工具](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)。
 
 <!--
 c_sensor_files.xml
@@ -85,7 +88,7 @@ For [!DNL Sensor] files, the following parameters are available:
   </tr> 
   <tr> 
    <td colname="col1"> Log Source ID（日志源 ID） </td> 
-   <td colname="col2"> <p>此参数的值可以是任意字符串。如果指定了某个值，则此参数可让您将来自不同日志源的日志条目区分开，以便进行源识别或目标处理。x-log-source-id 字段填充了用于识别每个日志条目的日志源的值。例如，如果您想要识别名为 VSensor01 的<span class="wintitle">传感器</span>中的日志条目，则可以键入 <span class="filepath">from VSensor01</span>，然后该字符串将会传递到该源中每个日志条目的 x-log-source-id 字段。 </p> <p> 有关x-log-source-id字段的信息，请参阅事件数据 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> 记录字段</a>。 </p> </td> 
+   <td colname="col2"> <p>此参数的值可以是任意字符串。如果指定了某个值，则此参数可让您将来自不同日志源的日志条目区分开，以便进行源识别或目标处理。x-log-source-id 字段填充了用于识别每个日志条目的日志源的值。例如，如果您想要识别名为 VSensor01 的<span class="wintitle">传感器</span>中的日志条目，则可以键入 <span class="filepath">from VSensor01</span>，然后该字符串将会传递到该源中每个日志条目的 x-log-source-id 字段。 </p> <p> 有关x-log-source-id字段的信息，请参阅 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> 事件数据记录字段</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Recursive（递归） </td> 
@@ -100,7 +103,7 @@ For [!DNL Sensor] files, the following parameters are available:
 
 >[!NOTE]
 >
->Do not use the configuration parameters for [!DNL Sensor] data sources to determine which log entries within a log file should be included in a dataset. 而是将数据源设置为指向目录内的所有日志文件。然后使用 [!DNL Log Processing.cfg] 的 Start Time（开始时间）和 End Time（结束时间）参数确定构建数据集时使用的日志条目。请参 [阅数据过滤器](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d)。
+>Do not use the configuration parameters for [!DNL Sensor] data sources to determine which log entries within a log file should be included in a dataset. 而是将数据源设置为指向目录内的所有日志文件。然后使用 [!DNL Log Processing.cfg] 的 Start Time（开始时间）和 End Time（结束时间）参数确定构建数据集时使用的日志条目。请参阅 [数据过滤器](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d)。
 
 <!--
 c_log_files.xml
@@ -118,11 +121,12 @@ c_log_files.xml
 * 若要指定数据处理的开始时间和结束时间，每个文件名必须采用以下格式：
 
    * [!DNL YYYYMMDD-SOURCE.log]
+
    其中 *YYYYMMDD* 是文件中所有数据的格林威治标准时间 (GMT) 日期；*SOURCE* 是一个变量，用于识别文件中包含数据的源。
 
    >[!NOTE]
    >
-   >请联系Adobe Consulting Services以查看您计划合并到数据集中的日志文件。
+   >请联系Adobe咨询服务部门以查看您计划纳入数据集的日志文件。
 
 ## 参数 {#section-83a861ac24954d54bbb9530e4d8bf23c}
 
@@ -166,11 +170,11 @@ c_log_files.xml
   </tr> 
   <tr> 
    <td colname="col1"> Log Source ID（日志源 ID） </td> 
-   <td colname="col2"> <p>此参数的值可以是任意字符串。如果指定了某个值，则此参数可让您将来自不同日志源的日志条目区分开，以便进行源识别或目标处理。x-log-source-id 字段填充了用于识别每个日志条目的日志源的值。例如，如果您想要识别名为 LogFile01 的日志文件源中的日志条目，则可以键入 <span class="filepath">from LogFile01</span>，然后该字符串将会传递到该源中每个日志条目的 x-log-source-id 字段。 </p> <p> 有关x-log-source-id字段的信息，请参阅事件数据 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> 记录字段</a>。 </p> </td> 
+   <td colname="col2"> <p>此参数的值可以是任意字符串。如果指定了某个值，则此参数可让您将来自不同日志源的日志条目区分开，以便进行源识别或目标处理。x-log-source-id 字段填充了用于识别每个日志条目的日志源的值。例如，如果您想要识别名为 LogFile01 的日志文件源中的日志条目，则可以键入 <span class="filepath">from LogFile01</span>，然后该字符串将会传递到该源中每个日志条目的 x-log-source-id 字段。 </p> <p> 有关x-log-source-id字段的信息，请参阅 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> 事件数据记录字段</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mask Pattern（掩码模式） </td> 
-   <td colname="col2"> <p>具有单个捕获子模式的正则表达式，可提取用于识别一系列日志文件源的一致名称。仅考虑文件名。对于正则表达式匹配，不考虑路径和扩展名。如果您没有指定<span class="wintitle">掩码模式</span>，则系统会自动生成掩码。 </p> <p> 对于 <span class="filepath">Logs\010105server1.log</span> 和 <span class="filepath">Logs\010105server2.log</span> 文件，<span class="wintitle">掩码模式</span>将为 [0-9]{6}(.*)。此模式从以上文件名中提取字符串“server1”或“server2”。 </p> <p> 请参阅 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 正则表达式</a>. </p> </td> 
+   <td colname="col2"> <p>具有单个捕获子模式的正则表达式，可提取用于识别一系列日志文件源的一致名称。仅考虑文件名。对于正则表达式匹配，不考虑路径和扩展名。如果您没有指定<span class="wintitle">掩码模式</span>，则系统会自动生成掩码。 </p> <p> 对于 <span class="filepath">Logs\010105server1.log</span> 和 <span class="filepath">Logs\010105server2.log</span> 文件，<span class="wintitle">掩码模式</span>将为 <code>[0-9]{6}(.*)</code>. 此模式从以上文件名中提取字符串“server1”或“server2”。 </p> <p> 请参阅 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 正则表达式</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Recursive（递归） </td> 
@@ -220,7 +224,7 @@ c_xml_log_sources.xml
 
 >[!NOTE]
 >
->请联系Adobe Consulting Services以查看您计划合并到数据集中的XML日志文件。
+>请联系Adobe咨询服务部门以查看您计划纳入数据集的XML日志文件。
 
 ## 参数 {#section-d07b96d7f6ad4affb9cc0a0bc1b88c4d}
 
@@ -264,11 +268,11 @@ c_xml_log_sources.xml
   </tr> 
   <tr> 
    <td colname="col1"> Log Source ID（日志源 ID） </td> 
-   <td colname="col2"> <p>此字段的值可以是任意字符串。如果指定了某个值，则此字段可让您将来自不同日志源的日志条目区分开，以便进行源识别或目标处理。x-log-source-id 字段填充了用于识别每个日志条目的日志源的值。例如，如果您想要识别名为 XMLFile01 的日志文件源中的日志条目，则可以键入 <span class="filepath">from XMLFile01</span>，然后该字符串将会传递到该源中每个日志条目的 x-log-source-id 字段。 </p> <p> 有关x-log-source-id字段的信息，请参阅事件数据 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> 记录字段</a>。 </p> </td> 
+   <td colname="col2"> <p>此字段的值可以是任意字符串。如果指定了某个值，则此字段可让您将来自不同日志源的日志条目区分开，以便进行源识别或目标处理。x-log-source-id 字段填充了用于识别每个日志条目的日志源的值。例如，如果您想要识别名为 XMLFile01 的日志文件源中的日志条目，则可以键入 <span class="filepath">from XMLFile01</span>，然后该字符串将会传递到该源中每个日志条目的 x-log-source-id 字段。 </p> <p> 有关x-log-source-id字段的信息，请参阅 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> 事件数据记录字段</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mask Pattern（掩码模式） </td> 
-   <td colname="col2"> <p>具有单个捕获子模式的正则表达式，可提取用于识别一系列日志文件源的一致名称。仅考虑文件名。对于正则表达式匹配，不考虑路径和扩展名。如果您没有指定<span class="wintitle">掩码模式</span>，则系统会自动生成掩码。 </p> <p> 对于 <span class="filepath">Logs\010105server1.xml</span> 和 <span class="filepath">Logs\010105server2.xml</span> 文件，掩码模式将为 [0-9]{6}(.*)。此模式从以上文件名中提取字符串“server1”或“server2”。 </p> <p> 请参阅 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 正则表达式</a>. </p> </td> 
+   <td colname="col2"> <p>具有单个捕获子模式的正则表达式，可提取用于识别一系列日志文件源的一致名称。仅考虑文件名。对于正则表达式匹配，不考虑路径和扩展名。如果您没有指定<span class="wintitle">掩码模式</span>，则系统会自动生成掩码。 </p> <p> 对于 <span class="filepath">Logs\010105server1.xml</span> 和 <span class="filepath">Logs\010105server2.xml</span> 文件，掩码模式将为 <code>[0-9]{6}(.*)</code>. 此模式从以上文件名中提取字符串“server1”或“server2”。 </p> <p> 请参阅 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 正则表达式</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Recursive（递归） </td> 
@@ -308,7 +312,7 @@ AVRO-log-file.xml
 
 >[!NOTE]
 >
->此外，使用Avro feed可以在不关闭的情况下立即访问源中的任何新字段，从而无需服务小时要求即可更新这些字段。
+>此外，使用Avro源，可以在不关闭的情况下立即访问源中的任何新字段，从而无需服务时间要求即可更新这些字段。
 
 可以在单独的文件中设置 Avro 数据馈送：
 
