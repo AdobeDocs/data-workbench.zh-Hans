@@ -5,7 +5,10 @@ title: 正则表达式
 topic: Data workbench
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1418'
+ht-degree: 86%
 
 ---
 
@@ -125,7 +128,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->当正则表达式的开头包含^，结尾包含$时，整个目标字符串必须与正则表达式匹配。
+>当常规表达式开头包含^，结尾包含$时，整个目标字符串必须与常规表达式匹配。
 
 **匹配任何内容**
 
@@ -152,12 +155,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"> 对紧靠元字符 (*) 之前的字符匹配零个或以上实例。例如，模式 [0–9]* 匹配任意数量的字符 0 至 9（任何整数）。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 加号 (+) </td> 
+   <td colname="col1"> Plus (+) </td> 
    <td colname="col2"> 对前面的字符或范围匹配一个或多个实例。例如，模式 thre+ 将匹配 three 而不是 through。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> {n} </td> 
-   <td colname="col2"> <p>精确匹配前面的字符或范围 n 次。以下模式匹配美国电话号码：[0-9]{3}-[0-9]{3}-[0-9]{4}。 </p> <p> 虽然这不是最佳模式，但它将确定目标字符串的格式是否正确。 </p> </td> 
+   <td colname="col2"> <p>精确匹配前面的字符或范围 n 次。The following pattern matches United States phone numbers: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> 虽然这不是最佳模式，但它将确定目标字符串的格式是否正确。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> {n,m} </td> 
