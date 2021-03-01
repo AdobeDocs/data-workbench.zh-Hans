@@ -3,7 +3,7 @@ cloud: experience-cloud
 product: analytics
 audience: end-user
 user-guide-title: Data Workbench 帮助
-user-guide-description: 了解 Data Workbench 的多渠道功能。其中包括 Data Workbench 客户端指南、安装指南、数据集配置指南，及其他指南。
+user-guide-description: 了解 Data Workbench 的多渠道功能，其中包括 Data Workbench 客户端指南、安装指南、数据集配置指南，及其他指南。
 translation-type: tm+mt
 source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
 workflow-type: tm+mt
