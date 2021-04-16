@@ -1,28 +1,29 @@
 ---
-description: 仪表板要从中可视化数据的每个DPU都必须具有Query API许可证。
-solution: Analytics
-title: 验证查询API启用
-topic: Data workbench
+description: 仪表板要从中可视化数据的每个DPU都必须具有查询API许可证。
+title: 验证查询 API 是否启用
 uuid: deedd1a4-c476-49f6-9278-556d914d2b93
+exl-id: 3dde2958-0f99-45f8-b65b-207a92362292
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 5%
 
 ---
 
+# 验证查询 API 是否启用{#verifying-query-api-enablement}
 
-# 验证查询API启用{#verifying-query-api-enablement}
+仪表板要从中可视化数据的每个DPU都必须具有查询API许可证。
 
-仪表板要从中可视化数据的每个DPU都必须具有Query API许可证。
+以下是有关如何验证已安装并启用查询 API的说明。
 
-下面是有关如何验证已安装并启用Query API的一些说明。
-
-1. 查找您的Data Workbench Server的证书。
+1. 查找Data Workbench Server的证书。
 1. 在文本编辑器中打开此证书。
-1. 确保该行存 `Product = Query API` 在于证书中。
-1. 在文 **[!UICONTROL Trace]** 件夹中，在文本 [!DNL InsightServer64.log] 编辑器中打开。
-1. 在最新的启动日志条目中，确保显示该 `Enabling Query API (licensed)` 行。
+1. 确保证书中存在行`Product = Query API`。
+1. 在&#x200B;**[!UICONTROL Trace]**&#x200B;文件夹中，在文本编辑器中打开[!DNL InsightServer64.log]。
+1. 在最新的启动日志条目中，确保显示行`Enabling Query API (licensed)`。
 
-* 如果未启用查询API，您将看到该条目 `Not enabling Query API (not licensed)`。
-* 如果未看到任何日志条目，或怀疑添加Query API后已重新启动Data Workbench Server，请再次重新启动Data Workbench Server，并检查日志。
+* 如果未启用查询API，您将看到条目`Not enabling Query API (not licensed)`。
+* 如果您未看到任何日志条目，或怀疑自添加查询API以来已重新启动Data Workbench Server，请再次重新启动Data Workbench Server，然后检查日志。
 
-   如果您无法验证是否已启用查询API，请联系Adobe ClientCare寻求帮助。
+   如果您无法验证查询API是否已启用，请联系Adobe ClientCare寻求帮助。
