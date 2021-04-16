@@ -1,16 +1,17 @@
 ---
 description: 有关查询模型组件的概念性信息。
-solution: Analytics
 title: 查询模型组件
-topic: Data workbench
 uuid: 708fab0b-dc10-4306-b410-49268069ac3b
+exl-id: 1f5d0a3a-6647-4762-ab20-9d80e467d48f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 70%
 
 ---
 
-
-# Query model components{#query-model-components}
+# 查询模型组件{#query-model-components}
 
 有关查询模型组件的概念性信息。
 
@@ -26,5 +27,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->由于依赖关系图设计为适应非循环依赖关系，因此循环依赖关系中涉及的节点可能无法在映射上正确显示。 You can search for circular dependencies by typing “circular dependency” in the [!DNL Search] text box. 有关该功能的详细信 [!DNL Search] 息，请参阅 [在地图中搜索](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb)。
-
+>由于依赖关系映射设计为容纳非循环依赖关系，因此循环依赖关系中涉及的节点可能无法在映射上正确显示。 可通过在[!DNL Search]文本框中键入“循环依赖关系”来搜索循环依赖关系。 有关[!DNL Search]功能的详细信息，请参阅[在映射中搜索](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb)。
