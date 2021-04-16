@@ -1,14 +1,15 @@
 ---
 description: 密度图可视化在直方图内以阴影矩形的形式显示各个元素。
-solution: Analytics
 title: 密度图
-topic: Data workbench
 uuid: c13cecee-f322-4757-aa90-12039173ff9f
+exl-id: da37d954-cadb-42a6-a44b-9b38c0354a5d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '610'
+ht-degree: 84%
 
 ---
-
 
 # 密度图{#density-map}
 
@@ -25,30 +26,30 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    打开一个新工作区以后，您需要单击&#x200B;**添加** > **临时解锁**。
 1. 单击 **[!UICONTROL Visualization]** > **[!UICONTROL Density Map]**.
 
-1. Select a **[!UICONTROL Dimension]** from the menu.
+1. 从菜单中选择&#x200B;**[!UICONTROL Dimension]**。
 
-   例如，选择 **[!UICONTROL Time]** > **[!UICONTROL Days]**。
+   例如，选择&#x200B;**[!UICONTROL Time]** > **[!UICONTROL Days]**。
 
-   In contrast, selecting **[!UICONTROL Time]** > **[!UICONTROL Hours]** would give you more elements with smaller values displaying as smaller rectangles.
+   相反，选择&#x200B;**[!UICONTROL Time]** > **[!UICONTROL Hours]**&#x200B;将为您提供更多值较小的元素，它们显示为较小的矩形。
 
    >[!NOTE]
    >
-   >您需要根据自己的需求选择包含多个元素的维度。 目前限制每个维度的元素最多为 200 个。
+   >您需要根据需要选择包含多个元素的维度。 目前限制每个维度的元素最多为 200 个。
 
-1. You can change dimension views by opening **[!UICONTROL Visualization]** > **[!UICONTROL Table]** and selecting across elements from the table to display in the map.
+1. 可以通过打开&#x200B;**[!UICONTROL Visualization]** > **[!UICONTROL Table]**&#x200B;并从表中选择要在映射中显示的各元素来更改维度视图。
 
    ![](assets/density_map_day_selections.png)
 
    图会反应出表格上所做的选择。
 
 1. 将鼠标悬停在小元素上，这会在光标附近以文本显示各自的名称和值。
-1. Mask elements by right-clicking and selecting **[!UICONTROL Mask]**, then choose an option.
+1. 通过右键单击并选择&#x200B;**[!UICONTROL Mask]**，然后选择选项来遮住元素。
 
    ![](assets/density_map_day_mask.png)
 
-   To display all masked nodes, select **[!UICONTROL Unhide All]**.
+   要显示所有被遮罩的节点，请选择&#x200B;**[!UICONTROL Unhide All]**。
 
-1. Spotlight elements by right-clicking and selecting **[!UICONTROL Spotlight]**, then choose an option. 聚焦可以在一定范围内突出显示元素，并且可以将元素以暗色显示。
+1. 通过右键单击并选择&#x200B;**[!UICONTROL Spotlight]**，然后选择一个选项来突显元素。 聚焦可以在一定范围内突出显示元素，并且可以将元素以暗色显示。
 1. 向工作区中添加颜色图例。您可以使用颜色图例识别图中的值。
 
    您可以向工作区中添加颜色图例，节点将根据数据的其他维度改变颜色。
@@ -56,7 +57,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/density_map_change_dim.png)
 
-1. Add callouts by right-clicking a cell and selecting **[!UICONTROL Add Callout]**. 您可以从菜单中选择不同的类型或可视化。
+1. 通过右键单击单元格并选择&#x200B;**[!UICONTROL Add Callout]**&#x200B;添加标注。 您可以从菜单中选择不同的类型或可视化。
 
    ![](assets/density_map_callout.png)
 
@@ -69,7 +70,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * 单击可选择一个元素。
 * Ctrl + 单击可选择多个元素。
 * Shift + 单击可取消选择一个元素。
-* 在所选元素内右键单击可打开一个菜单。然后选择 **[!UICONTROL Deselect]** 或以 **[!UICONTROL Deselect All]** 清除选定元素。
+* 在所选元素内右键单击可打开一个菜单。然后选择&#x200B;**[!UICONTROL Deselect]**&#x200B;或&#x200B;**[!UICONTROL Deselect All]**&#x200B;以清除所选元素。
 
 ## 其他选项 {#section-d77defb012424de4a7ced8e5c93115bc}
 
@@ -101,4 +102,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-
