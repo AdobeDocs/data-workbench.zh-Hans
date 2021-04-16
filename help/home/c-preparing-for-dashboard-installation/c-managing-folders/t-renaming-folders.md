@@ -1,22 +1,23 @@
 ---
-description: 'null'
-solution: Analytics
+description: 重命名文件夹
 title: 重命名文件夹
-topic: Data workbench
 uuid: 803bad4a-8fe9-48e5-9629-ddc2c5430e2d
+exl-id: 1f40c50f-4af0-41d3-8aa6-b4dd74785ea3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '39'
+ht-degree: 15%
 
 ---
 
-
 # 重命名文件夹{#renaming-folders}
 
-1. 右键单击要重命名的文件夹，然后选择 **[!UICONTROL Rename…]**。
+1. 右键单击要重命名的文件夹，然后选择&#x200B;**[!UICONTROL Rename…]**。
 
    ![](assets/rename.png)
 
-1. 输入文件夹的新名称，然后按 **[!UICONTROL Enter]**。
+1. 输入文件夹的新名称，然后按&#x200B;**[!UICONTROL Enter]**。
 
    ![](assets/renamed_folder.png)
 
