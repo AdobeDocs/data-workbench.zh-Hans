@@ -1,14 +1,15 @@
 ---
 description: 在创建使用动态点的元素点层时，经纬度数据会嵌入维度的每一个元素中。
-solution: Analytics
 title: 定义使用动态点的元素点层
-topic: Data workbench
 uuid: 5f1b4638-fe45-40be-b963-18dcd5d09afa
+exl-id: ad849fe7-b909-40ef-835f-f1764e008de9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 95%
 
 ---
-
 
 # 定义使用动态点的元素点层{#defining-element-point-layers-using-dynamic-points}
 
@@ -26,9 +27,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->When using [!DNL Dynamic Points], it is essential to ensure that the cardinality of the dimension specified in the layer file is reasonable. 如果数据集的每一行都有不同的纬度和经度，则该维度会很快填满，并且大部分行都归为“Small Elements”元素。由于“Small Elements”元素没有纬度和经度，因此它不会在地球上显示。
+>使用[!DNL Dynamic Points]时，必须确保层文件中指定的维度基数是合理的。 如果数据集的每一行都有不同的纬度和经度，则该维度会很快填满，并且大部分行都归为“Small Elements”元素。由于“Small Elements”元素没有纬度和经度，因此它不会在地球上显示。
 
-## 元素点层文件格式 {#section-bbcc2baa2f754dba81eba93339a97cbd}
+## 元素点层文件格式  {#section-bbcc2baa2f754dba81eba93339a97cbd}
 
 必须使用以下模板格式化使用动态点的每一个元素点层文件：
 
@@ -51,7 +52,7 @@ Layer = ElementPointLayer:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Dimension（维度） </td> 
+   <td colname="col1"> 维度 </td> 
    <td colname="col2"> <p>维度的名称（在转化配置文件中定义），它必须包含具有字符串“latitude,longitude”或“latitude,longitude,name”的元素，如以下示例所示： 
      <ul id="ul_49069B74AF5A4CE28E20BB3B98BB2D89"> 
       <li id="li_296010E3A513424A86AFA09E4DA2DFA4">37.5181,-77.1903 </li> 
@@ -59,7 +60,7 @@ Layer = ElementPointLayer:
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Metric（量度） </td> 
+   <td colname="col1"> 指标 </td> 
    <td colname="col2"> 对 Dimension（维度）参数中指定的维度求得的量度名称。 </td> 
   </tr> 
   <tr> 
@@ -71,7 +72,7 @@ Layer = ElementPointLayer:
    <td colname="col2"> 可选。用于调整层中点大小的值。默认值为 100。值越大点越大，值越小点越小。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Color（颜色） </td> 
+   <td colname="col1"> 颜色 </td> 
    <td colname="col2"> 可选。RGB 颜色矢量，表达为 (红,绿,蓝)。有关矢量中的每种颜色，您可以输入 0.0 到 1.0 之间的值。例如，(1.0, 0.0, 0.0) 是大红，(0.5, 0.5, 0.5) 是灰色。 </td> 
   </tr> 
   <tr> 
@@ -94,4 +95,3 @@ Layer = ElementPointLayer:
   Metric = ref: wdata/model/metric/Visitors
   Dynamic Points = bool: true
 ```
-
