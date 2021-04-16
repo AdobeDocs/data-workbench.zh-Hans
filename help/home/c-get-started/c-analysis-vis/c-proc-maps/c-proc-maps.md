@@ -1,16 +1,17 @@
 ---
 description: 流程图可用于分析某个维度的元素之间的活动流。
-solution: Analytics
 title: 流程图
-topic: Data workbench
 uuid: f1db41a9-400e-467a-ba59-39831fb166af
+exl-id: 019cee7b-a704-4b47-84c6-d3ddc277c43e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '737'
+ht-degree: 81%
 
 ---
 
-
-# Process map{#process-map}
+# 流程图{#process-map}
 
 流程图可用于分析某个维度的元素之间的活动流。
 
@@ -22,17 +23,17 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->流程图从其用于分析流程中各个步骤之间的活动流中获取其名称。 在这种类型的分析中，流程图上的每个元素都表示流程中的一个步骤。
+>流程图从其用于分析流程中步骤之间的活动流中获取其名称。 在这种类型的分析中，流程图上的每个元素都表示流程中的一个步骤。
 
 与路径浏览器不同，流程图可以根据分析的需要显示更多或更少的元素。选择感兴趣的元素并将其拖放到流程图上。与路径浏览器不同的是流程图描述了一个元素与一个或多个其他元素之间的双向活动流。
 
 >[!NOTE]
 >
->要使这些映射更有效地工作，您应在工作区中打开一个颜色图例。 For information about using color legends with process maps, see [Activating Color Links](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md#concept-2c9b9f67f2bd4cd7a5431fa21c094edc). For more information about color legends, see [Color Legends](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
+>要使这些映射最有效地工作，您应在工作区中打开一个颜色图例。 有关将颜色图例与工艺图一起使用的信息，请参阅[激活颜色链接](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md#concept-2c9b9f67f2bd4cd7a5431fa21c094edc)。 有关颜色图例的详细信息，请参阅[颜色图例](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358)。
 
 每个流程图都具有关联的基本维度、组维度、级别维度和量度，它们为解释在流程图中显示的数据提供关键信息。
 
-流程图的维度和度量的默认设置取决于您所使用的Data Workbench应用程序。 有关流程图中可用的维度和度量的信息，请参阅Data Workbench应用程序的应用程序指南。
+流程图的维度和量度的默认设置取决于您所使用的Data Workbench应用程序。 有关流程图中可用的维度和量度的信息，请参阅Data Workbench应用程序的应用程序指南。
 
 * **基本维度：**&#x200B;当您将元素拖放到流程图上时，您拖放的便是基本维度的元素。
 * **级别维度：**&#x200B;数据集中的每个维度都具有关联的级别维度（也称为父维度）。流程图的级别维度应该与流程图的基本维度的级别维度（或父维度）相同。例如，如果将某个页面（“页面”维度的元素）拖动到流程图上，则相应的级别维度将为“页面查看”。
@@ -40,7 +41,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    * 两个节点之间的连接不能跨越组维度的多个元素。为了解此内容，请考虑使用 Web 数据的示例。假定流程图的基本、级别和组维度分别为“页面”、“页面查看”和“会话”。一个从页面 A 到页面 B 的连接告知您，在任何单个会话期间页面 A 的页面查看优先于页面 B 的页面查看发生，而不干涉该流程图上其他页面（节点）的页面查看。请注意，在同一会话期间网站的其他页面的页面查看可能会发生在页面 A 和页面 B 的页面查看之间，但这些页面不会显示在该流程图上。
    * 两个节点之间的连接可以表示组维度的多个元素。例如，可能有多个会话，在这些会话中页面 A 的页面查看优先于页面 B 的页面查看发生。因此，页面 A 和页面 B 之间的连接表示所有会话，在这些会话中页面 A 的页面查看优先于页面 B 的页面查看发生，而不会干涉该流程图上其他页面（节点）的页面查看。
-   * 当您在流程图中根据节点做出选择时，即选择了包含该节点的组维度的所有元素。请参阅[在可视化中进行选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。有关选择的信息，请参阅可 [视化中的选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。
+   * 当您在流程图中根据节点做出选择时，即选择了包含该节点的组维度的所有元素。请参阅[在可视化中进行选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。有关选择的信息，请参阅在可视化中进行选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。[
 
 * **量度：**&#x200B;给定元素的节点大小与该元素的量度值成正比。节点越大，量度值就越大（与较小的节点相比）。
 
@@ -48,5 +49,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->您可以更改流程图的默认维度或度量。 有关配置流程图的步骤，请参阅配 [置流程图](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6)。
-
+>您可以更改流程图的默认维度或量度。 有关配置流程图的步骤，请参阅[配置流程图](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6)。
