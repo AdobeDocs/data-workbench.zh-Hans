@@ -1,14 +1,15 @@
 ---
 description: 如果您在处理 Web 数据，则可以使用 ExtractValue 转换从查询字符串、cookie 或网站数据中具有类似编码的字段提取值。
-solution: Analytics
 title: ExtractValue
-topic: Data workbench
 uuid: 305827a2-04e6-421f-82cb-923d62b02e70
+exl-id: 5bafe64f-081a-49ec-997e-68e8f6915a71
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 97%
 
 ---
-
 
 # ExtractValue{#extractvalue}
 
@@ -21,7 +22,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -31,12 +32,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关转换的说明。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 应用此转换的条件。 </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -58,9 +59,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </tbody> 
 </table>
 
-如果您希望提取搜索短语，则可以提取整个短语，如果需要，还可以使用 [!DNL Tokenize] 转换将短语拆分为搜索词。有关转换的信 [!DNL Tokenize] 息，请参 [阅Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c)。
+如果您希望提取搜索短语，则可以提取整个短语，如果需要，还可以使用 [!DNL Tokenize] 转换将短语拆分为搜索词。有关[!DNL Tokenize]转换的信息，请参阅[Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c)。
 
 此示例配置一个 [!DNL ExtractValue] 转换，用于从 cs(referrer-query) 提取 x-v-search-querynames 字段的值，并将它们存储在 x-search-phrase 字段中。
 
 ![](assets/cfg_TransformationType_ExtractValue.png)
-
