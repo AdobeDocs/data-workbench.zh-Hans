@@ -1,23 +1,22 @@
 ---
-description: 安装后，Adobe颁发的数字证书将充当密钥，使您能够运行Adobe产品。
-solution: Analytics
+description: 安装后，由Adobe颁发的数字证书将充当使您能运行Adobe产品的密钥。
 title: 重新验证数字证书
 uuid: 8cc6ec17-c565-4276-809a-a7c4fc9919f7
+exl-id: a5a24da2-d28f-402c-82db-f1046c525244
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 5%
+ht-degree: 13%
 
 ---
 
-
 # 重新验证数字证书{#re-validating-the-digital-certificate}
 
-安装后，Adobe颁发的数字证书将充当密钥，使您能够运行Adobe产品。
+安装后，由Adobe颁发的数字证书将充当使您能运行Adobe产品的密钥。
 
 **推荐频率：** 根据需要
 
 要正常工作，数字证书必须是最新的。
 
-要保持最新，您的数字证书必须定期(通常每30天重新验证一次，但具体情况可能因您与Adobe的协议而异)。 如果您的计算机具有Internet访问权限，则重新验证过程是完全透明的。 您的Adobe产品会自动连接到Adobe许可证服务器，并在必要时重新验证证书。 如果您的计算机无法访问Internet，则必须从Adobe许可证服务器下载一个经过验证的新证书，并按照下载和安装数字证书中提供的步骤将其 [安装到您的计算机上](../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md#concept-4f79c240492f4e52b6375b4b3bbefa17)。
+要保持最新，您的数字证书必须定期重新验证(通常为每30天重新验证一次，但这可能因您与Adobe的协议而异)。 如果您的计算机具有 Internet 访问权限，则重新验证过程将完全透明。您的Adobe产品会自动连接到Adobe许可证服务器，并在必要时重新验证证书。 如果您的计算机没有Internet访问权限，则必须从Adobe许可证服务器下载新的、经过验证的证书，并使用[下载和安装数字证书](../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md#concept-4f79c240492f4e52b6375b4b3bbefa17)中提供的步骤将其安装到您的计算机上。
