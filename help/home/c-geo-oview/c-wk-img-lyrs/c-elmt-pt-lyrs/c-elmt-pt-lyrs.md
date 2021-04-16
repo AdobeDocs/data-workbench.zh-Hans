@@ -1,14 +1,15 @@
 ---
 description: 在 Data Workbench 中，元素点层在地球上针对维度的每个元素显示一个点。
-solution: Analytics
 title: 使用元素点层
-topic: Data workbench
 uuid: 71b58e7f-a9f5-479c-855b-7215eb5347f0
+exl-id: 8010474c-b673-4187-aaea-cbff2db1150b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '84'
+ht-degree: 100%
 
 ---
-
 
 # 使用元素点层{#working-with-element-point-layers}
 
