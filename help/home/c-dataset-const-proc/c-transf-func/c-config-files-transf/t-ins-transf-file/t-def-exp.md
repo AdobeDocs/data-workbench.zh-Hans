@@ -1,37 +1,39 @@
 ---
 description: 导出程序为输出事件数据提供了说明。
-solution: Analytics
 title: 定义导出程序
-topic: Data workbench
 uuid: 565d4482-6c25-407c-bda7-0d116180902a
+exl-id: 5de6266a-e959-414c-9512-5e9f4011881b
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1120'
+ht-degree: 90%
 
 ---
-
 
 # 定义导出程序{#defining-exporters}
 
 导出程序为输出事件数据提供了说明。
 
-Transformation functionality provides three types of exporters for exporting [!DNL .vsl] files, log files, XML files, and ODBC data as [!DNL .vsl] files, text files, or delimited text files that can be used by DataWarehouse loading routines, auditing agencies, or other targets.
+转换功能提供了三种类型的导出器，用于将[!DNL .vsl]文件、日志文件、XML文件和ODBC数据导出为[!DNL .vsl]文件、文本文件或分隔文本文件，这些文本文件可由DataWarehouse加载例程、审计机构或其他目标使用。
 
 >[!NOTE]
 >
->要使导出器正常工作，日志源必须满足日志处理配置文件的“日志源 [”部分中](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea) 讨论的相应要求 [](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
+>要使导出器正常工作，日志源必须满足[日志处理配置文件](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)的[日志源](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea)部分中讨论的适当要求。
 
 **定义导出程序**
 
-1. Open [!DNL Transform.cfg] in data workbench. See [To edit the Insight Transform.cfg file](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13).
-1. 右键单击， **[!UICONTROL Exporters]**&#x200B;然后单击 **[!UICONTROL Add New]**。
+1. 在Data Workbench中打开[!DNL Transform.cfg]。 请参阅[编辑Insight Transform.cfg文件](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13)。
+1. 右键单击&#x200B;**[!UICONTROL Exporters]**，然后单击&#x200B;**[!UICONTROL Add New]**。
 1. 选择以下选项之一：
 
    * **[!UICONTROL ExportTextFile]**
    * **[!UICONTROL ExportDelimitedTextFile]**
    * **[!UICONTROL ExportVSLFile]**
+
    >[!NOTE]
    >
-   >For the [!DNL ExportVSLFile] option, all of the extended fields in the input file and all user-defined fields of the form cs(*header*) are always written to the VSL output file. 如果您覆盖现有扩展字段，则新值会写入输出文件中，即使该字段为空也是如此。
+   >对于[!DNL ExportVSLFile]选项，输入文件中的所有扩展字段和表单cs(*header*)的所有用户定义字段始终写入VSL输出文件。 如果您覆盖现有扩展字段，则新值会写入输出文件中，即使该字段为空也是如此。
 
 1. 参考下表，编辑该配置文件中的 Exporters（导出程序）参数：
 
@@ -52,7 +54,7 @@ Transformation functionality provides three types of exporters for exporting [!D
       <td colname="col2">仅用于 <span class="wintitle">ExportDelimitedTextFile</span>。要输出的字段名称。 </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> Delimiter（分隔符） </td> 
+      <td colname="col1"> 分隔符 </td> 
       <td colname="col2"> <p>可选。仅用于 <span class="wintitle">ExportDelimitedTextFile</span>。在输出文件中用于分隔字段的字符。 </p> <p> 软件无法转义数据值中包含的分隔符。因此，Adobe 建议不要将逗号用作分隔符。 </p> <p> 如果按住 Ctrl 键并且右键单击 Delimiter（分隔符）参数内部，则会显示“<span class="wintitle">插入</span>”菜单。此菜单包含通常用作分隔符的特殊字符列表。 </p> </td> 
       </tr> 
       <tr> 
@@ -64,7 +66,7 @@ Transformation functionality provides three types of exporters for exporting [!D
       <td colname="col2"> <p>可选。导出程序的标识符。此名称显示在<span class="wintitle">详细状态</span>界面中。 </p> <p> 有关<span class="wintitle">详细状态</span>界面的信息，请参阅《Data Workbench 用户指南》<i></i>。 </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> Comments（备注） </td> 
+      <td colname="col1"> 评论 </td> 
       <td colname="col2"> 可选。有关导出程序的说明。 </td> 
       </tr> 
       <tr> 
@@ -83,7 +85,7 @@ Transformation functionality provides three types of exporters for exporting [!D
        <li id="li_EE8CF71BA12149F49D4B7F7108262CD0"> NONE（无）。不执行任何旋转。所有数据都写入同一个文件（或由其他参数设置确定的一组文件）中。请参阅此表中的 <span class="wintitle">File Name Format</span>（文件名格式）参数。 </li> 
       </ul> <p>默认文件旋转周期为 DAY（日）。 </p> 
       <ul id="ul_0F3BC98275634F759E5022FF2C19715E"> 
-       <li id="li_24DC4D144DA94ED0B7B50E8BB39DB8E3"> 仅当在<span class="wintitle">离线模式</span>下进行操作时，才将文件旋转设为 NONE（无）。请参阅脱 <a href="../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13"> 机模式参数</a> 说明。 </li> 
+       <li id="li_24DC4D144DA94ED0B7B50E8BB39DB8E3"> 仅当在<span class="wintitle">离线模式</span>下进行操作时，才将文件旋转设为 NONE（无）。请参阅<a href="../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13">脱机模式</a>参数说明。 </li> 
       </ul> </td> 
       </tr> 
       <tr> 
