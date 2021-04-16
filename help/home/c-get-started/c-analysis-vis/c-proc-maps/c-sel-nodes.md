@@ -1,14 +1,15 @@
 ---
 description: 通过单击来选择节点会使其他节点变暗，这样您便可以方便地看到涉及突出显示节点的往返箭头。
-solution: Analytics
 title: 选择节点
-topic: Data workbench
 uuid: d63b39f6-edec-4b4c-b36b-f6e6881d3419
+exl-id: a483547f-e338-4d13-8a0b-6cb7971b7790
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 90%
 
 ---
-
 
 # 选择节点{#select-a-node}
 
@@ -33,4 +34,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 **从选择中删除节点或节点组**
 
 * 按 Shift 并单击某个节点或按 Shift 并跨多个节点拖动。
-
