@@ -1,24 +1,25 @@
 ---
 description: 继承配置文件的日志处理数据集包含文件中含有与数据集构建的日志处理阶段相关的参数。
-solution: Analytics
 title: 日志处理数据集包含文件
-topic: Data workbench
 uuid: 8bf99c9a-f674-4a07-bb3e-de0d9efc9716
+exl-id: 06d8046d-6bac-4ccd-bcef-06f7c9ec7619
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '660'
+ht-degree: 76%
 
 ---
-
 
 # 日志处理数据集包含文件{#log-processing-dataset-include-files}
 
 继承配置文件的日志处理数据集包含文件中含有与数据集构建的日志处理阶段相关的参数。
 
-The first line of a [!DNL Log Processing Dataset Include] file defines a type [!DNL LogProcessingInclude] that supports the Decoder Groups, Fields, Log Entry Condition, Parameters, Reprocess, Stage, and Transformations parameters. 日志处理的其他所有参数都必须在数据集配置文件 Dataset 目录的 [!DNL Log Processing.cfg] 文件中定义。You can name a [!DNL Log Processing Dataset Include] file anything you want, but its file extension must be [!DNL .cfg]. 文件必须存储在&#x200B;*继承配置文件名称*\Dataset\Log Processing 目录中。Because the files are loaded recursively during the log processing phase of dataset construction, you can store the [!DNL Log Processing Dataset Include] files at any level within the directory (for example, *inherited profile name*\Dataset\Log Processing\*folder name*\*include file name*.cfg).
+[!DNL Log Processing Dataset Include]文件的第一行定义了支持“解码器组”、“字段”、“日志条目条件”、“参数”、“重新处理”、“舞台”和“转换”参数的类型[!DNL LogProcessingInclude]。 日志处理的其他所有参数都必须在数据集配置文件 Dataset 目录的 [!DNL Log Processing.cfg] 文件中定义。您可以为[!DNL Log Processing Dataset Include]文件命名任何所需的文件，但其文件扩展名必须为[!DNL .cfg]。 文件必须存储在&#x200B;*继承配置文件名称*\Dataset\Log Processing 目录中。由于文件是在数据集构建的日志处理阶段递归加载的，因此您可以在目录中的任何级别存储[!DNL Log Processing Dataset Include]文件(例如，*继承的用户档案名*\Dataset\Log Processing\*folder name*\*include file name*.cfg)。
 
 >[!NOTE]
 >
->文件中定义了许多特定于Web的站点配置 [!DNL Log Processing Dataset Include] 参数。 有关这些参数的信息，请参 [阅Web数据的配置设置](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)。
+>在[!DNL Log Processing Dataset Include]文件中定义了许多特定于Web的站点配置参数。 有关这些参数的信息，请参阅[Web数据的配置设置](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)。
 
 <table id="table_E2112652CCD443E889A529EEDC4ADF1C"> 
  <thead> 
@@ -34,7 +35,7 @@ The first line of a [!DNL Log Processing Dataset Include] file defines a type [!
      <ul id="ul_54087499003C48C8B0AD9660A2F46EA9"> 
       <li id="li_E361861E61D246DDB3964C97CC5187E9"> 右键单击<span class="uicontrol">解码器组</span>，然后单击<span class="uicontrol">新增</span> &gt; <span class="uicontrol">TextFileDecoderGroup</span> 或 <span class="uicontrol">XMLDecoderGroup</span>。 </li> 
       <li id="li_B2D61A0763AD4FEDB619BF9550EF4602"> 在新组的 Name（名称）参数中，输入所需的解码器组名称。 </li> 
-     </ul> </p> <p> <p>注意：当您在数据集配置文件的 <span class="filepath">Log Processing.cfg</span> 文件中指定解码器组时，其名称必须与您在此处输入的名称完全匹配。有关详细信息，请参阅 <a href="../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e"> 日志文件</a>。 </p> </p> <p> 有关可为每个组定义的解码器的信息，请参阅 <a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd"> Text File Decoder Groups</a> （文本文件解码器组）或 <a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3"> XML Decoder Groups（XML解码器组）</a>。 </p> </td> 
+     </ul> </p> <p> <p>注意：当您在数据集配置文件的 <span class="filepath">Log Processing.cfg</span> 文件中指定解码器组时，其名称必须与您在此处输入的名称完全匹配。有关详细信息，请参阅<a href="../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e">日志文件</a>。 </p> </p> <p> 有关可为每个组定义的解码器的信息，请参阅<a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd">文本文件解码器组</a>或<a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3"> XML解码器组</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 字段 </td> 
@@ -50,11 +51,11 @@ The first line of a [!DNL Log Processing Dataset Include] file defines a type [!
   </tr> 
   <tr> 
    <td colname="col1"> 参数 </td> 
-   <td colname="col2"> 可选。您可以在其他配置参数中引用的变量。有关详细信息，请参阅<a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50">在数据集包含文件中定义参数</a>。 </td> 
+   <td colname="col2"> 可选。您可以在其他配置参数中引用的变量。有关详细信息，请参阅 <a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50"> 在数据集包含文件中定义参数</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Reprocess（重新处理） </td> 
-   <td colname="col2"> <p>可选。此处可以输入任意字符或字符组合。更改此参数并将文件保存到 Data Workbench Server，会开始重新处理数据。 </p> <p> 有关重新处理数据的信息，请参阅<a href="../../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md">重新处理和重新转换</a>。 </p> </td> 
+   <td colname="col2"> <p>可选。此处可以输入任意字符或字符组合。更改此参数并将文件保存到 Data Workbench Server，会开始重新处理数据。 </p> <p> 有关重新处理数据的信息，请参阅 <a href="../../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md"> 重新处理和重新转换</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Stage（阶段） </td> 
@@ -62,17 +63,16 @@ The first line of a [!DNL Log Processing Dataset Include] file defines a type [!
   </tr> 
   <tr> 
    <td colname="col1"> Transformations（转换） </td> 
-   <td colname="col2"> 可选。定义需要在日志处理过程中应用的数据转换。有关可用转换类型的信息，请参阅<a href="../../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md">数据转换</a>。 </td> 
+   <td colname="col2"> 可选。定义需要在日志处理过程中应用的数据转换。有关可用转换类型的信息，请参阅 <a href="../../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md"> 数据转换</a>. </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->有关文件中参数的说明，请 [!DNL Log Processing.cfg] 参阅日志处 [理配置文件](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
+>有关[!DNL Log Processing.cfg]文件中参数的说明，请参阅[日志处理配置文件](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
 
-You should keep the following points in mind whenever you are working with [!DNL Log Processing Dataset Include] files:
+处理[!DNL Log Processing Dataset Include]文件时，应牢记以下几点：
 
 * 更改此文件中的任何参数都需要重新处理所有数据。
 * 您可以将上述任何参数添加到 [!DNL Log Processing Dataset Include] 文件中，只需在记事本中打开并编辑该文件即可。当您在 Data Workbench 中重新打开该文件时，系统便会显示您做出并保存的所有更改。在添加新参数时，使用空格键（而不是 Tab 键）可向上一个标题级别的右侧缩进两 (2) 个空格。
-
