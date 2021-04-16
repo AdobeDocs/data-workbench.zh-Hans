@@ -1,14 +1,15 @@
 ---
 description: Math 转换允许对日志条目中的字段使用算术运算。
-solution: Analytics
 title: Math
-topic: Data workbench
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
+exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 97%
 
 ---
-
 
 # Math{#math}
 
@@ -21,7 +22,7 @@ Math 转换允许对日志条目中的字段使用算术运算。
   <tr> 
    <th colname="col1" class="entry"> 字段 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -31,18 +32,18 @@ Math 转换允许对日志条目中的字段使用算术运算。
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关转换的说明。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 应用此转换的条件。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 表达式 </td> 
-   <td colname="col2"> <p>描述要执行的计算的算术表达式。 </p> <p> 您可以使用下面列出的任何运算和函数，并且可以在表达式中包含字段名称： </p> <p> 运算 
+   <td colname="col2"> <p>描述要执行的计算的算术表达式。 </p> <p> 您可以使用下面列出的任何运算和函数，并且可以在表达式中包含字段名称： </p> <p> 操作 
      <ul id="ul_DB5915FADA0A41A3B11F1F48615F40A9">
       <li id="li_CA9EA97243F04760A81313C17EE057B3"> 加 (+) </li>
       <li id="li_908A272EBA2340098C20F22AA8D9ED26"> 减 (-) </li>
@@ -74,4 +75,4 @@ Math 转换允许对日志条目中的字段使用算术运算。
 
 ![](assets/cfg_TransformationType_Math.png)
 
-有关该条件的 [!DNL Not Empty] 信息，请参 [阅条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。
+有关[!DNL Not Empty]条件的信息，请参见[条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。
