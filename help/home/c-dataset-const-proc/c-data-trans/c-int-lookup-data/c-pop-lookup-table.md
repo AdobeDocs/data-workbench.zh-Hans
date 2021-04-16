@@ -1,14 +1,15 @@
 ---
 description: 如果使用 Categorize 或 FlatFileLookup 转换，对照表将加载到内存并从无格式文件填充，该文件的位置在定义转换时指定。
-solution: Analytics
 title: 填充对照表
-topic: Data workbench
 uuid: a11f3902-8853-4d22-bbfd-b2a3d143cb7b
+exl-id: e83d9feb-44fe-4fa1-b559-e1f5606637b5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 95%
 
 ---
-
 
 # 填充对照表{#populating-the-lookup-table}
 
@@ -24,4 +25,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 >[!NOTE]
 >
 >当Data Workbench Server最初开始构建数据集时，将加载查找表。 建立好之后，对照文件将不会更改。如果更改用于转换阶段的无格式文件或 [!DNL ODBC] 表，则需要重新转换整个数据集。如果更改在日志处理阶段使用的无格式文件，则新的对照数据将应用于所有进入数据集的新记录，但不会逆向应用更改。
-
