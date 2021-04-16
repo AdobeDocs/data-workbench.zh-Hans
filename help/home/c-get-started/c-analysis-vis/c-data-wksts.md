@@ -1,22 +1,23 @@
 ---
 description: 可以在工作表的任何单元格中输入文本或表达式。
-solution: Analytics
-title: 使用工作表中的数据
-topic: Data workbench
+title: 在工作表中处理数据
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
+exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 76%
 
 ---
 
-
-# Work with data in worksheets{#work-with-data-in-worksheets}
+# 在工作表中处理数据{#work-with-data-in-worksheets}
 
 可以在工作表的任何单元格中输入文本或表达式。
 
-All expressions in a worksheet are preceded by an equal sign (=) unless using [!DNL eval( )], which treats the text in the referenced cell as a expression.
+除非使用[!DNL eval( )]，否则工作表中的所有表达式前面都有等号(=)，后者将引用单元格中的文本视为表达式。
 
-For a full list of metric, dimension, and filter syntax rules, see [Query Language Syntax](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+有关量度、维度和筛选器语法规则的完整列表，请参阅[查询语法](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)。
 
 **在工作表中键入数据**
 
@@ -25,34 +26,34 @@ For a full list of metric, dimension, and filter syntax rules, see [Query Langua
 
 **从一个单元格复制并粘贴到另一个单元格**
 
-1. Right-click the cell containing the data that you want to copy and click **[!UICONTROL Copy]**.
-1. Right-click the cell into which you want to paste the copied data and click **[!UICONTROL Paste]**.
+1. 右键单击包含要复制的数据的单元格，然后单击&#x200B;**[!UICONTROL Copy]**。
+1. 右键单击要将复制的数据粘贴到其中的单元格，然后单击&#x200B;**[!UICONTROL Paste]**。
 
 Data Workbench会自动更新新单元格中的引用以引用相应的列和行。
 
 **从一组单元格复制并粘贴到另一组单元格**
 
 1. 选择要复制的数据所在的单元格。
-1. Right-click the cells containing the data that you want to copy and click **[!UICONTROL Copy]**.
-1. Right-click the first cell into which you want to start pasting the copied data and click **[!UICONTROL Paste]**. 数据便会粘贴到第一个单元格及其下面的单元格。
+1. 右键单击包含要复制的数据的单元格，然后单击&#x200B;**[!UICONTROL Copy]**。
+1. 右键单击要开始粘贴复制数据的第一个单元格，然后单击&#x200B;**[!UICONTROL Paste]**。 数据便会粘贴到第一个单元格及其下面的单元格。
 
 Data Workbench会自动更新新单元格中的引用以引用相应的列和行。
 
 **插入列**
 
-* 右键单击列，然后单击 **[!UICONTROL Insert Column]**。 此时便会在所选列的左侧插入新列。
+* 右键单击列，然后单击&#x200B;**[!UICONTROL Insert Column]**。 此时便会在所选列的左侧插入新列。
 
 **删除列**
 
-* Right-click the column that you want to delete and click **[!UICONTROL Delete Column]**. 此时该列便会被删除。
+* 右键单击要删除的列，然后单击&#x200B;**[!UICONTROL Delete Column]**。 此时该列便会被删除。
 
 **插入行**
 
-* 右键单击某行并单击 **[!UICONTROL Insert Row]**。 此时便会在所选行的上面插入新行。
+* 右键单击某行，然后单击&#x200B;**[!UICONTROL Insert Row]**。 此时便会在所选行的上面插入新行。
 
 **删除行**
 
-* Right-click the row that you want to delete and click **[!UICONTROL Delete Row]**. 此时该行便会被删除。
+* 右键单击要删除的行，然后单击&#x200B;**[!UICONTROL Delete Row]**。 此时该行便会被删除。
 
 **调整列大小**
 
@@ -61,7 +62,7 @@ Data Workbench会自动更新新单元格中的引用以引用相应的列和行
 
 **设置单元格格式**
 
-1. Right-click the cell and click **[!UICONTROL Format]**.
+1. 右键单击单元格，然后单击&#x200B;**[!UICONTROL Format]**。
 
    ![](assets/mnu_Worksheet_Format.png)
 
@@ -76,7 +77,7 @@ Data Workbench会自动更新新单元格中的引用以引用相应的列和行
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>数字 </p> </td> 
+   <td colname="col1"> <p>数值 </p> </td> 
    <td colname="col2"> <p>对数据应用所选择的数字格式，如时间、日期、百分比或小数。 </p> <p>单击<span class="uicontrol">默认</span>可删除所选格式。 </p> </td> 
   </tr> 
   <tr> 
@@ -158,4 +159,3 @@ Data Workbench会自动更新新单元格中的引用以引用相应的列和行
   </tr> 
  </tbody> 
 </table>
-
