@@ -1,28 +1,29 @@
 ---
-description: 使新的地形层可在地球可视化上显示的步骤。
-solution: Analytics
-title: 使新地形图像层可用
-topic: Data workbench
+description: 使新地形层可在地球可视化中显示的步骤。
+title: 使新地形图像图层可用
 uuid: aeeb4ab0-f55c-47b8-96e4-eafd4df4d68a
+exl-id: 76374298-ed65-4fcf-b40b-be7c15784f40
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 25%
 
 ---
 
+# 使新地形图像图层可用{#making-a-new-terrain-image-layer-available}
 
-# 使新地形图像层可用{#making-a-new-terrain-image-layer-available}
+使新地形层可在地球可视化中显示的步骤。
 
-使新的地形层可在地球可视化上显示的步骤。
-
-1. In the Profiles\*profile name*\Maps folder within the **[!UICONTROL Insight Server]** installation directory, place the layer file and the supporting image files.
-1. Edit the [!DNL order.txt] file in the Profiles\*profile name*\Maps folder to reflect the order in which you want the layers to display. 默认情况下，层会按其名称以词典顺序显示。
+1. 在&#x200B;**[!UICONTROL Insight Server]**&#x200B;安装目录中的“用户档案”\*用户档案名称*\Maps文件夹中，放置图层文件和支持图像文件。
+1. 编辑用户档案\*用户档案名称*\Maps文件夹中的[!DNL order.txt]文件，以反映您希望图层显示的顺序。 默认情况下，层会按其名称以词典顺序显示。
 
    >[!NOTE]
    >
-   >When editing the [!DNL order.txt] file, take care not to cover up map layers that you want to show.
+   >编辑[!DNL order.txt]文件时，请注意不要覆盖要显示的映射图层。
 
-   For more information about using [!DNL order.txt] files, see the Configuring Interface and Analysis Features chapter of the *Data Workbench User Guide*.
+   有关使用[!DNL order.txt]文件的详细信息，请参阅《Data Workbench用户指南》**&#x200B;的“配置接口和分析功能”一章。
 
-1. In data workbench, select the desired profile by right-clicking the workspace title bar and clicking **[!UICONTROL Switch Profile]** > *&lt;**[!UICONTROL profile name]**>*.
-1. Right-click the workspace title bar and click **[!UICONTROL Work Online]**. X显示在旁边 [!DNL Work Online]。
+1. 在Data Workbench中，右键单击工作区标题栏，然后单击&#x200B;**[!UICONTROL Switch Profile]** > *&lt;**[!UICONTROL profile name]**>*，选择所需的用户档案。
+1. 右键单击工作区标题栏，然后单击&#x200B;**[!UICONTROL Work Online]**。 [!DNL Work Online]旁边将显示X。
 1. 打开一个工作区，然后在地球可视化上右键单击并选择新层。随即会在层名称旁边显示一个 X。
