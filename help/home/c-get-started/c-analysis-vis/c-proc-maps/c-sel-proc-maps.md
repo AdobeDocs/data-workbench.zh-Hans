@@ -1,16 +1,17 @@
 ---
 description: 可以在流程图中进行选择，以创建包含或排除与某个特定节点关联的数据的过滤器。
-solution: Analytics
-title: 从流程图中进行选择
-topic: Data workbench
+title: 从流程图中选择
 uuid: 7fd00090-c9ab-4bb6-8584-7de7b6f4b68c
+exl-id: 8ede395f-906a-49e0-8ff8-b43a326275e5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 81%
 
 ---
 
-
-# 从流程图中进行选择{#make-a-selection-from-a-process-map}
+# 从流程图中选择{#make-a-selection-from-a-process-map}
 
 可以在流程图中进行选择，以创建包含或排除与某个特定节点关联的数据的过滤器。
 
@@ -18,7 +19,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->您可以更改流程图的默认组维。 See [Configuring Process Maps](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6).
+>您可以更改流程图的默认组维。 请参阅[配置流程图](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6)。
 
 当您在流程图中根据节点做出选择时，即选择了包含该节点的组维度的所有元素。为了更好地了解组维度的作用，考虑以下示例：
 
@@ -30,9 +31,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. 右键单击流程图中的任何节点。
 1. 单击以下选项之一，以基于该节点进行选择：
 
-   * **[!UICONTROL Select]*** **[!UICONTROL group dimension name +s]*** **[!UICONTROL through node name]**:过滤数据以包括通过节点的组维的所有元素，方法是过滤掉未通过节点的所有会话。
+   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL through node name]**:过滤器数据，以包括通过节点传递的组维度的所有元素，方法是过滤掉未通过节点的所有会话。
 
-   * **[!UICONTROL Select]*** **[!UICONTROL group dimension name +s]*** **[!UICONTROL NOT through node name]**:通过过滤掉通过节点的所有会话，过滤数据以包括未通过节点的组维的所有元素。
+   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL NOT through node name]**:过滤器数据，以包括未通过节点的组维度的所有元素，方法是过滤掉通过节点的所有会话。
 
 ![](assets/vis_2DProcessMap_Selections_Movie.png)
 
@@ -41,4 +42,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 当在 3D 流程图中进行选择时，进行选择的节点将带有圆圈。每个长方块周围出现的基准帮助您比较带有选择和不带选择的量度值。请参阅 [了解基准](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914).
 
 ![](assets/vis_3DProcessMap_Selection.png)
-
