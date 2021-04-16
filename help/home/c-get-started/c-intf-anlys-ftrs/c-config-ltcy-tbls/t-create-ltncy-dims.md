@@ -1,14 +1,15 @@
 ---
 description: 延迟维度是通过一个可计数父维度（如“会话”）和一个时间维度（如“日”）构建的。
-solution: Analytics
 title: 创建延迟维度
-topic: Data workbench
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
+exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 88%
 
 ---
-
 
 # 创建延迟维度{#create-a-latency-dimension}
 
@@ -18,9 +19,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **编辑延迟维度**
 
-1. 在文本编辑器（如记事本）中打开您创建的延迟表格。It is located in the User > `working profile name` > Work folder within your Data Workbench installation directory.
+1. 在文本编辑器（如记事本）中打开您创建的延迟表格。它位于您的Data Workbench安装目录中的User > `working profile name` > Work文件夹中。
 
-   定义的延迟维度包括以下示例所示的参数。（您的延迟维度定义可能包含其他参数。）指示 [!DNL line entity = LatencyDim:] 延迟维度定义的开始。
+   定义的延迟维度包括以下示例所示的参数。（您的延迟维度定义可能包含其他参数。）[!DNL line entity = LatencyDim:]表示延迟维度定义的开始。
 
    ```
    entity = LatencyDim:
@@ -54,7 +55,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
       <td colname="col2"> <p>一个作为父延迟维度的可计数维度。示例包括 Session（会话）、Visitor（访客）和 Page View（页面查看）。 </p> </td> 
    </tr> 
    <tr> 
-      <td colname="col1"> <p>Clip（剪辑） </p> </td> 
+      <td colname="col1"> <p>剪辑 </p> </td> 
       <td colname="col2"> <p>与延迟维度级别有一对多关系的一个可计数维度。延迟不可跨越该维度边界计算。例如，如果您指定页面查看级别和会话剪辑，则会计算与事件相同会话期间发生的页面查看的延迟。 </p> <p>有关一对多（简单）维度的信息，请参阅《数据集配置指南》<i></i>。 </p> </td> 
    </tr> 
    <tr> 
@@ -80,7 +81,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    </tbody> 
    </table>
 
-1. Save the [!DNL .vw] file to the User\*working profile name*\Work folder.
+1. 将[!DNL .vw]文件保存到User\*Working用户档案名称*\Work文件夹中。
 
    以下是默认延迟维度的设置：
 
