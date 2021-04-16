@@ -1,16 +1,17 @@
 ---
 description: 图表可以跨一个或两个数据维度显示一个或多个量度。
-solution: Analytics
-title: 图表
-topic: Data workbench
+title: 图形
 uuid: 6029cd1a-4fe1-41fa-9594-2c5cee1f4882
+exl-id: 39fadfd8-646b-4959-b016-87ff201c66e7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 100%
 
 ---
 
-
-# 图表{#graphs}
+# 图形{#graphs}
 
 图表可以跨一个或两个数据维度显示一个或多个量度。
 
@@ -40,4 +41,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 要向图表可视化添加标注，您需要右键单击可视化底部（基轴）以打开一个菜单，并选择&#x200B;**添加标注**。
 
 ![](assets/visualization_callout_linegraph.png)
-
