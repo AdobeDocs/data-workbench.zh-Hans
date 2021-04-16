@@ -1,14 +1,15 @@
 ---
 description: 若要将日志文件处理为日志源，需要在日志处理数据集包含文件中定义解码器，以从日志条目中提取数据字段。
-solution: Analytics
 title: 文本文件解码器组
-topic: Data workbench
 uuid: 3ff9700b-4f34-4098-8827-6856897bdb28
+exl-id: e9f6e02e-7150-455f-96f0-f34d98cc31b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 68%
 
 ---
-
 
 # 文本文件解码器组{#text-file-decoder-groups}
 
@@ -29,27 +30,27 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **向文本文件解码器组中添加正则表达式解码器**
 
-1. 按照编辑 [!DNL Log Processing Dataset Include] 现有数据集包含文 [件中所述打开文件](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077) ，然后添加一个文本文件解码器组。 请参阅表条目解 [码器组](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md#concept-999475a22519432e98844622ca95b6ab)。
+1. 打开[编辑现有数据集包含文件](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077)中所述的[!DNL Log Processing Dataset Include]文件，并添加一个文本文件解码器组。 请参见表条目[解码器组](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md#concept-999475a22519432e98844622ca95b6ab)。
 
-1. 右键单击 **[!UICONTROL Decoders]** 新创建的解码器组下方，然后单击 **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**。
+1. 右键单击新创建的解码器组下的&#x200B;**[!UICONTROL Decoders]**，然后单击&#x200B;**[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**。
 
 1. 指定以下信息：
 
-   * **字段：**&#x200B;日志文件中的字段列表。If any of the fields defined here are to be passed to the transformation phase of dataset construction, those fields must be listed in the Fields parameter of one of the [!DNL Log Processing Dataset Include] files for the dataset. 自定义字段名称必须以“x-”开头。
+   * **字段：**&#x200B;日志文件中的字段列表。如果要将此处定义的任何字段传递到数据集构建的转换阶段，则这些字段必须列在数据集[!DNL Log Processing Dataset Include]文件之一的“字段”参数中。 自定义字段名称必须以“x-”开头。
 
    * **名称：**&#x200B;解码器的可选标识符。
    * **正则表达式：**&#x200B;用于从文件中的每一行提取所需的字段。
 
 1. 对于您想要添加到组中的任何其他解码器重复第 4 步和第 5 步。
-1. To save the [!DNL Log Processing Dataset Include] file, right-click **[!UICONTROL (modified)]** at the top of the window and click **[!UICONTROL Save]**.
+1. 要保存[!DNL Log Processing Dataset Include]文件，请右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**，然后单击&#x200B;**[!UICONTROL Save]**。
 
-1. 要使本地所做的更改生效，请在 [!DNL Profile Manager]列中右键单击该文件的复选标 [!DNL User] 记。 单击 **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]***> ，其中配置文件名称是数据集配置文件或数据集包含文件所属的继承配置文件的名称。
+1. 要使本地所做的更改生效，请在[!DNL Profile Manager]列中右键单击[!DNL User]列中文件的复选标记。 单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*，其中用户档案名称是数据集用户档案或数据集包含文件所属的继承用户档案的名称。
 
 请勿将已修改的配置文件保存到 Adobe 提供的任何内部配置文件中，因为当您安装这些配置文件的更新时，系统会覆盖您所做的更改。
 
 >[!NOTE]
 >
->给定日志文件可以有多个正则表达式解码器。 定义解码器的顺序很重要：与日志文件中某一行匹配的第一个解码器是用于对该行进行解码的解码器。
+>给定的日志文件可以具有多个常规表达式解码器。 定义解码器的顺序很重要：与日志文件中某一行匹配的第一个解码器是用于对该行进行解码的解码器。
 
 此示例说明了如何使用正则表达式解码器从以制表符分隔的文本文件中提取数据字段。您可以通过使用制表分隔符定义分隔解码器来达到相同的效果。
 
@@ -63,20 +64,20 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **向文本文件解码器组中添加分隔解码器**
 
-1. 按照编辑 [!DNL Log Processing Dataset Include] 现有数据集包含文 [件中所述打开文件](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077) ，然后添加一个文本文件解码器组。 请参阅表条目解 [码器组](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md#concept-999475a22519432e98844622ca95b6ab)。
+1. 打开[编辑现有数据集包含文件](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077)中所述的[!DNL Log Processing Dataset Include]文件，并添加一个文本文件解码器组。 请参见表条目[解码器组](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md#concept-999475a22519432e98844622ca95b6ab)。
 
-1. 右键单击 **[!UICONTROL Decoders]** 新创建的解码器组下方，然后单击 **[!UICONTROL Add new]** > **[!UICONTROL Delimited]**。
+1. 右键单击新创建的解码器组下的&#x200B;**[!UICONTROL Decoders]**，然后单击&#x200B;**[!UICONTROL Add new]** > **[!UICONTROL Delimited]**。
 
 1. 指定以下信息：
 
-   * **字段：**&#x200B;日志文件中的字段列表。If any of the fields defined here are to be passed to the transformation phase of dataset construction, those fields must be listed in the Fields parameter of one of the [!DNL Log Processing Dataset Include] files for the dataset. 自定义字段名称必须以“x-”开头。
+   * **字段：**&#x200B;日志文件中的字段列表。如果要将此处定义的任何字段传递到数据集构建的转换阶段，则这些字段必须列在数据集[!DNL Log Processing Dataset Include]文件之一的“字段”参数中。 自定义字段名称必须以“x-”开头。
 
    * **分隔符：**&#x200B;在输出文件中用于分隔字段的字符。
 
 1. 对于您想要添加到组中的任何其他解码器重复第 4 步和第 5 步。
-1. To save the [!DNL Log Processing Dataset Include] file, right-click **[!UICONTROL (modified)]** at the top of the window and click **[!UICONTROL Save]**.
+1. 要保存[!DNL Log Processing Dataset Include]文件，请右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**，然后单击&#x200B;**[!UICONTROL Save]**。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. 要使本地所做的更改生效，请在[!DNL Profile Manager]列中右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*，其中用户档案名称是数据集用户档案或数据集包含文件所属的继承用户档案的名称。
 
 >[!NOTE]
 >
@@ -85,4 +86,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 此示例说明了如何使用分隔解码器从包含电影相关数据的逗号分隔文本文件中提取数据字段。
 
 ![](assets/cfg_LogProcessingInclude_DelimitedDecoder.png)
-
