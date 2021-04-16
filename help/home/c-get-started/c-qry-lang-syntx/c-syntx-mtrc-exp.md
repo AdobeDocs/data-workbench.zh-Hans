@@ -1,31 +1,29 @@
 ---
 description: 可以使用“量度编辑器”编辑量度，并将其保存在配置文件的“量度”目录中。
-solution: Analytics
 title: 量度表达式的语法
-topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
+exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 91%
 
 ---
 
-
 # 量度表达式的语法{#syntax-for-metric-expressions}
 
 可以使用“量度编辑器”编辑量度，并将其保存在配置文件的“量度”目录中。
 
-有关详细信息，请参 [阅创建和编辑派生指标](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)。 量度表达式还可以在工作表中使用。有关详细信息，请参阅 [工作表](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). 可以使用以下语法来定义量度表达式。
+有关详细信息，请参阅[创建和编辑派生量度](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)。 量度表达式还可以在工作表中使用。有关详细信息，请参阅 [工作表](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). 可以使用以下语法来定义量度表达式。
 
 注释：
 
 1. 带下划线的字词应该在表达式文本中逐字输入。
-1. The form `{TEXT}?` represents optional text.
-1. The form `{TEXT}*` represents text that may occur zero or more times.
-1. The form `{A | B | C |...}` represents text that consists of exactly one of the given options, such as A or B or C....
-1. The form `[A,B)` represents a range of numbers, from A up to but not including B.
+1. 表单`{TEXT}?`表示可选文本。
+1. 表单`{TEXT}*`表示可能发生零次或多次的文本。
+1. 表单`{A | B | C |...}`表示文本，该文本仅包含给定选项之一，如A或B或C....
+1. 表单`[A,B)`表示从A到（但不包括B）的数字范围。
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
@@ -34,7 +32,7 @@ ht-degree: 91%
    <td colname="col2"> <p>标识符会引用一个已命名的量度。有关规范合法标识符的规则，请参阅 <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> 标识符的语法 </a>. </p> <p>示例：Revenue = Total_Price </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>(量度) </p> </td> 
+   <td colname="col1"> <p>(指标) </p> </td> 
    <td colname="col2"> <p>(Metric) 的结果与 Metric 的结果相同。括号指定表达式中的运算顺序。 </p> <p>示例：Average = (A + B) / 2 </p> </td> 
   </tr> 
   <tr> 
@@ -43,7 +41,7 @@ ht-degree: 91%
   </tr> 
   <tr> 
    <td colname="col1"> <p>A - B </p> </td> 
-   <td colname="col2"> <p>量度 A 和 B 结果的差。 </p> <p>示例：利润=收入——成本 </p> </td> 
+   <td colname="col2"> <p>量度 A 和 B 结果的差。 </p> <p>示例：利润=收入 — 成本 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>A * B </p> </td> 
@@ -71,7 +69,7 @@ ht-degree: 91%
   </tr> 
   <tr> 
    <td colname="col1"> <p>log (B, X) </p> </td> 
-   <td colname="col2"> <p>数学算法函数：量度 X 是参数，量度 B 是基数。 </p> <p>示例：dB = 20*log（振幅，10） </p> </td> 
+   <td colname="col2"> <p>数学算法函数：量度 X 是参数，量度 B 是基数。 </p> <p>示例：dB = 20*log(Amplitude，10) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metric[Filter] </p> </td> 
@@ -119,4 +117,3 @@ ht-degree: 91%
   </tr> 
  </tbody> 
 </table>
-
