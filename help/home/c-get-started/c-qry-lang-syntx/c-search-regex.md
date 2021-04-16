@@ -1,20 +1,21 @@
 ---
 description: Data Workbench 利用正则表达式 (regex) 执行搜索和分类操作。
-solution: Analytics
 title: 正则表达式
-topic: Data workbench
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
+exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 67%
 
 ---
 
-
-# Regular expressions{#regular-expressions}
+# 正则表达式{#regular-expressions}
 
 Data Workbench 利用正则表达式 (regex) 执行搜索和分类操作。
 
-Within the **[!UICONTROL Search]** field you can perform a search following the &quot;re:&quot; statement using common expressions, for example:
+在&#x200B;**[!UICONTROL Search]**&#x200B;字段中，您可以使用常见表达式执行“re：”语句后面的搜索，例如：
 
 ```
 <b>re: *.s</b>
@@ -43,6 +44,6 @@ Within the **[!UICONTROL Search]** field you can perform a search following the 
  </tbody> 
 </table>
 
-其他常见的正则表达式也可以用于创建更加复杂的搜索字符串。正则表达式可用于所有Data Workbench搜索字段（包括查询实体面板）。
+其他常见的正则表达式也可以用于创建更加复杂的搜索字符串。所有表达式搜索字段(包括查询实体面板)中均使用常规Data Workbench。
 
 请参阅[正则表达式](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions)了解详细信息。
