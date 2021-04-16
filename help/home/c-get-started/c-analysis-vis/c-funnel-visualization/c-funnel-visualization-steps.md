@@ -1,14 +1,15 @@
 ---
 description: 按照以下步骤，构建新的漏斗可视化。
-solution: Analytics
 title: 构建漏斗
-topic: Data workbench
 uuid: 88afa09d-42ff-4e3b-b5cc-d74e01f4fc39
+exl-id: 24b63998-3aad-4ddf-b2d2-78dd0df9a510
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 81%
 
 ---
-
 
 # 构建漏斗{#building-a-funnel}
 
@@ -20,17 +21,17 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/dimension_table_pagename.png)
 
-   For example, right-click on the workspace and select **[!UICONTROL Table > Site Content > Page Name]**
+   例如，右键单击工作区并选择&#x200B;**[!UICONTROL Table > Site Content > Page Name]**
 
 1. 打开漏斗可视化。
 
-   For example, right-click on the workspace and select **[!UICONTROL Visualization > Funnel]**.
+   例如，右键单击工作区，然后选择&#x200B;**[!UICONTROL Visualization > Funnel]**。
 
    ![](assets/step2-funnel.png)
 
-1. Add a dimension by selecting the element, then drag while then holding **[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**.
+1. 通过选择元素，然后拖动，然后按住&#x200B;**[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**&#x200B;键来添加维度。
 
-1. 将元素拖动到目标区域上方的位置 **[!UICONTROL Drag Dimension Element Here]**。
+1. 将元素拖动到目标区域&#x200B;**[!UICONTROL Drag Dimension Element Here]**&#x200B;上方的位置。
 
    ![](assets/step4-funnel.png)
 
@@ -48,4 +49,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 从漏斗中，可以识别流失率、途经率，以及转化销售和遵循活动或内容路径的客户百分比。有关其他信息，可以打开[路径浏览器](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119)，查看客户到达选定页面之前浏览的页面、以及客户离开后遵循的路径的详细列表。
 
-查看其他 [漏斗功能](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3)。
+请参阅其他[漏斗功能](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3)。
