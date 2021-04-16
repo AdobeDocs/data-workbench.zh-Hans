@@ -1,16 +1,17 @@
 ---
 description: 可以显示路径浏览器中路径的起点和终点。
-solution: Analytics
-title: 显示路径的开始和结束
-topic: Data workbench
+title: 显示路径的开始和结尾
 uuid: b5294111-393c-44d9-a641-18ecd566797f
+exl-id: 08604c56-f151-49e6-8290-50f8fa04c802
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 84%
 
 ---
 
-
-# 显示路径的开始和结束{#display-the-start-and-end-of-paths}
+# 显示路径的开始和结尾{#display-the-start-and-end-of-paths}
 
 可以显示路径浏览器中路径的起点和终点。
 
@@ -18,7 +19,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **启用或禁用起点和终点的显示**
 
-* 右键单击路径浏览器的上边框，然后单击 **[!UICONTROL Display]** > *&lt;**[!UICONTROL Group dimension name]**>***[!UICONTROL starts and ends]**。 启用后，“*组维度名称*&#x200B;起点和终点”的左侧会显示一个 X。
+* 右键单击路径浏览器的上边框，然后单击&#x200B;**[!UICONTROL Display]** > *&lt;**[!UICONTROL Group dimension name]**>* **[!UICONTROL starts and ends]**。 启用后，“*组维度名称*&#x200B;起点和终点”的左侧会显示一个 X。
 
 例如，如果您的路径浏览器显示每个会话的页面顺序，则您将选择显示“会话起点和终点”。
 
@@ -26,5 +27,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->不能将开始或结束节点设置为路径浏览器的根，也不能选择开始或结束节点。
-
+>不能将开始或结束节点设置为路径浏览器的根节点，也不能选择开始或结束节点。
