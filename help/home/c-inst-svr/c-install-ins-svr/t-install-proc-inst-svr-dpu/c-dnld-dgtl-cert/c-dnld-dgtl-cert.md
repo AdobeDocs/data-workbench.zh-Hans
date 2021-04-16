@@ -1,16 +1,15 @@
 ---
 description: 有关数字证书的常规信息及其下载和安装步骤。
-solution: Analytics
 title: 下载并安装数字证书
 uuid: ac484e96-21dc-4643-ae74-01ac957e30ee
-translation-type: ht
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
-workflow-type: ht
+exl-id: 8aae9b63-7df0-4725-9833-711246bbe746
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 100%
 
 ---
-
 
 # 下载并安装数字证书{#downloading-and-installing-the-digital-certificates}
 
@@ -86,4 +85,3 @@ Adobe 使用 X.509 数字证书来标识和验证构成实施的客户端和服�
 1. 将下载的证书文件重命名为：
 
 [!DNL server_cert.pem]
-
