@@ -1,14 +1,15 @@
 ---
 description: 可计数维度的元素可由系统计算。
-solution: Analytics
 title: 可计数维度
-topic: Data workbench
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
+exl-id: c607c15d-de85-4daf-af76-79b460f51b38
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '685'
+ht-degree: 96%
 
 ---
-
 
 # 可计数维度{#countable-dimensions}
 
@@ -20,7 +21,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->如果您需要一个只提供某项计数的维，则应使用一个数字维，并且运算为COUNT。 请参 [阅数字维](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed)。
+>如果您需要只提供某项计数的维，则应将数值维与COUNT运算一起使用。 请参阅[数字Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed)。
 
 可计数维度由以下参数定义：
 
@@ -29,7 +30,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -39,12 +40,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关扩展维度的说明。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 输入字段可用于创建可计数维度的条件。如果指定，则会有一个条件限制可向数据集架构中的维度及其所有子项显示的日志条目集。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -73,4 +74,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 此示例还使用从网站流量收集的事件数据说明对可计数维度的定义，但它有一个定义的 Key（键）参数。“会话”可计数维度使用 x-session-key 字段作为键。（x-session-key 字段是 [!DNL Sessionize] 转换的输出，并且对于每个会话都有一个唯一的值。）“访客”维度（父项）元素与 x-session-key 字段的每个唯一组合是“会话”维度的一个元素。
 
 ![](assets/cfg_Transformation_Dim_Countable2.png)
-
