@@ -1,16 +1,17 @@
 ---
 description: 过滤器编辑器是用于构建和编辑过滤器的特殊可视化。
-solution: Analytics
 title: 过滤器编辑器
-topic: Data workbench
 uuid: c4e99e44-1927-4131-92e9-111c76bdc3e2
+exl-id: 9009c760-8726-4234-b85b-727aeae761bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 76%
 
 ---
 
-
-# Filter editors{#filter-editors}
+# 过滤器编辑器{#filter-editors}
 
 过滤器编辑器是用于构建和编辑过滤器的特殊可视化。
 
@@ -22,9 +23,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ![](assets/vis_FilterEditor_Blank.png)
 
-In addition, you can use the filter editor to open and edit any [!DNL .filter] file.
+此外，还可以使用过滤器编辑器打开和编辑任何[!DNL .filter]文件。
 
 >[!NOTE]
 >
 >首次打开过滤器时，过滤器编辑器会更新过滤器的定义以匹配过滤器编辑器格式。
-
