@@ -1,14 +1,15 @@
 ---
 description: 数据集配置是指编辑配置文件（其参数为数据集构建提供规则）的过程。
-solution: Analytics
 title: 了解数据集配置
-topic: Data workbench
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
+exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 86%
 
 ---
-
 
 # 了解数据集配置{#understanding-dataset-configuration}
 
@@ -30,15 +31,15 @@ c_req_config_files.xml
 
    有关将继承配置文件添加到数据集配置文件 [!DNL Profile.cfg] 文件的说明，请参阅《服务器产品安装和管理指南》**。有关安装 Insight Server 群集或将数据集配置文件配置为在 Insight Server 群集上运行的信息，请参阅《服务器产品安装和管理指南》**。
 
-* **Dataset\Log Processing.cfg：**&#x200B;控制数据集构建过程中的日志处理阶段。请参阅 [日志处理](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-8a63892878004dc389c7dad784fcb061)。 有关该文件的详细信 [!DNL Log Processing.cfg] 息，请参阅 [日志处理配置文件](../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
+* **Dataset\Log Processing.cfg：**&#x200B;控制数据集构建过程中的日志处理阶段。请参阅[日志处理](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-8a63892878004dc389c7dad784fcb061)。 有关[!DNL Log Processing.cfg]文件的详细信息，请参阅[日志处理配置文件](../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
 
-* **Dataset\Transformation.cfg：**&#x200B;控制数据集构建过程中的转换阶段。请参阅 [转换](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda). [!DNL Transformation.cfg] 文件通常配置数据集以进行特定于配置文件的分析。有关该文件的详细信 [!DNL Transformation.cfg] 息，请参阅 [转换配置文件](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md)。
+* **Dataset\Transformation.cfg：**&#x200B;控制数据集构建过程中的转换阶段。请参阅[Transformation](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda)。 [!DNL Transformation.cfg] 文件通常配置数据集以进行特定于配置文件的分析。有关[!DNL Transformation.cfg]文件的详细信息，请参阅[转换配置文件](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md)。
 
-* **数据集包含文件：** 文 [!DNL dataset include] 件包含数据集配置文件或文件中包含的参数子集， [!DNL Log Processing.cfg] 但 [!DNL Transformation.cfg] 是在继承的配置文件中存储和管理。 [!DNL Dataset include] 文件是主数据集配置文件的补充。 有关详细信息，请参阅 [数据集包含文件](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
+* **数据集包含文** 件： [!DNL dataset include] 文件包含数据集用户档案或文件中包含的 [!DNL Log Processing.cfg] 参 [!DNL Transformation.cfg] 数子集，但在继承用户档案中存储和管理。[!DNL Dataset include] 文件是主数据集配置文件的补充。有关详细信息，请参阅[数据集包含文件](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
 
-The dataset profile provided to you during the implementation of your Adobe application contains a set of dataset configuration files that you can open, edit, and save using the [!DNL Profile Manager].
+在实施Adobe用户档案过程中提供给您的数据集包含一组数据集配置文件，您可以使用[!DNL Profile Manager]打开、编辑和保存这些文件。
 
-For information about the [!DNL Profile Manager], see the *Insight User Guide*.
+有关[!DNL Profile Manager]的信息，请参阅&#x200B;*Insight用户指南*。
 
 <!--
 c_addl_config_files.xml
@@ -46,11 +47,11 @@ c_addl_config_files.xml
 
 以下文件可让您控制数据集构建过程的其他方面（尽管并非所有数据集都需要）：
 
-* **：**[!DNL Log Processing Mode.cfg]Log Processing Mode.cfg 文件可让您暂停将数据处理到数据集中、指定离线源或指定 Data Workbench Server 保存其状态文件的频率。See [Additional Configuration Files](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
+* **：**[!DNL Log Processing Mode.cfg]Log Processing Mode.cfg 文件可让您暂停将数据处理到数据集中、指定离线源或指定 Data Workbench Server 保存其状态文件的频率。请参阅[其他配置文件](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)。
 
-* **：**[!DNL Server.cfg]Server.cfg 文件为连接到 Data Workbench Server 的 Data Workbench 计算机指定默认数据缓存大小（以字节为单位）。See [Additional Configuration Files](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
+* **：**[!DNL Server.cfg]Server.cfg 文件为连接到 Data Workbench Server 的 Data Workbench 计算机指定默认数据缓存大小（以字节为单位）。请参阅[其他配置文件](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)。
 
-* **Transform.cfg 和 Transform Mode.cfg：**&#x200B;仅当您获得在 Adobe 应用程序中使用数据转换功能的许可时，这些文件才可用。[!DNL Transform.cfg] 文件包含为转换功能定义日志源和数据转换的参数。您定义的转换可处理源数据，并将其输出为您指定的格式。[!DNL Insight Transform Mode.cfg] 文件可让您暂停将数据处理到数据集中、指定离线源或指定运行转换功能的 Insight Server 保存其状态文件的频率。请参阅 [转换功能](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html)。
+* **Transform.cfg 和 Transform Mode.cfg：**&#x200B;仅当您获得在 Adobe 应用程序中使用数据转换功能的许可时，这些文件才可用。[!DNL Transform.cfg] 文件包含为转换功能定义日志源和数据转换的参数。您定义的转换可处理源数据，并将其输出为您指定的格式。[!DNL Insight Transform Mode.cfg] 文件可让您暂停将数据处理到数据集中、指定离线源或指定运行转换功能的 Insight Server 保存其状态文件的频率。请参阅[转换功能](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html)。
 
 <!--
 c_next_steps.xml
@@ -68,7 +69,7 @@ c_next_steps.xml
  <tbody> 
   <tr> 
    <td colname="col1"> <p>定义日志源 </p> </td> 
-   <td colname="col2"> <p><a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea"> Log Sources（日志源） </a> </p> </td> 
+   <td colname="col2"> <p><a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea"> 日志源 </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>确定哪些日志条目会在日志处理过程中进入数据集 </p> </td> 
@@ -104,7 +105,7 @@ c_next_steps.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p>创建扩展维度 </p> </td> 
-   <td colname="col2"> <p> <a href="../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md"> Extended Dimensions（扩展维度） </a> </p> <p> <a href="../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-create-new-dataset-inc-files.md#task-b29f30605c374a6ca747ac843337b06e"> 创建新数据集包含文件 </a> </p> <p> <a href="../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace"> 转换数据集包含文件 </a> </p> </td> 
+   <td colname="col2"> <p> <a href="../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md"> 扩展维度 </a> </p> <p> <a href="../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-create-new-dataset-inc-files.md#task-b29f30605c374a6ca747ac843337b06e"> 创建新数据集包含文件 </a> </p> <p> <a href="../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace"> 转换数据集包含文件 </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>定义要在日志处理过程或转换过程使用的参数 </p> </td> 
@@ -128,4 +129,3 @@ c_next_steps.xml
   </tr> 
  </tbody> 
 </table>
-
