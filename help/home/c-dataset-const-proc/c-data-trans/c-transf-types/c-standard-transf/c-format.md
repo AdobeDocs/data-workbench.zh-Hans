@@ -1,16 +1,17 @@
 ---
 description: Format 转换获取一组输入并设置它们的格式，以创建与给定结构匹配的输出。
-solution: Analytics
 title: 格式
-topic: Data workbench
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
+exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 100%
 
 ---
 
-
-# 格式{#format}
+# Format{#format}
 
 Format 转换获取一组输入并设置它们的格式，以创建与给定结构匹配的输出。
 
@@ -21,7 +22,7 @@ Format 转换获取一组输入并设置它们的格式，以创建与给定结�
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -31,12 +32,12 @@ Format 转换获取一组输入并设置它们的格式，以创建与给定结�
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关转换的说明。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 应用此转换的条件。 </td> 
    <td colname="col3"></td> 
   </tr> 
