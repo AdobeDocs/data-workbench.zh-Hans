@@ -1,14 +1,15 @@
 ---
 description: 时间维度允许您基于为 Input Time (1970 epoch)（输入时间（1970 纪元））参数指定的任何时间戳字段，创建一组定期或绝对本地时间维度（例如“日”、“周日期”、“每天时间”、“预订时间”等）。
-solution: Analytics
 title: 时间维度
-topic: Data workbench
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
+exl-id: f9534b24-3a16-4220-bac2-bc541e121005
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 100%
 
 ---
-
 
 # 时间维度{#time-dimensions}
 
@@ -23,7 +24,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -33,7 +34,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关扩展维度的说明。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -42,9 +43,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"> <p>可以将维度名称指定为以下任何周期： </p> <p> 
      <ul id="ul_EB0837DD66BE4004A615A6029EEF4CD5"> 
       <li id="li_2E46E6DB004E443C8CC831DCEE743D60"> 日 </li> 
-      <li id="li_F59A27779EBE4E2A84E0972EE8BCDFA7"> 周日期 </li> 
+      <li id="li_F59A27779EBE4E2A84E0972EE8BCDFA7"> 每周时间 </li> 
       <li id="li_7D74CD547ED1449091EF7B2E0E8C46DE"> 小时 </li> 
-      <li id="li_706AF9D385CB44C098DEBACA3BA2CD4B"> 每天时间 </li> 
+      <li id="li_706AF9D385CB44C098DEBACA3BA2CD4B"> 小时 </li> 
       <li id="li_76FBF69B25954885A0192D308A155E41"> 月 </li> 
       <li id="li_3C16955BE5C54291A25E25CD31259661"> 周 </li> 
      </ul> </p> <p> 您在此处输入的名称是显示在 Data Workbench 的维度菜单和可视化中的名称。如果您将时间维度的名称保留为空，则数据集中将不会创建该维度。 </p> </td> 
@@ -76,4 +77,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 此示例基于用户定义的输入字段 x-time-1970 创建了一组时间维度。这一组时间维度名为“会话时间”。由于每个维度的父项都是“会话”维度，因此时间维度的每个元素都与某个会话开始的时间相对应。Week Start Day（每周开始日期）参数指定了“周”维度的每一周都从星期一开始。
 
 ![](assets/cfg_Transformation_Dim_TimeDim.png)
-
