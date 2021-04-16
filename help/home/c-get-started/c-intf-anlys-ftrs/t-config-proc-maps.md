@@ -1,27 +1,28 @@
 ---
 description: 可以将流程图配置为使用基本维度、组维度、级别维度和对应用程序和数据集有益的量度的组合。
-solution: Analytics
 title: 配置流程图
-topic: Data workbench
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
+exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 63%
 
 ---
-
 
 # 配置流程图{#configure-a-process-map}
 
 可以将流程图配置为使用基本维度、组维度、级别维度和对应用程序和数据集有益的量度的组合。
 
-After you configure a process map, it is listed with other process maps in the [!DNL Add Visualization menu].
+配置进程映射后，它将与[!DNL Add Visualization menu]中的其他进程映射一起列出。
 
-1. In the [!DNL Profile Manager], click **[!UICONTROL Menu]**, click **[!UICONTROL Add Visualization]**, then click the type of process map type that you want to configure (2D Metric Map, 2D Process Map, or 3D Process Map).
+1. 在[!DNL Profile Manager]中，单击&#x200B;**[!UICONTROL Menu]**，单击&#x200B;**[!UICONTROL Add Visualization]**，然后单击要配置的流程图类型（2D量度图、2D流程图或3D流程图）。
 
-   At least one [!DNL *.vw] file resides in the directory.
+   目录中至少有一个[!DNL *.vw]文件。
 
-1. Right-click the check mark for the desired file and click **[!UICONTROL Make Local]**.
-1. Right-click the check mark for the file in the [!DNL User] column and click **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. 右键单击所需文件的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。
+1. 右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。
 1. 参考以下示例文件和表格，编辑文件的参数：
 
    ```
@@ -80,14 +81,14 @@ After you configure a process map, it is listed with other process maps in the [
 
 >[!NOTE]
 >
->For more information about the base dimension, group dimension, level dimension, and metric for a process map, see [Process Maps](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
+>有关流程图的基本维度、组维度、级别维度和量度的详细信息，请参阅[流程图](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e)。
 
-1. In Notepad, click **[!UICONTROL File]** > **[!UICONTROL Save As]** to save the file with a new name based on the base dimension, that is, *Base dimension name*.vw.
+1. 在记事本中，单击&#x200B;**[!UICONTROL File]** > **[!UICONTROL Save As]**&#x200B;以基于基本维度（即&#x200B;*基本维度名称*.vw）使用新名称保存文件。
 
    （如果您配置的是 2D 量度图，则应使用基于量度图量度名称的名称（即&#x200B;*量度图的量度名称*.vw）保存文件。）确保您将文件保存到相应的流程图目录。
 
    >[!NOTE]
    >
-   >To make sure that your process map is saved as a [!DNL *.vw] file, in the [!DNL Save As] window, set Save as type to All Files.
+   >要确保将进程映射保存为[!DNL *.vw]文件，请在[!DNL Save As]窗口中将“另存为类型”设置为“所有文件”。
 
-1. (Optional) To make the changes available to all users of the working profile, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. （可选）要使更改对工作用户档案的所有用户可用，请在[!DNL Profile Manager]中右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*。
