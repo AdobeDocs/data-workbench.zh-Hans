@@ -1,17 +1,15 @@
 ---
 description: 您可以为重要的工作区添加书签，以便快速地在工作流采用的可视化与报表之间移动。
-solution: Analytics
 title: 添加书签
-topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
+exl-id: ba05d7ee-49c6-42a0-a490-9c59fcaaddc5
 translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 87%
+source-wordcount: '208'
+ht-degree: 69%
 
 ---
-
 
 # 添加书签{#add-a-bookmarks}
 
@@ -21,11 +19,11 @@ ht-degree: 87%
 
    在为工作区添加书签之前，此图标显示为一本书。为工作区添加书签后，书签图标会变为一本带有标记页面的书。
 
-1. 在左侧窗格中单击&#x200B;**[!UICONTROL 添加]** > **[!UICONTROL 书签面板]**&#x200B;可打开书签列表。
+1. 单击左窗格中的&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]**&#x200B;打开书签列表。
 
    ![](assets/bookmarks_panel.png)
 
-1. 要打开添加了书签的工作区，请在&#x200B;**[!UICONTROL 书签面板]**&#x200B;中单击工作区名称。
+1. 要打开已添加书签的工作区，请单击&#x200B;**[!UICONTROL Bookmark Panel]**&#x200B;中的工作区名称。
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -33,9 +31,9 @@ ht-degree: 87%
 
 **要删除书签：**
 
-* In the Bookmark Panel, right-click and select **Remove`<bookmark title>`** to delete a selected bookmark, or select **[!UICONTROL Clear All Bookmarks]** to delete all bookmarks.
+* 在“书签”面板中，右键单击并选择&#x200B;**删除`<bookmark title>`**&#x200B;以删除选定书签，或选择&#x200B;**[!UICONTROL Clear All Bookmarks]**&#x200B;以删除所有书签。
 
-* 您也可以右键单击 Worktop 上缩略图中的工作区，并选择&#x200B;**[!UICONTROL 清除书签]**。
+* 您还可以右键单击工作区中缩览图视图中的工作区，然后选择&#x200B;**[!UICONTROL Clear Bookmark]**。
 
 >[!IMPORTANT]
 >
