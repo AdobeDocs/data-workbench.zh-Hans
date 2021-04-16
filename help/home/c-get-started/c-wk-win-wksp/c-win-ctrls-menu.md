@@ -1,14 +1,15 @@
 ---
 description: 通过窗口控件菜单，您可以控制单个窗口。
-solution: Analytics
 title: “窗口控件”菜单
-topic: Data workbench
 uuid: 9a7c24a7-c591-4d73-94f5-bba79b2aa848
+exl-id: abbd6545-0b80-45a2-88d7-f0687249583d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 93%
 
 ---
-
 
 # “窗口控件”菜单{#window-controls-menu}
 
@@ -34,7 +35,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> 保存 </td> 
-   <td colname="col2">以当前状态保存可视化（作为 <span class="filepath">.vw</span> 文件）。通过显示的对话框，您可以使用其他名称保存可视化或将其保存到其他位置。The default location is the User\<i>profile name</i>\Work folder within the Data Workbench installation directory. </td> 
+   <td colname="col2">以当前状态保存可视化（作为 <span class="filepath">.vw</span> 文件）。通过显示的对话框，您可以使用其他名称保存可视化或将其保存到其他位置。默认位置为Data Workbench安装目录中的User\<i>用户档案名称</i>\Work文件夹。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 显示方式 </td> 
@@ -46,7 +47,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> 适合窗口大小 </td> 
-   <td colname="col2">允许窗口的内容自动扩展或收缩，以在每次调整窗口大小时适合窗口大小。请参阅 使 <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> 用图像注释</a> ，将数据 <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> 适合窗口</a>。 </td> 
+   <td colname="col2">允许窗口的内容自动扩展或收缩，以在每次调整窗口大小时适合窗口大小。请参阅  <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> 使用图像</a> 注释 <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> 和将数据拟合到窗口</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 顺序 </td> 
