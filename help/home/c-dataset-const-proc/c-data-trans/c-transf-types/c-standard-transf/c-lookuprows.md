@@ -1,22 +1,23 @@
 ---
 description: LookupRows 转换查看具有相同跟踪 ID 的其他日志条目，并将输出字段的值设为输入行中指定字段的值。
-solution: Analytics
 title: LookupRows
-topic: Data workbench
 uuid: 4cff7cf1-00c8-4ab1-8adc-3805518226d3
+exl-id: caa9a311-b056-4fe8-bb11-1605cc690375
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 89%
 
 ---
-
 
 # LookupRows{#lookuprows}
 
 LookupRows 转换查看具有相同跟踪 ID 的其他日志条目，并将输出字段的值设为输入行中指定字段的值。
 
-Because the [!DNL LookupRows] transformation performs its lookup on log entries and not lookup files, it is very similar to the [!DNL CrossRows] transformation. 请参 [阅CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2)。
+由于[!DNL LookupRows]转换对日志条目执行查找，而不是对查找文件执行查找，因此它与[!DNL CrossRows]转换非常相似。 请参阅[CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2)。
 
-若要使用 [!DNL LookupRows] 转换，数据必须按时间排序并按源数据中的跟踪 ID 分组。因此， [!DNL LookupRows] 仅当在文件或文件中定 [!DNL Transformation.cfg] 义时才可 [!DNL Transformation Dataset Include] 用。
+若要使用 [!DNL LookupRows] 转换，数据必须按时间排序并按源数据中的跟踪 ID 分组。因此，[!DNL LookupRows]仅在[!DNL Transformation.cfg]文件或[!DNL Transformation Dataset Include]文件中定义时才有效。
 
 在查看下表中的参数描述时，请切记以下事项：
 
@@ -28,7 +29,7 @@ Because the [!DNL LookupRows] transformation performs its lookup on log entries 
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -38,12 +39,12 @@ Because the [!DNL LookupRows] transformation performs its lookup on log entries 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关转换的说明。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 将转换输出限制到特定的日志条目。如果某个特定日志条目不满足条件，Output Row Value Output（输出行值输出）参数中的字段将保持不变。输入仍可用于影响其他日志条目。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -98,13 +99,13 @@ Input Row Key Input（输入行键输入）、Input Row Value Input（输入行�
 
 * 将输出行的“输出行值输出”设为输入行的“输入行值输入”。
 
-注意事项 [!DNL LookupRows]
+[!DNL LookupRows]的注意事项
 
-* 空键值不匹配任何内容。即使有带空键和非空值的输入行与匹配 [!DNL Input Condition], [!DNL Output Row Key Input] “”的输入行将始终生成 [!DNL Output Row Value Output] “”。
+* 空键值不匹配任何内容。即使有带空键和非空值的输入行与[!DNL Input Condition]匹配，“”的[!DNL Output Row Key Input]将始终生成“”的[!DNL Output Row Value Output]。
 
-* 如果行的值和 [!DNL Input Condition]值相同，则行可能会自 [!DNL Input Row Key Input] 己 [!DNL Output Row Key Input] 查找。
+* 如果[!DNL Input Condition]未禁止，则行的[!DNL Input Row Key Input]和[!DNL Output Row Key Input]值相同时，行可能会查找自身。
 
-如果有多个键值，则可以在应用转换之前使用转 [!DNL Format] 换(请参阅 [格式](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b))来组合 [!DNL LookupRows] 它们。
+如果您有多个键值，则可以在应用[!DNL LookupRows]转换之前使用[!DNL Format]转换（请参阅[格式](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)）组合这些键值。
 
 假定您的网站有一个“宠物登记”页，其中输入了名称和品种，而随后的“购买玩具”页仅使用宠物的名称。您希望将宠物名称与登记页上输入的宠物品种链接在一起。为此，您可以创建以下 [!DNL LookupRows] 转换：
 
