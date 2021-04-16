@@ -1,20 +1,21 @@
 ---
 description: 有关不同类型的流程图的信息。
-solution: Analytics
-title: 流程图的类型
-topic: Data workbench
+title: 流程图类型
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
+exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 95%
 
 ---
 
-
-# Types of process maps{#types-of-process-maps}
+# 流程图类型{#types-of-process-maps}
 
 有关不同类型的流程图的信息。
 
-## 2D process maps {#section-ea7fbdb80b1b44aebcd9e4090b6540bf}
+## 2D进程图{#section-ea7fbdb80b1b44aebcd9e4090b6540bf}
 
 二维流程图提供维度元素之间的二维活动视图。2D 流程图中节点的大小与该节点关联的量度值成正比。此外，两个节点之间的箭头的厚度和亮度与这些节点的平均量度值成正比。
 
@@ -34,13 +35,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 在此示例中，每个节点的大小以及每个箭头的厚度和亮度都与“打分”量度（即影片得到的打分计数）成正比。因此，与具有较小节点的影片（如 *Event Horizon*）相比，具有较大节点的影片（如 *Independence Day*）具有更多的打分次数。还可以看出先给 *Independence Day* 打分，然后又给 *Cold Mountain* 打分的影片观看者多于以相反顺序给相同影片打分的影片观看者。请注意，箭头并不表示观看者先给 *Independence Day* 打分，然后紧接着又给 *Cold Mountain* 打分，或反之亦然。观看者可能已在中间给其他影片打了分，但这些影片不会显示在该流程图上。
 
-## 2D metric maps {#section-a9b846fc71224058918fbc378315effe}
+## 2D量度图{#section-a9b846fc71224058918fbc378315effe}
 
 二维量度图是一种类型的 2D 流程图，它根据特定量度的值来放置节点。多数情况下，用于 2D 量度图的量度为“转化”或“维系”。转化和维系图帮助您了解面向客户的渠道影响客户转化和维系的流程中的步骤。
 
 >[!NOTE]
 >
->与2D量度图一起使用的量度必须以百分比表示。
+>您与2D量度图一起使用的量度必须以百分比表示。
 
 在转化量度图中，在图表的左侧绘制了转化为 0% 的节点，在右侧绘制了转化为 100% 的页面。显示了节点之间的活动，从而更容易看出流程中的哪些步骤导致转化增加或降低，以及哪些步骤导致放弃。流程转化分析是比较流程或比较同一流程的不同实现的一种有效方法。
 
@@ -52,9 +53,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->无法水平移动2D度量图上的节点。 量度图设计为基于节点的量度值从左向右放置节点。
+>无法水平移动2D量度图上的节点。 量度图设计为基于节点的量度值从左向右放置节点。
 
-## 3D process maps {#section-80acb63ea0994af1af7faef3c6264e51}
+## 3D流程图{#section-80acb63ea0994af1af7faef3c6264e51}
 
 三维流程图提供维度元素之间的三维活动视图。3D 流程图中长方块的高度与该节点关联的量度值成正比。与 2D 流程图一样，两个节点之间的连接线的厚度和亮度与这些节点的平均量度值成正比。在 3D 流程图中，您可以执行以下任何任务：
 
