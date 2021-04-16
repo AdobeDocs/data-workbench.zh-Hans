@@ -1,14 +1,15 @@
 ---
 description: 创建子集时，必须指定级别。
-solution: Analytics
 title: 选择级别
-topic: Data workbench
 uuid: 18c2bee7-a70f-4510-978f-830b56780f47
+exl-id: 39d8407c-e2ec-4080-8918-26cafbf988df
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 100%
 
 ---
-
 
 # 选择级别{#select-a-level}
 
@@ -27,4 +28,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * **星期=“Tue”，基于访客：**&#x200B;访客级别显示在星期二访问网站的所有访客，但它还显示这些访客访问网站的其他日期。
 
    ![](assets/vis_Subset_byVisitor.png)
-
