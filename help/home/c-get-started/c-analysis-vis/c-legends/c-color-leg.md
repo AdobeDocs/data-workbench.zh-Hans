@@ -1,16 +1,17 @@
 ---
 description: 颜色图例按量度（如“转化”和“维系”）对可视化进行颜色编码，并且几乎可以在每个工作区中使用。
-solution: Analytics
 title: 颜色图例
-topic: Data workbench
 uuid: 4f5ad93e-9128-464c-b5b7-9db454fa71a6
+exl-id: 0ecf5237-8d64-46a6-b73b-e59de69e5988
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 85%
 
 ---
 
-
-# Color legends{#color-legends}
+# 颜色图例{#color-legends}
 
 颜色图例按量度（如“转化”和“维系”）对可视化进行颜色编码，并且几乎可以在每个工作区中使用。
 
@@ -18,11 +19,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->如果未在颜色图例中选择度量，则所有可视化都显示为蓝色。
+>如果未在颜色图例中选择量度，则所有可视化都显示为蓝色。
 
-## 激活或更改度量 {#section-694234fc79fd44c2a2ea2f677f74b3dc}
+## 激活或更改量度{#section-694234fc79fd44c2a2ea2f677f74b3dc}
 
 * 右键单击量度名称，然后单击所需的量度。
 
    ![](assets/lgd_ColorLegend.png)
-
