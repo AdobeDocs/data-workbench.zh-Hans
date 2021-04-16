@@ -1,20 +1,20 @@
 ---
-description: 'null'
-solution: Analytics
+description: 量度图例
 title: 量度图例
-topic: Data workbench
 uuid: c97847b1-eb84-4684-b831-38fecbaedf63
+exl-id: 0662674f-faed-4d12-bdf6-4c6d3a01092a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 8%
 
 ---
 
-
 # 量度图例{#metric-legends}
 
-量度图例可视化允许您以表格格式显示量度总计。 第一列保存度量名称，而第二列保存度量值。 当所有行都不能同时显示在窗口上时，将显示滚动条。
+量度图例可视化允许您以表格格式显示量度合计。 第一列保存量度名称，而第二列保存量度值。 滚动条将显示在事件中，此时窗口上无法同时显示所有行。
 
-无法在度量图例中进行选择，因为不显示特定维值。
+无法在量度图例中进行选择，因为未显示特定维度值。
 
 ![](assets/metric_legend.png)
-
