@@ -1,14 +1,15 @@
 ---
 description: 创建子集的步骤。
-solution: Analytics
 title: 创建子集
-topic: Data workbench
 uuid: e2f8d91b-ea66-46e1-9add-685aebe1d59e
+exl-id: 5386638a-43a0-4702-85c4-e72944a4201a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '74'
+ht-degree: 54%
 
 ---
-
 
 # 创建子集{#create-subsets}
 
@@ -22,9 +23,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    有关解释选择的详细信息，请参阅[在可视化中进行选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。
 
-1. Right-click within the workspace and click **[!UICONTROL Data]** > **[!UICONTROL Subset]** > *&lt;**[!UICONTROL level name]**>*
+1. 右键单击工作区，然后单击&#x200B;**[!UICONTROL Data]** > **[!UICONTROL Subset]** > *&lt;**[!UICONTROL level name]**>*
 .
 
    ![](assets/mnu_Subset.png)
 
-An X displays to the left of the [!DNL Subset menu] option and to the left of the subset’s level.
+[!DNL Subset menu]选项左侧和子集级别左侧显示X。
