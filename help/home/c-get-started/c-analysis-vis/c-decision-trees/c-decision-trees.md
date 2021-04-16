@@ -1,14 +1,15 @@
 ---
 description: 决策树是对预测分析的可视化，用于评估访客特性与关系。决策树生成器根据指定的正类用例和一组输入生成决策树可视化。
-solution: Analytics
 title: 决策树生成器
-topic: Data workbench
 uuid: 1f7e91ea-e5d9-4d8e-9fcf-cae4de42dfdd
+exl-id: d93e6a34-be59-4af5-84c3-c13deb98b57b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 98%
 
 ---
-
 
 # 决策树生成器{#decision-tree-builder}
 
@@ -32,7 +33,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 <table id="table_FCC5D63EF8A843D79B2338BD951025EA"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>工具栏和菜单</b> </p> <p>工具栏包括决策树的各个按钮和菜单命令，其中包括设置正类用例和添加输入列表的功能。 </p> <p>与其他可视化一样，您可以通过<span class="uicontrol">元素</span>框拖放维度和元素，但是您也可以直接从“查找器”窗格拖动。 </p> <p>有关其他信息，请参阅 <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> 决策树选项</a>。 </p> </td> 
+   <td colname="col1"> <p><b>工具栏和菜单</b> </p> <p>工具栏包括决策树的各个按钮和菜单命令，其中包括设置正类用例和添加输入列表的功能。 </p> <p>与其他可视化一样，您可以通过<span class="uicontrol">元素</span>框拖放维度和元素，但是您也可以直接从“查找器”窗格拖动。 </p> <p>有关其他信息，请参阅<a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c">决策树选项</a>。 </p> </td> 
    <td colname="col2"> <p><b>输入列表</b> </p> <p>此区域显示树模型中的各项输入。这些输入用不同颜色标示，以匹配树显示区域的节点。 </p> <p>右键单击某个输入时，可以从模型中删除该输入并重置。 </p> <p>如果您将鼠标悬停在树节点上，会显示分割条件以及到该节点的分支和该节点及其置信度值的预测。 </p> </td> 
    <td colname="col3"> <p><b>树显示</b> </p> <p>此区域显示树模型，并基于预测用颜色标示叶节点：绿色表示正类用例的 True 预测，红色表示 False 预测。 </p> <p>匹配其选择条件的输入的分割节点会用颜色标示。将鼠标悬停在节点上会显示该分割的相关信息，并展开输入列表以显示分割点及分支和培训集分配。 </p> <p>默认情况下，不会显示低于阈值的节点。单击可扩展的节点（用 + 号指示）可以展开一个分支。单击根节点可返回到全树显示。 </p> </td> 
   </tr> 
@@ -40,4 +41,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 </table>
 
 <!-- <a id="section_E800327344194A6DBF37F273D8462E2A"></a> -->
-
