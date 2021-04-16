@@ -1,14 +1,15 @@
 ---
 description: 转换和维度使用条件确定某些指令或操作应用于日志字段的时间。
-solution: Analytics
 title: 关于条件
-topic: Data workbench
 uuid: 882fe761-895c-4226-a019-270c50ae6da2
+exl-id: 0d44282f-1327-4f11-90fc-7e6a2ef8dc76
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 51%
 
 ---
-
 
 # 关于条件{#about-conditions}
 
@@ -18,7 +19,6 @@ Log Entry Condition（日志条目条件）参数使用条件确定在数据集�
 
 条件分为以下两种类别：
 
-* **[!DNL Test Operations]:**[!DNL Compare]、、[!DNL Not Empty]、和[!DNL Range][!DNL Regular Expression][!DNL String Match]条件用于测试可用日志字段中的不同状态。
+* **[!DNL Test Operations]:** [!DNL Compare]、、 [!DNL Not Empty]、和 [!DNL Range]条件用于测试可用日志字段 [!DNL Regular Expression] [!DNL String Match] 中的不同状态。
 
-* **[!DNL Boolean Operations]:**使[!DNL And]用[!DNL Or]、和[!DNL Neither]条件组合上述测试操作。 For example, if you have a[!DNL Range]condition and a[!DNL String Match]condition that must both be false to take the appropriate action, you would make these two operations children of the[!DNL Neither]condition. Note that the[!DNL And]condition is used as the root of all condition testing in the system.
-
+* **[!DNL Boolean Operations]:** 使用 [!DNL And]、 [!DNL Or]和条 [!DNL Neither] 件组合上述测试操作。例如，如果您有一个[!DNL Range]条件和一个[!DNL String Match]条件，要采取相应的操作，这两个条件必须都为false，则您会使这两个操作成为[!DNL Neither]条件的子项。 请注意，[!DNL And]条件用作系统中所有条件测试的根。
