@@ -1,14 +1,15 @@
 ---
 description: 通用横轴墨卡托 (UTM) 投影由八个参数定义。
-solution: Analytics
 title: 通用横轴墨卡托投影
-topic: Data workbench
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
+exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 86%
 
 ---
-
 
 # 通用横轴墨卡托投影{#universal-transverse-mercator-projections}
 
@@ -20,11 +21,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **指定通用横轴墨卡托投影**
 
-1. 在中， [!DNL Server Files Manager]单击以 **[!UICONTROL Components]** 查看其内容。 [!DNL Terrain Images.cfg] 文件位于此目录中。
+1. 在[!DNL Server Files Manager]中，单击&#x200B;**[!UICONTROL Components]**&#x200B;视图其内容。 [!DNL Terrain Images.cfg] 文件位于此目录中。
 
-1. Right-click the check mark in the *server name* column for [!DNL Terrain Images.cfg], then click **[!UICONTROL Make Local]**. A check mark appears in the [!DNL Temp] column for [!DNL Terrain Images.cfg].
+1. 右键单击[!DNL Terrain Images.cfg]的&#x200B;*服务器名称*&#x200B;列中的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL Terrain Images.cfg]的[!DNL Temp]列中显示复选标记。
 
-1. 右键单击列中新创建的复选标记， [!DNL Temp] 然后单击 **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。 文件 [!DNL Terrain Images.cfg]显示在记事本窗口中。
+1. 右键单击[!DNL Temp]列中新建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。 [!DNL Terrain Images.cfg]文件显示在记事本窗口中。
 
 1. 参考以下示例文件片段和参数表，编辑 Projection Info（投影信息）参数。请务必将投影类型指定为以下突出显示的内容。
 
@@ -48,4 +49,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 | Northwest Corner Coordinates（西北角坐标）、Southeast Corner Coordinates（东南角坐标） | 图像左上角和右下角的坐标（以投影的米为单位）。 |
 | Prime Meridian（本初子午线） | 投影的中央子午线的经度，以格林威治的东经度数指定。负数可用来指定西经度数。 |
 | Scale Factor（缩放因子） | 投影柱体半径与椭球体半长轴的比率。对于通用横轴墨卡托 (UTM) 投影，该值始终为 0.9996。 |
-
