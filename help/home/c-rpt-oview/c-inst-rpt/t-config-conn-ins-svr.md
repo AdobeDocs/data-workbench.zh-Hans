@@ -1,29 +1,30 @@
 ---
-description: 在生成报告和警报之前，必须配置Report Server，以指定Insight Server的地址并标识要报告的配置文件。
-solution: Analytics
-title: 配置与Insight Server的连接
-topic: Data workbench
+description: 在生成报表和警报之前，必须配置报表服务器以指定Insight服务器的地址并标识您希望其报告的用户档案。
+title: 配置与 Insight Server 的连接
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
+exl-id: a398a665-fe09-448a-977c-b0f9de4add09
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 9%
 
 ---
 
+# 配置与 Insight Server 的连接{#configuring-the-connection-to-the-insight-server}
 
-# Configuring the Connection to the Insight Server{#configuring-the-connection-to-the-insight-server}
-
-在生成报告和警报之前，必须配置Report Server，以指定Insight Server的地址并标识要报告的配置文件。
+在生成报表和警报之前，必须配置报表服务器以指定Insight服务器的地址并标识您希望其报告的用户档案。
 
 >[!NOTE]
 >
->在如下所述配置报表服务器之前，您无法成功运行报表服务器。 如果尝试使用随程序安装的未配置文件运行报告服务器，报告服务器会生成一串错误。
+>在如下所述配置报表服务器之前，您无法成功运行报表服务器。 如果尝试使用随项目安装的未配置文件运行报表服务器，报表服务器会生成一串错误。
 
-**配置报告服务器**
+**配置报表服务器**
 
-1. 使用Windows资源管理器，导航到您安装Report Server的目录。
-1. 在记事 [!DNL ReportServer.cfg] 本中打开文件，并根据需要修改文件。
+1. 在Windows资源管理器中，导航到安装Report Server的目录。
+1. 在记事本中打开[!DNL ReportServer.cfg]文件，并根据需要修改文件。
 
-   以下示例 [!DNL Report Server.cfg] 仅包含文件中默认包含的 [!DNL Report Server.cfg] 参数（并高亮显示所需的参数设置）。 如果通过代理服务器与Adobe许可证服务器联系，则需要添加许可矢量及其参数。 有关 [详细说明，请参阅Report Server](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) .cfg参数。
+   以下示例[!DNL Report Server.cfg]默认仅包含[!DNL Report Server.cfg]文件中包含的参数（并高亮显示所需的参数设置）。 如果通过代理服务器与Adobe License Server联系，则需要添加授权矢量及其参数。 有关详细说明，请参阅[Report Server.cfg参数](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06)。
 
    ```
    Fonts = vector: 0 items
