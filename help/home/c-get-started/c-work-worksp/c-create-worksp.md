@@ -1,14 +1,15 @@
 ---
 description: 您可以通过添加或修改现有可视化或创建新工作区，来自定义现有工作区。
-solution: Analytics
 title: 创建工作区
-topic: Data workbench
 uuid: 8669b70f-5ddf-4424-9269-0e4860eac498
+exl-id: 9c1fb9e6-6cc8-4894-800b-187b047c41d2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 91%
 
 ---
-
 
 # 创建工作区{#create-a-workspace}
 
@@ -24,13 +25,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * [复制并粘贴现有工作区](../../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-f91ae89b845640c9a4a52820a6110e65)
 * [更改工作区名称](../../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-ca7edb913e4e4630a856f45a2536ffad)
 
-## 添加新工作区 {#section-4236ae30e2884ea08f0885bf329f0778}
+## 添加新工作区  {#section-4236ae30e2884ea08f0885bf329f0778}
 
 在所需的 [!DNL Worktop] 选项卡上，右键单击该选项卡中的空白区域，然后单击以下选项之一：
 
-* **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]**. 该选项显示一个标准大小的空白工作区。
+* **[!UICONTROL New]** >  **[!UICONTROL Blank Workspace]**&#x200B;该选项显示一个标准大小的空白工作区。
 
-* **[!UICONTROL New]** > **[!UICONTROL Report Template]**. 该选项显示一个标准大小的模板，您可以使用该模板来创建报表。
+* **[!UICONTROL New]** >  **[!UICONTROL Report Template]**&#x200B;该选项显示一个标准大小的模板，您可以使用该模板来创建报表。
 
 ![](assets/mnu_workspaceManager.png)
 
@@ -48,11 +49,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **复制并粘贴现有工作区的步骤**
 
-1. On the desired [!DNL Worktop] tab, right-click the workspace that you want to copy and click **[!UICONTROL Copy]**.
+1. 在所需的[!DNL Worktop]选项卡上，右键单击要复制的工作区，然后单击&#x200B;**[!UICONTROL Copy]**。
 
    ![](assets/mnu_workspaceManager_Copywksp.png)
 
-1. Go to the tab in which you want to paste the workspace, right-click a blank area within the tab, then click **[!UICONTROL Paste]**.
+1. 转到要粘贴工作区的选项卡，右键单击选项卡中的空白区域，然后单击&#x200B;**[!UICONTROL Paste]**。
 
    以下示例是粘贴到包含服务器版本的工作区选项卡上的工作区：
 
@@ -62,7 +63,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ![](assets/mnu_workspaceManager_Copywksp_PasteSameNameLocalWks.png)
 
-## 更改工作区名称 {#section-ca7edb913e4e4630a856f45a2536ffad}
+## 更改工作区名称  {#section-ca7edb913e4e4630a856f45a2536ffad}
 
 **更改工作区名称的步骤**
 
@@ -71,6 +72,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/wsp_changeTitle.png)
 
-## 删除工作区 {#section-fb04cc195e1a4a5491ff634f5f3ca972}
+## 删除工作区  {#section-fb04cc195e1a4a5491ff634f5f3ca972}
 
 **更改工作区名称的步骤**
