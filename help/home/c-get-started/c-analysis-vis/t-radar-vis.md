@@ -1,16 +1,17 @@
 ---
 description: 雷达图通过提供一组量度的可视视图并且提供它们之间的关系或差别来提供对最需要注意的区域的快速聚焦。
-solution: Analytics
-title: 雷达可视化
-topic: Data workbench
+title: 雷达可视化图表
 uuid: 39d67743-b6c1-46f1-99fd-7c71dfe07932
+exl-id: 5385d903-422b-4936-bbb3-0d5ee4d286de
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 94%
 
 ---
 
-
-# Radar visualization{#radar-visualization}
+# 雷达可视化图表{#radar-visualization}
 
 雷达图通过提供一组量度的可视视图并且提供它们之间的关系或差别来提供对最需要注意的区域的快速聚焦。
 
@@ -22,11 +23,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **创建雷达可视化**
 
-1. Right click in the Workspace, then click **[!UICONTROL Visualization]** > **[!UICONTROL Radar]**.
+1. 在工作区中右键单击，然后单击&#x200B;**[!UICONTROL Visualization]** > **[!UICONTROL Radar]**。
 
    ![](assets/client-rad.png)
 
-1. To add metrics, right-click in the visualization and select **[!UICONTROL Add Metric]**.
+1. 要添加量度，请右键单击可视化，然后选择&#x200B;**[!UICONTROL Add Metric]**。
 1. 若要将量度锚固到该图，请右键单击某个量度，然后选择以下选项：
 
    **定位到此量度：**&#x200B;使用此量度作为绘制其他量度的基准。一次可以锚固一个量度。该图上的每个量度都按活动的工作区选择进行过滤或没有过滤器。在图表中心和雷达上的量度名称之间的轴上绘制这两个值之间的基准比率。零绘制在中心。
@@ -34,4 +35,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. 若要通过定位的量度缩放某个量度，请右键单击该量度并选择以下选项：
 
    **基于锚点缩放：**&#x200B;启用时，缩放该量度的轴，以便在圆中绘制所选锚量度的基准比率，其中零在中心。未选择时，该圆表示的基准比率为 1。通常，您为可计数的量度（如“访客数”或“页面查看次数”）打开“基于锚点缩放”，为比率量度（如“转化”、“平均会话持续时间”或“每个会话的页面查看次数”）关闭“基于锚点缩放”。
-
