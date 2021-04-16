@@ -1,14 +1,15 @@
 ---
 description: 有关工作表表达式和使用单元格引用的概念性信息。
-solution: Analytics
 title: 工作表表达式
-topic: Data workbench
 uuid: be57d6bd-3e13-4c90-9034-8e0f2b8315aa
+exl-id: 1ff3ec24-0363-4b6c-8c91-31e49ed0f7c4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 92%
 
 ---
-
 
 # 工作表表达式{#worksheet-expressions}
 
@@ -53,7 +54,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>C3 </p> <p>查看立即申请页面和申请向导页面的推荐访客数 </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp" </span> </p> <p> AND <span class="filepath">Page="/applynow/appwizard.asp"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Referred_访客s[Page="/applynow/default.asp"  </span> </p> <p> AND <span class="filepath">Page="/applynow/appwizard.asp"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C4 </p> <p>查看立即申请页面和申请向导页面的推荐人 A 推荐的访客数 </p> </td> 
@@ -80,13 +81,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ![](assets/client-exp.png)
 
-## 使用单元格引用 {#section-0004e315c9c94d359b1a8a39794ba555}
+## 使用单元格引用  {#section-0004e315c9c94d359b1a8a39794ba555}
 
 不管是在工作表自身的表达式中还是在其他表达式中，都可以将任何字符串替换为单元格引用。
 
-* **简单单元格引用：**&#x200B;单元格 A2 包含 Visitors 一词，该单元格用作标题。Cell B2 contains [!DNL eval(A1)], which evaluates to [!DNL =Visitors].
+* **简单单元格引用：**&#x200B;单元格 A2 包含 Visitors 一词，该单元格用作标题。单元格B2包含[!DNL eval(A1)]，其计算结果为[!DNL =Visitors]。
 
-* **过滤单元格引用：**&#x200B;单元格 A5 包含昨天的日期。Cell B5 contains [!DNL Visitors[ Day=A5 ]], which evaluates to the number of Visitors yesterday.
+* **过滤单元格引用：**&#x200B;单元格 A5 包含昨天的日期。单元格B5包含[!DNL访客[ Day=A5 ]]，计算结果为昨天的访客数。
 
-* **级联单元格引用：**&#x200B;单元格 A5 包含今天的日期，单元格 A6 包含 08:00 到 08:59 一个小时的时间段。Cell B6 contains [!DNL Visitors[ Hour=A5+” ”+A6 ]], which evaluates to the number of Visitors today between 8:00 AM and 9:00 AM.
-
+* **级联单元格引用：**&#x200B;单元格 A5 包含今天的日期，单元格 A6 包含 08:00 到 08:59 一个小时的时间段。单元格B6包含[!DNL访客[小时=A5+&quot; &quot;+A6 ]]，其计算结果是当前在上午8:00到上午9:00之间的访客数。
