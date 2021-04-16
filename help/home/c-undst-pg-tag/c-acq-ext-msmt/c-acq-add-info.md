@@ -1,14 +1,15 @@
 ---
 description: 查询字符串变量可以添加到JavaScript请求中，以在发出请求时收集其他度量。
-solution: Analytics
 title: 获取其他信息
-topic: Data workbench
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
+exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 4%
 
 ---
-
 
 # 获取其他信息{#acquiring-additional-information}
 
@@ -36,11 +37,10 @@ v["_2"] = "visa";
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-在此示例中，v_1和v_2的脚本变量可从网页中的其他函数派生。 变量已作为示例插入。 除了每次请求获得的基线测量值之外，还将获得以下扩展测量值，并应上述URL的请求：
+在此示例中，v_1和v_2的脚本变量可以从网页中的其他函数派生。 变量已作为示例插入。 除了每次请求获得的基线测量值之外，还将根据上述URL的请求获得以下扩展测量值：
 
 | 收集的数据 | 说明 | 示例 |
 |---|---|---|
 | v_pn= | 与v_pn查询字符串变量关联的值 | v_pn=应用程序表单 |
 | v_1= | 与v_1查询字符串变量关联的值 | v_1=99.99 |
-| v_2= | 与v_2查询字符串变量关联的值 | v_2=visa |
-
+| v_2= | 与v_2查询字符串变量关联的值 | v_2 |
