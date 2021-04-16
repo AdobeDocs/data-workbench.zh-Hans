@@ -1,22 +1,21 @@
 ---
 description: 升级Transform文件夹的步骤。
-solution: Analytics
 title: 升级转换
 uuid: 26e567bc-7571-4317-b77c-2631a163a4b5
+exl-id: b5e21862-caf1-42e4-9247-c870d7b3180e
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 5%
 
 ---
 
-
 # 升级转换{#upgrading-transform}
 
 升级Transform文件夹的步骤。
 
-1. 打开发 [!DNL .zip] 行包的文 [!DNL Insight Server] 件，并打开该文 [!DNL Profiles] 件中的文 [!DNL .zip] 件夹。
-1. 将文件夹 [!DNL Transform] 复制到安 [!DNL Profiles] 装目录中的 [!DNL Insight Server] 文件夹中。 这样做会覆盖现有文 [!DNL Transform] 件夹。
-1. 对于继承该用户档案的 [!DNL Transform] 每个用户档案，确 [!DNL profile.cfg] 认该文件在“目录”矢量中有一个“转换”条目。
-用户档案同步后，数据重新处理开始。
+1. 打开[!DNL Insight Server]发行包的[!DNL .zip]文件，并打开该[!DNL .zip]文件中的[!DNL Profiles]文件夹。
+1. 将[!DNL Transform]文件夹复制到[!DNL Insight Server]安装目录中的[!DNL Profiles]文件夹。 这样做会覆盖现有[!DNL Transform]文件夹。
+1. 对于继承[!DNL Transform]用户档案的每个用户档案，确认[!DNL profile.cfg]文件在目录矢量中有一个“Transform”项。
+在用户档案同步后，数据重新处理开始。
