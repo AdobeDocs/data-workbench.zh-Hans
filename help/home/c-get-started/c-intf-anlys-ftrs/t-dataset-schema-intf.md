@@ -1,22 +1,23 @@
 ---
 description: 更改默认可视化的步骤。
-solution: Analytics
 title: 配置数据集架构界面
-topic: Data workbench
 uuid: 953909e8-3382-43cf-98c0-d4785c6d1dda
+exl-id: 0227663f-4789-4780-b753-d0deb35f6144
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 46%
 
 ---
 
-
-# Configure the Dataset Schema Interface{#configure-the-dataset-schema-interface}
+# 配置数据集架构界面{#configure-the-dataset-schema-interface}
 
 更改默认可视化的步骤。
 
-You can control which type of visualization displays when you click a dimension name in a [!DNL Dataset Schema Interface] by adding files to the Profiles\*profile name*\Context\Dimension Legend folder of the Data Workbench server installation folder. 该文件夹中的 [!DNL Default.1d] 文件控制所有维度的默认可视化类型。通过向该文件夹添加&#x200B;*维度名称*. 文件（例如 [!DNL Hour.1d].1d），可以控制该特定维度的默认可视化。
+通过将文件添加到用户档案\*用户档案名称*\Context\Dimension Legend folder of the Data Workbench server installation folder，您可以控制单击[!DNL Dataset Schema Interface]中的维名称时显示的可视化类型。 该文件夹中的 [!DNL Default.1d] 文件控制所有维度的默认可视化类型。通过向该文件夹添加&#x200B;*维度名称*. 文件（例如 [!DNL Hour.1d].1d），可以控制该特定维度的默认可视化。
 
-有关详细信息， [!DNL Dataset Schema Interfaces]请参 [阅数据集架构界面](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175)。
+有关[!DNL Dataset Schema Interfaces]的详细信息，请参阅[数据集模式接口](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175)。
 
 **更改默认可视化**
 
@@ -24,21 +25,20 @@ You can control which type of visualization displays when you click a dimension 
 
    例如，如果您希望维度显示在条形图中，则创建一个显示所需量度和维度的条形图可视化。
 
-1. Right-click the top border of the callout window and click **[!UICONTROL Save]**.
-1. 在窗 [!DNL Save] 口中，单 ![](assets/btn_folder_up.png)击，双击 **[!UICONTROL Context]**，然后双击 **[!UICONTROL Dimension Legend]**。
-1. In the [!DNL File Name] field, type the dimension name.
+1. 右键单击标注窗口的上边框，然后单击&#x200B;**[!UICONTROL Save]**。
+1. 在[!DNL Save]窗口中，单击![](assets/btn_folder_up.png),多次单击&#x200B;**[!UICONTROL Context]**，然后多次单击&#x200B;**[!UICONTROL Dimension Legend]**。
+1. 在[!DNL File Name]字段中，键入维名称。
 
-   The name of the [!DNL .1d] file must match the name of the dimension exactly. 例如：[!DNL Hour.1d]。
+   [!DNL .1d]文件的名称必须与维的名称完全匹配。 例如：[!DNL Hour.1d]。
 
-1. Change the file extension to “1d” and click **[!UICONTROL Save]**.
+1. 将文件扩展名更改为“1d”，然后单击&#x200B;**[!UICONTROL Save]**。
 
-   该文件将保存到User\*工作配置文件名称*\Context\Dimension Legend folder。
+   该文件将保存到用户\*工作用户档案名*\Context\Dimension Legend folder。
 
-   The next time that you click that dimension from in a [!DNL Dataset Schema Interface], the visualization that you specified displays.
+   下次在[!DNL Dataset Schema Interface]中单击该维时，将显示您指定的可视化。
 
 1. （可选）若要使该更改对工作配置文件的所有用户可用：
 
-   1. 在中， [!DNL Profile Manager]单击， **[!UICONTROL Context]**&#x200B;然后单击 **[!UICONTROL Dimension Legend]**。
+   1. 在[!DNL Profile Manager]中，单击&#x200B;**[!UICONTROL Context]**，然后单击&#x200B;**[!UICONTROL Dimension Legend]**。
 
-   1. Right-click the check mark next to the file name of the new callout in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
-
+   1. 右键单击[!DNL User]列中新标注文件名旁边的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*。
