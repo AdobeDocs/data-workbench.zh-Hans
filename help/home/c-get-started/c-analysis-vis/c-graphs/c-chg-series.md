@@ -1,14 +1,15 @@
 ---
 description: 在折线图中可以对某个维度中的元素以系列的形式进行颜色编码，以便可以跨工作区中的其他可视化更加轻松地跟踪每个元素。
-solution: Analytics
 title: 更改系列
-topic: Data workbench
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
+exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 85%
 
 ---
-
 
 # 更改系列{#change-a-series}
 
@@ -22,9 +23,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **启用系列**
 
-* Right-click an element or the label of the dimension and click **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*.
+* 右键单击维度的元素或标签，然后单击&#x200B;**[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*。
 
 **禁用系列**
 
-* Right-click an element or the label of the dimension and click **[!UICONTROL Change Series]** > **[!UICONTROL None]**.
-
+* 右键单击维度的元素或标签，然后单击&#x200B;**[!UICONTROL Change Series]** > **[!UICONTROL None]**。
