@@ -1,14 +1,15 @@
 ---
 description: 皮尔逊关联系数用作关联矩阵中的算法，用于显示两个变量之间线性依赖的强度。
-solution: Analytics
 title: 关于皮尔逊关联系数
-topic: Data workbench
 uuid: d4c37302-3d0e-4411-b4e2-fc4b0c53cbcd
+exl-id: 92a030c7-406a-4ffa-b279-fc60d207496c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 100%
 
 ---
-
 
 # 关于皮尔逊关联系数{#about-the-pearson-correlation-coefficient}
 
