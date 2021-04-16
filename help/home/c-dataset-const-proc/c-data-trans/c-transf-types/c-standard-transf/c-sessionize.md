@@ -1,14 +1,15 @@
 ---
 description: 如果您要处理从网站流量收集的数据，则可以使用 Sessionize 转换确定如何定义会话。
-solution: Analytics
 title: Sessionize
-topic: Data workbench
 uuid: c6e2487a-80e5-4e00-b4d4-2ce013fac3ea
+exl-id: bb25cb4b-7185-4524-8ff5-740b672e1cd9
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 88%
 
 ---
-
 
 # Sessionize{#sessionize}
 
@@ -18,14 +19,14 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 >[!NOTE]
 >
->若要使用 [!DNL Sessionize] 转换，数据必须按时间排序并按源数据中的跟踪 ID 分组。因此， [!DNL Sessionize] 仅当在文件或文件中定 [!DNL Transformation.cfg] 义时才可 [!DNL Transformation Dataset Include] 用。
+>若要使用 [!DNL Sessionize] 转换，数据必须按时间排序并按源数据中的跟踪 ID 分组。因此，[!DNL Sessionize]仅在[!DNL Transformation.cfg]文件或[!DNL Transformation Dataset Include]文件中定义时才有效。
 
 <table id="table_34984DF9340149C0A5016F08EABAD158"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -35,12 +36,12 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关转换的说明。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 应用此转换的条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -51,7 +52,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
   <tr> 
    <td colname="col1"> Input Tracking ID（输入跟踪 ID） </td> 
-   <td colname="col2"> <p>包含要使用的跟踪 ID 值的字段。该值必须是一个 64 位（16 位数）或更小的十六进制数字，或者 16 位数或更少的十进制整数。 </p> <p> <p>注意：如果您希望将 x-trackingid 以外的字段用于跟踪 ID，则需要首先获取该字段的散列值。请参阅 <a href="../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md#concept-9c353923264941c3aea4428fed66d369"> 哈希</a>。 </p> </p> </td> 
+   <td colname="col2"> <p>包含要使用的跟踪 ID 值的字段。该值必须是一个 64 位（16 位数）或更小的十六进制数字，或者 16 位数或更少的十进制整数。 </p> <p> <p>注意：如果您希望将 x-trackingid 以外的字段用于跟踪 ID，则需要首先获取该字段的散列值。请参阅<a href="../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md#concept-9c353923264941c3aea4428fed66d369">哈希</a>。 </p> </p> </td> 
    <td colname="col3"> x-trackingid </td> 
   </tr> 
   <tr> 
@@ -85,11 +86,10 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 >[!NOTE]
 >
->If you have already defined Maximum Session Duration and Session Timeout as parameters in the [!DNL Session Parameters.cfg] file, do not enter values for them in the configuration. 如下例所示，可以通过键入 *$(参数名称)* 引用这些参数。有关这些参数的详细信息，请参阅 [Web 数据的配置设置](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
+>如果您已经在[!DNL Session Parameters.cfg]文件中将“最大会话持续时间”和“会话超时”定义为参数，请不要在配置中为它们输入值。 如下例所示，可以通过键入 *$(参数名称)* 引用这些参数。有关这些参数的详细信息，请参阅 [Web 数据的配置设置](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
-此示例中的 [!DNL Sessionize] 转换将 x-timestamp 和 x-trackingid 字段作为其输入，并在 x-session-key 字段中记录每个日志条目的会话编号。The transformation&#39;s [!DNL Timeout Condition] is based on a [!DNL Neither] condition: If the cs(referrer-domain) field for a log entry matches a member of the Internal Domains parameter, the condition evaluates to false. 请注意对 Internal Domains（内部域）和 Session Timeout（会话超时）参数的引用。
+此示例中的 [!DNL Sessionize] 转换将 x-timestamp 和 x-trackingid 字段作为其输入，并在 x-session-key 字段中记录每个日志条目的会话编号。转换的[!DNL Timeout Condition]基于[!DNL Neither]条件：如果日志条目的cs(推荐人-domain)字段与Internal Domains参数的成员匹配，则条件的计算结果为false。 请注意对 Internal Domains（内部域）和 Session Timeout（会话超时）参数的引用。
 
-有关该工具的信 [!DNL NeitherCondition]息，请参阅 [条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。 有关“内部域”和“会话超时”参数的信息，请参 [阅Web数据的配置设置](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)。
+有关[!DNL NeitherCondition]的信息，请参阅[Conditions](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。 有关“内部域”和“会话超时”参数的信息，请参阅[Web数据的配置设置](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)。
 
 ![](assets/cfg_TransformationType_Sessionize.png)
-
