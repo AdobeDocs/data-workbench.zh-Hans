@@ -1,30 +1,31 @@
 ---
-description: “详细状态”界面可用于对Data Workbench Server计算机的错误或其他问题进行疑难解答。
-solution: Analytics
+description: “详细状态”界面可用于诊断Data Workbench服务器计算机的错误或其他问题。
 title: 详细状态界面
-topic: Data workbench
 uuid: c4d375d9-431f-4b0a-ba15-b7a10501b2e2
+exl-id: 6a460ebd-fb8f-4486-9849-dad2ff745cb5
 translation-type: tm+mt
-source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1223'
+ht-degree: 75%
 
 ---
 
+# 详细状态界面{#detailed-status-interface}
 
-# Detailed Status interface{#detailed-status-interface}
+“详细状态”界面可用于诊断Data Workbench服务器计算机的错误或其他问题。
 
-“详细状态”界面可用于对Data Workbench Server计算机的错误或其他问题进行疑难解答。
+这包括在这些计算机或作为Data Workbench服务器客户端的[!DNL Report]计算机上运行的任何[!DNL Transform]用户档案。 可以通过[!DNL Admin]菜单访问[!DNL Master Server]和[!DNL Query Server Detailed Status]接口。 要访问其他计算机的[!DNL Detailed Status]接口，请在[!DNL Servers Manager]中右键单击要视图其状态的服务器的节点，然后单击&#x200B;**[!UICONTROL Detailed Status]**。 请参阅[服务器管理器](../../../home/c-get-started/c-admin-intrf/c-svrs-mgr.md#concept-2dfff1ca5bce470a8ee854ed57cbe5ba)。
 
-这包括在这 [!DNL Transform] 些计算机或作为Data Workbench Server客户端的 [!DNL Report] 计算机上运行的任何配置文件。 您可以通过菜 [!DNL Master Server] 单访 [!DNL Query Server Detailed Status] 问界面和 [!DNL Admin] 界面。 To access the [!DNL Detailed Status] interface for other computers, in the [!DNL Servers Manager], right-click the node of the server for which you want to view status and click **[!UICONTROL Detailed Status]**. See [The Servers Manager](../../../home/c-get-started/c-admin-intrf/c-svrs-mgr.md#concept-2dfff1ca5bce470a8ee854ed57cbe5ba).
-
-For more information about the Data Workbench server, see the *Server Products Installation and Administration Guide*.
+有关Data Workbench服务器的详细信息，请参阅&#x200B;*《服务器产品安装和管理指南》*。
 
 ![](assets/vis_DetailedStatus.png)
 
 >[!NOTE]
 >
->要更新界面中的 [!DNL Detailed Status] 信息，请右键单击标 **[!UICONTROL Detailed Status]** 题并单击 **[!UICONTROL Refresh]**。
+>要更新[!DNL Detailed Status]接口中的信息，请右键单击&#x200B;**[!UICONTROL Detailed Status]**&#x200B;标题，然后单击&#x200B;**[!UICONTROL Refresh]**。
 
-The following table lists the tasks that can be completed using the [!DNL Detailed Status] interface.
+下表列表了可使用[!DNL Detailed Status]接口完成的任务。
 
 <table id="table_E685F31DCDB343F49FFA1019F2E8DA85"> 
  <thead> 
@@ -48,7 +49,7 @@ The following table lists the tasks that can be completed using the [!DNL Detail
   </tr> 
   <tr> 
    <td colname="col1"> <p>监视用于存储每个维度及其元素名称的磁盘空间和内存量 </p> </td> 
-   <td colname="col2"> <p>单击 <span class="uicontrol">Performance（性能）</span>&gt; <span class="uicontrol">Dimensions（维度）</span>&gt; <span class="uicontrol">Disk Usage（磁盘使用情况）</span>&gt; <i>&lt;<span class="uicontrol">配置文件名称</span>&gt; </i>或 <span class="uicontrol">Performance（性能）</span>&gt; <span class="uicontrol">Dimensions（维度）</span>&gt; <span class="uicontrol">Memory Usage（内存使用情况）</span>&gt; <i>&lt;<span class="uicontrol">配置文件名称</span>&gt;</i>。 </p> <p><span class="wintitle">Disk Usage（磁盘使用情况）</span>字段提供存储每个维度所需要的名称及磁盘空间容量（以 MB 为单位）。较大的磁盘使用量可能会对查询时间产生不利影响，因为Data Workbench服务器必须读取所有数据才能完成相关查询。 降低维度的磁盘使用量可缩短完成相关查询所花费的时间。 </p> <p><span class="wintitle">Memory Usage（内存使用情况）</span>字段提供每个维度中的元素数量以及存储元素名称列表所需的内存量。大量元素可能会对查询期间使用的内存量产生不利影响，因为Data Workbench服务器必须读取每个元素。 降低维度中的元素数量可缩短完成相关查询所花费的时间。 </p> <p>示例：<code>+&nbsp;Performance
+   <td colname="col2"> <p>单击 <span class="uicontrol">Performance（性能）</span>&gt; <span class="uicontrol">Dimensions（维度）</span>&gt; <span class="uicontrol">Disk Usage（磁盘使用情况）</span>&gt; <i>&lt;<span class="uicontrol">配置文件名称</span>&gt; </i>或 <span class="uicontrol">Performance（性能）</span>&gt; <span class="uicontrol">Dimensions（维度）</span>&gt; <span class="uicontrol">Memory Usage（内存使用情况）</span>&gt; <i>&lt;<span class="uicontrol">配置文件名称</span>&gt;</i>。 </p> <p><span class="wintitle">Disk Usage（磁盘使用情况）</span>字段提供存储每个维度所需要的名称及磁盘空间容量（以 MB 为单位）。较大的磁盘使用数可能会对查询时间产生不利影响，因为Data Workbench服务器必须读取所有数据才能完成相关查询。 降低维度的磁盘使用量可缩短完成相关查询所花费的时间。 </p> <p><span class="wintitle">Memory Usage（内存使用情况）</span>字段提供每个维度中的元素数量以及存储元素名称列表所需的内存量。大量元素可能会对查询期间使用的内存量产生不利影响，因为Data Workbench服务器必须读取每个元素。 降低维度中的元素数量可缩短完成相关查询所花费的时间。 </p> <p>示例：<code>+&nbsp;Performance
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Dimensions&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Disk&nbsp;Usage
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;ProfileName
@@ -69,7 +70,7 @@ The following table lists the tasks that can be completed using the [!DNL Detail
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;13.0&nbsp;sec
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Log&nbsp;Processing\ProfileName&nbsp;0.8&nbsp;sec
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;0.8&nbsp;sec</code> </p> <p>完成查询所花费的时间通常与所有维度的总大小成正比。在查看每个维度的大小之后，可以评估特定维度的作用和使用频度是否足以证明维度的性能成本的合理性。如果不能证明，则可以在“<span class="wintitle">配置文件管理器</span>”中删除该维度。<p>元素名称列表过大（即大于 128 MB）的维度可能导致“内存不足”错误，即使总地址空间使用量还未达到限制也是如此。 </p> <p>此外，如果您使用的是Data Workbench服务器群集，但没有使用集中标准化，则元素名称列表较大的维会对发送内存预算产生重大影响。 有关集中标准化的详细信息，请参阅《数据集配置指南》<i></i>。如果对于群集中所有服务器，用于存储所有元素名称列表所需的内存量加起来超过 100 MB，则即使在查询活动不多的情况下也可能会收到“已超出发送内存预算”错误消息。例如，如果您有一个四服务器群集，每个服务器上用于存储元素名称列表的内在量超过 25 MB，则可能收到错误消息。 </p> </td> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;0.8&nbsp;sec</code> </p> <p>完成查询所花费的时间通常与所有维度的总大小成正比。在查看每个维度的大小之后，可以评估特定维度的作用和使用频度是否足以证明维度的性能成本的合理性。如果不能证明，则可以在“<span class="wintitle">配置文件管理器</span>”中删除该维度。<p>元素名称列表过大（即大于 128 MB）的维度可能导致“内存不足”错误，即使总地址空间使用量还未达到限制也是如此。 </p> <p>此外，如果您使用的是Data Workbench服务器群集，但未使用集中标准化，则元素名称列表较大的维会对发送内存预算产生显着影响。 有关集中标准化的详细信息，请参阅《数据集配置指南》<i></i>。如果对于群集中所有服务器，用于存储所有元素名称列表所需的内存量加起来超过 100 MB，则即使在查询活动不多的情况下也可能会收到“已超出发送内存预算”错误消息。例如，如果您有一个四服务器群集，每个服务器上用于存储元素名称列表的内在量超过 25 MB，则可能收到错误消息。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>监视日志处理和转换所花费的时间 </p> </td> 
@@ -83,7 +84,7 @@ The following table lists the tasks that can be completed using the [!DNL Detail
    <td colname="col1"> <p>确定上一次重新处理或转换所耗费的时间 </p> </td> 
    <td colname="col2"> <p>单击 <span class="uicontrol">Processing Status（处理状态）</span>&gt; <i>&lt;<span class="uicontrol">配置文件名称</span>&gt;</i> &gt; <span class="uicontrol">Processing Mode History（处理模式历史记录）</span>。 </p> <p> 
      <ul id="ul_B7CC0DF54E004C72B220F928CF223F8E"> 
-      <li id="li_2707D8C0D52A44C8BADA4D9AFB5EB2BC">实时- Data Workbench Server可用于进行查询的时间。 </li> 
+      <li id="li_2707D8C0D52A44C8BADA4D9AFB5EB2BC">实时 — Data Workbench服务器可用于进行查询的时间。 </li> 
       <li id="li_3A3B490D70864A259780FC9FFC9AC15E">Fast Input（快速输入）- 该时间加上“快速合并”时间即是处理数据集所需的总时间。 </li> 
       <li id="li_B754C6DECD924170A15721EA4C942E3D">Fast Merge（快速合并）- 转换数据集所需的总时间。 </li> 
      </ul> </p> </td> 
@@ -105,8 +106,8 @@ The following table lists the tasks that can be completed using the [!DNL Detail
    <td colname="col2"> <p>单击 <span class="uicontrol">Component Status（组件状态）</span>。 </p> <p>检查复制组件的状态。如果复制正在运行，即会显示正常。如果复制组件失败，则显示一条错误消息。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>To view <span class="wintitle"> Report Server</span> status for a <span class="keyword"> Report</span> computer that connects to the Data Workbench server </p> </td> 
-   <td colname="col2"> <p>单击 <span class="uicontrol">Report Server Status（报表服务器状态）</span>。 </p> <p><span class="wintitle">详细状态</span>界面的这一部分包含 <span class="filepath">Report Server.cfg</span> 文件的副本、有关正在运行的报表数量的信息（当前片段），以及有关最近错误的信息（上一个错误）。 </p> <p>有关编辑 <span class="filepath">Report Server.cfg</span> 文件的步骤，请参阅《Data Workbench 报表指南<i></i>》。 </p> <p> <p>Note: If the <span class="wintitle"> Report Server Status</span> section does not appear in the <span class="wintitle"> Detailed Status</span> interface, you may need to configure the Data Workbench server to display <span class="wintitle"> Report Server Status</span>. 有关步骤，请参阅《Data Workbench 报表指南<i></i>》。 </p> </p> </td> 
+   <td colname="col1"> <p>要视图连接到Data Workbench服务器的<span class="keyword">报表</span>计算机的<span class="wintitle">报表服务器</span>状态 </p> </td> 
+   <td colname="col2"> <p>单击 <span class="uicontrol">Report Server Status（报表服务器状态）</span>。 </p> <p><span class="wintitle">详细状态</span>界面的这一部分包含 <span class="filepath">Report Server.cfg</span> 文件的副本、有关正在运行的报表数量的信息（当前片段），以及有关最近错误的信息（上一个错误）。 </p> <p>有关编辑 <span class="filepath">Report Server.cfg</span> 文件的步骤，请参阅《Data Workbench 报表指南<i></i>》。 </p> <p> <p>注意：如果<span class="wintitle"> Report Server Status</span>部分未出现在<span class="wintitle"> Detailed Status</span>接口中，您可能需要将Data Workbench服务器配置为显示<span class="wintitle"> Report Server Status</span>。 有关步骤，请参阅《Data Workbench 报表指南<i></i>》。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>查看转换的内存使用信息 </p> </td> 
@@ -114,12 +115,11 @@ The following table lists the tasks that can be completed using the [!DNL Detail
   </tr> 
   <tr> 
    <td colname="col1"> <p>将<span class="wintitle">详细状态</span>界面另存为可在文本编辑器（如记事本）中打开或可分发给其他人的 <span class="filepath">*.cfg</span> 文件 </p> </td> 
-   <td colname="col2"> <p>右键单击<span class="uicontrol">详细状态</span>标题，然后单击<span class="uicontrol">副本另存为</span>。 </p> <p>注释:  <p>右键单击<span class="uicontrol">详细状态</span>标题并单击<span class="uicontrol">保存到<i>服务器名称</i>/Status/</span> 在<span class="wintitle">详细状态</span>界面中不起作用。将显示以下错误消息： </p> <p>无法保存 /Status/。403 禁止访问 </p> </p> </td> 
+   <td colname="col2"> <p>右键单击<span class="uicontrol">详细状态</span>标题，然后单击<span class="uicontrol">副本另存为</span>。 </p> <p>注释：  <p>右键单击<span class="uicontrol">详细状态</span>标题并单击<span class="uicontrol">保存到<i>服务器名称</i>/Status/</span> 在<span class="wintitle">详细状态</span>界面中不起作用。将显示以下错误消息： </p> <p>无法保存 /Status/。403 禁止访问 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>查看<span class="uicontrol">每个日志源的行数</span>量度 </p> </td> 
-   <td colname="col2"> <p>如果需要在“详细状态”中报告“每日志源的行数”量度，则Data Workbench管理员应定义“日志源ID”，并在自定义配置文件的Log Processing.cfg中提供唯一的名称。 </p> </td> 
+   <td colname="col2"> <p>如果需要在“详细状态”中报告“每日志源的行数”量度，则Data Workbench管理员应定义“日志源ID”，并在自定义用户档案的Log Processing.cfg中提供唯一的名称。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
