@@ -1,22 +1,23 @@
 ---
 description: 在创建使用动态点的元素点层时，经纬度数据会嵌入维度的每一个元素中。
-solution: Analytics
-title: 使用动态点定义元素点层
-topic: Data workbench
+title: 定义使用动态点的元素点层
 uuid: f4b41969-329a-4c33-a8db-8d85597fa577
+exl-id: 5f6e264c-5804-47fa-a3ca-8608a3f7e9d3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 89%
 
 ---
 
-
-# Define element point layers using dynamic points{#define-element-point-layers-using-dynamic-points}
+# 定义使用动态点的元素点层{#define-element-point-layers-using-dynamic-points}
 
 在创建使用动态点的元素点层时，经纬度数据会嵌入维度的每一个元素中。
 
 若要定义使用动态点的元素点层，必须创建或已经具有以下信息：
 
-* A dimension, defined in the [!DNL Transformation.cfg] file or a [!DNL transformation dataset include] file, in which each element contains the string “latitude,longitude” or “latitude,longitude,name.”
+* 在[!DNL Transformation.cfg]文件或[!DNL transformation dataset include]文件中定义的维，其中每个元素都包含字符串&quot;latitude，longitude&quot;或&quot;latitude，longitude，name&quot;。
 
    有关创建维度的步骤，请参阅《数据集配置指南》**。
 
@@ -26,9 +27,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->When using [!DNL Dynamic Points], it is essential to ensure that the cardinality of the dimension specified in the layer file is reasonable. 如果数据集的每一行都有不同的纬度和经度，则该维度会很快填满，并且大部分行都归为“Small Elements”元素。由于“Small Elements”元素没有纬度和经度，因此它不会在地球上显示。
+>使用[!DNL Dynamic Points]时，必须确保层文件中指定的维度基数是合理的。 如果数据集的每一行都有不同的纬度和经度，则该维度会很快填满，并且大部分行都归为“Small Elements”元素。由于“Small Elements”元素没有纬度和经度，因此它不会在地球上显示。
 
-## Element point layer file format {#section-0645fbc761c14bb986f3d6f02df407a0}
+## 元素点层文件格式{#section-0645fbc761c14bb986f3d6f02df407a0}
 
 必须使用以下模板格式化使用动态点的每一个元素点层文件：
 
@@ -51,7 +52,7 @@ Layer = ElementPointLayer:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Dimension（维度） </td> 
+   <td colname="col1"> 维度 </td> 
    <td colname="col2"> <p>维度的名称（在转化配置文件中定义），它必须包含具有字符串“latitude,longitude”或“latitude,longitude,name”的元素，如以下示例所示： 
      <ul id="ul_CC12F05459C640F5AB3C295932B04F83"> 
       <li id="li_9023CFA04A0F407E9DF0E1A4D71BB18C">37.5181,-77.1903 </li> 
@@ -59,7 +60,7 @@ Layer = ElementPointLayer:
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Metric（量度） </td> 
+   <td colname="col1"> 指标 </td> 
    <td colname="col2"> 对 Dimension（维度）参数中指定的维度求得的量度名称。 </td> 
   </tr> 
   <tr> 
@@ -71,7 +72,7 @@ Layer = ElementPointLayer:
    <td colname="col2"> 可选。用于调整层中点大小的值。默认值为 100。值越大点越大，值越小点越小。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Color（颜色） </td> 
+   <td colname="col1"> 颜色 </td> 
    <td colname="col2"> 可选。RGB 颜色矢量，表达为 (红,绿,蓝)。有关矢量中的每种颜色，您可以输入 0.0 到 1.0 之间的值。例如，(1.0, 0.0, 0.0) 是大红，(0.5, 0.5, 0.5) 是灰色。 </td> 
   </tr> 
   <tr> 
@@ -94,4 +95,3 @@ Layer = ElementPointLayer:
   Metric = ref: wdata/model/metric/Visitors
   Dynamic Points = bool: true
 ```
-
