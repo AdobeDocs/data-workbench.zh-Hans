@@ -1,17 +1,16 @@
 ---
-description: 'null'
-solution: Analytics
+description: Data Workbench文档
 title: Data Workbench 帮助
-topic: Reports and analytics
+topic: Reports and Analytics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
-translation-type: ht
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
-workflow-type: ht
-source-wordcount: '268'
-ht-degree: 100%
+exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 98%
 
 ---
-
 
 # Data Workbench 帮助{#data-workbench-help}
 
@@ -31,13 +30,13 @@ Data Workbench 包括以下预测分析功能、数据可视化图表和报表�
 * [决策树](/help/home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees.md)
 * [关联矩阵](/help/home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md)
 * [聚类](/help/home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
-* [和弦可视化](/help/home/c-get-started/c-analysis-vis/c-chord-visualization.md)
+* [和弦可视化图表](/help/home/c-get-started/c-analysis-vis/c-chord-visualization.md)
 * [归因配置文件](/help/home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
 * [主营销配置文件导出和集成](/help/home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
 
 ## 更多 Analytics 用户指南
 
-[Analytics 用户指南](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/home.html)
+[《Analytics 用户指南》](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 
 ## Data Workbench 发行说明和新增功能
 
@@ -49,7 +48,7 @@ Data Workbench 包括以下预测分析功能、数据可视化图表和报表�
 
 [Data Workbench 6.51](/help/home/c-release-notes-insight/c-6-51.md) 已经发布。该版本包含新的 AVRO Feed 和条形图显示渐变叠加。
 
-[Data Workbench 6.5](/help/home/c-release-notes-insight/c-6-5.md) 已经发布。安装 Data Workbench 的最新版本可获取以下新功能:
+[Data Workbench 6.5](/help/home/c-release-notes-insight/c-6-5.md) 已经发布。安装 Data Workbench 的最新版本可获取以下新功能：
 
 * [关联表](/help/home/c-get-started/c-analysis-vis/associations-visualization.md)和[关联和弦](/help/home/c-get-started/c-analysis-vis/associations-chord.md)可视化。
 * [回归树选项](/help/home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-regression.md)和对决策树的其他更新。
