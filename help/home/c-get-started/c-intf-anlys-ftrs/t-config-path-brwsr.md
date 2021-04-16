@@ -1,27 +1,28 @@
 ---
 description: 可以将路径浏览器配置为使用基本维度、组维度、级别维度和对应用程序和数据集有益的量度的组合。
-solution: Analytics
 title: 配置路径浏览器
-topic: Data workbench
 uuid: 1ba3fb6e-b76f-428f-b6ec-077669c3b305
+exl-id: be6a68f7-e3e3-4207-a112-3a4fdd5c5f57
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 65%
 
 ---
-
 
 # 配置路径浏览器{#configure-a-path-browser}
 
 可以将路径浏览器配置为使用基本维度、组维度、级别维度和对应用程序和数据集有益的量度的组合。
 
-After you configure a path browser, it is listed with other path browsers in the [!DNL Add Visualization] menu.
+配置路径浏览器后，它会与[!DNL Add Visualization]菜单中的其他路径浏览器一起列出。
 
-1. 在中，单 [!DNL Profile Manager]击，然 **[!UICONTROL Menu]**&#x200B;后单击 **[!UICONTROL Add Visualization]** 并单击 **[!UICONTROL Path Browser]**。
+1. 在[!DNL Profile Manager]中，单击&#x200B;**[!UICONTROL Menu]**，然后单击&#x200B;**[!UICONTROL Add Visualization]**&#x200B;和&#x200B;**[!UICONTROL Path Browser]**。
 
-   At least one [!DNL *.vw] file resides in the Path Browser directory.
+   路径浏览器目录中至少有一个[!DNL *.vw]文件。
 
-1. Right-click the check mark for the desired file and click **[!UICONTROL Make Local]**.
-1. Right-click the check mark for the file in the [!DNL User] column and click **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. 右键单击所需文件的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。
+1. 右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。
 1. 参考以下示例文件和表格，编辑文件的参数：
 
    ```
@@ -67,14 +68,14 @@ After you configure a path browser, it is listed with other path browsers in the
 
 >[!NOTE]
 >
->For more information about the base dimension, group dimension, level dimension, and metric for a path browser, see [Path Browsers](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b).
+>有关路径浏览器的基本维度、组维度、级别维度和量度的详细信息，请参阅[路径浏览器](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b)。
 
-1. In Notepad, click **[!UICONTROL File]** > **[!UICONTROL Save As]** to save the file with a new name based on the group dimension, that is, *Group dimension name*.vw.
+1. 在记事本中，单击&#x200B;**[!UICONTROL File]** > **[!UICONTROL Save As]**&#x200B;以根据组维度（即&#x200B;*组维度名称*.vw）使用新名称保存文件。
 
    确保您将文件保存到路径浏览器目录中。
 
    >[!NOTE]
    >
-   >To make sure that your path browser is saved as a [!DNL *.vw] file, in the [!DNL Save As] window, set Save as type to All Files.
+   >要确保路径浏览器保存为[!DNL *.vw]文件，请在[!DNL Save As]窗口中将“另存为类型”设置为“所有文件”。
 
-1. (Optional) To make the changes available to all users of the working profile, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. （可选）要使更改对工作用户档案的所有用户可用，请在[!DNL Profile Manager]中右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*。
