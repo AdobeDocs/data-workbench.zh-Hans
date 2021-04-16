@@ -1,14 +1,15 @@
 ---
 description: 提升图和增益图提供了一些可视化，可用于评估打分模型的潜在绩效，从而评估既定受众群体的绩效。
-solution: Analytics
 title: 倾向增益图和提升图
-topic: Data workbench
 uuid: 4f08277e-deea-48d3-ab15-214c43ad6664
+exl-id: 5ac08512-ac9c-4e85-a4f9-ea6d819095d8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 99%
 
 ---
-
 
 # 倾向增益图和提升图{#propensity-gain-and-lift-charts}
 
@@ -19,7 +20,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 **打开提升图或增益图**
 
 1. 选择 [!DNL Add Visualization > Predictive Analytics > Scoring]。
-1. Hover over **[!UICONTROL Model Complete]** of a saved score.
+1. 将指针悬停在已保存得分的&#x200B;**[!UICONTROL Model Complete]**&#x200B;上。
 
 ![](assets/propensity_lift_gain_1.png)
 
