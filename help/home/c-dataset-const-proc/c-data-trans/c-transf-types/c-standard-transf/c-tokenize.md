@@ -1,28 +1,29 @@
 ---
 description: Tokenize 转换针对输入字符串以迭代方式应用正则表达式。
-solution: Analytics
 title: Tokenize
-topic: Data workbench
 uuid: f8430e6c-ec14-4ba6-aeae-92c9f2520a63
+exl-id: c1f39b5b-4717-44f6-99c7-4e6a215f3542
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 89%
 
 ---
-
 
 # Tokenize{#tokenize}
 
 Tokenize 转换针对输入字符串以迭代方式应用正则表达式。
 
-However, unlike [!DNL RETransform], [!DNL Tokenize] does not have to match the entire string: the regular expression used for the [!DNL Tokenize] transformation can match a subset of the input. 在找到匹配项之后，[!DNL Tokenize] 会从上个匹配项结束后的字符处开始再次应用正则表达式。
+但是，与[!DNL RETransform]不同，[!DNL Tokenize]不必与整个字符串匹配：用于[!DNL Tokenize]转换的常规表达式可以匹配输入的子集。 在找到匹配项之后，[!DNL Tokenize] 会从上个匹配项结束后的字符处开始再次应用正则表达式。
 
-| 参数 | 描述 | 默认值 |
+| 参数 | 描述 | 默认 |
 |---|---|---|
 | 名称 | 转换的描述性名称。可以在此处输入任何名称。 |  |
 | Case Sensitive（区分大小写） | true 或 false。指定匹配是否区分大小写。 |  |
-| Comments（备注） | 可选。有关转换的说明。 |  |
-| Condition（条件） | 应用此转换的条件。 |  |
-| Default（默认值） | 在满足条件但输入值不可用或正则表达式与输入值不匹配时所使用的默认值。 |  |
+| 评论 | 可选。有关转换的说明。 |  |
+| 条件 | 应用此转换的条件。 |  |
+| 默认 | 在满足条件但输入值不可用或正则表达式与输入值不匹配时所使用的默认值。 |  |
 | 表达式 | 用于匹配的正则表达式。 |  |
 | Outputs（输出） | 输出字符串的名称。对于某个给定的输入字符串，可以有多个输出。输出的数量必须与正则表达式中捕获子模式的数量匹配。 |  |
 
