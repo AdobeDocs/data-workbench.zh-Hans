@@ -1,14 +1,15 @@
 ---
 description: 您可以选择路径浏览器中的路径，以创建包含与该路径中的元素关联的数据的过滤器。
-solution: Analytics
 title: 选择路径
-topic: Data workbench
 uuid: 3131df2f-674f-44b8-9006-d8cb1ecf3874
+exl-id: c560dfd0-ccaf-4a60-88a1-29a33f8aa014
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 86%
 
 ---
-
 
 # 选择路径{#select-a-path}
 
@@ -20,10 +21,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->可以更改路径浏览器的默认级别维。 有关配置路径浏览器的说明，请参阅配 [置路径浏览器](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)。
+>您可以更改路径浏览器的默认级别维度。 有关配置路径浏览器的说明，请参阅[配置路径浏览器](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)。
 
 1. 单击路径浏览器中的某个元素可将显示的路径扩展到根的左侧或右侧。
-1. 右键单击所需的元素，然后单击 **[!UICONTROL Select path]**。 所选路径的轮廓显示为白色。
+1. 右键单击所需元素，然后单击&#x200B;**[!UICONTROL Select path]**。 所选路径的轮廓显示为白色。
 
    >[!NOTE]
    >
@@ -36,4 +37,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    ![](assets/client-path.png)
 
    该路径构成了一种选择，工作区中的所有其他打开的可视化（包括图例）都将进行更新，以显示与所选元素创建的路径关联的数据。请参阅[在可视化中进行选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。
-
