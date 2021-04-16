@@ -1,14 +1,15 @@
 ---
 description: 在构建聚类维度之后，您可以对其保存，并使用聚类浏览器检查它。
-solution: Analytics
 title: 浏览聚类
-topic: Data workbench
 uuid: b0a07525-c586-466a-ac5e-7c7674cb58f8
+exl-id: d144f51c-8103-428d-801c-a12fb3ec5866
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 100%
 
 ---
-
 
 # 浏览聚类{#exploring-clusters}
 
@@ -31,4 +32,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. 右键单击聚类以显示菜单并选择以下标注类型：图像或文本批注、量度图例、表格、折线图或散点图。
 
    ![](assets/explore_clusters_4.png)
-
