@@ -1,20 +1,21 @@
 ---
-description: 有关元素点层文件的格式信息。
-solution: Analytics
+description: 设置有关元素点图层文件的格式信息。
 title: 元素点层文件格式
-topic: Data workbench
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
+exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 92%
 
 ---
 
-
 # 元素点层文件格式{#element-point-layer-file-format}
 
-有关元素点层文件的格式信息。
+设置有关元素点图层文件的格式信息。
 
-Each element point layer [!DNL .layer] file that references a lookup file must be formatted using the following template:
+引用查找文件的每个元素点层[!DNL .layer]文件必须使用以下模板进行格式化：
 
 ```
 Layer = ElementPointLayer:
@@ -60,11 +61,11 @@ Layer = ElementPointLayer:
    <td colname="col2"> <p>查找文件中包含常用键数据的列名称，这允许 Data Workbench Server 将查找文件中的数据集成到数据集中。这必须是查找文件中的第一列。 </p> <p>此列中的每一行都是维度的一个元素。此维度必须在 <span class="filepath">Transformation.cfg</span> 文件或转换数据集包含文件中定义，并在该文件的 Dimension（维度）参数中指定。有关转换配置文件的详细信息，请参阅《数据集配置指南》<i></i>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Dimension（维度） </td> 
+   <td colname="col1"> 维度 </td> 
    <td colname="col2">所含元素与<span class="wintitle">键</span>列中的数据行对应的维度名称（在转换配置文件中定义）。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Metric（量度） </td> 
+   <td colname="col1"> 指标 </td> 
    <td colname="col2"> 对 Dimension（维度）参数中指定的维度求得的量度名称。 </td> 
   </tr> 
   <tr> 
@@ -72,7 +73,7 @@ Layer = ElementPointLayer:
    <td colname="col2"> 可选。用于调整层中点大小的值。默认值为 100。值越大点越大，值越小点越小。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Color（颜色） </td> 
+   <td colname="col1"> 颜色 </td> 
    <td colname="col2"> 可选。RGB 颜色矢量，表达为 (红,绿,蓝)。有关矢量中的每种颜色，您可以输入 0.0 到 1.0 之间的值。例如，(1.0, 0.0, 0.0) 是大红，(0.5, 0.5, 0.5) 是灰色。 </td> 
   </tr> 
   <tr> 
@@ -100,4 +101,3 @@ Layer = ElementPointLayer:
   Dimension = ref: wdata/model/dim/Zipcode
   Metric = ref: wdata/model/metric/Sessions
 ```
-
