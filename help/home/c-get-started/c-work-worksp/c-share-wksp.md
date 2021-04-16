@@ -1,20 +1,21 @@
 ---
 description: 可以使用“导出”工作区菜单将工作区打印和导出到 .png 文件或 Excel。
-solution: Analytics
 title: 共享工作区
-topic: Data workbench
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
+exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 74%
 
 ---
-
 
 # 共享工作区{#share-a-workspace}
 
 可以使用“导出”工作区菜单将工作区打印和导出到 .png 文件或 Excel。
 
-In a workspace, click **[!UICONTROL Export]**.
+在工作区中，单击&#x200B;**[!UICONTROL Export]**。
 
 ![](assets/mnu_export.png)
 
@@ -49,11 +50,11 @@ In a workspace, click **[!UICONTROL Export]**.
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> 如果Data Workbench计算机上安装了Microsoft Excel，则会自动启动Microsoft Excel，并将某些可视化、某些图例和文本注释中的数据导出到新的Excel文件（.xls或。xlsx）。 请参阅<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb">将工作区数据导出到 Microsoft Excel</a>。 </td> 
+   <td colname="col2"> 如果Data Workbench机器上安装了Microsoft Excel，则会自动开始Microsoft Excel，并将某些可视化、某些图例和文本注释中的数据导出到新的Excel文件(.xls或.xlsx)。 请参阅<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb">将工作区数据导出到 Microsoft Excel</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 从模板导出 (Excel) </td> 
-   <td colname="col2"> If Microsoft Excel is installed on the Data Workbench machine, automatically starts Microsoft Excel and exports the data from certain visualizations, certain legends, and text annotations to the template Excel file (<span class="filepath"> .xls</span> or <span class="filepath"> .xlsx</span>) that you select. 请参阅<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302">导出到模板 Excel 文件</a>。 </td> 
+   <td colname="col2"> 如果Data Workbench机器上已安装Microsoft Excel，则会自动开始Microsoft Excel，并将某些可视化、某些图例和文本注释中的数据导出到您选择的模板Excel文件（<span class="filepath"> .xls</span>或<span class="filepath"> .xlsx</span>）。 请参阅<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302">导出到模板 Excel 文件</a>。 </td> 
   </tr> 
  </tbody> 
 </table>
