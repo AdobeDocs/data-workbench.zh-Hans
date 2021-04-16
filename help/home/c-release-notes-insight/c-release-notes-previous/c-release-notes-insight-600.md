@@ -1,14 +1,15 @@
 ---
 description: Data Workbench 6.0.4 中引入的新增功能，包括错误修复和已知问题。
-solution: Analytics
 title: Data Workbench 6.0 发行说明
-topic: Data workbench
 uuid: b348425e-3304-4db7-a280-479a34452bdb
+exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1679'
+ht-degree: 88%
 
 ---
-
 
 # Data Workbench 6.0 发行说明
 
@@ -20,12 +21,12 @@ Data Workbench (Insight 6.0) 包括以下新增功能，以及用于新增报告
 
 | Data Workbench 功能 | 描述 |
 |---|---|
-| [漏斗可视化](../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization.md#concept-79a0854325324bb9a60906cf79ef66da) | 漏斗可视化可让您定义客户的序列处理流，并监视流程中每个步骤的访客流失。 |
+| [漏斗可视化图表](../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization.md#concept-79a0854325324bb9a60906cf79ef66da) | 漏斗可视化可让您定义客户的序列处理流，并监视流程中每个步骤的访客流失。 |
 | [访客聚类](../../../home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md#concept-1c2406ef7b284a56a02daa38eaa2e73d) | 聚类可让您利用客户特性对访客进行动态分类，并基于选定的数据输入生成聚类集，以便进行客户分析和定位。 |
 | [关联分析](../../../home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md#concept-a7c8766b40be43aaa4084612689b630c) | 关联分析可让您快速识别相关数据关系，以便扩展和加强分析。 |
 | [更新的 DeviceAtlas 分配](../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md#concept-28b7bd5c0d854e73834261c431bed1e0) | DeviceAtlas JSON 文件现在将与 DeviceAtlas.dll 和 DeviceAtlas64.dll 一起分配到 .bundle 文件（重命名的 .tar.gz）中。 |
 
-## 客户端升级要求 {#section-f316103b48374b6eac77e8feb5c47ecf}
+## 客户端升级要求  {#section-f316103b48374b6eac77e8feb5c47ecf}
 
 请完成下列升级任务以获得 Data Workbench (Insight 6.0) 客户端功能：
 
@@ -51,7 +52,7 @@ Data Workbench 现在支持使用输入法编辑器 (IME) 作为辅助文本输�
    ```
 
 1. 重新启动 Insight 客户端。
-1. Navigate to the Software and Docs profile (SoftDocs profile) and download the required **[!UICONTROL Insight.zbin]** file: [!DNL Software\Insight Client\v6.00\Insight_6.00.zip]
+1. 导览至“软件和文档”用户档案(SoftDocs用户档案)并下载所需的&#x200B;**[!UICONTROL Insight.zbin]**&#x200B;文件：[!DNL Software\Insight Client\v6.00\Insight_6.00.zip]
 
 1. 将 Insight.zbin 文件复制到 Insight.exe 文件所在的文件夹。
 1. 为确保 Insight 客户端现在从 Insight Server 获取更新，请将 Insight.cfg 文件参数更改为 true：
@@ -78,7 +79,7 @@ Data Workbench 现在支持使用输入法编辑器 (IME) 作为辅助文本输�
 
    要更正此问题，请删除 Insight.exe，并将最新版本的 Insight.exe.old 重命名为 Insight.exe，然后从上述步骤 1 开始重新操作。
 
-## 服务器升级要求 {#section-d6edba8b36234957ba8d06b555667a5a}
+## 服务器升级要求  {#section-d6edba8b36234957ba8d06b555667a5a}
 
 请完成下列升级任务以获得 Insight 6.0 服务器功能：
 
@@ -92,7 +93,7 @@ Data Workbench 现在支持使用输入法编辑器 (IME) 作为辅助文本输�
 
 ## 升级服务器聚类
 
-**准备语言文件（.zbin 文件）。** Insight管理员将选择所 `<language>.zbin` 需语言的文件(例如：zh-cn.zbin)。 `/localization/<language>.zbin` 然后，管理员复制语言文件，并将其重命名为“insight.zbin”。
+**准备语言文件（.zbin 文件）。** Insight管理员选择所 `<language>.zbin` 需语言的文件(例如：zh-cn.zbin)。 `/localization/<language>.zbin` 然后，管理员复制语言文件，并将其重命名为“insight.zbin”。
 
 在准备语言文件 (.zbin) 后，需要更新 Insight Client 和 Report Server。Insight Client 会在[客户端升级过程](../../../home/c-release-notes-insight/release-notes.md)期间更新，而在大多数情况下，Insight 管理员将更新 Report Server。
 
@@ -122,7 +123,7 @@ Data Workbench 现在支持使用输入法编辑器 (IME) 作为辅助文本输�
 
    >[!NOTE]
    >
-   >如果未指定区域设置，则报表服务器默认使用insight.zbin文件中选择的语言。
+   >如果未指定区域设置，则报表服务器将默认使用insight.zbin文件中选择的语言。
 
    按照以下步骤，使用区域设置参数将报表服务器作为服务启动：
 
@@ -130,13 +131,14 @@ Data Workbench 现在支持使用输入法编辑器 (IME) 作为辅助文本输�
    1. 导航至报表服务器安装文件夹。
    1. 键入下列命令以启动该服务：
 
-      * 对于英语： [!DNL ReportServer.exe -RegServer -Locale -en-us]
-      * 对于中文： [!DNL ReportServer.exe -RegServer -Locale -zh-cn]
+      * 英语：[!DNL ReportServer.exe -RegServer -Locale -en-us]
+      * 对于中文：[!DNL ReportServer.exe -RegServer -Locale -zh-cn]
 
 1. 验证报表服务器是否使用正确的参数运行：
 
    1. 打开 Windows 服务管理器。
-   1. 右键单击 [!DNL Adobe Insight Report Server - Properties]。
+   1. 右键单击[!DNL Adobe Insight Report Server - Properties]。
+
    可执行文件的路径将包含以下参数：
 
    ```
@@ -165,14 +167,14 @@ Profile = profileInfo:
 
 >[!NOTE]
 >
->在配置PAServer.cfg并将其保存到自定义配置文件后，站点上需要重新启动Insight Server。
+>配置PAServer.cfg并将其保存到自定义用户档案后，需要在整个站点中重新启动Insight Server。
 
 **升级 Report Server。**&#x200B;您将需要更新 Report Server 的字体和启动参数。
 
 先决条件:
 
 * 在升级 Report Server 6.0 之前，Insight 管理员必须先升级到 Insight Server 6.0。
-* 对于所有语言，Report Server 6.0 要求将 Insight.zbin 添加到 Report Server 根文件夹中。确保将 `base/localization/<language>.zbin` 其复制并重命名为“insight.zbin”。 将其复制到 Report Server 的根目录。
+* 对于所有语言，Report Server 6.0 要求将 Insight.zbin 添加到 Report Server 根文件夹中。确保将`base/localization/<language>.zbin`复制并重命名为“insight.zbin”。 将其复制到 Report Server 的根目录。
 
 更新字体和启动参数：
 
@@ -204,7 +206,7 @@ Profile = profileInfo:
 验证 Report Server 是否使用正确的参数运行：
 
 1. 打开 Windows 服务管理器。
-1. 右键单击 [!DNL Adobe Insight Report Server - Properties]。
+1. 右键单击[!DNL Adobe Insight Report Server - Properties]。
 1. 可执行文件的路径将包含以下参数：
 
    ```
@@ -227,7 +229,7 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 >[!NOTE]
 >
->This change does not affect users currently deployed with the *wbench/ecom* version of the SiteCatalyst data feed.
+>此更改不会影响当前使用&#x200B;*wbench/ecom*&#x200B;版本的SiteCatalyst数据馈送部署的用户。
 
 文件名格式更改将允许在日志处理期间充分使用 Insight 开始和结束时间声明。这使该流程能够评估文件内容是否应被读取，而不是使用逐行搜索过滤所有源文件。
 
@@ -251,13 +253,13 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 ## 修复 {#section-203f917dd6224114a1f801309c4c2cee}
 
-* Now, the key combination to leave a workspace without saving changes has been updated to **[!UICONTROL `<Ctrl>`+`<Backspace>`]**. Previously, you voided changes and closed a workspace by pressing`<Ctrl>`+`<Delete>`.
+* 现在，用于离开工作区而不保存更改的键组合已更新为&#x200B;**[!UICONTROL `<Ctrl>`+`<Backspace>`]**。 以前，您可以按`<Ctrl>` + `<Delete>`撤消更改并关闭工作区。
 
 ## Data Workbench 6.0.4 发行说明{#data-workbench-release-notes}
 
 Data Workbench 6.0.4 中引入的新增功能，包括错误修复和已知问题。
 
-要查看基于每个旧版本的先前功能和修复，请参阅[发行说明存档](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html)。
+要查看基于每个旧版本的先前功能和修复，请参阅[发行说明存档](https://docs.adobe.com/content/help/zh-Hans/data-workbench/using/release-notes/release-notes.html)。
 
 ## 新增功能 {#section-2-1225066ea8f44cf68e42e019d0bca816}
 
@@ -306,13 +308,13 @@ Log Source ID = string: <Name your ID Here>
 
 **可以委派 FSU 资源**
 
-In [!DNL Profiles/`<profilename>`/dataset/Cluster.cfg], you can now specify separate File Server Units (FSU) for the Normalize and Source List servers. 这些服务不再绑定到主 FSU。
+在[!DNL Profiles/`<profilename>`/dataset/Cluster.cfg]中，您现在可以为标准化和源列表服务器指定单独的文件服务器单元(FSU)。 这些服务不再绑定到主 FSU。
 
 >[!NOTE]
 >
->如果未指定List Server，则List Server将继承Normalize Server的配置设置。
+>如果未指定列表服务器，则列表服务器将继承标准化服务器的配置设置。
 
-Example in the [!DNL cluster.cfg] file.
+[!DNL cluster.cfg]文件中的示例。
 
 ```
 Cluster = ClusterConfig: 
