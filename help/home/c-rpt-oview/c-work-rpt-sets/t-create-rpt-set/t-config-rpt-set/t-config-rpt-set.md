@@ -1,37 +1,38 @@
 ---
 description: 在创建并保存报表集文件夹中的工作区后，必须创建新的Report.cfg文件。
-solution: Analytics
-title: 配置报告集
-topic: Data workbench
+title: 配置报表集
 uuid: 21f8dcde-8fe1-4ba0-9eb7-39ff812dcf14
+exl-id: 780e6bb1-b332-4984-b132-df11d95b592a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 4%
 
 ---
 
-
-# 配置报告集{#configure-the-report-set}
+# 配置报表集{#configure-the-report-set}
 
 在创建并保存报表集文件夹中的工作区后，必须创建新的Report.cfg文件。
 
-必须在报告集的 [!DNL Report.cfg] 文件中指定生成和分发报告的时间和方式。
+必须在[!DNL Report.cfg]文件中指定报表集的生成和分发时间以及方式。
 
-**创建新的Report.cfg**
+**创建新Report.cfg**
 
-1. 在Data Workbench中，在工 [!DNL Profile Manager] 作区中右键单击，然后单击 **[!UICONTROL Admin]** > **[!UICONTROL Profile]** >打开 **[!UICONTROL Profile Manager]**。
-1. 单击 **[!UICONTROL Reports]** 以打开文 [!DNL Reports] 件夹。
-1. 单击报告集的文件夹。
-1. 在报表 [!DNL User] 集文件夹的列中，右键单击并选择 **[!UICONTROL Create]** > **[!UICONTROL Report]**。 列中将 [!DNL Report.cfg] 显示一个新 [!DNL File]文件。
-1. 在新文 [!DNL User] 件的列中，右键 [!DNL Report.cfg] 单击该文件的复选标记，然 [!DNL Report.cfg] 后单击 **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。
+1. 在Data Workbench中，通过右键单击工作区中的[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Admin]** > **[!UICONTROL Profile]** > **[!UICONTROL Profile Manager]**&#x200B;打开。
+1. 单击&#x200B;**[!UICONTROL Reports]**&#x200B;打开[!DNL Reports]文件夹。
+1. 单击报表集的文件夹。
+1. 在报表集文件夹的[!DNL User]列中，右键单击并选择&#x200B;**[!UICONTROL Create]** > **[!UICONTROL Report]**。 新[!DNL Report.cfg]文件显示在[!DNL File]列中。
+1. 在新[!DNL Report.cfg]文件的[!DNL User]列中，右键单击[!DNL Report.cfg]文件的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。
 
    ![步骤信息](assets/cfg_reportcfg.png)
 
-1. 根据需要编辑配置参数。 有关这些参数的信息，请参 [阅Report.cfg参数](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff)。
+1. 根据需要编辑配置参数。 有关这些参数的信息，请参阅[Report.cfg参数](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff)。
 
    >[!NOTE]
    >
-   >此示例 [!DNL Report.cfg] 中显示的示例默认情况下仅包含文件中包含 [!DNL Report.cfg] 的参数。 如果需要向文件添加其他参 [!DNL Report.cfg] 数，则必须使用文本编辑器。 有关执行此操作的步骤，请参 [阅编辑现有Report.cfg文件](../../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#concept-96fd57159f454defa09bd18655a12887)。
+   >此示例中显示的示例[!DNL Report.cfg]默认情况下仅包含[!DNL Report.cfg]文件中包含的参数。 如果需要向[!DNL Report.cfg]文件添加其他参数，则必须使用文本编辑器进行添加。 有关执行此操作的步骤，请参阅[编辑现有Report.cfg文件](../../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#concept-96fd57159f454defa09bd18655a12887)。
 
-1. 保存文件，方法是右键单 **[!UICONTROL Report.cfg (modified)]** 击文件顶部，然后单击 **[!UICONTROL另存为报告\]***&lt;**[!UICONTROL ReportSetName]**>***[!UICONTROL \Report.cfg]**。
+1. 通过右键单击文件顶部的&#x200B;**[!UICONTROL Report.cfg (modified)]**&#x200B;并单击&#x200B;**[!UICONTROL Save as Reports\]***&lt;**[!UICONTROL ReportSetName]**>***[!UICONTROL \Report.cfg]**保存文件。
 1. 关闭文件。
-1. 在中， [!DNL Profile Manager]右键单击新文件列中的复选 [!DNL User] 标记，然后 [!DNL Report.cfg] 选择&lt; **[!UICONTROL Save to]***&lt; **[!UICONTROL profile name]**>*。
+1. 在[!DNL Profile Manager]中，右键单击新[!DNL Report.cfg]文件的[!DNL User]列中的复选标记，然后选择&#x200B;**[!UICONTROL Save to]***&lt;**[!UICONTROL profile name]**>*。
