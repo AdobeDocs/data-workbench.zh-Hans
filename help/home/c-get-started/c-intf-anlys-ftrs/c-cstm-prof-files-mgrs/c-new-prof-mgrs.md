@@ -1,42 +1,43 @@
 ---
 description: “配置文件管理器”显示与工作配置文件相关的所有目录。
-solution: Analytics
-title: 创建Profile Manager
-topic: Data workbench
+title: 创建配置文件管理器
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
+exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 25%
 
 ---
 
-
-# 创建Profile Manager{#create-a-profile-manager}
+# 创建配置文件管理器{#create-a-profile-manager}
 
 “配置文件管理器”显示与工作配置文件相关的所有目录。
 
-You may want to access a subdirectory of the [!DNL Profile Manager] without having to navigate its entire directory structure. For example, the [!DNL Metrics] and [!DNL Workspaces] menu options available on the [!DNL Manage] menu of the workspace window menu enable you to open the Profile Manager Metrics and Workspaces folders, respectively.
+您可能希望访问[!DNL Profile Manager]的子目录，而不必导航其整个目录结构。 例如，工作区窗口菜单的[!DNL Manage]菜单上提供的[!DNL Metrics]和[!DNL Workspaces]菜单选项允许您分别打开用户档案管理器“量度”和“工作区”文件夹。
 
-有关的详细信息，请 [!DNL Profile Manager]参阅 [配置文件管理器](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)。
+有关[!DNL Profile Manager]的详细信息，请参阅[用户档案管理器](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)。
 
 默认情况下，您可以访问以下管理器：
 
-* **[!DNL Metrics Manager]:**显示Profile Manager的Metrics文件夹的内容。 您可以打开、编辑、删除或复制每个配置文件中定义的量度。
-* **[!DNL Reports Manager]:**显示Profile Manager的Reports文件夹的内容。 您可以打开、编辑、删除或复制报表工作区或[!DNL report.cfg]文件。
+* **[!DNL Metrics Manager]:** 显示用户档案管理器“量度”文件夹的内容。您可以打开、编辑、删除或复制每个配置文件中定义的量度。
+* **[!DNL Reports Manager]:** 显示用户档案管理器的“报告”文件夹的内容。您可以打开、编辑、删除或复制报表工作区或 [!DNL report.cfg] 文件。
 
-* **[!DNL Workspaces Manager]:**显示Profile Manager的Workspaces文件夹的内容。 所有用于配置[!DNL Worktop]选项卡的文件都位于此处。See[Customizing Worktop Tabs](../../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md).
+* **[!DNL Workspaces Manager]:** 显示用户档案管理器的Workspaces文件夹的内容。所有用于配置 [!DNL Worktop] 选项卡的文件都位于此处。请参阅[自定义Worktop选项卡](../../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)。
 
-Data Workbench enables you to create additional profile managers that display one subdirectory from the [!DNL Profile Manager]. Each manager that you create must have a [!DNL .vw] file that specifies the [!DNL Profile Manager] directory whose contents it shows and the properties of that window. You can use the [!DNL .vw] file for any of the provided managers as a template.
+Data Workbench允许您创建其他用户档案管理器，以显示[!DNL Profile Manager]中的一个子目录。 您创建的每个管理器都必须有一个[!DNL .vw]文件，该文件指定了[!DNL Profile Manager]目录，其中显示了该目录的内容以及该窗口的属性。 您可以将任何提供的管理器的[!DNL .vw]文件用作模板。
 
-**创建配置文件管理器**
+**创建用户档案管理器**
 
-1. In the [!DNL Profile Manager], click the **[!UICONTROL Menu]** directory to view its contents.
-1. 在 Menu 目录内，单击 **[!UICONTROL Admin]** 目录，然后单击 **[!UICONTROL Profile]** 目录。The [!DNL .vw] files for the existing managers are located here.
-1. In the *profile name* column, right-click the check mark for the one of the [!DNL .vw] files (for example, [!DNL Workspaces.vw]), then click **[!UICONTROL Make Local]**.
+1. 在[!DNL Profile Manager]中，单击&#x200B;**[!UICONTROL Menu]**&#x200B;目录以视图其内容。
+1. 在 Menu 目录内，单击 **[!UICONTROL Admin]** 目录，然后单击 **[!UICONTROL Profile]** 目录。现有管理器的[!DNL .vw]文件位于此处。
+1. 在&#x200B;*用户档案名称*&#x200B;列中，右键单击[!DNL .vw]文件（例如[!DNL Workspaces.vw]）中的一个复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。
 
-   A check mark for the file appears in the [!DNL User] column.
+   文件的复选标记显示在[!DNL User]列中。
 
-1. Right-click the check mark for the [!DNL .vw] file in the [!DNL User] column and click **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
-1. In the [!DNL Profile Path] field, type the [!DNL Profile Manager] directory for which you want to create a new manager. 请确保目录名称后面包含斜线 (/)。
+1. 右键单击[!DNL User]列中[!DNL .vw]文件的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。
+1. 在[!DNL Profile Path]字段中，键入要为其创建新管理器的[!DNL Profile Manager]目录。 请确保目录名称后面包含斜线 (/)。
 
    ```
    window = simpleBorderWindow:
@@ -50,9 +51,8 @@ Data Workbench enables you to create additional profile managers that display on
      size = v3d: (830, 900, 0)
    ```
 
-1. In Notepad, click **[!UICONTROL File]** > **[!UICONTROL Save As]** to save the edited file to the *Data Workbench installation folder*\User\*working profile name*\Menu\Admin\Profile Management.
+1. 在记事本中，单击&#x200B;**[!UICONTROL File]** > **[!UICONTROL Save As]**&#x200B;将编辑的文件保存到&#x200B;*Data Workbench安装文件夹*\User\*工作用户档案名称*\Menu\Admin\Profile Management。
 
-   Be sure to change the name of the [!DNL .vw] file to reflect the directory in the [!DNL Profile Manager] to which it corresponds.
+   请务必更改[!DNL .vw]文件的名称，以反映其所对应的[!DNL Profile Manager]目录。
 
-1. (Optional) To make the changes available to all users of the working profile, right-click the check mark for the [!DNL .vw] file in the [!DNL User] column and click **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.
-
+1. （可选）要使更改对工作用户档案的所有用户可用，请右键单击[!DNL User]列中[!DNL .vw]文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > &lt;**[!UICONTROL working profile name]**。
