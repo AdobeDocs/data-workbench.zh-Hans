@@ -1,22 +1,23 @@
 ---
-description: 查看Data Workbench客户端用户界面操作和快捷键的列表。
-solution: Analytics
+description: 视图一列表Data Workbench客户端用户界面操作和快捷键。
 title: 快速参考
-topic: Data workbench
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
+exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 88%
 
 ---
 
+# 快速参考{#quick-reference}
 
-# Quick reference{#quick-reference}
-
-查看Data Workbench客户端用户界面操作和快捷键的列表。
+视图一列表Data Workbench客户端用户界面操作和快捷键。
 
 另请参阅[键盘快捷键](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a)。
 
-## Actions for the Data Workbench client {#section-dfea35452c2e4f0b92229a4974bc24fa}
+## Data Workbench客户端{#section-dfea35452c2e4f0b92229a4974bc24fa}的操作
 
 在客户端用户界面内执行任务时使用这些操作。
 
@@ -65,7 +66,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 | 按 Ctrl 并选择 | 将文本添加到选区 |
 | 按 Shift 并选择 | 从选区中删除文本 |
 
-## Keyboard shortcuts for the Data Workbench client {#section-0597bf92e1af4bcf9f1c8ceffe52649a}
+## Data Workbench客户端{#section-0597bf92e1af4bcf9f1c8ceffe52649a}的键盘快捷键
 
 可以对工作区和配置文件使用这些快捷键。
 
@@ -91,7 +92,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 | 操作 | 结果 |
 |---|---|
 | Ctrl + X | 剪切文本 |
-| Ctrl + Z | 对之前键入的字符撤消操作 |
+| Ctrl + Z | 撤消 操作 |
 | Ctrl + Shift + Z | 对键入的字符恢复操作 |
 | Ctrl+A | 全选 |
 
@@ -152,4 +153,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-
