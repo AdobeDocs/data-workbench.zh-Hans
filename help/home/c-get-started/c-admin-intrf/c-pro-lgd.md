@@ -1,14 +1,15 @@
 ---
 description: “处理图例”提供有关特定服务器的数据处理和转换的详细信息，可让您跟踪正在进行重新处理和重新转换的数据的进度。
-solution: Analytics
 title: 处理图例
-topic: Data workbench
 uuid: 6c082c8f-fbb3-4e48-a249-2a13345fda86
+exl-id: a83ce514-c92b-4cf8-a3cc-bff4e2ba63f1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 94%
 
 ---
-
 
 # 处理图例{#processing-legend}
 
@@ -16,7 +17,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ![](assets/vis_ProcessingLegend.png)
 
-The following table lists the tasks that can be completed using the [!DNL Processing Legend].
+下表列表了可使用[!DNL Processing Legend]完成的任务。
 
 <table id="table_6149250C44B14C44A3CB1CEF68B280C6"> 
  <thead> 
@@ -44,4 +45,3 @@ The following table lists the tasks that can be completed using the [!DNL Proces
   </tr> 
  </tbody> 
 </table>
-
