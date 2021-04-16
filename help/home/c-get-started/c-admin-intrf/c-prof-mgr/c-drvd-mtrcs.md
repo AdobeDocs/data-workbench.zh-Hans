@@ -1,28 +1,29 @@
 ---
 description: 您可以使用“量度编辑器”定义新的量度（称为派生量度）和编辑现有的量度定义。
-solution: Analytics
-title: 使用派生的指标
-topic: Data workbench
+title: 使用派生量度
 uuid: 9767c170-e0cb-47b4-94f1-e9f6950b5926
+exl-id: 83467c64-4b9a-44ab-91a2-202c76c89979
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 36%
 
 ---
 
-
-# 使用派生的指标{#work-with-derived-metrics}
+# 使用派生量度{#work-with-derived-metrics}
 
 您可以使用“量度编辑器”定义新的量度（称为派生量度）和编辑现有的量度定义。
 
-有关本节和查询语言语法中提供的指标的详细信息 [，请参](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)阅《指标、维度和过滤器指南》 **。
+有关本节和[查询语言语法](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)中提供的量度的详细信息，请参阅&#x200B;*量度、Dimension和过滤器指南*。
 
-## 创建派生量度 {#section-d57b98bf0a9940daba4920ff7efc808d}
+## 创建派生量度{#section-d57b98bf0a9940daba4920ff7efc808d}
 
-You use a [!DNL Metric Editor] to define a new metric by name, formula, and format, which is saved to the User\*profile_name*\Metrics folder for later use.
+可使用[!DNL Metric Editor]按名称、公式和格式定义新量度，该量度将保存到User\*用户档案_name*\Metrics文件夹中供以后使用。
 
-1. Open a new [!DNL Metric Editor] using the **[!UICONTROL Admin]** > **[!UICONTROL Profile]** menu option or by right-clicking the **[!UICONTROL User]** column for the folder in which you want to create the metric and clicking **[!UICONTROL Create]** > **[!UICONTROL New Metric]**.
+1. 使用&#x200B;**[!UICONTROL Admin]** > **[!UICONTROL Profile]**&#x200B;菜单选项或右键单击要在其中创建量度的文件夹的&#x200B;**[!UICONTROL User]**&#x200B;列，然后单击&#x200B;**[!UICONTROL Create]** > **[!UICONTROL New Metric]**，打开新[!DNL Metric Editor]。
 
-   显示 [!DNL Metric Editor] 屏。
+   将显示[!DNL Metric Editor]。
 
 1. 在“名称”参数中，键入新量度的名称。
 
@@ -32,9 +33,9 @@ You use a [!DNL Metric Editor] to define a new metric by name, formula, and form
 
    ![](assets/vis_MetricEditor_NewAndEditing.png)
 
-1. 在“公式”参数中，键入新量度的表达式。请注意，过滤器必须在括号内定义 [ ] 在表达式中。
+1. 在“公式”参数中，键入新量度的表达式。请注意，过滤器必须在括号[中定义 ] 表达式。
 
-   有关其他度量表达式语法规则，请参 [阅度量表达式的语法](../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-mtrc-exp.md#concept-bbf440a0307549e088df491b51b51d66)。
+   有关其他量度表达式语法规则，请参阅[量度表达式的语法](../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-mtrc-exp.md#concept-bbf440a0307549e088df491b51b51d66)。
 
    下表提供了扩展量度的示例表达式。
 
@@ -63,28 +64,27 @@ You use a [!DNL Metric Editor] to define a new metric by name, formula, and form
 
    >[!NOTE]
    >
-   >输入适当的表达式后，预览行将显示新度量的值。 如果表达式中存在错误，则预览行会显示一条错误消息。
+   >输入适当的表达式后，预览行将显示新量度的值。 如果表达式中存在错误，则预览行会显示一条错误消息。
 
-1. 右键单击 **[!UICONTROL (New)]** 并单击 **[!UICONTROL Save]**。
+1. 右键单击&#x200B;**[!UICONTROL (New)]** ，然后单击&#x200B;**[!UICONTROL Save]**。
 
-   保存度量时，将在您的计算机上的Data Workbench安装目录\User\*配置文件名称*\Metrics文件夹中创建一个表示新度量的文件。
+   保存该量度时，会在计算机上的Data Workbench安装目录\User\*用户档案名称*\Metrics文件夹中创建一个表示新量度的文件。
 
    ![](assets/vis_MetricEditor_NewAndEditing.png)
 
 现在，通过将新量度选择为任意内置量度，可以在当前整个配置文件中使用该新量度。若要更改量度在量度菜单中的显示顺序，请参阅[使用 Order.txt 文件自定义菜单](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999)。
 
-If you would like all users of the profile to use the metric that you created, you must publish it to the working profile using the [!DNL Profile Manager]. See [Publishing Files to Your Working Profile](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
+如果您希望用户档案的所有用户都使用您创建的量度，则必须使用[!DNL Profile Manager]将其发布到工作用户档案。 请参阅[将文件发布到您的工作用户档案](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)。
 
-## 编辑派生的指标 {#section-db6d924cf4e14bcc8d57cfe1059fc797}
+## 编辑派生量度{#section-db6d924cf4e14bcc8d57cfe1059fc797}
 
-1. In the [!DNL Profile Manager] or [!DNL Metrics Manager], in the *profile name* column, right-click the check mark for the metric file that you want to edit, then click **[!UICONTROL Make Local]**.
-1. Right-click the check mark for the metric file in the [!DNL User] column and click **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
+1. 在[!DNL Profile Manager]或[!DNL Metrics Manager]的&#x200B;*用户档案名称*&#x200B;列中，右键单击要编辑的量度文件的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。
+1. 右键单击[!DNL User]列中量度文件的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。
 
    >[!NOTE]
    >
-   >You also can open a [!DNL Metric Editor] by right-clicking any metric-related area within a visualization to display the metric menu. 有关详细信息，请参 [阅使用度量和维菜单](../../../../home/c-get-started/c-vis/c-met-dim-menus.md#concept-50f07ae47c3e4f94ad7d3d7f8293ccac)。
+   >您还可以通过右键单击可视化中任何与量度相关的区域来打开[!DNL Metric Editor]以显示量度菜单。 有关详细信息，请参阅[使用量度和Dimension菜单](../../../../home/c-get-started/c-vis/c-met-dim-menus.md#concept-50f07ae47c3e4f94ad7d3d7f8293ccac)。
 
-1. In the [!DNL Metric Editor], edit and save the metric definition as necessary using Steps 2-4 in [Creating New Derived Metrics](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-d57b98bf0a9940daba4920ff7efc808d).
+1. 在[!DNL Metric Editor]中，使用[创建新派生量度](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-d57b98bf0a9940daba4920ff7efc808d)中的步骤2-4，根据需要编辑和保存量度定义。
 
-   If you would like all users of the profile to use the metric that you edited, you must publish it to the working profile using the [!DNL Profile Manager]. See [Publishing Files to Your Working Profile](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
-
+   如果您希望用户档案的所有用户都使用您编辑的量度，则必须使用[!DNL Profile Manager]将其发布到工作用户档案。 请参阅[将文件发布到您的工作用户档案](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)。
