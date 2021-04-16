@@ -1,14 +1,15 @@
 ---
 description: 数据集配置界面显示了数据集各个组件（日志源、字段、转换和维度）之间的关系。
-solution: Analytics
 title: 使用数据集配置界面
-topic: Data workbench
 uuid: c29faccd-0402-4982-9e5b-7379e2590246
+exl-id: cc2b876f-8d65-4b36-920a-dde3928795bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 77%
 
 ---
-
 
 # 使用数据集配置界面{#working-with-dataset-configuration-interfaces}
 
@@ -24,5 +25,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    -或者-
 
-* **“管理员”选项卡：** 单击以在 **[!UICONTROL Admin]****[!UICONTROL Dataset and Profile tab]**>上打开相应的工作区缩略图。
-
+* **管理选项卡：** 单击可在>上打开相应的工作区 **[!UICONTROL Admin]** 缩略图 **[!UICONTROL Dataset and Profile tab]**。
