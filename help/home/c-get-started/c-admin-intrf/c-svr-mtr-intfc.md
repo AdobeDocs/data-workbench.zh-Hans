@@ -1,36 +1,37 @@
 ---
-description: 服务器监视器界面可用于排除故障或仅跟踪作为Data Workbench服务器计算机客户端的Data Workbench服务器计算机和报表计算机的性能参数。
-solution: Analytics
+description: 服务器监视器界面对于诊断或仅跟踪作为Data Workbench服务器计算机客户端的Data Workbench服务器计算机和报告计算机的性能参数很有用。
 title: 服务器监视器界面
-topic: Data workbench
 uuid: 609dd8ea-31a9-44c1-ab75-ca783ec85650
+exl-id: fb8baae9-ac1e-4355-ba38-fef6621e22bb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 63%
 
 ---
 
+# 服务器监视器界面{#server-monitor-interface}
 
-# Server Monitor interface{#server-monitor-interface}
-
-服务器监视器界面可用于排除故障或仅跟踪作为Data Workbench服务器计算机客户端的Data Workbench服务器计算机和报表计算机的性能参数。
+服务器监视器界面对于诊断或仅跟踪作为Data Workbench服务器计算机客户端的Data Workbench服务器计算机和报告计算机的性能参数很有用。
 
 服务器监视器界面在计算机名称的左侧顶部显示一个绿色圆点或红色圆点。绿色圆点指示计算机工作正常，没有任何问题。红色节点指示计算机上出现了一个或多个错误。
 
 服务器监视器界面比较靠下的部分列出了每个可用配置文件的处理状态，以及有关该计算机的性能详细信息。
 
-For more information about [!DNL Data Workbench servers], see the *Server Products Installation and Administration Guide*. For more information about [!DNL Report], see the *Data Workbench Report Guide*.
+有关[!DNL Data Workbench servers]的详细信息，请参阅&#x200B;*《服务器产品安装和管理指南》*。 有关[!DNL Report]的详细信息，请参阅&#x200B;*Data Workbench报告指南*。
 
 **打开服务器监视器界面**
 
-* 在“服务器管理器”中，右键单击Data Workbench服务器或计算机的节 [!DNL Report] 点。 t
+* 在“服务器管理器”中，右键单击Data Workbench服务器或[!DNL Report]计算机的节点。 t
 
-单击 **[!UICONTROL Server Monitor]** 查看有关一台服务器的详细信息，或单击 **[!UICONTROL Related Servers]** > **[!UICONTROL Server Monitor List]** 查看有关相关服务器群集的详细信息。
+单击&#x200B;**[!UICONTROL Server Monitor]**&#x200B;可视图有关一台服务器的详细信息，或单击&#x200B;**[!UICONTROL Related Servers]** > **[!UICONTROL Server Monitor List]**&#x200B;可视图有关相关服务器群集的详细信息。
 
 ![](assets/vis_ServerMonitor.png)
 
-The [!DNL Server Monitor]interface updates automatically every 10 seconds.
+[!DNL Server Monitor]接口每10秒自动更新一次。
 
-The following table lists the tasks that can be completed using the [!DNL Server Monitor] interface.
+下表列表了可使用[!DNL Server Monitor]接口完成的任务。
 
 <table id="table_A65426669ADE44B5A6BAD9D4E99A5CAC"> 
  <thead> 
@@ -58,4 +59,3 @@ The following table lists the tasks that can be completed using the [!DNL Server
   </tr> 
  </tbody> 
 </table>
-
