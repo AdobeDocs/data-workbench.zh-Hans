@@ -1,14 +1,15 @@
 ---
 description: 用于定义 User Group（用户组）参数的表格。
-solution: Analytics
 title: 查询队列用户组
-topic: Data workbench
 uuid: 90d9058c-1809-4579-a8c6-930a07affc83
+exl-id: e9586ad4-4c0b-48b7-b533-4d23a0f4a216
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 100%
 
 ---
-
 
 # 查询队列用户组{#query-queue-user-groups}
 
@@ -54,19 +55,18 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>更改 </p> </td> 
-   <td colname="col2"> <p>整数 </p> </td> 
+   <td colname="col2"> <p>int </p> </td> 
    <td colname="col3"> <p>右键单击可添加计划的优先级更改。Change Time（更改时间）是更改发生时的时间。格式为 hour:minutes AM/PM。如果未输入 AM 或 PM，则系统使用军用标准时间。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Priority Limit（优先级限制） </p> </td> 
-   <td colname="col2"> <p>整数 </p> </td> 
+   <td colname="col2"> <p>int </p> </td> 
    <td colname="col3"> <p>因更改产生的最大优先级值。Priority Change（优先级更改）是优先级中添加的量。例如，值 0 返回到默认的优先级。任何其他值都会产生一个由默认优先级加上此数值而得到的优先级。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Users（用户） </p> </td> 
+   <td colname="col1"> <p>用户 </p> </td> 
    <td colname="col2"> <p>矢量 </p> </td> 
    <td colname="col3"> <p>列出身为组成员的用户。 </p> <p> <b>Name（名称）：</b>在用户证书的“通用名称”字段中显示的用户名称。 </p> <p> <b>Extra Priority（额外优先级）：</b>向用户组的基本优先级提供额外的优先级以确定该用户的起始优先级。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
