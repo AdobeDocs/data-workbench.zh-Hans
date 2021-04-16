@@ -1,42 +1,42 @@
 ---
-description: “服务器文件管理器”显示Data Workbench Server安装目录中的所有目录，包括配置和查找文件。
-solution: Analytics
+description: “服务器文件管理器”显示Data Workbench服务器安装目录中的所有目录，包括配置和查找文件。
 title: 创建服务器文件管理器
-topic: Data workbench
 uuid: 9fb2163d-3756-40d2-9817-4a89bd8a38c9
+exl-id: 9e0c8144-0f52-4e46-85d8-c2dcd60ddcb8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 3%
 
 ---
 
-
 # 创建服务器文件管理器{#create-a-server-files-manager}
 
-“服务器文件管理器”显示Data Workbench Server安装目录中的所有目录，包括配置和查找文件。
+“服务器文件管理器”显示Data Workbench服务器安装目录中的所有目录，包括配置和查找文件。
 
-You may want to access a portion of the [!DNL Server Files Manager] without having to navigate its entire directory structure or display only a few of the subdirectories to address a particular need. For example, you might want to create a separate [!DNL Server Files Manager] that displays only the Access Control and Users subdirectories, enabling you to manage your users and their access.
+您可能希望访问[!DNL Server Files Manager]的一部分，而无需导航其整个目录结构或只显示几个子目录来满足特定需求。 例如，您可能希望创建一个单独的[!DNL Server Files Manager]，该仅显示“访问控制”和“用户”子目录，以便管理您的用户及其访问权限。
 
-Each manager that you create must have a [!DNL .vw] file. You can use the [!DNL Server Files.vw] file as a template.
+您创建的每个管理器都必须有一个[!DNL .vw]文件。 可以将[!DNL Server Files.vw]文件用作模板。
 
-有关的详细信息， [!DNL Server Files Manager]请参 [阅服务器文件管理器](../../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4)。
+有关[!DNL Server Files Manager]的详细信息，请参阅[服务器文件管理器](../../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4)。
 
 **创建服务器文件管理器**
 
-1. 在中， [!DNL Profile Manager]单击目 **[!UICONTROL Menu]** 录，然后单击目 **[!UICONTROL Admin]** 录。 The [!DNL Server Files.vw] file is located here.
-1. In the *profile name* column, right-click the check mark for the [!DNL Server Files.vw] file and click **[!UICONTROL Make Local]**. A check mark for the file appears in the [!DNL User] column.
-1. Right-click the check mark for the [!DNL Server Files.vw] file in the [!DNL User] column and click **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. The [!DNL Server Files.vw] file opens.
-1. 要删除目录，请右键单击该目录的上边框， [!DNL Server Files Manager] 然后单击 **[!UICONTROL Server Directories]** > **[!UICONTROL Remove]** > *&lt;**[!UICONTROL directory name]**>*。
-1. 要添加目录，请右键单击目录的上边框 [!DNL Server Files Manager]，单击 **[!UICONTROL Server Directories]** > **[!UICONTROL Add]** > **[!UICONTROL Directory]**。
+1. 在[!DNL Profile Manager]中，单击&#x200B;**[!UICONTROL Menu]**&#x200B;目录，然后单击&#x200B;**[!UICONTROL Admin]**&#x200B;目录。 [!DNL Server Files.vw]文件位于此处。
+1. 在&#x200B;*用户档案名称*&#x200B;列中，右键单击[!DNL Server Files.vw]文件的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 文件的复选标记显示在[!DNL User]列中。
+1. 右键单击[!DNL User]列中[!DNL Server Files.vw]文件的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。 将打开[!DNL Server Files.vw]文件。
+1. 要删除目录，请右键单击[!DNL Server Files Manager]的上边框，然后单击&#x200B;**[!UICONTROL Server Directories]** > **[!UICONTROL Remove]** > *&lt;**[!UICONTROL directory name]**>*。
+1. 要添加目录，请右键单击[!DNL Server Files Manager]的上边框，单击&#x200B;**[!UICONTROL Server Directories]** > **[!UICONTROL Add]** > **[!UICONTROL Directory]**。
 
-   Type the directory’s URI in the URI field, and click **[!UICONTROL OK]**.
+   在URI字段中键入目录的URI，然后单击&#x200B;**[!UICONTROL OK]**。
 
    >[!NOTE]
    >
-   >您可以在URI字段中指定多个目录。 例如，如果您键入[!DNL Profiles\Marketing\]，则服务器文件管理器将包含Marketing子目录，但Profiles目录中没有其他子目录。
+   >您可以在URI字段中指定多个目录。 例如，如果键入 [!DNL Profiles\Marketing\]，则服务器文件管理器包含Marketing子目录，但用户档案目录中没有其他子目录。
 
-1. 右键单击顶部边框，然 [!DNL Server Files Manager] 后单击 **[!UICONTROL Save]**。
-1. To create a new manager, change the file name in the [!DNL File Name] field, then click **[!UICONTROL Save]**. To overwrite the existing manager, click **[!UICONTROL Save]**.
-1. （可选）要使更改对工作配置文件的所有用户可用，请右键单击列中文件 [!DNL .vw] 的复选标 [!DNL User] 记。
+1. 右键单击[!DNL Server Files Manager]顶部边框，然后单击&#x200B;**[!UICONTROL Save]**。
+1. 要创建新管理器，请更改[!DNL File Name]字段中的文件名，然后单击&#x200B;**[!UICONTROL Save]**。 要覆盖现有管理器，请单击&#x200B;**[!UICONTROL Save]**。
+1. （可选）要使更改对工作用户档案的所有用户可用，请右键单击[!DNL User]列中[!DNL .vw]文件的复选标记。
 
    然后，单击 **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
-
