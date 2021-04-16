@@ -1,24 +1,25 @@
 ---
-description: 将XML文件作为日志源进行处理，以定义用于从XML文件提取数据的解码器。
-solution: Analytics
+description: 处理XML文件作为日志源，以定义用于从XML文件提取数据的解码器。
 title: XML 解码器组
-topic: Data workbench
 uuid: 8fc9ab80-9a71-4fe2-a646-e830ffeb67b9
+exl-id: 0b0534b7-8596-4528-a643-8a9b41dcaa33
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1295'
+ht-degree: 74%
 
 ---
 
-
 # XML 解码器组{#xml-decoder-groups}
 
-将XML文件作为日志源进行处理，以定义用于从XML文件提取数据的解码器。
+处理XML文件作为日志源，以定义用于从XML文件提取数据的解码器。
 
 >[!NOTE]
 >
 >为XML日志源定义XML解码器组需要了解XML文件的结构和内容、要提取的数据以及存储该数据的字段。 本节提供了您可以为解码器指定的参数的基本描述。您使用任何解码器的方式取决于包含源数据的 XML 文件。
 
-有关 XML 日志源的格式要求信息，请参阅 [Log Sources（日志源）](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea). 在定义 XML 解码器时如需帮助，请联系 Adobe。
+有关 XML 日志源的格式要求信息，请参阅 [日志源](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea). 在定义 XML 解码器时如需帮助，请联系 Adobe。
 
 XML 解码器的顶级是解码器组 (XMLDecoderGroup)，这是一组用于从特定格式的 XML 文件提取数据的解码器表。如果您的 XML 文件格式各不相同，则必须为每种格式定义一个解码器组。每个解码器组都包含一个或多个解码器表。
 
@@ -53,20 +54,20 @@ XML 解码器的顶级是解码器组 (XMLDecoderGroup)，这是一组用于从�
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Path（路径） </td> 
+   <td colname="col1"> 路径 </td> 
    <td colname="col2"> <p>解码器表包含其信息的结构化 XML 文件内的级别。对于子 XML 解码器表，路径是相对于父表路径的。请注意，路径区分大小写。 </p> <p> 例如，如果 XML 文件包含以下结构： </p> 
 
-    &amp;lt;visitor&amp;gt;
+    &amp;lt;访客(&amp;g)
     
-    &amp;nbsp;
+    ;nbsp;
     
     ...
     
-    &amp; nbsp;
+    &amp;nbsp;
     
-    &amp;/visitor&amp; gt;
+    &amp;lt;/访客&amp;gt;
     
-    &amp; lt;/logdata&amp; gt;&amp; nbsp&lt;/code> &lt;p>则路径为&lt;span class=&quot;filepath&quot;> logdata.visitor &lt;/span>。 &lt;/p> &lt;/td>
+    &amp;lt;/logdata&amp;gt;&amp;nbsp;   &lt;p> 则路径为logdata&lt;span class=&quot;filepath&quot;>.访客&lt;/span>。&lt;/p> &lt;/td>
 </tr> 
   <tr> 
    <td colname="col1"> Table（表） </td> 
@@ -84,7 +85,7 @@ XML 解码器的顶级是解码器组 (XMLDecoderGroup)，这是一组用于从�
 
 若要将 XML 文件用作数据集的日志源，必须定义 XML 解码器组和表以提取要处理到数据集中的信息。在此示例中，您将了解如何为 Web 数据集的示例 XML 日志源定义解码器组和表。
 
-以下XML文件包含有关网站访客的信息，包括Experience Cloud ID、电子邮件地址、实际地址以及有关访客页面查看次数的信息。
+以下XML文件包含有关网站访客的信息，包括Experience CloudID、电子邮件地址、实际地址，以及有关访客页面视图的信息。
 
 ![](assets/xmlFile_LogSource.png)
 
@@ -98,7 +99,7 @@ XML 解码器的顶级是解码器组 (XMLDecoderGroup)，这是一组用于从�
 * 访客的 ID，我们将其存储在 x-trackingid 字段中。
 * 访客的电子邮件地址 (contact.email)，我们将其存储在 x-email 字段中。
 * 访客的注册状态。如果访客是已注册的用户，我们可以在 x-is-registered 字段中存储值“1”。
-* The Path value is [!DNL logdata.visitor], and the Table value is [!DNL Log Entry]. 有关这些参数的信息，请参阅上面的 XMLDecoderGroup 表。
+* Path值为[!DNL logdata.visitor],Table值为[!DNL Log Entry]。 有关这些参数的信息，请参阅上面的 XMLDecoderGroup 表。
 
 **用于子（页面查看）表的信息如下所示：**
 
@@ -108,7 +109,7 @@ XML 解码器的顶级是解码器组 (XMLDecoderGroup)，这是一组用于从�
 * 每次页面查看的 URI，存储在 cs-uri-stem 字段中。
 * “路径”值为 pageview，“表”值为“日志条目”。有关这些参数的信息，请参阅上面的 XMLDecoderGroup 表。
 
-The following screen capture shows a portion of [!DNL Log Processing Dataset Include] file with the resulting XML decoder group for the sample XML file based on the discussed structure of the parent and child XML decoder tables.
+下面的屏幕截图显示了[!DNL Log Processing Dataset Include]文件的一部分，其中根据父XML解码器表和子XML解码器表的讨论结构生成的示例XML解码器组。
 
 ![](assets/cft_LogProc_xmldecodergroup_top.png)
 
@@ -118,19 +119,19 @@ The following screen capture shows a portion of [!DNL Log Processing Dataset Inc
 
 | x-rowtype | cs--uri-stem | x-email | x-is-registered | x-event-time | x-tracking-id |
 |---|---|---|---|---|---|
-| VISITOR |  | foo@bar.com | 1 |  | 1 |
+| VISITOR |  | foo@bar.com | 1 |  | 3 |
 | PAGEVIEW | /index.html |  |  | 2006-01-01 08:00:00 | 1 |
-| PAGEVIEW | / |  |  | 2006-01-01 08:00:30 | 1 |
+| PAGEVIEW | / |  |  | 2006-01-01 08:00:30 | 3 |
 
-您可以在 Data Workbench 中使用字段查看器界面创建与上面类似的表。有关字段查看器界面的信息，请参阅[数据集配置工具](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)。
+您可以在 Data Workbench 中使用字段查看器界面创建与上面类似的表。有关字段查看器界面的信息，请参阅 [数据集配置工具](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5).
 
-## 使用#value on XML元素读取其属性值 {#section-88758428afb94f0baa5a986604d53bc1}
+## 使用#value on XML元素读取其属性值{#section-88758428afb94f0baa5a986604d53bc1}
 
-You can now use the **[!DNL #value]** tag in XML paths to pull the value of an XML element.
+您现在可以在XML路径中使用&#x200B;**[!DNL #value]**&#x200B;标签来拉取XML元素的值。
 
-例如，以前指定的路径 **`<Hit><Page name="Home Page" index="20">home.html</Page></Hit>`** 使您无法读取标记的值 `<Page>` 。 要读取标签的值 `<Page>` 及其属性，可分别使 [!DNL Hit.Page.@name] 用和 [!DNL Hit.Page.@index] 。 您还可以使用表达式拉取标记的 **`Hit.Page.#value`** 值。
+例如，之前指定的路径为&#x200B;**`<Hit><Page name="Home Page" index="20">home.html</Page></Hit>`**&#x200B;使您无法读取`<Page>`标签的值。 要读取`<Page>`标签的值及其属性，可分别使用[!DNL Hit.Page.@name]和[!DNL Hit.Page.@index]。 您还可以使用&#x200B;**`Hit.Page.#value`**&#x200B;表达式拉取标记值。
 
-例如，您可以通过在解码器中添加以 `<varValue>` 下字段来读取标签的值：
+例如，您可以通过在解码器中添加以下字段来读取标签`<varValue>`的值：
 
 ```
 7 = XMLDecoderField: 
@@ -142,7 +143,7 @@ Path = string: varValue
 Table = string: Log Entry
 ```
 
-同样，您也可以通过在解码器中添 `<Rep>` 加以下字段来读取标签的值：
+同样，您也可以通过在解码器中添加以下字段来读取标签`<Rep>`的值：
 
 ```
 7 = XMLDecoderField: 
@@ -154,7 +155,7 @@ Path = string: Reps
 Table = string: Log Entry
 ```
 
-相反，要读取没有属性的元素标签的值，可以通过在路径中提供“ `<text>` ”或使用（取决于您构建解码器的方式）直接读取标签下的标签及其值 `<line>`[!DNL text][!DNL line.text]。
+相反，要读取没有属性的元素标签的值，可以通过在路径中提供“ [!DNL text]”或使用[!DNL line.text]直接读取`<line>`标签下的`<text>`标签及其值，具体取决于您构建解码器的方式。
 
 ```
 2 = XMLDecoderField: 
@@ -166,4 +167,3 @@ Path = string:
 <b>line</b> 
 Table = string: Log Entry
 ```
-
