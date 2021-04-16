@@ -1,14 +1,15 @@
 ---
 description: Transformation.cfg 文件中的 Time Zone（时区）参数控制数据集配置文件中所有本地时间的时间维度、时间转换（例如，定义 x-local-timestring 字段）和格式设置。
-solution: Analytics
 title: 时区
-topic: Data workbench
 uuid: 7b253c5a-f2b1-410c-9433-f13ed1d7a8b3
+exl-id: c8dc49d5-3245-428a-bfb9-42970df73d3e
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '396'
+ht-degree: 78%
 
 ---
-
 
 # 时区{#time-zones}
 
@@ -16,7 +17,7 @@ Transformation.cfg 文件中的 Time Zone（时区）参数控制数据集配置
 
 >[!NOTE]
 >
->“时区”参数不影响系统级功能，如状态中的时间戳和事件日志，这些功能以系统本地时间表示。
+>“时区”参数不影响系统级功能，如状态中的时间戳和事件日志，它们以系统本地时间表示。
 
 Time Zone（时区）参数支持以下与系统无关的时区格式（“协调世界时”）：
 
@@ -31,7 +32,7 @@ Time Zone（时区）参数支持以下与系统无关的时区格式（“协�
 * 美国东部夏令时：时区 = string: UTC -0500 DST
 * 没有时差和 dstrules 变量的 UTC 时间：时区 = string: UTC -0000
 
-When this format is used, the system time zone of data workbench server, data workbench, and [!DNL Report] machines need not be the same as the specified time zone. 此外，Data Workbench Server 计算机上的所有活动数据集配置文件都不必具有相同的时区设置。
+使用此格式时，Data Workbench Server、Data Workbench和[!DNL Report]计算机的系统时区不需要与指定时区相同。 此外，Data Workbench Server 计算机上的所有活动数据集配置文件都不必具有相同的时区设置。
 
 Adobe 建议不要在单个 Data Workbench Server 计算机或 Data Workbench Server 群集中运行多个数据集配置文件。
 
@@ -39,5 +40,4 @@ Data Workbench 用户将在数据集配置文件的时区中看到数据（而�
 
 >[!NOTE]
 >
->You can specify a Time Zone parameter in the [!DNL Log Processing.cfg] file, where it is used for time conversions during log processing. 有关文件中“时区”参数的信息，请参 [!DNL Log Processing.cfg] 阅日志处 [理配置文件](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
-
+>您可以在[!DNL Log Processing.cfg]文件中指定“时区”参数，在该参数中，日志处理期间将用于时间转换。 有关[!DNL Log Processing.cfg]文件中“时区”参数的信息，请参阅[日志处理配置文件](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
