@@ -1,14 +1,15 @@
 ---
 description: Merge 转换从输入字段（通常是字符串矢量）获取值，将它们组合为由给定分隔符分隔的单一字符串，并将结果字符串放在给定输出字段中。
-solution: Analytics
 title: Merge
-topic: Data workbench
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
+exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 100%
 
 ---
-
 
 # Merge{#merge}
 
@@ -19,7 +20,7 @@ Merge 转换从输入字段（通常是字符串矢量）获取值，将它们�
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -29,22 +30,22 @@ Merge 转换从输入字段（通常是字符串矢量）获取值，将它们�
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关转换的说明。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 应用此转换的条件。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Default（默认值） </td> 
+   <td colname="col1"> 默认 </td> 
    <td colname="col2"> 在满足条件但输入值不可用时所使用的默认值。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Delimiter（分隔符） </td> 
+   <td colname="col1"> 分隔符 </td> 
    <td colname="col2"> <p>用于在单个输出字符串中分隔输入字符串矢量的各个元素的字符串。 </p> <p> 如果按住 Ctrl 键并且右键单击 Delimiter（分隔符）参数内部，则会显示“<span class="wintitle">插入</span>”菜单。此菜单包含通常用作分隔符的特殊字符列表。 </p> </td> 
    <td colname="col3"></td> 
   </tr> 
