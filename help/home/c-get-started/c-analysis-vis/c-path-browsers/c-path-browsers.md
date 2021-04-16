@@ -1,16 +1,17 @@
 ---
 description: 路径浏览器可用于分析访问某个特定维度的元素的顺序。
-solution: Analytics
 title: 路径浏览器
-topic: Data workbench
 uuid: 548091dc-935f-41ac-b67c-39080988f1ea
+exl-id: 563cf0e3-39d7-49b7-b808-b0233169fb1a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 94%
 
 ---
 
-
-# Path browsers{#path-browsers}
+# 路径浏览器{#path-browsers}
 
 路径浏览器可用于分析访问某个特定维度的元素的顺序。
 
@@ -32,10 +33,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * 当您沿一条路径从一个基本维度元素到下一个基本维度元素时，便从一个级别维度元素移动到下一个级别维度元素。例如，假设您创建了一个显示网站页面的路径浏览器。每个页面都是“页面”维度的一个元素，并且“页面”的级别维度为“页面查看”。当您从一个页面移动到下一个页面时，您便从一次页面查看移动到了下一次页面查看。
    * 当您在路径浏览器中选择基本维度元素的某个路径时，您便是为级别维度的相应元素选择数据。该选择始终包括与根相关的级别维度的元素，并且可以通过向路径添加其他元素加以完善。例如，当您选择某个页面路径（如根 > A > B）时，您便是为与该根（下一个页面为 A，再下一个页面为 B）关联的页面查看次数选择数据。
 
-      有关在路径浏览器中选择路径的信息，请参阅 [选择路径](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/t-sel-paths.md#task-bf44d08c71954ef2adec4b82f840adeb). 有关选择的信息，请参阅可 [视化中的选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。
+      有关在路径浏览器中选择路径的信息，请参阅 [选择路径](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/t-sel-paths.md#task-bf44d08c71954ef2adec4b82f840adeb). 有关选择的信息，请参阅在可视化中进行选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。[
    >[!NOTE]
    >
-   >路径浏览器将忽略级别维的元素，而没有关联的基本维元素。 当您从流程图创建一个路径浏览器时可能会发生这种情况。请参阅 [创建路径浏览器](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-create-path-browsers.md#concept-e120de6a740d4b6f98dda9e2b638f6ff).
+   >路径浏览器会忽略级别维度的元素，而没有关联的基本维度元素。 当您从流程图创建一个路径浏览器时可能会发生这种情况。请参阅 [创建路径浏览器](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-create-path-browsers.md#concept-e120de6a740d4b6f98dda9e2b638f6ff).
 
 * **组维度：**&#x200B;组维度确定级别维度的元素如何组合以形成路径浏览器的路径。具体来说，与路径浏览器中单个路径相关联的级别维度元素不能跨越组维度的多个元素。
 
@@ -53,5 +54,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->您可以更改路径浏览器的默认维度和度量。 有关配置路径浏览器可视化的说明，请参 [阅配置路径浏览器](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)。
-
+>您可以更改路径浏览器的默认维度和量度。 有关配置路径浏览器可视化的说明，请参阅[配置路径浏览器](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)。
