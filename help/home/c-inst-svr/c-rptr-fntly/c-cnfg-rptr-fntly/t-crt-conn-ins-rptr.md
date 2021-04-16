@@ -1,25 +1,24 @@
 ---
-description: 如果网络防火墙不阻止从Insight计算机访问中继器服务器，则可以在中继器服务器与Insight之间创建连接，以便使用Insight管理中继器服务器。
-solution: Analytics
+description: 如果网络防火墙不阻止从Insight计算机访问中继器服务器，则可以在中继器服务器与Insight之间创建连接，以便您可以使用Insight管理中继器服务器。
 title: 在 Insight 与中继器之间创建连接
 uuid: dccce83a-8708-4763-a19a-64d905a9f624
+exl-id: 81e81db5-0517-41d4-a958-d08cd3975096
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 9%
 
 ---
 
-
 # 在 Insight 与中继器之间创建连接{#creating-a-connection-between-insight-and-repeater}
 
-如果网络防火墙不阻止从Insight计算机访问中继器服务器，则可以在中继器服务器与Insight之间创建连接，以便使用Insight管理中继器服务器。
+如果网络防火墙不阻止从Insight计算机访问中继器服务器，则可以在中继器服务器与Insight之间创建连接，以便您可以使用Insight管理中继器服务器。
 
-**在中继服务器和[!DNL Insight]中继服务器之间创建连接**
+**在中继服务器和中继 [!DNL Insight] 服务器之间创建连接**
 
-1. 在选 [!DNL Insight]项卡上， [!DNL Admin] 单击缩略图以 **[!UICONTROL Configure Connections to Servers]** 打开“配置与服务器的连接”工作区。
-1. 在窗 [!DNL Insight.cfg] 口中，右键单 **[!UICONTROL Servers]** 击，然后 **[!UICONTROL Add new]** 单击> **[!UICONTROL Server]**。
+1. 在[!DNL Insight]的[!DNL Admin]选项卡上，单击&#x200B;**[!UICONTROL Configure Connections to Servers]**&#x200B;缩略图以打开“配置与服务器的连接”工作区。
+1. 在[!DNL Insight.cfg]窗口中，右键单击&#x200B;**[!UICONTROL Servers]** ，然后单击&#x200B;**[!UICONTROL Add new]** > **[!UICONTROL Server]**。
 1. 对于新服务器，请完成以下参数：
 
 <table id="table_DD79587255134B5A888A0F57CF10E5B0"> 
@@ -32,24 +31,23 @@ ht-degree: 9%
  <tbody> 
   <tr> 
    <td colname="col1"> 名称 </td> 
-   <td colname="col2">（可选）您希望此Insight用于在 <span class="keyword"> 其</span> 用户界面中表示中继服务器的名称。 </td> 
+   <td colname="col2">（可选）您希望此<span class="keyword"> Insight</span>用于在其用户界面中表示中继服务器的名称。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 地址 </td> 
-   <td colname="col2"> <p>中继服务器的主机名或数字IP地址。 </p> <p>示例： <span class="filepath"> Repeater.mycompany</span> .com或192.168.1.90 </p> </td> 
+   <td colname="col2"> <p>中继服务器的主机名或数字IP地址。 </p> <p>示例：<span class="filepath"> Repeater.mycompany.com</span>或192.168.1.90 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL Client Certificate（SSL 客户端证书） </td> 
-   <td colname="col2"> <p>可选参数，除非您拥有多个证书。The name of the file that contains the digital certificate for this copy of <span class="keyword"> Insight</span>. (这是您在安装Insight时下载的 <span class="keyword"> 文件</span>。) </p> <p>示例：<span class="filepath">Samantha Smith.pem</span></p> <p>If you leave this parameter blank, <span class="keyword"> Insight</span> uses whatever certificate is present. </p> </td> 
+   <td colname="col2"> <p>可选参数，除非您拥有多个证书。包含此<span class="keyword"> Insight</span>副本的数字证书的文件名。 （这是您在安装<span class="keyword"> Insight</span>时下载的文件。） </p> <p>示例：<span class="filepath">Samantha Smith.pem</span></p> <p>如果将此参数留空，<span class="keyword"> Insight</span>将使用任何存在的证书。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>SSL服务器 </p> <p>通用名称 </p> </td> 
-   <td colname="col2">分配给中继服务器的通用名称。 此名称必须与在其许可证证书中分配给中继服务器的通用名称相匹配。 如果您有权访问中继器的证书文件(<span class="filepath"> Certificates\server_cert.pem</span>)，则可以通过使用文本编辑器（如记事本）打开该文件来找到通用名称。 公用名称在证书的CN字段中标识。 </td> 
+   <td colname="col2">分配给中继服务器的公用名称。 此名称必须与在其许可证证书中分配给中继服务器的公用名称相匹配。 如果您有权访问中继器的证书文件(<span class="filepath"> Certificates\server_cert.pem</span>)，则可通过使用文本编辑器（如记事本）打开该文件来查找公用名称。 公用名称在证书的CN字段中标识。 </td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Save the file by right-clicking **[!UICONTROL (modified)]** at the top of the window and clicking **[!UICONTROL Save]**. [!DNL Insight] 将尝试使用您指定的设置连接到中继服务器。 如果建立了连接，则界面中会显示绿色的服务器 [!DNL Servers Manager] 图标。 如果无法建立连接，则显示红色图标。
+1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**&#x200B;并单击&#x200B;**[!UICONTROL Save]**&#x200B;保存文件。 [!DNL Insight] 将尝试使用您指定的设置连接到repeater服务器。如果建立了连接，[!DNL Servers Manager]接口中将显示绿色服务器图标。 如果无法建立连接，则显示一个红色图标。
 
-   For more information about the [!DNL Servers Manager] interface, see the * [!DNL Insight] User Guide*.
-
+   有关[!DNL Servers Manager]接口的详细信息，请参见* [!DNL Insight]用户指南*。
