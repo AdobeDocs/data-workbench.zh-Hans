@@ -1,34 +1,35 @@
 ---
 description: 有关使用过滤条件（包括创建新过滤器和向新过滤器添加条件）的信息。
-solution: Analytics
-title: 使用过滤器条件
-topic: Data workbench
+title: 使用过滤条件
 uuid: a75fcb21-be5c-452a-8632-86cd78db15cb
+exl-id: 15745b0c-2754-4f8b-acfd-a6bd5886ecf8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '852'
+ht-degree: 81%
 
 ---
 
-
-# Working with filter conditions{#working-with-filter-conditions}
+# 使用过滤条件{#working-with-filter-conditions}
 
 有关使用过滤条件（包括创建新过滤器和向新过滤器添加条件）的信息。
 
-## Create a filter {#section-70ba51ae625e493fa3ca70b93ffba406}
+## 创建过滤器 {#section-70ba51ae625e493fa3ca70b93ffba406}
 
-* 通过右键单击 **[!UICONTROL Add Visualization]** >在工作区中打开过滤器编辑器 **[!UICONTROL Filter Editor]**。
+* 右键单击&#x200B;**[!UICONTROL Add Visualization]** > **[!UICONTROL Filter Editor]**，在工作区中打开过滤器编辑器。
 
    -或-
 
-* If you already have a filter editor open and a filter loaded, right-click the current filter’s name and click **[!UICONTROL New Blank Filter]**.
+* 如果已打开过滤器编辑器并加载过滤器，请右键单击当前过滤器的名称，然后单击&#x200B;**[!UICONTROL New Blank Filter]**。
 
-## Add a condition to a new filter {#section-50986db80f1148c489630a8a63fe9f28}
+## 向新过滤器{#section-50986db80f1148c489630a8a63fe9f28}添加条件
 
 1. 创建新的过滤器。确保“设计过滤器”突出显示（相对于“应用过滤器”），表示您正在“设计过滤器”模式下工作。
-1. 在标记的区域内右键单击， **[!UICONTROL Right-click to build filter]** 然后选择以下选项之一：
+1. 在标记为&#x200B;**[!UICONTROL Right-click to build filter]**&#x200B;的区域内右键单击，然后选择以下选项之一：
 
-   * 要创建包含过滤器，请单击 **[!UICONTROL Include group with]**。
-   * 要创建排除过滤器，请单击 **[!UICONTROL Exclude group with]**。
+   * 要创建包含过滤器，请单击&#x200B;**[!UICONTROL Include group with]**。
+   * 要创建排除过滤器，请单击&#x200B;**[!UICONTROL Exclude group with]**。
 
 1. 选择要添加到过滤器的条件类型。
 
@@ -52,7 +53,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>公式 </p> </td> 
-   <td colname="col2"> <p>根据您输入的公式定义过滤条件。必须使用正确的语法，过滤器才能工作。 </p> <p> <p>注意：有关定义过滤器的语法的信息，请参阅过 <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15"> 滤器表达式的语法</a>。 </p> </p> </td> 
+   <td colname="col2"> <p>根据您输入的公式定义过滤条件。必须使用正确的语法，过滤器才能工作。 </p> <p> <p>注意：有关定义过滤器的语法的信息，请参阅<a href="../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15">筛选器表达式的语法</a>。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>量度值 </p> </td> 
@@ -78,7 +79,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </tbody> 
 </table>
 
-The filter in this example defines a first/last filter for users whose last page view was [!DNL /hme/rts/Our Rates]:
+此示例中的过滤器为最后一页视图为[!DNL /hme/rts/Our Rates]的用户定义第一个/最后一个过滤器：
 
 ![](assets/client-fil2.png)
 
@@ -95,27 +96,26 @@ The filter in this example defines a first/last filter for users whose last page
 
 ![](assets/vis_FilterEditor_ExampleMovies.png)
 
-## Delete a filter condition {#section-3092e0d7ac624885b8fe24616279de13}
+## 删除筛选器条件{#section-3092e0d7ac624885b8fe24616279de13}
 
 >[!NOTE]
 >
->仅当在“设计过滤器”模式下工作时，才可删除条件。 如果您已对工作区应用过滤器，则必须单击“设计过滤器”以返回“设计过滤器”模式，然后才能删除一个或多个过滤条件。
+>只有在“设计过滤器”模式下才能删除条件。 如果您已对工作区应用过滤器，则必须单击“设计过滤器”以返回“设计过滤器”模式，然后才能删除一个或多个过滤条件。
 
 * 单击条件左侧的 **x** 即可将其删除。
 
-## 编辑条件说明 {#section-5015fd2c88ed4b6a95be7f0d53be2db0}
+## 编辑条件说明{#section-5015fd2c88ed4b6a95be7f0d53be2db0}
 
 可以向添加到过滤器的每个条件中添加描述。可以根据需要编辑或删除描述。
 
 >[!NOTE]
 >
->只有在“设计过滤器”模式下工作时，才会显示条件说明。
+>仅当您在“设计过滤器”模式下工作时，才显示条件说明。
 
-* 右键单击条件，然后单击 **[!UICONTROL Edit description]**。
+* 右键单击条件，然后单击&#x200B;**[!UICONTROL Edit description]**。
 
-   * To add or edit a description, type the description in the [!DNL Edit condition description] field. 在过滤器编辑器窗口中，描述显示在条件上面的引号中。
+   * 要添加或编辑说明，请在[!DNL Edit condition description]字段中键入说明。 在过滤器编辑器窗口中，描述显示在条件上面的引号中。
 
       ![](assets/vis_FilterEditor_ConditionDescription.png)
 
-* 要删除描述，请单击 **[!UICONTROL Remove description]**。 该条件仍然位于过滤器编辑器窗口中。
-
+* 要删除描述，请单击&#x200B;**[!UICONTROL Remove description]**。 该条件仍然位于过滤器编辑器窗口中。
