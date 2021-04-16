@@ -1,16 +1,17 @@
 ---
 description: 您可以通过搜索特定文本或过滤掉空行，过滤字段查看器中显示的值。
-solution: Analytics
 title: 在字段查看器中过滤
-topic: Data workbench
 uuid: 3788fa03-c898-4e9d-81a0-ecf90376cac6
+exl-id: 0bb781e7-8c1c-4a74-882f-410470782ad2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 79%
 
 ---
 
-
-# Filter within a field viewer{#filter-within-a-field-viewer}
+# 在字段查看器中过滤{#filter-within-a-field-viewer}
 
 您可以通过搜索特定文本或过滤掉空行，过滤字段查看器中显示的值。
 
@@ -19,7 +20,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. 右键单击需要搜索其值的字段的列。
 1. I
 
-   n the text box under [!DNL Search for rows with], type the text for which to search. 还可以输入正则表达式以进行模式匹配。
+   在[!DNL Search for rows with]下的文本框中，键入要搜索的文本。 还可以输入正则表达式以进行模式匹配。
 
 ![](assets/vis_FieldViewer_Search.png)
 
@@ -29,6 +30,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **过滤掉空行**
 
-* Right-click within the column for the field for which you want to filter out blank rows and click **[!UICONTROL Filter out blank rows]**.
+* 右键单击要过滤空行的字段的列，然后单击&#x200B;**[!UICONTROL Filter out blank rows]**。
 
 启用后，该选项左侧将显示一个 X，并且列名称以红色突出显示。
