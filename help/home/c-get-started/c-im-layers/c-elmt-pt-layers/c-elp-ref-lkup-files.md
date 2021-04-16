@@ -1,26 +1,27 @@
 ---
 description: 在创建引用查找文件以获取经纬度数据的元素点层时，可通过在查找文件中检索每个元素及其关联的经纬度来获取点的位置。
-solution: Analytics
 title: 定义引用查找文件的元素点层
-topic: Data workbench
 uuid: 32c8de7a-4316-4f91-9810-7f584bc7fb0b
+exl-id: 2275fa8e-82fe-49e4-ab3e-91ec6ecb6233
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 72%
 
 ---
 
-
-# Define element point layers referencing lookup files{#define-element-point-layers-referencing-lookup-files}
+# 定义引用查找文件的元素点层{#define-element-point-layers-referencing-lookup-files}
 
 在创建引用查找文件以获取经纬度数据的元素点层时，可通过在查找文件中检索每个元素及其关联的经纬度来获取点的位置。
 
 >[!NOTE]
 >
->您可以使用“动态点”功能，而不是使用查找文件，该功能将位置的纬度和经度嵌入到维的每个元素的名称中。 See [Defining Element Point Layers Using Dynamic Points](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#concept-51adc5e1df8a48e7bd7a582967e4c512).
+>您可以使用“动态点”功能，而不是使用查找文件，该功能将位置的纬度和经度嵌入到维的每个元素的名称中。 请参阅[使用动态点定义元素点层](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#concept-51adc5e1df8a48e7bd7a582967e4c512)。
 
 若要定义引用查找文件的元素点层，必须创建或已经具有以下信息：
 
-* **在或文件中定** 义的维 [!DNL Transformation.cfg file][!DNL transformation dataset include] 度。 有关转换配置文件的信息，请参阅《数据集配置指南》**。
+* **在** 或文件中定 [!DNL Transformation.cfg file] 义的 [!DNL transformation dataset include] 维。有关转换配置文件的信息，请参阅《数据集配置指南》**。
 
 * **查找文件**，包含用于绘制每个数据点的数据。此文件必须针对每个数据点至少包含三个数据列：键、经度和纬度。有关查找文件所需格式的详细信息，请参阅[元素点层文件格式](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2)。
 
@@ -28,19 +29,19 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    >[!NOTE]
    >
-   >The [!DNL Zip Points.layer] file, provided with the [!DNL Geography] profile, is an element point layer that identifies the [!DNL Zipcode.dim] file, the [!DNL Sessions.metric] file, the [!DNL Zip Points.txt] lookup file, and the names of the key, longitude, latitude, and name columns in the lookup file.
+   >随[!DNL Geography]用户档案提供的[!DNL Zip Points.layer]文件是一个元素点层，用于标识[!DNL Zipcode.dim]文件、[!DNL Sessions.metric]文件、[!DNL Zip Points.txt]查找文件以及查找文件中键、经度、纬度和名称列的名称。
 
-## Element point lookup file format {#section-0bc8c652c1bd40eb84078f2af71a5c06}
+## 元素点查找文件格式{#section-0bc8c652c1bd40eb84078f2af71a5c06}
 
 元素点层查找文件必须至少包含以下三列：
 
-* **[!DNL Key]列：**此列应包含常用键数据，这使Data Workbench服务器能够将查找文件中的数据连接到数据集中的数据。 The[!DNL key]column must be the first column in the lookup file. 此列中的每一行都标识维度中的一个元素。
+* **[!DNL Key]column:** 此列应包含常用键数据，使Data Workbench服务器能够将查找文件中的数据连接到数据集中的数据。[!DNL key]列必须是查找文件中的第一列。 此列中的每一行都标识维度中的一个元素。
 
-* **[!DNL Longitude]列：**此列应包含列中每个数据点的经[!DNL Key]度。
+* **[!DNL Longitude]column:** 此列应包含列中每个数据点的经 [!DNL Key] 度。
 
-* **[!DNL Latitude]列：**此列应包含列中每个数据点的纬度[!DNL Key]值。
+* **[!DNL Latitude]列：** 此列应包含列中每个数据点的 [!DNL Key] 纬度。
 
-* **[!DNL Name]列（可选）:**如果要为每个数据点指定要在地图上显示的名称，则可以在查找文件[!DNL Name]中包含列。
+* **[!DNL Name]列（可选）：** 如果要指定要在地图上为每个数据点显示的名称，则可以在查找文 [!DNL Name] 件中包含列。
 
 [!DNL Zip Points.txt] 查找文件中的每一行在第一列中包含邮政编码，随后是经度、纬度和关联的城市名称。
 
@@ -52,9 +53,9 @@ ZIP_CODE LATITUDE LONGITUDE NAME
 ...
 ```
 
-## Element point layer file format {#section-52d7e92be8354d979af9e7a2210b76f2}
+## 元素点层文件格式{#section-52d7e92be8354d979af9e7a2210b76f2}
 
-Each element point layer [!DNL .layer] file that references a lookup file must be formatted using the following template:
+引用查找文件的每个元素点层[!DNL .layer]文件必须使用以下模板进行格式化：
 
 ```
 Layer = ElementPointLayer:
@@ -97,14 +98,14 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Key Column（键列） </td> 
-   <td colname="col2"> <p>查找文件中包含常用键数据的列的名称，使Data Workbench服务器能够将查找文件中的数据集成到数据集中。 这必须是查找文件中的第一列。 </p> <p>此列中的每一行都是维度的一个元素。此维度必须在 <span class="filepath">Transformation.cfg</span> 文件或<span class="wintitle">转换数据集包含</span>文件中定义，并在该文件的 Dimension（维度）参数中指定。有关转换配置文件的详细信息，请参阅《数据集配置指南》<i></i>。 </p> </td> 
+   <td colname="col2"> <p>查找文件中包含公用键数据的列的名称，使Data Workbench服务器能够将查找文件中的数据集成到数据集中。 这必须是查找文件中的第一列。 </p> <p>此列中的每一行都是维度的一个元素。此维度必须在 <span class="filepath">Transformation.cfg</span> 文件或<span class="wintitle">转换数据集包含</span>文件中定义，并在该文件的 Dimension（维度）参数中指定。有关转换配置文件的详细信息，请参阅《数据集配置指南》<i></i>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Dimension（维度） </td> 
+   <td colname="col1"> 维度 </td> 
    <td colname="col2">所含元素与<span class="wintitle">键</span>列中的数据行对应的维度名称（在转换配置文件中定义）。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Metric（量度） </td> 
+   <td colname="col1"> 指标 </td> 
    <td colname="col2"> 对 Dimension（维度）参数中指定的维度求得的量度名称。 </td> 
   </tr> 
   <tr> 
@@ -112,7 +113,7 @@ Layer = ElementPointLayer:
    <td colname="col2"> 可选。用于调整层中点大小的值。默认值为 100。值越大点越大，值越小点越小。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Color（颜色） </td> 
+   <td colname="col1"> 颜色 </td> 
    <td colname="col2"> 可选。RGB 颜色矢量，表达为 (红,绿,蓝)。有关矢量中的每种颜色，您可以输入 0.0 到 1.0 之间的值。例如，(1.0, 0.0, 0.0) 是大红，(0.5, 0.5, 0.5) 是灰色。 </td> 
   </tr> 
   <tr> 
@@ -140,4 +141,3 @@ Layer = ElementPointLayer:
   Dimension = ref: wdata/model/dim/Zipcode
   Metric = ref: wdata/model/metric/Sessions
 ```
-
