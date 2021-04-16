@@ -1,16 +1,17 @@
 ---
 description: 当在地图上移动鼠标时，与指针所在的地理位置对应的任何可用数据均会显示在可视化的右上角。
-solution: Analytics
-title: 使用地球仪
-topic: Data workbench
+title: 使用地球
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
+exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '227'
+ht-degree: 93%
 
 ---
 
-
-# Working with globes{#working-with-globes}
+# 使用地球{#working-with-globes}
 
 当在地图上移动鼠标时，与指针所在的地理位置对应的任何可用数据均会显示在可视化的右上角。
 
@@ -36,7 +37,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **切换地球中的照明**
 
-可以根据给定时间的太阳的位置打开或关闭地球中的照明。时间由Data Workbench Server设置。
+可以根据给定时间的太阳的位置打开或关闭地球中的照明。时间由Data Workbench服务器设置。
 
-* Right-click within the visualization and click **[!UICONTROL Toggle Lighting]**. 菜单项左侧的 X 表示已启用照明。
-
+* 在可视化中右键单击，然后单击&#x200B;**[!UICONTROL Toggle Lighting]**。 菜单项左侧的 X 表示已启用照明。
