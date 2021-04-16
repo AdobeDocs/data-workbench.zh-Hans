@@ -1,14 +1,15 @@
 ---
 description: Data Workbench 6.1 发行说明包括新功能、升级要求、缺陷修复和已知问题。
-solution: Analytics
 title: Data Workbench 6.1 发行说明
-topic: Data workbench
 uuid: 5bfb558a-ce85-4b4a-95dc-ccef337c4d1b
+exl-id: ed37a00f-b4cd-428e-abb7-7c52d5cfd2f9
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '693'
+ht-degree: 87%
 
 ---
-
 
 # Data Workbench 6.1 发行说明{#data-workbench-release-notes}
 
@@ -22,7 +23,7 @@ Data Workbench 6.1 包括以下新增功能：
 |--- |--- |
 | 64 位 Windows 升级 | Data Workbench 服务器、报表服务器和客户端组件在升级后，只能在 64 位 Windows 操作系统上运行。 |
 | 倾向评分 | 通过为受众评分，可以确定客户的忠诚度，以及从统计的角度确定哪些客户可能会转化销售或与案例或营销活动交互。倾向评分现在包括以下视图，可用于查看模型和显示选定量度的易变的关联。<ul><li>模型查看器对使用倾向评分生成的逻辑回归模型进行检查，并显示每个输入变量（包括常数项）的系数加权及其统计误差范围。 </li><li>提升图和增益图用于评估打分的数据模型的潜在增长。</li><li>混淆矩阵提供以下四个计数的组合：实际正值 (AP)、实际负值 (AN)、预测正值 (PP) 和预测负值 (PN)。</li> <li>从 v6.1 开始，可使用保存选项保存两种类型的倾向得分：维度，或维度和量度。</li><li>现在您可以通过按住 Ctrl-Alt 并进行拖放，在倾向评分和聚类生成器中添加元素。以前添加表格元素时，必须将表格拖动到“元素”框中。</li></ul> |
-| Data Workbench 现在支持中文 | Data Workbench 的客户端应用程序现在支持简体中文。数据工作台还支持将输入法编辑器(IME)作为国际语言的辅助文本输入过程。 |
+| Data Workbench 现在支持中文 | Data Workbench 的客户端应用程序现在支持简体中文。Data Workbench还支持将输入法编辑器(IME)作为国际语言的辅助文本输入流程。 |
 | 数学函数 | 现在可以向量度、数学变换和工作表单元格添加数学函数以进一步计算数据集。 |
 | 统计标注 | 表格现在可为量度列提供统计汇总标注。标注可显示该列的平均值、标准偏差、最小与最大值、方差和总数。标注可纳入任何选择和评估中。 |
 | 关联矩阵过滤器 | 已使用二进制过滤器对关联矩阵进行了更新，以便限制一个或两个关联量度的值，从而更好地进行比较。此外，现在还可以通过按住 Ctrl + Alt 并将元素拖动到要计算的矩阵列或行来从“维度”表添加“维度”元素。 |
@@ -32,13 +33,13 @@ Data Workbench 6.1 包括以下新增功能：
 
 按字母顺序或按自然顺序排序表格列。
 
-To better select elements in a Dimension table, you can order the first column alphabetically or by ordinals by selecting the **[!UICONTROL Sort]** menu option.
+要更好地选择Dimension表中的元素，您可以选择&#x200B;**[!UICONTROL Sort]**&#x200B;菜单选项，按字母顺序或按序数顺序排列第一列。
 
 按自然顺序（默认）对列进行排序时，将显示 # 字符。
 
 **选择排序选项**
 
-To change sorting options between ordinal and alphabet, right-click and select **[!UICONTROL Sort]**. 单击箭头可按相反顺序排序。
+要更改序号和字母之间的排序选项，请右键单击并选择&#x200B;**[!UICONTROL Sort]**。 单击箭头可按相反顺序排序。
 
 ![](assets/sort_table_alpha.png)
 
@@ -54,7 +55,7 @@ To change sorting options between ordinal and alphabet, right-click and select *
 
 ![](assets/c_funnel_hide_fallout.png)
 
-When in a **[!UICONTROL Funnel]** visualization, you can right-click the title and select **[!UICONTROL Hide Fallout]** from the menu to hide the fallout labels.
+在&#x200B;**[!UICONTROL Funnel]**&#x200B;可视化中，您可以右键单击标题并从菜单中选择&#x200B;**[!UICONTROL Hide Fallout]**&#x200B;以隐藏流失标签。
 
 ## 已知问题 {#section-ff2180c6871c413480e15fa915c253b9}
 
