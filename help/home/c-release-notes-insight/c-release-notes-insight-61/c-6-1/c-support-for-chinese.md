@@ -1,11 +1,12 @@
 ---
 description: Data Workbench 客户端应用程序现在支持简体中文。
-solution: Analytics
 title: 简体中文本地化
-topic: Data workbench
 uuid: ddf4eade-7c5f-4ccf-aa9f-dd8d109a059f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '79'
+ht-degree: 100%
 
 ---
 
