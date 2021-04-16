@@ -1,16 +1,17 @@
 ---
 description: XSL样式表的代码示例。
-solution: Analytics
-title: 示例XSL样式表
-topic: Data workbench
+title: 示例 XSL 样式表
 uuid: cac5c5ad-b0ec-45d8-901d-e39ce1f6d61a
+exl-id: 688b0ce5-999b-4cfc-9228-146450132aee
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '20'
+ht-degree: 40%
 
 ---
 
-
-# 示例XSL样式表{#sample-xsl-style-sheet}
+# 示例 XSL 样式表{#sample-xsl-style-sheet}
 
 XSL样式表的代码示例。
 
@@ -34,4 +35,3 @@ XSL样式表的代码示例。
 </xsl:template>
 </xsl:stylesheet>
 ```
-
