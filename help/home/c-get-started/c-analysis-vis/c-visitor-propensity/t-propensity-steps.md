@@ -1,36 +1,37 @@
 ---
 description: 按照以下步骤使用“倾向评分”可视化。
-solution: Analytics
 title: 设置倾向评分
-topic: Data workbench
 uuid: afc9aada-3bf9-4ce6-8c43-a955771065b4
+exl-id: e16a7062-636e-44a9-a07d-343d48bf1b4c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 55%
 
 ---
-
 
 # 设置倾向评分{#setting-up-propensity-scoring}
 
 按照以下步骤使用“倾向评分”可视化。
 
-1. 打开新工作区，然后单 **[!UICONTROL Add]** 击> **[!UICONTROL Visualization]** > **[!UICONTROL Predictive Analytics]** > **[!UICONTROL Scoring]** > **[!UICONTROL Propensity Score]**。
+1. 打开新工作区，然后单击&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Predictive Analytics]** > **[!UICONTROL Scoring]** > **[!UICONTROL Propensity Score]**。
 
    ![](assets/propensity_visualization.png)
 
-1. Set the **[!UICONTROL Target]** (the dependent variable).
+1. 设置&#x200B;**[!UICONTROL Target]**（从属变量）。
 
    通过选择以下项设置因变量：
 
-* **维度元素**:在工作区中右键单击并选择 **[!UICONTROL Table]**。 然后选择一个维度元素作为您的因变量。
+* **Dimension元素**:在工作区中右键单击并选择 **[!UICONTROL Table]**。然后选择一个维度元素作为您的因变量。
 
    或者
 
-* **[!UICONTROL Filter Editor]**。单击 **[!UICONTROL Add]** > **[!UICONTROL Visualization]** >以 **[!UICONTROL Filter Editor]** 打开过滤器编辑器可视化。
+* **[!UICONTROL Filter Editor]**。单击&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Filter Editor]**&#x200B;打开过滤器编辑器可视化。
 
    ![](assets/propensity_visualization_filter_editor.png)
 
-   After selecting a Dimension element or Filter as the dependent variable, click **[!UICONTROL Set Target]**, enter a name to describe the dependent variable. Then click **[!UICONTROL OK]** (and make sure the filter box is highlighted) to set the Target.
+   在选择Dimension元素或筛选器作为从属变量后，单击&#x200B;**[!UICONTROL Set Target]**，输入用于描述该从属变量的名称。 然后，单击&#x200B;**[!UICONTROL OK]**（并确保选中滤镜框）以设置目标。
 
    ![](assets/propensity_visualization_setTarget.png)
 
@@ -41,16 +42,16 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/propensity_visualization_metrics.png)
 
-* **量度**。From the Propensity Scoring toolbar, select a metric from the **[!UICONTROL Metrics]** menu.
+* **指标**. 从“倾向评分”工具栏中，从&#x200B;**[!UICONTROL Metrics]**&#x200B;菜单中选择一个量度。
 
-* **维度元素**:在工作区中右键单击并选择 **[!UICONTROL Table]**。 Select one or more Dimension elements and drag to the left column under **[!UICONTROL Independent Variables]** or to the **[!UICONTROL Element]** box using the `<Ctrl>` + `<Alt>` keys.
+* **Dimension元素**:在工作区中右键单击并选择 **[!UICONTROL Table]**。选择一个或多个Dimension元素，然后使用`<Ctrl>` + `<Alt>`键拖动到&#x200B;**[!UICONTROL Independent Variables]**&#x200B;下的左列或&#x200B;**[!UICONTROL Element]**&#x200B;框。
 
-1. 已设置 **[!UICONTROL Training Filter]**. You can define the set of visitors that you want to score by clicking **[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]** from the Propensity Scoring toolbar. 这将提供一组数据子集（专门由要进行评分的访客所构建）。例如，在上月进行过访问的访客，在澳大利亚居住的访客，或查看过特定产品的访客。
+1. 已设置 **[!UICONTROL Training Filter]**. 您可以通过单击“倾向评分”工具栏中的&#x200B;**[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]**&#x200B;来定义要得分的访客集。 这将提供一组数据子集（专门由要进行评分的访客所构建）。例如，在上月进行过访问的访客，在澳大利亚居住的访客，或查看过特定产品的访客。
 
-   默认过滤器是， **[!UICONTROL Train on Everyone]**&#x200B;但您可以通过在表中激活或使用 **[!UICONTROL Dimension Elements]** 构建过滤器来更改它 **[!UICONTROL Filter Editor]**。
+   默认过滤器为&#x200B;**[!UICONTROL Train on Everyone]**，但可以通过在表中激活&#x200B;**[!UICONTROL Dimension Elements]**&#x200B;或使用&#x200B;**[!UICONTROL Filter Editor]**&#x200B;构建过滤器来更改它。
 
-   After selecting a Dimension element or building a filter and while activated, click **Options** > **Set Training Filter**, enter a name to describe the filter, and then click **[!UICONTROL OK]**.
-1. Once you have identified all your inputs, press **[!UICONTROL Go]**.
+   在选择Dimension元素或构建过滤器后，在激活后，单击&#x200B;**选项** > **设置培训过滤器**，输入用于描述过滤器的名称，然后单击&#x200B;**[!UICONTROL OK]**。
+1. 确定所有输入后，按&#x200B;**[!UICONTROL Go]**。
 
    ![](assets/propensity_visualization_GO.png)
 
@@ -71,9 +72,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    派生的量度是相关的平均得分量度。
 1. 检查正确率。
 
-   The system will display **[!UICONTROL Model Complete]** and generate a scoring model when the process is complete.
+   系统将显示&#x200B;**[!UICONTROL Model Complete]**，并在流程完成时生成评分模型。
 
-   Right-clicking on **[!UICONTROL Model Complete]** will identify the accuracy of the scoring model as defined by the system. Values ranging from 0 percent to 100 percent will identify the likelihood of the visitors matching the **[!UICONTROL Target]** variable.
+   右键单击&#x200B;**[!UICONTROL Model Complete]**&#x200B;将确定系统定义的评分模型的准确性。 范围从0%到100%的值将标识匹配&#x200B;**[!UICONTROL Target]**&#x200B;变量的访客的可能性。
 
    混淆矩阵提供以下四个计数的组合：实际正值 (AP)、实际负值 (AN)、预测正值 (PP) 和预测负值 (PN)。将生成的评分模型应用于余下 20% 的测试数据（对此我们知道准确答案），可获取这些数值。如果得分高于 50%，则预测为正类情况（与定义的事件匹配）。
 
@@ -96,6 +97,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </tbody> 
 </table>
 
-1. Open a [Lift or Gain Chart](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a), or the [Model Viewer](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9).
+1. 打开[提升或增益图](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a)或[模型查看器](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9)。
 
-   右键单击“模型完 **整** ”可视化 **[!UICONTROL Lift Chart]**，然后选 **[!UICONTROL Gain Chart]**&#x200B;择、 **[!UICONTROL Model Viewer.]**
+   右键单击&#x200B;**模型完整**&#x200B;可视化，然后选择&#x200B;**[!UICONTROL Lift Chart]**、**[!UICONTROL Gain Chart]**&#x200B;或&#x200B;**[!UICONTROL Model Viewer.]**
