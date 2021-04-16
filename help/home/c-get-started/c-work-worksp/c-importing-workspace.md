@@ -1,20 +1,21 @@
 ---
 description: 您可以将工作区导入到您的 Worktop。
-solution: Analytics
 title: 导入工作区
-topic: Data workbench
 uuid: 9f9f0da8-0806-45fe-90b4-d5bc635958e7
+exl-id: 8f589540-9f1c-4776-8815-48d4cfbc5aa6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 73%
 
 ---
-
 
 # 导入工作区{#import-a-workspace}
 
 您可以将工作区导入到您的 Worktop。
 
-**导入工作区**
+**要导入工作区**
 
 1. 右键单击 Worktop（工作区缩略图以外）以打开一个菜单。
 
@@ -25,5 +26,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->可视化不能像工作区一样导入。When you right-click in the worktop and select **[!UICONTROL Import]**, you can import an existing workspace but not a visualization residing outside of the workspace. 如果尝试导入可视化，会收到错误消息“不是有效的工作区”。
-
+>可视化不能像工作区一样导入。在工作区中右键单击并选择&#x200B;**[!UICONTROL Import]**&#x200B;时，可以导入现有工作区，但不能导入位于工作区外部的可视化。 如果尝试导入可视化，会收到错误消息“不是有效的工作区”。
