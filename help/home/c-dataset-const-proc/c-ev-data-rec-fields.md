@@ -1,14 +1,15 @@
 ---
 description: 有关 Data Workbench Server 在构建数据集时可处理的数据字段的信息。
-solution: Analytics
 title: 事件数据记录字段
-topic: Data workbench
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
+exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 81%
 
 ---
-
 
 # 事件数据记录字段{#event-data-record-fields}
 
@@ -18,13 +19,13 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 * [基准事件数据记录字段](../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#section-a882ed7aa6af41eeb45a55bf8c1ca3d7)
 * [派生字段](../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#section-b6c57ee2aa31469fbd5dab90e52bc677)
 
-## 关于事件数据 {#section-3a0705f8c1824017aa4effed9903efbe}
+## 关于事件数据  {#section-3a0705f8c1824017aa4effed9903efbe}
 
 用于构建数据集的事件数据位于称为日志源的文件中。日志源中提供的数据称为事件数据，因为每条数据记录都表示一条交易记录，或一个具有相关时间戳的事件的单个实例。
 
-A log source&#39;s event data is collected in real-time by [!DNL Sensors]. Event data collected by [!DNL Sensors] from HTTP and application servers is transmitted to data workbench servers, which convert the data into compressed log ( [!DNL .vsl]) files. Data Workbench Server 可读取位于无格式文件、XML 文件或 ODBC 数据源中的事件数据，并提供您定义的解码器来从这些不同的格式中提取通用的数据字段集。
+日志源的事件数据由[!DNL Sensors]实时收集。 由[!DNL Sensors]从HTTP和应用程序服务器收集的事件数据将传输到Data Workbench Server，Data Workbench Server将数据转换为压缩日志([!DNL .vsl])文件。 Data Workbench Server 可读取位于无格式文件、XML 文件或 ODBC 数据源中的事件数据，并提供您定义的解码器来从这些不同的格式中提取通用的数据字段集。
 
-The following sections provide information about the data fields (referred to as event data record fields or log entry fields ) that are collected by [!DNL Sensors] or read and made available to the data workbench server.
+以下各节提供由[!DNL Sensors]收集或读取并提供给Data Workbench Server的数据字段(称为事件数据记录字段或日志条目字段)的相关信息。
 
 >[!NOTE]
 >
@@ -38,7 +39,7 @@ The following sections provide information about the data fields (referred to as
 
 ## 基准事件数据记录字段 {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
-Log ( [!DNL .vsl]) files contain the fields of event data that are collected from servers by [!DNL Sensors] and used by the data workbench server in the dataset construction process. The following table lists the fields in a typical event data record as recorded by [!DNL Sensor]:
+日志([!DNL .vsl])文件包含由[!DNL Sensors]从服务器收集并由Data Workbench Server在事件集构建过程中使用的数据字段。 下表列表了由[!DNL Sensor]记录的典型事件数据记录中的字段：
 
 <table id="table_98E135FE4EAF44D6ADEB3C6C1C0BF6A4"> 
  <thead> 
@@ -107,7 +108,7 @@ Log ( [!DNL .vsl]) files contain the fields of event data that are collected fro
  </tbody> 
 </table>
 
-## 派生字段 {#section-b6c57ee2aa31469fbd5dab90e52bc677}
+## 派生字段  {#section-b6c57ee2aa31469fbd5dab90e52bc677}
 
 下表列出了由 Data Workbench Server 从基准事件数据记录字段派生的字段示例：
 
@@ -152,7 +153,7 @@ Log ( [!DNL .vsl]) files contain the fields of event data that are collected fro
    <td colname="col2"> x-timestamp 以从 1970 年 1 月 1 日算起的总秒数表示。此字段也称为 x-unixtime。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> date </td> 
+   <td colname="col1"> 日期 </td> 
    <td colname="col2"> YYYY-MM-DD 格式的 x-timestamp。 </td> 
   </tr> 
   <tr> 
@@ -161,11 +162,11 @@ Log ( [!DNL .vsl]) files contain the fields of event data that are collected fro
   </tr> 
   <tr> 
    <td colname="col1"> x-local-timestring </td> 
-   <td colname="col2"> <p>已转换为 <span class="filepath">Transformation.cfg</span> 文件中为数据集指定的本地时区的 x-timestamp。格式为 YYYY-MM-DD HH:MM:SS.mmm。 </p> <p> <p>注意：您还可以在 <span class="filepath">Log Processing.cfg</span> 文件中定义时间转换，如 x-local-timestring。有关信息，请参阅 <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> 日志处理配置文件 </a>。 </p> </p> </td> 
+   <td colname="col2"> <p>已转换为 <span class="filepath">Transformation.cfg</span> 文件中为数据集指定的本地时区的 x-timestamp。格式为 YYYY-MM-DD HH:MM:SS.mmm。 </p> <p> <p>注意：您还可以在 <span class="filepath">Log Processing.cfg</span> 文件中定义时间转换，如 x-local-timestring。有关信息，请参阅<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">日志处理配置文件</a>。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-log-source-id </td> 
-   <td colname="col2"> <p>与特定日志条目的日志源对应的标识符。对于要记录的标识符，您必须在定义<span class="wintitle">传感器</span>、日志文件或 ODBC 数据源时，在<span class="filepath"> Log Processing.cfg</span> 文件的<span class="wintitle">日志源 ID</span> 字段中指定它。有关详细信息，请参阅 <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> 日志处理配置文件 </a>。 </p> <p> 示例：来自 VSensor01。 </p> </td> 
+   <td colname="col2"> <p>与特定日志条目的日志源对应的标识符。对于要记录的标识符，您必须在定义<span class="wintitle">传感器</span>、日志文件或 ODBC 数据源时，在<span class="filepath"> Log Processing.cfg</span> 文件的<span class="wintitle">日志源 ID</span> 字段中指定它。有关详细信息，请参阅<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">日志处理配置文件</a>。 </p> <p> 示例：来自 VSensor01。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-mask </td> 
@@ -182,4 +183,4 @@ Log ( [!DNL .vsl]) files contain the fields of event data that are collected fro
  </tbody> 
 </table>
 
-[!DNL Sensor]在服务器上使用时，可以从任何有效的HTTP请求或响应头中收集事件数据的字段，或者通过服务器的API收集可用的变量。 To collect such fields of data, you must specify the desired header fields or variables in the [!DNL txlogd.conf]configuration file for [!DNL Sensor]. For more information, see the *Data Workbench[!DNL Sensor]Guide*.
+[!DNL Sensor]在服务器上使用时，可以从任何有效的HTTP请求或响应头或可通过服务器的API访问的变量中收集事件数据的字段。要收集此类数据字段，必须在[!DNL Sensor]的配置文件中指定所需的标题字段或变量。 [!DNL txlogd.conf]有关详细信息，请参阅&#x200B;*Data Workbench[!DNL Sensor]指南*。
