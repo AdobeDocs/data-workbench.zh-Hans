@@ -1,16 +1,17 @@
 ---
 description: 您可以使用“配置文件管理器”下载要修改的文件。
-solution: Analytics
-title: 修改用户配置文件中的本地文件
-topic: Data workbench
+title: 在用户配置文件中修改本地文件
 uuid: 839417d1-34db-4b14-a103-8f5297af55b7
+exl-id: 187d67a1-e436-4bfd-87ad-17b6c70dbee4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 48%
 
 ---
 
-
-# Modify local files in the user profile{#modify-local-files-in-the-user-profile}
+# 在用户配置文件中修改本地文件{#modify-local-files-in-the-user-profile}
 
 您可以使用“配置文件管理器”下载要修改的文件。
 
@@ -18,28 +19,28 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **下载文件**
 
-1. In the [!DNL Profile Manager], open the necessary folders and subfolders to locate the file that you want to download.
-1. Right-click the check mark next to the name of the file and click **[!UICONTROL Make Local]**.
+1. 在[!DNL Profile Manager]中，打开必要的文件夹和子文件夹以找到要下载的文件。
+1. 右键单击文件名称旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。
 
    >[!NOTE]
    >
-   >Configuration ( [!DNL .cfg]), dimension ( [!DNL .dim]), and metric ( [!DNL .metric]) files can be edited directly in a profile folder and saved to the server without making them local and separately saving them to the server. Simply right-click the check mark next to the name of the file and click **[!UICONTROL Open]** > **in workstation**.
+   >配置([!DNL .cfg])、维度([!DNL .dim])和量度([!DNL .metric])文件可以直接在用户档案文件夹中编辑并保存到服务器，而无需将它们本地化并分别保存到服务器。 只需右键单击文件名称旁的复选标记，然后单击工作站&#x200B;**中的&#x200B;**[!UICONTROL Open]**>**。
 
-After the file has been downloaded to the local computer, a check mark appears in the [!DNL User] column, which indicates that a local copy of the file resides in the User\*profile name* folder on your computer. 请注意，复选标记的颜色与&#x200B;*配置文件名称*&#x200B;列中的复选标记相同。这表示本地文件与&#x200B;*配置文件名称*&#x200B;文件夹中的文件具有相同的修改日期和时间。
+将文件下载到本地计算机后，[!DNL User]列中会显示一个复选标记，指示文件的本地副本驻留在计算机上的User\*用户档案 name*文件夹中。 请注意，复选标记的颜色与&#x200B;*配置文件名称*&#x200B;列中的复选标记相同。这表示本地文件与&#x200B;*配置文件名称*&#x200B;文件夹中的文件具有相同的修改日期和时间。
 
 **修改文件**
 
-1. Right-click the check mark next to the file name in the [!DNL User] column.
+1. 右键单击[!DNL User]列中文件名旁边的复选标记。
 1. 单击以下菜单选项之一，具体选择取决于您希望如何编辑文件：
 
-   * **[!UICONTROL Open]** > **[!UICONTROL in workstation]** if you are editing a [!DNL .vw] file or [!DNL .cfg] file in a workspace.
+   * **[!UICONTROL Open]** >  **[!UICONTROL in workstation]** if you are editing a  [!DNL .vw] file or  [!DNL .cfg] file in a workspace
 
-   * **打开** > **in vw。 编辑器**。
+   * **打开** > **in vw。编辑器**（如果您正在编辑.vw文件以添加新参数）。
 
-   * **[!UICONTROL Open]** > **[!UICONTROL In Notepad]** if you wan open a text file or need to add new parameters to a [!DNL .cfg] file.
+   * **[!UICONTROL Open]** >  **[!UICONTROL In Notepad]** if you opening a text file or need to add new parameters to a  [!DNL .cfg] file.
 
-   * **[!UICONTROL Open]** > **[!UICONTROL folder]** if you want to open the folder which the file is on the computer
+   * **[!UICONTROL Open]** >  **[!UICONTROL folder]** if you want to open the file is where the file on your computer
 
 1. 根据需要编辑文件，然后保存该文件。
 
-In the [!DNL Profile Manager], note that the check mark in the [!DNL User] column for the file you edited has changed color. 这表示本地文件现在不同于&#x200B;*配置文件名称*&#x200B;文件夹中的版本。如有必要，可以将文件的修改版本发布到配置文件，以供使用此配置文件的其他用户使用。
+在[!DNL Profile Manager]中，请注意，您所编辑文件的[!DNL User]列中的复选标记已更改颜色。 这表示本地文件现在不同于&#x200B;*配置文件名称*&#x200B;文件夹中的版本。如有必要，可以将文件的修改版本发布到配置文件，以供使用此配置文件的其他用户使用。
