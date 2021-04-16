@@ -1,16 +1,16 @@
 ---
-description: 安装Report Server程序文件后，必须下载并安装Adobe提供给您的数字证书。
-solution: Analytics
+description: 安装Report Server项目文件后，必须下载并安装Adobe提供给您的数字证书。
 title: 下载和安装数字证书
-topic: Data workbench
 uuid: 6104d39f-9a8a-444d-82ea-f0f6996a8122
+exl-id: b87f3450-12bf-4f29-b1ef-c1bdc6b01b85
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 21%
 
 ---
 
-
 # 下载和安装数字证书{#downloading-and-installing-the-digital-certificate}
 
-安装Report Server程序文件后，必须下载并安装Adobe提供给您的数字证书。
-
+安装Report Server项目文件后，必须下载并安装Adobe提供给您的数字证书。
