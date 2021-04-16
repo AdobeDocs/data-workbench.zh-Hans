@@ -1,20 +1,20 @@
 ---
-description: 报告门户允许您通过Web浏览器查看报告服务器生成的报告。
-solution: Analytics
-title: 使用报告门户
-topic: Data workbench
+description: 报表门户允许您通过Web浏览器视图报表服务器生成的报表。
+title: 使用报表门户
 uuid: 0d0b5e27-6e30-439b-8a95-f00c062dbfda
+exl-id: fdcea598-5b79-4e86-97b0-8886aaf9e1e0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 14%
 
 ---
 
+# 使用报表门户{#using-the-report-portal}
 
-# 使用报告门户{#using-the-report-portal}
+报表门户允许您通过Web浏览器视图报表服务器生成的报表。
 
-报告门户允许您通过Web浏览器查看报告服务器生成的报告。
-
-它是 [!DNL Report Portal] 一个基于Web的应用程序，运行在Microsoft Internet Information Services(IIS)Web服务器上。
+[!DNL Report Portal]是运行于Microsoft Internet信息服务(IIS)Web服务器上的基于Web的应用程序。
 
 ![](assets/report_portal_home.png)
-
