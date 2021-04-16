@@ -1,28 +1,29 @@
 ---
-description: 使矢量层可在地球可视化上显示的步骤。
-solution: Analytics
-title: 使新矢量层可用
-topic: Data workbench
+description: 使矢量图层可在地球可视化中显示的步骤。
+title: 使新矢量图层可用
 uuid: 7e88f183-b0aa-452d-b124-7cd970be9bb9
+exl-id: aaa1a680-3733-43c3-9d14-5aaa5f4aad6e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 24%
 
 ---
 
+# 使新矢量图层可用{#making-a-new-vector-layer-available}
 
-# 使新矢量层可用{#making-a-new-vector-layer-available}
+使矢量图层可在地球可视化中显示的步骤。
 
-使矢量层可在地球可视化上显示的步骤。
-
-1. In the Profiles\*profile name*\Maps folder within the data workbench server installation directory, place the layer file and the [!DNL .vec] or [!DNL .tsv] files.
-1. Edit the [!DNL order.txt] file in the Profiles\*profile name*\Maps folder to reflect the order in which you want the layers to display. 默认情况下，层会按其名称以词典顺序显示。
+1. 在Data Workbench Server安装目录中的“用户档案”\*用户档案名称*\Maps文件夹中，放置图层文件和[!DNL .vec]或[!DNL .tsv]文件。
+1. 编辑用户档案\*用户档案名称*\Maps文件夹中的[!DNL order.txt]文件，以反映您希望图层显示的顺序。 默认情况下，层会按其名称以词典顺序显示。
 
    >[!NOTE]
    >
-   >When editing the [!DNL order.txt] file, take care not to cover up map layers that you want to show.
+   >编辑[!DNL order.txt]文件时，请注意不要覆盖要显示的映射图层。
 
-   For more information about using [!DNL order.txt] files, see the Configuring Interface and Analysis Features chapter of the *Data Workbench User Guide*.
+   有关使用[!DNL order.txt]文件的详细信息，请参阅《Data Workbench用户指南》**&#x200B;的“配置接口和分析功能”一章。
 
-1. In data workbench, select the desired profile by right-clicking the workspace title bar and clicking **[!UICONTROL Switch Profile]** > *&lt;**[!UICONTROL profile name]**>*.
-1. Right-click the workspace title bar and click **[!UICONTROL Work Online]**. X显示在旁边 [!DNL Work Online]。
+1. 在Data Workbench中，右键单击工作区标题栏，然后单击&#x200B;**[!UICONTROL Switch Profile]** > *&lt;**[!UICONTROL profile name]**>*，选择所需的用户档案。
+1. 右键单击工作区标题栏，然后单击&#x200B;**[!UICONTROL Work Online]**。 [!DNL Work Online]旁边将显示X。
 1. 打开一个工作区，然后在地球可视化上右键单击并选择新层。随即会在层名称旁边显示一个 X。
