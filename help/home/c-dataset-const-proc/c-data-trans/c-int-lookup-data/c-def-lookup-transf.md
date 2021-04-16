@@ -1,14 +1,15 @@
 ---
 description: 关于可用于将对照数据包含到数据集中的转换的信息。
-solution: Analytics
 title: 定义对照转换
-topic: Data workbench
 uuid: 4f7358b1-9e6a-4d03-b0c6-411e454fc11e
+exl-id: 7b1504be-8669-4340-8400-e33f9663b602
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '2288'
+ht-degree: 87%
 
 ---
-
 
 # 定义对照转换{#defining-lookup-transformations}
 
@@ -20,24 +21,24 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 * [FlatFileLookup](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md#section-e09b2eeb96444a859b14f03cdaab31f2)
 * [ODBCLookup](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md#section-4dcc3747e42e45c0a057e85f308a83cc)
 
-## Categorize {#section-8474376c14e54d14ae73749696ada468}
+## Categorize  {#section-8474376c14e54d14ae73749696ada468}
 
 [!DNL Categorize] 转换使用包含模式字符串/值对的两列对照表。在此转换期间，Data Workbench Server 依次读取每条事件数据记录，并将记录中指定字段的内容与对照表第一列中列出的每个模式字符串进行比较。如果指定的字段与某个模式字符串匹配，Data Workbench Server 会将与该模式字符串关联的值（位于第二列）写入记录中的指定输出字段。
 
 对照表第一列中的字符串可以选择以 ^ 字符开头和/或以 $ 字符结尾，以便强制在开头和/或结尾匹配。此转换不接受使用正则表达式在第一列定义匹配条件。如果输入值是字符串矢量，则每个字符串都将运行转换，结果会附加到输出字符串矢量的后面。
 
-A [!DNL Categorize] transformation is generally easier and faster than using a [!DNL Regular Expression] transformation to accomplish the same thing.
+通常，[!DNL Categorize]转换比使用[!DNL Regular Expression]转换实现相同的操作更简单、更快。
 
 >[!NOTE]
 >
->The substring test used in [!DNL Categorize] is case-sensitive unless otherwise specified using the [!DNL Case Sensitive] parameter.
+>除非使用[!DNL Case Sensitive]参数另外指定，否则[!DNL Categorize]中使用的子字符串测试区分大小写。
 
 <table id="table_1773344FAAE34BD4919CC4414249FDEE"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -52,22 +53,22 @@ A [!DNL Categorize] transformation is generally easier and faster than using a [
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关转换的说明。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 应用此转换的条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Default（默认值） </td> 
+   <td colname="col1"> 默认 </td> 
    <td colname="col2"> 在条件测试通过但分类文件中没有条目匹配输入或给定的日志条目中没有定义输入字段时所使用的默认值。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Delimiter（分隔符） </td> 
+   <td colname="col1"> 分隔符 </td> 
    <td colname="col2"> <p>用于在对照文件中分隔列的字符串。必须为一个字符的长度。 </p> <p> 如果按住 Ctrl 键并且右键单击 Delimiter（分隔符）参数内部，则会显示“<span class="wintitle">插入</span>”菜单。此菜单包含通常用作分隔符的特殊字符列表。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -77,7 +78,7 @@ A [!DNL Categorize] transformation is generally easier and faster than using a [
    <td colname="col3"> false </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> File（文件） </td> 
+   <td colname="col1"> 文件 </td> 
    <td colname="col2"> 分类文件的路径和名称。相对路径指 Data Workbench Server 的安装目录。此文件通常位于 Data Workbench Server 安装目录的 Lookups 目录中。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -94,15 +95,15 @@ A [!DNL Categorize] transformation is generally easier and faster than using a [
  </tbody> 
 </table>
 
-**Categorize注意事项**
+**Categorize的注意事项**
 
-* Changes to lookup files in [!DNL Categorize] transformations defined in the [!DNL Transformation.cfg] file or in a [!DNL Transformation Dataset Include] file require retransformation of the dataset. Lookup files for [!DNL Categorize] transformations defined in the [!DNL Log Processing.cfg] file or a [!DNL Log Processing Dataset Include] file are not subject to this limitation. 有关重新处理数据的信息，请参阅重新 [处理和重新转换](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)。
+* 对[!DNL Transformation.cfg]文件或[!DNL Transformation Dataset Include]文件中定义的[!DNL Categorize]转换中的查找文件所做的更改需要重新转换数据集。 在[!DNL Log Processing.cfg]文件或[!DNL Log Processing Dataset Include]文件中定义的[!DNL Categorize]转换的查找文件不受此限制的约束。 有关重新处理数据的信息，请参阅[重新处理和重新转换](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)。
 
-* [!DNL Categorize] 只要查找文件发 [!DNL Log Processing.cfg] 生更改，文件或文 [!DNL Log Processing Dataset Include] 件中定义的转换就会重新加载其查找文件。 更改不可向前应用，但它们会应用于更改发生之后读取的所有日志数据。
+* [!DNL Categorize] 只要查找文件发 [!DNL Log Processing.cfg] 生更改，在文 [!DNL Log Processing Dataset Include] 件或文件中定义的转换就会重新加载其查找文件。更改不可向前应用，但它们会应用于更改发生之后读取的所有日志数据。
 
 此示例说明了如何使用 [!DNL Categorize] 转换将对照数据与从网站流量收集的事件数据集成在一起。假定某个特定网站有一些业务部门，并且要求能够基于不同部门生成的流量和值进行查看和比较。您可以创建一个对照文件，其中列出用于标识这些不同部门的子字符串。
 
-The lookup file [!DNL Lookups\custommap.txt] contains the following table:
+查找文件[!DNL Lookups\custommap.txt]包含下表：
 
 | /产品/ | 产品 |
 |---|---|
@@ -123,7 +124,7 @@ The lookup file [!DNL Lookups\custommap.txt] contains the following table:
 | [!DNL /news/headlines.php] | 新闻 |
 | [!DNL /news/products/subscribe.php] | 产品 |
 
-输出基于子字符串在对照文件中的顺序。For example, the cs-uri-stem [!DNL /sports/products/buy.php] returns &quot;Products.&quot; 尽管 URI 主干以“/sports/”开头，但在对照文件中，字符串“/products/”列在“/sports/”的前面。如果 Multiple Values（多个值）参数设为 true，则 x-custommap 将再具有一个值，例如最后一个示例将匹配对照表中的两行：“产品”和“新闻”。
+输出基于子字符串在对照文件中的顺序。例如，cs-uri-stem [!DNL /sports/products/buy.php]返回“Products”。 尽管 URI 主干以“/sports/”开头，但在对照文件中，字符串“/products/”列在“/sports/”的前面。如果 Multiple Values（多个值）参数设为 true，则 x-custommap 将再具有一个值，例如最后一个示例将匹配对照表中的两行：“产品”和“新闻”。
 
 ## FlatFileLookup {#section-e09b2eeb96444a859b14f03cdaab31f2}
 
@@ -136,7 +137,7 @@ The lookup file [!DNL Lookups\custommap.txt] contains the following table:
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -146,27 +147,27 @@ The lookup file [!DNL Lookups\custommap.txt] contains the following table:
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关转换的说明。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 应用此转换的条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Default（默认值） </td> 
+   <td colname="col1"> 默认 </td> 
    <td colname="col2"> 在满足条件但对照文件中没有条目匹配输入时所使用的默认值。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Delimiter（分隔符） </td> 
+   <td colname="col1"> 分隔符 </td> 
    <td colname="col2"> <p>用于在对照文件中分隔列的字符串。必须为一个字符的长度。 </p> <p> 如果按住 Ctrl 键并且右键单击 Delimiter（分隔符）参数内部，则会显示“<span class="wintitle">插入</span>”菜单。此菜单包含通常用作分隔符的特殊字符列表。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> File（文件） </td> 
+   <td colname="col1"> 文件 </td> 
    <td colname="col2"> 对照文件的路径和名称。相对路径指 Data Workbench Server 的安装目录。此文件通常位于 Data Workbench Server 安装目录的 Lookups 目录中。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -193,16 +194,16 @@ The lookup file [!DNL Lookups\custommap.txt] contains the following table:
  </tbody> 
 </table>
 
-**注意事项[!DNL FlatFileLookup]**
+**以下方面的注意事项[!DNL FlatFileLookup]**
 
 * 将输入字段与对照文件匹配时始终区分大小写。
-* Changes to lookup files in [!DNL FlatFileLookup] transformations defined in the [!DNL Transformation.cfg] file or [!DNL Transformation Dataset Include] files require retransformation of the dataset. 对文件或文 [!DNL FlatFileLookup] 件中定义的转换 [!DNL Log Processing.cfg] 的查 [!DNL Log Processing Dataset Include] 找文件不受此限制的约束。 有关重新处理数据的信息，请参阅重新 [处理和重新转换](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)。
+* 对[!DNL Transformation.cfg]文件或[!DNL Transformation Dataset Include]文件中定义的[!DNL FlatFileLookup]转换中的查找文件所做的更改需要重新转换数据集。 在[!DNL Log Processing.cfg]文件或[!DNL Log Processing Dataset Include]文件中定义的[!DNL FlatFileLookup]转换的查找文件不受此限制的约束。 有关重新处理数据的信息，请参阅[重新处理和重新转换](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)。
 
-* [!DNL FlatFileLookup] 只要查找文件 [!DNL Log Processing.cfg] 发生更改， [!DNL Log Processing Dataset Include] 文件或文件中的转换就会重新加载其查找文件。 更改不可向前应用，但它们会应用于更改发生之后读取的所有日志数据。
+* [!DNL FlatFileLookup] 只要查找文 [!DNL Log Processing.cfg] 件发生 [!DNL Log Processing Dataset Include] 更改，文件或文件中的转换就会重新加载其查找文件。更改不可向前应用，但它们会应用于更改发生之后读取的所有日志数据。
 
 此示例说明了如何使用 [!DNL FlatFileLookup] 转换将对照数据与从网站流量收集的事件数据集成在一起。假定您希望隔离将流量路由到网站的网站合作伙伴，并将合作伙伴 ID 转换为更加易记的名称。然后，可以使用易记名称创建扩展维度和可视化，与用于路由流量的站点对站点关系相比，这些扩展维度和可视化更能清楚地映射业务关系。
 
-The example transformation searches the cs(referrer-query) field for the PartnerID name-value pair, and, if located, the lookup file [!DNL Lookups\partners.txt] is used to compare the PartnerID value against the values in the [!DNL Partner] column of the table. If a row is located, the output field x-partner-name is given the name from the [!DNL PrintName] column of the identified row.
+示例转换在cs(推荐人-查询)字段中搜索PartnerID名称 — 值对，如果找到，则使用查找文件[!DNL Lookups\partners.txt]将PartnerID值与表[!DNL Partner]列中的值进行比较。 如果找到行，则输出字段x-partner-name将从标识行的[!DNL PrintName]列中获得名称。
 
 ![](assets/cfg_TransformationType_FlatFileLookup.png)
 
@@ -214,7 +215,7 @@ The example transformation searches the cs(referrer-query) field for the Partner
 | 2 | P232 | 2000 年 7 月 10 日 | Microsoft |
 | 3 | P945 | 2001 年 1 月 12 日 | Amazon |
 
-以下示例将变换为：
+以下示例将转换为：
 
 * 如果 cs(referrer)(PartnerID) 返回 P232，将为字段 x-partner-name 指定值“Microsoft”。
 * 如果 cs(referrer)(PartnerID) 返回 P100，将为字段 x-partner-name 指定值“No Partner”。
@@ -222,18 +223,18 @@ The example transformation searches the cs(referrer-query) field for the Partner
 
 ## ODBCLookup {#section-4dcc3747e42e45c0a057e85f308a83cc}
 
-The [!DNL ODBCLookup] transformation operates like a [!DNL FlatFileLookup] transformation. 唯一的区别是此转换期间使用的对照表是从 ODBC 数据库而不是无格式文件填充的。
+[!DNL ODBCLookup]转换的操作类似于[!DNL FlatFileLookup]转换。 唯一的区别是此转换期间使用的对照表是从 ODBC 数据库而不是无格式文件填充的。
 
 >[!NOTE]
 >
->[!DNL ODBCLookup] 转换只能在数据集构建过程的转换阶段执行。 如果可能，Adobe 建议使用 [!DNL FlatFileLookup] 转换代替 [!DNL ODBCLookup] 转换。[!DNL FlatFileLookup] 转换在本质上更可靠，因为它们不依赖于外部系统的可用性。此外，如果对照表位于本地控制的无格式文件中，则修改对照表的风险会较小。
+>[!DNL ODBCLookup] 转换只能在数据集构建过程的转换阶段执行。如果可能，Adobe 建议使用 [!DNL FlatFileLookup] 转换代替 [!DNL ODBCLookup] 转换。[!DNL FlatFileLookup] 转换在本质上更可靠，因为它们不依赖于外部系统的可用性。此外，如果对照表位于本地控制的无格式文件中，则修改对照表的风险会较小。
 
 <table id="table_B903DB291BCC4F44B09D54300216D288"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -243,12 +244,12 @@ The [!DNL ODBCLookup] transformation operates like a [!DNL FlatFileLookup] trans
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关转换的说明。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 应用此转换的条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -268,7 +269,7 @@ The [!DNL ODBCLookup] transformation operates like a [!DNL FlatFileLookup] trans
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Default（默认值） </td> 
+   <td colname="col1"> 默认 </td> 
    <td colname="col2"> 在满足条件但对照文件中没有条目匹配输入时所使用的默认值。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -295,13 +296,12 @@ The [!DNL ODBCLookup] transformation operates like a [!DNL FlatFileLookup] trans
  </tbody> 
 </table>
 
-* The Data Source Name, [!DNL Database User ID], [!DNL Database Password], and Table Identifier parameters are the same as the parameters of the same names that are described for ODBC data sources. See [ODBC Data Sources](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3).
+* 数据源名称、[!DNL Database User ID]、[!DNL Database Password]和表标识符参数与ODBC数据源所描述的相同名称的参数相同。 请参阅[ODBC数据源](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)。
 
-* Unlike ODBC data sources, [!DNL ODBCLookup] transformations do not require an increasing ID column. See [ODBC Data Sources](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3). 这是因为在数据集处于活动时，不得以任何方式更改对照表的内容。在发生重新转换之前，不会检测对照表或视图中的更改。有关重新处理数据的信息，请参阅[重新处理和重新转换](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)。
+* 与ODBC数据源不同，[!DNL ODBCLookup]转换不需要增加ID列。 请参阅[ODBC数据源](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)。 这是因为在数据集处于活动时，不得以任何方式更改对照表的内容。在发生重新转换之前，不会检测对照表或视图中的更改。有关重新处理数据的信息，请参阅 [重新处理和重新转换](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
 
 假定您希望将过时 DNS 记录转换为更新记录。两组记录都存储在 SQL 数据库中。若要执行此任务，需要引用从数据库生成的对照表，并替换过时的 DNS 记录。
 
 我们的示例转换在日志条目中搜索 s-dns 字段，如果找到，将使用对照表 VISUAL.LOOKUP 比较 s-dns 条目与表中 [!DNL OLDDNS] 列的条目。如果在表中找到一行，将为输出字段 s-dns 指定标识行 [!DNL NEWDNS] 列中的更新 DNS 记录条目。
 
 ![](assets/cfg_TransformationType_ODBCLookup.png)
-
