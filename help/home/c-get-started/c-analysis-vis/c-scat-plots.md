@@ -1,16 +1,17 @@
 ---
 description: 散点图用网格绘制数据维度的元素（例如“页面”或“城市”），其中 x 和 y 轴表示不同的量度。
-solution: Analytics
-title: 2D散点图
-topic: Data workbench
+title: 2D 散点图
 uuid: 73c23d22-3c3a-4535-b66b-0e3508bd904c
+exl-id: 340f8c18-ce47-4f3a-aba4-3d6124505313
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 86%
 
 ---
 
-
-# 2D scatter plots{#d-scatter-plots}
+# 2D 散点图{#d-scatter-plots}
 
 散点图用网格绘制数据维度的元素（例如“页面”或“城市”），其中 x 和 y 轴表示不同的量度。
 
@@ -26,7 +27,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 散点图上每个点的大小由半径量度确定。Adobe 应用程序的默认半径量度各不相同。例如，在 [!DNL Site] 中，默认情况下半径量度基于“会话”。可以更改半径量度，以在您的散点图中包含表示任何可用量度的点。有关此操作的步骤，请参阅[更改半径量度](../../../home/c-get-started/c-analysis-vis/c-scat-plots.md#section-fd80576d583c430cb469daf12e39aa2a)。点的颜色基于工作区中打开的颜色图例。有关颜色图例的详细信息，请参阅[颜色图例](../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358)。
 
-## 选择点 {#section-4b4d45f39b884d54bb7407b3b2f4ea50}
+## 选择点{#section-4b4d45f39b884d54bb7407b3b2f4ea50}
 
 **选择单个点**
 
@@ -40,21 +41,20 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 * 按 Shift 并单击某个点或按 Shift 并跨多个点拖动。
 
-## Changing dimensions {#section-796cd962ef3f476caa89d99083782ed1}
+## 更改维{#section-796cd962ef3f476caa89d99083782ed1}
 
-* Right-click the label of the dimension at the top of the graph and click **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
+* 右键单击图形顶部的维度标签，然后单击&#x200B;**[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*。
 
-## Changing metrics {#section-44b8be9215cd4039b1eeb98ae1b31445}
+## 更改量度{#section-44b8be9215cd4039b1eeb98ae1b31445}
 
 **更改散点图的 x 或 y 轴上显示的量度**
 
-* Right-click the label of the metric that you want to change and click **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*.
+* 右键单击要更改的量度的标签，然后单击&#x200B;**[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*。
 
-## Changing radius metrics {#section-fd80576d583c430cb469daf12e39aa2a}
+## 更改半径量度{#section-fd80576d583c430cb469daf12e39aa2a}
 
 **更改散点图的半径量度**
 
-Right-click the label of the dimension at the top of the graph and click **[!UICONTROL Change Radius Metric]** > *&lt;**[!UICONTROL metric name]**>*.
+右键单击图形顶部的维度标签，然后单击&#x200B;**[!UICONTROL Change Radius Metric]** > *&lt;**[!UICONTROL metric name]**>*。
 
 ![](assets/mnu_ScatterPlot_Change.png)
-
