@@ -1,29 +1,30 @@
 ---
 description: 用于创建和编辑量度、维度和过滤器表达式的查询语言语法。
-solution: Analytics
 title: 查询语言语法
-topic: Data workbench
 uuid: 446df540-b3e5-4c21-a0a7-766abddff43d
+exl-id: 8beb2745-1452-4373-87d2-ada705de90b1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 19%
 
 ---
 
-
-# Query language syntax{#query-language-syntax}
+# 查询语言语法{#query-language-syntax}
 
 用于创建和编辑量度、维度和过滤器表达式的查询语言语法。
 
-[标识符的语法](../c-qry-lang-syntx/c-syntx-id.md):度量、维度和过滤器表达式可以使用标识符来引用命名的度量、维度和过滤器。
+[标识符的语法](../c-qry-lang-syntx/c-syntx-id.md):量度、维度和筛选器表达式可以使用标识符来引用命名的量度、维度和过滤器。
 
-[度量表达式的语法](../c-qry-lang-syntx/c-syntx-mtrc-exp.md):可以使用度量编辑器编辑度量并将其保存在配置文件的度量目录中。
+[量度表达式的语法](../c-qry-lang-syntx/c-syntx-mtrc-exp.md):量度可使用量度编辑器进行编辑并保存在用户档案的量度目录中。
 
-[维表达式的语法](../c-qry-lang-syntx/c-syntx-dim-exp.md):维表达式从不单独使用，但可以在度量或过滤器表达式中调用维的任意位置使用。
+[Dimension表达式的语法](../c-qry-lang-syntx/c-syntx-dim-exp.md):Dimension表达式从不单独使用，但可以在量度或过滤器表达式中调用维度的任何位置使用。
 
 [过滤器表达式的语法](../c-qry-lang-syntx/c-syntx-fltr-exp.md):过滤器是定义数据集中数据子集的表达式。
 
-[数学表达式的语法](../c-qry-lang-syntx/c-math-expressions.md):数据工作台允许您使用其他数学计算。
+[数学表达式的语法](../c-qry-lang-syntx/c-math-expressions.md):Data Workbench允许您使用其他数学计算。
 
-[统计标注](../c-qry-lang-syntx/c-statistical-callouts.md):选择这些运算符以添加到统计标注。
+[统计标注](../c-qry-lang-syntx/c-statistical-callouts.md):选择要添加到统计标注的这些运算符。
 
-[正则表达式](../c-qry-lang-syntx/c-search-regex.md):Data Workbench使用正则表达式（正则表达式）执行搜索和排序操作。
+[常规表达式](../c-qry-lang-syntx/c-search-regex.md):Data Workbench利用常规表达式（正则表达式）进行搜索和排序操作。
