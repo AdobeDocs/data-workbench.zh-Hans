@@ -1,14 +1,15 @@
 ---
 description: 简单维度与其父可计数维度有一对多的关系。
-solution: Analytics
 title: 简单维度
-topic: Data workbench
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
+exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 100%
 
 ---
-
 
 # 简单维度{#simple-dimensions}
 
@@ -23,7 +24,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -33,12 +34,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关扩展维度的说明。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 在父项与输入字段值之间建立关系应该具备的条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -101,4 +102,3 @@ Thin Mints
 最终维度的定义如下所示：
 
 ![](assets/cfg_Transformation_Dim_Simple.png)
-
