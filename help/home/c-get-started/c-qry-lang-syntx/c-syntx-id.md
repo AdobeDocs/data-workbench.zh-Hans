@@ -1,16 +1,17 @@
 ---
 description: 量度、维度和过滤器表达式可以使用标识符引用命名的量度、维度和过滤器。
-solution: Analytics
 title: 标识符的语法
-topic: Data workbench
 uuid: 9cfa188a-05ca-4163-a268-e33fce9a1929
+exl-id: 79bc5585-7b21-4a9d-b044-28ff4bc5a885
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 100%
 
 ---
 
-
-# Syntax for identifiers{#syntax-for-identifiers}
+# 标识符的语法{#syntax-for-identifiers}
 
 量度、维度和过滤器表达式可以使用标识符引用命名的量度、维度和过滤器。
 
