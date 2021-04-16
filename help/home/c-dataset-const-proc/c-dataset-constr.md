@@ -1,14 +1,15 @@
 ---
 description: Adobe 数据集包含由 Data Workbench Server 加载并处理过的数据。
-solution: Analytics
 title: 了解数据集构建
-topic: Data workbench
 uuid: 540d159d-3f72-49dd-9929-107f1fc62b2b
+exl-id: 111e98b5-d899-4f79-90ce-70f520d527d6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 85%
 
 ---
-
 
 # 了解数据集构建{#understanding-dataset-construction}
 
@@ -18,9 +19,9 @@ Adobe 数据集包含由 Data Workbench Server 加载并处理过的数据。
 
 >[!NOTE]
 >
->处理和服务来自Adobe数据集的数据的Data Workbench Server称为数据处理单元或DPU。 它有时又称为处理服务器或查询服务器。Data workbench and [!DNL Report] clients interact with DPUs directly.
+>处理和服务Adobe数据集中数据的Data Workbench Server称为数据处理单元或DPU。 它有时又称为处理服务器或查询服务器。Data Workbench和[!DNL Report]客户端直接与DPU交互。
 
-在数据集构建过程中，Data Workbench Server 从日志源读取源数据，对特定的数据字段应用转换，并定义要从转换字段创建的扩展维度。构建过程包括以下两个阶段： 日志 *处理* 和 *转换*。 构建数据集之后，您可以使用数据集的扩展维度来创建派生量度和维度，以便进行具体的分析。
+在数据集构建过程中，Data Workbench Server 从日志源读取源数据，对特定的数据字段应用转换，并定义要从转换字段创建的扩展维度。构建过程包括以下两个阶段：  *日志* 处理 *和转换*。构建数据集之后，您可以使用数据集的扩展维度来创建派生量度和维度，以便进行具体的分析。
 
 数据集构建就像是一个生产过程。您选择要用于构建数据集的数据（原材料），然后定义用于处理数据中提供信息的数据转换（加工步骤）来创建扩展维度（生产的产品）。
 
@@ -36,11 +37,11 @@ c_log_proc.xml
 
 >[!NOTE]
 >
->选择日志源时，请确保每个日志条目都包含实体的跟踪ID，该ID表示要将数据分组到的最高级别。 例如，如果您要处理从网站流量收集的数据，则可能会选择访客作为此实体。每个访客都有一个唯一的跟踪 ID，并且所有关于特定网站访客的数据都可分为一组。要寻求帮助，请联系 Adobe。
+>选择日志源时，请确保每个日志条目都包含实体的跟踪ID，该实体表示要将数据分组到的最高级别。 例如，如果您要处理从网站流量收集的数据，则可能会选择访客作为此实体。每个访客都有一个唯一的跟踪 ID，并且所有关于特定网站访客的数据都可分为一组。要寻求帮助，请联系 Adobe。
 
-A log sources event data is collected in real-time by [!DNL Sensors] or extracted from archived data sources by Insight Server. Event data collected by Sensors from HTTP and application servers is transmitted to Insight Servers, which convert the data into highly compressed log ( [!DNL .vsl]) files. Insight Server 可读取位于无格式文件、XML 文件或 ODBC 数据源中的事件数据，并提供您定义的解码器来从这些不同的格式中提取通用的数据字段集。
+日志源事件数据由[!DNL Sensors]实时收集，或由Insight Server从归档数据源中提取。 传感器从HTTP和应用程序服务器收集的事件数据将传输到Insight Server，Insight Server会将数据转换为高度压缩的日志([!DNL .vsl])文件。 Insight Server 可读取位于无格式文件、XML 文件或 ODBC 数据源中的事件数据，并提供您定义的解码器来从这些不同的格式中提取通用的数据字段集。
 
-## 定义转换 {#section-55a8cdb47379484081e53087f074778d}
+## 定义转换  {#section-55a8cdb47379484081e53087f074778d}
 
 转换是一组指令，您可以对其进行定义以提取或处理事件数据中的信息。您定义的每个转换都会应用于每条事件数据记录（日志条目），以更新现有日志字段或生成新字段。转换结果会与日志条目条件一起使用，用来评估将在日志处理过程中从数据集过滤出的日志条目。
 
@@ -48,9 +49,9 @@ A log sources event data is collected in real-time by [!DNL Sensors] or extracte
 
 ## 过滤日志 {#section-6172ca0fb0eb4177925151bb49fdbc02}
 
-数据集包含几个参数，用于过滤从转换流出的数据。过滤用来指定要在后续处理步骤中使用的日志条目。例如，可以按时间范围、服务器响应的状态或 IP 地址和用户代理信息定义过滤器。这是一 [!DNL Log Entry Condition] 个可自定义的过滤测试。 该测试会在每个日志条目的字段中查找特定的条件来确定该条目是否应在数据集构建过程中得到进一步处理。如果某个日志条目不符合条件，则会从构建过程中删除该条目。
+数据集包含几个参数，用于过滤从转换流出的数据。过滤用来指定要在后续处理步骤中使用的日志条目。例如，可以按时间范围、服务器响应的状态或 IP 地址和用户代理信息定义过滤器。[!DNL Log Entry Condition]是可自定义的筛选测试。 该测试会在每个日志条目的字段中查找特定的条件来确定该条目是否应在数据集构建过程中得到进一步处理。如果某个日志条目不符合条件，则会从构建过程中删除该条目。
 
-## 识别转换字段 {#section-eef98ca723e54547b887aefdf0514c47}
+## 识别转换字段  {#section-eef98ca723e54547b887aefdf0514c47}
 
 如果某个数据字段要从日志处理阶段传递到转换阶段以便进一步处理，您必须在日志处理过程中识别该字段。无论字段是从日志源获取的还是在日志处理过程中从应用于数据的数据转换创建的，此要求都适用。
 
@@ -64,9 +65,9 @@ c_transformation.xml
 
 您可以将转换定义为在数据集构建过程的转换阶段使用，以便创建扩展维度。每个转换都会应用于每条从日志处理过程传递的事件数据记录（日志条目）。
 
-## 过滤日志 {#section-3fed0a00ca344a719b5e8db363f64f06}
+## 过滤日志  {#section-3fed0a00ca344a719b5e8db363f64f06}
 
-The [!DNL Log Entry Condition] can be applied during transformation to look for specific conditions in the fields of each log entry coming from log processing. 如果某个日志条目不符合条件，则会从构建过程中删除该条目。
+[!DNL Log Entry Condition]可在转换期间应用，以在日志处理产生的每个日志条目的字段中查找特定条件。 如果某个日志条目不符合条件，则会从构建过程中删除该条目。
 
 ## 定义扩展维度 {#section-25efafd0bfc84c86b9717d453a88c91b}
 
