@@ -1,14 +1,15 @@
 ---
 description: 有关查看配置文件组件相关标识信息的信息。
-solution: Analytics
 title: 查看节点详细信息
-topic: Data workbench
 uuid: 2016a650-b021-4295-8313-d6287578ed10
+exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 78%
 
 ---
-
 
 # 查看节点详细信息{#view-node-details}
 
@@ -36,7 +37,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->Performance information for the transformation is displayed only if the [!DNL Show Performance Data] option is enabled for the dependency map. 有关详细信息，请参阅 [显示性能数据](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)。
+>仅当对依赖关系图启用[!DNL Show Performance Data]选项时，才显示转换的性能信息。 有关详细信息，请参阅[显示性能数据](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)。
 
 **扩展维度**
 
@@ -46,7 +47,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->Performance information for the extended dimension is displayed only if the [!DNL Show Performance Data] option is enabled for the dependency map. 有关详细信息，请参阅 [显示性能数据](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)。
+>仅当对依赖关系图启用[!DNL Show Performance Data]选项时，才显示扩展维的性能信息。 有关详细信息，请参阅[显示性能数据](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)。
 
 **量度**
 
@@ -80,5 +81,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **查看配置文件组件的输入或输出**
 
-* Right-click the desired node and click **[!UICONTROL Inputs]** or **[!UICONTROL Outputs]**. 随即会显示输入或输出的列表。
-
+* 右键单击所需的节点，然后单击&#x200B;**[!UICONTROL Inputs]**&#x200B;或&#x200B;**[!UICONTROL Outputs]**。 随即会显示输入或输出的列表。
