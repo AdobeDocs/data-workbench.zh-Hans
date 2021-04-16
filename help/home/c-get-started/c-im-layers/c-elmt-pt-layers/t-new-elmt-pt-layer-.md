@@ -1,29 +1,30 @@
 ---
 description: 使任何元素点层可在地球可视化上显示的步骤。
-solution: Analytics
 title: 使新元素点层可用
-topic: Data workbench
 uuid: 5f4bad2f-e98d-4224-bba8-285ad5e23da9
+exl-id: 12797335-0788-4103-a581-41bc3bb3dcc9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 49%
 
 ---
 
-
-# Make a new element point layer available{#make-a-new-element-point-layer-available}
+# 使新元素点层可用{#make-a-new-element-point-layer-available}
 
 使任何元素点层可在地球可视化上显示的步骤。
 
-1. 在Data Workbench Server安装目录的Profiles\*配置文件名称*\Maps文件夹中，放置层文件及其相关的查找文件。
+1. 在用户档案服务器安装目录中的“用户档案名称”*\Maps文件夹中，放置图层文件及其相关的查找文件。
 1. 如果为元素点层定义了新维度，并且尚未重塑数据集，则将立即重塑数据集。
-1. Edit the [!DNL order.txt] file in the Profiles\*profile name*\Maps folder to reflect the order in which you want the layers to display. 默认情况下，层会按其名称以词典顺序显示。
+1. 编辑用户档案\*用户档案名称*\Maps文件夹中的[!DNL order.txt]文件，以反映您希望图层显示的顺序。 默认情况下，层会按其名称以词典顺序显示。
 
    >[!NOTE]
    >
-   >When editing the [!DNL order.txt] file, take care not to cover up map layers that you want to show.
+   >编辑[!DNL order.txt]文件时，请注意不要覆盖要显示的映射图层。
 
-   For more information about using [!DNL order.txt] files, see the Configuring Interface and Analysis Features chapter of the *Data Workbench User Guide*.
+   有关使用[!DNL order.txt]文件的详细信息，请参阅《Data Workbench用户指南》**&#x200B;的“配置接口和分析功能”一章。
 
-1. In Data Workbench, select the desired profile by right-clicking the workspace title bar and clicking **[!UICONTROL Switch Profile]** > *&lt;**[!UICONTROL profile name]**>*.
-1. Right-click the workspace title bar and click **[!UICONTROL Work Online]**. 随即会在“联机工作”旁边显示一个 X。
+1. 在Data Workbench中，通过右键单击工作区标题栏并单击&#x200B;**[!UICONTROL Switch Profile]** > *&lt;**[!UICONTROL profile name]**>*&#x200B;来选择所需的用户档案。
+1. 右键单击工作区标题栏，然后单击&#x200B;**[!UICONTROL Work Online]**。 随即会在“联机工作”旁边显示一个 X。
 1. 打开一个工作区，然后在地球可视化上右键单击并选择新层。随即会在层名称旁边显示一个 X。
