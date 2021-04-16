@@ -1,14 +1,15 @@
 ---
 description: 该资源监视器矢量包含内存预算监视器和查询数量监视器。
-solution: Analytics
 title: 查询队列资源监视器
-topic: Data workbench
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
+exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 100%
 
 ---
-
 
 # 查询队列资源监视器{#query-queue-resource-monitors}
 
@@ -62,4 +63,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-
