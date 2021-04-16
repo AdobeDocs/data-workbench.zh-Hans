@@ -1,14 +1,15 @@
 ---
 description: 显示在构建转换时有哪些适用约定的表格。
-solution: Analytics
 title: 构建转换的约定
-topic: Data workbench
 uuid: 91dddca6-4c17-4107-b78b-0f8b8870ef8d
+exl-id: c2552c52-c6d3-4c9f-8359-b5a58bf1a59f
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '384'
+ht-degree: 96%
 
 ---
-
 
 # 构建转换的约定{#conventions-for-constructing-transformations}
 
@@ -24,7 +25,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
  <tbody> 
   <tr> 
    <td colname="col1"> 顺序执行 </td> 
-   <td colname="col2"> <p>数据集配置文件内的转换会按顺序（即按它们在配置文件中列出的顺序）应用于日志条目。因此，转换必须按照输出用作其他转换的输入的顺序列出。更具体地说，如果一个转换的输出用作另一个转换的输入，则在数据集配置文件中应务必先列出前一个转换，然后再列出后一个转换。否则，Data Workbench Server 会生成错误。 </p> <p> 处理阶段提供了一种对多个数据集包含文件中定义的转换进行排序的方式。对于与特定处理阶段关联的所有数据集包含文件，转换基于其输入和输出进行排序。此外，如果一个阶段中的多个数据集包含文件将数据作为转换结果输出到同一个字段，则 Data Workbench Server 会生成错误。 </p> <p> 有关各阶段的详细信息，请参阅 日 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> 志处理配置文件</a>、转换配置文件 <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md"> ，以及</a>数据集包含文件 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"></a>。 </p> <p>“<span class="wintitle">转换依赖关系图</span>”可以显示一个字段是如何被一系列转换修改的。请参阅 <a href="../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md"> 数据集配置工具</a>。 </p> </td> 
+   <td colname="col2"> <p>数据集配置文件内的转换会按顺序（即按它们在配置文件中列出的顺序）应用于日志条目。因此，转换必须按照输出用作其他转换的输入的顺序列出。更具体地说，如果一个转换的输出用作另一个转换的输入，则在数据集配置文件中应务必先列出前一个转换，然后再列出后一个转换。否则，Data Workbench Server 会生成错误。 </p> <p> 处理阶段提供了一种对多个数据集包含文件中定义的转换进行排序的方式。对于与特定处理阶段关联的所有数据集包含文件，转换基于其输入和输出进行排序。此外，如果一个阶段中的多个数据集包含文件将数据作为转换结果输出到同一个字段，则 Data Workbench Server 会生成错误。 </p> <p> 有关各阶段的详细信息，请参阅  <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> 日志处理配置文件</a>、 <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md"> 转换配置文件</a>，以及 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"> 数据集包含文件</a>。 </p> <p>“<span class="wintitle">转换依赖关系图</span>”可以显示一个字段是如何被一系列转换修改的。请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md">数据集配置工具</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 输出名称 </td> 
@@ -32,7 +33,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
   <tr> 
    <td colname="col1"> 输入字段 </td> 
-   <td colname="col2"> <p>输入字段是指某个基准字段或从先前转换输出生成的用户创建字段。如果需要常量字符串，可以使用加引号的字符串代替基准字段或用户创建的字段。 </p> <p> 有关 Data Workbench Server 可处理的一些常见定义数据字段的列表，请参阅<a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md">事件数据记录字段</a>。 </p> </td> 
+   <td colname="col2"> <p>输入字段是指某个基准字段或从先前转换输出生成的用户创建字段。如果需要常量字符串，可以使用加引号的字符串代替基准字段或用户创建的字段。 </p> <p> 有关 Data Workbench Server 可处理的一些常见定义数据字段的列表，请参阅 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md"> 事件数据记录字段</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 简单字符串和字符串矢量 </td> 
@@ -40,4 +41,3 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
  </tbody> 
 </table>
-
