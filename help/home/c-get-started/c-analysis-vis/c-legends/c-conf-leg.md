@@ -1,17 +1,15 @@
 ---
 description: 置信度图例帮助您确定由于偶然而看到的数字的可能性，并且帮助您了解数据中的可能偏差。
-solution: Analytics
 title: 置信度图例
-topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
+exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
 translation-type: tm+mt
-source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 93%
+source-wordcount: '445'
+ht-degree: 88%
 
 ---
-
 
 # 置信度图例{#confidence-legends}
 
@@ -54,7 +52,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->在分析任何计算结果时，必须考虑以下注意事项：
+>分析任何计算的结果时，必须考虑以下注意事项：
 >* 这些数字都是估计值。如果您用不同的数据集重复相同的计算，则会得到不同的结果。这称为随机变差。
 >* 根据对所有量度均不正确的常态假定，推断较高的概率。因此，概率 99% 的值不如概率 90% 的值可靠。
 
@@ -62,10 +60,10 @@ ht-degree: 93%
 >
 如果需要更确切的数字，则应该咨询统计专家。
 
-## 更改量度或公式 {#section-7f09ff84c3514f26b78d29294e1f03d9}
+## 更改量度或公式{#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* 在置信度图例中，单击&#x200B;**[!UICONTROL 量度或公式]**&#x200B;字段并键入所需的量度或表达式。有关表达式语法规则，请参阅 [查询语言语法](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+* 在置信度图例中，单击&#x200B;**[!UICONTROL Metric or Formula]**&#x200B;字段，然后键入所需的量度或表达式。 有关表达式语法规则，请参阅[查询语法](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)。
 
 ## 导出到 Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
-有关导出窗口的信息，请参 [阅导出窗口数据](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)。
+有关导出窗口的信息，请参阅[导出窗口数据](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)。
