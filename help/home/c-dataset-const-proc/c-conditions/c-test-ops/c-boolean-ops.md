@@ -1,65 +1,65 @@
 ---
 description: 布尔运算合并测试运算的结果，测试运算用作布尔运算的子项。
-solution: Analytics
 title: 布尔运算
-topic: Data workbench
 uuid: 01143bc2-c867-434c-8028-86d4708e8b80
+exl-id: 5b01e614-5603-43ff-9be4-aa329cca1645
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 12%
 
 ---
-
 
 # 布尔运算{#boolean-operations}
 
 布尔运算合并测试运算的结果，测试运算用作布尔运算的子项。
 
-For information about the test operations, see [Test Operations](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-ops.md#concept-c4bf6cb9e7a94cc7ac49ca9b0b1a2144). When you define a [!DNL boolean] operation, you can define zero or more children for the operation.
+有关测试操作的信息，请参阅[测试操作](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-ops.md#concept-c4bf6cb9e7a94cc7ac49ca9b0b1a2144)。 定义[!DNL boolean]操作时，可以为该操作定义零个或多个子项。
 
 **向布尔运算中添加子条件**
 
-1. Right-click the name or the number corresponding to the [!DNL Boolean] operation.
-1. Click **[!UICONTROL Add new child]** and choose one of the available condition types to add.
-1. Repeat steps 1 and 2 until you have added all of the desired child conditions for the [!DNL Boolean] operation.
+1. 右键单击与[!DNL Boolean]操作对应的名称或编号。
+1. 单击&#x200B;**[!UICONTROL Add new child]**&#x200B;并选择要添加的可用条件类型之一。
+1. 重复步骤1和2，直到您为[!DNL Boolean]操作添加了所有所需的子条件。
 
    >[!NOTE]
    >
-   >When you right-click the name or the number corresponding to a [!DNL Boolean] operation, you see the [!DNL Add new sibling] menu option. A sibling is another condition at the same relative position in the condition hierarchy as the [!DNL Boolean] operation that you right-clicked. Adding a new sibling for a [!DNL Boolean] operation is the same as adding a new condition by right-clicking the [!DNL Condition] or [!DNL Log Entry Condition] parameter.
+   >右键单击与[!DNL Boolean]操作对应的名称或编号时，将显示[!DNL Add new sibling]菜单选项。 同级是条件层次结构中与右键单击的[!DNL Boolean]操作处于相同相对位置的另一个条件。 为[!DNL Boolean]操作添加新同级与通过右键单击[!DNL Condition]或[!DNL Log Entry Condition]参数添加新条件相同。
 
 **从布尔运算中删除子条件：**
 
-1. Right-click the name of the child condition or the number corresponding to the child condition that you want to remove from the [!DNL Boolean] operation.
-1. Click **[!UICONTROL Remove]** &lt;* **[!UICONTROL #number]***>, where number is the number corresponding to the child condition that you want to remove.
+1. 右键单击要从[!DNL Boolean]操作中删除的子条件的名称或与子条件对应的编号。
+1. 单击&#x200B;**[!UICONTROL Remove]** &lt;* **[!UICONTROL #number]***>，其中number是与要删除的子条件对应的数字。
 
-本节将讨论以下条件：
+本节讨论以下条件：
 
 * [和](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-boolean-ops.md#section-a14dba4b07cc4ab9aeb20868f773db7c)
 * [都不](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-boolean-ops.md#section-7e48b61266aa43ecbc48b979bf5e939b)
 * [或](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-boolean-ops.md#section-a3aa0f56b6234f2680fa81939228326b)
 
-## 和 {#section-a14dba4b07cc4ab9aeb20868f773db7c}
+## 和  {#section-a14dba4b07cc4ab9aeb20868f773db7c}
 
-The [!DNL And] condition can have zero or more child conditions and returns true when none of its children nodes return false.
+[!DNL And]条件可以具有零个或多个子条件，并且当其子节点中没有一个返回false时返回true。
 
-The [!DNL And] condition forms the root operation of all condition testing within the data workbench server. If the [!DNL And] condition contains no children, the condition evaluates to true and the associated operation proceeds. This is why actions that have only the [!DNL And] condition as the condition test always execute and why it is used as the root for all condition tests.
+[!DNL And]条件构成Data Workbench Server内所有条件测试的根操作。 如果[!DNL And]条件不包含子项，则该条件的计算结果为true，并且相关操作继续进行。 这就是为什么只有[!DNL And]条件作为条件测试的操作始终执行，以及它被用作所有条件测试的根的原因。
 
-This example shows how an [!DNL And] condition is used to make sure that the [!DNL Copy] transformation occurs when only both the date of the log entry occurred in the year 2006 and that the page requested was [!DNL /products/purchase.asp].
+此示例说明如何使用[!DNL And]条件确保在2006年仅日志条目日期发生且请求的页面为[!DNL /products/purchase.asp]时发生[!DNL Copy]转换。
 
 ![](assets/cfg_Condition_AndCondition.png)
 
 ## 都不 {#section-7e48b61266aa43ecbc48b979bf5e939b}
 
-The [!DNL Neither] condition can have zero or more child conditions and returns false if any of its child conditions evaluate to true. If the [!DNL Neither] condition contains no children, none of its children can return true. As a result, the [!DNL Neither] condition evaluates to true.
+[!DNL Neither]条件可以具有零个或多个子条件，如果其任何子条件的计算结果为true，则返回false。 如果[!DNL Neither]条件不包含子项，则其子项都不能返回true。 结果，[!DNL Neither]条件的计算结果为true。
 
-The following example shows a [!DNL Neither] condition with two [!DNL Range] conditions as its children. 如所定义，该条 [!DNL Neither] 件不包括在2007年1月1日至2007年1月10日之间或在2007年1月12日至2007年1月14日期间发生的日志条目。 在已知数据收集有问题的时 [!DNL Log Entry Condition] 间段内，这种条件可用作消除数据集中的事务。
+以下示例显示了一个[!DNL Neither]条件，其子项为两个[!DNL Range]条件。 如所定义，[!DNL Neither]条件不包括2007年1月1日至2007年1月10日之间或2007年1月12日至2007年1月14日期间发生的日志条目。 此类条件可用作[!DNL Log Entry Condition]以在收集数据存在已知问题的期间从数据集中消除事务。
 
 ![](assets/cfg_Condition_NeitherCondition.png)
 
 ## 或 {#section-a3aa0f56b6234f2680fa81939228326b}
 
-The [!DNL Or] condition can have zero or more child conditions and returns true if at least one of its child conditions evaluate to true. If the [!DNL Or] condition contains no children, none of its children can return true. As a result, the [!DNL Or] condition evaluates to false.
+[!DNL Or]条件可以具有零个或多个子条件，并且如果其至少一个子条件的计算结果为true，则返回true。 如果[!DNL Or]条件不包含子项，则其子项都不能返回true。 结果，[!DNL Or]条件的计算结果为false。
 
-This example shows the [!DNL Or] condition with a [!DNL String Match] condition and a [!DNL Range] condition as its children. The [!DNL Or] condition is satisfied only if the log entry has the [!DNL x-hasproblem] value set to yes or the log entry occurred during the time range January 1, 2007, to January 10, 2007.
+此示例显示[!DNL Or]条件，其子项为[!DNL String Match]条件和[!DNL Range]条件。 仅当日志条目的[!DNL x-hasproblem]值设置为yes或日志条目在2007年1月1日到2007年1月10日的时间范围内发生时，才满足[!DNL Or]条件。
 
 ![](assets/cfg_Condition_OrCondition.png)
-
