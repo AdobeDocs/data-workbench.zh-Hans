@@ -1,33 +1,34 @@
 ---
 description: 过滤器是定义数据集中数据子集的表达式。
-solution: Analytics
 title: 过滤器表达式的语法
-topic: Data workbench
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
+exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 94%
 
 ---
 
-
-# Syntax for filter expressions{#syntax-for-filter-expressions}
+# 过滤器表达式的语法{#syntax-for-filter-expressions}
 
 过滤器是定义数据集中数据子集的表达式。
 
 根据维度间的关系，过滤器会允许或拒绝每个维度的每个元素。
 
-Filters can be edited using the [!DNL Filter Editor]. 请参阅 [过滤器编辑器](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3)。
+过滤器可以使用[!DNL Filter Editor]进行编辑。 请参阅[过滤器编辑器](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3)。
 
-在下表中，每个语法描述包括一个使用该过滤器的量度表达式的示例。For example, Sessions[True] is a metric defined using the “True” filter. The Sessions[True] metric is the same as the Sessions metric because the True filter admits every element of the Session dimension.
+在下表中，每个语法描述包括一个使用该过滤器的量度表达式的示例。例如，Sessions[True]是使用“True”过滤器定义的量度。 Sessions[True]量度与Sessions量度相同，因为True过滤器允许Session维度的每个元素。
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>true </p> </td> 
+   <td colname="col1"> <p>True </p> </td> 
    <td colname="col2"> <p>常量过滤器。允许每个维度的每个元素。 </p> <p>示例：Sessions[ True ] 与 Sessions 相同。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>false </p> </td> 
+   <td colname="col1"> <p>False </p> </td> 
    <td colname="col2"> <p>常量过滤器。拒绝每个维度的每个元素。 </p> <p>示例：Sessions[ False ] 始终为零。 </p> </td> 
   </tr> 
   <tr> 
@@ -104,4 +105,3 @@ Filters can be edited using the [!DNL Filter Editor]. 请参阅 [过滤器编辑
   </tr> 
  </tbody> 
 </table>
-
