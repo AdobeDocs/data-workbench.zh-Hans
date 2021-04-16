@@ -1,14 +1,15 @@
 ---
 description: 漏斗可视化包括使用多个维度、原始访客数、每个步骤的访客百分比以及单独的范围构建漏斗的功能。
-solution: Analytics
 title: 漏斗功能
-topic: Data workbench
 uuid: 7d2f5ff9-95d3-41f5-931c-689f140714c2
+exl-id: e78dcefe-6f92-45de-9990-0beac09ad82f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 83%
 
 ---
-
 
 # 漏斗功能{#funnel-features}
 
@@ -54,7 +55,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->漏斗可视化限制为可应用的八个步骤。
+>漏斗可视化仅限八个步骤可应用。
 
 ## 其他漏斗特性和功能 {#section-22a3582db8114ca8bce77f50bbbf296a}
 
@@ -62,7 +63,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/funnel_path_browser_9.png)
 
-* **拖动更多元素**。Add more elements to your funnel by dragging and dropping them from the Dimension table to the funnel using the `<Ctrl>` + `<Alt>` keys. You can drag multiple steps at the same time from the Dimension table by selecting multiple items (using `<Ctrl>` + click) and then dragging them to the Funnel visualization using the `<Ctrl>` + `<Alt>` keys..
+* **拖动更多元素**。使用`<Ctrl>` + `<Alt>`键将更多元素从Dimension表拖放到漏斗中，从而将它们添加到漏斗中。 您可以同时从Dimension表拖动多个步骤，方法是选择多个项目（使用`<Ctrl>` + click），然后使用`<Ctrl>` + `<Alt>`键将它们拖动到漏斗可视化。
 * **删除步骤**。右键单击可视化中的步骤并单击&#x200B;**是**，可删除元素。
 
    ![](assets/funnel_path_browser_4.png)
@@ -72,6 +73,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 * **添加更多步骤**。最多可以向每个漏斗可视化中添加八个步骤。
 * **更改量度**。可以更改量度，以使这些步骤对每个步骤的访问次数或其他某些量度进行计数。可用的选项因数据集而异。
-* **在表格视图中显示**。Right-click the title to display the Funnel Visualization menu and click **[!UICONTROL Show Tabular View]**. Once in tabular view, you can select **[!UICONTROL Show Graph View]** to return to graphic representation of the funnel. 要打开表格视图，请右键单击标题，并从菜单中选择“显示表格视图”。
+* **在表格视图中显示**。右键单击标题可显示“漏斗可视化”菜单，然后单击&#x200B;**[!UICONTROL Show Tabular View]**。 进入表格视图后，您可以选择&#x200B;**[!UICONTROL Show Graph View]**&#x200B;以返回到漏斗的图形表示形式。 要打开表格视图，请右键单击标题，并从菜单中选择“显示表格视图”。
 
 * **比较序列**。比较两个类似序列的有效方式是并排显示它们各自的视图。另外还可以使用复制功能，并排显示表格视图和图表视图。若要打开复制功能，请右键单击标题，然后从菜单中选择“复制”。
