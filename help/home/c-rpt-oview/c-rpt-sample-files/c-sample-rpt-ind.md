@@ -1,18 +1,19 @@
 ---
-description: 报告索引的代码示例。
-solution: Analytics
-title: 示例报告索引
-topic: Data workbench
+description: 报表索引的代码示例。
+title: 示例报表索引
 uuid: 38711240-8434-4f8f-81da-6c223064613b
+exl-id: 33a038c0-c3d1-4458-a2dd-8ec5155396b5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '18'
+ht-degree: 33%
 
 ---
 
+# 示例报表索引{#sample-report-index}
 
-# 示例报告索引{#sample-report-index}
-
-报告索引的代码示例。
+报表索引的代码示例。
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
@@ -109,4 +110,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </REPORT> 
 </REPORTS>
 ```
-
