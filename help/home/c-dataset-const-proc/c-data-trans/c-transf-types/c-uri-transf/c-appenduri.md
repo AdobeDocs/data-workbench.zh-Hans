@@ -1,29 +1,30 @@
 ---
 description: AppendURI 转换提供了一种向默认值中添加信息的方法，该默认值来自用于构建数据集的日志条目。
-solution: Analytics
 title: AppendURI
-topic: Data workbench
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
+exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 84%
 
 ---
-
 
 # AppendURI{#appenduri}
 
 AppendURI 转换提供了一种向默认值中添加信息的方法，该默认值来自用于构建数据集的日志条目。
 
-该转换将名称-值对放在用于创建 URI 维度的内部字段末尾。名称-值对是使用 Query String Key（查询字符串键）参数作为名称，使用标识的 Input（输入）参数值作为对值构建的。该命 [!DNL AppendURI] 令可添加任何相应的？ and &amp; symbols necessary to separate the name-value pairs from the [!DNL URI] stem and from any previous [!DNL AppendURI] operations that may have been applied to the URI.
+该转换将名称-值对放在用于创建 URI 维度的内部字段末尾。名称-值对是使用 Query String Key（查询字符串键）参数作为名称，使用标识的 Input（输入）参数值作为对值构建的。[!DNL AppendURI]命令可添加任何适当的？ 和&amp;符号，以将name-value对与[!DNL URI]干以及可能已应用到URI的任何以前的[!DNL AppendURI]操作分开。
 
-仅当 [!DNL AppendURI] 在文件或文件中定义 [!DNL Transformation.cfg] 时，转换才 [!DNL Transformation Dataset Include] 有效。
+[!DNL AppendURI]转换仅在[!DNL Transformation.cfg]文件或[!DNL Transformation Dataset Include]文件中定义时才有效。
 
-| 参数 | 描述 | 默认值 |
+| 参数 | 描述 | 默认 |
 |---|---|---|
 | 名称 | 转换的描述性名称。可以在此处输入任何名称。 |  |
-| Comments（备注） | 可选。有关转换的说明。 |  |
-| Condition（条件） | 应用此转换的条件。 |  |
-| Default（默认值） | 在满足条件但输入值不可用时所使用的默认值。 |  |
+| 评论 | 可选。有关转换的说明。 |  |
+| 条件 | 应用此转换的条件。 |  |
+| 默认 | 在满足条件但输入值不可用时所使用的默认值。 |  |
 | Input（输入） | 其值附加到 URI 后面的字段名称。 |  |
 | Query String Key（查询字符串键） | 在创建要附加到后面的名称-值对时使用的名称。 |  |
 
@@ -39,4 +40,4 @@ modelview ASP 页面接收所有流量并基于查询中 id 字段的值确定�
 
 ![](assets/cfg_TransformationType_AppendURI.png)
 
-在此示例中，系统使用两个页面处理所有请求：[!DNL modelview.asp] 和 [!DNL xmlmodelview.asp]。一个页面用于浏览器流量，另一个页面用于系统到系统的 XML 通信。应用程序服务器进程使用 cs-uri-query 的 id 名称确定要采取的操作。因此，可以从 id 字段提取值并将其附加到 URI 后面。结果是一个 URI 集合，其中包含一系列反映网站访客流量的变体。Here, a [!DNL String Match] condition determines the log entries to which the transformation is applied by searching the cs-uri-stem field for the two web pages of interest and ignoring all others. 输入（名称-值对的值）是 cs-uri-query(id) 的结果，即“login”。如 Query String Key（查询字符串键）参数中所指定的，要在后面附加的名称是“id”。Thus, for the incoming cs-uri value of our example, the resulting URI used by the [!DNL URI] dimension is [!DNL /modelview.asp&id=login].
+在此示例中，系统使用两个页面处理所有请求：[!DNL modelview.asp] 和 [!DNL xmlmodelview.asp]。一个页面用于浏览器流量，另一个页面用于系统到系统的 XML 通信。应用程序服务器进程使用 cs-uri-query 的 id 名称确定要采取的操作。因此，可以从 id 字段提取值并将其附加到 URI 后面。结果是一个 URI 集合，其中包含一系列反映网站访客流量的变体。此处，[!DNL String Match]条件通过搜索关注的两个网页的cs-uri-stem字段并忽略所有其他网页来确定要应用转换的日志条目。 输入（名称-值对的值）是 cs-uri-query(id) 的结果，即“login”。如 Query String Key（查询字符串键）参数中所指定的，要在后面附加的名称是“id”。因此，对于示例的传入cs-uri值，[!DNL URI]维度使用的结果URI为[!DNL /modelview.asp&id=login]。
