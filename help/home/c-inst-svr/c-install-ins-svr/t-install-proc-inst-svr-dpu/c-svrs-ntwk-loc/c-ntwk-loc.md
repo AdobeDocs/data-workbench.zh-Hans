@@ -1,26 +1,25 @@
 ---
 description: 从概念上讲，地址文件与联网计算机上的ETC&bsol;HOSTS文件具有相同的用途。
-solution: Analytics
 title: 网络位置
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
+exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 3%
 
 ---
 
-
 # 网络位置{#network-locations}
 
 从概念上讲，地址文件与联网计算机上的ETC&amp;bsol;HOSTS文件具有相同的用途。
 
-但是，与描述单个名称集合的HOSTS文件不同，地址文件包含多个名称集合，称为网络位置。
+但是，与描述单个名称集合的HOSTS文件不同，地址文件包含多个名称集合（称为网络位置）。
 
 网络位置是地址定义的命名集合。 集合中的每个地址定义都将一个通用名称与一个IP地址关联。
 
-在地址文件中，网络位置在称为NetworkLocation的结构中定义。 以下示例中的NetworkLocation定义一个名为“MyCorporate Intranet”的网络位置。 它包含一个地址定义，它将公 [!DNL VS01.myCompany.com] 用名称映射到IP地址“10.2.1.70”。
+在地址文件中，网络位置在称为NetworkLocation的结构中定义。 下面的示例中的NetworkLocation定义一个名为“MyCorporate Intranet”的网络位置。 它包含一个地址定义，将公用名称[!DNL VS01.myCompany.com]映射到IP地址&quot;10.2.1.70&quot;。
 
 ```
 0 = NetworkLocation: 
@@ -44,7 +43,7 @@ ht-degree: 3%
  <tbody> 
   <tr> 
    <td colname="col1"> 地址 </td> 
-   <td colname="col2"> 定义零个或多个AddressDefinitions。 每个AddressDefinion都将通用名称与IP地址关联。 </td> 
+   <td colname="col2"> 定义零个或多个AddressDefinitions。 每个AddressDefinition将一个公用名称与一个IP地址关联。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 名称 </td> 
@@ -52,7 +51,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> Parent（父项） </td> 
-   <td colname="col2"> <p>指定其成员包含在此NetworkLocation中的另一个NetworkLocation的名称。 此参数使一个NetworkLocation能够扩展另一个。 </p> <p>可以将父参数设置为“DNS”，以将NetworkLocation扩展到客户端的普通DNS系统。 </p> <p>示例：父=字符串：DNS </p> <p>当DNS是父代时，当客户端无法通过NetworkLocation解析该名称时，客户端会尝试使用客户端计算机的DNS系统解析公用名称。 </p> </td> 
+   <td colname="col2"> <p>指定其成员包含在此NetworkLocation中的另一个NetworkLocation的名称。 此参数允许一个NetworkLocation扩展另一个。 </p> <p>可以将Parent参数设置为“DNS”，以将NetworkLocation扩展到客户端的普通DNS系统。 </p> <p>示例：父项=字符串：DNS </p> <p>当DNS是父代时，当客户端无法通过NetworkLocation解析该名称时，会尝试使用客户端计算机的DNS系统解析公用名称。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
