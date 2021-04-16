@@ -1,30 +1,31 @@
 ---
 description: 数据集架构界面显示在任何转换数据集配置文件中定义的扩展维度（可计数、简单、多对多、数值、非正规和时间维度），并提供这些维度之间的关系视图。
-solution: Analytics
 title: 数据集架构界面
-topic: Data workbench
 uuid: 3726e568-d3ea-47f8-8ac4-582c97fbbe0a
+exl-id: a8d4cf02-4ff7-4fcc-9062-425c1fe1fb28
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 70%
 
 ---
 
-
-# Dataset Schema interface{#dataset-schema-interface}
+# 数据集架构界面{#dataset-schema-interface}
 
 数据集架构界面显示在任何转换数据集配置文件中定义的扩展维度（可计数、简单、多对多、数值、非正规和时间维度），并提供这些维度之间的关系视图。
 
-In addition, the [!DNL Dataset Schema] interface shows any derived dimensions that you have defined, as well as any extended dimensions that are configured to be hidden.
+此外，[!DNL Dataset Schema]接口显示您定义的任何派生维度以及配置为隐藏的任何扩展维度。
 
 ![](assets/vis_DatasetSchema_Example2.png)
 
 >[!NOTE]
 >
->您可以从架构图中搜索维。 按搜索字符串找到的维度名称会突出显示，并且对于在附属子维度中找到的任何点击，父类的线条会更改颜色。当您通过滚动方式提供可查看的层次和上下文时，可计数维度将保持可见状态。
+>您可以从模式图中搜索维。 按搜索字符串找到的维度名称会突出显示，并且对于在附属子维度中找到的任何点击，父类的线条会更改颜色。当您通过滚动方式提供可查看的层次和上下文时，可计数维度将保持可见状态。
 
-**使用界面解释维类[!DNL Dataset Schema]型**
+**使用界面解释尺寸类 [!DNL Dataset Schema] 型**
 
-The following table lists the dimension types and the colors in which their names appear in the [!DNL Dataset Schema] interface. 示例维度（来自以上示例）的父项也有所提及。
+下表列表了维类型及其名称在[!DNL Dataset Schema]接口中显示的颜色。 示例维度（来自以上示例）的父项也有所提及。
 
 <table id="table_CF888522626E49A4A10D87085CAB5CC1"> 
  <thead> 
@@ -82,13 +83,12 @@ The following table lists the dimension types and the colors in which their name
 
 **显示维度的默认可视化**
 
-* In the [!DNL Dataset Schema] interface, click the desired dimension. 将显示默认的可视化。例如，如果默认可视化是显示会话和选定维的表，并单击URI维，则Data Workbench将显示一个表，其中按会话显示URI。
+* 在[!DNL Dataset Schema]接口中，单击所需的维度。 将显示默认的可视化。例如，如果默认可视化是显示会话和选定维的表，并单击URI维，则Data Workbench将显示一个表，其中URI按会话。
 
    >[!NOTE]
    >
-   >如果要更改显示的默认可视化，请参阅数 [据集架构界面](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175)。
+   >如果要更改显示的默认可视化，请参阅[数据集模式接口](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175)。
 
 **显示维度的特定可视化**
 
-* 在界 [!DNL Dataset Schema] 面中，右键单击所需的维度，然后单击 **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*。
-
+* 在[!DNL Dataset Schema]接口中，右键单击所需的维度，然后单击&#x200B;**[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*。
