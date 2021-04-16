@@ -1,14 +1,15 @@
 ---
 description: 关于特定于 Web 的设置信息，这些设置在与 Adobe Site 配置文件一起提交的转换数据集包含文件中定义。
-solution: Analytics
 title: 用于转换的特定于 Web 的设置
-topic: Data workbench
 uuid: 282f0f4d-43d7-41cf-bae8-5cac6b4d81a0
+exl-id: 737f5e7a-7ab3-4ff7-8d92-7ccd87c28743
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '2035'
+ht-degree: 55%
 
 ---
-
 
 # 用于转换的特定于 Web 的设置{#web-specific-settings-for-transformation}
 
@@ -23,37 +24,37 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 ## 页面查看条件 {#section-cc2807a12a88492f8b64a43234a1f835}
 
-The [!DNL Page View Condition] is a condition operation that determines whether a particular log entry (that is, a page request) should be included in the data gathered about a visitor&#39;s page view history. When the log entry satisfies the [!DNL Page View Condition], it becomes an element of the Page View countable dimension. If a log entry does not satisfy the [!DNL Page View Condition], its data fields still are accessible by other dimensions. In addition to the Page View dimension, the following dimensions can be affected by the results of the [!DNL Page View Condition]:
+[!DNL Page View Condition]是一个条件操作，用于确定特定日志条目（即，页面请求）是否应包括在有关访客的页面视图历史记录收集的数据中。 当日志条目满足[!DNL Page View Condition]时，它将成为页面视图可计数维度的元素。 如果日志条目不满足[!DNL Page View Condition]，其数据字段仍可由其他维访问。 除了页面视图维度之外，以下维度还可能受[!DNL Page View Condition]结果的影响：
 
-* **[!DNL URI]和[!DNL Page]:**这些维度直接受到影响[!DNL Page View Condition]。 If the given page does not pass the[!DNL Page View Condition,]it is not be included in the URI or Page dimensions.
+* **[!DNL URI]和： [!DNL Page]这** 些维度直接受到 [!DNL Page View Condition]如果给定页面未传递[!DNL Page View Condition,]，则它不会包含在URI或页面维度中。
 
-* **[!DNL Visitor Page Views]和[!DNL Session Page Views]:**“访客页面查看次数”和“会话页面查看次数”维是访客在给定会话中或在给定会话中查看的页面数量的计数。 Pages filtered out by the[!DNL Page View Condition]are not part of this count.
+* **[!DNL Visitor Page Views]和： [!DNL Session Page Views]“访客** 页面视图”和“会话页面视图”维度分别是访客查看给定会话或给定会话的页面数量的计数。由[!DNL Page View Condition]过滤掉的页面不属于此计数。
 
-* **会话编号：** 它 [!DNL Page View Condition] 对“会话编号”维有间接影响。 The Session Number dimension is created prior to the [!DNL Page View Condition]; therefore, when considering [!DNL Session Number] in relation to the [!DNL Page Views], it is possible to have sessions with no page views.
+* **会话编号：** 对 [!DNL Page View Condition] “会话编号”维度具有间接影响。会话编号维度是在[!DNL Page View Condition]之前创建的；因此，在考虑与[!DNL Page Views]相关的[!DNL Session Number]时，可能有没有页面视图的会话。
 
-您的默认实现 [!DNL Site] 包括一 [!DNL Transformation Dataset Include] 个文件，其中定义了页面视图可计数维和相关 [!DNL Page View Condition] 维度。
+您的[!DNL Site]的默认实现包括一个[!DNL Transformation Dataset Include]文件，其中定义了页面视图可计数维度和相关的[!DNL Page View Condition]。
 
-有关可计数维的信息，请参阅 [扩展维](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)。
+有关可计数维度的信息，请参阅[扩展Dimension](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)。
 
 **编辑“页面查看条件”的配置设置**
 
-1. 在数据集 [!DNL Profile Manager] 配置文件中打开文件，然后打开 [!DNL Dataset\Transformation\Traffic\Page View.cfg] 文件。
+1. 在数据集用户档案中打开[!DNL Profile Manager]并打开[!DNL Dataset\Transformation\Traffic\Page View.cfg]文件。
 
    >[!NOTE]
    >
-   >If you have customized your implementation of [!DNL Site], the file in which these configuration settings exist may differ from the location described.
+   >如果已自定义[!DNL Site]的实施，则存在这些配置设置的文件可能与描述的位置不同。
 
-1. Review or edit the values of the parameters of the [!DNL Page View Condition] as needed. 可参考以下示例。在此文件中， [!DNL Page View Condition] 由转换定 [!DNL Copy] 义。 请注意，此文件还包含“页面浏览量”可计数维度的定义。
+1. 根据需要查看或编辑[!DNL Page View Condition]参数的值。 可参考以下示例。在此文件中，[!DNL Page View Condition]由[!DNL Copy]转换定义。 请注意，此文件还包含“页面浏览量”可计数维度的定义。
 
    ![](assets/cfg_WebParameters_PageView.png)
 
    >[!NOTE]
    >
-   >有关可计数维的信息，请参阅 [扩展维](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)。 有关转换的信 [!DNL Copy] 息，请参阅 [数据转换](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)。
+   >有关可计数维度的信息，请参阅[扩展Dimension](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)。 有关[!DNL Copy]转换的信息，请参阅[数据转换](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)。
 
-1. Save the file by right-clicking **[!UICONTROL (modified)]** at the top of the window, then click **[!UICONTROL Save]**.
+1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**，然后单击&#x200B;**[!UICONTROL Save]**&#x200B;保存文件。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. 要使本地所做的更改生效，请在[!DNL Profile Manager]列中右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*，其中用户档案名称是数据集用户档案或数据集包含文件所属的继承用户档案的名称。
 
    >[!NOTE]
    >
@@ -61,17 +62,17 @@ The [!DNL Page View Condition] is a condition operation that determines whether 
 
 ## URI 维度 {#section-348f7e9099d049d197a7cdcbc8a6c234}
 
-如果您要使用 [!DNL Site]，则需要定义 URI 维度，该维度的元素是所查看的网站页面的 URI 主干。Your default implementation includes a [!DNL Transformation Dataset Include] file in which the URI simple dimension is defined.
+如果您要使用 [!DNL Site]，则需要定义 URI 维度，该维度的元素是所查看的网站页面的 URI 主干。您的默认实现包括一个[!DNL Transformation Dataset Include]文件，其中定义了URI简单维度。
 
-有关简单维的信息，请参阅 [扩展维](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)。
+有关简单维度的信息，请参阅[扩展Dimension](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)。
 
 **编辑 URI 维度的配置设置**
 
-1. 在数据集 [!DNL Profile Manager] 配置文件中打开文件，然后打开 [!DNL Dataset\Transformation\Traffic\URI.cfg] 文件。
+1. 在数据集用户档案中打开[!DNL Profile Manager]并打开[!DNL Dataset\Transformation\Traffic\URI.cfg]文件。
 
    >[!NOTE]
    >
-   >If you have customized your implementation of [!DNL Site], the file in which these configuration settings exist may differ from the location described.
+   >如果已自定义[!DNL Site]的实施，则存在这些配置设置的文件可能与描述的位置不同。
 
 1. 根据需要查看或编辑该文件参数的值。可参考以下示例和信息。
 
@@ -86,9 +87,9 @@ URI 维度的配置设置包含以下两个参数：
    >
    >更改此值可能会导致严重的性能问题。 在未咨询 Adobe 的情况下，请勿更改此值。
 
-* Save the [!DNL URI.cfg] file by right-clicking **[!UICONTROL (modified)]** at the top of the window, then click **[!UICONTROL Save]**.
+* 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**&#x200B;保存[!DNL URI.cfg]文件，然后单击&#x200B;**[!UICONTROL Save]**。
 
-* To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+* 要使本地所做的更改生效，请在[!DNL Profile Manager]列中右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*，其中用户档案名称是数据集用户档案或数据集包含文件所属的继承用户档案的名称。
 
    >[!NOTE]
    >
@@ -96,17 +97,17 @@ URI 维度的配置设置包含以下两个参数：
 
 ## “反向链接”维度{#section-8a97ec34d18b4814b5f95495ac4f8638}
 
-如果您要使用 [!DNL Site]，则需要定义“反向链接”维度，该维度的元素由所有会话中第一个日志条目反向链接的次级域组成。Your default implementation includes a [!DNL Transformation Dataset Include] file in which the Referrer simple dimension is defined.
+如果您要使用 [!DNL Site]，则需要定义“反向链接”维度，该维度的元素由所有会话中第一个日志条目反向链接的次级域组成。您的默认实现包括一个[!DNL Transformation Dataset Include]文件，其中定义了推荐人简单维度。
 
-有关简单维的信息，请参阅 [扩展维](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)。
+有关简单维度的信息，请参阅[扩展Dimension](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)。
 
 **编辑“反向链接”维度的配置设置**
 
-1. 在数据集 [!DNL Profile Manager] 配置文件中打开文件，然后打开 [!DNL Dataset\Transformation\Traffic\Referrer.cfg] 文件。
+1. 在数据集用户档案中打开[!DNL Profile Manager]并打开[!DNL Dataset\Transformation\Traffic\Referrer.cfg]文件。
 
    >[!NOTE]
    >
-   >If you have customized your implementation of [!DNL Site], the file in which these configuration settings exist may differ from the location described.
+   >如果已自定义[!DNL Site]的实施，则存在这些配置设置的文件可能与描述的位置不同。
 
 1. 根据需要查看或编辑该文件参数的值。可参考以下示例和信息。
 
@@ -116,11 +117,11 @@ URI 维度的配置设置包含以下两个参数：
 
    >[!NOTE]
    >
-   >In the example above, the [!DNL Maximum Elements] parameter is set to 0. 此参数设为 0 时，Data Workbench Server 将使用其内部默认值 32768。
+   >在上面的示例中，[!DNL Maximum Elements]参数设置为0。 此参数设为 0 时，Data Workbench Server 将使用其内部默认值 32768。
 
-1. Save the [!DNL Referrer.cfg] file by right-clicking **[!UICONTROL (modified)]** at the top of the window, then click **[!UICONTROL Save]**.
+1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**&#x200B;保存[!DNL Referrer.cfg]文件，然后单击&#x200B;**[!UICONTROL Save]**。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. 要使本地所做的更改生效，请在[!DNL Profile Manager]列中右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*，其中用户档案名称是数据集用户档案或数据集包含文件所属的继承用户档案的名称。
 
    >[!NOTE]
    >
@@ -128,9 +129,9 @@ URI 维度的配置设置包含以下两个参数：
 
 ## 会话参数 {#section-0a209b0c504041a5801f7f71a963c8b1}
 
-如果您要使用 [!DNL Site]，则可以指定一些参数来定义网站上访客会话的边界。These parameters are valid only when defined in a [!DNL Transformation Dataset Include] file within your [!DNL Site] implementation.
+如果您要使用 [!DNL Site]，则可以指定一些参数来定义网站上访客会话的边界。仅当在[!DNL Site]实现中的[!DNL Transformation Dataset Include]文件中定义时，这些参数才有效。
 
-The following parameters are unique in that they can be members of [!DNL Transformation Dataset Include] file&#39;s [!DNL Parameters] vector, or they can be listed as individual parameters in the [!DNL Transformation.cfg]file. A parameter can be defined exactly once, so these parameters are defined either in the [!DNL Transformation.cfg]file or in the [!DNL Parameters] vector of the dataset include file - not in both files.
+以下参数是唯一的，因为它们可以是[!DNL Transformation Dataset Include]文件的[!DNL Parameters]矢量的成员，也可以作为[!DNL Transformation.cfg]文件中的单个参数列出。 一个参数只能定义一次，因此这些参数可在[!DNL Transformation.cfg]文件或数据集包含文件的[!DNL Parameters]矢量中定义 — 不能同时在两个文件中定义。
 **最大会话时长和会话超时**
 
 Maximum Session Duration（最大会话时长）和 Session Timeout（会话超时）是用于定义访客会话长度的字符串参数。这些参数与 Internal Domains（内部域）参数结合使用来确定会话长度。
@@ -143,25 +144,25 @@ Maximum Session Duration（最大会话时长）和 Session Timeout（会话超�
 
 >[!NOTE]
 >
->The [!DNL Sessionize] transformation&#39;s [!DNL Timeout Condition] also plays a role in determining the length of a visitor&#39;s session. If Session Timeout and Maximum Session Duration do not apply, the [!DNL Timeout Condition] is checked to determine whether a log entry should be considered the start of a new session. For more information, see [Data Transformations](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md).
+>[!DNL Sessionize]转换的[!DNL Timeout Condition]在确定访客会话的长度方面也起着作用。 如果“会话超时”和“最大会话持续时间”不适用，则选中[!DNL Timeout Condition]以确定是否应将日志条目视为新会话的开始。 有关详细信息，请参阅[数据转换](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)。
 
 **编辑 Maximum Session Duration（最大会话时长）和 Session Timeout（会话超时）参数**
 
-If you are working with [!DNL Site], your default implementation likely includes a [!DNL Transformation Dataset Include] file in which the names and recommended values of these parameters are specified.
+如果您使用[!DNL Site]，则默认实现可能包含一个[!DNL Transformation Dataset Include]文件，其中指定了这些参数的名称和推荐值。
 
-1. 在数据 [!DNL Profile Manager] 集配置文件中打开并转到 [!DNL Dataset\Transformation\Traffic\Session Parameters.cfg]。
+1. 在数据集用户档案中打开[!DNL Profile Manager]并转到[!DNL Dataset\Transformation\Traffic\Session Parameters.cfg]。
 
    >[!NOTE]
    >
-   >If you have customized your implementation of [!DNL Site], the file in which these parameters are defined may differ from the location described.
+   >如果已自定义[!DNL Site]的实现，则定义这些参数的文件可能与描述的位置不同。
 
 1. 根据需要编辑参数的值。请确保指定所需的单位（分钟、小时等）。
 
    ![](assets/cfg_WebParameters_SessionParameters.png)
 
-1. Save the [!DNL Session Parameters.cfg] file by right-clicking **[!UICONTROL (modified)]** at the top of the window and clicking **[!UICONTROL Save]**.
+1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**&#x200B;并单击&#x200B;**[!UICONTROL Save]**，保存[!DNL Session Parameters.cfg]文件。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** >  **[!UICONTROL profile name]**, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. 要使本地所做的更改生效，请在[!DNL Profile Manager]中右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > **[!UICONTROL profile name]** ，其中用户档案名是数据集用户档案或数据集包含文件所属的继承用户档案的名称。
 
    >[!NOTE]
    >
@@ -175,25 +176,24 @@ If you are working with [!DNL Site], your default implementation likely includes
 
 **添加内部域**
 
-If you are working with [!DNL Site], your default implementation includes a [!DNL Transformation Dataset Include] file for defining the Internal Domains parameter. 在此文件中，对该参数进行了命名，您只需输入想要包含的内部域并保存更新后的文件即可。
+如果您使用[!DNL Site]，则默认实现包含一个用于定义Internal Domains（内部域）参数的[!DNL Transformation Dataset Include]文件。 在此文件中，对该参数进行了命名，您只需输入想要包含的内部域并保存更新后的文件即可。
 
-1. 打开数 [!DNL Profile Manager] 据集配置文件内的，然后转到 [!DNL Dataset\Transformation\Traffic\Internal Domains.cfg.]
+1. 在数据集用户档案中打开[!DNL Profile Manager]并转到[!DNL Dataset\Transformation\Traffic\Internal Domains.cfg.]
 
    >[!NOTE]
    >
-   >If you have customized your implementation of [!DNL Site], the file in which the Internal Domains parameter is defined may differ from the location described.
+   >如果已自定义[!DNL Site]的实现，则定义Internal Domains（内部域）参数的文件可能与描述的位置不同。
 
-1. 右键单击“ **[!UICONTROL Value]** 内部域”矢量参数，然后单击 **[!UICONTROL Add new]** > **[!UICONTROL Value]**。
+1. 右键单击&#x200B;**[!UICONTROL Value]**&#x200B;作为“Internal Domains（内部域）”矢量参数，然后单击&#x200B;**[!UICONTROL Add new]** > **[!UICONTROL Value]**。
 
 1. 根据需要编辑值。
 
    ![](assets/cfg_WebParameters_InternalDomains.png)
 
-1. Save the [!DNL Internal Domains.cfg] file by right-clicking **[!UICONTROL (modified)]** at the top of the window and clicking **[!UICONTROL Save]**.
+1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**&#x200B;并单击&#x200B;**[!UICONTROL Save]**，保存[!DNL Internal Domains.cfg]文件。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. 要使本地所做的更改生效，请在[!DNL Profile Manager]列中右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*，其中用户档案名称是数据集用户档案或数据集包含文件所属的继承用户档案的名称。
 
    >[!NOTE]
    >
    >请勿将已修改的配置文件保存到 Adobe 提供的任何内部配置文件中，因为当您安装这些配置文件的更新时，系统会覆盖您所做的更改。
-
