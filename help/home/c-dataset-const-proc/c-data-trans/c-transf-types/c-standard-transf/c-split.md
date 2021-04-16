@@ -1,14 +1,15 @@
 ---
 description: Split 转换基于给定的分隔符将一个字符串拆分为子字符串矢量。
-solution: Analytics
 title: Split
-topic: Data workbench
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
+exl-id: ea85b095-1306-4938-906d-35d421db6c98
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 90%
 
 ---
-
 
 # Split{#split}
 
@@ -21,7 +22,7 @@ Split 转换基于给定的分隔符将一个字符串拆分为子字符串矢�
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -31,17 +32,17 @@ Split 转换基于给定的分隔符将一个字符串拆分为子字符串矢�
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关转换的说明。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 应用此转换的条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Delimiter（分隔符） </td> 
+   <td colname="col1"> 分隔符 </td> 
    <td colname="col2"> <p>用于将输入字符串分隔为子字符串的字符串。必须为一个字符的长度。 </p> <p> 如果按住 Ctrl 键并且右键单击 Delimiter（分隔符）参数内部，则会显示“插入”菜单。此菜单包含通常用作分隔符的特殊字符列表。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -62,7 +63,7 @@ Split 转换基于给定的分隔符将一个字符串拆分为子字符串矢�
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-cs-uri-stem 字段用于确定日志条目请求的页面是否为确认页面。客户购买的产品代码作为 prod_selected 名称的逗号分隔值在 cs-uri-query 中列出。The [!DNL Split] transformation can be used to extract this information by splitting the product codes at the comma if the value of cs-uri-stem matches the value specified in the [!DNL String Match] condition. 请参阅[字符串匹配](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)。以下转换详细说明了这一问题的解决方案。
+cs-uri-stem 字段用于确定日志条目请求的页面是否为确认页面。客户购买的产品代码作为 prod_selected 名称的逗号分隔值在 cs-uri-query 中列出。如果cs-uri-stem的值与[!DNL String Match]条件中指定的值匹配，则[!DNL Split]转换可用于通过以逗号拆分产品代码来提取此信息。 请参阅[字符串匹配](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)。以下转换详细说明了这一问题的解决方案。
 
 ![](assets/cfg_TransformationType_Split.png)
 
