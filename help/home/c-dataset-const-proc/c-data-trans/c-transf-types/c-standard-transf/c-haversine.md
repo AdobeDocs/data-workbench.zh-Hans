@@ -1,30 +1,31 @@
 ---
 description: 在数学中，Haversine 公式是一个等式，能给出球形上两点之间的曲线距离（从其经度和纬度确认）。
-solution: Analytics
 title: Haversine
-topic: Data workbench
 uuid: 835fa9dd-db70-4498-a03e-59595bc041fe
+exl-id: e700c0a0-1a1a-4c56-bb4f-1deb1b39b059
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 79%
 
 ---
-
 
 # Haversine{#haversine}
 
 在数学中，Haversine 公式是一个等式，能给出球形上两点之间的曲线距离（从其经度和纬度确认）。
 
-Like the formula, the [!DNL Haversine] transform requires two sets of [!DNL Latitude] and [!DNL Longitude] settings, using these four inputs to calculate the true distance across the Earth between two locations.
+与公式一样，[!DNL Haversine]变换需要两组[!DNL Latitude]和[!DNL Longitude]设置，使用这四个输入计算两个位置之间地球的真实距离。
 
 通过将“In Kilometers”（以公里为单位）标记从 false 改为 true，可以使用英里或公里来代表距离。
 
 ![](assets/cfg_TransformationType_Haversine.png)
 
-| 参数 | 描述 | 默认值 |
+| 参数 | 描述 | 默认 |
 |---|---|---|
 | 名称 | 转换的描述性名称。可以在此处输入任何名称。 |  |
-| Comments（备注） | 可选。有关转换的说明。 |  |
-| Condition（条件） | 应用此转换的条件。 |  |
+| 评论 | 可选。有关转换的说明。 |  |
+| 条件 | 应用此转换的条件。 |  |
 | Latitude 1 Field（纬度 1 字段） | 点 1 的纬度。 |  |
 | Latitude 2 Field（纬度 2 字段） | 点 2 的纬度。 |  |
 | Longitude 1 Field（经度 1 字段） | 点 1 的经度。 |  |
@@ -35,5 +36,4 @@ Like the formula, the [!DNL Haversine] transform requires two sets of [!DNL Lati
 
 >[!NOTE]
 >
->如果要确定其他位置的距离，则每个单独的位置必须有自己的纬度和长度字段集。
-
+>如果要标识其他位置的距离，则每个单个位置必须有其自己的纬度和长度字段集。
