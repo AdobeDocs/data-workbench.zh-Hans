@@ -1,16 +1,17 @@
 ---
 description: 选择可视化中的元素会动态过滤数据集。
-solution: Analytics
-title: 在可视化中进行选择
-topic: Data workbench
+title: 在可视化图表中选择
 uuid: 3900354f-826b-41e8-9bc2-e4856928bad5
+exl-id: bb1dd7e4-a9f8-48b5-a12d-433c601b455b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 100%
 
 ---
 
-
-# Make selections in visualizations{#make-selections-in-visualizations}
+# 在可视化图表中选择{#make-selections-in-visualizations}
 
 选择可视化中的元素会动态过滤数据集。
 
@@ -44,4 +45,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 |---|---|
 | 清除单个选择 | 按 Shift 并单击 |
 | 清除所有选择（即重新选择所有元素） | 右键单击可视化中的任何值 |
-
