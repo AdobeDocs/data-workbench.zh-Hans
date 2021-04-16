@@ -1,14 +1,15 @@
 ---
 description: Data Workbench 提供了一组转换，可允许 Data Workbench Server 将对照数据包含到数据集中。
-solution: Analytics
 title: 集成对照数据
-topic: Data workbench
 uuid: 35fd48f7-c0c4-4a83-919d-c15902f27495
+exl-id: 150d3aae-4431-488f-8f19-b522637ee935
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 90%
 
 ---
-
 
 # 集成对照数据{#integrating-lookup-data}
 
@@ -22,7 +23,7 @@ Data Workbench 提供了一组转换，可允许 Data Workbench Server 将对照
 
 **将对照数据集成到数据集中**
 
-1. 生成查找文件。 See [Populating the Lookup Table](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-pop-lookup-table.md#concept-dd761338731a40e0997c33dfdabdcdf8).
+1. 生成查找文件。 请参阅[填充对照表](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-pop-lookup-table.md#concept-dd761338731a40e0997c33dfdabdcdf8)。
 1. 在相应数据集配置文件的 Transformations（转换）参数中定义下列某种转换：
 
    * [!DNL Categorize]
@@ -31,5 +32,4 @@ Data Workbench 提供了一组转换，可允许 Data Workbench Server 将对照
 
 >[!NOTE]
 >
->请注意，转 [!DNL ODBCLookup] 换仅在文件或文件中定 [!DNL Transformation.cfg] 义时才起作 [!DNL Transformation Dataset Include] 用。
-
+>请注意，[!DNL ODBCLookup]转换仅在[!DNL Transformation.cfg]文件或[!DNL Transformation Dataset Include]文件中定义时才有效。
