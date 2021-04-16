@@ -1,17 +1,15 @@
 ---
 description: 正则表达式可以在 Data Workbench 所有搜索字段中使用，包括查询实体面板。
-solution: Analytics
 title: 正则表达式
-topic: Data workbench
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
+exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 86%
 
 ---
-
 
 # 正则表达式{#regular-expressions}
 
@@ -23,7 +21,7 @@ ht-degree: 86%
 * [使用元字符](../../home/c-dataset-const-proc/c-reg-exp.md#section-e29a804336304ea1ba33d40d60139aa2)
 * [模式提取](../../home/c-dataset-const-proc/c-reg-exp.md#section-4389779653b64f6cb7c47615b25c1a79)
 
-## 关于正则表达式 {#section-cc9dc7293bb04fc0b41fe8acdee708f0}
+## 关于正则表达式  {#section-cc9dc7293bb04fc0b41fe8acdee708f0}
 
 正则表达式是一种文本模式，它由字母数字字符和称为元字符的特殊字符组合而成，可用于从文本中查找模式并从中提取子字符串。正则表达式广泛用于计算机编程，它是 Perl 之类的语言所必不可少的一部分。
 
@@ -37,11 +35,11 @@ ht-degree: 86%
 |---|---|
 | 文本 | 文本是正则表达式中用来查找特定字符序列的字符。例如，若要在 [!DNL shop/products.html] 中查找“product”，则字符串“product”便是文本，或我们以文本形式在字符串中查找的内容。 |
 | 元字符 | 元字符是一种特殊字符，它在正则表达式的上下文中具有唯一的解释。例如，句点 (.) 就是一个用于匹配任意字符的元字符。 |
-| 转义序列 | 转义序列只是一种方式，用于告诉正则表达式引擎我们要使用一个元字符作为文本。Escape sequences always start with the backslash character (`\`). 通过将反斜杠（它也是一个元字符）放置在某个元字符的前面，正则表达式引擎便会将转义的元字符解释为文本。For example, if you want to match the metacharacter period (`.`), you need to use an escape sequence. However, to match one of the periods in the string 168.196.0.11, you could use the regular expression consisting of a backslash and a period (`\.`). |
+| 转义序列 | 转义序列只是一种方式，用于告诉正则表达式引擎我们要使用一个元字符作为文本。转义序列始终与反斜杠字符(`\`)开始。 通过将反斜杠（它也是一个元字符）放置在某个元字符的前面，正则表达式引擎便会将转义的元字符解释为文本。例如，如果要匹配元字符句点(`.`)，则需要使用转义序列。 但是，要匹配字符串168.196.0.11中的某个句点，可以使用由反斜杠和句点(`\.`)组成的常规表达式。 |
 | 模式 | 这是正则表达式的简化术语。从本质上讲，正则表达式就是一种尝试匹配目标字符串的模式。 |
 | 目标字符串 | 此术语是指我们要在其中搜索以查找所需模式的字符串。 |
 
-## 关于文本匹配 {#section-ec4497e3160c47ba9b828d939761b3e0}
+## 关于文本匹配  {#section-ec4497e3160c47ba9b828d939761b3e0}
 
 文本匹配采用没有任何转义字符的文本字符串，并在目标字符串中查看它是否为目标字符串的子字符串。
 
@@ -61,14 +59,14 @@ ht-degree: 86%
 
 您完全无法控制他人可能用来创建网站链接的 URL。文本匹配是一种过于简单的机制，因而无法找到由于广告营销活动而启动的会话。下一节讨论了您该如何使用元字符实现更灵活、更有效的匹配。
 
-## 使用元字符 {#section-e29a804336304ea1ba33d40d60139aa2}
+## 使用元字符  {#section-e29a804336304ea1ba33d40d60139aa2}
 
 元字符是程序或数据字段中的一种特殊字符，可提供有关其他字符的信息。
 
 | 元字符 | 描述 |
 |---|---|
 | 。（点号） | 匹配单个字符，例如：`re:x.z` 匹配“xyz”或“xxz”。 |
-| *（星号） | Matches one or more characters, for example: `re:Z*` matches &quot;ZZZ&quot;. |
+| *（星号） | 匹配一个或多个字符，例如：`re:Z*`匹配“ZZZ”。 |
 | ? （通配符） | 匹配 0 个或 1 个字符以执行最低匹配，例如：`xy?z` 匹配“xy”和“xyz”。 |
 
 其他常见的正则表达式也可以用于创建更加复杂的搜索字符串。
@@ -94,7 +92,7 @@ ht-degree: 86%
    <td colname="col2"> <p>匹配某个范围的字符。因此，我们可以将 [0123456789] 改写成简单的 [0-9]。 </p> <p> 这可以扩展为多个范围的字符，以及在一组括号内有多个范围。例如，[0-9A-C] 将匹配 0 至 9 和 A 至 C 的字符。 </p> <p> <p>注意：若要将短划线 (-) 在括号内作为文本进行测试，它必须位于最前或最后。例如，[-0-9] 测试 - 和 0 到 9。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 分隔线 (|) </td> 
+   <td colname="col1"> 竖线 (|) </td> 
    <td colname="col2"> 将两个选项之一匹配给定的目标字符串。例如，b|nat 可匹配 bat 或 nat。 </td> 
   </tr> 
  </tbody> 
@@ -111,7 +109,7 @@ ht-degree: 86%
 
 **求反**
 
-求反用于表示您希望匹配除给定字符以外的任何内容。The negation metacharacter, the circumflex or caret (`^`), is used as the first character inside brackets to say that you would like the match to be anything but the remaining characters in the brackets. For example, to match any character but a semicolon (`;`), you would write
+求反用于表示您希望匹配除给定字符以外的任何内容。括号中的取反元字符(外括号或尖号(`^`))用作括号中的第一个字符，表示您希望该匹配项不是括号中的其余字符。 例如，要匹配除分号(`;`)之外的任何字符，您应编写
 
 [`^;`]
 
@@ -123,16 +121,16 @@ ht-degree: 86%
 
 | 对于此元字符... | 正则表达式处理器会... |
 |---|---|
-| 音调符号或脱字符号 (`^`) | 匹配字符串的开头。For example, ^`[Tt]`he would match the target string &quot;The Beginning&quot; but would not match &quot;This is the beginning.&quot; |
-| 美元符号 (`$`) | 匹配字符串的结尾。For example, `[Ee]`nd$ would match &quot;This is the end&quot; but would not match &quot;The end is a special time.&quot; |
+| 音调符号或脱字符号 (`^`) | 匹配字符串的开头。例如，^`[Tt]`他将匹配目标字符串&quot;The Beginn&quot;，但不匹配&quot;This is the beginn&quot;。 |
+| 美元符号 (`$`) | 匹配字符串的结尾。例如，`[Ee]`nd$将匹配“This is the end”，但不匹配“The end is a special time”。 |
 
 >[!NOTE]
 >
->当常规表达式开头包含^，结尾包含$时，整个目标字符串必须与常规表达式匹配。
+>当常规表达式在开头包含^，在结尾包含$时，整个目标字符串必须与常规表达式匹配。
 
 **匹配任何内容**
 
-句号 (.) 是一种特殊的元字符，它可以匹配目标字符串中的任意字符。For example, the regular expression `^…$` matches any target string that is exactly three characters long. 正则表达式 &quot;…&quot; 匹配至少包含三个字符的任意目标字符串。
+句号 (.) 是一种特殊的元字符，它可以匹配目标字符串中的任意字符。例如，常规表达式`^…$`匹配长度正好为三个字符的任何目标字符串。 正则表达式 &quot;…&quot; 匹配至少包含三个字符的任意目标字符串。
 
 **重复模式**
 
@@ -160,7 +158,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td colname="col1"> {n} </td> 
-   <td colname="col2"> <p>精确匹配前面的字符或范围 n 次。The following pattern matches United States phone numbers: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> 虽然这不是最佳模式，但它将确定目标字符串的格式是否正确。 </p> </td> 
+   <td colname="col2"> <p>精确匹配前面的字符或范围 n 次。以下模式与美国电话号码匹配：<code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>。 </p> <p> 虽然这不是最佳模式，但它将确定目标字符串的格式是否正确。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> {n,m} </td> 
@@ -169,7 +167,7 @@ ht-degree: 86%
  </tbody> 
 </table>
 
-## 模式提取 {#section-4389779653b64f6cb7c47615b25c1a79}
+## 模式提取  {#section-4389779653b64f6cb7c47615b25c1a79}
 
 模式匹配只是正则表达式的部分功能。正则表达式还提供了一种用于提取目标字符串关键部分的机制。这是通过使用左圆括号和右圆括号完成的。这些提取内容通常用作另一个过程的输入，并通过使用 *%position%* 来访问，其中 position 是一个整数，它表示匹配的括号组的计数。
 
@@ -205,10 +203,9 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td colname="col1"> Lesson([A-Z]) </td> 
-   <td colname="col2"> Lesson a </td> 
+   <td colname="col2"> 教训a </td> 
    <td colname="col3"> 没有匹配项，因为小写的 a 不在大写的 A 至 Z 范围之内 </td> 
    <td colname="col4"> </td> 
   </tr> 
  </tbody> 
 </table>
-
