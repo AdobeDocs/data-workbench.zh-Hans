@@ -1,16 +1,15 @@
 ---
 description: 有关传感器记录的基线事件数据记录字段的信息。
-solution: Analytics
 title: 基准事件数据记录字段
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
+exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 72%
 
 ---
-
 
 # 基准事件数据记录字段{#baseline-event-data-record-fields}
 
@@ -34,7 +33,7 @@ ht-degree: 72%
   </tr> 
   <tr> 
    <td colname="col1"> cs(referrer) </td> 
-   <td colname="col2"> <p>由客户端随请求一起向服务器发送的 HTTP 反向链接字符串。 </p> <p>示例：http://www.mysite.net/cgi-bin/websearch?qry </p> <p>如果您使用页面标记，则cs(推荐人)是包含标记图像（包括HTTP或HTTP）的文档的完整URL。 </p> <p>此外，您还可以配置Apache（1.3、2.0和2.2）和IIS传感器来捕获用于请求的端口，该端口可以识别HTTP与HTTPS请求。 </p> </td> 
+   <td colname="col2"> <p>由客户端随请求一起向服务器发送的 HTTP 反向链接字符串。 </p> <p>示例：http://www.mysite.net/cgi-bin/websearch?qry </p> <p>如果您使用页面标签，则cs(推荐人)是包含标签图像（包括HTTP或HTTP）的文档的完整URL。 </p> <p>此外，您还可以配置Apache（1.3、2.0和2.2）和IIS传感器以捕获用于请求的端口，该端口可标识HTTP与HTTPS请求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
@@ -50,7 +49,7 @@ ht-degree: 72%
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-stem </td> 
-   <td colname="col2"> <p>URI的茎部分(茎+查询字符串= URI) </p> <p>主干是请求资源在服务器上的实际或逻辑路径。 </p> <p>示例：/index.asp </p> </td> 
+   <td colname="col2"> <p>URI的干部(stem +查询字符串= URI) </p> <p>主干是请求资源在服务器上的实际或逻辑路径。 </p> <p>示例：/index.asp </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> sc(content-type) </td> 
@@ -83,4 +82,4 @@ ht-degree: 72%
  </tbody> 
 </table>
 
-可 [!DNL data workbench server] 以从基线事件数据记录字段派生多个变量。 有关详细信息，请参 *阅《数据集配置指南*》。
+[!DNL data workbench server]可从基线事件数据记录字段派生多个变量。 有关详细信息，请参阅&#x200B;*数据集配置指南*。
