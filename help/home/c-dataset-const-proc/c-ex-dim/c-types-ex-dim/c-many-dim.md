@@ -1,14 +1,15 @@
 ---
 description: 多对多维度与其父可计数维度有多对多的关系。
-solution: Analytics
 title: 多对多维度
-topic: Data workbench
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
+exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 100%
 
 ---
-
 
 # 多对多维度{#many-to-many-dimensions}
 
@@ -23,7 +24,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 参数 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
-   <th colname="col3" class="entry"> 默认值 </th> 
+   <th colname="col3" class="entry"> 默认 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -33,12 +34,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments（备注） </td> 
+   <td colname="col1"> 评论 </td> 
    <td colname="col2"> 可选。有关扩展维度的说明。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition（条件） </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 在父项与输入字段值之间建立关系应该具备的条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
