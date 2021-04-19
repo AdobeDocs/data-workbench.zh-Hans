@@ -2,14 +2,14 @@
 description: 您可以将客户端的证书和私钥存储在 Windows 证书存储区，以便与服务器进行 SSL 通信。
 title: Windows 证书存储
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
+exl-id: 8613a941-6213-4bfa-9c35-dccc2acb6c17
 translation-type: ht
-source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
+source-git-commit: 233b04c65a45d3f92b8670bc244b907dc198b51d
 workflow-type: ht
 source-wordcount: '1000'
 ht-degree: 100%
 
 ---
-
 
 # Windows 证书存储{#windows-certificate-store}
 
@@ -66,15 +66,15 @@ ht-degree: 100%
 
    ![](assets/6_5_crypto_api_0.png)
 
-1. 右键单击 **Certificates**，然后单击&#x200B;**所有任务** > **导入**。
+1. 右键单击 **Certificates**，然后单击&#x200B;**“所有任务”**>**“导入”**。
 
-   请确保已选中&#x200B;**当前用户**&#x200B;选项，然后单击&#x200B;**下一步**。
+   请确保已选中&#x200B;**“当前用户”**&#x200B;选项，然后单击&#x200B;**“下一步”**。
 
    ![](assets/6_5_crypto_api_4.png)
 
-1. 单击&#x200B;**浏览**，并选择您此前创建的 `<CommonName>.pfx` 文件。为了进行查看，您需要将 X.509 证书的文件扩展下拉框更改为&#x200B;**个人信息交换**&#x200B;或&#x200B;**所有文件**。
+1. 单击&#x200B;**“浏览”**，并选择您此前创建的 `<CommonName>.pfx` 文件。为了进行查看，您需要将 X.509 证书的文件扩展下拉框更改为&#x200B;**“个人信息交换”**&#x200B;或&#x200B;**“所有文件”**。
 
-   选择文件并单击&#x200B;**打开**，然后单击&#x200B;**下一步**。
+   选择文件并单击&#x200B;**“打开”**，然后单击&#x200B;**“下一步”**。
 
 1. 请不要输入密码，并确保只选中了&#x200B;**标志此密钥为可导出的密钥**&#x200B;和&#x200B;**包括所有扩展属性**&#x200B;选项。
 
