@@ -2,11 +2,14 @@
 description: 有关使用自定义证书的说明。
 title: 使用 Data Workbench 中的自定义证书
 uuid: c3a2db27-bdb2-44b3-95dd-65eedd05c957
-translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+exl-id: f813d599-723f-4b5d-a0b5-f4d71c1b1a22
+translation-type: ht
+source-git-commit: 233b04c65a45d3f92b8670bc244b907dc198b51d
+workflow-type: ht
+source-wordcount: '732'
+ht-degree: 100%
 
 ---
-
 
 # 使用 Data Workbench 中的自定义证书{#using-custom-certificates-in-data-workbench}
 
@@ -24,7 +27,7 @@ Data Workbench 客户端或服务器使用的证书需要由受信任的 CA（�
 
 1. 获取聚类中每个服务器的自定义证书，这些证书具有以下条件：
 
-   1. Certificate is formatted as a [!DNL .pem] certificate.
+   1. 证书的格式为 [!DNL .pem] 证书。
    1. 证书包含其私钥，并且未被加密（例如，它没有密码/密码短语）。
 
       证书包含其私钥，并且具有以下行之一：
@@ -34,7 +37,7 @@ Data Workbench 客户端或服务器使用的证书需要由受信任的 CA（�
       BEGIN RSA PRIVATE KEY
       ```
 
-      One way to remove the password phrase from a [!DNL .pem] certificate:
+      一种可以从 [!DNL .pem] 证书中删除密码短语的方法：
 
       ```
       openssl rsa  -in password-protected-cert.pem -out no-password-cert.pem 
@@ -69,14 +72,14 @@ Data Workbench 客户端或服务器使用的证书需要由受信任的 CA（�
    <my_custom_client_cert.pem>
    ```
 
-## Setting up Custom Server Certificates {#setting-up-custom-server-certificates}
+## 设置自定义服务器证书 {#setting-up-custom-server-certificates}
 
 此部分假设您拥有一个已设置并运行的聚类，它使用 Visual Sciences 颁发的证书，并且其配置遵循普通规则（例如主服务器上的 *Components for Processing Servers* 目录被同步到所有 DPU 的 *Components* 目录）。
 
 1. 将发证 CA 的证书添加到 [!DNL trust_cert_ca.pem]，该文件安装在聚类中的每个服务器上，以及需要与此聚类通信的每个客户端上。
 1. 获取聚类中每个服务器的自定义证书，这些证书具有以下要求：
 
-   1. Custom certificate is formatted as a [!DNL .pem] certificate.
+   1. 自定义证书的格式为 [!DNL .pem] 证书。
    1. 证书包含其私钥，并且未被加密（例如，它没有密码/密码短语）。
 
       当证书具有类似下面的行时，需要包含其私钥：
@@ -86,7 +89,7 @@ Data Workbench 客户端或服务器使用的证书需要由受信任的 CA（�
       BEGIN RSA PRIVATE KEY
       ```
 
-      One way to remove the password phrase from a [!DNL .pem] certificate:
+      一种可以从 [!DNL .pem] 证书中删除密码短语的方法：
 
       ```
       openssl rsa  -in password-protected-cert.pem -out no-password-cert.pem 
@@ -113,7 +116,7 @@ Data Workbench 客户端或服务器使用的证书需要由受信任的 CA（�
 
 1. 在服务器的 **Certificates** 目录中安装每个服务器的自定义证书，其名称为 [!DNL custom_communications_cert.pem]。
 
-1. 使用文本编辑器，将以下行同时添加到 **Components** 和 *Components for Processing Servers* 目录的 *Communications.cfg* 文件中，它们位于第一行  ([!DNL component = CommServer]) 的正下方：
+1. 使用文本编辑器，将以下行同时添加到 **Components** 和 *Components for Processing Servers* 目录的 *Communications.cfg* 文件中，它们位于第一行 ([!DNL component = CommServer]) 的正下方：
 
    ```
    Certificate = string: Certificates\\custom_communications_cert.pem
@@ -123,7 +126,7 @@ Data Workbench 客户端或服务器使用的证书需要由受信任的 CA（�
 
 **关于证书失败的警告**
 
-当 Insight 服务器或客户端在 **Certificates** 目录中查找&#x200B;**许可证**&#x200B;证书时，它会尝试验证所有的证书（除 [!DNL trust_ca_cert.pem] 之外）是否存在 Insight CA 证书的硬编码副本，但是对于目录中存在的任何自定义证书而言，将出现验证失败的结果。服务器会发出下面的警告：
+当 Insight 服务器或客户端在 **Certificates** 目录中查找&#x200B;**“许可证”**&#x200B;证书时，它会尝试验证所有的证书（除 [!DNL trust_ca_cert.pem] 之外）是否存在 Insight CA 证书的硬编码副本，但是对于目录中存在的任何自定义证书而言，将出现验证失败的结果。服务器会发出下面的警告：
 
 ```
 Certificate failed to verify. Error 20 at 0 depth. Desc: unable to get local issuer certificate. Cert details:
