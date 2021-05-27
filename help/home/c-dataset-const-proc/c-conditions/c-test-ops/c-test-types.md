@@ -3,7 +3,6 @@ description: “比较”条件和“范围”条件需要您指定对条件所�
 title: 测试运算的测试类型
 uuid: dc0433dd-a35e-472e-8975-f58347512c11
 exl-id: 8abed46e-e76d-47c0-bbe9-cf98cf2d61e8
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '425'
@@ -15,7 +14,7 @@ ht-degree: 98%
 
 “比较”条件和“范围”条件需要您指定对条件所进行的比较类型。
 
-下表介绍了可用类型（[!DNL LEXICAL]、[!DNL NUMERIC]和[!DNL DATETIME]）。
+下表描述了可用类型（[!DNL LEXICAL]、[!DNL NUMERIC]和[!DNL DATETIME]）。
 
 <table id="table_1B3AD8BDF0414D0AB8EE0E6D1B53E2CE"> 
  <thead> 
