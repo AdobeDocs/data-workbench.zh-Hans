@@ -3,7 +3,6 @@ description: 价值图例显示定义的价值事件。
 title: 值图例
 uuid: 7779f442-2f45-4bf8-a62a-585aaceaeb3a
 exl-id: b28ba604-93ef-4081-ae55-937fb537c068
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '648'
@@ -58,12 +57,12 @@ ht-degree: 88%
 
 1. 在价值图例中，为发生该事件的每个会话分配一个商业价值：
 
-   1. 在[!DNL Value per Event]列中，单击与已添加为值事件的页面对应的单元格。
+   1. 在[!DNL Value per Event]列中，单击与作为值事件添加的页面对应的单元格。
    1. 键入为该事件的价值分配的美元金额，然后按 Enter。
 
    ![](assets/lgd_ValueLegend_Value.png)
 
-   默认情况下，会在价值图例中显示定义为价值事件的页面的 URL。如果需要，可以双击图例中的此 URL 以进入编辑模式并重命名事件。您也可以随时编辑特定事件的价值。Data Workbench服务器自动重新计算基于值事件的量度，如平均值和转化。
+   默认情况下，会在价值图例中显示定义为价值事件的页面的 URL。如果需要，可以双击图例中的此 URL 以进入编辑模式并重命名事件。您也可以随时编辑特定事件的价值。Data Workbench服务器会自动重新计算基于值事件的量度，如平均值和转化。
 
 至少定义一个价值事件后，“价值区段”维度将变为可用。该维度表示访客在所有会话中产生的总价值。
 
@@ -75,7 +74,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->Data Workbench服务器计算您所使用用户档案可访问的整组数据中的量度。 默认情况下，[!DNL Data Workbench Server] 会在分析数据集中的所有数据上计算量度，如“值”、“值事件”、“平均值”和“转化”，即使该数据不是来自同一逻辑源也是如此。
+>Data Workbench服务器会计算您所使用的配置文件可以访问的整个数据集中的量度。 默认情况下，[!DNL Data Workbench Server] 会在分析数据集中的所有数据上计算量度，如“值”、“值事件”、“平均值”和“转化”，即使该数据不是来自同一逻辑源也是如此。
 
 ## 导出到 Microsoft Excel {#section-feaa7a8eb8124fafbc74169bebaed6d8}
 
