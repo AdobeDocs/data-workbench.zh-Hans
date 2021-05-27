@@ -3,7 +3,6 @@ description: 雷达图通过提供一组量度的可视视图并且提供它们�
 title: 雷达可视化图表
 uuid: 39d67743-b6c1-46f1-99fd-7c71dfe07932
 exl-id: 5385d903-422b-4936-bbb3-0d5ee4d286de
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '400'
@@ -23,7 +22,7 @@ ht-degree: 94%
 
 **创建雷达可视化**
 
-1. 在工作区中右键单击，然后单击&#x200B;**[!UICONTROL Visualization]** > **[!UICONTROL Radar]**。
+1. 右键单击工作区，然后单击&#x200B;**[!UICONTROL Visualization]** > **[!UICONTROL Radar]**。
 
    ![](assets/client-rad.png)
 
