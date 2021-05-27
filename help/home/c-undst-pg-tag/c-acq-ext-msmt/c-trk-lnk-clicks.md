@@ -1,9 +1,8 @@
 ---
-description: 使用“参考页面标记”来帮助收集“链接点击”的步骤。
+description: 通过使用参考页面标记来促进收集链接点击量的步骤。
 title: 跟踪链接点击量
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
 exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '207'
@@ -13,11 +12,11 @@ ht-degree: 3%
 
 # 跟踪链接点击量{#tracking-link-clicks}
 
-使用“参考页面标记”来帮助收集“链接点击”的步骤。
+通过使用参考页面标记来促进收集链接点击量的步骤。
 
-通过部署[!DNL Reference Page Tag]，可以收集指示访客在访问特定页面时单击的链接（或href值）的测量数据。 通常，此集合不涉及在您的HTML页面中实施其他链接标识符。
+通过部署[!DNL Reference Page Tag]，可以收集表示访客在访问特定页面时所点击的链接（或href值）的测量数据。 通常，此集合不涉及在HTML页面中实施其他链接标识符。
 
-为了便于通过使用[!DNL Reference Page Tag]收集链接点击，请完成以下步骤：
+要通过使用[!DNL Reference Page Tag]方便收集链接点击量，请完成以下步骤：
 
 1. 将以下代码复制到名为[!DNL zig.js]的现有文件中：
 
@@ -78,12 +77,12 @@ ht-degree: 3%
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. 创建名为[!DNL zag2.gif]的1个像素× 1个像素图像文件，或将其放置到Web服务器上的目录中。
-1. 修改[!DNL lc.src]变量以引用引用了[!DNL zag2.gif]文件的网站的相应域。
+1. 创建名为[!DNL zag2.gif]的1个像素乘1像素图像文件，或将其放入Web服务器上存在的目录中。
+1. 修改[!DNL lc.src]变量以引用从中引用[!DNL zag2.gif]文件的网站的相应域。
 
 1. 确保为[!DNL zag.gif]和[!DNL zig.js]文件建立了适当的缓存控制标头。
 
-1. 在要从中收集链接点击值的HTML文件中，必须修改[!DNL Reference Page Tag Execution Call]以通知[!DNL Page Tag Execution Script]以捕获该页面的链接点击。 为此，请将vlc变量值更改为“1”，如下面的代码示例中突出显示：
+1. 在要从中收集链接点击值的HTML文件中，必须修改[!DNL Reference Page Tag Execution Call]以通知[!DNL Page Tag Execution Script]以捕获该页面的链接点击量。 为此，请将vlc变量值更改为“1”，如下面的代码示例中突出显示：
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -104,4 +103,4 @@ var v = {};
 
 | 收集的数据 | 说明 | 示例 |
 |---|---|---|
-| v_ln= | 表示印象活动的价值 | v_ln=&quot;关于%20Us&quot; |
+| v_ln= | 表示展示型营销活动的值 | v_ln=&quot;About%20Us&quot; |
