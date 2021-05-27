@@ -3,7 +3,6 @@ description: 可以在工作表的任何单元格中输入文本或表达式。
 title: 在工作表中处理数据
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '710'
@@ -15,9 +14,9 @@ ht-degree: 76%
 
 可以在工作表的任何单元格中输入文本或表达式。
 
-除非使用[!DNL eval( )]，否则工作表中的所有表达式前面都有等号(=)，后者将引用单元格中的文本视为表达式。
+工作表中的所有表达式前面都有等号(=)，除非使用[!DNL eval( )]，它将引用单元格中的文本视为表达式。
 
-有关量度、维度和筛选器语法规则的完整列表，请参阅[查询语法](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)。
+有关量度、维度和过滤器语法规则的完整列表，请参阅[查询语言语法](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)。
 
 **在工作表中键入数据**
 
@@ -35,7 +34,7 @@ Data Workbench会自动更新新单元格中的引用以引用相应的列和行
 
 1. 选择要复制的数据所在的单元格。
 1. 右键单击包含要复制的数据的单元格，然后单击&#x200B;**[!UICONTROL Copy]**。
-1. 右键单击要开始粘贴复制数据的第一个单元格，然后单击&#x200B;**[!UICONTROL Paste]**。 数据便会粘贴到第一个单元格及其下面的单元格。
+1. 右键单击要开始将复制的数据粘贴到其中的第一个单元格，然后单击&#x200B;**[!UICONTROL Paste]**。 数据便会粘贴到第一个单元格及其下面的单元格。
 
 Data Workbench会自动更新新单元格中的引用以引用相应的列和行。
 
