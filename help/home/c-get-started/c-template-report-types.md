@@ -3,7 +3,6 @@ description: 分析报表是为 Adobe SC 配置文件用户提供的。这些 Da
 title: Analytics 报表
 uuid: 5fc26922-0687-464f-8c5d-d72d2a6078f0
 exl-id: 03bbf4a0-767c-4258-9512-2887f346bf0e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '581'
@@ -19,11 +18,11 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->此菜单将仅对已实现Adobe SC用户档案的用户显示。
+>此菜单将仅针对已实施AdobeSC配置文件的用户显示。
 
 **要打开报表，请执行以下操作：**
 
-在工作台上，右键单击并选择&#x200B;**[!UICONTROL New]**&#x200B;以视图和打开报表模板。
+在工作台上，右键单击并选择&#x200B;**[!UICONTROL New]**&#x200B;以查看和打开报表模板。
 
 ![](assets/template_reports.png)
 
