@@ -3,7 +3,6 @@ description: Data Workbench Server (InsightServer64.exe) 可以从任何具有 O
 title: ODBC 数据源
 uuid: 5b37cd41-2d79-472c-8e6d-00ff894991a9
 exl-id: b22b1e27-9b6c-4708-b45c-a9605807689a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1245'
@@ -23,7 +22,7 @@ Data Workbench Server 的 ODBC 支持与当前支持从传感器或从外部流�
 
    >[!NOTE]
    >
-   >多行在[!DNL Increasing ID]列中可能具有相同的值。 出现这种情况的一种可能性是时间戳列的精确度不高。
+   >在[!DNL Increasing ID]列中，多行可能具有相同的值。 出现这种情况的一种可能性是时间戳列的精确度不高。
 
 * Data Workbench Server 无法加载数据较长的列（数据超出了由正在使用的特定数据库应用程序确定的某个长度）。
 * 从数据库检索数据的速度要慢于从磁盘文件中读取数据。与数据来自“传感器”或其他磁盘文件且大小相等的数据集相比，从 ODBC 源加载数据的数据集花费的处理时间会更长些（尤其是在重新处理时）。
@@ -38,13 +37,13 @@ Data Workbench Server 的 ODBC 支持与当前支持从传感器或从外部流�
 
    >[!NOTE]
    >
-   >如果加载ODBC事件数据以在Data Workbench Server群集上进行处理，则必须在群集中的所有处理服务器上安装数据库客户端软件。 有关在群集中指定处理服务器的信息，请参阅《服务器产品安装和管理指南》**。
+   >如果要加载ODBC事件数据以在Data Workbench Server群集上进行处理，则必须在群集中的所有处理服务器上安装数据库客户端软件。 有关在群集中指定处理服务器的信息，请参阅《服务器产品安装和管理指南》**。
 
 1. 使用用于 Windows 的 ODBC 数据源管理器配置数据源。
 
    请务必注意，Data Workbench Server (InsightServer64.exe) 必须作为一项 Windows 服务运行。因此，数据源通常必须配置为系统 DSN（而不是用户 DSN），以便 Data Workbench Server 能够使用它。您可以在数据库软件的相关文档中找到有关此配置步骤的详细信息。
 
-在相应的Data Workbench Server计算机上安装数据库客户端软件后，可以通过编辑[!DNL Log Processing]配置文件中所需用户档案的相应参数，将数据集配置为使用ODBC数据源。
+在相应的Data Workbench Server计算机上安装数据库客户端软件后，您可以通过编辑所需配置文件的[!DNL Log Processing]配置文件中的相应参数，将数据集配置为使用ODBC数据源。
 
 ## 参数 {#section-15c0218d93364693a565f2609a12f73e}
 
@@ -102,6 +101,6 @@ Data Workbench Server 的 ODBC 支持与当前支持从传感器或从外部流�
  </tbody> 
 </table>
 
-此示例显示了Data Workbench中具有ODBC数据源的[!DNL Log Processing]配置窗口。 此数据源从[!DNL Data Source Name]为&quot;VSTestO&quot;的数据库中名为[!DNL VISUAL.VSL]的表中获取数据。 五 (5) 个列对象（[!DNL Fields]（字段））将数据库中数据列的数据映射到 Data Workbench Server。
+此示例显示了Data Workbench中具有ODBC数据源的[!DNL Log Processing]配置窗口。 此数据源从名为[!DNL VISUAL.VSL]的表中获取数据，该表位于具有[!DNL Data Source Name] &quot;VSTestO&quot;的数据库中。 五 (5) 个列对象（[!DNL Fields]（字段））将数据库中数据列的数据映射到 Data Workbench Server。
 
 ![](assets/cfg_LogProcessing_LogSources_ODBC.png)
