@@ -3,7 +3,6 @@ description: 您可以自定义菜单外观，包括工作区窗口菜单（右�
 title: 自定义菜单
 uuid: 8c409c50-40b3-4de3-8048-a825ef4d75f5
 exl-id: 7a377d9c-d339-43d8-a71a-a322416b2e60
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '206'
@@ -21,4 +20,4 @@ ht-degree: 71%
 * **[!DNL order.txt] 文件：**&#x200B;此文件指定菜单显示其项目的顺序。
 * **子目录：**&#x200B;每个子目录表示一个子菜单。每个子目录可以包含其自身的文件、子目录和 [!DNL order.txt] 文件。
 
-例如，[!DNL Add Legend]菜单按该顺序包含菜单项Metric、Color、Value和Confide。 相比之下，[!DNL Profile Manager]中的Menu\Add Legend目录包含按字母顺序排列的文件[!DNL Color.vw]、[!DNL Confidence.vw]、[!DNL Metric.vw]和[!DNL Value.vw]，以及控制其他文件顺序的[!DNL order.txt]文件。
+例如，[!DNL Add Legend]菜单按此顺序包含菜单项“量度”、“颜色”、“值”和“置信度”。 相比之下，[!DNL Profile Manager]中的Menu\Add Legend目录包含按字母顺序排列的文件[!DNL Color.vw]、[!DNL Confidence.vw]、[!DNL Metric.vw]和[!DNL Value.vw]，以及用于控制其他文件顺序的[!DNL order.txt]文件。
