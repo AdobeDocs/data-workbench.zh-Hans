@@ -3,7 +3,6 @@ description: Data Workbench 允许您采用其他数学计算。
 title: 数学表达式的语法
 uuid: 63eee559-edfc-4efc-a6c8-66689d156701
 exl-id: a1433258-d3e8-4515-a1ae-00f9108e98c0
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '152'
