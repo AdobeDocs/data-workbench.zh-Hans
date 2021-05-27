@@ -1,9 +1,8 @@
 ---
-description: 报表门户提供了一个搜索功能，可根据文件夹树视图、报表日期树视图和临时搜索查找报表。
+description: 报表门户提供了一项搜索功能，可根据文件夹树视图、报表日期树视图和临时搜索来查找报表。
 title: 报表门户中的高级搜索
 uuid: 3b5262fb-ea42-449f-8ef9-897806a310a8
 exl-id: 891d51ad-8477-4a1a-9fe5-97e1210f11d5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '314'
@@ -13,13 +12,13 @@ ht-degree: 5%
 
 # 报表门户中的高级搜索{#advanced-search-in-the-report-portal}
 
-报表门户提供了一个搜索功能，可根据文件夹树视图、报表日期树视图和临时搜索查找报表。
+报表门户提供了一项搜索功能，可根据文件夹树视图、报表日期树视图和临时搜索来查找报表。
 
-1. 单击Report Portal左窗格中的&#x200B;**[!UICONTROL Search]**&#x200B;选项卡。
+1. 单击报表门户左窗格中的&#x200B;**[!UICONTROL Search]**&#x200B;选项卡。
 
    ![](assets/report_portal_search_button.png)
 
-   将打开一个新网页，其中显示&#x200B;**[!UICONTROL Search]**&#x200B;页面，其中&#x200B;**[!UICONTROL Folder Tree]**&#x200B;选项为默认视图。
+   将打开一个新网页，其中显示将&#x200B;**[!UICONTROL Folder Tree]**&#x200B;选项作为默认视图的&#x200B;**[!UICONTROL Search]**&#x200B;页面。
 
    ![](assets/report_portal_search_headers.png)
 
@@ -28,7 +27,7 @@ ht-degree: 5%
 <table id="table_02610040A3284C07B62A6E70C0421573"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 搜索按钮 </th> 
+   <th colname="col1" class="entry"> “搜索”按钮 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
   </tr> 
  </thead>
@@ -43,10 +42,10 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p>搜索 </p> </td> 
-   <td colname="col2"> <p>在所有报表中执行临时搜索。 如果您知道报表的完整名称，可直接在搜索框中输入。 </p> <p>此外: </p> 
+   <td colname="col2"> <p>在所有报表中执行临时搜索。 如果您知道报表的完整名称，则可以直接将其输入到搜索框中。 </p> <p>此外: </p> 
     <ul id="ul_EAE30AAA865942078D0C6C0AE527C07C"> 
-     <li id="li_F5213977442F4B89A62CA6BC315F95BE">键入&lt;space&gt;键可查看所有现有报表的开头字符或名称的下拉列表。 </li> 
-     <li id="li_C28799438777471290B424CAFFCAF810">输入报表的名称并键入&lt;space&gt;键以查看下拉列表，该下拉框允许您自动填写现有报表的名称。 </li> 
+     <li id="li_F5213977442F4B89A62CA6BC315F95BE">键入&lt;space&gt;键，可查看所有现有报表的开头字符或名称的下拉列表。 </li> 
+     <li id="li_C28799438777471290B424CAFFCAF810">输入报表的名称，然后键入&lt;space&gt;键以查看下拉列表，该列表允许您自动填写现有报表的名称。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -54,8 +53,8 @@ ht-degree: 5%
    <td colname="col2"> 单击可清除所有选定的报表。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>显示选定内容 </p> </td> 
-   <td colname="col2">单击以显示在文件夹树或日期树视图中选择的任何报表。 将在新窗口中打开报表门户，并将每个报表显示为.png文件。 如果选择了多个报表，则可以从页面顶部的选项卡中选择每个单个报表。 <p>单击此页上的<span class="uicontrol">打印</span>按钮以打印所选报告，或单击<span class="uicontrol">下载</span>以本地存储。 </p> </td> 
+   <td colname="col1"> <p>显示选定项 </p> </td> 
+   <td colname="col2">单击可显示在文件夹树或日期树视图中选择的任何报表。 报表门户将在新窗口中打开，并将每个报表显示为.png文件。 如果选择了多个报表，则可以从页面顶部的选项卡中选择每个报表。 <p>单击此页上的<span class="uicontrol">打印</span>按钮以打印所选报表，或单击<span class="uicontrol">下载</span>以本地存储。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
