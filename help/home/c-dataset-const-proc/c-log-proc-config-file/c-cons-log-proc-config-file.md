@@ -3,7 +3,6 @@ description: 在编辑 Log Processing.cfg 文件时需考虑的概念性信息�
 title: 有关日志处理配置文件的注意事项
 uuid: 2ccedf63-12d9-40e9-912a-aee030191b1e
 exl-id: 278a4a10-d382-4d9f-b3f4-bcc4783eb50c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '306'
@@ -30,4 +29,4 @@ ht-degree: 66%
 
 * 您可以将上述任何参数添加到 [!DNL Log Processing.cfg] 文件中，只需在记事本中打开并编辑该文件即可。当您在 Data Workbench 中重新打开该文件时，系统便会显示您做出并保存的所有更改。在添加新参数时，使用空格键（而不是 Tab 键）可向上一个标题级别的右侧缩进两 (2) 个空格。
 
-   数据集用户档案的数据集构建过程的日志处理阶段发生的任何错误都显示在Data Workbench中[!DNL Detailed Status]接口的[!DNL Profiles]节点中。 有关[!DNL Detailed Status]接口的信息，请参阅&#x200B;*《Data Workbench用户指南》*。
+   在数据集构建过程的日志处理阶段针对数据集配置文件发生的任何错误都会显示在Data Workbench中[!DNL Detailed Status]界面的[!DNL Profiles]节点中。 有关[!DNL Detailed Status]界面的信息，请参阅&#x200B;*Data Workbench用户指南*。
