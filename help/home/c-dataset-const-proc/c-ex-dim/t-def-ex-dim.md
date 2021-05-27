@@ -3,7 +3,6 @@ description: 定义扩展维度的步骤。
 title: 定义扩展维度
 uuid: 25946998-54ca-4595-a2f9-9c593917643a
 exl-id: e1664548-e2b4-47bb-8bec-155c16873e08
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '191'
@@ -15,18 +14,18 @@ ht-degree: 57%
 
 定义扩展维度的步骤。
 
-1. 在数据集用户档案中工作时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示其内容。
-1. 打开[!DNL Transformation.cfg]文件或要定义扩展维度的[!DNL Transformation Dataset Include]文件。
+1. 在处理数据集配置文件时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示其内容。
+1. 打开[!DNL Transformation.cfg]文件或要在其中定义扩展维度的[!DNL Transformation Dataset Include]文件。
 
-   * （建议）要打开数据集包含文件，请参阅[数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
+   * （推荐）要打开数据集包含文件，请参阅[数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
 
       >[!NOTE]
       >
-      >Adobe建议在一个或多个新[!DNL Transformation Dataset Include]文件中定义扩展维度。 有关详细信息，请参阅[创建新数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-create-new-dataset-inc-files.md#task-b29f30605c374a6ca747ac843337b06e)。
+      >Adobe建议在一个或多个新的[!DNL Transformation Dataset Include]文件中定义扩展维度。 有关更多信息，请参阅[创建新数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-create-new-dataset-inc-files.md#task-b29f30605c374a6ca747ac843337b06e)。
 
    * 要打开[!DNL Transformation.cfg]文件，请参阅[编辑转换配置文件](../../../home/c-dataset-const-proc/c-trans-config-file/t-edit-trans-config-file.md#task-cfef4142c1bf4437a669d1fdc75cabbc)。
 
-1. 右键单击&#x200B;**[!UICONTROL Transformations]** ，然后单击&#x200B;**[!UICONTROL Add new]** > *&lt;**[!UICONTROL Extended dimension type]**>*。
+1. 右键单击&#x200B;**[!UICONTROL Transformations]** ，然后单击&#x200B;**[!UICONTROL Add new]** > ***[!UICONTROL Extended dimension type]**>*。
 1. 为扩展维度输入相应信息。有关转换类型的描述及其参数的信息，请参阅以下各节：
 
    * [可计数维度](../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-count-dim.md#concept-f28b633419494e7bbc510012dbfcc6f8)
