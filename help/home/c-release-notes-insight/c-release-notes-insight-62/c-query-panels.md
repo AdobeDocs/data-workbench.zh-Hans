@@ -2,7 +2,6 @@
 description: 可以使用 Data Workbench 中的“查找器”面板选择量度、维度和过滤器。这些面板提供了搜索支持、排序选项和拖放功能。
 title: 查找器
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '640'
@@ -38,11 +37,11 @@ ht-degree: 96%
 
 **要打开查找器，请执行以下操作：**
 
-* 在工作区中右键单击，然后选择&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Finder]**。
+* 在工作区中右键单击并选择&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Finder]**。
 
    将在工作区中打开“查找器”窗格以及“量度”、“维度”和“过滤器”选项卡。
 
-* 右键单击左侧栏，然后选择&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Finder]**。
+* 在左侧边栏中单击鼠标右键，然后选择&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Finder]**。
 
    将在左侧面板中打开“查找器”窗格。
 
