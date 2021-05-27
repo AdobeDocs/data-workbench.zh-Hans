@@ -3,7 +3,6 @@ description: IPLookup 转换获取 IP 地理位置数据或 IP 地理情报数�
 title: IPLookup
 uuid: 6fccee39-761f-4854-a7fd-3f8b453e0698
 exl-id: 3e9dba44-8d31-49af-8ce0-fecaf92edeb7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '257'
@@ -15,7 +14,7 @@ ht-degree: 82%
 
 IPLookup 转换获取 IP 地理位置数据或 IP 地理情报数据（由此类数据的任何供应商提供并被 Adobe 转换为专用格式）并将这些数据转换为可用于分析的地理信息。
 
-“添加新”>“*转换类型”*菜单中列出了两个[!DNL IPLookup]转换：
+新增> *转换类型*菜单中列出了两个[!DNL IPLookup]转换：
 
 * [!DNL IPLookup] Quova for  [!DNL IP geo-location] data
 
@@ -65,6 +64,6 @@ IPLookup 转换获取 IP 地理位置数据或 IP 地理情报数据（由此类
  </tbody> 
 </table>
 
-在此示例中，[!DNL IP geo-location]数据（在查找文件[!DNL Quova.bin]中）用于创建列出的输出字段。 输出（AOL、ASN、区域代码，等等）可用于创建对访客流量进行地理分析的维度。
+在此示例中，[!DNL IP geo-location]数据（在对照文件[!DNL Quova.bin]中）用于创建列出的输出字段。 输出（AOL、ASN、区域代码，等等）可用于创建对访客流量进行地理分析的维度。
 
 ![](assets/cfg_TransformationType_IPLookup.png)
