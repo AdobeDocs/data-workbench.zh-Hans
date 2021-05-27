@@ -3,7 +3,6 @@ description: 统计显示允许您在多维表格中分析数据如何彼此相�
 title: 表格中的统计显示
 uuid: 80800439-169e-44cd-9810-bbe39dfa9541
 exl-id: 6be0ea73-ffc5-4c8b-9ce4-9ba057f317da
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '92'
