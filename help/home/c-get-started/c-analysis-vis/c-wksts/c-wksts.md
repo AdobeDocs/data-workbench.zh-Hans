@@ -1,9 +1,8 @@
 ---
-description: Data Workbench提供了用于为当前可视化创建临时过滤器和量度的工作表。
+description: Data Workbench提供用于为当前可视化创建临时过滤器和量度的工作表。
 title: 工作表
 uuid: 4e498150-3e44-4a19-8d8a-8be0d32693a6
 exl-id: 73f3e400-648c-4659-8e55-d3bd27ccceb6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '90'
@@ -13,7 +12,7 @@ ht-degree: 25%
 
 # 工作表{#worksheets}
 
-Data Workbench提供了用于为当前可视化创建临时过滤器和量度的工作表。
+Data Workbench提供用于为当前可视化创建临时过滤器和量度的工作表。
 
 工作表类似于普通的电子表格，但与电子表格不同的是，包含公式的每个单元格都可以定义量度。
 
