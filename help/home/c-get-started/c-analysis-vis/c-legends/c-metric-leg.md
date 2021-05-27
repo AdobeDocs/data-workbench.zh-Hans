@@ -3,7 +3,6 @@ description: 使用量度图例，可以查看与您的配置文件有关的基�
 title: 量度图例
 uuid: 72de7b0e-0a71-4465-baaf-d515fe474e0d
 exl-id: 1f2e58e2-44ea-4760-a504-2ed3a80c8b19
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '165'
@@ -19,11 +18,11 @@ Adobe 应用程序中的量度图例显示与数据集有关的量度，如以�
 
 ![](assets/lgd_MetricLegend.png)
 
-量度图例实际上是表格可视化的一种特殊情况。同样，可用于表格的相同功能也可用于量度图例。请参阅[表](../../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f)。
+量度图例实际上是表格可视化的一种特殊情况。同样，可用于表格的相同功能也可用于量度图例。请参阅[Tables](../../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f)。
 
 ## 添加量度{#section-6655470bf06c4d2b82f7a01784552d1e}
 
-* 在量度图例中，右键单击量度名称，然后单击&#x200B;**[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*。
+* 在量度图例中，右键单击量度名称，然后单击&#x200B;**[!UICONTROL Add Metric]** > ***[!UICONTROL metric name]**>*。
 
 ![](assets/lgd_MetricLegend_addMetric.png)
 
