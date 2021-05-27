@@ -3,7 +3,6 @@ description: 有关子集的概念性信息。
 title: 了解子集
 uuid: ed185b63-dbb3-4ed4-9403-cf4dc8be2ff1
 exl-id: a75b36f9-d34d-4a4a-8a2c-15ae5461823c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '333'
@@ -18,10 +17,10 @@ ht-degree: 67%
 使用子集时，请记住以下事项：
 
 * 现在，所有您的基准都与子集有关，而不是与整个数据集有关，当分析具体的子集时该项更有用。请参阅 [了解基准](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914).
-* 使用子集会影响您的所有工作区，因为子集会全局应用于Data Workbench。
+* 使用子集会影响所有工作区，因为该子集会全局应用于Data Workbench。
 * 子集仅影响量度和非正规维度，对正规纬度不具影响。
-* 使用[!DNL Report]时，子集不会影响已发布的报表中的数据，以便其他人视图。
-* 应用后，您的子集将对用户档案中的所有后续工作生效，包括下次打开此Data Workbench实例时，直到将其删除。
+* 使用[!DNL Report]时，子集不会影响已发布以供他人查看的报表中的数据。
+* 应用后，子集对配置文件中的所有后续工作都有效，包括下次打开此Data Workbench实例时，直到将其删除为止。
 * 指示已应用子集的唯一位置就是通过右键单击工作区访问的上下文菜单。
 
    ![](assets/mnu_Subset.png)
@@ -30,7 +29,7 @@ ht-degree: 67%
 
    >[!NOTE]
    >
-   >子集的大小仅限于驻留在单个Data Workbench服务器上的过滤器中的数据量。 因此，如果Data Workbench集跨越一个Data Workbench服务器群集，则子集的数据仅来自群集中的一个数据服务器。
+   >子集的大小受位于单个Data Workbench服务器上的过滤器中的数据量的限制。 因此，如果Data Workbench集跨一个Data Workbench服务器群集，则子集的数据仅来自群集中的一个数据集服务器。
 
 大型零售商用户想创建一个特定工作周数据的子集（本地缓存），然后仅对该周的数据运行查询。为此，该用户针对感兴趣的日期创建一个子集。
 
