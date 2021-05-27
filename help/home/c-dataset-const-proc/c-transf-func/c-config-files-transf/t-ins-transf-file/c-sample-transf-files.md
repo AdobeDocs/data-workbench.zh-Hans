@@ -3,7 +3,6 @@ description: 关于如何根据若干情景在 Transform.cfg 文件中指定参�
 title: Data Workbench Transform.cfg 示例文件
 uuid: cb473a5a-54e2-4bf7-84fb-c9c27910ef64
 exl-id: f7aadde4-6d89-4bd4-b34b-192a81a71dc3
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '409'
@@ -24,7 +23,7 @@ ht-degree: 60%
 
 ## 简单的 Data Workbench Transform.cfg 文件 {#section-b7e83cafa3a947c597bd09d316930190}
 
-以下[!DNL Transform.cfg]窗口提供了从[!DNL Logs]目录读取[!DNL .vsl]文件并将x-timestring和x-trackingid字段导出到Logs\VT目录中存储的文本文件的说明。 由于未指定文件旋转周期或输出文件名格式，因此每个文件都包含一个日历日的数据，并且其名称采用默认格式[!DNL %yyyy%%mm%%dd%-%x-mask%.txt]。
+以下[!DNL Transform.cfg]窗口提供了从[!DNL Logs]目录读取[!DNL .vsl]文件并将x-timestring和x-trackingid字段导出到Logs\VT目录中存储的文本文件的说明。 由于未指定文件旋转周期或输出文件名格式，因此每个文件都包含一个日历日的数据，并且名称的默认格式为[!DNL %yyyy%%mm%%dd%-%x-mask%.txt]。
 
 ![](assets/cfg_VisualTransform_SimpleExample.png)
 
