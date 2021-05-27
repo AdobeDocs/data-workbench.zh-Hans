@@ -3,7 +3,6 @@ description: 在数学中，Haversine 公式是一个等式，能给出球形上
 title: Haversine
 uuid: 835fa9dd-db70-4498-a03e-59595bc041fe
 exl-id: e700c0a0-1a1a-4c56-bb4f-1deb1b39b059
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '235'
@@ -15,7 +14,7 @@ ht-degree: 79%
 
 在数学中，Haversine 公式是一个等式，能给出球形上两点之间的曲线距离（从其经度和纬度确认）。
 
-与公式一样，[!DNL Haversine]变换需要两组[!DNL Latitude]和[!DNL Longitude]设置，使用这四个输入计算两个位置之间地球的真实距离。
+与公式一样，[!DNL Haversine]转换需要两组[!DNL Latitude]和[!DNL Longitude]设置，使用这四个输入值计算地球上两个位置之间的真正距离。
 
 通过将“In Kilometers”（以公里为单位）标记从 false 改为 true，可以使用英里或公里来代表距离。
 
@@ -36,4 +35,4 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->如果要标识其他位置的距离，则每个单个位置必须有其自己的纬度和长度字段集。
+>如果要识别其他位置的距离，则每个单独位置必须有其自己的纬度和经度字段集。
