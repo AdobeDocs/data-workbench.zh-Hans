@@ -1,9 +1,8 @@
 ---
-description: 使用JavaScript文档对象模型，可以使用其他脚本方法来增强zig.js文件的请求。
+description: 使用JavaScript文档对象模型，可以使用其他脚本方法来增加zig.js文件的请求。
 title: 获取文档对象
 uuid: 7681c337-b147-4937-9d9c-0ff48d9bdd00
 exl-id: eae6609c-be86-44cf-a1a1-69ffb43231fa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '160'
@@ -13,9 +12,9 @@ ht-degree: 5%
 
 # 获取文档对象{#acquiring-document-objects}
 
-使用JavaScript文档对象模型，可以使用其他脚本方法来增强zig.js文件的请求。
+使用JavaScript文档对象模型，可以使用其他脚本方法来增加zig.js文件的请求。
 
-诸如META标签值、DIV标签的ID值等信息可由名称引用并收集为变量以用于分析。 例如，要动态捕获HTML文档的META元素中包含的信息，可以使用以下JavaScript语法：
+META标记值、DIV标记的ID值等信息可由名称引用并收集为变量以用于分析。 例如，要动态捕获HTML文档的META元素中包含的信息，可以使用以下JavaScript语法：
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -38,6 +37,6 @@ v["_1"] = metacontent;
 
 | 收集的数据 | 说明 | 示例 |
 |---|---|---|
-| v_1= | 与METAVALUE查询字符串变量关联的值。 此值表示HTML文档的META元素中的数据。 | v_1=此页面提供与“致谢”页面相关的内容。 |
+| v_1= | 与METAVALUE查询字符串变量关联的值。 此值表示HTML文档的META元素内的数据。 | v_1=此页面提供与感谢订单页面相关的内容。 |
 
 收集数据后，您可以配置Data Workbench Server以处理此测量数据，以便进行分析和报告。
