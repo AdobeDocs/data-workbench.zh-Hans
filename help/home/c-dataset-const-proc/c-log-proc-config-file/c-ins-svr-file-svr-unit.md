@@ -3,7 +3,6 @@ description: 有关 Insight Server 文件服务器单元和文件服务器配置
 title: 配置 Data Workbench Server 文件服务器单元
 uuid: ccb65952-f017-4434-b2f8-74c274450834
 exl-id: 19b8c08a-e9f2-47ab-ad9f-1fddfbd9d249
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1784'
@@ -19,11 +18,11 @@ ht-degree: 61%
 c_abt_file_svr_units.xml
 -->
 
-您可以通过完成[!DNL Log Processing.cfg]文件的&#x200B;**[!UICONTROL Log Sources]** > **[!UICONTROL Log Server]**&#x200B;节点中的参数，将Data Workbench Server(InsightServer64.exe)配置为作为文件服务器单元(FSU)运行。 将Data Workbench Server配置为作为FSU运行时，它会存储源文件（[!DNL .vsl]文件、文本文件或XML文件），这些源文件可由多个处理服务器(DPU)快速访问。 当 Data Workbench Server 群集中的 DPU 访问 FSU 以读取日志文件时，它们会彼此划分日志文件，并保证同一个文件不会被多次处理。
+您可以通过完成[!DNL Log Processing.cfg]文件&#x200B;**[!UICONTROL Log Sources]** > **[!UICONTROL Log Server]**&#x200B;节点中的参数，将Data Workbench Server(InsightServer64.exe)配置为作为文件服务器单元(FSU)运行。 当Data Workbench Server配置为作为FSU运行时，它会存储源文件（[!DNL .vsl]文件、文本文件或XML文件），这些源文件可由多个处理服务器(DPU)快速访问。 当 Data Workbench Server 群集中的 DPU 访问 FSU 以读取日志文件时，它们会彼此划分日志文件，并保证同一个文件不会被多次处理。
 
 >[!NOTE]
 >
->当设置FSU来为由5到10个DPU组成的Data Workbench Server群集提供服务时，应将群集的主控服务器设为FSU。
+>在设置FSU（用于由5到10个DPU组成的Data Workbench Server群集）时，应将群集的主控服务器设为FSU。
 
 有关安装 Data Workbench Server 群集的信息，请参阅《服务器产品安装和管理指南》**。
 
@@ -59,7 +58,7 @@ c_file_svr_config_proc.xml
 
 1. 添加[!DNL Sensor]、日志文件或XML数据源。 请参阅[日志文件](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)。
 
-1. 完成“日志路径”参数。 请参阅[传感器文件](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009)、[日志文件](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)或[XML日志源](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)。 请确保指定有效的 URI。
+1. 完成Log Paths（日志路径）参数。 请参阅[传感器文件](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009)、[日志文件](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)或[XML日志源](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)。 请确保指定有效的 URI。
 
 1. 完成下表中定义的 Log Server（日志服务器）参数：
 
@@ -107,7 +106,7 @@ c_file_svr_config_proc.xml
 | Proxy Port（代理端口） | 代理服务器的端口。默认值为 8080。 |
 | Proxy User Name（代理用户名） | 可选。代理服务器的用户名。 |
 
-以下是[!DNL Log Processing.cfg]文件中定义的[!DNL Log Server]的示例。 日志源 #1 是 LogFile 源，指向名为 FSU01 的计算机上的 Logs 目录（请注意 Log Paths（日志路径）参数中指定的 URI）。
+以下是[!DNL Log Processing.cfg]文件中定义的[!DNL Log Server]示例。 日志源 #1 是 LogFile 源，指向名为 FSU01 的计算机上的 Logs 目录（请注意 Log Paths（日志路径）参数中指定的 URI）。
 
 ![](assets/cfg_LogProcessing_LogServer.png)
 
@@ -119,11 +118,11 @@ c_file_svr_config_proc.xml
 
 1. 打开要设置为FSU的Data Workbench Server计算机的[!DNL Server Files Manager]，然后单击&#x200B;**[!UICONTROL Access Control]**&#x200B;以显示其内容。
 
-   有关打开和使用[!DNL Server Files Manager]的信息，请参阅&#x200B;*《Data Workbench用户指南》*。
+   有关打开和使用[!DNL Server Files Manager]的信息，请参阅&#x200B;*Data Workbench用户指南*。
 
 1. 在[!DNL Server Files Manager]窗口中，单击&#x200B;**[!UICONTROL Access Control]**&#x200B;以显示其内容。 [!DNL Access Control.cfg] 文件位于此目录中。
 
-1. 右键单击[!DNL Access Control.cfg]服务器名称列中的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL Access Control.cfg]的[!DNL Temp]列中显示复选标记。
+1. 右键单击服务器名称列中[!DNL Access Control.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL Temp]列中会出现[!DNL Access Control.cfg]的复选标记。
 
 1. 右键单击[!DNL Temp]列下新创建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Workstation]**。
 
@@ -131,7 +130,7 @@ c_file_svr_config_proc.xml
 
 1. 右键单击列表中最终[!DNL AccessGroup]的数字标签，然后单击&#x200B;**[!UICONTROL Add new]** > **[!UICONTROL Group]**。
 
-1. 为新[!DNL AccessGroup]输入[!DNL Name]。 示例：连接服务器。
+1. 为新的[!DNL AccessGroup]输入[!DNL Name]。 示例：连接服务器。
 
 1. 右键单击新[!DNL AccessGroup]下的&#x200B;**[!UICONTROL Member]**，然后单击&#x200B;**[!UICONTROL Add new]** > **[!UICONTROL Member]**。
 
@@ -142,7 +141,7 @@ c_file_svr_config_proc.xml
 1. 输入日志文件在文件服务器计算机上的存储位置。在指定路径时，请使用正斜杠 (/)。默认位置为 /Logs/。
 1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**，然后单击&#x200B;**[!UICONTROL Save]**。
 
-1. 在[!DNL Server Files Manager]窗口中，右键单击[!DNL Temp]列中[!DNL Access Control.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > **[!UICONTROL server name]**&#x200B;以保存对Data Workbench Server的FSU所做的本地更改。
+1. 在[!DNL Server Files Manager]窗口中，右键单击[!DNL Temp]列中[!DNL Access Control.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > **[!UICONTROL server name]**&#x200B;以将本地所做的更改保存到Data Workbench Server的FSU中。
 
 ## 指定日志文件的位置 {#section-f9a649bf1b2544feb10ad8820384edb0}
 
@@ -152,7 +151,7 @@ c_file_svr_config_proc.xml
 
 1. 在[!DNL Server Files Manager]窗口中，单击&#x200B;**[!UICONTROL Components]**&#x200B;以显示其内容。 [!DNL Communications.cfg] 文件位于此目录中。
 
-1. 右键单击[!DNL Communications.cfg]服务器名称列中的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL Communications.cfg]的[!DNL Temp]列中显示复选标记。
+1. 右键单击服务器名称列中[!DNL Communications.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL Temp]列中会出现[!DNL Communications.cfg]的复选标记。
 
 1. 右键单击[!DNL Temp]列下新创建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Workstation.]**。
 
@@ -160,7 +159,7 @@ c_file_svr_config_proc.xml
 
 1. 在[!DNL Communications.cfg]窗口中，单击&#x200B;**[!UICONTROL Servers]**&#x200B;以显示其内容。 可能会显示以下几个服务器：文件服务器、日志记录服务器、初始化服务器、状态服务器、发送服务器或复制服务器。
 
-1. （仅限[!DNL Sensor]日志源）找到[!DNL LoggingServer]，即[!DNL Sensor]写入其日志文件以供Data Workbench Server处理的位置，然后单击其编号以视图菜单。 编辑 Log Directory（日志目录）参数以反映日志文件的所需位置。默认的日志目录为 Data Workbench Server 安装目录中的 Logs 文件夹。
+1. （仅限[!DNL Sensor]日志源）找到[!DNL LoggingServer]（即[!DNL Sensor]写入其日志文件以供Data Workbench Server处理的位置），然后单击其编号以查看菜单。 编辑 Log Directory（日志目录）参数以反映日志文件的所需位置。默认的日志目录为 Data Workbench Server 安装目录中的 Logs 文件夹。
 
    请勿修改 [!DNL LoggingServer] 的其他任何参数。
 
@@ -173,11 +172,11 @@ c_file_svr_config_proc.xml
 
    >[!NOTE]
    >
-   >如果按如所示填充了[!DNL Local Path]和URI参数，则可以通过单击[!DNL Server Files Manager]中的[!DNL Logs]从任何Data Workbench Server访问FSU上的日志文件。
+   >如果[!DNL Local Path]和URI参数如所示填充，则可以通过单击[!DNL Server Files Manager]中的[!DNL Logs]，从任何Data Workbench Server访问FSU上的日志文件。
 
 1. 右键单击配置窗口顶部的&#x200B;**[!UICONTROL (modified)]**，然后单击&#x200B;**[!UICONTROL Save]**。
 
-1. 在[!DNL Server Files Manager]窗口中，右键单击[!DNL Temp]列中[!DNL Communications.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*&#x200B;以保存对Data Workbench Server的FSU所做的本地更改。
+1. 在[!DNL Server Files Manager]窗口中，右键单击[!DNL Temp]列中[!DNL Communications.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > ***[!UICONTROL server name]**>*&#x200B;以将本地所做的更改保存到Data Workbench Server的FSU中。
 
 ## 为群集创建集中标准化服务器 {#section-2c1f57b683f94cc193bc069e886bba28}
 
@@ -193,7 +192,7 @@ Adobe 强烈建议将群集的 FSU 用作群集的主服务器及其集中标准
 
    >[!NOTE]
    >
-   >如果您已安装Data Workbench Server v5.0或更高版本的完整发行包，则FSU上的[!DNL Communications.cfg]文件应已包含[!DNL NormalizeServer]条目。 您可以按照下面的步骤操作来确认该条目已存在。
+   >如果您已安装Data Workbench Server v5.0或更高版本的完整发行包，则FSU上的[!DNL Communications.cfg]文件应该已具有[!DNL NormalizeServer]条目。 您可以按照下面的步骤操作来确认该条目已存在。
 
    1. 按照[!DNL Communications.cfg]指定日志文件的位置[中所述，在 Data Workbench 中打开 ](#section-f9a649bf1b2544feb10ad8820384edb0) 文件。
 
@@ -206,17 +205,17 @@ Adobe 强烈建议将群集的 FSU 用作群集的主服务器及其集中标准
 
    1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**，然后单击&#x200B;**[!UICONTROL Save]**。
 
-   1. 在[!DNL Server Files Manager]窗口中，右键单击[!DNL Temp]列中[!DNL Communications.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL server]**>*&#x200B;名称以保存对Data Workbench Server FSU所做的本地更改。
+   1. 在[!DNL Server Files Manager]窗口中，右键单击[!DNL Temp]列中[!DNL Communications.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > ***[!UICONTROL server]**>*&#x200B;名称，将本地所做的更改保存到Data Workbench Server FSU。
 
 1. 在 Data Workbench Server 群集主服务器上的 [!DNL Cluster.cfg] 文件中定义集中标准化服务器。
 
    >[!NOTE]
    >
-   >如果要在其上设置集中标准化服务器的FSU不是群集中的主控Data Workbench Server，则必须将群集中DPU的IP地址添加到FSU的[!DNL Access Control.cfg]文件中的[!DNL Cluster Servers]访问组。 有关将服务器添加到[!DNL Cluster Servers]组的说明，请参阅&#x200B;*服务器产品安装和管理指南中的“更新群集的访问控制文件”部分。*
+   >如果要设置集中标准化服务器的FSU不是群集中的主控Data Workbench Server，则必须将群集中DPU的IP地址添加到FSU[!DNL Access Control.cfg]文件的[!DNL Cluster Servers]访问组。 有关将服务器添加到[!DNL Cluster Servers]组的说明，请参阅《服务器产品安装和管理指南》中的“更新群集的访问控制文件”部分。**
 
-   1. 在数据集用户档案中打开[!DNL Profile Manager]，然后单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示其内容。 [!DNL Cluster.cfg] 文件位于此目录中。
+   1. 在数据集配置文件中打开[!DNL Profile Manager]，然后单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示其内容。 [!DNL Cluster.cfg] 文件位于此目录中。
 
-   1. 右键单击[!DNL Cluster.cfg]旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 此文件的复选标记显示在[!DNL User]列中。
+   1. 右键单击[!DNL Cluster.cfg]旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL User]列中将显示此文件的复选标记。
 
    1. 右键单击新创建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。
 
@@ -236,7 +235,7 @@ Adobe 强烈建议将群集的 FSU 用作群集的主服务器及其集中标准
 
       >[!NOTE]
       >
-      >当您为SSL服务器公用名参数输入FSU的公用名时，FSU将使用其[!DNL .address]文件解析公用名。 有关[!DNL .address]文件的信息，请参阅&#x200B;*服务器产品安装和管理指南*。
+      >在SSL Server Common Name（SSL服务器通用名称）参数中输入FSU的通用名称时，FSU会使用其[!DNL .address]文件来解析通用名称。 有关[!DNL .address]文件的信息，请参阅&#x200B;*《服务器产品安装和管理指南》*。
 
    1. 保存文件。
-   1. 在[!DNL Profile Manager]中，右键单击[!DNL User]列中[!DNL Cluster.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > ***[!UICONTROL dataset profile name]***&#x200B;以保存对数据集用户档案的本地更改。
+   1. 在[!DNL Profile Manager]中，右键单击[!DNL User]列中[!DNL Cluster.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > ***[!UICONTROL dataset profile name]***&#x200B;以将本地所做的更改保存到数据集配置文件中。
