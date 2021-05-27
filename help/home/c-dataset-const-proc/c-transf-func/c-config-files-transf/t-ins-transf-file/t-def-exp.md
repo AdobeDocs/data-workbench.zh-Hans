@@ -3,7 +3,6 @@ description: 导出程序为输出事件数据提供了说明。
 title: 定义导出程序
 uuid: 565d4482-6c25-407c-bda7-0d116180902a
 exl-id: 5de6266a-e959-414c-9512-5e9f4011881b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1120'
@@ -15,11 +14,11 @@ ht-degree: 90%
 
 导出程序为输出事件数据提供了说明。
 
-转换功能提供了三种类型的导出器，用于将[!DNL .vsl]文件、日志文件、XML文件和ODBC数据导出为[!DNL .vsl]文件、文本文件或分隔文本文件，这些文本文件可由DataWarehouse加载例程、审计机构或其他目标使用。
+转换功能提供了三种类型的导出程序，用于将[!DNL .vsl]文件、日志文件、XML文件和ODBC数据导出为[!DNL .vsl]文件、文本文件或分隔文本文件，供DataWarehouse加载例程、审计代理或其他目标使用。
 
 >[!NOTE]
 >
->要使导出器正常工作，日志源必须满足[日志处理配置文件](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)的[日志源](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea)部分中讨论的适当要求。
+>要使导出程序正常工作，日志源必须满足[日志处理配置文件](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)的[日志源](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea)部分中讨论的相应要求。
 
 **定义导出程序**
 
