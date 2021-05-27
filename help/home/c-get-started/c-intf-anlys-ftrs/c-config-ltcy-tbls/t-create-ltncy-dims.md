@@ -3,7 +3,6 @@ description: 延迟维度是通过一个可计数父维度（如“会话”）�
 title: 创建延迟维度
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
 exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '542'
@@ -15,11 +14,11 @@ ht-degree: 88%
 
 延迟维度是通过一个可计数父维度（如“会话”）和一个时间维度（如“日”）构建的。
 
-在Data Workbench中创建延迟表时，会自动向可视化文件(.vw)添加延迟维度。 您可以按照下列步骤编辑某个表格的延迟维度。
+在Data Workbench中创建延迟表格时，会自动向可视化文件(.vw)添加延迟维度。 您可以按照下列步骤编辑某个表格的延迟维度。
 
 **编辑延迟维度**
 
-1. 在文本编辑器（如记事本）中打开您创建的延迟表格。它位于您的Data Workbench安装目录中的User > `working profile name` > Work文件夹中。
+1. 在文本编辑器（如记事本）中打开您创建的延迟表格。它位于Data Workbench安装目录的User > `working profile name` > Work文件夹中。
 
    定义的延迟维度包括以下示例所示的参数。（您的延迟维度定义可能包含其他参数。）[!DNL line entity = LatencyDim:]表示延迟维度定义的开始。
 
@@ -64,7 +63,7 @@ ht-degree: 88%
    </tr> 
    <tr> 
       <td colname="col1"> 格式 </td> 
-      <td colname="col2"> <p>可选。指定Data Workbench中延迟可视化的外观。 在 Format（格式）参数中，您可以编辑以下值： 
+      <td colname="col2"> <p>可选。在Data Workbench中指定延迟可视化的外观。 在 Format（格式）参数中，您可以编辑以下值： 
       <ul id="ul_ABF4C17BDE2E4F6C9CBDD933674DE861"> 
          <li id="li_5ED6A7267C81444983AF8507ADC6A5AB">Time string（时间字符串）。延迟可视化中所示的时间单位，如“日”或者“星期”。当您更改时间维度时，请务必更改时间字符串。 </li> 
          <li id="li_E3B517ECE1494221AAE90455CC0AAB42">Offset（偏移）。等于 Time Before（此时间之前）值的负数的整数。例如，如果 Time Before（此时间之前）是 7，则偏移量应该是 -7。 </li> 
@@ -81,7 +80,7 @@ ht-degree: 88%
    </tbody> 
    </table>
 
-1. 将[!DNL .vw]文件保存到User\*Working用户档案名称*\Work文件夹中。
+1. 将[!DNL .vw]文件保存到User\*工作配置文件名称*\Work文件夹。
 
    以下是默认延迟维度的设置：
 
