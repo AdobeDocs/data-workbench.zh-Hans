@@ -3,7 +3,6 @@ description: 可用的窗口类型取决于您所使用的配置文件和应用�
 title: 在工作区中操作窗口
 uuid: a7f9b132-999a-4ba8-9e34-1d41075f9e13
 exl-id: 0bedc792-c05b-4f7c-ac1e-f2d5c66e440d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '201'
@@ -37,9 +36,9 @@ ht-degree: 83%
 可以在工作区中以及工作区之间复制并粘贴窗口。
 
 1. 右键单击窗口的上边框，然后单击&#x200B;**[!UICONTROL Copy]** > **[!UICONTROL Window]**。
-1. 在所需工作区中，单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL From Clipboard]**。
+1. 在所需的工作区中，单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL From Clipboard]**。
 
 **复制窗口并将其作为可视化的标注进行粘贴**
 
 1. 右键单击窗口的上边框，然后单击&#x200B;**[!UICONTROL Copy]** > **[!UICONTROL Window]**。
-1. 在所需的可视化中，右键单击所需元素，然后单击&#x200B;**[!UICONTROL Add Callout]** > **[!UICONTROL From Clipboard]**。
+1. 在所需的可视化中，右键单击所需的元素，然后单击&#x200B;**[!UICONTROL Add Callout]** > **[!UICONTROL From Clipboard]**。
