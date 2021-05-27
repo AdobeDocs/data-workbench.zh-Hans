@@ -3,7 +3,6 @@ description: 默认情况下，图表可视化显示条形图，但您可以轻�
 title: 更改图形显示
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
 exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '165'
@@ -21,7 +20,7 @@ ht-degree: 92%
 
 **选择显示类型**
 
-右键单击图形底部的维度标签，然后单击&#x200B;**[!UICONTROL Display]** > **[!UICONTROL Draw lines]**&#x200B;或&#x200B;**[!UICONTROL Display]** > **[!UICONTROL Draw bars]**。 此时会在活动的显示模式左侧显示一个 X。
+右键单击图表底部的维度标签，然后单击&#x200B;**[!UICONTROL Display]** > **[!UICONTROL Draw lines]**&#x200B;或&#x200B;**[!UICONTROL Display]** > **[!UICONTROL Draw bars]**。 此时会在活动的显示模式左侧显示一个 X。
 
 ![](assets/mnu_Graph_Draw.png)
 
