@@ -3,7 +3,6 @@ description: 在折线图中可以对某个维度中的元素以系列的形式�
 title: 更改系列
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
 exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '156'
@@ -23,7 +22,7 @@ ht-degree: 85%
 
 **启用系列**
 
-* 右键单击维度的元素或标签，然后单击&#x200B;**[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*。
+* 右键单击维度的元素或标签，然后单击&#x200B;**[!UICONTROL Change Series]** > ***[!UICONTROL dimension name]**>*。
 
 **禁用系列**
 
