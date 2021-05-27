@@ -1,9 +1,8 @@
 ---
-description: 跨第三方网站链接捕获活动，以启用“退出目标分析”。
+description: 通过捕获第三方网站链接中的活动以启用退出目标分析。
 title: 跟踪外部链接的退出情况
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
 exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '193'
@@ -13,15 +12,15 @@ ht-degree: 6%
 
 # 跟踪外部链接的退出情况{#tracking-exits-to-external-links}
 
-跨第三方网站链接捕获活动，以启用“退出目标分析”。
+通过捕获第三方网站链接中的活动以启用退出目标分析。
 
-网页可包含指向第三方网站的链接，并且可以捕获这些链接中的活动以启用退出目标分析，尤其是当第三方网站负责在收到此类推荐时支付推荐费时。 由于默认情况下，单击事件会写入第三方系统的日志文件，因此需要对链接进行修改，以便在本地捕获单击事件。 网站中存在的第三方链接必须修改如下：
+网页可以包含指向第三方网站的链接，并且可以捕获这些链接中的活动以启用退出目标分析，特别是当第三方网站在收到此类推荐时负责支付推荐费时。 由于点击事件默认写入第三方系统的日志文件，因此需要对链接进行修改，以便在本地捕获点击事件。 您网站中存在的第三方链接必须按照以下方式进行修改：
 
 ```
 <A HREF=”http://www.myserver.com/PageExit.htm?v_eurl=http://www.othersite.com”>
 ```
 
-必须创建引用的[!DNL PageExit.htm]文件，并且应构建为包含以下脚本：
+必须创建引用的[!DNL PageExit.htm]文件，且其结构应包含以下脚本：
 
 ```
 <html> 
@@ -52,7 +51,7 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-通过对[!DNL PageExit.htm]文件发出请求，将收集v_eurl值以用于分析。 此外，加载[!DNL PageExit.htm]时，它会立即重定向到指定的v_eurl目标位置。
+通过对[!DNL PageExit.htm]文件提出请求，收集v_eurl值以用于分析。 此外，在加载[!DNL PageExit.htm]时，它会立即重定向到指定的v_eurl目标位置。
 
 | 收集的数据 | 说明 | 示例 |
 |---|---|---|
