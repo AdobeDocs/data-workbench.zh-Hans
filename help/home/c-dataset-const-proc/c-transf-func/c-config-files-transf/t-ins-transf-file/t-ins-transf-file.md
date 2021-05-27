@@ -3,7 +3,6 @@ description: Data Workbench Transform.cfg 文件包含用于定义日志源、�
 title: Transform.cfg 文件
 uuid: eab5bb70-6de7-4f08-85db-a6cb00abd3ed
 exl-id: e84f2536-cb22-4c47-a7a8-270b3c37ece6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1336'
@@ -15,9 +14,9 @@ ht-degree: 76%
 
 Data Workbench Transform.cfg 文件包含用于定义日志源、数据转换和导出程序的参数。
 
-您定义的转换操作由传感器（[!DNL .vsl]文件）收集或包含在文本文件、XML文件或兼容ODBC的数据库中的原始数据，并将它们输出到现有字段中，覆盖当前数据或输出到新定义的字段中。
+您定义的转换处理由传感器（[!DNL .vsl]文件）收集或包含在文本文件、XML文件或ODBC兼容数据库中的原始数据，并将它们输出到现有字段中，覆盖当前数据或输出到新定义的字段中。
 
-若要配置转换功能，需要在要导出事件数据的配置文件 Dataset 文件夹内编辑 Data Workbench [!DNL Transform.cfg] 文件。通常，此配置文件将专门用于转换功能（也就是说，除了 Data Workbench [!DNL Transform.cfg] 文件中定义的数据处理以外，不执行其他任何数据处理）。请务必注意，除了在Data Workbench [!DNL Transform.cfg]文件中指定的处理指令外，还将应用在[!DNL Log Processing Dataset Include]文件中为任何继承用户档案指定的任何处理指令。
+若要配置转换功能，需要在要导出事件数据的配置文件 Dataset 文件夹内编辑 Data Workbench [!DNL Transform.cfg] 文件。通常，此配置文件将专门用于转换功能（也就是说，除了 Data Workbench [!DNL Transform.cfg] 文件中定义的数据处理以外，不执行其他任何数据处理）。请务必注意，除了Data Workbench [!DNL Transform.cfg]文件中指定的处理说明外，还应用在任何继承配置文件的[!DNL Log Processing Dataset Include]文件中指定的处理说明。
 
 有关数据集包含文件的信息，请参阅[数据集包含文件](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
 
@@ -25,9 +24,9 @@ Data Workbench Transform.cfg 文件包含用于定义日志源、数据转换和
 
 **编辑 Data Workbench Transform.cfg 文件**
 
-1. 在要导出数据的用户档案中工作时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示目录的内容。
-1. 右键单击Data Workbench [!DNL Transform.cfg]旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 此文件的复选标记显示在[!DNL User]列中。
-1. 右键单击新创建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。 此时将显示Data Workbench [!DNL Transform.cfg]窗口。
+1. 在要导出数据的配置文件中工作时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示目录的内容。
+1. 右键单击Data Workbench [!DNL Transform.cfg]旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL User]列中将显示此文件的复选标记。
+1. 右键单击新创建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。 此时会出现Data Workbench [!DNL Transform.cfg]窗口。
 1. 参考下表，编辑该配置文件中的参数：
 
 <table id="table_91D9C4C1BE2E43158D9D06C6284EE3C7"> 
@@ -84,7 +83,7 @@ Data Workbench Transform.cfg 文件包含用于定义日志源、数据转换和
       </ul> <p> <b>删除现有处理阶段</b> </p> 
       <ul id="ul_4950BC26E0CD4837A4CB377605A52D3C"> 
       <li id="li_A61E2C17966E4F96A1256B8390623B0F"> 右键单击要删除的阶段所对应的编号，然后单击<span class="uicontrol">删除</span><i>&lt;<span class="uicontrol">阶段编号</span>&gt;</i>。 </li> 
-      </ul> <p> <p>注意：当您在<span class="wintitle">日志处理数据集包含</span>文件中指定阶段时，该阶段的名称必须与您在此处输入的名称完全匹配。有关数据集包含文件的详细信息，请参阅<a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md">数据集包含文件</a>。 </p> </p> </td> 
+      </ul> <p> <p>注意：当您在<span class="wintitle">日志处理数据集包含</span>文件中指定阶段时，该阶段的名称必须与您在此处输入的名称完全匹配。有关数据集包含文件的更多信息，请参阅<a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md">数据集包含文件</a> 。 </p> </p> </td> 
     </tr> 
     <tr> 
     <td colname="col1"> Start Time（开始时间） </td> 
@@ -109,17 +108,17 @@ Data Workbench Transform.cfg 文件包含用于定义日志源、数据转换和
 
 >[!NOTE]
 >
->如果在关闭输出文件后接收到其他数据（请参阅上表中的[!DNL Log Sources]和[!DNL Offline Mode]），则[!DNL Transform]会用附加数据创建新的输出文件。 新输出文件的名称生成自原始输出文件的名称（在紧靠扩展名的前面添加带括号的版本号）。例如，如果原始输出文件为[!DNL 20070701-ABC.vsl]，则此文件的后续版本将命名为[!DNL 20070701-ABC(1).vsl]、[!DNL 20070701-ABC(2).vsl]等。 请注意，将版本控制的文件用作 Data Workbench Server 的输入，可能会导致处理错误。
+>如果在输出文件关闭后收到附加数据（请参阅上表中的[!DNL Log Sources]和[!DNL Offline Mode]），则[!DNL Transform]会使用附加数据创建新的输出文件。 新输出文件的名称生成自原始输出文件的名称（在紧靠扩展名的前面添加带括号的版本号）。例如，如果原始输出文件为[!DNL 20070701-ABC.vsl]，则此文件的后续版本将命名为[!DNL 20070701-ABC(1).vsl]、[!DNL 20070701-ABC(2).vsl]，依此类推。 请注意，将版本控制的文件用作 Data Workbench Server 的输入，可能会导致处理错误。
 >
 >
 >Adobe 建议确保所有源数据在按字典顺序排列的输入文件中都按年代顺序排列，以及当 [!DNL Offline Mode]（离线模式）设为 true 时，确保所有源数据在处理开始之前都存在，从而避免创建版本控制的输出文件。有关详细信息，请参阅上表中的[!DNL Log Sources]和[!DNL Offline Mode]条目。
 
-1. 通过右键单击&#x200B;**[!UICONTROL Transformations]**&#x200B;并单击&#x200B;**[!UICONTROL Add new]** > **[!UICONTROL Transformation type]**&#x200B;添加转换。 完成转换字段。
+1. 右键单击&#x200B;**[!UICONTROL Transformations]**&#x200B;并单击&#x200B;**[!UICONTROL Add new]** > **[!UICONTROL Transformation type]**&#x200B;可添加转换。 完成转换字段。
 
-   请参阅[数据转换](../../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)，了解可与转换功能一起使用的转换的说明和示例。
+   有关可与转换功能一起使用的转换的说明和示例，请参阅[数据转换](../../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)。
 
 1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**，然后单击&#x200B;**[!UICONTROL Save]**。
-1. 要使本地所做的更改生效，请在[!DNL Profile Manager]中右键单击[!DNL User]列中Data Workbench [!DNL Transform.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > **[!UICONTROL profile name]** ，其中用户档案名称是要导出用户档案的名称。 在配置文件同步之后，系统便会开始重新处理数据。
+1. 若要使本地所做的更改生效，请在[!DNL Profile Manager]中右键单击[!DNL User]列中Data Workbench [!DNL Transform.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > **[!UICONTROL profile name]**，其中“配置文件名称”是要为其导出数据的配置文件名称。 在配置文件同步之后，系统便会开始重新处理数据。
 
    >[!NOTE]
    >
