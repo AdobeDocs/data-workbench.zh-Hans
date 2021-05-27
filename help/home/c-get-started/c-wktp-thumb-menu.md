@@ -1,9 +1,8 @@
 ---
-description: 如何从Worktop中导出、复制和添加书签。
+description: 如何从Worktop导出、复制和书签。
 title: 使用工作台缩略图菜单
 uuid: bada2260-3ae7-4fb6-938a-40b7acb1ffa7
 exl-id: 2220051d-5c53-48ed-8e13-62883819f22a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '490'
@@ -13,15 +12,15 @@ ht-degree: 79%
 
 # 使用工作台缩略图菜单{#using-the-worktop-thumbnail-menu}
 
-如何从Worktop中导出、复制和添加书签。
+如何从Worktop导出、复制和书签。
 
 右键单击工作区可访问 Worktop 中的导出、复制和书签功能。
 
 ![](assets/thumbnail_menu.png)
 
-## 接口说明{#section-fd027dd94b7d4cb6b933d70c08ccd3e2}
+## 接口描述{#section-fd027dd94b7d4cb6b933d70c08ccd3e2}
 
-[!DNL Worktop]缩览图菜单中提供以下元素：
+[!DNL Worktop]缩略图菜单中提供以下元素：
 
 **服务器工作区:***名称*
 
@@ -48,7 +47,7 @@ ht-degree: 79%
 
    >[!NOTE]
    >
-   >如果“在后台计算”(Compute in Background)保持选中状态，则选定工作区中的查询将变为静态查询，继续更新并使用内存负载。 当您完成该工作区中的工作时，确保取消选择“在后台计算”。
+   >如果“在后台计算”保持选中状态，则所选工作区中的查询将成为持续查询，并继续更新并使用内存负载。 当您完成该工作区中的工作时，确保取消选择“在后台计算”。
 
 **导出到 Excel**
 
@@ -68,11 +67,11 @@ ht-degree: 79%
 
 **删除**
 
-仅对用户工作区显示。删除仅存在于本地计算机上的用户工作区。有关从连接的Data Workbench服务器中删除工作区的信息，请参阅[从工作用户档案中删除文件](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b)。
+仅对用户工作区显示。删除仅存在于本地计算机上的用户工作区。有关从连接的Data Workbench服务器中删除工作区的信息，请参阅[从工作配置文件中删除文件](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b)。
 
 **保存到服务器**
 
-仅对本地版本的服务器工作区和用户工作区显示，并且仅适用于具有适当权限的用户。将工作区的本地副本保存到服务器。默认情况下，工作区将保存到相应的工作`<profile name>\Workspaces\<tab name>`文件夹。
+仅对本地版本的服务器工作区和用户工作区显示，并且仅适用于具有适当权限的用户。将工作区的本地副本保存到服务器。默认情况下，工作区会保存到相应的工作`<profile name>\Workspaces\<tab name>`文件夹中。
 
 **书签**
 
