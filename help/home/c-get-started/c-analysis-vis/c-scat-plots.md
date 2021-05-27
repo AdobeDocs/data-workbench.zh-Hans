@@ -3,7 +3,6 @@ description: 散点图用网格绘制数据维度的元素（例如“页面”�
 title: 2D 散点图
 uuid: 73c23d22-3c3a-4535-b66b-0e3508bd904c
 exl-id: 340f8c18-ce47-4f3a-aba4-3d6124505313
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '366'
@@ -41,20 +40,20 @@ ht-degree: 86%
 
 * 按 Shift 并单击某个点或按 Shift 并跨多个点拖动。
 
-## 更改维{#section-796cd962ef3f476caa89d99083782ed1}
+## 更改维度{#section-796cd962ef3f476caa89d99083782ed1}
 
-* 右键单击图形顶部的维度标签，然后单击&#x200B;**[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*。
+* 右键单击图表顶部维度的标签，然后单击&#x200B;**[!UICONTROL Change Dimension]** > ***[!UICONTROL dimension name]**>*。
 
 ## 更改量度{#section-44b8be9215cd4039b1eeb98ae1b31445}
 
 **更改散点图的 x 或 y 轴上显示的量度**
 
-* 右键单击要更改的量度的标签，然后单击&#x200B;**[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*。
+* 右键单击要更改的量度的标签，然后单击&#x200B;**[!UICONTROL Change Metric]** > ***[!UICONTROL metric name]**>*。
 
 ## 更改半径量度{#section-fd80576d583c430cb469daf12e39aa2a}
 
 **更改散点图的半径量度**
 
-右键单击图形顶部的维度标签，然后单击&#x200B;**[!UICONTROL Change Radius Metric]** > *&lt;**[!UICONTROL metric name]**>*。
+右键单击图表顶部维度的标签，然后单击&#x200B;**[!UICONTROL Change Radius Metric]** > ***[!UICONTROL metric name]**>*。
 
 ![](assets/mnu_ScatterPlot_Change.png)
