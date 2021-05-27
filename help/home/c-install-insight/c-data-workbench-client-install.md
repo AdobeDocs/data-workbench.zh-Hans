@@ -3,7 +3,6 @@ description: 以下是安装 Data Workbench 中工作站（客户端）的要求
 title: 工作站要求
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 exl-id: 35e259e3-3d6d-45c8-a923-2f8de117489d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '524'
@@ -33,16 +32,16 @@ ht-degree: 49%
 
    这将启用这些允许列表接口可执行文件的权限。
 
-* **安装 Microsoft Excel 以导出分析数据。** 要将工作区中的数据导出为Microsoft Excel( [!DNL .xls] 或 [!DNL .xlsx])文件，安装Data Workbench的计算机必须安装并注册Excel。如果Excel尚未注册，且Data Workbench首次尝试访问它，则Excel将显示一个注册对话框。 如果您不确定是否注册了副本，请手动启动 Excel，如果显示注册对话框，则完成注册过程。
+* **安装 Microsoft Excel 以导出分析数据。** 要将工作区中的数据导出为Microsoft Excel( [!DNL .xls] 或 [!DNL .xlsx])文件，安装Data Workbench的计算机必须安装并注册Excel。如果Excel尚未注册，且Data Workbench首次尝试访问它，则Excel会显示一个注册对话框。 如果您不确定是否注册了副本，请手动启动 Excel，如果显示注册对话框，则完成注册过程。
 
    >[!NOTE]
    >
    >随着 Data Workbench 6.4 的发布，对 Excel 2007 的支持已经终止。此外，由于 Data Workbench 只能在 64 位架构的 Microsoft Windows 上运行，因此建议同时还安装 64 位版本的 Microsoft Excel。
 
-* **安装 Adobe [!DNL Acrobat] 以将缩放的工作区打印成 PDF。** 要将缩放工作区打印为Adobe PDF格式，安装Data Workbench的计算机必须安装 [!DNL Acrobat] Adobe。
+* **安装 Adobe [!DNL Acrobat] 以将缩放的工作区打印成 PDF。** 要将缩放的工作区打印为Adobe PDF格式，安装Data Workbench的计算机必须安装 [!DNL Acrobat] Adobe。
 
-* **提供对打印机的访问以便打印工作区。** 要从Data Workbench打印工作区，安装Data Workbench的计算机必须有权访问打印机。Data Workbench可以将工作区打印到彩色或单色打印机，并且不需要postscript或其他高级打印机功能。 为了获得最佳效果，Adobe 建议您采用彩色打印机打印工作区。
-* **实施安全措施。** 您应当遵循公司对Data Workbench计算机的常规企业安全策略。为了实现其主要目的，Data Workbench只需要连接到服务器（通过端口80和443）以及任何收集数据的服务器。 只要您维护Data Workbench软件并为Data Workbench分配至少10 GB的存储空间，您就可以将Data Workbench硬件用于任何其他用途。
+* **提供对打印机的访问以便打印工作区。** 要从Data Workbench打印工作区，安装Data Workbench的计算机必须有权访问打印机。Data Workbench可以将工作区打印为彩色或单色打印机，并且不需要Postscript或其他高级打印机功能。 为了获得最佳效果，Adobe 建议您采用彩色打印机打印工作区。
+* **实施安全措施。** 您应遵循公司对Data Workbench计算机的常规企业安全策略。为了实现其主要目的，Data Workbench只需要能够连接到服务器（通过端口80和443）以及任何收集数据的服务器。 只要您维护Data Workbench软件并为Data Workbench分配至少10 GB的存储空间，您就可以将Data Workbench硬件用于任何其他用途。
 * 为了准确呈现可视化，安装工作站的计算机必须安装相应的&#x200B;**图形适配器**（请参阅下文的“图形适配器要求”）。
 
 **Data Workbench 客户端要求**
@@ -55,7 +54,7 @@ ht-degree: 49%
 
 >[!NOTE]
 >
->Data Workbench 6.1及更高版本不支持Windows XP。
+>Data Workbench6.1及更高版本不支持Windows XP。
 
 **分辨率**
 
@@ -69,8 +68,8 @@ ht-degree: 49%
 
 **处理器**
 
-* 必需：1.2 GHz或更高Intel或AMD
-* 建议：ICore 2双级
+* 必需：1.2 GHz或更高的Intel或AMD
+* 建议：ICore 2双核级
 
 **内存**
 
@@ -79,7 +78,7 @@ ht-degree: 49%
 
 **连接**
 
-* 必需：指向DPU的512 Kbps链接
+* 必需：到DPU的512 Kbps链路
 * 建议：2Mbps或更快的DPU链路
 
 **文件系统**
