@@ -1,9 +1,8 @@
 ---
-description: 您可以从Data Workbench客户端的详细信息表可视化中轻松创建区段导出定义。
+description: 您可以在Data Workbench客户端中轻松地从明细表可视化创建区段导出定义。
 title: 区段导出
 uuid: 85c8aa72-23fe-424b-9580-6759dc8f8681
 exl-id: 49998b46-f3a6-43a3-a76e-468894b27ee4
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '498'
@@ -13,15 +12,15 @@ ht-degree: 55%
 
 # 区段导出{#segment-export}
 
-您可以从Data Workbench客户端的详细信息表可视化中轻松创建区段导出定义。
+您可以在Data Workbench客户端中轻松地从明细表可视化创建区段导出定义。
 
-此外，[!DNL Segment Exports]会自动将其结果合并到单个服务器，而不是在每个DPU上生成部分结果，您必须使用外部进程合并这些结果。 您可以创建区段导出文件，将其保存到[!DNL Profile Manager]，然后将输出文件上传到您选择的服务器。
+此外，[!DNL Segment Exports]会自动将其结果合并到单个服务器中，而不是在每个DPU上生成部分结果，您必须使用外部流程合并这些结果。 您可以创建区段导出文件，将其保存到[!DNL Profile Manager]，然后将输出文件上传到您选择的服务器。
 
 **配置区段导出服务器**
 
-[!DNL Segment Export]功能在段导出服务器上创建单个输出文件，而不是在每个DPU上创建单独的输出文件。 区段导出服务器通常配置为在 FSU 上运行。
+[!DNL Segment Export]功能在区段导出服务器上创建单个输出文件，而不是在每个DPU上创建单独的输出文件。 区段导出服务器通常配置为在 FSU 上运行。
 
-在[!DNL Profile Manager]的Dataset\目录中，打开Workstation中的[!DNL Segment Export.cfg]，然后指定服务器地址。 （您的地址可以是 IP 或完全限定域名。）：
+在[!DNL Profile Manager]的Dataset\目录中，打开工作站中的[!DNL Segment Export.cfg] ，然后指定您的服务器地址。 （您的地址可以是 IP 或完全限定域名。）：
 
 ![](assets/segment_export_cfg.png)
 
@@ -35,13 +34,13 @@ ht-degree: 55%
 
 >[!NOTE]
 >
->对于Data Workbench 5.4,\Exports文件夹是自动创建的。 以前在 5.4 版之前设置的导出目录需要在每个区段导出的文件名之前添加 Exports\ 前缀。现在添加此前缀是多余的了。
+>对于Data Workbench5.4，将自动创建\Exports文件夹。 以前在 5.4 版之前设置的导出目录需要在每个区段导出的文件名之前添加 Exports\ 前缀。现在添加此前缀是多余的了。
 
-1. 在[!DNL Segment Exports]的目标服务器上的[!DNL Communications.cfg]中，向服务器列表添加一个SegmentExportServer。 （示例以红色显示）。
+1. 在[!DNL Segment Exports]的目标服务器的[!DNL Communications.cfg]中，将SegmentExportServer添加到服务器列表。 （示例以红色显示）。
 
    ![](assets/communications_cfg_example.png)
 
-   导出目录：指定放入[!DNL .part]和输出文件的位置。 该位置可以是共享目录。
+   导出目录：指定放置[!DNL .part]和输出文件的位置。 该位置可以是共享目录。
 
    Scripts Directory（脚本目录）：指定从中运行所有可执行文件或批处理文件的目录。
 
@@ -73,7 +72,7 @@ ht-degree: 55%
 
    ![](assets/create_segment_export_file.png)
 
-1. 在Detail Table标题中，右键单击并选择&#x200B;**[!UICONTROL Create Segment Export File]**。
+1. 在明细表标题中，右键单击并选择&#x200B;**[!UICONTROL Create Segment Export File]**。
 1. 在[!DNL Save as]中，键入[!DNL .export]文件的名称。
 1. 在[!DNL .export]文件中，根据需要配置参数。
 
@@ -81,4 +80,4 @@ ht-degree: 55%
 
 1. 保存[!DNL .export]文件。
 
-   保存的文件显示在[!DNL Profile Manager]中，以便您保存到服务器。 当您将该文件保存到服务器时，导出随即开始。
+   保存的文件显示在[!DNL Profile Manager]中，以供您保存到服务器。 当您将该文件保存到服务器时，导出随即开始。
