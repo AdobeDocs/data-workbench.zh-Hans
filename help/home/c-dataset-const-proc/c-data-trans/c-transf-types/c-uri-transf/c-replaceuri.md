@@ -3,7 +3,6 @@ description: ReplaceURI 转换将内部 URI 维度中的值更改为新值。
 title: ReplaceURI
 uuid: f9fc6d51-6eb6-4ace-8c19-2c0200555363
 exl-id: 03a6f306-5e2e-488c-8d79-a14938dcd635
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '189'
@@ -28,7 +27,7 @@ ReplaceURI 转换将内部 URI 维度中的值更改为新值。
 
 >[!NOTE]
 >
->在应用[!DNL ReplaceURI]转换之前，您应从cs-uri-stem或cs-uri的副本创建一个父项为[!DNL Page View]的新简单维度。 对此如需帮助，请联系 Adobe。
+>在应用[!DNL ReplaceURI]转换之前，应从cs-uri-stem或cs-uri的副本创建一个父项为[!DNL Page View]的新简单维度。 对此如需帮助，请联系 Adobe。
 
 此示例演示了当 [!DNL ReplaceURI]pageid *指示访客查看了网站的主页时，如何使用* 将“page=[!DNL homepage.html]pageid *”查询字符串替换为“*”。最终结果是更易记的 URI 视图。
 
