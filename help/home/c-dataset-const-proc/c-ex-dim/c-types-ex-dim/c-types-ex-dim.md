@@ -3,7 +3,6 @@ description: Insight Server 允许您定义要在数据集中包含的可计数�
 title: 扩展维度的类型
 uuid: 68f42903-0599-43f2-8b5b-da9e171d77b1
 exl-id: 13a52ece-b68b-45bc-ac2d-d68c91742c9d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '305'
@@ -23,4 +22,4 @@ Insight Server 使用父维度确定创建维度时应考虑的日志条目之�
 
 >[!NOTE]
 >
->如果日志条目不满足扩展维度的条件，Insight Server将替换日志条目中所有字段的空值。 实际的日志条目仍然存在，并且指定的 Operation（运算）参数会确定是否将使用 [!DNL Input]（输入）字段的空白值。
+>如果日志条目不满足扩展维度的“条件”，则Insight Server会将空白值替换为日志条目中的所有字段。 实际的日志条目仍然存在，并且指定的 Operation（运算）参数会确定是否将使用 [!DNL Input]（输入）字段的空白值。
