@@ -3,7 +3,6 @@ description: 除了在可视化中进行简单但功能强大的点击选择之�
 title: 使用其他方法选择数据
 uuid: 0e2b8e6d-d696-4597-9f85-1968b18cfbc8
 exl-id: d6ef163e-1faa-4b0f-b69b-9e559f6f34fb
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '307'
@@ -33,4 +32,4 @@ ht-degree: 93%
 
    示例：您要深入分析仅与那些来自加利福尼亚的客户有关的数据。
 
-   使用子集会影响您的所有工作区，因为子集会全局应用于Data Workbench。 请参阅[使用子集](../../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b)。
+   使用子集会影响所有工作区，因为该子集会全局应用于Data Workbench。 请参阅[使用子集](../../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b)。
