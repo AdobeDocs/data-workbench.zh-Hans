@@ -3,7 +3,6 @@ description: 有关从 Worktop 中删除工作区的信息。
 title: 删除工作区
 uuid: 85fd84d6-0602-4ff4-a55a-44077f3f3151
 exl-id: 17ea8b7b-9ecb-44a5-844c-f7daec52dc8e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '118'
@@ -25,7 +24,7 @@ ht-degree: 55%
 
 >[!NOTE]
 >
->当您有服务器工作区的本地版本时，您必须先还原到服务器版本才能下载服务器工作区的更新版本，从而丢失更改。
+>当您拥有服务器工作区的本地版本时，您必须先还原到服务器版本以丢失更改，然后才能下载服务器工作区的更新版本。
 
 **从[!DNL Worktop]** 中删除用户工作区
 
