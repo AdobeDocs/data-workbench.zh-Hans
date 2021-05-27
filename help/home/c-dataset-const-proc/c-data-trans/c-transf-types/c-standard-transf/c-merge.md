@@ -3,7 +3,6 @@ description: Merge 转换从输入字段（通常是字符串矢量）获取值�
 title: Merge
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
 exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '254'
@@ -11,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Merge{#merge}
+# 合并{#merge}
 
 Merge 转换从输入字段（通常是字符串矢量）获取值，将它们组合为由给定分隔符分隔的单一字符串，并将结果字符串放在给定输出字段中。
 
