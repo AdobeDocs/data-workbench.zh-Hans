@@ -3,7 +3,6 @@ description: 您可以通过添加或修改现有可视化或创建新工作区�
 title: 创建工作区
 uuid: 8669b70f-5ddf-4424-9269-0e4860eac498
 exl-id: 9c1fb9e6-6cc8-4894-800b-187b047c41d2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '428'
@@ -25,13 +24,13 @@ ht-degree: 91%
 * [复制并粘贴现有工作区](../../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-f91ae89b845640c9a4a52820a6110e65)
 * [更改工作区名称](../../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-ca7edb913e4e4630a856f45a2536ffad)
 
-## 添加新工作区  {#section-4236ae30e2884ea08f0885bf329f0778}
+## 添加新工作区 {#section-4236ae30e2884ea08f0885bf329f0778}
 
 在所需的 [!DNL Worktop] 选项卡上，右键单击该选项卡中的空白区域，然后单击以下选项之一：
 
-* **[!UICONTROL New]** >  **[!UICONTROL Blank Workspace]**&#x200B;该选项显示一个标准大小的空白工作区。
+* **[!UICONTROL New]** >  **[!UICONTROL Blank Workspace]**。该选项显示一个标准大小的空白工作区。
 
-* **[!UICONTROL New]** >  **[!UICONTROL Report Template]**&#x200B;该选项显示一个标准大小的模板，您可以使用该模板来创建报表。
+* **[!UICONTROL New]** >  **[!UICONTROL Report Template]**。该选项显示一个标准大小的模板，您可以使用该模板来创建报表。
 
 ![](assets/mnu_workspaceManager.png)
 
