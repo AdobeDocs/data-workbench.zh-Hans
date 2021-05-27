@@ -3,7 +3,6 @@ description: Data Workbench 6.1 发行说明包括新功能、升级要求、缺
 title: Data Workbench 6.1 发行说明
 uuid: 5bfb558a-ce85-4b4a-95dc-ccef337c4d1b
 exl-id: ed37a00f-b4cd-428e-abb7-7c52d5cfd2f9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '693'
@@ -33,19 +32,19 @@ Data Workbench 6.1 包括以下新增功能：
 
 按字母顺序或按自然顺序排序表格列。
 
-要更好地选择Dimension表中的元素，您可以选择&#x200B;**[!UICONTROL Sort]**&#x200B;菜单选项，按字母顺序或按序数顺序排列第一列。
+要更好地选择Dimension表中的元素，您可以通过选择&#x200B;**[!UICONTROL Sort]**&#x200B;菜单选项，按字母顺序或按自然顺序对第一列进行排序。
 
 按自然顺序（默认）对列进行排序时，将显示 # 字符。
 
 **选择排序选项**
 
-要更改序号和字母之间的排序选项，请右键单击并选择&#x200B;**[!UICONTROL Sort]**。 单击箭头可按相反顺序排序。
+要更改序数和字母之间的排序选项，请右键单击并选择&#x200B;**[!UICONTROL Sort]**。 单击箭头可按相反顺序排序。
 
 ![](assets/sort_table_alpha.png)
 
 >[!NOTE]
 >
->可以通过单击列的名称，按顺序对其他列进行排序。
+>您可以通过单击列的名称，按自然顺序对其他列进行排序。
 
 ## 在漏斗中隐藏流失标签
 
