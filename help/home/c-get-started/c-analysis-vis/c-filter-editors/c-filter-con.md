@@ -3,7 +3,6 @@ description: 有关使用过滤条件（包括创建新过滤器和向新过滤�
 title: 使用过滤条件
 uuid: a75fcb21-be5c-452a-8632-86cd78db15cb
 exl-id: 15745b0c-2754-4f8b-acfd-a6bd5886ecf8
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '852'
@@ -17,16 +16,16 @@ ht-degree: 81%
 
 ## 创建过滤器 {#section-70ba51ae625e493fa3ca70b93ffba406}
 
-* 右键单击&#x200B;**[!UICONTROL Add Visualization]** > **[!UICONTROL Filter Editor]**，在工作区中打开过滤器编辑器。
+* 右键单击&#x200B;**[!UICONTROL Add Visualization]** > **[!UICONTROL Filter Editor]**&#x200B;以在工作区中打开过滤器编辑器。
 
    -或-
 
-* 如果已打开过滤器编辑器并加载过滤器，请右键单击当前过滤器的名称，然后单击&#x200B;**[!UICONTROL New Blank Filter]**。
+* 如果已打开过滤器编辑器并加载了过滤器，请右键单击当前过滤器的名称，然后单击&#x200B;**[!UICONTROL New Blank Filter]**。
 
-## 向新过滤器{#section-50986db80f1148c489630a8a63fe9f28}添加条件
+## 向新筛选器{#section-50986db80f1148c489630a8a63fe9f28}添加条件
 
 1. 创建新的过滤器。确保“设计过滤器”突出显示（相对于“应用过滤器”），表示您正在“设计过滤器”模式下工作。
-1. 在标记为&#x200B;**[!UICONTROL Right-click to build filter]**&#x200B;的区域内右键单击，然后选择以下选项之一：
+1. 右键单击标记为&#x200B;**[!UICONTROL Right-click to build filter]**&#x200B;的区域，然后选择以下选项之一：
 
    * 要创建包含过滤器，请单击&#x200B;**[!UICONTROL Include group with]**。
    * 要创建排除过滤器，请单击&#x200B;**[!UICONTROL Exclude group with]**。
@@ -53,7 +52,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p>公式 </p> </td> 
-   <td colname="col2"> <p>根据您输入的公式定义过滤条件。必须使用正确的语法，过滤器才能工作。 </p> <p> <p>注意：有关定义过滤器的语法的信息，请参阅<a href="../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15">筛选器表达式的语法</a>。 </p> </p> </td> 
+   <td colname="col2"> <p>根据您输入的公式定义过滤条件。必须使用正确的语法，过滤器才能工作。 </p> <p> <p>注意：有关定义过滤器的语法的信息，请参阅<a href="../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15">过滤器表达式的语法</a> 。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>量度值 </p> </td> 
@@ -87,7 +86,7 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >多个包含条件作为逻辑OR组合在一起。 因此，过滤出的包括数据必须至少满足其中一个定义的包括条件。多个排除条件也以逻辑 OR 的形式组合到一起。若要被排除，数据必须至少满足其中一个排除条件。
+   >多个包含条件分组为逻辑OR。 因此，过滤出的包括数据必须至少满足其中一个定义的包括条件。多个排除条件也以逻辑 OR 的形式组合到一起。若要被排除，数据必须至少满足其中一个排除条件。
 
 此示例中的过滤器定义了一个数据子集，该子集包含已给很多影片打分但没有给任何一部影片打高分（4 或 5）的影片观看者（用户）。此过滤器（相应地命名为 Very Hard to Please）包含两个条件：
 
@@ -96,25 +95,25 @@ ht-degree: 81%
 
 ![](assets/vis_FilterEditor_ExampleMovies.png)
 
-## 删除筛选器条件{#section-3092e0d7ac624885b8fe24616279de13}
+## 删除筛选条件{#section-3092e0d7ac624885b8fe24616279de13}
 
 >[!NOTE]
 >
->只有在“设计过滤器”模式下才能删除条件。 如果您已对工作区应用过滤器，则必须单击“设计过滤器”以返回“设计过滤器”模式，然后才能删除一个或多个过滤条件。
+>仅当您在“设计过滤器”模式下工作时，才能删除条件。 如果您已对工作区应用过滤器，则必须单击“设计过滤器”以返回“设计过滤器”模式，然后才能删除一个或多个过滤条件。
 
 * 单击条件左侧的 **x** 即可将其删除。
 
-## 编辑条件说明{#section-5015fd2c88ed4b6a95be7f0d53be2db0}
+## 编辑条件描述{#section-5015fd2c88ed4b6a95be7f0d53be2db0}
 
 可以向添加到过滤器的每个条件中添加描述。可以根据需要编辑或删除描述。
 
 >[!NOTE]
 >
->仅当您在“设计过滤器”模式下工作时，才显示条件说明。
+>仅当您在“设计过滤器”模式下工作时，才会显示条件描述。
 
 * 右键单击条件，然后单击&#x200B;**[!UICONTROL Edit description]**。
 
-   * 要添加或编辑说明，请在[!DNL Edit condition description]字段中键入说明。 在过滤器编辑器窗口中，描述显示在条件上面的引号中。
+   * 要添加或编辑描述，请在[!DNL Edit condition description]字段中键入描述。 在过滤器编辑器窗口中，描述显示在条件上面的引号中。
 
       ![](assets/vis_FilterEditor_ConditionDescription.png)
 
