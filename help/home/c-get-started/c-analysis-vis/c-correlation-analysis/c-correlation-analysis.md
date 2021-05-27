@@ -3,7 +3,6 @@ description: 统计关联测量有意义的关系，以便通过高级数据挖�
 title: 关联矩阵
 uuid: 7f6bdb65-dc31-4e27-9870-4c9402ee6031
 exl-id: 79c23bb9-2b4b-4fe0-bfdb-52721fbbdf0c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '815'
@@ -15,7 +14,7 @@ ht-degree: 79%
 
 统计关联测量有意义的关系，以便通过高级数据挖掘发现商机。
 
-使用[Pearsons相关系数](../../../../home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-pearsons.md#concept-5996cb8c89fd4df5b47b7318e7a1d29c)，“相关矩阵”可为您提供相关信息以更好地识别营销活动中的后续步骤、改进网站设计或继续深入分析客户以获得其他相关依赖关系。
+通过使用[皮尔逊关联系数](../../../../home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-pearsons.md#concept-5996cb8c89fd4df5b47b7318e7a1d29c)，关联矩阵可为您提供相关信息，以便更好地识别营销活动中的后续步骤，改进网站设计，或继续深入分析客户以获得其他关联依赖关系。
 
 ## 构建关联矩阵 {#section-87ed12ccc1af4196a1b6534e621c4cbb}
 
@@ -27,7 +26,7 @@ ht-degree: 79%
 
    ![](assets/correlation_matrix_2.png)
 
-   从此菜单中选择维，如[!DNL Time] > [!DNL Day of the Week]。 关联表将打开，在矩阵角落标识维度，并在行和列中显示相关量度。对于“周”维度的“天”，**[!UICONTROL Visits]**&#x200B;是关联的量度。
+   从此菜单中选择一个维度，如[!DNL Time] > [!DNL Day of the Week]。 关联表将打开，在矩阵角落标识维度，并在行和列中显示相关量度。对于“星期”维度，**[!UICONTROL Visits]**&#x200B;是关联的量度。
 
    ![](assets/correlation_matrix_1.png)
 
@@ -37,7 +36,7 @@ ht-degree: 79%
 
    右键单击并选择&#x200B;**[!UICONTROL Change Metric]**&#x200B;以更改行或列中的量度。 这会在两个量度值之间建立关联。
 
-   在此示例中，将列中的&#x200B;**[!UICONTROL Visits]**&#x200B;量度更改为&#x200B;**[!UICONTROL Internal Searches]**。 右键单击并选择[!DNL Metric] > [!DNL Custom Events] > [!DNL Custom Event 1-10] > [!DNL Internal Searches]。
+   在本例中，将列中的&#x200B;**[!UICONTROL Visits]**&#x200B;量度更改为&#x200B;**[!UICONTROL Internal Searches]**。 右键单击并选择[!DNL Metric] > [!DNL Custom Events] > [!DNL Custom Event 1-10] > [!DNL Internal Searches]。
 
    ![](assets/correlation_matrix_change_metric.png)
 
@@ -57,9 +56,9 @@ ht-degree: 79%
 
 1. （可选）通过添加维度元素约束量度。
 
-   在工作区中右键单击，然后选择&#x200B;**[!UICONTROL Table]**。 从打开的维度表中，按 Ctrl + Alt 并将元素拖放到列或行中的量度上。该元素将显示在相应量度旁边的括号内。
+   在工作区中右键单击并选择&#x200B;**[!UICONTROL Table]**。 从打开的维度表中，按 Ctrl + Alt 并将元素拖放到列或行中的量度上。该元素将显示在相应量度旁边的括号内。
 
-   例如，对于&#x200B;**[!UICONTROL Visits]**&#x200B;量度，可以通过选择&#x200B;**[!UICONTROL Country]**&#x200B;作为&#x200B;**[!UICONTROL New Zealand]**&#x200B;来限制它。
+   例如，对于&#x200B;**[!UICONTROL Visits]**&#x200B;量度，可以通过选择&#x200B;**[!UICONTROL Country]**&#x200B;作为&#x200B;**[!UICONTROL New Zealand]**&#x200B;来约束它。
 
    ![](assets/correlation_matrix_dim_element.png)
 
@@ -95,4 +94,4 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->如果应用程序无法运行Pearsons关联计算，则散点图和Pearsons矩阵将显示“计算错误”。 这通常是由于数据不足，从而可能造成方程式的除数为零。
+>如果应用程序无法运行皮尔逊关联计算，则散点图和皮尔逊矩阵将显示“计算错误”。 这通常是由于数据不足，从而可能造成方程式的除数为零。
