@@ -3,7 +3,6 @@ description: Data Workbench 提供了一组转换，可允许 Data Workbench Ser
 title: 集成对照数据
 uuid: 35fd48f7-c0c4-4a83-919d-c15902f27495
 exl-id: 150d3aae-4431-488f-8f19-b522637ee935
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '262'
@@ -32,4 +31,4 @@ Data Workbench 提供了一组转换，可允许 Data Workbench Server 将对照
 
 >[!NOTE]
 >
->请注意，[!DNL ODBCLookup]转换仅在[!DNL Transformation.cfg]文件或[!DNL Transformation Dataset Include]文件中定义时才有效。
+>请注意，[!DNL ODBCLookup]转换仅在[!DNL Transformation.cfg]文件或[!DNL Transformation Dataset Include]文件中定义时才起作用。
