@@ -3,7 +3,6 @@ description: 可计数维度的元素可由系统计算。
 title: 可计数维度
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
 exl-id: c607c15d-de85-4daf-af76-79b460f51b38
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '685'
@@ -21,7 +20,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->如果您需要只提供某项计数的维，则应将数值维与COUNT运算一起使用。 请参阅[数字Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed)。
+>如果您需要的维度仅提供某些内容的计数，则应使用运算为COUNT的数字维度。 请参阅[数字Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed)。
 
 可计数维度由以下参数定义：
 
