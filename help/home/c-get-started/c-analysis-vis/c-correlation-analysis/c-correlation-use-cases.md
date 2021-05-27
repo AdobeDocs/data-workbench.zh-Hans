@@ -3,7 +3,6 @@ description: 定义与您的市场相关的依赖关联点是关联分析的本�
 title: 关联分析用例
 uuid: 47328574-6600-44d7-8fff-feff3097488a
 exl-id: d4834350-8756-44b7-ab2d-64f86134100b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '183'
