@@ -3,7 +3,6 @@ description: “查询状态图例”提供有关正在执行的查询的详细�
 title: 查询状态图例
 uuid: 6a0285c8-3ced-4c12-8f0c-e86d70d9e044
 exl-id: 9580ee7f-3575-4e73-b7df-5b61f6ce8e1e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '168'
@@ -17,7 +16,7 @@ ht-degree: 92%
 
 ![](assets/vis_StatusLegend.png)
 
-下表列表了可使用[!DNL Query Status Legend]完成的任务。
+下表列出了可使用[!DNL Query Status Legend]完成的任务。
 
 <table id="table_BD9330D4B3014A84B24EF0E71872F627"> 
  <thead> 
