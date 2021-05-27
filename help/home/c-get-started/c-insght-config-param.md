@@ -3,7 +3,6 @@ description: 在 Insight.cfg 文件中设置参数，以指定您的网络连接
 title: 配置参数
 uuid: 6e1248c1-3eae-44a3-8b19-f595d79e8d0d
 exl-id: c92fc79f-452d-4839-840a-a3ea9e8754c4
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1519'
@@ -25,7 +24,7 @@ ht-degree: 71%
 
 ![](assets/cfg_Workstation_AddServer.png)
 
-某些适用于新 [!DNL Insight.cfg] 文件的参数或许不能在您的 [!DNL Insight.cfg] 文件版本中使用。如果需要其中一个参数，则必须使用[!DNL Add Custom Key]将其添加到[!DNL Insight.cfg]文件，方法是右键单击某个参数，然后指定名称和类型。 您还可以通过使用文本编辑器打开[!DNL .cfg]文件(位于Data Workbench安装目录中)来添加参数。
+某些适用于新 [!DNL Insight.cfg] 文件的参数或许不能在您的 [!DNL Insight.cfg] 文件版本中使用。如果需要其中一个参数，必须使用[!DNL Add Custom Key]将其添加到[!DNL Insight.cfg]文件中，方法是右键单击某个参数，然后指定名称和类型。 您还可以通过使用文本编辑器打开[!DNL .cfg]文件(位于Data Workbench安装目录中)来添加参数。
 
 下面的示例涵盖了 [!DNL Insight.cfg] 文件中的所有参数，您可以将该示例作为添加参数项的模型：
 
@@ -81,15 +80,15 @@ Toolbar Icons = bool: false
   </tr> 
   <tr> 
    <td colname="col1"> <p>Default Online Level（默认联机级别） </p> </td> 
-   <td colname="col2"> <p>可选。使您能够在每次打开Data Workbench实例时使其默认为流、脱机或联机。 选项包括 Streaming（流）、Online（联机）或 Offline（脱机）。Data Workbench的默认配置是脱机工作。 </p> <p> <p>注意：在决定默认联机工作之前，请确保权衡<a href="../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54">脱机工作和联机工作</a>中概述的优势和后果。 </p> </p> </td> 
+   <td colname="col2"> <p>可选。允许您使Data Workbench实例在每次打开时默认作为流、脱机或联机工作。 选项包括 Streaming（流）、Online（联机）或 Offline（脱机）。Data Workbench的默认配置是脱机工作。 </p> <p> <p>注意：在决定默认联机工作之前，请确保权衡<a href="../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54">脱机工作和联机工作</a>中列出的优势和后果。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Fonts（字体） </p> </td> 
-   <td colname="col2"> <p>可选。该矢量列出<span class="keyword">客户端</span>在渲染基于 UTF8 的 unicode 特殊字符时应使用的字体。列表中字体的数量不受限制。 </p> <p>第一种字体应始终为 Lucida Sans Console。如果<span class="filepath"> Insight.cfg</span>文件中未包含此参数，则Data Workbench仅使用Lucida Sans控制台显示文本。 </p> <p> Data Workbench使用列表中的第一种字体来渲染所有字符，直到遇到无法渲染的字符。 它便会使用列表中的第二种字体来渲染该字符。如果该字体未呈现该字符，则Data Workbench使用列表中的第三种字体来呈现该字符，依此类推，直到该字体达到字体列表的末尾。 如果矢量中未列出正确的字体，则Data Workbench将显示字符的十六进制值。 </p> <p> <p>注意： 在Data Workbench运行时不要更改此参数。 </p> </p> </td> 
+   <td colname="col2"> <p>可选。该矢量列出<span class="keyword">客户端</span>在渲染基于 UTF8 的 unicode 特殊字符时应使用的字体。列表中字体的数量不受限制。 </p> <p>第一种字体应始终为 Lucida Sans Console。如果此参数未包含在<span class="filepath"> Insight.cfg</span>文件中，则Data Workbench仅使用Lucida Sans Console显示文本。 </p> <p> Data Workbench使用列表中的第一种字体来渲染所有字符，直到遇到无法渲染的字符。 它便会使用列表中的第二种字体来渲染该字符。如果该字体未呈现字符，则Data Workbench会使用列表中的第三种字体来呈现该字符，依此类推，直到该字体到达字体列表的结尾。 如果矢量中未列出正确的字体，则Data Workbench将显示字符的十六进制值。 </p> <p> <p>注意： 运行Data Workbench时，请勿更改此参数。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Gamma（伽马） </p> </td> 
-   <td colname="col2"> Data Workbench显示的灰度系数设置。 默认值为 1.6。Adobe 不建议更改此值。 </td> 
+   <td colname="col2"> Data Workbench显示的Gamma设置。 默认值为 1.6。Adobe 不建议更改此值。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Licensing（许可） </p> </td> 
@@ -113,7 +112,7 @@ Toolbar Icons = bool: false
   </tr> 
   <tr> 
    <td colname="col1"> <p>Maximum Sample Size (MB)（最大采样大小 (MB)） </p> </td> 
-   <td colname="col2"> <p>指定在单台计算机上运行的<span class="keyword">客户端</span>所使用的数据缓存中允许的最大大小。 </p> <p>尽管<span class="filepath"> Server.cfg</span>文件中的Sample Bytes参数指定连接到Data Workbench服务器的所有<span class="keyword">客户端</span>的数据缓存大小（默认为250e6字节），但Maximum Sample Size参数允许您进一步限制特定计算机的数据缓存大小。 当客户端安装在存储容量或计算能力有限的计算机上时，这非常有用。 </p> <p> <p>注意：此参数会限制客户端程序本地查询的本地数据采样大小。相比之下，<span class="filepath">cache.db</span> 文件包含客户端连接的每个配置文件的数据，还包含元素名称及其维度。运行本地查询时需要 <span class="filepath">cache.db</span> 文件中的这些元素名称和维度。因此，除减少数据集中的元素数量外，没有任何方法可限制其大小。 </p> </p> </td> 
+   <td colname="col2"> <p>指定在单台计算机上运行的<span class="keyword">客户端</span>所使用的数据缓存中允许的最大大小。 </p> <p>虽然<span class="filepath"> Server.cfg</span>文件中的Sample Bytes（采样字节数）参数为连接到Data Workbench服务器的所有<span class="keyword">客户端</span>指定了数据缓存大小（默认为250e6字节），但Maximum Sample Size（最大采样大小）参数允许您进一步限制特定计算机的数据缓存大小。 当客户端安装在存储容量或计算能力有限的计算机上时，这非常有用。 </p> <p> <p>注意：此参数会限制客户端程序本地查询的本地数据采样大小。相比之下，<span class="filepath">cache.db</span> 文件包含客户端连接的每个配置文件的数据，还包含元素名称及其维度。运行本地查询时需要 <span class="filepath">cache.db</span> 文件中的这些元素名称和维度。因此，除减少数据集中的元素数量外，没有任何方法可限制其大小。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>名称 </p> </td> 
@@ -121,7 +120,7 @@ Toolbar Icons = bool: false
   </tr> 
   <tr> 
    <td colname="col1"> <p>Network Location（网络位置） </p> </td> 
-   <td colname="col2"> <p>可选。<span class="keyword">客户端</span>用来将Data Workbench服务器公用名称解析为IP地址的网络位置。 可用的网络位置在服务器上的地址文件中进行定义。有关详细信息，请参阅《服务器产品安装和管理指南》<i></i>。 </p> <p>如果您没有指定网络位置，<span class="keyword">客户端</span>会使用默认的网络位置（“Insight”）解析通用名称。 </p> </td> 
+   <td colname="col2"> <p>可选。<span class="keyword">客户端</span>用来将Data Workbench服务器通用名称解析为IP地址的网络位置。 可用的网络位置在服务器上的地址文件中进行定义。有关详细信息，请参阅《服务器产品安装和管理指南》<i></i>。 </p> <p>如果您没有指定网络位置，<span class="keyword">客户端</span>会使用默认的网络位置（“Insight”）解析通用名称。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Port（端口） </p> </td> 
@@ -129,7 +128,7 @@ Toolbar Icons = bool: false
   </tr> 
   <tr> 
    <td colname="col1"> <p>Proxy Address（代理地址） </p> </td> 
-   <td colname="col2"> <p>如果需要代理服务器连接到Data Workbench服务器计算机，则必须至少完成此参数和Proxy Port参数。 您可以选择性地完成 Proxy User Name（代理用户名）和 Proxy User Password（代理用户密码）参数。 </p> <p>客户端</span>必须用来访问Data Workbench服务器的代理服务器的地址。<span class="keyword"> </span></p> </td> 
+   <td colname="col2"> <p>如果需要代理服务器才能连接到Data Workbench服务器计算机，则必须至少完成此参数和Proxy Port（代理端口）参数。 您可以选择性地完成 Proxy User Name（代理用户名）和 Proxy User Password（代理用户密码）参数。 </p> <p>客户端</span>必须用来访问Data Workbench服务器的代理服务器的地址。<span class="keyword"> </span></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Proxy Password（代理密码） </p> </td> 
@@ -153,11 +152,11 @@ Toolbar Icons = bool: false
   </tr> 
   <tr> 
    <td colname="col1"> <p>SSL Client Certificate（SSL 客户端证书） </p> </td> 
-   <td colname="col2"> <p>可选参数，除非您拥有多个证书。包含此Data Workbench副本的数字证书的文件的名称。 这是您在“下载和安装数字证书”中下载的文件。 </p> <p>示例：<span class="filepath">Samantha Smith.pem</span> </p> <p>如果您将此参数保留为空，<span class="keyword">客户端</span>将使用提供的任何证书。 </p> </td> 
+   <td colname="col2"> <p>可选参数，除非您拥有多个证书。包含此Data Workbench副本的数字证书的文件名。 这是您在“下载和安装数字证书”中下载的文件。 </p> <p>示例：<span class="filepath">Samantha Smith.pem</span> </p> <p>如果您将此参数保留为空，<span class="keyword">客户端</span>将使用提供的任何证书。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>SSL Server Common Name（SSL 服务器通用名称） </p> </td> 
-   <td colname="col2"> <p>Data Workbench服务器的公用名称（在其数字证书上分配）。 </p> </td> 
+   <td colname="col2"> <p>Data Workbench服务器的通用名称（在其数字证书上分配）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Toolbar Icons（工具栏图标） </p> </td> 
@@ -169,7 +168,7 @@ Toolbar Icons = bool: false
   </tr> 
   <tr> 
    <td colname="col1"> <p>Use SSL（使用 SSL） </p> </td> 
-   <td colname="col2">指定是否使用SSL在Data Workbench服务器和客户端</span>之间进行安全通信。 <span class="keyword">选项为 true 或 false。默认值为 true。 </span></td> 
+   <td colname="col2">指定SSL是否用于Data Workbench服务器与<span class="keyword">客户端</span>之间的安全通信。 选项为 true 或 false。默认值为 true。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Unhide All（全部取消隐藏） </p> </td> 
@@ -179,7 +178,7 @@ Toolbar Icons = bool: false
       <li id="li_E3D8222BC55D4CEB90BCCAE606711306"><span class="filepath">order.txt</span> 文件中的 Hide（隐藏）选项 </li> 
       <li id="li_2ADE4EFC1F964D0A90B40CFB3D2766E8"><span class="filepath">.metric</span>、<span class="filepath">.dim</span> 和 <span class="filepath">.filter</span> 文件中的 Show（显示）参数 </li> 
       <li id="li_BBCD248A8F33440092B52E407E300FCC"><span class="filepath">Transformation.cfg</span> 文件中的 Hidden（隐藏）参数 </li> 
-     </ul> </p> <p>有关这些方法的详细信息，请参阅<a href="../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999">隐藏菜单项</a>。 </p> <p>选项为 true 或 false。默认值设置为 false。将此参数更改为 true 可以临时将隐藏的量度、维度和过滤器取消隐藏。 </p> </td> 
+     </ul> </p> <p>有关这些方法的更多信息，请参阅<a href="../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999">隐藏菜单项</a>。 </p> <p>选项为 true 或 false。默认值设置为 false。将此参数更改为 true 可以临时将隐藏的量度、维度和过滤器取消隐藏。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Unlock（解锁） </p> </td> 
