@@ -3,7 +3,6 @@ description: 按照以下步骤，构建新的漏斗可视化。
 title: 构建漏斗
 uuid: 88afa09d-42ff-4e3b-b5cc-d74e01f4fc39
 exl-id: 24b63998-3aad-4ddf-b2d2-78dd0df9a510
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '216'
@@ -25,13 +24,13 @@ ht-degree: 81%
 
 1. 打开漏斗可视化。
 
-   例如，右键单击工作区，然后选择&#x200B;**[!UICONTROL Visualization > Funnel]**。
+   例如，右键单击工作区并选择&#x200B;**[!UICONTROL Visualization > Funnel]**。
 
    ![](assets/step2-funnel.png)
 
-1. 通过选择元素，然后拖动，然后按住&#x200B;**[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**&#x200B;键来添加维度。
+1. 添加维度，方法是选择元素，然后按住&#x200B;**[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**&#x200B;的同时拖动该元素。
 
-1. 将元素拖动到目标区域&#x200B;**[!UICONTROL Drag Dimension Element Here]**&#x200B;上方的位置。
+1. 将元素拖动到目标区域&#x200B;**[!UICONTROL Drag Dimension Element Here]**&#x200B;上的位置。
 
    ![](assets/step4-funnel.png)
 
