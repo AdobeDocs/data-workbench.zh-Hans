@@ -3,7 +3,6 @@ description: 有关为日志源、转换或扩展维度打开字段查看器的�
 title: 打开字段查看器
 uuid: fcc839cd-21dc-4eb0-9b8e-55fc92e6d400
 exl-id: 32a7418e-ca31-4d56-89a4-11416135f3e2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '156'
@@ -21,4 +20,4 @@ ht-degree: 61%
 
    >[!NOTE]
    >
-   >要打开字段查看器，Data Workbench计算机必须对Data Workbench集所在的服务器具有网络访问权限。 如果您的Data Workbench集驻留在Data Workbench服务器群集上，则您的Data Workbench计算机必须具有对群集中的主控服务器的网络访问权限。
+   >要打开字段查看器，Data Workbench计算机必须对Data Workbench集所在的域服务器具有网络访问权限。 如果您的Data Workbench集位于Data Workbench服务器群集上，则计算机必须对群集中的主控Data Workbench服务器具有网络访问权限。
