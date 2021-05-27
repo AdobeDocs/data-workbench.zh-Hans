@@ -3,7 +3,6 @@ description: 如果使用 Categorize 或 FlatFileLookup 转换，对照表将加
 title: 填充对照表
 uuid: a11f3902-8853-4d22-bbfd-b2a3d143cb7b
 exl-id: e83d9feb-44fe-4fa1-b559-e1f5606637b5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '280'
