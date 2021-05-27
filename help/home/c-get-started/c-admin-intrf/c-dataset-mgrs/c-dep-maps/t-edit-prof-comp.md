@@ -3,7 +3,6 @@ description: 编辑配置文件组件的配置的步骤。
 title: 编辑配置文件组件
 uuid: e71adfae-afaa-4cd4-b7c5-a71e6a1b5459
 exl-id: 6a4d9e0f-1536-4d39-a27d-5b6805c19c8e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '180'
@@ -27,5 +26,5 @@ ht-degree: 74%
 
    有关数据集组件参数的详细信息，请参阅《数据集配置指南》**。
 
-1. 要在本地保存文件，请右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**&#x200B;或&#x200B;**[!UICONTROL (New)]**，然后单击&#x200B;**[!UICONTROL Save]**。
-要使更改生效，请使用[!DNL Profile Manager]将文件保存到服务器。 请参阅[将文件发布到您的工作用户档案](../../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)。
+1. 若要在本地保存文件，请右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**&#x200B;或&#x200B;**[!UICONTROL (New)]**，然后单击&#x200B;**[!UICONTROL Save]**。
+要使更改生效，请使用[!DNL Profile Manager]将文件保存到服务器。 请参阅[将文件发布到工作配置文件](../../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)。
