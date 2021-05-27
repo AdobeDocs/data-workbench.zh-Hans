@@ -3,7 +3,6 @@ description: RETransform（正则表达式）转换是一种模式匹配转换�
 title: RETransform
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
 exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '430'
@@ -19,7 +18,7 @@ RETransform（正则表达式）转换是一种模式匹配转换，该转换使
 
 >[!NOTE]
 >
->[!DNL RETransform]转换的操作与[!DNL REMatch]转换类似（请参阅[REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)），后者在常规表达式中为每个捕获子模式构建一个输出字段。 您可以将[!DNL RETransform]视为[!DNL REMatch]和[!DNL Format]转换的组合。 如果 Action（操作）参数（请参阅下表中的 Action（操作））设为“RESULTS”，则 [!DNL RETransform] 的运算方式类似于 [!DNL REMatch] 和 [!DNL Union] 转换的组合。
+>[!DNL RETransform]转换的操作方式与[!DNL REMatch]转换类似（请参阅[REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)），该转换为正则表达式中的每个捕获子模式构建一个输出字段。 您可以将[!DNL RETransform]视为[!DNL REMatch]和[!DNL Format]转换的组合。 如果 Action（操作）参数（请参阅下表中的 Action（操作））设为“RESULTS”，则 [!DNL RETransform] 的运算方式类似于 [!DNL REMatch] 和 [!DNL Union] 转换的组合。
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 
@@ -75,7 +74,7 @@ RETransform（正则表达式）转换是一种模式匹配转换，该转换使
 
 >[!NOTE]
 >
->[!DNL RETransform] 转换可能非常慢，并且可能占据大量数据处理时间。
+>[!DNL RETransform] 转换可能会非常慢，并且可能会占用大量数据处理时间。
 
 此示例隔离网站访客所使用的 Windows 操作系统版本，并从该值创建一个 x-windows-version 字段。在此情况下，输出值仅为版本号。
 
