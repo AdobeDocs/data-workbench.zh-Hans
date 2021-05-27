@@ -3,7 +3,6 @@ description: 配置文件 Log Processing Mode.cfg 可让您暂停将数据处理
 title: Log Processing Mode.cfg
 uuid: 1f1e5d8b-80e7-4423-bb03-56e706a1b7b4
 exl-id: e252b815-e691-490d-9ac9-88bb1fd2c64d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '956'
@@ -19,21 +18,21 @@ ht-degree: 76%
 
 **编辑数据集配置文件的 Log Processing Mode.cfg 文件**
 
-1. 在数据集用户档案中工作时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示其内容。
+1. 在处理数据集配置文件时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示其内容。
 
    >[!NOTE]
    >
-   >如果[!DNL Log Processing Mode.cfg]文件未位于所需用户档案的目录中，您需要将此文件从Data Workbench Server计算机上的Base目录复制到用户档案的目录中。
+   >如果[!DNL Log Processing Mode.cfg]文件不在所需配置文件的目录中，则需要将此文件从Data Workbench Server计算机上的Base目录复制到配置文件的目录中。
 
-   有关打开和使用[!DNL Profile Manager,]的信息，请参阅&#x200B;*《Data Workbench用户指南》*。
+   有关打开和使用[!DNL Profile Manager,]的信息，请参阅&#x200B;*Data Workbench用户指南*。
 
-1. 右键单击配置文件名称旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 此文件的复选标记显示在[!DNL User]列中。
+1. 右键单击配置文件名称旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL User]列中将显示此文件的复选标记。
 1. 右键单击新创建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。 此时会出现配置窗口。
 1. 参考下表，编辑该配置文件中的参数。
 
    >[!NOTE]
    >
-   >[!DNL Log Processing Mode.cfg]文件中的某些参数的名称包括[!DNL Fast Input]或[!DNL Fast Merge]。 [!DNL Fast Input]指数据集构建的日志处理阶段，它占数据集处理总时间的约一半。[!DNL Fast Merge] 指仅在日志处理之前的数据集构建的转换阶段。[!DNL Fast Merge] 在修改文件所导致的重新转换过程中不 [!DNL Transformation Dataset Configuration] 发生。与[!DNL Fast Input]一样，[!DNL Fast Merge]也占数据集处理时间的一半左右。
+   >[!DNL Log Processing Mode.cfg]文件中的某些参数的名称包括[!DNL Fast Input]或[!DNL Fast Merge]。 [!DNL Fast Input]是指数据集构建的日志处理阶段，大约占数据集处理总时间的一半。[!DNL Fast Merge] 是指仅在进行日志处理之前的数据集构建的转换阶段。[!DNL Fast Merge] 在修改文件后导致的重新转换期间不 [!DNL Transformation Dataset Configuration] 发生。与[!DNL Fast Input]类似， [!DNL Fast Merge]也负责大约一半的数据集处理时间。
 
    <table id="table_1BF356E21C0E4119A277F40CEC5D7A21"> 
    <thead> 
@@ -86,9 +85,9 @@ ht-degree: 76%
    </tbody> 
    </table>
 
-   在 Data Workbench 窗口内编辑 [!DNL Log Processing Mode.cfg] 文件时，可以使用快捷键实现基本编辑功能，包括剪切 (Ctrl+x)、复制 (Ctrl+c)、粘贴 (Ctrl+v)、撤消 (Ctrl+z)、恢复 (Ctrl+Shift+z)、选择部分（单击并拖动）以及选择全部 (Ctrl+a)。此外，您还可以使用快捷键将文本从一个配置文件([!DNL .cfg])复制并粘贴到另一个配置文件。
+   在 Data Workbench 窗口内编辑 [!DNL Log Processing Mode.cfg] 文件时，可以使用快捷键实现基本编辑功能，包括剪切 (Ctrl+x)、复制 (Ctrl+c)、粘贴 (Ctrl+v)、撤消 (Ctrl+z)、恢复 (Ctrl+Shift+z)、选择部分（单击并拖动）以及选择全部 (Ctrl+a)。此外，您还可以使用快捷方式将文本从一个配置文件([!DNL .cfg])复制并粘贴到另一个配置文件。
 
-1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**，然后单击&#x200B;**[!UICONTROL Save]**。
+1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]** ，然后单击&#x200B;**[!UICONTROL Save]**。
 1. 在[!DNL Profile Manager]中，右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > **[!UICONTROL datasetprofile name]**。
 
    >[!NOTE]
