@@ -3,7 +3,6 @@ description: Format 转换获取一组输入并设置它们的格式，以创建
 title: 格式
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
 exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '327'
@@ -11,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Format{#format}
+# 格式{#format}
 
 Format 转换获取一组输入并设置它们的格式，以创建与给定结构匹配的输出。
 
