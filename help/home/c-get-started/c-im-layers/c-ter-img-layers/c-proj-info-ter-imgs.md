@@ -3,7 +3,6 @@ description: Data Workbench 支持所有地形图像层源的经纬度投影和�
 title: 指定地形图像的投影信息
 uuid: cc1e1e35-6b23-4121-a9f5-489001cb2ef8
 exl-id: 2638c5d4-164d-411b-8464-0a3af81b6537
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '751'
@@ -21,13 +20,13 @@ Data Workbench 支持所有地形图像层源的经纬度投影和通用横轴�
 
 [!DNL Terrain Images.cfg] 文件中的经纬度投影格式 (LatLonProjection) 由经纬度的四个参数定义。
 
-要为未投影图像（原始未投影位图和常规图像，未投影）指定LatLonProjection，可以在[!DNL Terrain Images.cfg]窗口中以Data Workbench输入LatLonProjection的设置。
+要为未投影图像（原始未投影位图和未投影的常规图像）指定LatLonProjection，可以在Data Workbench的[!DNL Terrain Images.cfg]窗口中输入LatLonProjection的设置。
 
 若要为包含嵌入投影信息的图像指定 ，必须在文本编辑器（如记事本）中打开 [!DNL Terrain Images.cfg] 文件，将 Projection Info（投影信息）参数设置为 LatLonProjection，然后添加 [!DNL LatLonProjection]LatLonProjection 的设置。
 
 **为未投影的图像指定 LatLonProjection**
 
-1. 以Data Workbench打开[!DNL Terrain Images.cfg]文件并添加地形图像层源，如[定义地形图像层](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f)中所述。
+1. 在Data Workbench中打开[!DNL Terrain Images.cfg]文件，并添加地形图像层源，如[定义地形图像层](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f)中所述。
 1. 参考以下参数表，编辑 Projection Info（投影信息）参数：
 
 <table id="table_32F6EADB2DA34592ABD6FFAC9E00BB27"> 
@@ -58,13 +57,13 @@ Data Workbench 支持所有地形图像层源的经纬度投影和通用横轴�
 </table>
 
 1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**&#x200B;并单击&#x200B;**[!UICONTROL Save]**&#x200B;保存文件。
-1. 要将本地所做的更改保存到Data Workbench服务器计算机，请在[!DNL Server Files Manager]中右键单击[!DNL Temp]列中[!DNL Terrain Images.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*。
+1. 若要将本地所做的更改保存到Data Workbench服务器计算机，请在[!DNL Server Files Manager]列中右键单击[!DNL Terrain Images.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > ***[!UICONTROL server name]**>*。[!DNL Temp]
 
 **为包含嵌入投影信息的图像指定 LatLonProjection**
 
-在[!DNL Server Files Manager]中，单击&#x200B;**[!UICONTROL Components]**&#x200B;视图其内容。 [!DNL Terrain Images.cfg] 文件位于此目录中。
+在[!DNL Server Files Manager]中，单击&#x200B;**[!UICONTROL Components]**&#x200B;以查看其内容。 [!DNL Terrain Images.cfg] 文件位于此目录中。
 
-右键单击[!DNL Terrain Images.cfg]服务器名称列中的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL Terrain Images.cfg]的[!DNL Temp]列中显示复选标记。
+右键单击服务器名称列中[!DNL Terrain Images.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL Temp]列中会出现[!DNL Terrain Images.cfg]的复选标记。
 
 右键单击[!DNL Temp]列中新建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。 [!DNL Terrain Images.cfg]文件显示在记事本窗口中。
 
@@ -86,8 +85,8 @@ Projection Info = LatLonProjection:
 
 **指定通用横轴墨卡托投影**
 
-1. 在[!DNL Server Files Manager]中，单击&#x200B;**[!UICONTROL Components]**&#x200B;视图其内容。 [!DNL Terrain Images.cfg] 文件位于此目录中。
-1. 右键单击[!DNL Terrain Images.cfg]服务器名称列中的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL Terrain Images.cfg.]的[!DNL Temp]列中显示复选标记
+1. 在[!DNL Server Files Manager]中，单击&#x200B;**[!UICONTROL Components]**&#x200B;以查看其内容。 [!DNL Terrain Images.cfg] 文件位于此目录中。
+1. 右键单击服务器名称列中[!DNL Terrain Images.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL Temp]列中出现[!DNL Terrain Images.cfg.]的复选标记
 1. 右键单击[!DNL Temp]列中新建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。 [!DNL Terrain Images.cfg]文件显示在记事本窗口中。
 1. 参考以下示例文件片段和参数表，编辑 Projection Info（投影信息）参数。请务必将投影类型指定为以下突出显示的内容。
 
