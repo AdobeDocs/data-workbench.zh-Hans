@@ -3,7 +3,6 @@ description: 过滤器是定义数据集中数据子集的表达式。
 title: 过滤器表达式的语法
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
 exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '789'
@@ -17,7 +16,7 @@ ht-degree: 94%
 
 根据维度间的关系，过滤器会允许或拒绝每个维度的每个元素。
 
-过滤器可以使用[!DNL Filter Editor]进行编辑。 请参阅[过滤器编辑器](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3)。
+可以使用[!DNL Filter Editor]编辑过滤器。 请参阅[过滤器编辑器](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3)。
 
 在下表中，每个语法描述包括一个使用该过滤器的量度表达式的示例。例如，Sessions[True]是使用“True”过滤器定义的量度。 Sessions[True]量度与Sessions量度相同，因为True过滤器允许Session维度的每个元素。
 
