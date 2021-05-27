@@ -3,7 +3,6 @@ description: 图表可以跨一个或两个数据维度显示一个或多个量�
 title: 图形
 uuid: 6029cd1a-4fe1-41fa-9594-2c5cee1f4882
 exl-id: 39fadfd8-646b-4959-b016-87ff201c66e7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '290'
