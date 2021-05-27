@@ -3,7 +3,6 @@ description: 3D 散点图用三维网格绘制数据维度的元素（例如，�
 title: 3D 散点图
 uuid: 5e23547c-dbb4-490c-94bc-0731deee612e
 exl-id: 18f18cab-a31b-4ffe-89c5-412a5645af2e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '502'
@@ -24,7 +23,7 @@ ht-degree: 82%
    打开新工作区以后，需要单击&#x200B;**添加** > **临时解锁**。
 1. 右键单击并选择&#x200B;**可视化** > **3D 散点图**。
 
-   将打开一个列表&#x200B;**[!UICONTROL Dimensions]**&#x200B;的菜单。
+   将打开一个列有&#x200B;**[!UICONTROL Dimensions]**&#x200B;的菜单。
 
 1. 选择一个维度用来查询。
 
@@ -32,7 +31,7 @@ ht-degree: 82%
 
    ![](assets/3D_main.png)
 
-   选择&#x200B;**[!UICONTROL Days]**&#x200B;菜单后，以下3D散点图将在以下轴上显示这些默认量度：**[!UICONTROL x=Visits]**、**[!UICONTROL y=Retention]**&#x200B;和&#x200B;**[!UICONTROL z=Visits]**。
+   选择&#x200B;**[!UICONTROL Days]**&#x200B;菜单会在以下轴上显示以下3D散点图，其中包含这些默认量度：**[!UICONTROL x=Visits]**、**[!UICONTROL y=Retention]**&#x200B;和&#x200B;**[!UICONTROL z=Visits]**。
 
 1. 更改量度。右键单击x、y或z轴中的量度标签，然后选择&#x200B;**[!UICONTROL Change Metric]**。 然后为选定的轴选择其他量度。
 
