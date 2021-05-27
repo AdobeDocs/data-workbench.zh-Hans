@@ -3,7 +3,6 @@ description: 密度图可视化在直方图内以阴影矩形的形式显示各�
 title: 密度图
 uuid: c13cecee-f322-4757-aa90-12039173ff9f
 exl-id: da37d954-cadb-42a6-a44b-9b38c0354a5d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '610'
@@ -30,26 +29,26 @@ ht-degree: 84%
 
    例如，选择&#x200B;**[!UICONTROL Time]** > **[!UICONTROL Days]**。
 
-   相反，选择&#x200B;**[!UICONTROL Time]** > **[!UICONTROL Hours]**&#x200B;将为您提供更多值较小的元素，它们显示为较小的矩形。
+   相反，选择&#x200B;**[!UICONTROL Time]** > **[!UICONTROL Hours]**&#x200B;将为您提供更多值较小的元素，这些元素会显示为较小的矩形。
 
    >[!NOTE]
    >
-   >您需要根据需要选择包含多个元素的维度。 目前限制每个维度的元素最多为 200 个。
+   >您将需要根据需要选取一个包含多个元素的维度。 目前限制每个维度的元素最多为 200 个。
 
-1. 可以通过打开&#x200B;**[!UICONTROL Visualization]** > **[!UICONTROL Table]**&#x200B;并从表中选择要在映射中显示的各元素来更改维度视图。
+1. 您可以通过打开&#x200B;**[!UICONTROL Visualization]** > **[!UICONTROL Table]**&#x200B;并选择表格中要显示在映射中的元素，来更改维度视图。
 
    ![](assets/density_map_day_selections.png)
 
    图会反应出表格上所做的选择。
 
 1. 将鼠标悬停在小元素上，这会在光标附近以文本显示各自的名称和值。
-1. 通过右键单击并选择&#x200B;**[!UICONTROL Mask]**，然后选择选项来遮住元素。
+1. 右键单击并选择&#x200B;**[!UICONTROL Mask]**&#x200B;以掩盖元素，然后选择一个选项。
 
    ![](assets/density_map_day_mask.png)
 
-   要显示所有被遮罩的节点，请选择&#x200B;**[!UICONTROL Unhide All]**。
+   要显示所有屏蔽的节点，请选择&#x200B;**[!UICONTROL Unhide All]**。
 
-1. 通过右键单击并选择&#x200B;**[!UICONTROL Spotlight]**，然后选择一个选项来突显元素。 聚焦可以在一定范围内突出显示元素，并且可以将元素以暗色显示。
+1. 右键单击并选择&#x200B;**[!UICONTROL Spotlight]**&#x200B;可聚焦元素，然后选择一个选项。 聚焦可以在一定范围内突出显示元素，并且可以将元素以暗色显示。
 1. 向工作区中添加颜色图例。您可以使用颜色图例识别图中的值。
 
    您可以向工作区中添加颜色图例，节点将根据数据的其他维度改变颜色。
@@ -57,7 +56,7 @@ ht-degree: 84%
 
    ![](assets/density_map_change_dim.png)
 
-1. 通过右键单击单元格并选择&#x200B;**[!UICONTROL Add Callout]**&#x200B;添加标注。 您可以从菜单中选择不同的类型或可视化。
+1. 右键单击单元格并选择&#x200B;**[!UICONTROL Add Callout]**&#x200B;可添加标注。 您可以从菜单中选择不同的类型或可视化。
 
    ![](assets/density_map_callout.png)
 
@@ -70,7 +69,7 @@ ht-degree: 84%
 * 单击可选择一个元素。
 * Ctrl + 单击可选择多个元素。
 * Shift + 单击可取消选择一个元素。
-* 在所选元素内右键单击可打开一个菜单。然后选择&#x200B;**[!UICONTROL Deselect]**&#x200B;或&#x200B;**[!UICONTROL Deselect All]**&#x200B;以清除所选元素。
+* 在所选元素内右键单击可打开一个菜单。然后，选择&#x200B;**[!UICONTROL Deselect]**&#x200B;或&#x200B;**[!UICONTROL Deselect All]**&#x200B;以清除选定的元素。
 
 ## 其他选项 {#section-d77defb012424de4a7ced8e5c93115bc}
 
