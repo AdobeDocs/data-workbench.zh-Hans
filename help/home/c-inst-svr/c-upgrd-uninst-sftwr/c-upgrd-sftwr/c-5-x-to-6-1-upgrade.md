@@ -3,7 +3,6 @@ description: 按照以下步骤，从安装的 Insight v5.5x 更新至 Data Work
 title: 从 Data Workbench 5.5 升级至 6.1
 uuid: 14e3612e-11a2-402a-9478-904ec55df23c
 exl-id: c730f6d5-2171-4d97-a967-509dc2517c86,3f25917b-b929-4e3b-84f0-1a81b30ba641
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '767'
@@ -29,16 +28,16 @@ ht-degree: 61%
 
 按照以下步骤更新&#x200B;**[!UICONTROL Server v6.1]**&#x200B;组件：
 
-1. 使用&#x200B;**[!UICONTROL Software and Docs]**&#x200B;用户档案，打开&#x200B;**[!UICONTROL Start Here]**&#x200B;工作区并将所有所需的服务器包下载到本地文件夹。
+1. 使用&#x200B;**[!UICONTROL Software and Docs]**&#x200B;配置文件，打开&#x200B;**[!UICONTROL Start Here]**&#x200B;工作区，并将所有需要的服务器包下载到本地文件夹。
 
-   * 下载&#x200B;**[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** zip文件夹并解压所有文件。
+   * 下载&#x200B;**[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** zip文件夹并解压缩所有文件。
 
-      **[!UICONTROL Server]**&#x200B;包中包含&#x200B;**[!UICONTROL Lookup]**&#x200B;和&#x200B;**[!UICONTROL Profile]**&#x200B;文件夹，其中包含&#x200B;**[!UICONTROL Base]**&#x200B;和&#x200B;**[!UICONTROL Transform]**&#x200B;查找文件，可添加和替换以更新服务器。
+      **[!UICONTROL Server]**&#x200B;包中包含&#x200B;**[!UICONTROL Lookup]**&#x200B;和&#x200B;**[!UICONTROL Profile]**&#x200B;文件夹，其中包含&#x200B;**[!UICONTROL Base]**&#x200B;和&#x200B;**[!UICONTROL Transform]**&#x200B;查找文件，用于添加和替换以更新服务器。
 
-   * 下载新&#x200B;**[!UICONTROL Profiles]**&#x200B;文件夹。
+   * 下载新的&#x200B;**[!UICONTROL Profiles]**&#x200B;文件夹。
    * 下载更新的&#x200B;**[!UICONTROL Lookup]**&#x200B;文件夹。
    * 下载&#x200B;**[!UICONTROL Report Server]** \ **[!UICONTROL v6.1]**&#x200B;包。
-   * 根据您的系统需要下载其他&#x200B;**[!UICONTROL Sensor]**、**[!UICONTROL Documentation]**&#x200B;和&#x200B;**[!UICONTROL Dashboard]**&#x200B;文件。
+   * 根据需要，下载系统的其他&#x200B;**[!UICONTROL Sensor]**、**[!UICONTROL Documentation]**&#x200B;和&#x200B;**[!UICONTROL Dashboard]**&#x200B;文件。
 
 1. 停止&#x200B;**[!UICONTROL Adobe Insight Server]**&#x200B;服务。
 
@@ -57,7 +56,7 @@ ht-degree: 61%
 1. 如果采用 **[!UICONTROL DeviceAtlas]**，则将需要[更新捆绑包](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)（位于 [!DNL Server\Lookups] 文件夹）。
 1. 设置 [!DNL Directories] 中的 [!DNL Profile.cfg]，以确保矢量已更新，可以反映每个配置文件的项目数量。
 
-   例如，要启用&#x200B;**[!UICONTROL Predictive Analytics]**&#x200B;用户档案，您需要更新此设置。
+   例如，要启用&#x200B;**[!UICONTROL Predictive Analytics]**&#x200B;配置文件，您需要更新此设置。
 
    ```
    Directories = vector: 5 items 
@@ -76,7 +75,7 @@ ht-degree: 61%
 
 1. 定义 **[!UICONTROL Log Source ID]**.
 
-   **[!UICONTROL Recording of Rows per Log Source]**&#x200B;添加在&#x200B;**[!UICONTROL v6.04]**&#x200B;中，并通过添加唯一名称为&#x200B;**[!UICONTROL Log Source ID]**&#x200B;的自定义用户档案的[!DNL Log Processing.cfg]文件中定义。
+   **[!UICONTROL Recording of Rows per Log Source]**&#x200B;是在&#x200B;**[!UICONTROL v6.04]**&#x200B;中添加的，并通过添加唯一命名的&#x200B;**[!UICONTROL Log Source ID]**&#x200B;在自定义配置文件的[!DNL Log Processing.cfg]文件中定义。
 
    ```
    Log Processing.cfg
@@ -95,7 +94,7 @@ ht-degree: 61%
    * [!DNL InsightServer64.exe /unregserver]
    * [!DNL InsightServer64.exe /regserver]
 
-1. 开始群集中的&#x200B;**[!UICONTROL Adobe Insight Server]**&#x200B;服务。
+1. 在群集中启动&#x200B;**[!UICONTROL Adobe Insight Server]**&#x200B;服务。
 
 服务器安装现已完成。
 
@@ -103,14 +102,14 @@ ht-degree: 61%
 
 >[!IMPORTANT]
 >
->升级到&#x200B;**[!UICONTROL Report Server v6.1]**&#x200B;之前，必须先升级到&#x200B;**[!UICONTROL Server v6.1]**。
+>在升级到&#x200B;**[!UICONTROL Report Server v6.1]**&#x200B;之前，必须先升级到&#x200B;**[!UICONTROL Server v6.1]**。
 
-1. 使用&#x200B;**[!UICONTROL Software and Docs]**&#x200B;用户档案，将&#x200B;**[!UICONTROL Report Server]**&#x200B;包中的&#x200B;**[!UICONTROL v6.1]**&#x200B;下载到本地文件夹。
+1. 使用&#x200B;**[!UICONTROL Software and Docs]**&#x200B;配置文件，将&#x200B;**[!UICONTROL Report Server]**&#x200B;包中的&#x200B;**[!UICONTROL v6.1]**&#x200B;下载到本地文件夹。
 1. 复制下载的包中的 **[!UICONTROL Report Server 6.1]** 并替换配置文件包。
 
    >[!NOTE]
    >
-   >[!DNL install]文件夹中的[!DNL Insight.zbin]文件是用于本地化的备份文件，必须位于[!DNL install]目录中。 将根据启动时传递的命令行设置来使用此文件或其他[!DNL .zbin]文件。
+   >[!DNL install]文件夹中的[!DNL Insight.zbin]文件是用于本地化的备份文件，必须位于[!DNL install]目录中。 此文件或其他[!DNL .zbin]文件将根据启动时传递的命令行设置使用。
 
 1. （可选）修改报表服务器配置文件，以支持双字节字符。
 
@@ -129,7 +128,7 @@ ht-degree: 61%
 
    1. 停止&#x200B;**[!UICONTROL Adobe Insight Report Server]**&#x200B;服务。
    1. 以“管理员”身份启动命令提示符。
-   1. 导览至报表服务器[!DNL install]文件夹。
+   1. 导航到Report Server [!DNL install]文件夹。
    1. 使用以下命令删除 Report Server 服务。
 
       ```
@@ -143,7 +142,7 @@ ht-degree: 61%
    ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
    ```
 
-1. 要验证报表服务器是否运行设置正确，请打开&#x200B;**[!UICONTROL Windows Service Manager]**&#x200B;并右键单击&#x200B;**[!UICONTROL Adobe Insight Report Server - Properties]**。 可执行文件的路径将显示更新后的命令行设置。
+1. 要验证Report Server是否运行了正确的设置，请打开&#x200B;**[!UICONTROL Windows Service Manager]**&#x200B;并右键单击&#x200B;**[!UICONTROL Adobe Insight Report Server - Properties]**。 可执行文件的路径将显示更新后的命令行设置。
 
 报表服务器安装现已完成。
 
@@ -160,7 +159,7 @@ ht-degree: 61%
    Update Software = bool: false
    ```
 
-1. 连接到&#x200B;**[!UICONTROL Software and Docs]**&#x200B;用户档案(softdocs)。
+1. 连接到&#x200B;**[!UICONTROL Software and Docs]**&#x200B;配置文件(softdocs)。
 1. 下载 [!DNL Software\Insight Client\v6.10].
 1. （可选）修改 [!DNL insight.cfg] 以支持双字节字符。
 
@@ -177,7 +176,7 @@ ht-degree: 61%
 
    >[!NOTE]
    >
-   >安装文件夹中的[!DNL Insight.zbin]文件是用于本地化的备份文件，必须位于安装目录中。 将根据启动时传递的命令行设置来使用此文件或其他[!DNL .zbin]文件。
+   >安装文件夹中的[!DNL Insight.zbin]文件是用于本地化的备份文件，必须位于安装目录中。 此文件或其他[!DNL .zbin]文件将根据启动时传递的命令行设置使用。
    >
    >例如，要启动简体中文版，请创建一个用于传入命令行设置的的快捷方式。
    >
@@ -205,6 +204,6 @@ ht-degree: 61%
    ```
 
    请参阅有关实施 IME 的说明。
-1. 在用户档案同步后再次重新启动以使用最新的[!DNL .zbin]文件。
+1. 在配置文件同步后再次重新启动以使用最新的[!DNL .zbin]文件。
 
 客户端安装现已完成。
