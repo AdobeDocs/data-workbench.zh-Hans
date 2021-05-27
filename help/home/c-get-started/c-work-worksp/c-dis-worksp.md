@@ -1,9 +1,8 @@
 ---
-description: 在Data Workbench中工作后，您可以显示随Data Workbench提供的众多预配置工作区之一。
+description: 在Data Workbench中工作后，您可以显示随Data Workbench一起提供的众多预配置工作区之一。
 title: 显示工作区
 uuid: 45840157-e3a1-4ad9-8f62-a49db3d6d26c
 exl-id: d0e4ef5c-37cc-463b-a649-ffcc41495ca9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '120'
@@ -13,7 +12,7 @@ ht-degree: 61%
 
 # 显示工作区{#display-a-workspace}
 
-在Data Workbench中工作后，您可以显示随Data Workbench提供的众多预配置工作区之一。
+在Data Workbench中工作后，您可以显示随Data Workbench一起提供的众多预配置工作区之一。
 
 侧栏是工作区的永久性功能，除非您将其隐藏。请参阅 [配置侧栏](../../../home/c-get-started/c-config-sidebar.md#concept-41db771b302e43018e5a9daa40b397e6).
 
