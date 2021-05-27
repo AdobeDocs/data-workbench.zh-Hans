@@ -3,7 +3,6 @@ description: 有关传感器记录的基线事件数据记录字段的信息。
 title: 基准事件数据记录字段
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '461'
@@ -33,7 +32,7 @@ ht-degree: 72%
   </tr> 
   <tr> 
    <td colname="col1"> cs(referrer) </td> 
-   <td colname="col2"> <p>由客户端随请求一起向服务器发送的 HTTP 反向链接字符串。 </p> <p>示例：http://www.mysite.net/cgi-bin/websearch?qry </p> <p>如果您使用页面标签，则cs(推荐人)是包含标签图像（包括HTTP或HTTP）的文档的完整URL。 </p> <p>此外，您还可以配置Apache（1.3、2.0和2.2）和IIS传感器以捕获用于请求的端口，该端口可标识HTTP与HTTPS请求。 </p> </td> 
+   <td colname="col2"> <p>由客户端随请求一起向服务器发送的 HTTP 反向链接字符串。 </p> <p>示例：http://www.mysite.net/cgi-bin/websearch?qry </p> <p>如果您使用页面标记，则cs(referrer)是包含标记图像的文档的完整URL，包括HTTP或HTTP。 </p> <p>此外，您还可以配置Apache（1.3、2.0和2.2）和IIS传感器以捕获用于请求的端口，该端口可识别HTTP请求和HTTPS请求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
@@ -45,11 +44,11 @@ ht-degree: 72%
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-query </td> 
-   <td colname="col2"> <p>URI的查询字符串部分(stem +查询字符串= URI) </p> <p>这部分的前面有一个问号 (?)，并且可能包含一个或多个由与号 (&amp;) 分隔的名称-值对。 </p> <p>示例：page=homepage </p> </td> 
+   <td colname="col2"> <p>URI的查询字符串部分（主体+查询字符串= URI） </p> <p>这部分的前面有一个问号 (?)，并且可能包含一个或多个由与号 (&amp;) 分隔的名称-值对。 </p> <p>示例：page=homepage </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-stem </td> 
-   <td colname="col2"> <p>URI的干部(stem +查询字符串= URI) </p> <p>主干是请求资源在服务器上的实际或逻辑路径。 </p> <p>示例：/index.asp </p> </td> 
+   <td colname="col2"> <p>URI的主干部分（主干+查询字符串= URI） </p> <p>主干是请求资源在服务器上的实际或逻辑路径。 </p> <p>示例：/index.asp </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> sc(content-type) </td> 
@@ -82,4 +81,4 @@ ht-degree: 72%
  </tbody> 
 </table>
 
-[!DNL data workbench server]可从基线事件数据记录字段派生多个变量。 有关详细信息，请参阅&#x200B;*数据集配置指南*。
+[!DNL data workbench server]可从基线事件数据记录字段派生多个变量。 有关更多信息，请参阅&#x200B;*《数据集配置指南》*。
