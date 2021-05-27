@@ -3,7 +3,6 @@ description: 统计标注可对有意义的关系进行测量，以便为受众�
 title: 统计标注
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
 exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '273'
@@ -20,7 +19,7 @@ ht-degree: 95%
 添加统计标注：
 
 1. 在表格中，右键单击量度标题。
-1. 选择&#x200B;**[!UICONTROL Statistics]**，然后选择或清除每个所需设置的复选标记。 默认情况下，“显示标注”中的所有项都被选中。
+1. 选择&#x200B;**[!UICONTROL Statistics]**，然后为每个所需设置选择或清除复选标记。 默认情况下，“显示标注”中的所有项都被选中。
 
    ![](assets/statistical_callouts.png)
 
