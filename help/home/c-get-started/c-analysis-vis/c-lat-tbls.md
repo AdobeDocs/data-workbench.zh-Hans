@@ -3,7 +3,6 @@ description: 延迟表格可视化是包含延迟维度的表格，延迟维度�
 title: 延迟表
 uuid: 8081540c-f96c-424e-802d-05d1be5a728d
 exl-id: 22f6d52f-e1c2-430a-9e69-3440be0ecdea
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '800'
@@ -23,7 +22,7 @@ ht-degree: 75%
 
 以下示例演示了如何使用延迟表格。
 
-**识别与事件相关的值活动**
+**识别与营销活动相关的价值事件**
 
 例如，您希望跟踪客户对特定广告活动进行响应前后 7 天的客户活动。若要查看特定广告活动的延迟，应将感兴趣的活动设置为延迟表格的事件。
 
@@ -55,7 +54,7 @@ ht-degree: 75%
 
 >[!NOTE]
 >
->您选择的事件不会保留，除非您将选择另存为延迟维。 有关步骤，请参阅[重用延迟维度](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46)。
+>除非将选择另存为延迟维度，否则您选择的事件不会持续存在。 有关步骤，请参阅[重用延迟维度](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46)。
 
 ## 重用延迟表{#section-05f741169d204213b6537dce553e4f73}
 
@@ -63,32 +62,32 @@ ht-degree: 75%
 
 **保存延迟表格以便在其他工作区中使用**
 
-1. 右键单击可视化的上边框，然后单击&#x200B;**[!UICONTROL Save]**。 出现[!DNL Save]窗口。 默认的保存位置是User\*用户档案名*\Work文件夹。
-1. 在[!DNL File name]字段中，键入可视化的描述性名称，然后单击&#x200B;**[!UICONTROL Save]**。
+1. 右键单击可视化的上边框，然后单击&#x200B;**[!UICONTROL Save]**。 出现[!DNL Save]窗口。 默认的保存位置是User\*配置文件名称*\Work文件夹。
+1. 在[!DNL File name]字段中，为可视化键入描述性名称，然后单击&#x200B;**[!UICONTROL Save]**。
 
 **检索保存的延迟表格**
 
 1. 右键单击工作区，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL File]**。 出现[!DNL Open Visualization]窗口。
 1. 导航到您保存的延迟表格。
-1. 选择延迟表可视化文件([!DNL *.vw])，然后单击&#x200B;**[!UICONTROL Open]**。
+1. 选择延迟表可视化文件([!DNL *.vw])并单击&#x200B;**[!UICONTROL Open]**。
 
 ## 重用延迟维度{#section-29c6483bf9ba476fb1c24ad1df253f46}
 
 如果您想再次使用同一个延迟维度，则可以将该延迟维度保存在本地，或者如果您拥有适当的权限，则可以将其保存到服务器，以便特定配置文件的所有用户都可以访问。
 
-您创建的任何延迟维都保存在用户档案的Dimension目录中，并可在Data Workbench的[!DNL Change Dimension]下拉列表中使用。
+您创建的任何延迟维度都保存在配置文件的“Dimension”目录中，并可在Data Workbench的[!DNL Change Dimension]下拉列表中找到。
 
 **保存延迟维度以便在其他工作区中使用**
 
 1. 右键单击[!DNL Latency]列标签或其某个元素，然后单击&#x200B;**[!UICONTROL Save Dimension]**。 出现[!DNL Save Dimension As]窗口。
 1. 在 Dimensions 目录中选择或创建相应的子目录。
-1. 在[!DNL File name]字段中，键入维的描述性名称（例如[!DNL Latency for Campaign 11565.dim]），然后单击&#x200B;**[!UICONTROL Save]**。
+1. 在[!DNL File name]字段中，为维度键入一个描述性名称（例如[!DNL Latency for Campaign 11565.dim]），然后单击&#x200B;**[!UICONTROL Save]**。
 
 **检索保存的延迟维度**
 
 1. 右键单击工作区，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL File]**。 出现[!DNL Open Visualization]窗口。
-1. 导览至您保存在User\*用户档案名称*\Dimensions文件夹中的延迟可视化。
-1. 选择延迟维度文件([!DNL *.dim])，然后单击&#x200B;**[!UICONTROL Open]**。
+1. 导航到您保存在User\*配置文件名称*\Dimension文件夹中的延迟可视化。
+1. 选择延迟维度文件([!DNL *.dim])并单击&#x200B;**[!UICONTROL Open]**。
 
 ## 导出到 Microsoft Excel {#section-3dffa5c3aab14cdaa40c78b81b08fe53}
 
