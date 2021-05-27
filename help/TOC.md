@@ -6,9 +6,8 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench 帮助
 user-guide-description: 了解 Data Workbench 的多渠道功能，其中包括 Data Workbench 客户端指南、安装指南、数据集配置指南等内容。
-translation-type: ht
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -108,8 +107,8 @@ ht-degree: 100%
       + [归因模型](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-models.md)
       + [最佳拟合归因](home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md)
       + [构建最适合归因模型](home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md)
-   + 可视化 {#visualizations}
-      + [可视化概述](home/c-get-started/c-vis/c-vis.md)
+   + 可视化{#visualizations}
+      + [可视化图表概述](home/c-get-started/c-vis/c-vis.md)
       + [打开可视化图表](home/c-get-started/c-vis/c-open-vis.md)
       + [快速参考](home/c-get-started/c-vis/c-qk-ref.md)
       + 进行选择 {#make-selections}
@@ -408,11 +407,11 @@ ht-degree: 100%
          + 标准转换 {#standard-transformations}
             + [标准转换](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-standard-transf.md)
             + [ChangeCase](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-chgcase.md)
-            + [Copy](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-copy.md)
+            + [复制](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-copy.md)
             + [CrossRows](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md)
             + [ExtractValue](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-exvalue.md)
             + [Flatten](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md)
-            + [Format](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md)
+            + [格式](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md)
             + [Hash](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md)
             + [Haversine](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-haversine.md)
             + [IPLookup](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-iplookup.md)
@@ -519,7 +518,7 @@ ht-degree: 100%
       + 数字证书 {#digital-certs}
          + [下载和安装数字证书](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-install-dig-cert.md)
          + [了解数字证书](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-underst-dig-cert.md)
-         + [数字证书的安装过程](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md)
+         + [数字证书的安装步骤](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md)
       + [配置与 Insight Server 的连接](home/c-rpt-oview/c-inst-rpt/t-config-conn-ins-svr.md)
       + [使用语言文件（.zbin 文件）更新报表服务器](home/c-rpt-oview/c-inst-rpt/c-zbin-file-update.md)
       + [启用对 Data Workbench 服务器的访问](home/c-rpt-oview/c-inst-rpt/t-en-acc-ins-svr.md)
@@ -840,10 +839,10 @@ ht-degree: 100%
    + [术语表](home/c-adobe-data-workbench-dashboard/c-glossary.md)
    + [快速入门](home/c-adobe-data-workbench-dashboard/t-getting-started/t-getting-started.md)
    + [功能板用户界面](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
-   + 可视化图表 {#visualizations}
+   + 可视化{#visualizations}
       + [可视化图表](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualizations.md)
       + 可视化图表类型 {#visualization-types}
-         + [可视化图表类型](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-visualization-types.md)
+         + [可视化类型](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-visualization-types.md)
          + [柱状图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-column-charts.md)
          + [条形图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-bar-charts.md)
          + [折线图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-line-charts.md)
