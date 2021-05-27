@@ -3,7 +3,6 @@ description: 编辑数据集配置文件的 Transformation.cfg 文件的步骤�
 title: 编辑转换配置文件
 uuid: 77b9e566-4a9a-4ea1-b5ab-63a4574c0fdb
 exl-id: 3fab17a4-d356-4548-b977-f5d409870753
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1135'
@@ -15,26 +14,26 @@ ht-degree: 78%
 
 编辑数据集配置文件的 Transformation.cfg 文件的步骤。
 
-1. 在数据集用户档案中工作时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示其内容。
+1. 在处理数据集配置文件时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示其内容。
 
-   有关打开和使用[!DNL Profile Manager]的信息，请参阅&#x200B;*《Data Workbench用户指南》*。
+   有关打开和使用[!DNL Profile Manager]的信息，请参阅&#x200B;*Data Workbench用户指南*。
 
    >[!NOTE]
    >
-   >Transformation子目录可能存在于Dataset目录中。 此子目录包含为一个或多个继承用户档案创建的[!DNL Transformation Dataset Include]文件。 有关[!DNL Transformation Dataset Include]文件的信息，请参阅[数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
+   >Transformation子目录可能存在于Dataset目录内。 此子目录包含为一个或多个继承配置文件创建的[!DNL Transformation Dataset Include]文件。 有关[!DNL Transformation Dataset Include]文件的信息，请参阅[数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
 
-1. 右键单击[!DNL Transformation.cfg]旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 此文件的复选标记显示在[!DNL User]列中。
+1. 右键单击[!DNL Transformation.cfg]旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL User]列中将显示此文件的复选标记。
 1. 右键单击新创建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Workstation]**。 出现[!DNL Transformation.cfg]窗口。
 
-   您也可以从[!DNL Transformation Dependency Map]打开[!DNL Transformation.cfg]文件。 有关[!DNL transformation dependency maps]的信息，请参阅[数据集配置工具](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)。
+   您还可以从[!DNL Transformation Dependency Map]打开[!DNL Transformation.cfg]文件。 有关[!DNL transformation dependency maps]的信息，请参阅[数据集配置工具](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)。
 
 1. 参考下表，编辑该配置文件中的参数。
 
-   在 Data Workbench 窗口内编辑 [!DNL Transformation.cfg] 文件时，可以使用快捷键实现基本编辑功能，包括剪切 (Ctrl+x)、复制 (Ctrl+c)、粘贴 (Ctrl+v)、撤消 (Ctrl+z)、恢复 (Ctrl+Shift+z)、选择部分（单击并拖动）以及选择全部 (Ctrl+a)。此外，您还可以使用快捷键将文本从一个配置文件([!DNL .cfg])复制并粘贴到另一个配置文件。
+   在 Data Workbench 窗口内编辑 [!DNL Transformation.cfg] 文件时，可以使用快捷键实现基本编辑功能，包括剪切 (Ctrl+x)、复制 (Ctrl+c)、粘贴 (Ctrl+v)、撤消 (Ctrl+z)、恢复 (Ctrl+Shift+z)、选择部分（单击并拖动）以及选择全部 (Ctrl+a)。此外，您还可以使用快捷方式将文本从一个配置文件([!DNL .cfg])复制并粘贴到另一个配置文件。
 
    >[!NOTE]
    >
-   >继承用户档案的[!DNL Transformation Dataset Include]文件包含下表中描述的参数子集以及一些其他参数。 有关[!DNL Transformation Dataset Include]文件的信息，请参阅[数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
+   >继承配置文件的[!DNL Transformation Dataset Include]文件包含下表中描述的参数子集以及一些其他参数。 有关[!DNL Transformation Dataset Include]文件的信息，请参阅[数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
 
    <table id="table_5E184F67CCEC4421B2BBD4261711A6FE"> 
    <thead> 
@@ -54,7 +53,7 @@ ht-degree: 78%
    </tr> 
    <tr> 
       <td colname="col1"> 扩展维度 </td> 
-      <td colname="col2"> 可选。Adobe 建议在一个或多个<span class="wintitle">转换数据集包含</span>文件中定义扩展维度。有关信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace">转换数据集包含文件</a>。 </td> 
+      <td colname="col2"> 可选。Adobe 建议在一个或多个<span class="wintitle">转换数据集包含</span>文件中定义扩展维度。有关信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace">转换数据集包含文件</a> 。 </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Hash Threshold（哈希阈值） </td> 
@@ -85,7 +84,7 @@ ht-degree: 78%
       </ul> </p> <p> <b>删除现有处理阶段</b> </p> <p> 
       <ul id="ul_2EFA5A40982A48919E9946BF1955110A"> 
        <li id="li_3B3829DA34FD4774B3F9F94074099794"> 右键单击要删除的阶段所对应的编号，然后单击<span class="uicontrol">删除</span><i>&lt;<span class="uicontrol">阶段编号</span>&gt;</i>。 </li> 
-      </ul> </p> <p> <p>注意：当您在<span class="wintitle">转换数据集包含</span>文件中指定阶段时，该阶段的名称必须与您在此处输入的名称完全匹配。有关数据集包含文件的详细信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md">数据集包含文件</a>。 </p> </p> </td> 
+      </ul> </p> <p> <p>注意：当您在<span class="wintitle">转换数据集包含</span>文件中指定阶段时，该阶段的名称必须与您在此处输入的名称完全匹配。有关数据集包含文件的更多信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md">数据集包含文件</a> 。 </p> </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Start Time（开始时间） </td> 
@@ -97,7 +96,7 @@ ht-degree: 78%
    </tr> 
    <tr> 
       <td colname="col1"> Transformations（转换） </td> 
-      <td colname="col2"> 可选。Adobe 建议在一个或多个<span class="wintitle">转换数据集包含</span>文件中为数据集构建的转换阶段定义转换。有关信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace">转换数据集包含文件</a>。 </td> 
+      <td colname="col2"> 可选。Adobe 建议在一个或多个<span class="wintitle">转换数据集包含</span>文件中为数据集构建的转换阶段定义转换。有关信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace">转换数据集包含文件</a> 。 </td> 
    </tr> 
    <tr> 
       <td colname="col1"> 时区 </td> 
@@ -106,7 +105,7 @@ ht-degree: 78%
    </tbody> 
    </table>
 
-1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**，然后单击&#x200B;**[!UICONTROL Save]**。
+1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]** ，然后单击&#x200B;**[!UICONTROL Save]**。
 1. 在[!DNL Profile Manager]中，右键单击[!DNL User]列中[!DNL Transformation.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > * **[!UICONTROL dataset profile name]**&#x200B;以使本地所做的更改生效。 在数据集配置文件同步之后，系统便会开始重新转换数据。
 
    >[!NOTE]
