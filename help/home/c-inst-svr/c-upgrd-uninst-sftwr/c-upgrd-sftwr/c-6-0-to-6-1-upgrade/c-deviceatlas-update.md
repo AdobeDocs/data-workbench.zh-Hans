@@ -3,7 +3,6 @@ description: DeviceAtlas JSON 文件现在将与 DeviceAtlas.dll 和 DeviceAtlas
 title: DeviceAtlas 分配
 uuid: 1eb76c61-6696-4e6c-a3fd-61c00cc17b0a
 exl-id: e9671810-d32c-4ec4-a1cb-54b71c6f101c,333507bb-3e8b-4da1-8218-b35fcf8d5f80,aa811c7b-ef80-4f23-b395-0cbb7d2677a9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '443'
@@ -19,7 +18,7 @@ DeviceAtlas JSON 文件现在将与 DeviceAtlas.dll 和 DeviceAtlas64.dll 文件
 
 [!DNL Server Packages > v6.00 > Server_6.00.zip]
 
-将DeviceAtlas.bundle文件解压到[!DNL Server\Lookups\DeviceAtlas]。
+将DeviceAtlas.bundle文件提取到[!DNL Server\Lookups\DeviceAtlas]。
 
 DeviceAtlas.bundle 文件应被置于同步到 DPU 的目录中，与新 DeviceAtlasComponent 相对应的 DeviceAtlas.cfg 文件应被置于同步主服务器上的“Components for Processing Servers”目录中。当 DeviceAtlas.bundle 文件发生更改时，下一个 DeviceAtlas 查找调用将根据更新的 API 和/或 JSON 文件获得结果。
 
