@@ -3,7 +3,6 @@ description: 可以用颜色显示流程图中节点之间的路径。
 title: 激活颜色链接
 uuid: 7046128e-6d52-4875-9979-c4c7bad59c9d
 exl-id: d210e54a-5f5e-4bcf-b2d2-7a748d7b90ba
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '86'
