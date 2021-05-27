@@ -3,7 +3,6 @@ description: “重新调整工作区”将可视化的大小调整为您所使�
 title: 重新拟合工作区
 uuid: bbb5cd7b-4973-419d-9a13-52b36422259a
 exl-id: a84d24db-6690-4f9a-a01e-dbc549ca13c5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '42'
