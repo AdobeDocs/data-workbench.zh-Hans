@@ -3,7 +3,6 @@ description: REMatch 转换是一种模式匹配转换，该转换使用正则�
 title: REMatch
 uuid: 8ef80bfa-aea2-45a1-a7d9-38ad33043886
 exl-id: 571e6f1c-f557-49c3-9e7c-c31f06132ec7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '291'
@@ -19,9 +18,9 @@ REMatch 转换是一种模式匹配转换，该转换使用正则表达式指定
 
 >[!NOTE]
 >
->[!DNL REMatch]转换的操作与[!DNL RETransform]转换类似（请参阅[RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)），后者使用常规表达式捕获字符串并将该字符串存储在单个输出字段中。
+>[!DNL REMatch]转换的操作方式与[!DNL RETransform]转换类似（请参阅[RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)），该转换使用正则表达式捕获字符串并将该字符串存储在单个输出字段中。
 
-[!DNL REMatch] 比多个转换或单个转 [!DNL RETransform] 换(后跟转 [!DNL RETransform] 换)更高效地分 [!DNL Flatten] 析字符串。请参阅[拼合](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce)。
+[!DNL REMatch] 比多个转换或后跟转 [!DNL RETransform] 换的单个转 [!DNL RETransform] 换更有效地解析字 [!DNL Flatten] 符串。请参阅[Flatten](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce)。
 
 <table id="table_7077578512B249E986BC79AE770CBD9A"> 
  <thead> 
@@ -72,7 +71,7 @@ REMatch 转换是一种模式匹配转换，该转换使用正则表达式指定
 
 >[!NOTE]
 >
->[!DNL REMatch] 转换可能非常慢，并且可能占据大量数据处理时间。
+>[!DNL REMatch] 转换可能会非常慢，并且可能会占用大量数据处理时间。
 
 在此示例中，[!DNL REMatch] 转换将 YYYY-MM-DD 格式的日期解析为字段 x-year、x-month 和 x-day。对于日期 2007-01-02，x-year、x-month 和 x-day 的值将分别是 2007、01 和 02。
 
