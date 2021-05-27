@@ -3,7 +3,6 @@ description: 决策树是对预测分析的可视化，用于评估访客特性�
 title: 决策树生成器
 uuid: 1f7e91ea-e5d9-4d8e-9fcf-cae4de42dfdd
 exl-id: d93e6a34-be59-4af5-84c3-c13deb98b57b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '445'
