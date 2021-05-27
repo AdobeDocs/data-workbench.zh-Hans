@@ -3,7 +3,6 @@ description: Unescape URI 转换取消转义字符串中任何已转义的字符
 title: UnescapeURI
 uuid: 25e87cc7-812d-4d77-be94-16093e8955fe
 exl-id: abf20906-5052-4bbe-9ffb-522b850669a6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '160'
