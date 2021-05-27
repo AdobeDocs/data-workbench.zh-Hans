@@ -3,7 +3,6 @@ description: “处理图例”提供有关特定服务器的数据处理和转�
 title: 处理图例
 uuid: 6c082c8f-fbb3-4e48-a249-2a13345fda86
 exl-id: a83ce514-c92b-4cf8-a3cc-bff4e2ba63f1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '214'
@@ -17,7 +16,7 @@ ht-degree: 94%
 
 ![](assets/vis_ProcessingLegend.png)
 
-下表列表了可使用[!DNL Processing Legend]完成的任务。
+下表列出了可使用[!DNL Processing Legend]完成的任务。
 
 <table id="table_6149250C44B14C44A3CB1CEF68B280C6"> 
  <thead> 
