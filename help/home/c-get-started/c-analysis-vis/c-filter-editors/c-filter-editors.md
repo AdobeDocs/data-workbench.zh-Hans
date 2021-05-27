@@ -3,7 +3,6 @@ description: 过滤器编辑器是用于构建和编辑过滤器的特殊可视�
 title: 过滤器编辑器
 uuid: c4e99e44-1927-4131-92e9-111c76bdc3e2
 exl-id: 9009c760-8726-4234-b85b-727aeae761bd
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '275'
@@ -15,7 +14,7 @@ ht-degree: 76%
 
 过滤器编辑器是用于构建和编辑过滤器的特殊可视化。
 
-虽然Data Workbench中的其他可视化显示数据集中的数据，但过滤器编辑器允许您指定可视化中显示的数据的哪个部分或子集。
+Data Workbench中的其他可视化显示数据集中的数据时，过滤器编辑器允许您指定可视化中显示数据的哪个部分或子集。
 
 ![](assets/filter_edit_toolbar.png)**“保存过滤器”按钮。**&#x200B;当您在工作区中选择某个项目后（如明细表、可视化、过滤器或其他项目），工具栏中就会打开&#x200B;**保存过滤器**&#x200B;按钮，让您能够为选定的项目创建过滤器。单击“保存过滤器”图标后，就会提供输入名称的选项。接着就能够将过滤器保存到配置文件。
 
