@@ -3,7 +3,6 @@ description: 数值维度包含有序的数值元素，并且与其父可计数�
 title: 数值维度
 uuid: 19fab770-1535-41b2-bad1-811eba5f3575
 exl-id: 69a4dfa6-8402-4c2b-8b04-e6e1a0fd5ccb
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '990'
@@ -60,7 +59,7 @@ ht-degree: 97%
   <tr> 
    <td colname="col1"> Hidden（隐藏） </td> 
    <td colname="col2"> 确定维度是否显示在 Data Workbench 界面中。默认情况下，此参数设为 false。例如，如果维度仅用作量度的基础，则可以将此参数设为 true，以在 Data Workbench 显示中隐藏维度。 </td> 
-   <td colname="col3"> 假 </td> 
+   <td colname="col3"> false </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Input（输入） </td> 
@@ -111,7 +110,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->如果[!DNL Operation]没有产生任何值，或[!DNL Clip Values]为false且该值不在[!DNL Min]和[!DNL Max]之间，则数值维度的任何元素都与父维度的元素无关。
+>如果[!DNL Operation]没有产生值，或[!DNL Clip Values]为false且值不在[!DNL Min]和[!DNL Max]之间，则数值维度的任何元素都与父维度的元素无关。
 
 此示例使用从网站流量收集的事件数据来说明数值维度的定义。这个名为“广告查看计数器”的数值维度会对访客在指定会话期间查看广告的次数进行统计。假定所有广告资源都通过将 ad= 作为 cs-uri-query 的一部分从 Web 服务器请求。在该示例中，主要关注访客查看广告的次数 (COUNT) 值，而不是字段中的实际值。
 
