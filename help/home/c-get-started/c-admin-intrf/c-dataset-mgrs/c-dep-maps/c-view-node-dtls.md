@@ -3,7 +3,6 @@ description: 有关查看配置文件组件相关标识信息的信息。
 title: 查看节点详细信息
 uuid: 2016a650-b021-4295-8313-d6287578ed10
 exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '262'
@@ -37,7 +36,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->仅当对依赖关系图启用[!DNL Show Performance Data]选项时，才显示转换的性能信息。 有关详细信息，请参阅[显示性能数据](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)。
+>仅当为依赖关系图启用了[!DNL Show Performance Data]选项时，才会显示转换的性能信息。 有关更多信息，请参阅[显示性能数据](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)。
 
 **扩展维度**
 
@@ -47,7 +46,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->仅当对依赖关系图启用[!DNL Show Performance Data]选项时，才显示扩展维的性能信息。 有关详细信息，请参阅[显示性能数据](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)。
+>仅当为依赖关系图启用[!DNL Show Performance Data]选项时，才会显示扩展维度的性能信息。 有关更多信息，请参阅[显示性能数据](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)。
 
 **量度**
 
