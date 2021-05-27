@@ -3,7 +3,6 @@ description: 如果您不希望从内部配置文件或其他继承配置文件�
 title: 隐藏数据集配置文件
 uuid: eb33cf54-e067-4af2-a10e-7ffe43910e4f
 exl-id: 327847d1-421a-4ed1-9a5f-2491765a34bd
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '319'
@@ -17,13 +16,13 @@ ht-degree: 67%
 
 **将数据集配置文件设为零字节**
 
-1. 在[!DNL Profile Manager]中，打开必要的文件夹和子文件夹以找到要设置零字节的文件。
+1. 在[!DNL Profile Manager]中，打开必要的文件夹和子文件夹，以找到要设置零字节的文件。
 1. 右键单击文件名称旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。
 1. 在文本编辑器（例如记事本）中打开本地文件，然后删除其内容。
 1. 保存并关闭该文件。
-1. 在[!DNL Profile Manager]中，将零字节文件保存到原始文件所在用户档案右侧的用户档案。 （您要使零字节文件优先于原始文件。）
+1. 在[!DNL Profile Manager]中，将零字节文件保存到原始文件所在配置文件右侧的配置文件中。 （您要使零字节文件优先于原始文件。）
 
-   在[!DNL Profile Manager]中，列中的连字符(-)而不是复选标记标识零字节文件，如下例所示。
+   在[!DNL Profile Manager]中，列中的连字符(-)（而不是复选标记）标识零字节文件，如以下示例所示。
 
    ![](assets/vis_ProfileManager_ZeroByteFile.png)
 
@@ -31,6 +30,6 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->如果将定义在可视化或量度定义中使用的扩展维度的配置文件零字节，Data Workbench会分别为该可视化或量度生成错误。
+>如果为配置文件设置零字节，该配置文件定义了在可视化或量度定义中使用的扩展维度，则Data Workbench会分别为该可视化或量度生成错误。
 
 您还可以使用零字节文件将量度、维度或过滤器移到配置文件中的其他位置，或隐藏菜单项。有关信息，请参阅《Data Workbench 用户指南》**。
