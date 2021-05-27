@@ -1,9 +1,8 @@
 ---
-description: 您可以创建一个引用一个或多个矢量(.vec)文件的矢量图层，其中包含定义要在地球上绘制的矢量的数据。
+description: 您可以创建引用一个或多个矢量(.vec)文件的矢量层，其中包含定义要在地球上绘制的矢量的数据。
 title: 定义引用矢量文件的矢量图层
 uuid: 162d4ecc-d305-42e3-a5d4-0c1609a40f29
 exl-id: c6da3cd9-f42a-4e9c-ae48-9f4ffdc42f7b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '281'
@@ -13,25 +12,25 @@ ht-degree: 47%
 
 # 定义引用矢量文件的矢量图层{#defining-vector-layers-referencing-vector-files}
 
-您可以创建一个引用一个或多个矢量(.vec)文件的矢量图层，其中包含定义要在地球上绘制的矢量的数据。
+您可以创建引用一个或多个矢量(.vec)文件的矢量层，其中包含定义要在地球上绘制的矢量的数据。
 
-要定义引用一个或多个[!DNL .vec]文件的矢量图层，您必须具有以下内容：
+要定义引用一个或多个[!DNL .vec]文件的矢量层，必须具有以下内容：
 
 * 一个或多个[!DNL .vec]文件，其中包含用于在地球上绘制矢量的数据。
 
    >[!NOTE]
    >
-   >要获取要与矢量图层一起使用的[!DNL .vec]文件，请与Adobe联系。
+   >要获取要与矢量层一起使用的[!DNL .vec]文件，请联系Adobe。
 
-* 指定[!DNL .vec]文件位置的图层文件。 有关层文件所需格式的详细信息，请参阅[矢量层文件格式](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-def-vctr-files.md#section-530d03f41ede4a339aebbb680e15240a)。
+* 指定[!DNL .vec]文件位置的层文件。 有关层文件所需格式的详细信息，请参阅[矢量层文件格式](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-def-vctr-files.md#section-530d03f41ede4a339aebbb680e15240a)。
 
    >[!NOTE]
    >
-   >随[!DNL Geography]用户档案提供的[!DNL Boundaries.layer]文件是引用[!DNL mwnation.vec]、[!DNL mwstate.vec]、[!DNL mwcoast.vec]、[!DNL mwlake.vec]和[!DNL mwisland.vec]文件的矢量层。
+   >随[!DNL Geography]配置文件提供的[!DNL Boundaries.layer]文件是引用[!DNL mwnation.vec]、[!DNL mwstate.vec]、[!DNL mwcoast.vec]、[!DNL mwlake.vec]和[!DNL mwisland.vec]文件的矢量层。
 
 ## 矢量层文件格式 {#section-530d03f41ede4a339aebbb680e15240a}
 
-引用[!DNL .vec]文件的每个矢量图层文件必须使用以下模板进行格式化：
+引用[!DNL .vec]文件的每个矢量层文件都必须使用以下模板进行格式化：
 
 ```
 Layer = VectorLayer:
