@@ -3,7 +3,6 @@ description: 在构建聚类维度之后，您可以对其保存，并使用聚�
 title: 浏览聚类
 uuid: b0a07525-c586-466a-ac5e-7c7674cb58f8
 exl-id: d144f51c-8103-428d-801c-a12fb3ec5866
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '165'
