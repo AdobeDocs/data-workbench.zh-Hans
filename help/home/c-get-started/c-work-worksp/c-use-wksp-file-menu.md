@@ -3,7 +3,6 @@ description: 有关工作区“文件”菜单中可用菜单选项的信息。
 title: 工作区“文件”菜单
 uuid: abbdb2db-d918-4edf-977c-1daaf8a71721
 exl-id: b2bb7d89-249c-40f5-85aa-02fea0b0fc61
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '518'
@@ -41,11 +40,11 @@ ht-degree: 63%
 
 设置工作区的工作页面大小。可以为计算机屏幕、打印页面和报表选择“全屏”、“标准”或任何特定大小。“全屏”填充特定屏幕，“标准”是可以配置为适合您组织的标准屏幕大小的设置。默认“标准”设置填充使用 1024 x 768 分辨率时的屏幕。
 
-复制、保存为[!DNL .png]文件或打印的工作区也使用此页面大小进行输出。 大于Data Workbench可视化的页面大小使用滚动条，而较小的页面大小则位于屏幕中央，并在工作区周围显示浅灰色边框。
+复制、另存为[!DNL .png]文件或打印的工作区也使用此页面大小进行输出。 大于Data Workbench可视化的页面大小使用滚动条，而小的页面大小在屏幕上居中，并在工作区周围显示浅灰色边框。
 
 **描述**
 
-让您可以创建或编辑工作区的文本说明。该文本显示在 [!DNL Worktop] 中的缩略图下。请参阅[向Workspace](../../../home/c-get-started/c-work-worksp/t-add-wksp-desc.md#task-163734487e8848dfa0a4d8da6323a963)添加说明。
+让您可以创建或编辑工作区的文本说明。该文本显示在 [!DNL Worktop] 中的缩略图下。请参阅[向工作区添加描述](../../../home/c-get-started/c-work-worksp/t-add-wksp-desc.md#task-163734487e8848dfa0a4d8da6323a963)。
 
 **在后台计算**
 
@@ -56,11 +55,11 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->如果“在后台计算”(Compute in Background)保持选中状态，则选定工作区中的查询将成为静态查询，继续更新并使用内存负载。 当您完成该工作区中的工作时，确保清除对“在后台计算”的选择。
+>如果“在后台计算”保持选中状态，则所选工作区中的查询将成为持续查询，并继续更新并使用内存负载。 当您完成该工作区中的工作时，确保清除对“在后台计算”的选择。
 
 **关闭**
 
-关闭工作区。单击&#x200B;**[!UICONTROL Close]** > **[!UICONTROL Save]**&#x200B;以保存您在工作区中所做的更改，或单击&#x200B;**[!UICONTROL Close]** > **[!UICONTROL Don’t Save]**&#x200B;返回到[!DNL Worktop]而不保存您在工作区中所做的更改。
+关闭工作区。单击&#x200B;**[!UICONTROL Close]** > **[!UICONTROL Save]**&#x200B;以保存您在工作区中所做的更改，或单击&#x200B;**[!UICONTROL Close]** > **[!UICONTROL Don’t Save]**&#x200B;以返回到[!DNL Worktop]，而不保存您在工作区中所做的更改。
 
 您也可以使用以下任一方法保存更改、关闭工作区并返回 [!DNL Worktop]：
 
@@ -71,4 +70,4 @@ ht-degree: 63%
 
 **从模板导出到 Excel**
 
-如果Data Workbench机器上安装了Microsoft Excel，则会自动开始Microsoft Excel，并将某些可视化、某些图例和文本注释中的数据导出到您选择的模板Excel文件（[!DNL .xls]或[!DNL .xlsx]）中。 请参阅[导出到模板 Excel 文件](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302)。
+如果Data Workbench机上安装了Microsoft Excel，则会自动启动Microsoft Excel，并将某些可视化、某些图例和文本批注中的数据导出到您选择的模板Excel文件（[!DNL .xls]或[!DNL .xlsx]）。 请参阅[导出到模板 Excel 文件](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302)。
