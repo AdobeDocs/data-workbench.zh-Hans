@@ -3,7 +3,6 @@ description: 配置文件 Transform Mode.cfg 可让您暂停将数据处理到�
 title: Transform Mode.cfg 文件
 uuid: 6e875d02-341a-414c-90e5-aa7fa910ab81
 exl-id: 4faca063-3ca9-4c7c-9f04-ba2dfb647a77
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '528'
@@ -19,8 +18,8 @@ ht-degree: 72%
 
 **编辑数据集配置文件的 Transform Mode.cfg 文件**
 
-1. 在要导出其数据的用户档案中工作时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示目录的内容。
-1. 右键单击[!DNL Transform Mode.cfg]旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 此文件的复选标记显示在[!DNL User]列中。
+1. 在要导出其数据的配置文件中工作时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示目录的内容。
+1. 右键单击[!DNL Transform Mode.cfg]旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL User]列中将显示此文件的复选标记。
 1. 右键单击新创建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。 出现[!DNL Transform Mode.cfg]窗口。
 1. 参考下表，编辑该配置文件中的参数：
 
@@ -51,9 +50,9 @@ ht-degree: 72%
     </tbody> 
    </table>
 
-   在 Data Workbench 窗口内编辑 [!DNL Transform Mode.cfg] 文件时，可以使用快捷键实现基本编辑功能，包括剪切 (Ctrl+x)、复制 (Ctrl+c)、粘贴 (Ctrl+v)、撤消 (Ctrl+z)、恢复 (Ctrl+Shift+z)、选择部分（单击并拖动）以及选择全部 (Ctrl+a)。此外，您还可以使用快捷键将文本从一个配置文件([!DNL .cfg])复制并粘贴到另一个配置文件。
+   在 Data Workbench 窗口内编辑 [!DNL Transform Mode.cfg] 文件时，可以使用快捷键实现基本编辑功能，包括剪切 (Ctrl+x)、复制 (Ctrl+c)、粘贴 (Ctrl+v)、撤消 (Ctrl+z)、恢复 (Ctrl+Shift+z)、选择部分（单击并拖动）以及选择全部 (Ctrl+a)。此外，您还可以使用快捷方式将文本从一个配置文件([!DNL .cfg])复制并粘贴到另一个配置文件。
 
-1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]**，然后单击&#x200B;**[!UICONTROL Save]**。
-1. 要使本地所做的更改生效，请在[!DNL Profile Manager]中右键单击[!DNL User]列中Data Workbench [!DNL Transform Mode.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > **[!UICONTROL profile name]** ，其中用户档案名称是要导出用户档案的名称。 在配置文件同步之后，系统便会开始重新处理数据。
+1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]** ，然后单击&#x200B;**[!UICONTROL Save]**。
+1. 若要使本地所做的更改生效，请在[!DNL Profile Manager]中右键单击[!DNL User]列中Data Workbench [!DNL Transform Mode.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > **[!UICONTROL profile name]**，其中“配置文件名称”是要为其导出数据的配置文件名称。 在配置文件同步之后，系统便会开始重新处理数据。
 
    有关重新处理数据以进行导出的信息，请参阅[重新处理和重新转换](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)。
