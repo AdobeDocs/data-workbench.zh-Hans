@@ -3,7 +3,6 @@ description: 按照以下步骤使用“倾向评分”可视化。
 title: 设置倾向评分
 uuid: afc9aada-3bf9-4ce6-8c43-a955771065b4
 exl-id: e16a7062-636e-44a9-a07d-343d48bf1b4c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '536'
@@ -19,7 +18,7 @@ ht-degree: 55%
 
    ![](assets/propensity_visualization.png)
 
-1. 设置&#x200B;**[!UICONTROL Target]**（从属变量）。
+1. 设置&#x200B;**[!UICONTROL Target]**（因变量）。
 
    通过选择以下项设置因变量：
 
@@ -27,11 +26,11 @@ ht-degree: 55%
 
    或者
 
-* **[!UICONTROL Filter Editor]**。单击&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Filter Editor]**&#x200B;打开过滤器编辑器可视化。
+* **[!UICONTROL Filter Editor]**。单击&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Filter Editor]**&#x200B;以打开过滤器编辑器可视化。
 
    ![](assets/propensity_visualization_filter_editor.png)
 
-   在选择Dimension元素或筛选器作为从属变量后，单击&#x200B;**[!UICONTROL Set Target]**，输入用于描述该从属变量的名称。 然后，单击&#x200B;**[!UICONTROL OK]**（并确保选中滤镜框）以设置目标。
+   选择Dimension元素或过滤器作为因变量后，单击&#x200B;**[!UICONTROL Set Target]**，输入用于描述该因变量的名称。 然后，单击&#x200B;**[!UICONTROL OK]**（并确保突出显示过滤器框）以设置目标。
 
    ![](assets/propensity_visualization_setTarget.png)
 
@@ -42,16 +41,16 @@ ht-degree: 55%
 
    ![](assets/propensity_visualization_metrics.png)
 
-* **指标**. 从“倾向评分”工具栏中，从&#x200B;**[!UICONTROL Metrics]**&#x200B;菜单中选择一个量度。
+* **量度**. 从“倾向评分”工具栏的&#x200B;**[!UICONTROL Metrics]**&#x200B;菜单中选择一个量度。
 
-* **Dimension元素**:在工作区中右键单击并选择 **[!UICONTROL Table]**。选择一个或多个Dimension元素，然后使用`<Ctrl>` + `<Alt>`键拖动到&#x200B;**[!UICONTROL Independent Variables]**&#x200B;下的左列或&#x200B;**[!UICONTROL Element]**&#x200B;框。
+* **Dimension元素**:在工作区中右键单击并选择 **[!UICONTROL Table]**。选择一个或多个Dimension元素，然后使用`<Ctrl>` + `<Alt>`键拖到&#x200B;**[!UICONTROL Independent Variables]**&#x200B;下的左列或&#x200B;**[!UICONTROL Element]**&#x200B;框。
 
-1. 已设置 **[!UICONTROL Training Filter]**. 您可以通过单击“倾向评分”工具栏中的&#x200B;**[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]**&#x200B;来定义要得分的访客集。 这将提供一组数据子集（专门由要进行评分的访客所构建）。例如，在上月进行过访问的访客，在澳大利亚居住的访客，或查看过特定产品的访客。
+1. 已设置 **[!UICONTROL Training Filter]**. 您可以通过单击“倾向评分”工具栏中的&#x200B;**[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]**&#x200B;来定义要评分的访客集。 这将提供一组数据子集（专门由要进行评分的访客所构建）。例如，在上月进行过访问的访客，在澳大利亚居住的访客，或查看过特定产品的访客。
 
-   默认过滤器为&#x200B;**[!UICONTROL Train on Everyone]**，但可以通过在表中激活&#x200B;**[!UICONTROL Dimension Elements]**&#x200B;或使用&#x200B;**[!UICONTROL Filter Editor]**&#x200B;构建过滤器来更改它。
+   默认筛选器为&#x200B;**[!UICONTROL Train on Everyone]**，但您可以通过在表中激活&#x200B;**[!UICONTROL Dimension Elements]**&#x200B;或使用&#x200B;**[!UICONTROL Filter Editor]**&#x200B;构建筛选器来更改默认筛选器。
 
-   在选择Dimension元素或构建过滤器后，在激活后，单击&#x200B;**选项** > **设置培训过滤器**，输入用于描述过滤器的名称，然后单击&#x200B;**[!UICONTROL OK]**。
-1. 确定所有输入后，按&#x200B;**[!UICONTROL Go]**。
+   选择Dimension元素或构建过滤器后，在激活后，单击&#x200B;**选项** > **设置培训过滤器**，输入描述该过滤器的名称，然后单击&#x200B;**[!UICONTROL OK]**。
+1. 识别所有输入后，按&#x200B;**[!UICONTROL Go]**。
 
    ![](assets/propensity_visualization_GO.png)
 
@@ -74,7 +73,7 @@ ht-degree: 55%
 
    系统将显示&#x200B;**[!UICONTROL Model Complete]**，并在流程完成时生成评分模型。
 
-   右键单击&#x200B;**[!UICONTROL Model Complete]**&#x200B;将确定系统定义的评分模型的准确性。 范围从0%到100%的值将标识匹配&#x200B;**[!UICONTROL Target]**&#x200B;变量的访客的可能性。
+   右键单击&#x200B;**[!UICONTROL Model Complete]**&#x200B;将识别系统定义的评分模型的准确性。 介于0%到100%之间的值将识别访客匹配&#x200B;**[!UICONTROL Target]**&#x200B;变量的可能性。
 
    混淆矩阵提供以下四个计数的组合：实际正值 (AP)、实际负值 (AN)、预测正值 (PP) 和预测负值 (PN)。将生成的评分模型应用于余下 20% 的测试数据（对此我们知道准确答案），可获取这些数值。如果得分高于 50%，则预测为正类情况（与定义的事件匹配）。
 
@@ -97,6 +96,6 @@ ht-degree: 55%
  </tbody> 
 </table>
 
-1. 打开[提升或增益图](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a)或[模型查看器](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9)。
+1. 打开[提升度或增益图](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a)或[模型查看器](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9)。
 
    右键单击&#x200B;**模型完整**&#x200B;可视化，然后选择&#x200B;**[!UICONTROL Lift Chart]**、**[!UICONTROL Gain Chart]**&#x200B;或&#x200B;**[!UICONTROL Model Viewer.]**
