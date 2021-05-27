@@ -3,7 +3,6 @@ description: 有关 Data Workbench Server 在构建数据集时可处理的数�
 title: 事件数据记录字段
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
 exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1092'
@@ -19,13 +18,13 @@ ht-degree: 81%
 * [基准事件数据记录字段](../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#section-a882ed7aa6af41eeb45a55bf8c1ca3d7)
 * [派生字段](../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#section-b6c57ee2aa31469fbd5dab90e52bc677)
 
-## 关于事件数据  {#section-3a0705f8c1824017aa4effed9903efbe}
+## 关于事件数据 {#section-3a0705f8c1824017aa4effed9903efbe}
 
 用于构建数据集的事件数据位于称为日志源的文件中。日志源中提供的数据称为事件数据，因为每条数据记录都表示一条交易记录，或一个具有相关时间戳的事件的单个实例。
 
-日志源的事件数据由[!DNL Sensors]实时收集。 由[!DNL Sensors]从HTTP和应用程序服务器收集的事件数据将传输到Data Workbench Server，Data Workbench Server将数据转换为压缩日志([!DNL .vsl])文件。 Data Workbench Server 可读取位于无格式文件、XML 文件或 ODBC 数据源中的事件数据，并提供您定义的解码器来从这些不同的格式中提取通用的数据字段集。
+[!DNL Sensors]会实时收集日志源的事件数据。 由[!DNL Sensors]从HTTP和应用程序服务器中收集的事件数据会传输到Data Workbench Server，然后Data Workbench Server会将这些数据转换为压缩的日志([!DNL .vsl])文件。 Data Workbench Server 可读取位于无格式文件、XML 文件或 ODBC 数据源中的事件数据，并提供您定义的解码器来从这些不同的格式中提取通用的数据字段集。
 
-以下各节提供由[!DNL Sensors]收集或读取并提供给Data Workbench Server的数据字段(称为事件数据记录字段或日志条目字段)的相关信息。
+以下各节提供了由[!DNL Sensors]收集或读取并提供给Data Workbench Server的数据字段（称为事件数据记录字段或日志条目字段）的信息。
 
 >[!NOTE]
 >
@@ -39,7 +38,7 @@ ht-degree: 81%
 
 ## 基准事件数据记录字段 {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
-日志([!DNL .vsl])文件包含由[!DNL Sensors]从服务器收集并由Data Workbench Server在事件集构建过程中使用的数据字段。 下表列表了由[!DNL Sensor]记录的典型事件数据记录中的字段：
+日志([!DNL .vsl])文件包含由[!DNL Sensors]从服务器收集并由Data Workbench Server在数据集构建过程中使用的事件数据字段。 下表列出了由[!DNL Sensor]记录的典型事件数据记录中的字段：
 
 <table id="table_98E135FE4EAF44D6ADEB3C6C1C0BF6A4"> 
  <thead> 
@@ -166,7 +165,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> x-log-source-id </td> 
-   <td colname="col2"> <p>与特定日志条目的日志源对应的标识符。对于要记录的标识符，您必须在定义<span class="wintitle">传感器</span>、日志文件或 ODBC 数据源时，在<span class="filepath"> Log Processing.cfg</span> 文件的<span class="wintitle">日志源 ID</span> 字段中指定它。有关详细信息，请参阅<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">日志处理配置文件</a>。 </p> <p> 示例：来自 VSensor01。 </p> </td> 
+   <td colname="col2"> <p>与特定日志条目的日志源对应的标识符。对于要记录的标识符，您必须在定义<span class="wintitle">传感器</span>、日志文件或 ODBC 数据源时，在<span class="filepath"> Log Processing.cfg</span> 文件的<span class="wintitle">日志源 ID</span> 字段中指定它。有关更多信息，请参阅<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">日志处理配置文件</a>。 </p> <p> 示例：来自 VSensor01。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-mask </td> 
@@ -183,4 +182,4 @@ ht-degree: 81%
  </tbody> 
 </table>
 
-[!DNL Sensor]在服务器上使用时，可以从任何有效的HTTP请求或响应头或可通过服务器的API访问的变量中收集事件数据的字段。要收集此类数据字段，必须在[!DNL Sensor]的配置文件中指定所需的标题字段或变量。 [!DNL txlogd.conf]有关详细信息，请参阅&#x200B;*Data Workbench[!DNL Sensor]指南*。
+[!DNL Sensor]，在服务器上使用时，可以从任何有效的HTTP请求或响应标头中收集事件数据的字段，或通过服务器API向其提供的变量。要收集此类数据字段，必须在[!DNL txlogd.conf]配置文件中为[!DNL Sensor]指定所需的标题字段或变量。 有关详细信息，请参阅&#x200B;*Data Workbench[!DNL Sensor]指南*。
