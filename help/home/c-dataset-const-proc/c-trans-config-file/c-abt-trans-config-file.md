@@ -3,7 +3,6 @@ description: Transformation.cfg 文件控制数据集构建的转换阶段，在
 title: 关于转换配置文件
 uuid: 56e11b71-1a86-47d4-8d2a-2795532b0770
 exl-id: 860562d7-6ed3-486b-9f62-1bd06878bf7e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '176'
@@ -22,4 +21,4 @@ Transformation.cfg 文件控制数据集构建的转换阶段，在该阶段中�
 
 >[!NOTE]
 >
->[!DNL Transformation Dataset Include] 文件可以包含有关数据集构建的转换阶段的其他说明。这些文件位于任何继承配置文件的 Dataset\Transformation 目录内，并且通常定义特定于应用程序的参数（例如[!DNL Site] 应用程序的特定于 Web 的配置参数）。有关[!DNL Transformation Dataset Include]文件的信息，请参阅[数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。 有关Site特定于Web的配置参数的信息，请参阅[Web数据的配置设置](../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)。
+>[!DNL Transformation Dataset Include] 文件可以包含有关数据集构建转换阶段的其他说明。这些文件位于任何继承配置文件的 Dataset\Transformation 目录内，并且通常定义特定于应用程序的参数（例如[!DNL Site] 应用程序的特定于 Web 的配置参数）。有关[!DNL Transformation Dataset Include]文件的信息，请参阅[数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。 有关Site特定于Web的配置参数的信息，请参阅[Web数据的配置设置](../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)。
