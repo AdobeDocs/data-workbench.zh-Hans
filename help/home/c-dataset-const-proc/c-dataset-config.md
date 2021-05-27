@@ -3,7 +3,6 @@ description: 数据集配置是指编辑配置文件（其参数为数据集构�
 title: 了解数据集配置
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '916'
@@ -31,15 +30,15 @@ c_req_config_files.xml
 
    有关将继承配置文件添加到数据集配置文件 [!DNL Profile.cfg] 文件的说明，请参阅《服务器产品安装和管理指南》**。有关安装 Insight Server 群集或将数据集配置文件配置为在 Insight Server 群集上运行的信息，请参阅《服务器产品安装和管理指南》**。
 
-* **Dataset\Log Processing.cfg：**&#x200B;控制数据集构建过程中的日志处理阶段。请参阅[日志处理](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-8a63892878004dc389c7dad784fcb061)。 有关[!DNL Log Processing.cfg]文件的详细信息，请参阅[日志处理配置文件](../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
+* **Dataset\Log Processing.cfg：**&#x200B;控制数据集构建过程中的日志处理阶段。请参阅[日志处理](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-8a63892878004dc389c7dad784fcb061)。 有关[!DNL Log Processing.cfg]文件的更多信息，请参阅[日志处理配置文件](../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
 
-* **Dataset\Transformation.cfg：**&#x200B;控制数据集构建过程中的转换阶段。请参阅[Transformation](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda)。 [!DNL Transformation.cfg] 文件通常配置数据集以进行特定于配置文件的分析。有关[!DNL Transformation.cfg]文件的详细信息，请参阅[转换配置文件](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md)。
+* **Dataset\Transformation.cfg：**&#x200B;控制数据集构建过程中的转换阶段。请参阅[Transformation](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda)。 [!DNL Transformation.cfg] 文件通常配置数据集以进行特定于配置文件的分析。有关[!DNL Transformation.cfg]文件的更多信息，请参阅[转换配置文件](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md)。
 
-* **数据集包含文** 件： [!DNL dataset include] 文件包含数据集用户档案或文件中包含的 [!DNL Log Processing.cfg] 参 [!DNL Transformation.cfg] 数子集，但在继承用户档案中存储和管理。[!DNL Dataset include] 文件是主数据集配置文件的补充。有关详细信息，请参阅[数据集包含文件](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
+* **数据集包含文件：**  [!DNL dataset include] 文件包含数据集配置文件或文件中包含 [!DNL Log Processing.cfg] 的一部分参数，但在继承配置 [!DNL Transformation.cfg] 文件中进行了存储和管理。[!DNL Dataset include] 文件是对主数据集配置文件的补充。有关更多信息，请参阅[数据集包含文件](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
 
-在实施Adobe用户档案过程中提供给您的数据集包含一组数据集配置文件，您可以使用[!DNL Profile Manager]打开、编辑和保存这些文件。
+在Adobe应用程序实施期间提供给您的数据集配置文件包含一组数据集配置文件，您可以使用[!DNL Profile Manager]打开、编辑和保存这些文件。
 
-有关[!DNL Profile Manager]的信息，请参阅&#x200B;*Insight用户指南*。
+有关[!DNL Profile Manager]的信息，请参阅&#x200B;*《Insight用户指南》*。
 
 <!--
 c_addl_config_files.xml
