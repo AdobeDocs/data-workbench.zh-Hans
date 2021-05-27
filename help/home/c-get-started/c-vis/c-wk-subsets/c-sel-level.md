@@ -3,7 +3,6 @@ description: 创建子集时，必须指定级别。
 title: 选择级别
 uuid: 18c2bee7-a70f-4510-978f-830b56780f47
 exl-id: 39d8407c-e2ec-4080-8918-26cafbf988df
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '149'
