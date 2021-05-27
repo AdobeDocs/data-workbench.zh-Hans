@@ -1,9 +1,8 @@
 ---
-description: 设置有关元素点图层文件的格式信息。
+description: 有关元素点层文件的格式化信息。
 title: 元素点层文件格式
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
 exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '418'
@@ -13,9 +12,9 @@ ht-degree: 92%
 
 # 元素点层文件格式{#element-point-layer-file-format}
 
-设置有关元素点图层文件的格式信息。
+有关元素点层文件的格式化信息。
 
-引用查找文件的每个元素点层[!DNL .layer]文件必须使用以下模板进行格式化：
+引用查找文件的每个元素点层[!DNL .layer]文件都必须使用以下模板进行格式化：
 
 ```
 Layer = ElementPointLayer:
@@ -65,7 +64,7 @@ Layer = ElementPointLayer:
    <td colname="col2">所含元素与<span class="wintitle">键</span>列中的数据行对应的维度名称（在转换配置文件中定义）。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 指标 </td> 
+   <td colname="col1"> 量度 </td> 
    <td colname="col2"> 对 Dimension（维度）参数中指定的维度求得的量度名称。 </td> 
   </tr> 
   <tr> 
