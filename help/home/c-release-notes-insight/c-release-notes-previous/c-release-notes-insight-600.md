@@ -3,7 +3,6 @@ description: Data Workbench 6.0.4 中引入的新增功能，包括错误修复�
 title: Data Workbench 6.0 发行说明
 uuid: b348425e-3304-4db7-a280-479a34452bdb
 exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1679'
@@ -43,7 +42,7 @@ Data Workbench 现在支持使用输入法编辑器 (IME) 作为辅助文本输�
 
 有关其他服务器端升级信息，请参阅[服务器升级要求](../../../home/c-release-notes-insight/release-notes.md)。
 
-**将客户端的zbin文件升级（从5.x版升级到6.0版）**
+**将客户端的zbin文件升级（从版本5.x升级到6.0）**
 
 1. 为确保客户端在此升级期间不会从 Insight Server 获取更新，请将 Insight.cfg 参数设置为 false。
 
@@ -52,7 +51,7 @@ Data Workbench 现在支持使用输入法编辑器 (IME) 作为辅助文本输�
    ```
 
 1. 重新启动 Insight 客户端。
-1. 导览至“软件和文档”用户档案(SoftDocs用户档案)并下载所需的&#x200B;**[!UICONTROL Insight.zbin]**&#x200B;文件：[!DNL Software\Insight Client\v6.00\Insight_6.00.zip]
+1. 导航到“软件和文档”配置文件（SoftDocs配置文件）并下载所需的&#x200B;**[!UICONTROL Insight.zbin]**&#x200B;文件：[!DNL Software\Insight Client\v6.00\Insight_6.00.zip]
 
 1. 将 Insight.zbin 文件复制到 Insight.exe 文件所在的文件夹。
 1. 为确保 Insight 客户端现在从 Insight Server 获取更新，请将 Insight.cfg 文件参数更改为 true：
@@ -87,13 +86,13 @@ Data Workbench 现在支持使用输入法编辑器 (IME) 作为辅助文本输�
 
 >[!IMPORTANT]
 >
->建议用户在更新时使用Insight Server 6.0的全新安装来升级其服务器群集。
+>建议用户在更新时使用最新安装的Insight Server 6.0来升级其服务器群集。
 
 此外，建议客户端也使用最新安装的 Insight Server 6.0 来升级服务器聚类。
 
 ## 升级服务器聚类
 
-**准备语言文件（.zbin 文件）。** Insight管理员选择所 `<language>.zbin` 需语言的文件(例如：zh-cn.zbin)。 `/localization/<language>.zbin` 然后，管理员复制语言文件，并将其重命名为“insight.zbin”。
+**准备语言文件（.zbin 文件）。** Insight管理员会选择 `<language>.zbin` 所需语言的文件(例如：zh-cn.zbin)，位于文件夹 `/localization/<language>.zbin` 中。然后，管理员复制语言文件，并将其重命名为“insight.zbin”。
 
 在准备语言文件 (.zbin) 后，需要更新 Insight Client 和 Report Server。Insight Client 会在[客户端升级过程](../../../home/c-release-notes-insight/release-notes.md)期间更新，而在大多数情况下，Insight 管理员将更新 Report Server。
 
@@ -131,7 +130,7 @@ Data Workbench 现在支持使用输入法编辑器 (IME) 作为辅助文本输�
    1. 导航至报表服务器安装文件夹。
    1. 键入下列命令以启动该服务：
 
-      * 英语：[!DNL ReportServer.exe -RegServer -Locale -en-us]
+      * 对于英语：[!DNL ReportServer.exe -RegServer -Locale -en-us]
       * 对于中文：[!DNL ReportServer.exe -RegServer -Locale -zh-cn]
 
 1. 验证报表服务器是否使用正确的参数运行：
@@ -167,7 +166,7 @@ Profile = profileInfo:
 
 >[!NOTE]
 >
->配置PAServer.cfg并将其保存到自定义用户档案后，需要在整个站点中重新启动Insight Server。
+>配置PAServer.cfg并将其保存到自定义配置文件后，需要在整个站点中重新启动Insight Server。
 
 **升级 Report Server。**&#x200B;您将需要更新 Report Server 的字体和启动参数。
 
@@ -253,7 +252,7 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 ## 修复 {#section-203f917dd6224114a1f801309c4c2cee}
 
-* 现在，用于离开工作区而不保存更改的键组合已更新为&#x200B;**[!UICONTROL `<Ctrl>`+`<Backspace>`]**。 以前，您可以按`<Ctrl>` + `<Delete>`撤消更改并关闭工作区。
+* 现在，用于离开工作区而不保存更改的键组合已更新为&#x200B;**[!UICONTROL `<Ctrl>`+`<Backspace>`]**。 以前，通过按`<Ctrl>` + `<Delete>`可撤消更改并关闭工作区。
 
 ## Data Workbench 6.0.4 发行说明{#data-workbench-release-notes}
 
