@@ -3,7 +3,6 @@ description: 如何创建输入单元格。
 title: 创建输入单元格
 uuid: 9b2883e4-b12a-4279-9894-37a1df6c34b3
 exl-id: 1e55696e-fcc8-4521-b37b-f52409229e6d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '137'
@@ -15,7 +14,7 @@ ht-degree: 62%
 
 如何创建输入单元格。
 
-当单元格B1格式化为输入单元格时（通过右键单击该单元格并单击&#x200B;**[!UICONTROL Format]** > **[!UICONTROL Input Cell]**），并锁定可视化（通过右键单击其上边框并单击&#x200B;**[!UICONTROL Locked]**），可以将输入单元格的值更改为“即时”视图结果。
+当单元格B1格式化为输入单元格（通过右键单击该单元格并单击&#x200B;**[!UICONTROL Format]** > **[!UICONTROL Input Cell]**）并锁定可视化（通过右键单击其上边框并单击&#x200B;**[!UICONTROL Locked]**）时，可以更改输入单元格的值以查看“即时”结果。
 
 以下示例显示一个工作表，该工作表显示某个输入单元格的公式。
 
