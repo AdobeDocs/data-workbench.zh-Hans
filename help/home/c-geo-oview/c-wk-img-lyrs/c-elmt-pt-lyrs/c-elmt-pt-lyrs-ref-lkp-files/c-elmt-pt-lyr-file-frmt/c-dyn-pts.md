@@ -3,7 +3,6 @@ description: 在创建使用动态点的元素点层时，经纬度数据会嵌�
 title: 定义使用动态点的元素点层
 uuid: 5f1b4638-fe45-40be-b963-18dcd5d09afa
 exl-id: ad849fe7-b909-40ef-835f-f1764e008de9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '457'
@@ -27,7 +26,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->使用[!DNL Dynamic Points]时，必须确保层文件中指定的维度基数是合理的。 如果数据集的每一行都有不同的纬度和经度，则该维度会很快填满，并且大部分行都归为“Small Elements”元素。由于“Small Elements”元素没有纬度和经度，因此它不会在地球上显示。
+>使用[!DNL Dynamic Points]时，必须确保层文件中指定维度的基数是合理的。 如果数据集的每一行都有不同的纬度和经度，则该维度会很快填满，并且大部分行都归为“Small Elements”元素。由于“Small Elements”元素没有纬度和经度，因此它不会在地球上显示。
 
 ## 元素点层文件格式  {#section-bbcc2baa2f754dba81eba93339a97cbd}
 
@@ -60,7 +59,7 @@ Layer = ElementPointLayer:
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 指标 </td> 
+   <td colname="col1"> 量度 </td> 
    <td colname="col2"> 对 Dimension（维度）参数中指定的维度求得的量度名称。 </td> 
   </tr> 
   <tr> 
