@@ -3,7 +3,6 @@ description: 通过依赖关系图，可以可视化和管理配置文件组件�
 title: 依赖关系图
 uuid: c869267c-5fa9-43b8-b4d4-06c7a36bfa8e
 exl-id: 4618c735-f507-4abc-a4b4-d52a37c64c60,733407ca-3326-406a-a642-a3ea3d3f6b8b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '488'
@@ -15,7 +14,7 @@ ht-degree: 87%
 
 通过依赖关系图，可以可视化和管理配置文件组件的配置。
 
-* **数据集组** 件：在数据集、文件和文件中定义的日志源、过滤器、字段、转 [!DNL Log Processing.cfg]换 [!DNL Transformation.cfg]和扩展 [!DNL dataset include] 维度。
+* **数据集组件：** 在数据集的、和文件中定义的日志源、过滤器、字段、转换和扩 [!DNL Log Processing.cfg]展 [!DNL Transformation.cfg]维 [!DNL dataset include] 度。
 
 * **查询模型组件：**&#x200B;在 Dimensions、Metrics 和 Filters 文件夹中定义的维度、量度和过滤器。
 * **工作区和可视化：**&#x200B;工作区、报表、菜单选项和全局层。
@@ -26,8 +25,8 @@ ht-degree: 87%
 
 ## 显示数据集组件  {#section-3e51c09c23cc40aeade2e6ad0fa7c8d2}
 
-1. 在依赖关系图中右键单击，然后单击&#x200B;**[!UICONTROL Display]**。
-1. 选择 **[!UICONTROL Dataset]**. [!DNL Dataset]的左侧显示X。
+1. 右键单击依赖关系图，然后单击&#x200B;**[!UICONTROL Display]**。
+1. 选择 **[!UICONTROL Dataset]**. 在[!DNL Dataset]的左侧出现X。
 
 有关其他显示选项的详细信息，请参阅《Data Workbench 用户指南》**。
 
@@ -36,7 +35,7 @@ ht-degree: 87%
 ![](assets/vis_DependencyMap.png)
 
 * 黄绿色节点表示数据集中定义的一个或多个日志源或过滤器。日志源的节点始终显示在图中的最左侧。
-* 灰色节点表示在[!DNL Log Processing.cfg]或[!DNL Log Processing Include]文件的“字段”参数中列出的字段。
+* 灰色节点表示在[!DNL Log Processing.cfg]或[!DNL Log Processing Include]文件的Fields（字段）参数中列出的字段。
 
 * 蓝色节点表示转换。
 * 绿色节点表示扩展维度。
@@ -53,7 +52,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->依赖关系图中的高亮路径不构成选择。
+>依赖关系图中突出显示的路径不构成选择。
 
 右键单击某节点，可以看到有关图中显示的每个组件的标识信息，并可以选择可用来查看该组件更多详细信息或编辑该组件的菜单选项。此外，您还可以执行文本搜索和显示有关转换和扩展维度的性能信息。
 
