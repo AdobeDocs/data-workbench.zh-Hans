@@ -1,9 +1,8 @@
 ---
-description: 默认情况下，Insight Server监听端口80（对于HTTP）和443（对于HTTPS）。
+description: 默认情况下， Insight Server监听端口80（对于HTTP）和443（对于HTTPS）。
 title: 检查端口设置
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
 exl-id: 924860e3-5afa-4c0f-bb7a-d38d5c1355b7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '114'
@@ -13,13 +12,13 @@ ht-degree: 7%
 
 # 检查端口设置{#checking-the-port-settings}
 
-默认情况下，Insight Server监听端口80（对于HTTP）和443（对于HTTPS）。
+默认情况下， Insight Server监听端口80（对于HTTP）和443（对于HTTPS）。
 
-如果这些端口已经由安装[!DNL Insight Server]的计算机上的其他进程分配，请使用以下过程更改[!DNL Insight Server’s]端口分配。
+如果这些端口已经由安装了[!DNL Insight Server]的计算机上的其他进程分配，请使用以下过程更改[!DNL Insight Server’s]端口分配。
 
 **更改端口分配**
 
-1. 导览至安装[!DNL Insight Server]的目录中的[!DNL Components]文件夹。
+1. 导航到安装[!DNL Insight Server]的目录中的[!DNL Components]文件夹。
 
    示例：[!DNL C:\Adobe\Server\Components]
 
