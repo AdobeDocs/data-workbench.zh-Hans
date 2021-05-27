@@ -3,7 +3,6 @@ description: 时间维度允许您基于为 Input Time (1970 epoch)（输入时�
 title: 时间维度
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
 exl-id: f9534b24-3a16-4220-bac2-bc541e121005
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '465'
