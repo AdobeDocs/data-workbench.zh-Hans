@@ -1,9 +1,8 @@
 ---
-description: 中继器功能的管理任务与Insight Server的管理非常相似。
+description: 中继器功能的管理任务与Insight Server的管理任务非常相似。
 title: 管理中继器
 uuid: 4fbfce3a-2610-4dcd-a585-cb7ee07b90db
 exl-id: 5c7a4f95-be4b-4c2c-8dea-19037ba0b5cc
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '232'
@@ -13,22 +12,22 @@ ht-degree: 12%
 
 # 管理中继器{#administering-repeater}
 
-中继器功能的管理任务与Insight Server的管理非常相似。
+中继器功能的管理任务与Insight Server的管理任务非常相似。
 
-下列行政任务适用；在每个步骤之后，都会记下您必须进行的例外或更改，以便[!DNL Insight Server] DPU可以与repeater服务器一起使用。
+下列管理任务适用；必须进行的例外或更改，以便在每个步骤之后记录[!DNL Insight Server] DPU与中继服务器一起使用。
 
 * [重新验证数字证书](../../../home/c-inst-svr/c-admin-inst-svr/c-reval-dgtl-cert.md#concept-f0020a6f0d6f477099b7a8f0b6e2944c)
-* [确认服务正在运行](../../../home/c-inst-svr/c-admin-inst-svr/c-cfrm-svc-rng.md#concept-15b046e92d254bbd95dec829abc76677) 在“服务”控制面板中的服务列表中，查找“Repeater”。
+* [确认服务正在运行](../../../home/c-inst-svr/c-admin-inst-svr/c-cfrm-svc-rng.md#concept-15b046e92d254bbd95dec829abc76677) 在“服务”控制面板的服务列表中，查找“中继器”。
 
 * [配置访问控制](../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d)
-* [监视磁](../../../home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/c-mntr-disk-spc.md#concept-a83447e44f4e47aba282328be395a0d4) 盘空间应用于中继器服务器的数据类型包括事件、操作系统和系统数据。如果您正在使用repeater服务器进行备份存储，并且有必要在计算机上提供更多数据存储空间，则可以将除当前最新日志文件之外的所有日志文件移动到另一台计算机或存储介质（zip驱动器、磁带等）。 移动数据不要求您停止Repeater服务。
+* [监视磁盘](../../../home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/c-mntr-disk-spc.md#concept-a83447e44f4e47aba282328be395a0d4) 空间应用于中继服务器的数据类型包括事件、操作系统和系统数据。如果您使用中继服务器进行备份存储，并且有必要在计算机上提供更多的数据存储空间，则可以将除当前日志文件之外的所有日志文件移动到另一台计算机或数据存储介质（zip驱动器、磁带等）。 移动数据不需要停止中继器服务。
 
    >[!NOTE]
    >
-   >在从Repeater中删除[!DNL .vsl]文件的备份副本之前，应验证其完整性。
+   >在从中继器中删除任何文件之前，应验证[!DNL .vsl]文件的备份副本的完整性。
 
 * [配置管理警报](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa)
 * [监控管理事件](../../../home/c-inst-svr/c-admin-inst-svr/t-mntr-adm-evts.md#task-4c78325b3e6e4dde8fa94c1896e19e34)
 * [监控审计日志](../../../home/c-inst-svr/c-admin-inst-svr/t-mntr-adt-lgs.md#task-5dd9830424fe440ea1369215a1aca231)
 * [配置通信](../../../home/c-inst-svr/c-admin-inst-svr/t-config-com.md#task-471305ecf7a644789a288f93c42514ec)
-* [重新启](../../../home/c-inst-svr/c-admin-inst-svr/t-rest-svc.md#task-97f97f1019bc440080ab2fddfdc04c74)  [!DNL Repeater] 动服务功能可以连续运行。如果重新启动计算机，中继器将自动重新启动。 如果需要手动开始和停止中继器，可以使用Windows中的“服务”控制面板执行此操作。
+* [重新启](../../../home/c-inst-svr/c-admin-inst-svr/t-rest-svc.md#task-97f97f1019bc440080ab2fddfdc04c74)  [!DNL Repeater] 动服务功能旨在连续运行。如果重新启动计算机，中继器将自动重新启动。 如果需要手动启动和停止中继器，可以使用Windows中的“服务”控制面板执行此操作。
