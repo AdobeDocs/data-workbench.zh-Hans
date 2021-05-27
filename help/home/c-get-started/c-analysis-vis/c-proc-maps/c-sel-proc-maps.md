@@ -3,7 +3,6 @@ description: 可以在流程图中进行选择，以创建包含或排除与某�
 title: 从流程图中选择
 uuid: 7fd00090-c9ab-4bb6-8584-7de7b6f4b68c
 exl-id: 8ede395f-906a-49e0-8ff8-b43a326275e5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '393'
@@ -19,7 +18,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->您可以更改流程图的默认组维。 请参阅[配置流程图](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6)。
+>您可以更改流程图的默认组维度。 请参阅[配置流程图](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6)。
 
 当您在流程图中根据节点做出选择时，即选择了包含该节点的组维度的所有元素。为了更好地了解组维度的作用，考虑以下示例：
 
@@ -31,9 +30,9 @@ ht-degree: 81%
 1. 右键单击流程图中的任何节点。
 1. 单击以下选项之一，以基于该节点进行选择：
 
-   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL through node name]**:过滤器数据，以包括通过节点传递的组维度的所有元素，方法是过滤掉未通过节点的所有会话。
+   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL through node name]**:过滤数据以包含通过节点的组维度的所有元素，方法是过滤掉未通过节点的所有会话。
 
-   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL NOT through node name]**:过滤器数据，以包括未通过节点的组维度的所有元素，方法是过滤掉通过节点的所有会话。
+   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL NOT through node name]**:通过过滤掉通过节点的所有会话，过滤数据以包含未通过节点的组维度的所有元素。
 
 ![](assets/vis_2DProcessMap_Selections_Movie.png)
 
