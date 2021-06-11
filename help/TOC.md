@@ -7,7 +7,7 @@ feature: Data Workbench
 user-guide-title: Data Workbench 帮助
 user-guide-description: 了解 Data Workbench 的多渠道功能，其中包括 Data Workbench 客户端指南、安装指南、数据集配置指南等内容。
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -42,36 +42,36 @@ ht-degree: 100%
    + [工作站要求](home/c-install-insight/c-data-workbench-client-install.md)
    + 工作站设置 {#workstation-setup}
       + [工作站设置概述](home/c-install-insight/install-setup/install-setup.md)
-      + [工作站安装向导](home/c-install-insight/install-setup/dwb-client-installer.md)
+      + [工作站设置向导](home/c-install-insight/install-setup/dwb-client-installer.md)
       + [安装程序包中包含的文件](home/c-install-insight/install-setup/c-install-pkg.md)
       + [安装输入法编辑器](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
       + [安装 Terrain Images.cfg 文件](home/c-install-insight/install-setup/t-trn-imgs-file.md)
       + [设置本地化语言](home/c-install-insight/install-setup/c-setting-localized-languages.md)
       + [下载和安装数字证书](home/c-install-insight/install-setup/c-dgtl-crtf.md)
       + [配置与 Insight Server 的连接](home/c-install-insight/install-setup/c-conn-isvr.md)
-      + [连接疑难排解](home/c-install-insight/install-setup/t-conn-trbsh.md)
+      + [连接故障排除](home/c-install-insight/install-setup/t-conn-trbsh.md)
    + 升级 Data Workbench {#upgrade-dwb}
       + [升级 Data Workbench 概述](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
-      + [将 6.4 升级至 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
-      + [将 6.3 升级至 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
-      + [DWB 服务器升级：从 6.1 到 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
+      + [从 6.4 升级至 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
+      + [从 6.3 升级至 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
+      + [DWB 服务器升级：从 6.1 至 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
       + [从 Data Workbench 6.0 升级至 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
       + [从 Data Workbench 5.5 升级至 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
-+ 客户 {#client}
++ 客户端 {#client}
    + [打开 Data Workbench](home/c-get-started/t-open-ins.md)
    + [自动配置用户](home/c-get-started/c-self-provisioning-users.md)
    + [脱机工作和联机工作](home/c-get-started/c-off-on.md)
    + [配置文件](home/c-get-started/c-work-prof.md)
-   + [工作台](home/c-get-started/c-unstd-wktp.md)
+   + [操作台](home/c-get-started/c-unstd-wktp.md)
    + [文件版本控制](home/c-get-started/c-unstd-file-ver.md)
-   + [使用工作台缩略图菜单](home/c-get-started/c-wktp-thumb-menu.md)
+   + [使用操作台缩略图菜单](home/c-get-started/c-wktp-thumb-menu.md)
    + [配置边栏](home/c-get-started/c-config-sidebar.md)
    + 显示工作区 {#display-workspaces}
       + [显示工作区概述](home/c-get-started/c-work-worksp/c-work-worksp.md)
       + [显示工作区](home/c-get-started/c-work-worksp/c-dis-worksp.md)
       + [创建工作区](home/c-get-started/c-work-worksp/c-create-worksp.md)
       + [工作区“文件”菜单](home/c-get-started/c-work-worksp/c-use-wksp-file-menu.md)
-      + [重新拟合工作区](home/c-get-started/c-work-worksp/c-refit-wksp.md)
+      + [重新调整工作区](home/c-get-started/c-work-worksp/c-refit-wksp.md)
       + [共享工作区](home/c-get-started/c-work-worksp/c-share-wksp.md)
       + [保存工作区](home/c-get-started/c-work-worksp/c-save-wksp.md)
       + [导出工作区](home/c-get-started/c-work-worksp/c-ex-wksp.md)
@@ -88,12 +88,12 @@ ht-degree: 100%
       + [“窗口控件”菜单](home/c-get-started/c-wk-win-wksp/c-win-ctrls-menu.md)
       + [导出窗口数据](home/c-get-started/c-wk-win-wksp/c-exp-win-data.md)
    + 导出数据 {#export-data}
-      + [使用区段导出来导出数据](home/c-get-started/c-exp-data-seg-exp/c-exp-data-seg-exp.md)
+      + [使用区段导出功能导出数据](home/c-get-started/c-exp-data-seg-exp/c-exp-data-seg-exp.md)
       + [区段导出](home/c-get-started/c-exp-data-seg-exp/c-sgmt-expt.md)
       + [输出格式](home/c-get-started/c-exp-data-seg-exp/c-abt-otpt-frmt.md)
       + [配置区段以供导出](home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md)
       + [创建用于区段导出的维度](home/c-get-started/c-exp-data-seg-exp/c-dim-sgmt-expt.md)
-      + [拥有自定义标题的区段导出](home/c-get-started/c-exp-data-seg-exp/c-segment-export.md)
+      + [带有自定义标题的区段导出](home/c-get-started/c-exp-data-seg-exp/c-segment-export.md)
       + [通过 S/FTP 传递导出区段](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
       + [配置文件与受众导出](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
       + [导出到 Analytics 核心服务](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
@@ -106,13 +106,13 @@ ht-degree: 100%
       + [部署归因配置文件](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-profile-deploy.md)
       + [归因模型](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-models.md)
       + [最佳拟合归因](home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md)
-      + [构建最适合归因模型](home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md)
-   + 可视化{#visualizations}
+      + [构建最佳拟合归因模型](home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md)
+   + 可视化图表 {#visualizations}
       + [可视化图表概述](home/c-get-started/c-vis/c-vis.md)
       + [打开可视化图表](home/c-get-started/c-vis/c-open-vis.md)
       + [快速参考](home/c-get-started/c-vis/c-qk-ref.md)
       + 进行选择 {#make-selections}
-         + [在可视化图表中选择](home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md)
+         + [在可视化图表中进行选择](home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md)
          + [了解选择如何影响其他可视化图表](home/c-get-started/c-vis/c-sel-vis/c-sel-aff-vis.md)
          + [使用其他方法选择数据](home/c-get-started/c-vis/c-sel-vis/c-sel-data-other-mthd.md)
          + [缩放以查看可视化图表](home/c-get-started/c-vis/c-sel-vis/dwb-zoom-regression-view.md)
@@ -149,7 +149,7 @@ ht-degree: 100%
       + [和弦可视化图表](home/c-get-started/c-analysis-vis/c-chord-visualization.md)
       + 关联矩阵 {#correlation-analysis}
          + [关联矩阵概述](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md)
-         + [关于皮尔逊关联系数](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-pearsons.md)
+         + [关于皮尔逊相关系数](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-pearsons.md)
          + [关联分析用例](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-use-cases.md)
          + [关联矩阵中的二进制过滤器](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-binary-filter.md)
       + 决策树生成器 {#decision-trees}
@@ -174,7 +174,7 @@ ht-degree: 100%
          + [地球概述](home/c-get-started/c-analysis-vis/c-globes/c-globes.md)
          + [使用地球](home/c-get-started/c-analysis-vis/c-globes/c-work-globes.md)
          + [显示图层](home/c-get-started/c-analysis-vis/c-globes/c-disp-layers.md)
-         + [在地球上选择](home/c-get-started/c-analysis-vis/c-globes/c-sel-globe.md)
+         + [在地球上进行选择](home/c-get-started/c-analysis-vis/c-globes/c-sel-globe.md)
       + 图形 {#graphs}
          + [图形概述](home/c-get-started/c-analysis-vis/c-graphs/c-graphs.md)
          + [添加和更改量度](home/c-get-started/c-analysis-vis/c-graphs/c-add-chg-metrics.md)
@@ -202,10 +202,10 @@ ht-degree: 100%
          + [显示量度信息](home/c-get-started/c-analysis-vis/c-path-browsers/c-disp-metric-info.md)
          + [扩展路径](home/c-get-started/c-analysis-vis/c-path-browsers/c-ex-paths.md)
          + [显示路径的开始和结尾](home/c-get-started/c-analysis-vis/c-path-browsers/c-disp-starts-.md)
-         + [更改路径浏览器的根](home/c-get-started/c-analysis-vis/c-path-browsers/c-chg-root.md)
+         + [更改路径浏览器的根路径](home/c-get-started/c-analysis-vis/c-path-browsers/c-chg-root.md)
          + [选择路径](home/c-get-started/c-analysis-vis/c-path-browsers/t-sel-paths.md)
          + [查看路径中的更多元素](home/c-get-started/c-analysis-vis/c-path-browsers/c-el-paths.md)
-      + [饼状图](home/c-get-started/c-analysis-vis/c-pie-chart.md)
+      + [饼图](home/c-get-started/c-analysis-vis/c-pie-chart.md)
       + 流程图 {#process-maps}
          + [流程图概述](home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md)
          + [流程图类型](home/c-get-started/c-analysis-vis/c-proc-maps/c-types-proc-maps.md)
@@ -221,27 +221,27 @@ ht-degree: 100%
          + [激活颜色链接](home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md)
          + [显示量度数量](home/c-get-started/c-analysis-vis/c-proc-maps/c-disp-metric-quantities.md)
          + [添加标注](home/c-get-started/c-analysis-vis/c-proc-maps/c-add-callouts.md)
-      + 倾向评分 {#visitor-propensity}
-         + [倾向评分概述](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md)
-         + [设置倾向评分](home/c-get-started/c-analysis-vis/c-visitor-propensity/t-propensity-steps.md)
-         + [计算倾向评分](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-confusion-matrix.md)
+      + 倾向打分 {#visitor-propensity}
+         + [倾向打分概述](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md)
+         + [设置倾向打分](home/c-get-started/c-analysis-vis/c-visitor-propensity/t-propensity-steps.md)
+         + [计算倾向打分](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-confusion-matrix.md)
          + [倾向增益图和提升图](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md)
          + [模型查看器](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md)
-         + [复杂过滤器说明](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-complex-filter.md)
+         + [复杂过滤器描述](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-complex-filter.md)
       + [雷达可视化图表](home/c-get-started/c-analysis-vis/t-radar-vis.md)
       + [表格中的统计显示](home/c-get-started/c-analysis-vis/c-stat-disp-tables.md)
       + 区段 {#segments}
          + [区段概述](home/c-get-started/c-analysis-vis/c-seg/c-seg.md)
          + [创建区段维度](home/c-get-started/c-analysis-vis/c-seg/c-create-seg-dim.md)
          + [重用区段可视化图表](home/c-get-started/c-analysis-vis/c-seg/c-reuse-seg-vis.md)
-      + 表格 {#tables}
+      + 表 {#tables}
          + [表概述](home/c-get-started/c-analysis-vis/c-tables/c-tables.md)
          + [添加和更改量度](home/c-get-started/c-analysis-vis/c-tables/c-add-metrics.md)
          + [添加、更改和移动维度](home/c-get-started/c-analysis-vis/c-tables/c-add-chg-dim.md)
          + [将数据拟合到窗口](home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md)
          + [更改表显示](home/c-get-started/c-analysis-vis/c-tables/c-chg-tbl-disp.md)
          + [对表中的数据排序](home/c-get-started/c-analysis-vis/c-tables/c-sort-data.md)
-         + [数据掩码](home/c-get-started/c-analysis-vis/c-tables/c-mask-data.md)
+         + [遮盖数据](home/c-get-started/c-analysis-vis/c-tables/c-mask-data.md)
          + [启用系列图例](home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md)
          + [从表中打开 URI](home/c-get-started/c-analysis-vis/c-tables/c-open-uri-tbls.md)
          + [应用层次结构视图](home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md)
@@ -266,10 +266,10 @@ ht-degree: 100%
          + [定义引用查找文件的元素点层](home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md)
          + [定义使用动态点的元素点层](home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md)
          + [使新元素点层可用](home/c-get-started/c-im-layers/c-elmt-pt-layers/t-new-elmt-pt-layer-.md)
-      + 使用矢量层 {#vector-layers}
-         + [使用矢量层](home/c-get-started/c-im-layers/c-vctr-layers/c-vctr-layers.md)
-         + [定义引用矢量文件的矢量层](home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md)
-         + [使新矢量层可用](home/c-get-started/c-im-layers/c-vctr-layers/t-make-new-vctr-layer-av.md)
+      + 使用矢量图层 {#vector-layers}
+         + [使用矢量图层](home/c-get-started/c-im-layers/c-vctr-layers/c-vctr-layers.md)
+         + [定义引用矢量文件的矢量图层](home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md)
+         + [使新矢量图层可用](home/c-get-started/c-im-layers/c-vctr-layers/t-make-new-vctr-layer-av.md)
    + 管理界面 {#admin-ui}
       + [管理界面](home/c-get-started/c-admin-intrf/c-admin-intrf.md)
       + [打开管理界面](home/c-get-started/c-admin-intrf/c-op-admin-intrf.md)
@@ -327,9 +327,9 @@ ht-degree: 100%
          + [自定义配置文件管理器和服务器文件管理器](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-cstm-prof-files-mgrs.md)
          + [创建配置文件管理器](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-prof-mgrs.md)
          + [创建服务器文件管理器](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md)
-      + 自定义工作台选项卡 {#cstm-wktp-tabs}
-         + [自定义工作台选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)
-         + [向工作台添加选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-add-tabs.md)
+      + 自定义操作台选项卡 {#cstm-wktp-tabs}
+         + [自定义操作台选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)
+         + [向操作台添加选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-add-tabs.md)
          + [更改选项卡顺序](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-chg-ordr-tabs.md)
          + [将子文件夹显示为子选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-sbfldrs-sbtabs.md)
          + [隐藏或移除选项卡](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-hide-rmv-tabs.md)
@@ -366,7 +366,7 @@ ht-degree: 100%
       + [关于日志处理配置文件](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [编辑日志处理配置文件](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
       + [日志源](home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md)
-      + [配置 Data Workbench Server 文件服务器单元](home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)
+      + [配置 Data Workbench 服务器文件服务器单元](home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)
       + [日志处理参数](home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md)
       + [ODBC 数据源](home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md)
       + [有关日志处理配置文件的注意事项](home/c-dataset-const-proc/c-log-proc-config-file/c-cons-log-proc-config-file.md)
@@ -412,17 +412,17 @@ ht-degree: 100%
             + [ExtractValue](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-exvalue.md)
             + [Flatten](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md)
             + [格式](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md)
-            + [Hash](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md)
+            + [哈希](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md)
             + [Haversine](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-haversine.md)
             + [IPLookup](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-iplookup.md)
             + [LookupRows](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-lookuprows.md)
-            + [Math](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-math.md)
-            + [Merge](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-merge.md)
+            + [数学](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-math.md)
+            + [合并](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-merge.md)
             + [PullNameValues](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-pullnameval.md)
             + [REMatch](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md)
             + [RETransform](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md)
             + [Sessionize](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-sessionize.md)
-            + [Split](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-split.md)
+            + [拆分](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-split.md)
             + [Tokenize](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md)
             + [Union](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-union.md)
          + URI 转换 {#uri-transformations}
@@ -432,10 +432,10 @@ ht-degree: 100%
             + [ReplaceURI](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-uri-transf/c-replaceuri.md)
             + [UnescapeURI](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-uri-transf/c-unescapeuri.md)
          + [DeviceAtlas 分配](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
-      + 集成对照数据 {#integrate-lookup-data}
-         + [集成对照数据](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-int-lookup-data.md)
-         + [填充对照表](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-pop-lookup-table.md)
-         + [定义对照转换](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md)
+      + 集成查找数据 {#integrate-lookup-data}
+         + [集成查找数据](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-int-lookup-data.md)
+         + [填充查找表](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-pop-lookup-table.md)
+         + [定义查找转换](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md)
    + 扩展维度 {#extended-dimensions}
       + [关于扩展维度](home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)
       + [定义扩展维度](home/c-dataset-const-proc/c-ex-dim/t-def-ex-dim.md)
@@ -563,7 +563,7 @@ ht-degree: 100%
       + [示例邮件 XSL 样式表](home/c-rpt-oview/c-rpt-sample-files/c-sample-mail-style-sheet.md)
 + 页面标记 {#page-tagging}
    + [我可以获取哪一类数据？](home/c-undst-pg-tag/c-acq-data.md)
-   + [如何获取此数据？](home/c-undst-pg-tag/t-how-acq-data-.md)
+   + [如何获取此数据_](home/c-undst-pg-tag/t-how-acq-data-.md)
    + 实施参考页面标记 {#implement-ref-page-tags}
       + [实施参考页面标记](home/c-undst-pg-tag/c-imp-ref-pg-tags/c-imp-ref-pg-tags.md)
       + [编辑参考页面标记执行脚本](home/c-undst-pg-tag/c-imp-ref-pg-tags/t-edit-ref-pg-tag-ex-scrpt.md)
@@ -575,7 +575,7 @@ ht-degree: 100%
          + [获取页面请求数据概述](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-acq-pg-req-data.md)
          + [了解查询字符串](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-undst-qry-strg.md)
          + [按内容类型过滤](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-fltr-cnt-type.md)
-         + [执行对照实验](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-perf-ctrl-exp.md)
+         + [执行控制试验](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-perf-ctrl-exp.md)
       + [获取嵌入式对象请求（页面标记）](home/c-undst-pg-tag/c-acq-bsln-msmts/c-embed-obj-req.md)
       + [通过 Cookie 获取测量数据](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-msmt-data-ck.md)
    + 获取扩展测量 {#acquire-ext-measures}
@@ -609,8 +609,8 @@ ht-degree: 100%
       + [流量配置文件维度](home/c-about/c-about-baseline-profiles/c-traffic-profile-dims.md)
       + [值配置文件量度](home/c-about/c-about-baseline-profiles/c-value-profile-metrics.md)
       + [值配置文件维度](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
-      + [营销用户档案维度](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
-+ Geography {#geography}
+      + [营销配置文件维度](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
++ 地理位置 {#geography}
    + [关于 Data Workbench Geography](home/c-geo-oview/c-geo-oview.md)
    + 安装 Data Workbench Geography {#install-geography}
       + [安装 Data Workbench Geography](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
@@ -622,7 +622,7 @@ ht-degree: 100%
       + 地形图像图层 {#terrain-image-layers}
          + [使用地形图像图层](home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md)
          + [指定地形图像的投影信息](home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-proj-info-trn-imgs.md)
-         + [经纬度投影](home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-lat-long-proj.md)
+         + [经纬投影](home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-lat-long-proj.md)
          + [通用横轴墨卡托投影](home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-utm-proj.md)
          + [使新地形图像图层可用](home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/t-new-trn-img-lyr.md)
       + 元素点层 {#element-point-layers}
@@ -648,32 +648,32 @@ ht-degree: 100%
    + 升级和卸载 Data Workbench Geography {#upgrade-uninstall-geo}
       + [升级 Data Workbench Geography](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
       + [卸载 Data Workbench Geography](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
-+ 对照实验 {#experiments}
++ 控制试验 {#experiments}
    + [关于 Data Workbench 对照实验](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
    + [网站如何识别访客？](home/c-undst-ctrld-exp/c-id-vstrs.md)
-   + [对照实验的工作原理是什么？](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
+   + [控制试验的工作原理是什么？](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
    + [我应该测试哪些内容？](home/c-undst-ctrld-exp/c-wht-test-.md)
-   + [有哪些测试要求？](home/c-undst-ctrld-exp/c-reqs-.md)
-   + 对照实验 {#controlled-experimentation}
-      + [启用对照实验](home/c-undst-ctrld-exp/t-en-ctrld-exp/t-en-ctrld-exp.md)
+   + [有哪些要求？](home/c-undst-ctrld-exp/c-reqs-.md)
+   + 控制试验 {#controlled-experimentation}
+      + [启用控制试验](home/c-undst-ctrld-exp/t-en-ctrld-exp/t-en-ctrld-exp.md)
       + [修改 ExpFile 参数](home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md)
       + [修改 ExpCookieURL 参数（可选）](home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md)
       + [修改 ExpPartialMatch 参数（可选）](home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md)
-   + 创建对照实验 {#create-controlled-experiment}
-      + [创建对照实验](home/c-undst-ctrld-exp/t-crt-ctrld-exp/t-crt-ctrld-exp.md)
+   + 创建控制试验 {#create-controlled-experiment}
+      + [创建控制试验](home/c-undst-ctrld-exp/t-crt-ctrld-exp/t-crt-ctrld-exp.md)
       + [定义目标](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-dfn-obj.md)
       + [形成一个假设](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-frm-hyp.md)
       + [确定需要的访客数](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-nmbr-vstrs-nd.md)
       + [创建测试内容](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-crt-test-cnt.md)
-      + [配置和部署实验](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md)
-   + [验证实验](home/c-undst-ctrld-exp/c-val-exp.md)
+      + [配置和部署试验](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md)
+   + [验证试验](home/c-undst-ctrld-exp/c-val-exp.md)
    + 查看结果 {#view-results}
       + [查看结果](home/c-undst-ctrld-exp/c-vw-rslts/c-vw-rslts.md)
       + [修改 Log Processing.cfg](home/c-undst-ctrld-exp/c-vw-rslts/t-mod-lg-proc.md)
       + [修改 Transformation.cfg](home/c-undst-ctrld-exp/c-vw-rslts/t-mod-trfmtn.md)
-      + [查看实验结果](home/c-undst-ctrld-exp/c-vw-rslts/c-vw-expt-rslts.md)
-      + [评估实验](home/c-undst-ctrld-exp/c-vw-rslts/c-ev-exp.md)
-   + [实验设计电子表格](home/c-undst-ctrld-exp/t-exp-dsn-spst.md)
+      + [查看试验结果](home/c-undst-ctrld-exp/c-vw-rslts/c-vw-expt-rslts.md)
+      + [评估试验](home/c-undst-ctrld-exp/c-vw-rslts/c-ev-exp.md)
+   + [试验设计电子表格](home/c-undst-ctrld-exp/t-exp-dsn-spst.md)
 + 服务器管理和安装 {#server-admin-install}
    + [服务器系统要求](home/c-inst-svr/c-msr-server/c-msr-server.md)
    + 安装 Data Workbench 服务器 {#install-servers}
@@ -720,7 +720,7 @@ ht-degree: 100%
          + [配置访问控制](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md)
          + [了解访问控制组](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-ctrl-grps.md)
          + [了解访问级别](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-lvls.md)
-         + [群组成员访问权限的用户管理](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/dwb-self-admin-member-access.md)
+         + [群组会员访问权限的用户管理](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/dwb-self-admin-member-access.md)
       + 监控磁盘空间 {#monitor-disk-space}
          + [监控磁盘空间](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/c-mntr-disk-spc.md)
          + [监控数据集数据空间](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/t-mntr-dtst-data-spc.md)
@@ -729,7 +729,7 @@ ht-degree: 100%
       + [监控内存使用情况](home/c-inst-svr/c-admin-inst-svr/t-mntr-mry-usg.md)
       + [配置管理警报](home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md)
       + [监控管理事件](home/c-inst-svr/c-admin-inst-svr/t-mntr-adm-evts.md)
-      + [监控审计日志](home/c-inst-svr/c-admin-inst-svr/t-mntr-adt-lgs.md)
+      + [监控审核日志](home/c-inst-svr/c-admin-inst-svr/t-mntr-adt-lgs.md)
       + [配置通信](home/c-inst-svr/c-admin-inst-svr/t-config-com.md)
       + [配置 DPU.cfg](home/c-inst-svr/c-admin-inst-svr/t-config-dpu.md)
       + [重新启动服务](home/c-inst-svr/c-admin-inst-svr/t-rest-svc.md)
@@ -773,7 +773,7 @@ ht-degree: 100%
       + [DPU 性能设置](home/c-inst-svr/c-cfg-stgs-ref/c-dpu-perf-stgs.md)
    + [时区代码](home/c-inst-svr/c-time-zn-cds.md)
 + 传感器 {#sensor}
-   + [数据收集流程的原理](home/c-snsr-ovrvw/c-data-col-proc.md)
+   + [数据收集流程的工作原理](home/c-snsr-ovrvw/c-data-col-proc.md)
    + [哪些是基本组件](home/c-snsr-ovrvw/c-basic-comp.md)
    + [传感器如何识别访客和会话？](home/c-snsr-ovrvw/c-id-vstrs-sess.md)
    + 安装 {#install}
@@ -813,7 +813,7 @@ ht-degree: 100%
       + [可选的参数](home/c-snsr-ovrvw/sensor-txlogd-params/c-opt-pmtrs.md)
    + 事件数据记录字段 {#event-data-record}
       + [事件数据记录字段](home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-evnt-data-rcd-flds.md)
-      + [基准事件数据记录字段](home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-bsln-evnt-data.md)
+      + [基线事件数据记录字段](home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-bsln-evnt-data.md)
       + [可扩展字段](home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md)
    + 示例配置文件 {#sample-configs}
       + [示例配置文件](home/c-snsr-ovrvw/sensor-sample-configs/sensor-sample-configs.md)
@@ -833,22 +833,22 @@ ht-degree: 100%
       + [Data Workbench 用户档案状态配置文件中的维度](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
       + [Data Workbench 服务器状态配置文件中的维度](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
       + [Data Workbench 历史监控配置文件中的量度](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
-+ 功能板 {#dashboard}
++ 仪表板 {#dashboard}
    + [商业机会](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
    + [功能](home/c-adobe-data-workbench-dashboard/c-features.md)
    + [术语表](home/c-adobe-data-workbench-dashboard/c-glossary.md)
    + [快速入门](home/c-adobe-data-workbench-dashboard/t-getting-started/t-getting-started.md)
-   + [功能板用户界面](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
-   + 可视化{#visualizations}
+   + [仪表板用户界面](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
+   + 可视化图表 {#visualizations}
       + [可视化图表](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualizations.md)
       + 可视化图表类型 {#visualization-types}
-         + [可视化类型](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-visualization-types.md)
+         + [可视化图表类型 ](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-visualization-types.md)
          + [柱状图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-column-charts.md)
          + [条形图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-bar-charts.md)
          + [折线图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-line-charts.md)
-         + [表格](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-dashboard-tables.md)
+         + [表 ](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-dashboard-tables.md)
          + [量度图例](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-metric-legends.md)
-         + [饼状图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-dashboard-pie-chart.md)
+         + [饼图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-dashboard-pie-chart.md)
          + [散点图](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-scatter-plot.md)
          + [富文本](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-rich-text.md)
       + [创建可视化图表](home/c-adobe-data-workbench-dashboard/c-visualizations/t-creating-visualizations.md)
@@ -862,35 +862,35 @@ ht-degree: 100%
          + [删除可视化图表](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
          + [调整可视化图表大小](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
          + [移动可视化图表](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
-   + 功能板 {#dashboards}
-      + [功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboards.md)
-      + 查看功能板 {#viewing-dashboards}
-         + [打开和查看功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
+   + 仪表板 {#dashboards}
+      + [仪表板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboards.md)
+      + 查看仪表板 {#viewing-dashboards}
+         + [打开和查看仪表板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
          + [“快速访问”菜单](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-quick-access-menu.md)
-         + 功能板浏览器 {#dashboard-browser}
-            + [功能板浏览器](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser.md)
-            + [功能板浏览器视图](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser-views.md)
-            + [在功能板浏览器中搜索](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-searching-within-the-dashboard-browser.md)
-         + [功能板超链接](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-hyperling.md)
+         + 仪表板浏览器 {#dashboard-browser}
+            + [仪表板浏览器](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser.md)
+            + [仪表板浏览器视图](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser-views.md)
+            + [在仪表板浏览器中搜索](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-searching-within-the-dashboard-browser.md)
+         + [仪表板超链接](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-hyperling.md)
       + [“查询对象”参数](home/c-adobe-data-workbench-dashboard/c-dashboards/c-query-to-parameter.md)
-      + [创建功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-creating-a-dashboard.md)
-      + [保存功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/t-saving-a-dashboard.md)
-      + [编辑或更新功能板](home/c-adobe-data-workbench-dashboard/c-dashboards/t-editing-updating-a-dashboard.md)
-      + [制作功能板副本](home/c-adobe-data-workbench-dashboard/c-dashboards/t-making-a-copy-of-a-dashboard.md)
-      + [功能板的其他功能](home/c-adobe-data-workbench-dashboard/c-dashboards/c-other-dashboard-functions.md)
-      + [功能板共享和访问控制](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboard-sharing-and-access-controls.md)
+      + [创建仪表板](home/c-adobe-data-workbench-dashboard/c-dashboards/c-creating-a-dashboard.md)
+      + [保存仪表板](home/c-adobe-data-workbench-dashboard/c-dashboards/t-saving-a-dashboard.md)
+      + [编辑或更新仪表板](home/c-adobe-data-workbench-dashboard/c-dashboards/t-editing-updating-a-dashboard.md)
+      + [制作仪表板副本](home/c-adobe-data-workbench-dashboard/c-dashboards/t-making-a-copy-of-a-dashboard.md)
+      + [其他仪表板功能](home/c-adobe-data-workbench-dashboard/c-dashboards/c-other-dashboard-functions.md)
+      + [仪表板共享和访问控制](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboard-sharing-and-access-controls.md)
    + 选择 {#select}
-      + [在功能板中选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md)
+      + [在仪表板中选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md)
       + [锁定的选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-locked-selections.md)
       + [应用选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/t-applying-selections.md)
       + [删除选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-removing-selections.md)
       + [确定选定内容](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-determining-whats-selected.md)
       + [跨配置文件选择](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-cross-profile-selections.md)
    + [导出数据](home/c-adobe-data-workbench-dashboard/c-exporting-data.md)
-   + [功能板访问控制](home/c-adobe-data-workbench-dashboard/c-dashboard-access-controls.md)
+   + [仪表板访问控制](home/c-adobe-data-workbench-dashboard/c-dashboard-access-controls.md)
    + [用户帐户管理](home/c-adobe-data-workbench-dashboard/c-user-account-functions.md)
    + [帮助菜单](home/c-adobe-data-workbench-dashboard/c-help-menu.md)
-+ 功能板管理员 {#admin}
++ 仪表板管理员 {#admin}
    + [最低系统要求](home/c-preparing-for-dashboard-installation/c-minimum-system-requirements.md)
    + [下载必需组件和可选组件](home/c-preparing-for-dashboard-installation/c-download-required-and-optional-components.md)
    + [支持的浏览器](home/c-preparing-for-dashboard-installation/c-supported-browsers.md)
@@ -899,15 +899,15 @@ ht-degree: 100%
       + [启用 IIS](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-enabling-iis.md)
       + [安装必需组件](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-installing-required-components.md)
    + 服务器通信 {#servers-communication}
-      + [功能板到 Data Workbench 服务器的通信](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
+      + [仪表板到 Data Workbench 服务器的通信](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [验证查询 API 是否启用](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
       + [配置访问控制](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
-   + 功能板部署 {#dashboard-deployment}
-      + [功能板部署](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
-      + [部署功能板](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
+   + 仪表板部署 {#dashboard-deployment}
+      + [仪表板部署](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
+      + [部署仪表板](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
       + [配置 SQL Server](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-configuring-the-sql-server.md)
-      + [初始化功能板](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-initializing-the-dashboard.md)
-      + [添加功能板许可证密钥](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-add-dashboard-license-key.md)
+      + [初始化仪表板](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-initializing-the-dashboard.md)
+      + [添加仪表板许可证密钥](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-add-dashboard-license-key.md)
    + [从管理控制台进行管理](home/c-preparing-for-dashboard-installation/c-managing-from-the-administration-console.md)
    + 配置文件连接 {#profile-connections}
       + [管理配置文件连接](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/c-managing-profile-connections.md)
@@ -922,7 +922,7 @@ ht-degree: 100%
       + [添加文件夹](home/c-preparing-for-dashboard-installation/c-managing-folders/t-adding-folders.md)
       + [重命名文件夹](home/c-preparing-for-dashboard-installation/c-managing-folders/t-renaming-folders.md)
       + [删除文件夹](home/c-preparing-for-dashboard-installation/c-managing-folders/t-deleting-folders.md)
-      + [移动功能板和文件夹](home/c-preparing-for-dashboard-installation/c-managing-folders/t-moving-dashboards-and-folders.md)
+      + [移动仪表板和文件夹](home/c-preparing-for-dashboard-installation/c-managing-folders/t-moving-dashboards-and-folders.md)
    + 用户帐户 {#user-accounts}
       + [管理用户帐户](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-managing-user-accounts.md)
       + [添加用户帐户](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-adding-a-user-account.md)
@@ -939,7 +939,7 @@ ht-degree: 100%
    + [实施 Adobe Data Workbench](home/dwb-implement-overview/dwb-implement-overview.md)
    + [Data Workbench 探索与要求](home/dwb-implement-overview/dwb-implement-discovery.md)
    + [Data Workbench 安装与配置](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
-   + [DWB 托管服务的基本入门指南](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
+   + [DWB Managed Services 的基本入门说明](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
    + [Data Workbench 架构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
    + [架构设计可计数结构](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
    + [Data Workbench 管理](home/dwb-implement-overview/dwb-implement-admin.md)
