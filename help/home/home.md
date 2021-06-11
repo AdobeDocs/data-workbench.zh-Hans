@@ -5,7 +5,7 @@ feature: Reports & Analytics 基础知识
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Data Workbench 包括以下预测分析功能、数据可视化图表和报表�
 
 ## 更多 Analytics 用户指南
 
-[《Analytics 用户指南》](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
+[《Analytics 用户指南》](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/home.html)
 
 ## Data Workbench 发行说明和新增功能
 
@@ -55,7 +55,7 @@ Data Workbench 包括以下预测分析功能、数据可视化图表和报表�
 [Data Workbench 6.4](/help/home/c-release-notes-insight/c-6-4/c-6-4.md) 包括：
 
 * [导出到 Analytics 核心服务](/help/home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
-* [工作站安装向导](/help/home/c-install-insight/install-setup/dwb-client-installer.md)
+* [工作站设置向导](/help/home/c-install-insight/install-setup/dwb-client-installer.md)
 * [用于批注可视化的表示图层](/help/home/c-get-started/c-vis/c-present-layer.md)
 * [量度维度向导](/help/home/c-get-started/c-vis/dwb-create-metricdim/dwb-create-metricdim.md)
 
