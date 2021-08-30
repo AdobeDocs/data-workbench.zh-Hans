@@ -3,9 +3,9 @@ description: 数据集配置是指编辑配置文件（其参数为数据集构�
 title: 了解数据集配置
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 86%
 
 ---
@@ -50,7 +50,7 @@ c_addl_config_files.xml
 
 * **：**[!DNL Server.cfg]Server.cfg 文件为连接到 Data Workbench Server 的 Data Workbench 计算机指定默认数据缓存大小（以字节为单位）。请参阅[其他配置文件](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)。
 
-* **Transform.cfg 和 Transform Mode.cfg：**&#x200B;仅当您获得在 Adobe 应用程序中使用数据转换功能的许可时，这些文件才可用。[!DNL Transform.cfg] 文件包含为转换功能定义日志源和数据转换的参数。您定义的转换可处理源数据，并将其输出为您指定的格式。[!DNL Insight Transform Mode.cfg] 文件可让您暂停将数据处理到数据集中、指定离线源或指定运行转换功能的 Insight Server 保存其状态文件的频率。请参阅[转换功能](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html)。
+* **Transform.cfg 和 Transform Mode.cfg：**&#x200B;仅当您获得在 Adobe 应用程序中使用数据转换功能的许可时，这些文件才可用。[!DNL Transform.cfg] 文件包含为转换功能定义日志源和数据转换的参数。您定义的转换可处理源数据，并将其输出为您指定的格式。[!DNL Insight Transform Mode.cfg] 文件可让您暂停将数据处理到数据集中、指定离线源或指定运行转换功能的 Insight Server 保存其状态文件的频率。请参阅[转换功能](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html)。
 
 <!--
 c_next_steps.xml

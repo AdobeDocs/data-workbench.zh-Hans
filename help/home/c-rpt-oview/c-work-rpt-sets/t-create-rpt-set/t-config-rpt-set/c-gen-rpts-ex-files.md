@@ -3,10 +3,10 @@ description: 以Excel文件形式生成报表的信息。
 title: 将报表生成为 Microsoft Excel 文件
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 23%
+source-wordcount: '474'
+ht-degree: 22%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 23%
 
 除非您为可视化指定了[!DNL Custom Title]，否则将使用窗口类型（例如，“影片表”）作为工作表名称。
 
-有关为可视化指定[!DNL Custom Titles]的更多信息，请参阅[Data Workbench客户端指南](https://docs.adobe.com/content/help/zh-Hans/data-workbench/using/client/t-open-ins.html)。
+有关为可视化指定[!DNL Custom Titles]的更多信息，请参阅[Data Workbench客户端指南](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html?lang=zh-Hans)。
 
-## 使用模板文件{#section-40ab11916f464b1a88214ab969da6751}
+## 使用模板文件 {#section-40ab11916f464b1a88214ab969da6751}
 
 您还可以使用模板Excel（[!DNL .xls]或[!DNL .xlsx]）文件将报表生成为Excel文件。 使用模板文件可减少每次生成报表时为数据设置格式所花费的时间。
 

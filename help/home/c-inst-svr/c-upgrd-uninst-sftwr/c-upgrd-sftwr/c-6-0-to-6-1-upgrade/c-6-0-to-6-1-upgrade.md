@@ -3,9 +3,9 @@ description: 按照以下步骤，从安装的 Data Workbench v6.0x 更新至 Da
 title: 从 Data Workbench 6.0 升级至 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 59%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 59%
    1. 替换[!DNL Server\Software]文件夹以更新[!DNL Insight.exe]和[!DNL ReportServer.exe]
    1. 更新[!DNL Server\Scripts]文件夹以更新[!DNL TnTSend.exe]。
 
-1. 如果采用 **[!UICONTROL DeviceAtlas]**，则将需要[更新捆绑包](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)（位于 [!DNL Server\Lookups] 文件夹）。
+1. 如果采用 **[!UICONTROL DeviceAtlas]**，则将需要[更新捆绑包](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)（位于 [!DNL Server\Lookups] 文件夹）。
 
 1. 配置 [!DNL Profile.cfg] 文件，以确保矢量已更新，可以反映每个配置文件的项目数量。
 
@@ -98,7 +98,7 @@ ht-degree: 59%
 
 服务器安装现已完成。
 
-## Report Server 升级  {#section-afd9560a446242e9b06490e5f98aaaec}
+## Report Server 升级 {#section-afd9560a446242e9b06490e5f98aaaec}
 
 >[!IMPORTANT]
 >

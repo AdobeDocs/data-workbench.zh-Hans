@@ -1,18 +1,20 @@
 ---
 description: 关联表格可视化让您能够借助 Cramer's V 算法，将量度与量度、维度和维度元素关联起来。
-title: 关联表格 可视化
+title: 关联表可视化图表
 uuid: 4563c336-3377-4929-8694-8c0d00866825
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 3fc2c025-d369-45ed-8c9e-eb4a0ac412b7
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 76%
 
 ---
 
-
-# 关联表可视化{#association-table-visualization}
+# 关联表可视化图表{#association-table-visualization}
 
 关联表格可视化让您能够借助 Cramer&#39;s V 算法，将量度与量度、维度和维度元素关联起来。
 
-关联表格将值与 Cramer&#39;s V 计算结果相对比，而非使用[关联矩阵](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html)和[关联弦图](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/c-chord-visualization.html)可视化中采用的皮尔逊关联系数（关联矩阵和关联弦图只能对比量度，而关联表格和[关联弦图](../../../home/c-get-started/c-analysis-vis/associations-chord.md#concept-51d0bda998474dd5946cc2a9b8393445)可以对比量度、维度和元素）。
+关联表格将值与 Cramer&#39;s V 计算结果相对比，而非使用[关联矩阵](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html)和[关联弦图](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/c-chord-visualization.html)可视化中采用的皮尔逊关联系数（关联矩阵和关联弦图只能对比量度，而关联表格和[关联弦图](../../../home/c-get-started/c-analysis-vis/associations-chord.md#concept-51d0bda998474dd5946cc2a9b8393445)可以对比量度、维度和元素）。
 
 ## 构建关联表 {#section-87ed12ccc1af4196a1b6534e621c4cbb}
 
@@ -20,7 +22,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
 1. 打开关联表格。
 
-   右键单击 [!DNL Visualization] > [!DNL Predictive Analytics] > [!DNL Association Table]。
+   右键单击[!DNL Visualization] > [!DNL Predictive Analytics] > [!DNL Association Table]。
 
    ![](assets/association_table.png)
 
@@ -28,7 +30,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
    ![](assets/association_table1.png)
 
-   关联表格将 Cramer&#39;s V 作为对称相关，得出选定的量度、维度和元素值，同时反映在关联表格的列和行中。For example, selecting the **Product** extended dimension uses the **[!UICONTROL Visits]** metric as the associated metric in both the row and column of the table, resulting in a perfect yet useless comparison (1.00) because the compared values are identical.
+   关联表格将 Cramer&#39;s V 作为对称相关，得出选定的量度、维度和元素值，同时反映在关联表格的列和行中。例如，选择&#x200B;**Product**&#x200B;扩展维度时，会将&#x200B;**[!UICONTROL Visits]**&#x200B;量度用作表行和列中的关联量度，从而生成一个完美但无用的比较(1.00)，因为比较值相同。
 
 1. 向关联表格添加更多值。
 
@@ -38,5 +40,4 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
    >[!NOTE]
    >
-   >关联表中最多允许十行和十列。
-
+   >关联表中允许行和列数限制为10。

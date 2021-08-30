@@ -2,11 +2,13 @@
 description: 使用量度维度向导创建新量度维度。
 title: 量度维度向导
 uuid: 77b9bc8e-7625-4fef-9de4-f113f9b2debd
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 109fbefc-5608-493d-aec9-8337f21eaa70
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 90%
 
 ---
-
 
 # 量度维度向导{#metric-dim-wizard}
 
@@ -14,7 +16,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
 量度维度可将量度转化为新维度。例如，基于“页面查看次数”和“访客级别”量度的量度维度将为每个访客显示基于总页面查看次数的维度元素。它允许您扩展当前基于维度元素定义的量度，以创建并保存为新的维度。
 
-## Step 1: select dimension and metric {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
+## 步骤1:选择维度和量度 {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
 
 1. **打开“量度维度向导”**。
 
@@ -46,11 +48,11 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   您可以添加自己的[量度表达式](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)，或者从其他量度编辑器或可视化中剪切并粘贴。向导中可报告语法错误、公式错误、未定义的过滤器以及其他错误。
+   您可以添加自己的[量度表达式](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)，或者从其他量度编辑器或可视化中剪切并粘贴。向导中可报告语法错误、公式错误、未定义的过滤器以及其他错误。
 
 1. 单击&#x200B;**下一步**。
 
-## Step 2: format and set buckets {#section-5bddf3cd306545d7806a501637f80f77}
+## 步骤2:格式和设置存储段 {#section-5bddf3cd306545d7806a501637f80f77}
 
 您可以选择量度格式，并设置维度表达式的存储段值。
 
@@ -70,7 +72,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
 1. 添加&#x200B;**存储段计数**&#x200B;表达式。
 
-   您可以定义一个具有各种范围或存储段的量度维度。This returns subsets of elements based on size, such as [0-4], [5-10],...). 维度级别的元素与范围中含有量度值的元素关联。请参阅[维度表达式的语法](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)中的存储段表达式说明。
+   您可以定义一个具有各种范围或存储段的量度维度。这会根据大小返回元素的子集，如[0-4]、[5-10],...)。 维度级别的元素与范围中含有量度值的元素关联。请参阅[维度表达式的语法](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)中的存储段表达式说明。
 
 1. 在保存前单击&#x200B;**预览**&#x200B;可打开量度维度值表。
 
@@ -81,7 +83,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 1. 单击&#x200B;**在维度菜单中显示**，可将新创建的维度添加到&#x200B;**查找器**&#x200B;中的&#x200B;**维度**&#x200B;选项卡。
 1. 单击&#x200B;**下一步**。
 
-## Step 3: finish and save {#section-d9043235b18a425f9de0db668d4b1683}
+## 步骤3:完成并保存 {#section-d9043235b18a425f9de0db668d4b1683}
 
 1. 保存后可选择启动“量度维度编辑器”、图形可视化或表格。
 
@@ -94,4 +96,3 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 1. 单击&#x200B;**完成**&#x200B;并保存。
 
    将会打开一个允许您保存该文件的保存对话框。将会在工作区中打开用于查看值的选定选项。
-

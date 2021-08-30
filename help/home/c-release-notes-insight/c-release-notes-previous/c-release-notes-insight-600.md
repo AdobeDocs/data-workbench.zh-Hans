@@ -3,10 +3,10 @@ description: Data Workbench 6.0.4 中引入的新增功能，包括错误修复�
 title: Data Workbench 6.0 发行说明
 uuid: b348425e-3304-4db7-a280-479a34452bdb
 exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 88%
+source-wordcount: '1677'
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,7 @@ Data Workbench (Insight 6.0) 包括以下新增功能，以及用于新增报告
 | [关联分析](../../../home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md#concept-a7c8766b40be43aaa4084612689b630c) | 关联分析可让您快速识别相关数据关系，以便扩展和加强分析。 |
 | [更新的 DeviceAtlas 分配](../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md#concept-28b7bd5c0d854e73834261c431bed1e0) | DeviceAtlas JSON 文件现在将与 DeviceAtlas.dll 和 DeviceAtlas64.dll 一起分配到 .bundle 文件（重命名的 .tar.gz）中。 |
 
-## 客户端升级要求  {#section-f316103b48374b6eac77e8feb5c47ecf}
+## 客户端升级要求 {#section-f316103b48374b6eac77e8feb5c47ecf}
 
 请完成下列升级任务以获得 Data Workbench (Insight 6.0) 客户端功能：
 
@@ -78,7 +78,7 @@ Data Workbench 现在支持使用输入法编辑器 (IME) 作为辅助文本输�
 
    要更正此问题，请删除 Insight.exe，并将最新版本的 Insight.exe.old 重命名为 Insight.exe，然后从上述步骤 1 开始重新操作。
 
-## 服务器升级要求  {#section-d6edba8b36234957ba8d06b555667a5a}
+## 服务器升级要求 {#section-d6edba8b36234957ba8d06b555667a5a}
 
 请完成下列升级任务以获得 Insight 6.0 服务器功能：
 
@@ -258,7 +258,7 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 Data Workbench 6.0.4 中引入的新增功能，包括错误修复和已知问题。
 
-要查看基于每个旧版本的先前功能和修复，请参阅[发行说明存档](https://docs.adobe.com/content/help/zh-Hans/data-workbench/using/release-notes/release-notes.html)。
+要查看基于每个旧版本的先前功能和修复，请参阅[发行说明存档](https://experienceleague.adobe.com/docs/data-workbench/using/release-notes/release-notes.html)。
 
 ## 新增功能 {#section-2-1225066ea8f44cf68e42e019d0bca816}
 

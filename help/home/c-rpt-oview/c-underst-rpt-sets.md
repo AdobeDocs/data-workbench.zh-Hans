@@ -3,9 +3,9 @@ description: 报表集是Report Server根据Report.cfg配置文件中指定的�
 title: 了解报表集
 uuid: 421055d7-0cf0-4664-b944-327a254a97a4
 exl-id: 95609a1a-e70c-41e2-ace3-0cb09f77705a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '146'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,6 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->在Data Workbench的[!DNL Profile Manager]文件夹中，报表集显示为子文件夹。 [!DNL Reports]有关[!DNL Profile Manager]的详细信息，请参阅[Data Workbench用户指南](https://docs.adobe.com/content/help/en/data-workbench/using/home.html#Data_Workbench_Help)。
+>在Data Workbench的[!DNL Profile Manager]文件夹中，报表集显示为子文件夹。 [!DNL Reports]有关[!DNL Profile Manager]的详细信息，请参阅[Data Workbench用户指南](https://experienceleague.adobe.com/docs/data-workbench/using/home.html#Data_Workbench_Help)。
 
 通过在[!DNL Report.cfg]文件中为报表集定义特定配置设置，可以安排报表的创建和分发，包括谁接收哪些报表以及以什么格式接收报表。

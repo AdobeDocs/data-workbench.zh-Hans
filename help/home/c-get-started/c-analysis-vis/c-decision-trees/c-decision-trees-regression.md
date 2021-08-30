@@ -2,19 +2,21 @@
 description: 借助具备新式采样和可视化功能的回归树选项，对决策树进行评估。
 title: 决策树的回归树选项
 uuid: 1e3b5d5f-1fed-49c9-9a4d-d220c28075ac
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: e5f8d525-1530-4169-b246-cdaf30e984c0
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 97%
 
 ---
 
-
-# Regression tree option for decision tree{#regression-tree-option-for-decision-tree}
+# 决策树的回归树选项{#regression-tree-option-for-decision-tree}
 
 借助具备新式采样和可视化功能的回归树选项，对决策树进行评估。
 
 在决策树可视化中右键单击并选择“选项”> **回归树**，借助回归树选项对决策树进行评估。
 
-**更新后的决策树生成器**：引入新算法用于构建[决策树](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/decision-trees/c-decision-trees.html)。它可以处理更多的常规数据，并提供信息更丰富的可视化，进而提高预测精度。
+**更新后的决策树生成器**：引入新算法用于构建[决策树](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/decision-trees/c-decision-trees.html)。它可以处理更多的常规数据，并提供信息更丰富的可视化，进而提高预测精度。
 
 **改进后的数据采样模型**：采用已更新且具备适应性的采样方法，有助于决策树和倾向得分获得更加准确的结果。
 
@@ -56,4 +58,3 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
   </tr> 
  </tbody> 
 </table>
-

@@ -2,11 +2,10 @@
 description: Data Workbench 6.2 包含新的用户界面“书签”面板更新，在工作区工具栏中包含新的图标，具有在屏幕中拖动工作区的功能、新的快捷键以及饼图可视化更新。
 title: Data Workbench 客户端 UI 更新
 uuid: 1bc18c90-8b46-4c90-b7a7-2c6710e1e28c
-translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 92%
+source-wordcount: '548'
+ht-degree: 80%
 
 ---
 
@@ -22,11 +21,11 @@ Data Workbench 6.2 包含新的用户界面“书签”面板更新，在工作�
 **使用书签**
 
 1. 可通过单击工具栏右上角的书签图标 ![](assets/bookmark_icon.png)，为工作区创建书签。
-1. 单击左侧窗格中的“**[!UICONTROL 添加]**”>**[!UICONTROL “书签”面板]**&#x200B;以打开书签列表。
+1. 单击左窗格中的&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]**&#x200B;以打开书签列表。
 
    ![](assets/bookmarks_panel.png)
 
-1. 要打开添加了书签的工作区，请在&#x200B;**[!UICONTROL 书签面板]**&#x200B;中单击工作区名称。
+1. 要打开带有书签的工作区，请单击&#x200B;**[!UICONTROL Bookmark Panel]**&#x200B;中的工作区名称。
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -34,9 +33,9 @@ Data Workbench 6.2 包含新的用户界面“书签”面板更新，在工作�
 
 **要删除书签：**
 
-* In the Bookmark Panel, right-click and select **Remove`<bookmark title>`** to delete a selected bookmark, or select **[!UICONTROL Clear All Bookmarks]** to delete all bookmarks.
+* 在“书签”面板中，右键单击并选择&#x200B;**删除`<bookmark title>`**&#x200B;以删除选定的书签，或选择&#x200B;**[!UICONTROL Clear All Bookmarks]**&#x200B;以删除所有书签。
 
-* 您也可以右键单击 Worktop 上缩略图中的工作区，并选择&#x200B;**[!UICONTROL 清除书签]**。
+* 您还可以在工作台的缩略图视图中右键单击工作区，然后选择&#x200B;**[!UICONTROL Clear Bookmark]**。
 
 >[!IMPORTANT]
 >
@@ -46,14 +45,13 @@ Data Workbench 6.2 包含新的用户界面“书签”面板更新，在工作�
 >
 
 
-
 ## 工作区中的新图标 {#section-c108bbd1661249e79c146727ff3d2470}
 
-Data Workbench 6.2 现在将工作区中的文本替换为图标。您仍然可以悬停鼠标并查看标识图标的工具提示消息，包括“**[!UICONTROL 文件]**”、“**[!UICONTROL 添加]**”和“**[!UICONTROL 导出]**”。
+Data Workbench 6.2 现在将工作区中的文本替换为图标。您仍可以将鼠标悬停在上方，并查看用于标识该图标的工具提示消息，包括&#x200B;**[!UICONTROL File]**、**[!UICONTROL Add]**&#x200B;和&#x200B;**[!UICONTROL Export]**。
 
 ![](assets/new_icons.png)
 
-添加了新的&#x200B;**[!UICONTROL 帮助]**&#x200B;图标以访问文档和其他知识中心，包括以下链接：
+添加了新的&#x200B;**[!UICONTROL Help]**&#x200B;图标以访问文档和其他知识中心，包括以下链接：
 
 <table id="table_64BBC67B1BB44B1197FF7E5E7B067696"> 
  <thead> 
@@ -84,7 +82,7 @@ Data Workbench 6.2 现在将工作区中的文本替换为图标。您仍然可�
 
 >[!NOTE]
 >
->You can also press `<F1>` to open the documentation from a workspace.
+>您还可以按`<F1>`从工作区中打开文档。
 
 ## 拖动工作区视图 {#section-9129c340c21d45a3864c923884cd4382}
 
@@ -94,7 +92,7 @@ Data Workbench 6.2 现在将工作区中的文本替换为图标。您仍然可�
 
 ## 用于更改工作区视图的快捷键 {#section-d8322f72423f437aa2e34f2188b1341c}
 
-通过使用新的快捷键，您可以调整大小，并在窗口和全页面视图之间重新调整工作区。请参阅[快速参考](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-qk-ref.html)以了解更多键盘快捷键。
+通过使用新的快捷键，您可以调整大小，并在窗口和全页面视图之间重新调整工作区。请参阅[快速参考](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-qk-ref.html)以了解更多键盘快捷键。
 
 <table id="table_A01C514C99F043338D183A6839E03DEA"> 
  <thead> 

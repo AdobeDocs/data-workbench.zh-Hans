@@ -2,9 +2,9 @@
 description: 可以使用 Data Workbench 中的“查找器”面板选择量度、维度和过滤器。这些面板提供了搜索支持、排序选项和拖放功能。
 title: 查找器
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 96%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 96%
     <ul id="ul_0F6F377E9906472E99008EBE7483F689"> 
      <li id="li_75857895EDB045C8B2960393854B257D"> <p>模式匹配（简单 glob 搜索）。在“搜索”字段中开始键入所需的维度、量度或过滤器实体的名称，仅在“查找器”窗格中过滤和显示在名称中的任意位置包含的匹配字符串。 </p> <p>例如，输入： </p> <code><b>Search:</b>click</code> <p>可能会在维度查找器中获得以下结果： </p> <p><img placement="break" id="image_7CBAAABA92BB47658B7F9F5C0263CF20" src="assets/finders_glob_search.png" /> </p> <p>标准模式匹配允许使用通配符，例如，.（点）、“?”和“*”（星号）。 </p> </li> 
      <li id="li_044F9EC1399B44CD81E1852F85137704"> <p>正则表达式. 还支持更复杂的正则表达式以增加搜索功能。可以在搜索词前面添加前缀“re:”（不含空格）以解释为正则表达式。 </p> <p>例如，输入： </p> <code><b>Search:</b>re.*ip</code> <p>可能会在维度查找器中获得以下结果： </p> <p><img placement="break" id="image_F47DB90B36504997AA1C509855B89A47" src="assets/finders_regex_search.png" /> </p> </li> 
-    </ul> <p>有关详细的搜索信息，请参阅<a href="https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external">正则表达式</a>。 </p> </td> 
+    </ul> <p>有关详细的搜索信息，请参阅<a href="https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external">正则表达式</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>维度类型</b> </td> 

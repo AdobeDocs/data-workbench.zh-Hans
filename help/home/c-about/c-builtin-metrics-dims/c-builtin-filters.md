@@ -3,9 +3,9 @@ description: 配置文件过滤器会限制数据集中可用数据的范围。
 title: 内置配置文件过滤器
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >可以通过在配置文件的Filters目录中显示其他过滤器来创建和应用其他过滤器。
 
-## 数据子设置{#section-0defb44315d94254ab6e629ec3d6f420}
+## 数据子设置 {#section-0defb44315d94254ab6e629ec3d6f420}
 
 通过允许您仅选择您感兴趣的数据的维度元素，数据子集充当数据过滤器。
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 >
 >您可以创建多个数据子集，并可以切换它们以查看数据的不同部分。 当您想要查看所有数据时，请记住关闭数据子设置。 否则，您的量度值将不能代表数据集中的所有数据。
 
-## 会话筛选器{#section-1608e97da6464b11aea27cbb7f3160e4}损坏
+## 无效会话过滤器 {#section-1608e97da6464b11aea27cbb7f3160e4}
 
 “无效会话过滤器”是一个量度公式，可以轻松修改以满足任何过滤要求。 在默认网站配置文件中，中断会话过滤器配置为包含所有访客，这些访客的访客的访客标志设置为1。 值1表示存在该访客的跟踪Cookie。
 
@@ -51,4 +51,4 @@ entity = derived_filter:
 
 默认情况下，工作区会将“无效会话”过滤器应用于其选择和基准，并且可以通过在工作区中右键单击并单击“数据”>“无效会话过滤器”来切换该过滤器。
 
-无效会话过滤器可在过滤器表达式中以Broken_Session_Filter的形式引用，即使未为当前工作区启用它也是如此。 有关其他信息，请参阅[过滤器表达式](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers)。
+无效会话过滤器可在过滤器表达式中以Broken_Session_Filter的形式引用，即使未为当前工作区启用它也是如此。 有关其他信息，请参阅[过滤器表达式](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers)。

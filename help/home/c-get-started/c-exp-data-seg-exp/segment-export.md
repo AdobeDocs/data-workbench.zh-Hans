@@ -2,25 +2,27 @@
 description: 使用区段导出向导导出区段
 title: 区段导出向导
 uuid: 705bdf00-54e5-4992-8978-91afda8c7543
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 6f42c5c6-a158-4ddd-8949-4ef55a44ed1c
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 78%
 
 ---
 
-
-# Segment export wizard{#segment-export-wizard}
+# 区段导出向导{#segment-export-wizard}
 
 使用区段导出向导导出区段
 
-The segment export wizard provides a step-by-step process to configure and export segments rather than [exporting segments from a detail table](https://docs.adobe.com/content/help/en/data-workbench/using/client/export-data/c-sgmt-expt.html).
+区段导出向导提供了配置和导出区段的分步流程，而不是[从明细表](https://experienceleague.adobe.com/docs/data-workbench/using/client/export-data/c-sgmt-expt.html)导出区段。
 
-## Export segments using the wizard {#section-b30f2699dbc7490bad18512b91cb0cb3}
+## 使用向导导出区段 {#section-b30f2699dbc7490bad18512b91cb0cb3}
 
 要打开向导，请右键单击工作区，然后选择&#x200B;**管理员** > **向导** > **区段导出向导**。
 
 >[!NOTE]
 >
->只有在打开向导之前应用的区段才会被捕获。 而且，通过向导创建的区段导出无法生成外部命令。
+>只会捕获在打开向导之前应用的区段。 而且，通过向导创建的区段导出无法生成外部命令。
 
 1. 选择要添加到您的导出中的维度和量度的各类父级。
 
@@ -51,11 +53,11 @@ The segment export wizard provides a step-by-step process to configure and expor
 
    ![](assets/seg_wizard_3_3.png)
 
-1. 配置选定的导出类型。
+1. 配置所选导出类型。
 
    标题：如果标题为 True，则命名&#x200B;**输出文件**&#x200B;字段。
 
-   Escape Field—Set as **True** or **False**.
+   转义字段 — 设置为&#x200B;**True**&#x200B;或&#x200B;**False**。
 
    字段顺序：选择某个字段，然后上移或下移，可设置导出文件中字段的顺序。
 
@@ -79,7 +81,7 @@ The segment export wizard provides a step-by-step process to configure and expor
 
 1. 单击&#x200B;**下一步**
 
-   **注意：** 如果选择的导出类型是“配 **置文件和受众导出**”、“自定义记录服务”和“ **Adobe Target导出”******，则文本将基于选定的导出为静态文本。
+   **注意：** 如果选择的导出类型为“配置文 **件和受众导出”**、“ **自定义记录服务**”和“ **Adobe Target导出**”，则文本将基于选定的导出而处于静态状态。
 
 1. 配置计划参数。
 
@@ -122,4 +124,3 @@ The segment export wizard provides a step-by-step process to configure and expor
 * 通用
 * FTP
 * SFTP
-

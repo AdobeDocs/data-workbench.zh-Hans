@@ -2,14 +2,13 @@
 description: 使用分步式向导，创建由量度属性（量度维度）定义的维度。然后测试、预览新建的量度维度，并将其保存在“维度”列表中。
 title: 量度维度向导
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
-translation-type: tm+mt
-source-git-commit: 35e6e9280ab36e8b39e89039b791199d1de54e03
+exl-id: 4d283a00-409c-4d74-a558-40744caba71c
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 91%
+source-wordcount: '485'
+ht-degree: 82%
 
 ---
-
 
 # 量度维度向导{#metric-dim-wizard}
 
@@ -21,7 +20,7 @@ ht-degree: 91%
 
 1. 打开“量度维度向导”。
 
-   在工作区中，右键单击鼠标，然后选择&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 创建量度维度]**。
+   在工作区中，右键单击并选择&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**。
 
 1. 命名量度维度。
 
@@ -37,7 +36,7 @@ ht-degree: 91%
    * 点击
    * 产品
    * 访问
-   * Visitor
+   * 访客
 
 1. 选择一个量度。
 
@@ -51,13 +50,13 @@ ht-degree: 91%
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   您可以添加自己的[量度表达式](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)，或者从其他量度编辑器或可视化中剪切并粘贴。向导中可报告语法错误、公式错误、未定义的过滤器以及其他错误。
+   您可以添加自己的[量度表达式](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)，或者从其他量度编辑器或可视化中剪切并粘贴。向导中可报告语法错误、公式错误、未定义的过滤器以及其他错误。
 
-1. 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 单击 **[!UICONTROL Next]**。
 
 ## 步骤 2：设置格式和存储段 {#section-5bddf3cd306545d7806a501637f80f77}
 
-1. 为新度量维度选择一种格式。
+1. 为新量度维度选择一种格式。
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
@@ -68,21 +67,21 @@ ht-degree: 91%
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   在&#x200B;**[!UICONTROL 预览]**&#x200B;字段中，值的显示情况取决于量度和选择的格式。
+   在&#x200B;**[!UICONTROL Preview]**&#x200B;字段中，将根据所选量度和格式显示一个值。
 
 1. 添加存储段计数表达式。
 
-   您可以定义一个具有各种范围或存储段的量度维度。This returns subsets of elements based on size, such as [0-4], [5-10],...). 维度级别的元素与范围中含有量度值的元素关联。请参阅[维度表达式的语法](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)中的存储段表达式说明。
+   您可以定义一个具有各种范围或存储段的量度维度。这会根据大小返回元素的子集，如[0-4]、[5-10],...)。 维度级别的元素与范围中含有量度值的元素关联。请参阅[维度表达式的语法](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)中的存储段表达式说明。
 
-1. 在保存前单击&#x200B;**[!UICONTROL 预览]**&#x200B;可打开量度维度值表。
+1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;以在保存前打开量度维度值表。
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
    该表按照量度维度详细介绍了量度值。
 
-1. 单击&#x200B;**[!UICONTROL 在维度菜单中显示]**，可将新创建的维度添加到&#x200B;**查找器**&#x200B;中的&#x200B;**维度**&#x200B;选项卡。
+1. 单击&#x200B;**[!UICONTROL Show in Dimension Menu]**&#x200B;将新创建的维度添加到&#x200B;**Finder**&#x200B;中的&#x200B;**Dimension**&#x200B;选项卡。
 
-1. 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 单击 **[!UICONTROL Next]**。
 
 ## 步骤 3：完成并保存 {#section-d9043235b18a425f9de0db668d4b1683}
 
@@ -90,11 +89,10 @@ ht-degree: 91%
 
    | 字段 | 描述 |
    |---|---|
-   | **[!UICONTROL 启动量度维度编辑器]** | 打开“量度维度编辑器”。 |
-   | **[!UICONTROL 启动图形]** | 启动表格的 PNG 图形。 |
-   | **[!UICONTROL 启动表格]** | 在工作区中启动表格，其中，表格的各列中列出了与选定量度的值相比，新量度维度的值。 |
+   | **[!UICONTROL Launch Metric Dim Editor]** | 打开“量度维度编辑器”。 |
+   | **[!UICONTROL Launch Graph]** | 启动表格的 PNG 图形。 |
+   | **[!UICONTROL Launch Table]** | 在工作区中启动表格，其中，表格的各列中列出了与选定量度的值相比，新量度维度的值。 |
 
-1. 单击&#x200B;**[!UICONTROL 完成]**&#x200B;并保存。
+1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;并保存。
 
    将会打开一个允许您保存该文件的保存对话框。将会在工作区中打开用于查看值的选定选项。
-

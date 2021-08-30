@@ -2,17 +2,19 @@
 description: Data Workbench 中的条形图当前可在多个图表之间对多个量度进行回归比较。
 title: 回归分析图
 uuid: 8512890e-f42b-4dce-826a-2b4bf2a215f4
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: bfc76c4a-edd5-41fe-b875-c199ea3beab5
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 94%
 
 ---
-
 
 # 回归分析图{#regression-analysis-graph}
 
 Data Workbench 中的条形图当前可在多个图表之间对多个量度进行回归比较。
 
-Data Workbench 中的[条形图](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html)可让您将一个图表中的量度回归到另一个图表中的量度。如果您有多个图表，则可以将一个量度（作为自变量）与评估其他量度（作为因变量）的图表进行比较。这可让您确定一个因变量（最先确立的量度）与一系列其他变化量度（具有已确立的依赖量度的回归）之间的关系强度。
+Data Workbench 中的[条形图](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html)可让您将一个图表中的量度回归到另一个图表中的量度。如果您有多个图表，则可以将一个量度（作为自变量）与评估其他量度（作为因变量）的图表进行比较。这可让您确定一个因变量（最先确立的量度）与一系列其他变化量度（具有已确立的依赖量度的回归）之间的关系强度。
 
 图表可视化中的回归分析允许分析人员执行“假设”场景。例如，如果访问次数增加到此级别，这种增长会对收入造成何种影响？
 
@@ -26,7 +28,7 @@ Data Workbench 中的[条形图](https://docs.adobe.com/content/help/en/data-wor
 
 1. 将其他量度图表设置为自变量。
 
-   右键单击量度并选择 **[!UICONTROL Regress with `<base metric name>`]** 其他量度。
+   右键单击量度并选择&#x200B;**[!UICONTROL Regress with `<base metric name>`]**&#x200B;作为其他量度。
 
    ![](assets/c_graph_regression.png)
 
@@ -41,4 +43,3 @@ Data Workbench 中的[条形图](https://docs.adobe.com/content/help/en/data-wor
    ![](assets/c_graph_regression_3.png)
 
    如果基于访问的访客数上升到 26,141，则其他量度将具有以下值：访问次数为 26,560，页面查看次数为 189,091。
-

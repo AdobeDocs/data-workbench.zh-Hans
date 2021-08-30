@@ -3,10 +3,10 @@ description: 3D 散点图用三维网格绘制数据维度的元素（例如，�
 title: 3D 散点图
 uuid: 5e23547c-dbb4-490c-94bc-0731deee612e
 exl-id: 18f18cab-a31b-4ffe-89c5-412a5645af2e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 82%
+source-wordcount: '500'
+ht-degree: 83%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 82%
 
 3D 散点图用三维网格绘制数据维度的元素（例如，“天数”或“推荐网站”），其中 x、y 和 z 轴表示各个量度。
 
-与 [2D 散点图](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Scatter_Plots)类似，在尝试了解使用不同量度的大量不同项目之间的关系时，这种可视化是非常有用的。
+与 [2D 散点图](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Scatter_Plots)类似，在尝试了解使用不同量度的大量不同项目之间的关系时，这种可视化是非常有用的。
 
 **要使用 3D 散点图可视化，请执行以下操作：**
 

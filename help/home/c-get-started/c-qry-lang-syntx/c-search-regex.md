@@ -3,10 +3,10 @@ description: Data Workbench 利用正则表达式 (regex) 执行搜索和分类�
 title: 正则表达式
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 67%
+source-wordcount: '132'
+ht-degree: 68%
 
 ---
 
@@ -45,4 +45,4 @@ Data Workbench 利用正则表达式 (regex) 执行搜索和分类操作。
 
 其他常见的正则表达式也可以用于创建更加复杂的搜索字符串。正则表达式可用于所有Data Workbench搜索字段，包括查询实体面板。
 
-请参阅[正则表达式](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions)了解详细信息。
+请参阅[正则表达式](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions)了解详细信息。

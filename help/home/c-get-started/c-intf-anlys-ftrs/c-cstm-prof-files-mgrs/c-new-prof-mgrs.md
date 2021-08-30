@@ -3,9 +3,9 @@ description: “配置文件管理器”显示与工作配置文件相关的所�
 title: 创建配置文件管理器
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
 exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 25%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 25%
 
 您可能需要访问[!DNL Profile Manager]的子目录，而无需导航其整个目录结构。 例如，通过工作区窗口菜单[!DNL Manage]菜单上提供的[!DNL Metrics]和[!DNL Workspaces]菜单选项，可分别打开“配置文件管理器量度”和“工作区”文件夹。
 
-有关[!DNL Profile Manager]的详细信息，请参阅[配置文件管理器](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)。
+有关[!DNL Profile Manager]的详细信息，请参阅[配置文件管理器](https://experienceleague.adobe.com/docs/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)。
 
 默认情况下，您可以访问以下管理器：
 

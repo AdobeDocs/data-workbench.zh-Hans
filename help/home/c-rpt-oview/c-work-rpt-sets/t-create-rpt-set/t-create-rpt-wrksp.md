@@ -3,10 +3,10 @@ description: 您可以直接在Worktop中为单个报表集创建多个工作区
 title: 创建报表服务器工作区
 uuid: 818569c7-fff9-4277-996b-8c47e4ef1dbc
 exl-id: 2bc068f1-c32f-4c14-b3fa-6b46e950abc7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 10%
+source-wordcount: '185'
+ht-degree: 9%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 您可以直接在Worktop中为单个报表集创建多个工作区。
 
-有关Data Workbench和使用界面的信息，请参阅[Data Workbench客户端指南](https://docs.adobe.com/content/help/zh-Hans/data-workbench/using/client/t-open-ins.html)。
+有关Data Workbench和使用界面的信息，请参阅[Data Workbench客户端指南](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html?lang=zh-Hans)。
 
 **要使用[!DNL Worktop]**
 

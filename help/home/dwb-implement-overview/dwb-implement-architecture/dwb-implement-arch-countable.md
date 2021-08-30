@@ -1,30 +1,32 @@
 ---
-description: Dataworkbench(DWB)中用于设计和实施模式的可数表说明。
-title: 模式设计可数结构
+description: Dataworkbench(DWB)中用于设计和实施架构的可计数的说明。
+title: 架构设计可计数结构
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
-translation-type: tm+mt
-source-git-commit: 8b0e9c8855a7c7228393dfab4bf78645f1953794
+exl-id: 4f2a2f8a-7b42-42bb-8ba1-2675ffe6b2c2
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 55%
 
 ---
 
+# 架构设计可计数结构{#schema-design-countable-structures}
 
-# 模式设计可数结构{#schema-design-countable-structures}
+Dataworkbench(DWB)中用于设计和实施架构的可计数的说明。
 
-Dataworkbench(DWB)中用于设计和实施模式的可数表说明。
+## 了解Data Workbench中的可计数 {#section-6e6b8d1c17634d669e62c91a80a0bc62}
 
-## 了解数据工作台中的可计数 {#section-6e6b8d1c17634d669e62c91a80a0bc62}
+最高级别是可计数维度。 可计数维提供两个主要函数。 首先，它们是要对其元素进行计数的维度。 换句话说，可计数器会回答如下问题：
 
-最高级别是可计数维。 可数维具有两个主要功能。 首先，它们是要计算其元素的维。 换句话说，可数者回答如下问题：
+* 有多少访客访问了您的主页？
 
-* 有多少访客访问过您的主页？
+* Google.com有多少次访问？
 
-* Google.com访问了多少次？
-
-`<discoiqbr>`可计数维度通常用于创建求和量度，这些量度会返回维度的所有元素计数或总和。您可以定义可计数维度来统计实例（如预订或产品订单数目）。例如，您可以定义可计数维度订单，其元素（与在线商店的订单对应的日志条目）可以被计数。 如果要在可视化中显示订单计数，您应定义订单总和量度，该量度可以在某个维上评估，也可以应用过滤器。
+`<discoiqbr>`可计数维度通常用于创建求和量度，这些量度会返回维度的所有元素计数或总和。您可以定义可计数维度来统计实例（如预订或产品订单数目）。例如，您可以定义可计数的维度订单，其元素（与在线商店中的订单对应的日志条目）可以被计数。 如果要在可视化中显示订单计数，您可以定义订单总和量度，该量度可以通过某个维度进行评估，也可以应用过滤器。
 
 可数维度可以是其他维度的父维度，也可以是其他可数维度的子维度。
 
-尽管根可计数维度不必与数据中的跟踪ID关联，但Adobe建议您配置数据集的根可计数维度，以使用跟踪ID字段(x-trackingid)作为其密钥。 这样，根可计数维度的每个元素都将与 x-trackingid 的唯一值相关联，并且有关每个元素的所有数据都会分到一组。
+尽管根可计数维度不必与数据中的跟踪ID关联，但Adobe建议您将数据集的根可计数维度配置为使用跟踪ID字段(x-trackingid)作为键。 这样，根可计数维度的每个元素都将与 x-trackingid 的唯一值相关联，并且有关每个元素的所有数据都会分到一组。
 
 可计数维度由以下参数定义：
 
@@ -43,14 +45,14 @@ Dataworkbench(DWB)中用于设计和实施模式的可数表说明。
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Comments（备注） </p> </td> 
+   <td colname="col1"> <p>评论 </p> </td> 
    <td colname="col2"> <p>可选。有关扩展维度的说明。
 
     &lt;/p> &lt;/td>
 <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Condition（条件） </p> </td> 
+   <td colname="col1"> <p>条件 </p> </td> 
    <td colname="col2"> <p>输入字段可用于创建可计数维度的条件。如果指定，则会有一个条件限制可向数据集架构中的维度及其所有子项显示的日志条目集。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -76,19 +78,19 @@ Dataworkbench(DWB)中用于设计和实施模式的可数表说明。
 
 ![](assets/dwb_impl_arch_1.png)
 
-可数表的第二个主要功能是它们构成了数据集模式结构的支柱。 您的数据模式和所有其他维都将组织到其下，并属于可数。 换句话说，如果我们将维视为“类别”，那么可数就是我们将这些“类别”组织成组的方式。
-当维在可计数维下进行分组时，它们被认为位于可计数维的“级别”。 例如，在下图中，您可以看到“电子邮件地址”在访客级别，“浏览器”在访问级别。 “父项”和“子项”指可数与其下分组的维之间的关系。 例如，访客是电子邮件地址的“父项”。 相反，电子邮件地址是访客的“子级”。 ![](assets/dwb_impl_arch_2.png) ![](assets/dwb_impl_arch_3.png)
+可计数的第二项主要功能是它们构成数据集架构结构的骨干。 您的数据架构和所有其他维度将组织在下进行分组，并属于可计数的。 换句话说，如果我们将维度视为“类别”，那么可计数就是我们将这些“类别”组织成组的方式。
+在可计数维度下对维度进行分组时，这些维度据说位于可计数维度的“级别”。 例如，在下图中，您可以看到“电子邮件地址”位于访客级别，“浏览器”位于访问级别。 “父项”和“子项”是指可计数维度与其下面分组的维度之间的关系。 例如，“访客”是电子邮件地址的“父项”。 相反，电子邮件地址是访客的“子级”。![](assets/dwb_impl_arch_2.png) ![](assets/dwb_impl_arch_3.png)
 
-## 在数据工作台中创建可计数 {#section-491f3e8e4fbc429e95d6c97f012a208e}
+## 在Data Workbench中创建可计数 {#section-491f3e8e4fbc429e95d6c97f012a208e}
 
 执行以下步骤以在Dataworkbench中创建可计数：
 
-1. 打开用户档案管理器
-1. 在“转换”文件夹下，创建一个配置文件并在工作站中打开它。
-1. 在“扩展维”下，右键单击并选择“添加新->可数”，如下所示： ![](assets/dwb_impl_arch_4.png)
+1. 打开配置文件管理器
+1. 在转换文件夹下，创建配置文件并在工作站中将其打开。
+1. 在“扩展Dimension”下，右键单击并选择“添加新 — >可计数”，如下所示：![](assets/dwb_impl_arch_4.png)
 
-1. 输入新可数表的名称。 在以下示例中，定义了客户可数。 如果它是最高级可计数，则在父写入根中。 ![](assets/dwb_impl_arch_5.png)
+1. 为新可计数输入名称。 在以下示例中，定义了客户可计数。 如果它是最高级别可计数，则在父写入根中。![](assets/dwb_impl_arch_5.png)
 
-   如果可数不是顶级1，则在父字段中指定父可数的名称。 在以下示例中，将创建“参与可计数”，此可计数的父代是“客户”。 ![](assets/dwb_impl_arch_5.png)
+   如果可计数不是顶级可计数，则在父字段中为父可计数的名称。 在以下示例中，将创建“参与可计数”，此可计数的父项是“客户”。![](assets/dwb_impl_arch_5.png)
 
-有关模式设计、可计数结构和离线数据馈送配置的Data Workbench体系结构的其他信息，请参阅 [数据集模式界面](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html)。
+有关架构设计、可计数结构和离线数据馈送配置的Data Workbench架构的其他信息，请参阅[数据集架构界面](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html)。

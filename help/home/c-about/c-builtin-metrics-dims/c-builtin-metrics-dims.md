@@ -3,9 +3,9 @@ description: 本节提供了有关Data Workbench中提供的内置量度、维�
 title: 关于内置量度、维度和过滤器
 uuid: 05676254-f6f5-4cb1-a664-da96d5b965db
 exl-id: d581a029-fd59-47c5-b832-64407102ace7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 8%
 
 ---
@@ -18,4 +18,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->日志处理阶段并不意味着所有事件数据都来自日志文件。 尽管有时会这样做，但事件数据可能来自其他源，如ODBC数据源。 有关数据源的更多信息，请参阅[《数据集配置指南》](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html)。
+>日志处理阶段并不意味着所有事件数据都来自日志文件。 尽管有时会这样做，但事件数据可能来自其他源，如ODBC数据源。 有关数据源的更多信息，请参阅[《数据集配置指南》](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html)。

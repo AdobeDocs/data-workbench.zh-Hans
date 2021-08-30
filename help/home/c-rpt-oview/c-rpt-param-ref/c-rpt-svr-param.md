@@ -3,9 +3,9 @@ description: 有关Report Server.cfg参数的信息。
 title: Report Server.cfg 参数
 uuid: 506f30f7-c8c6-4580-8423-7da8d00b0d57
 exl-id: 339e4219-ff4d-4df6-b45a-7144927a843b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 8%
 
 ---
@@ -166,7 +166,7 @@ Proxy User Name = string: ProxyUserName
   </tr> 
   <tr> 
    <td colname="col1"> 状态间隔 </td> 
-   <td colname="col2"> <p><span class="wintitle"> Report Server </span>生成状态信息并将其发送到Data Workbench Server的频率（以秒为单位），以在<span class="wintitle">详细状态</span>中显示。 </p> <p>默认值为 120 秒。不建议将此值设置为小值（如2分钟），因为报表队列可能需要数小时才能运行。 在这种情况下，您可以考虑将设置为600到1200秒。 </p> <p>有关<span class="wintitle">详细状态</span>的更多信息，请参阅《Insight用户指南》 </a>的“管理界面”一章。<a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> </a></p> </td> 
+   <td colname="col2"> <p><span class="wintitle"> Report Server </span>生成状态信息并将其发送到Data Workbench Server的频率（以秒为单位），以在<span class="wintitle">详细状态</span>中显示。 </p> <p>默认值为 120 秒。不建议将此值设置为小值（如2分钟），因为报表队列可能需要数小时才能运行。 在这种情况下，您可以考虑将设置为600到1200秒。 </p> <p>有关<span class="wintitle">详细状态</span>的更多信息，请参阅《Insight用户指南》 </a>的“管理界面”一章。<a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> </a></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 更新间隔 </td> 
