@@ -3,9 +3,9 @@ description: 以下是安装 Data Workbench 中工作站（客户端）的要求
 title: 工作站要求
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 exl-id: 35e259e3-3d6d-45c8-a923-2f8de117489d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '525'
 ht-degree: 49%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 49%
 
 以下是安装 Data Workbench 中工作站（客户端）的要求和建议。
 
-有关其他Data Workbench系统要求，请参阅[服务器系统要求](https://docs.adobe.com/help/en/data-workbench/using/server-admin-install/c-msr-server.html)。
+有关其他Data Workbench系统要求，请参阅[服务器系统要求](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/c-msr-server.html?lang=en)。
 
 >[!IMPORTANT]
 >

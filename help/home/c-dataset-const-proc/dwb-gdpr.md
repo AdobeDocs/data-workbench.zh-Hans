@@ -2,9 +2,9 @@
 description: AdobeData Workbench提供了一些工具和流程来为您的数据做好准备，以遵守《通用数据保护条例》(GDPR)。
 title: Data Workbench 支持 GDPR
 exl-id: fdc43567-0c57-4851-9073-e295258a8074
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ AdobeData Workbench提供了一些工具和流程来准备数据以符合[!DNL G
 
 * 贵组织充当&#x200B;**数据控制者**，根据您的需求和限制确定个人数据的上下文和保留。 Adobe然后代表您处理和存储此数据。
 * Adobe充当&#x200B;**数据处理者**，根据您与Adobe的协议，提供用于实施GDPR要求的软件和服务。
-* 将Data Workbench与GDPR服务集成后，根据GDPR标准，网站的访客（**数据主体**）可以由数据处理者Adobe行使其“被遗忘权”。 为了实现被遗忘权，您作为数据控制者可以将受挑战的访客ID上传到UI或API中Adobe。 有关更多信息，请参阅[Adobe Analytics GDPR工作流](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)文档，包括[提交访问和删除请求](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html)部分。
+* 将Data Workbench与GDPR服务集成后，根据GDPR标准，网站的访客（**数据主体**）可以由数据处理者Adobe行使其“被遗忘权”。 为了实现被遗忘权，您作为数据控制者可以将受挑战的访客ID上传到UI或API中Adobe。 有关更多信息，请参阅[Adobe Analytics GDPR工作流](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=en)文档，包括[提交访问和删除请求](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html)部分。
 
 >[!NOTE]
 >

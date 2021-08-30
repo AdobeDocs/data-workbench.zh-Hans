@@ -3,9 +3,9 @@ description: 设置DWB后，您可以实施这些功能。
 title: Data Workbench 功能实施
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 3%
 
 * 要实施&#x200B;**地球可视化**，请参阅[地球](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html)。
 
-* 要实施归因的&#x200B;**工作区**，请参阅[基于规则的归因](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-rules-attrib.html)和[最适合归因](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html)。
+* 要实施归因的&#x200B;**工作区**，请参阅[基于规则的归因](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-rules-attrib.html?lang=en)和[最适合归因](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html?lang=en)。
 
 * 要实施&#x200B;**预测分析**&#x200B;工作区，请参阅[可视化图表](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-vis.html)和下面列出的可视化图表。
 
-* 要实施&#x200B;**使用聚类可视化的预测智能**，请参阅[聚类](https://docs.adobe.com/help/en/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html)。
+* 要实施&#x200B;**使用聚类可视化的预测智能**，请参阅[聚类](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en)。
 
 * 要实施具有倾向评分的&#x200B;**预测智能**，请参阅[倾向评分](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-propensity/c-visitor-propensity.html)。
 
