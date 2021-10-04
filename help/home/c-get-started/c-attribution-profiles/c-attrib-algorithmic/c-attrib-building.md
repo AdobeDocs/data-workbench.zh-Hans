@@ -3,10 +3,10 @@ description: 从“高级”菜单中打开“最适合归因”，然后按照�
 title: 构建最佳拟合归因模型
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 57%
+source-wordcount: '860'
+ht-degree: 58%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 57%
 
    >[!NOTE]
    >
-   >最适合归因是一项Adobe Analytics Premium功能，它要求您在配置文件中启用Premium。 它需要您更新证书，并将“高级”配置文件添加到您的 profile.cfg 文件中。请参阅[DWB服务器升级：适用于DWB 6.3的6.2至6.3](https://experienceleague.adobe.com/docs/data-workbench/using/install/upgrade-dwb/c-6-2-to-6-3-upgrade.html)。
+   >最适合归因是一项Adobe Analytics Premium功能，它要求您在配置文件中启用Premium。 它需要您更新证书，并将“高级”配置文件添加到您的 profile.cfg 文件中。请参阅[DWB服务器升级：适用于DWB 6.3的6.2至6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)。
 
 1. 设置&#x200B;**[!UICONTROL Success]**&#x200B;量度。
 
@@ -108,54 +108,54 @@ ht-degree: 57%
 
 **选项**&#x200B;菜单提供可用于设置和显示最适合归因分析的高级功能。
 
-<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> “选项”菜单 </th> 
-   <th colname="col2" class="entry"> 描述 </th> 
+<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> “选项”菜单 </th>
+   <th colname="col2" class="entry"> 描述 </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol">设置培训过滤器</span> </td> 
-   <td colname="col2"> 在构建归因模型时，培训过滤器可随成功窗口一起用于过滤人群。这将提供一组数据子集，其中只包含需要进行分析的访客。 <p>注意：有经验的用户还可利用过滤器的灵活性，以便将重点放在成功和接触窗口的时间线以外的范围。例如，除了选择时间范围外，您还可以选择一组<i>反向链接域</i>，以便只检查这些域中的用户归因。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> 显示复杂过滤器说明 </span> </td> 
-   <td colname="col2"> 显示培训过滤器、成功窗口和接触窗口的过滤器代码。 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol">保存模型</span> </td> 
-   <td colname="col2"> 保存当前的归因模型，以供今后使用。 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol">加载模型</span> </td> 
-   <td colname="col2"> 打开之前保存的归因模型。 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol">表示视图</span> </td> 
-   <td colname="col2"> 隐藏表示视图的顶部菜单栏。 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>选项 &gt; 高级</b>中包含的功能可用于设置培训集大小，并指定在遇到类不平衡时所采取的方法。 </p> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol">高级 &gt; 培训集大小</span> </td> 
-   <td colname="col2"> <p>设置培训集大小。 </p> <p>注意：默认的培训集大小为“大”（250,000 名访客）。 </p> 
-    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD"> 
-     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">微小 = 50,000 </li> 
-     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">小 = 75,000 </li> 
-     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">普通 = 100,000 </li> 
-     <li id="li_0BB7F791603745028CFC661EBC94D8B4">大 = 250,000 </li> 
-     <li id="li_34B60233C84F48F1BCB8040C5195411A">超大 = 500,000 </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><b>高级 &gt; 类平衡</b> </td> 
-   <td colname="col2"> <p>针对基于数据集大小的类不平衡问题，识别和定义要生成的输入记录的数量。 </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="uicontrol">设置培训过滤器</span> </td>
+   <td colname="col2"> 在构建归因模型时，培训过滤器可随成功窗口一起用于过滤人群。这将提供一组数据子集，其中只包含需要进行分析的访客。 <p>注意：有经验的用户还可利用过滤器的灵活性，以便将重点放在成功和接触窗口的时间线以外的范围。例如，除了选择时间范围外，您还可以选择一组<i>反向链接域</i>，以便只检查这些域中的用户归因。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> 显示复杂过滤器说明 </span> </td>
+   <td colname="col2"> 显示培训过滤器、成功窗口和接触窗口的过滤器代码。 </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol">保存模型</span> </td>
+   <td colname="col2"> 保存当前的归因模型，以供今后使用。 </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol">加载模型</span> </td>
+   <td colname="col2"> 打开之前保存的归因模型。 </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol">表示视图</span> </td>
+   <td colname="col2"> 隐藏表示视图的顶部菜单栏。 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p><b>选项 &gt; 高级</b>中包含的功能可用于设置培训集大小，并指定在遇到类不平衡时所采取的方法。 </p> </td>
+   <td colname="col2"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol">高级 &gt; 培训集大小</span> </td>
+   <td colname="col2"> <p>设置培训集大小。 </p> <p>注意：默认的培训集大小为“大”（250,000 名访客）。 </p>
+    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD">
+     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">微小 = 50,000 </li>
+     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">小 = 75,000 </li>
+     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">普通 = 100,000 </li>
+     <li id="li_0BB7F791603745028CFC661EBC94D8B4">大 = 250,000 </li>
+     <li id="li_34B60233C84F48F1BCB8040C5195411A">超大 = 500,000 </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><b>高级 &gt; 类平衡</b> </td>
+   <td colname="col2"> <p>针对基于数据集大小的类不平衡问题，识别和定义要生成的输入记录的数量。 </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 | 重置和删除选项 | 描述 |

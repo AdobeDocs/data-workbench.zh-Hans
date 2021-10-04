@@ -3,10 +3,10 @@ description: 按照以下步骤，从安装的 Insight v5.5x 更新至 Data Work
 title: 从 Data Workbench 5.5 升级至 6.1
 uuid: 14e3612e-11a2-402a-9478-904ec55df23c
 exl-id: c730f6d5-2171-4d97-a967-509dc2517c86,3f25917b-b929-4e3b-84f0-1a81b30ba641
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 61%
+source-wordcount: '757'
+ht-degree: 62%
 
 ---
 
@@ -53,17 +53,17 @@ ht-degree: 61%
 
    1. 更新[!DNL Server\Scripts]文件夹以更新[!DNL TnTSend.exe]。
 
-1. 如果采用 **[!UICONTROL DeviceAtlas]**，则将需要[更新捆绑包](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)（位于 [!DNL Server\Lookups] 文件夹）。
+1. 如果采用 **[!UICONTROL DeviceAtlas]**，则将需要[更新捆绑包](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)（位于 [!DNL Server\Lookups] 文件夹）。
 1. 设置 [!DNL Directories] 中的 [!DNL Profile.cfg]，以确保矢量已更新，可以反映每个配置文件的项目数量。
 
    例如，要启用&#x200B;**[!UICONTROL Predictive Analytics]**&#x200B;配置文件，您需要更新此设置。
 
    ```
-   Directories = vector: 5 items 
-       0 = string: Base\\ 
-       1 = string: Geography\\ 
-       2 = string: Predictive Analytics\\ 
-       3 = string: Adobe SC\\ 
+   Directories = vector: 5 items
+       0 = string: Base\\
+       1 = string: Geography\\
+       2 = string: Predictive Analytics\\
+       3 = string: Adobe SC\\
        4 = string: Profile Name\\
    ```
 
@@ -85,7 +85,7 @@ ht-degree: 61%
    如果没有定义“日志源 ID”，则将收到以下错误：
 
    ```
-   Missing Log Source ID in log processing.cfg.  
+   Missing Log Source ID in log processing.cfg.
    Log Source ID must be defined for all log sources.
    ```
 
@@ -116,10 +116,10 @@ ht-degree: 61%
    Data Workbench当前支持英语(-en-us)和中文(-zh-cn)。 需要设置字体才能支持单字节和双字节字符：
 
    ```
-   Report Server.cfg - Add Fonts 
-      Fonts = vector: 2 items  
-      0 = string: SimSun  
-      1 = string: Arial 
+   Report Server.cfg - Add Fonts
+      Fonts = vector: 2 items
+      0 = string: SimSun
+      1 = string: Arial
    ```
 
    Windows 操作系统必须也安装了列出的这些字体。
@@ -138,7 +138,7 @@ ht-degree: 61%
 1. 根据语言设置启动服务：
 
    ```
-   ReportServer.exe -RegServer -Locale -en-us (English) 
+   ReportServer.exe -RegServer -Locale -en-us (English)
    ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
    ```
 
@@ -166,8 +166,8 @@ ht-degree: 61%
    Data Workbench 目前支持英语和简体中文。选择用于支持这两种语言的字体：
 
    ```
-   Fonts = vector: 2 items  
-   0 = string: SimSun 
+   Fonts = vector: 2 items
+   0 = string: SimSun
    1 = string: Arial
    ```
 
