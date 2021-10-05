@@ -3,7 +3,7 @@ description: AppendURI 转换提供了一种向默认值中添加信息的方法
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 84%
@@ -29,7 +29,7 @@ AppendURI 转换提供了一种向默认值中添加信息的方法，该默认�
 
 假定使用传统的模型-视图-控制器方法构建了一个网站。在此类系统中，通常有一个网页作为进入系统的访问点。对于这样的网站，可视化系统中的流量模式毫无意义，并且不能提供对访客使用情况和流量情况的分析。例如，假定网站通过以下形式的 URI 传递所有 Web 请求：
 
-* [!DNL http://www.examplesite.com/modelview.asp?id=login&name=bob]
+* [!DNL https://www.examplesite.com/modelview.asp?id=login&name=bob]
 
 modelview ASP 页面接收所有流量并基于查询中 id 字段的值确定其操作。默认情况下，URI 维度将包含单个条目：
 

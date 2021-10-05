@@ -3,7 +3,7 @@ description: 要开始使用AdobeData Workbench功能板，请执行以下步骤
 title: 快速入门
 uuid: 9e2ed5fd-29d7-4e06-ad55-c4a35a9043c8
 exl-id: acaa7563-d462-4838-b2b5-3c010382da34
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 2%
@@ -21,9 +21,9 @@ ht-degree: 2%
    虽然许多浏览器的变体可能会起作用，但官方仅支持以下Web浏览器：
 
    * Google Chrome 15及更高版本(位于[https://www.google.com/chrome/](https://www.google.com/chrome/))
-   * Microsoft Internet Explorer 9及更高版本(位于[http://www.microsoft.com/windows/ie/](http://www.microsoft.com/windows/ie/))
-   * Mozilla Firefox 3.6及更高版本(位于[http://www.mozilla.org/en-US/firefox/all-older.html](http://www.mozilla.org/en-US/firefox/all-older.html))
-   * Safari 5.1及更高版本(位于[http://www.apple.com/safari](http://www.apple.com/safari))
+   * Microsoft Internet Explorer 9及更高版本(位于[https://www.microsoft.com/windows/ie/](https://www.microsoft.com/windows/ie/))
+   * Mozilla Firefox 3.6及更高版本(位于[https://www.mozilla.org/en-US/firefox/all-older.html](https://www.mozilla.org/en-US/firefox/all-older.html))
+   * Safari 5.1及更高版本(位于[https://www.apple.com/safari](https://www.apple.com/safari))
 
    除了兼容的Web浏览器，使用功能板无需下载其他软件。 1.请求帐户。
 

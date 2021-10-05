@@ -3,7 +3,7 @@ description: 营销您的网站可能涉及在第三方网站上以图像或其�
 title: 衡量广告展示次数
 uuid: ca2bd6bf-4f49-406c-b47a-18d6abfb48a4
 exl-id: 77cd816e-63a4-4080-ac65-0661e1de4ec0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 4%
@@ -19,8 +19,8 @@ ht-degree: 4%
 对于以图像形式进行的广告，将[!DNL Log=1]附加到查询字符串会导致图像请求，从而导致广告展示被[!DNL Sensor]捕获以用于分析目的。
 
 ```
-<!—REFERENCE IMPRESSION TAG-> 
-<IMG SRC="http://www.mysite.com/images/zag.gif?Log=1&v_ic=CAMPAIGN 1&v_ica=72890ab&v_icr=http://money.cnn.com/markets/"/>
+<!—REFERENCE IMPRESSION TAG->
+<IMG SRC="https://www.mysite.com/images/zag.gif?Log=1&v_ic=CAMPAIGN 1&v_ica=72890ab&v_icr=https://money.cnn.com/markets/"/>
 <!--END REFERENCE IMPRESSION TAG-->
 ```
 
@@ -28,39 +28,39 @@ ht-degree: 4%
 |---|---|---|
 | v_ic= | 表示展示型营销活动的值 | v_ic=&quot;CAMPAIGN1&quot; |
 | v_ica= | 表示展示型营销活动资产的值 | v_ica=&quot;72890ab&quot; |
-| v_icr= | 表示展示促销活动反向链接的值 | v_icr=&quot;http://money.cnn.com/markets/ |
+| v_icr= | 表示展示促销活动反向链接的值 | v_icr=&quot;https://money.cnn.com/markets/ |
 
 除了将[!DNL Log=1]附加到图像请求之外，还应在从广告到网站目标页面的URL中添加一个标识符，以跟踪导致点进的广告，并跟踪该广告的点进回特定营销活动。
 
 ```
-<a href=”www.mysite.com/path/to/landingpage?Log=1&v_c=CAMPAIGN&v_ca=72890ab&v_cr=http://money.cnn.com/markets/”>
+<a href=”www.mysite.com/path/to/landingpage?Log=1&v_c=CAMPAIGN&v_ca=72890ab&v_cr=https://money.cnn.com/markets/”>
 Click Here
 </a>
 ```
 
-<table id="table_B87134C522EF4AC9BD2AFA6F4A0CF574"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 收集的数据 </th> 
-   <th colname="col2" class="entry"> 说明 </th> 
-   <th colname="col3" class="entry"> 示例 </th> 
-  </tr> 
+<table id="table_B87134C522EF4AC9BD2AFA6F4A0CF574">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> 收集的数据 </th>
+   <th colname="col2" class="entry"> 说明 </th>
+   <th colname="col3" class="entry"> 示例 </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> v_c= </td> 
-   <td colname="col2"> 表示点进促销活动的值 </td> 
-   <td colname="col3"> v_c="CAMPAIGN1" </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> v_ca= </td> 
-   <td colname="col2"> 表示点进促销活动资产的值 </td> 
-   <td colname="col3"> v_ca="72890ab" </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> v_cr= </td> 
-   <td colname="col2"> 表示点进促销活动反向链接的值 </td> 
-   <td colname="col3"> <p> <span class="filepath"> v_cr="http://money.cnn.com/</span> </p> <p>市场/ </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> v_c= </td>
+   <td colname="col2"> 表示点进促销活动的值 </td>
+   <td colname="col3"> v_c="CAMPAIGN1" </td>
+  </tr>
+  <tr>
+   <td colname="col1"> v_ca= </td>
+   <td colname="col2"> 表示点进促销活动资产的值 </td>
+   <td colname="col3"> v_ca="72890ab" </td>
+  </tr>
+  <tr>
+   <td colname="col1"> v_cr= </td>
+   <td colname="col2"> 表示点进促销活动反向链接的值 </td>
+   <td colname="col3"> <p> <span class="filepath"> v_cr="https://money.cnn.com/</span> </p> <p>市场/ </p> </td>
+  </tr>
+ </tbody>
 </table>

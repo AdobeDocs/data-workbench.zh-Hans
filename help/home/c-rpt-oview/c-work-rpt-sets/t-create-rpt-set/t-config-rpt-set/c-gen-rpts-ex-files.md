@@ -3,10 +3,10 @@ description: 以Excel文件形式生成报表的信息。
 title: 将报表生成为 Microsoft Excel 文件
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 22%
+ht-degree: 20%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 22%
    >[!NOTE]
    >
    >
-   >    
-   >    
-   >    * 将报表生成为Excel文件时，将打开一个Excel的新实例。 有关此过程的详细信息，请参阅 [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757)。
+   >
+   >
+   >    * 将报表生成为Excel文件时，将打开一个Excel的新实例。 有关此过程的更多信息，请参阅[https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757)。
    >    * 尽管Data Workbench支持超过256列和65,536行数据，但Microsoft Excel不支持。
 
 
-如果满足这些要求，[!DNL Report Server]会自动启动Microsoft Excel，并将某些可视化、维度和值图例以及文本批注中的数据输出到新的Excel工作簿中，每个工作表具有一个可视化。
+如果满足这些要求，[!DNL Report Server]会自动启动Microsoft Excel并将某些可视化、维度和值图例以及文本批注中的数据输出到新的Excel工作簿中，每个工作表具有一个可视化。
 
 >[!NOTE]
 >

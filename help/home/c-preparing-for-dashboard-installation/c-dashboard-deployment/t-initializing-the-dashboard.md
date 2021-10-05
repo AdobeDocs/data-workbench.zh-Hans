@@ -1,20 +1,20 @@
 ---
 description: 最后一步是首次运行功能板，以允许其初始化。
-title: 初始化功能板
+title: 初始化仪表板
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 exl-id: 47098d73-d8c4-4d14-964f-108a731d3733
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
 
 ---
 
-# 初始化功能板{#initializing-the-dashboard}
+# 初始化仪表板{#initializing-the-dashboard}
 
 最后一步是首次运行功能板，以允许其初始化。
 
-1. 打开Web浏览器并输入新部署站点的URL(例如，http://localhost/dashboard)。
+1. 打开Web浏览器并输入新部署站点的URL(例如，https://localhost/dashboard)。
 1. 首次连接将设置数据库表，因此可能会遇到轻微延迟。
 1. 初始登录凭据包括：
 

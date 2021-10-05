@@ -3,7 +3,7 @@ description: 对于某些网站，需要使用嵌入式对象请求将信息传�
 title: 获取动态页面名称
 uuid: eaa35023-bbfa-4eb9-9ab7-3986187e5537
 exl-id: cd94caf0-b0dc-46c1-8f59-3ebb2f703286
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -23,25 +23,25 @@ ht-degree: 1%
 通常，嵌入在每个此类HTML页面中的对象请求应如下所示：
 
 ```
-<!-- BEGIN REFERENCE PAGE TAG--> 
-<script language="javascript"> 
-var vlc = "0" //Capture Link Click  1=TRUE, 0=FALSE 
-var v = {}; 
-v["_pn"] = "Application Form"; 
-</script> 
- 
-<script language="javascript" src=”http://www.myserver.com/path/to/zig.js" type="text/javascript"></script> 
- 
-<noscript> 
-<img src="/path/to/zag.gif?Log=1&v_jd=1" border="0" width="1" height="1"/> 
-</noscript> 
- 
+<!-- BEGIN REFERENCE PAGE TAG-->
+<script language="javascript">
+var vlc = "0" //Capture Link Click  1=TRUE, 0=FALSE
+var v = {};
+v["_pn"] = "Application Form";
+</script>
+
+<script language="javascript" src=”https://www.myserver.com/path/to/zig.js" type="text/javascript"></script>
+
+<noscript>
+<img src="/path/to/zag.gif?Log=1&v_jd=1" border="0" width="1" height="1"/>
+</noscript>
+
 <!-- END REFERENCE PAGE TAG-->
 ```
 
 [!DNL Log=1] 确保记 [!DNL Sensor] 录请求，尽管存在相反的 [!DNL Sensor] 内容类型过滤规则，例如在存储JavaScript请求和图像请求之前先对其进行过滤。声明的v_pn变量标识所提供实际页面内容的名称，以便[!DNL Site]知道访客实际查看的页面名称。 v_pn值可以手动或通过其他脚本或应用程序代码建立。
 
-在收集值后，您可以将Data Workbench Server配置为使用附加到[!DNL zag.gif] URI中的查询字符串变量（例如，v_pn=Application Form）的内容（例如，[!DNL http://www.mysite.com/pageserved.asp?v_pn=Application%20Form]）作为[!DNL zag.gif] URI的增强。 除了通过每个HTTP请求获得的基线测量之外，还将通过此请求获得扩展测量。
+在收集值后，您可以将Data Workbench Server配置为使用附加到[!DNL zag.gif] URI中的查询字符串变量（例如，v_pn=Application Form）的内容（例如，[!DNL https://www.mysite.com/pageserved.asp?v_pn=Application%20Form]）作为[!DNL zag.gif] URI的增强。 除了通过每个HTTP请求获得的基线测量之外，还将通过此请求获得扩展测量。
 
 | 收集的数据 | 说明 | 示例 |
 |---|---|---|

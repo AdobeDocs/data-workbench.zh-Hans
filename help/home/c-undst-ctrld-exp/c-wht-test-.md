@@ -4,7 +4,7 @@ solution: Analytics,Analytics
 title: 我应该测试哪些内容？
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 * **了解要进行的正确更改。** 这需要对您的网站如何运行以及前端网站的基础业务流程进行一些研究。您希望进行更改，以便提供影响最大且可轻松进行测试。
 * **小的更改可能会产生重大影响。** 您测试的所有更改并非都需要非常剧烈才能对您的业务产生重大影响。总是愿意做一些小的，但非常重要的改变。
 
-## 支持的方法{#section-1071adaf54c64ba9bc5ef228c4a23635}
+## 支持的方法 {#section-1071adaf54c64ba9bc5ef228c4a23635}
 
 使用Site可以针对多种不同目标进行多种类型的实验。 以下列表提供了一些示例：
 
@@ -42,6 +42,6 @@ ht-degree: 1%
 >
 >对照实验基于URI替换，而不是查询字符串替换。 在以下示例中，特定URL中的URI会突出显示：
 >
->`http://www.omniture.com/index.asp?id=1`
+>`https://www.omniture.com/index.asp?id=1`
 >
 >例如，在控制实验中，您可以指定将控制组URI [!DNL index.asp]替换为测试组URI [!DNL index2.asp]以确定哪个页面设计将产生更多值。

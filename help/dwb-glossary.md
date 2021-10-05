@@ -3,8 +3,8 @@ description: Data Workbench 术语表
 title: Data Workbench 术语表
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
 exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+workflow-type: tm+mt
 source-wordcount: '4201'
 ht-degree: 100%
 
@@ -62,11 +62,11 @@ Data Workbench 中的一种图例，可显示选定量度的颜色渐变。颜�
 
 **置信度区间**
 
-一个值范围，指定包含相关比率或趋势的可能性。80% (p-value = .20)、95% (p-value = .05) 和 99% (p-value = .01) 置信度区间是最常用的区间。（来源：`http://www.nci.nih.gov/statistics/glossary`）
+一个值范围，指定包含相关比率或趋势的可能性。80% (p-value = .20)、95% (p-value = .05) 和 99% (p-value = .01) 置信度区间是最常用的区间。（来源：`https://www.nci.nih.gov/statistics/glossary`）
 
 **置信水平**
 
-调查结果中的取样错误处于指定范围内的可能性，通常以标准错误的形式表示（例如，1 个标准错误等于 68% 可能性，2 个标准错误等于 95.4% 可能性）。（来源：`http://www.magazine.org/research/3410.cfm`）
+调查结果中的取样错误处于指定范围内的可能性，通常以标准错误的形式表示（例如，1 个标准错误等于 68% 可能性，2 个标准错误等于 95.4% 可能性）。（来源：`https://www.magazine.org/research/3410.cfm`）
 
 **转化图**
 
@@ -238,7 +238,7 @@ Data Workbench 中的一个窗口，允许分析师为数据集定义他们自�
 
 **自然顺序**
 
-它是指或表示一个系列中的数值顺序。（来源：`http://wordnet.princeton.edu/perl/webwn?s=ordinal`）如果维度在 Data Workbench 中按自然顺序排序，则维度的元素会以它们在内部呈现的顺序显示。
+它是指或表示一个系列中的数值顺序。（来源：`https://wordnet.princeton.edu/perl/webwn?s=ordinal`）如果维度在 Data Workbench 中按自然顺序排序，则维度的元素会以它们在内部呈现的顺序显示。
 
 **离群值**
 

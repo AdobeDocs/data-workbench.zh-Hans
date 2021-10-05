@@ -3,7 +3,7 @@ description: 查询字符串变量可添加到JavaScript请求中，以在发出
 title: 获取其他信息
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
 exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 4%
@@ -19,20 +19,20 @@ ht-degree: 4%
 可以通过脚本从页面获取的其他信息可以通过以下代码作为示例添加到嵌入式对象中：
 
 ```
-<!-- BEGIN REFERENCE PAGE TAG--> 
-<script language="javascript"> 
-var vlc = "0" //Capture Link Click  1=TRUE, 0=FALSE 
-var v = {}; 
-v["_pn"] = "Application Form"; 
-v["_1"] = “99.99”; 
-v["_2"] = "visa"; 
-</script> 
- 
-<script language="javascript" src=”http://www.myserver.com/path/to/zig.js" type="text/javascript"></script> 
-<noscript> 
- 
-<img src="/path/to/zag.gif?Log=1&v_jd=1" border="0" width="1" height="1"/> 
-</noscript> 
+<!-- BEGIN REFERENCE PAGE TAG-->
+<script language="javascript">
+var vlc = "0" //Capture Link Click  1=TRUE, 0=FALSE
+var v = {};
+v["_pn"] = "Application Form";
+v["_1"] = “99.99”;
+v["_2"] = "visa";
+</script>
+
+<script language="javascript" src=”https://www.myserver.com/path/to/zig.js" type="text/javascript"></script>
+<noscript>
+
+<img src="/path/to/zag.gif?Log=1&v_jd=1" border="0" width="1" height="1"/>
+</noscript>
 <!-- END REFERENCE PAGE TAG-->
 ```
 

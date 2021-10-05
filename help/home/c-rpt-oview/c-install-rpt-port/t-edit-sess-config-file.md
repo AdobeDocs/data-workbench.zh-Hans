@@ -3,7 +3,7 @@ description: 报表门户使用名为global.asa的配置文件中的信息来初
 title: 编辑会话配置文件
 uuid: c1bcd4d2-9bf5-425a-bda2-7f805983cdc6
 exl-id: 98cf2e11-afb8-4530-aaa4-ea3c913effc1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -30,8 +30,8 @@ ht-degree: 6%
 1. 保存文件。
 1. 要验证[!DNL Report Portal]文件是否已正确安装，并且可以通过其指定的虚拟目录访问它们，请在浏览器中打开以下页面：
 
-   http://*YourServerAddress*/*YourPortalName*
+   https://*YourServerAddress*/*YourPortalName*
 
-   示例：[!DNL http://localhost/VisualReportPortal]
+   示例：[!DNL https://localhost/VisualReportPortal]
 
    如果[!DNL Report Portal] ASP安装正确，则应会看到门户登录页面。 如果未看到此页，请验证IIS上是否启用了ASP，并重新检查虚拟目录映射。

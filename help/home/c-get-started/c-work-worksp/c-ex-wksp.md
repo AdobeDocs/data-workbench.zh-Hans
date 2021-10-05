@@ -3,10 +3,10 @@ description: 可以将工作区导出为 .png 图像文件，或将某些窗口�
 title: 导出工作区
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '774'
-ht-degree: 54%
+ht-degree: 53%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 54%
 
 可以将工作区导出为 .png 图像文件，或将某些窗口的数据导出到 Excel（.xls 或 .xlsx）文件。
 
-## 将工作区导出为PNG文件{#section-f9fbe0f0a1c341e2b063cce106cac35e}
+## 将工作区导出为PNG文件 {#section-f9fbe0f0a1c341e2b063cce106cac35e}
 
 可以以可移植网络图形格式（`.png`文件）保存工作区的快照。 将工作区另存为`.png`文件时，可以使用以下颜色选项：
 
@@ -26,7 +26,7 @@ ht-degree: 54%
 
 在工作区的标题栏菜单中，单击&#x200B;**[!UICONTROL Export]** > **[!UICONTROL Export PNG]** > ***[!UICONTROL color option]**>*。
 
-出现[!UICONTROL Save Image As]对话框。
+此时会显示 [!UICONTROL Save Image As] 对话框。
 
 导航到要在其中保存文件的目录，根据需要更改文件名，然后单击&#x200B;**[!UICONTROL Save]**。
 
@@ -36,20 +36,19 @@ ht-degree: 54%
 
 若要将工作区和单个窗口导出到 Microsoft Excel，必须满足以下要求：
 
-* 必须将Microsoft Excel安装在与Data Workbench相同的计算机上。
+* Microsoft Excel必须与Data Workbench安装在同一台计算机上。
 * 运行Data Workbench进程的用户帐户必须具有访问Microsoft Excel的权限。
 
 >[!NOTE]
 >
->* 在将数据导出为 Excel 文件时，将打开 Excel 的新实例。有关此过程的详细信息，请参阅 [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757)。
+>* 在将数据导出为 Excel 文件时，将打开 Excel 的新实例。有关此过程的更多信息，请参阅[https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757)。
 >* 尽管Data Workbench支持超过256列和65,536行数据，但8.0之前的Microsoft Excel版本不支持。
 >
 
 
-
 如果满足这些要求，Data Workbench会自动启动Microsoft Excel并将数据导出到新的Excel工作簿。 不会导出以下可视化中的数据：图表、路径浏览器、流程图、散点图和地球。
 
-## 应用自定义标题{#section-a332e157554546cb8e88922a8d7a4fa2}
+## 应用自定义标题 {#section-a332e157554546cb8e88922a8d7a4fa2}
 
 除非您在[!UICONTROL Export]菜单上为窗口指定了自定义标题，否则将使用列出的[!UICONTROL Export title]（例如，城市表）作为工作表名称。
 
@@ -71,7 +70,7 @@ ht-degree: 54%
 1. 在工作区的标题栏中，单击&#x200B;**[!UICONTROL Export]** > **[!UICONTROL Export]**。
 1. 指定是导出工作区、侧栏还是两者都导出。
 
-## 导出到模板Excel文件{#section-814772929ca64cf6b92b89d3fdd02302}
+## 导出到模板Excel文件 {#section-814772929ca64cf6b92b89d3fdd02302}
 
 可以将工作区中的数据导出到模板Excel文件（`.xls`或`.xlsx`）。 使用模板文件可以缩短每次导出工作区时花费在格式化数据上的时间。
 

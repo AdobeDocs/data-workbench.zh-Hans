@@ -3,10 +3,10 @@ description: 要使报表服务器的某些功能正常工作，您必须在安�
 title: 开始之前
 uuid: cb464fb6-3109-4eff-9c95-f0cf1f8a8c66
 exl-id: 5c8bb4c3-fe76-4b4e-960d-113a9927ad59
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 * 访问文件系统以输出数据（网络共享或本地驱动器）。
 * 访问已配置的SMTP服务器。
-* 在[!DNL Report]服务器上安装的Microsoft Excel 2010 64位或更高版本。 有关其他信息，请参阅[Office服务器端自动化注意事项](http://support.microsoft.com/kb/257757)。
+* Microsoft Excel 2010 64位或更高版本安装在[!DNL Report]服务器上。 有关其他信息，请参阅[Office服务器端自动化注意事项](https://support.microsoft.com/kb/257757)。
 
 ## 其他要求 {#section-f53d4388656a4dfc90aefe29dfabef89}
 
@@ -32,6 +32,6 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >将报表生成为Excel文件时，将打开一个Excel的新实例。 有关此过程的详细信息，请参阅 [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757)。
+   >将报表生成为Excel文件时，将打开一个Excel的新实例。 有关此过程的更多信息，请参阅[https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757)。
 
 * **提供对SMTP服务器的访问权限，以通过电子邮件分发报表。** 如果要以电子邮件分发报表，报表服务器必须能够连接到SMTP服务器，并且必须打开指向电子邮件转发服务的相应端口。

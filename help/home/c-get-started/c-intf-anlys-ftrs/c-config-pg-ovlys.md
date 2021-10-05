@@ -3,7 +3,7 @@ description: 页面叠加仅在 Site 应用程序中配置，但它们可以为�
 title: 配置页面叠加
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
 exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 62%
@@ -54,11 +54,11 @@ ht-degree: 62%
 1. 指定域（如果需要，还指定浏览器高度）。
 
    ```
-   window = simpleBorderWindow: 
-     client = scrollWindow: 
-       client = PageOverlay: 
-         URI Template = string: http://%Domain%%Element%
-         URI Parameters = map: 
+   window = simpleBorderWindow:
+     client = scrollWindow:
+       client = PageOverlay:
+         URI Template = string: https://%Domain%%Element%
+         URI Parameters = map:
            Domain = string: domain name
            Element = ref: Element/Name
          Dim = ref: wdata/model/dim/URI
@@ -68,9 +68,9 @@ ht-degree: 62%
          Browser Height = int: browser height
      pos = v3d: (518, 202, 0)
      size = v3d: (810, 610, 0)
-     titleBar = editor: 
+     titleBar = editor:
        size = v3d: (61, 19, 0)
-       text = string: 
+       text = string:
    ```
 
 1. 保存文件。
@@ -88,27 +88,27 @@ ht-degree: 62%
 1. 右键单击&#x200B;**[!UICONTROL Link Templates]** ，然后单击&#x200B;**[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**。
 1. 根据需要编辑 LinkRegex 矢量的参数：
 
-<table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 对于该参数... </th> 
-   <th colname="col2" class="entry"> 提供此信息... </th> 
+<table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> 对于该参数... </th>
+   <th colname="col2" class="entry"> 提供此信息... </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>维度 </p> </td> 
-   <td colname="col2"> <p>链接所表示的维度（通常为“下一个 URI”维度）。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>表达式 </p> </td> 
-   <td colname="col2"> <p>正则表达式，用于选择 HTML 链接的相关部分以从维度中查找下一个元素。正则表达式必须完全匹配，并且使用括号对所需的输出模式进行分组。有关正则表达式的详细信息，请参阅《数据集配置指南》<i></i>。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Output Pattern（输出模式） </p> </td> 
-   <td colname="col2"> <p>正则表达式的输出模式，用于提取 Dimension（维度）参数的结果元素。 </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>维度 </p> </td>
+   <td colname="col2"> <p>链接所表示的维度（通常为“下一个 URI”维度）。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>表达式 </p> </td>
+   <td colname="col2"> <p>正则表达式，用于选择 HTML 链接的相关部分以从维度中查找下一个元素。正则表达式必须完全匹配，并且使用括号对所需的输出模式进行分组。有关正则表达式的详细信息，请参阅《数据集配置指南》<i></i>。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Output Pattern（输出模式） </p> </td>
+   <td colname="col2"> <p>正则表达式的输出模式，用于提取 Dimension（维度）参数的结果元素。 </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 以下示例文件显示了三个正则表达式：

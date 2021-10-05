@@ -3,7 +3,7 @@ description: 在规划和实施系统之前，确定Data Workbench（以前称�
 title: 服务器系统要求
 uuid: c4487c76-03b9-4755-893b-555d451b1e69
 exl-id: 6dd78331-8370-400e-b580-9b9bad13e62c
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 1%
@@ -40,55 +40,55 @@ Adobe提供有关满足您业务需求的Data Workbench设计的建议。 但是
 
 为了从您的DPU投资中获得最佳性能，Adobe建议使用下表中描述的以下高性能组件：
 
-<table id="table_DA0A60CFBA7D4EF98B5ED5A3D8D6777B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> </th> 
-   <th colname="col2" class="entry"> 必需 </th> 
-   <th colname="col3" class="entry"> 建议 </th> 
-  </tr> 
+<table id="table_DA0A60CFBA7D4EF98B5ED5A3D8D6777B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> </th>
+   <th colname="col2" class="entry"> 必需 </th>
+   <th colname="col3" class="entry"> 建议 </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>操作系统 </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2008 x64 </p> </td> 
-   <td colname="col3"> <p>Microsoft Windows Server 2012 x64 </p> <p> Microsoft Windows Server 2016 x64 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>CPU </p> </td> 
-   <td colname="col2"> <p>请参阅推荐。 </p> </td> 
-   <td colname="col3"> 推荐采用英特尔或AMD最新一代4核+处理器。 为获得最佳性能，共8枚；为了在速度和成本之间取得平衡，建议使用4个内核。 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>内存 </p> </td> 
-   <td colname="col2"> <p>8 GB </p> </td> 
-   <td colname="col3"> <p>12 GB </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>工作数据存储 </p> </td> 
-   <td colname="col2"> <p>总逻辑临时存储容量为1 TB。 </p> <p>对磁盘子系统的低延迟访问 </p> </td> 
-   <td colname="col3"> <p>对于临时存储Adobe，建议执行以下任一操作： </p> 
-    <ul id="ul_F3D033B90CF94F44A2A773B3F6852283"> 
-     <li id="li_B902CF7CC6A44F02838B285ADC725A75">（4到8）*（750GB或更高）SATA硬盘（3.5英寸主轴）。 </li> 
-     <li id="li_A378F4E1443F4BB2B54DC7E8372EE572">（6到10）*（300GB或更高）SATA硬盘（2.5英寸主轴） </li> 
-    </ul> <p>应在JBOD阵列中配置这些参数。 或者，当总磁盘容量超过2TB时，可以使用2磁盘RAID1卷阵列。 例如，将六个磁盘配置为一个3*（2*750GB RAID 1对）。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>系统数据存储 </p> </td> 
-   <td colname="col2"> <p>此外，Adobe还要求对操作系统、DPU软件和其他系统软件以适中大小(20GB)的高可用性存储。 </p> </td> 
-   <td colname="col3"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>群集硬件 </p> </td> 
-   <td colname="col2"> <p>请参阅推荐。 </p> </td> 
-   <td colname="col3"> <p>使用一组同构的服务器。 在DPU群集中，运行速度最慢的服务器会降低整个数据集的性能。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 群集网络性能 </td> 
-   <td colname="col2"> 交换千兆位以太网连接或更高连接。 </td> 
-   <td colname="col3"> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>操作系统 </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2008 x64 </p> </td>
+   <td colname="col3"> <p>Microsoft Windows Server 2012 x64 </p> <p> Microsoft Windows Server 2016 x64 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>CPU </p> </td>
+   <td colname="col2"> <p>请参阅推荐。 </p> </td>
+   <td colname="col3"> 推荐采用英特尔或AMD最新一代4核+处理器。 为获得最佳性能，共8枚；为了在速度和成本之间取得平衡，建议使用4个内核。 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>内存 </p> </td>
+   <td colname="col2"> <p>8 GB </p> </td>
+   <td colname="col3"> <p>12 GB </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>工作数据存储 </p> </td>
+   <td colname="col2"> <p>总逻辑临时存储容量为1 TB。 </p> <p>对磁盘子系统的低延迟访问 </p> </td>
+   <td colname="col3"> <p>对于临时存储Adobe，建议执行以下任一操作： </p>
+    <ul id="ul_F3D033B90CF94F44A2A773B3F6852283">
+     <li id="li_B902CF7CC6A44F02838B285ADC725A75">（4到8）*（750GB或更高）SATA硬盘（3.5英寸主轴）。 </li>
+     <li id="li_A378F4E1443F4BB2B54DC7E8372EE572">（6到10）*（300GB或更高）SATA硬盘（2.5英寸主轴） </li>
+    </ul> <p>应在JBOD阵列中配置这些参数。 或者，当总磁盘容量超过2TB时，可以使用2磁盘RAID1卷阵列。 例如，将六个磁盘配置为一个3*（2*750GB RAID 1对）。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>系统数据存储 </p> </td>
+   <td colname="col2"> <p>此外，Adobe还要求对操作系统、DPU软件和其他系统软件以适中大小(20GB)的高可用性存储。 </p> </td>
+   <td colname="col3"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>群集硬件 </p> </td>
+   <td colname="col2"> <p>请参阅推荐。 </p> </td>
+   <td colname="col3"> <p>使用一组同构的服务器。 在DPU群集中，运行速度最慢的服务器会降低整个数据集的性能。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> 群集网络性能 </td>
+   <td colname="col2"> 交换千兆位以太网连接或更高连接。 </td>
+   <td colname="col3"> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### 备用磁盘子系统 {#section-6f984eabe8074759aa9deaf17e3a68b7}
@@ -116,35 +116,35 @@ Adobe无法提供与已配置Data Workbench处理数据的速度有关的担保�
 
 服务器的文件服务单元(FSU)是Data Workbench的主要数据存储和管理组件。 FSU充当文件服务器，用于将原始源数据发送到DPU，并在适当时协调DPU的聚类。 每个FSU都获得提供源数据的许可，最多可提供五(5)个DPU。
 
-<table id="table_45CF36583DFE4536BB31F6A1F6CC181E"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> FSU组件 </th> 
-   <th colname="col2" class="entry"> 推荐 </th> 
-   <th colname="col3" class="entry"> </th> 
-  </tr> 
+<table id="table_45CF36583DFE4536BB31F6A1F6CC181E">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> FSU组件 </th>
+   <th colname="col2" class="entry"> 推荐 </th>
+   <th colname="col3" class="entry"> </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>操作系统、CPU、RAM </p> </td> 
-   <td colname="col2"> <p>这些要求与DPU的要求相同。 但是，对于FSU，Adobe建议使用最低要求，而不是遵循建议。 </p> </td> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>操作系统、CPU、RAM </p> </td>
+   <td colname="col2"> <p>这些要求与DPU的要求相同。 但是，对于FSU，Adobe建议使用最低要求，而不是遵循建议。 </p> </td>
    <td colname="col3"> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>磁盘系统 </p> <p>FSU需要高可用、冗余的存储，以用于大量数据。 Adobe将与您一起确定您的确切要求。 </p> </td> 
-   <td colname="col1"> <p>Adobe建议： </p> 
-    <ul id="ul_FFEEE5052FFD4876BA9A6476DD096539"> 
-     <li id="li_F98750D509D640C68885D53FC691ED43">（12个或更多）*（750GB或更高）RAID 5/6配置中的SATA硬盘。 </li> 
-     <li id="li_3F84F63F9541476987015C27FDE8251B">支持100MB/s+持续带宽的高性能SAN连接。 </li> 
-    </ul> <p>由于FSU保留原始源数据，因此任何损失都将无法恢复，因此Adobe建议定期备份此数据。 </p> </td> 
+  </tr>
+  <tr>
+   <td colname="col1"> <p>磁盘系统 </p> <p>FSU需要高可用、冗余的存储，以用于大量数据。 Adobe将与您一起确定您的确切要求。 </p> </td>
+   <td colname="col1"> <p>Adobe建议： </p>
+    <ul id="ul_FFEEE5052FFD4876BA9A6476DD096539">
+     <li id="li_F98750D509D640C68885D53FC691ED43">（12个或更多）*（750GB或更高）RAID 5/6配置中的SATA硬盘。 </li>
+     <li id="li_3F84F63F9541476987015C27FDE8251B">支持100MB/s+持续带宽的高性能SAN连接。 </li>
+    </ul> <p>由于FSU保留原始源数据，因此任何损失都将无法恢复，因此Adobe建议定期备份此数据。 </p> </td>
    <td colname="col2"> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>网络性能 </p> </td> 
-   <td colname="col2"> <p>Adobe要求FSU和DPU之间使用交换千兆位以太网连接。 </p> </td> 
+  </tr>
+  <tr>
+   <td colname="col1"> <p>网络性能 </p> </td>
+   <td colname="col2"> <p>Adobe要求FSU和DPU之间使用交换千兆位以太网连接。 </p> </td>
    <td colname="col3"> </td>
-  </tr> 
- </tbody> 
+  </tr>
+ </tbody>
 </table>
 
 ## 传感器要求{#sensor-requirements}
@@ -155,74 +155,74 @@ Data Workbench传感器从Web、应用程序和数据收集服务器收集事件
 
 下表介绍了[!DNL Sensor]的系统建议：
 
-<table id="table_A132E06D6B8146C1B199B82464EA0898"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 功能 </th> 
-   <th colname="col2" class="entry"> 建议 </th> 
-  </tr> 
+<table id="table_A132E06D6B8146C1B199B82464EA0898">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> 功能 </th>
+   <th colname="col2" class="entry"> 建议 </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>磁盘存储器 </p> </td> 
-   <td colname="col2"> <p>最少512 MB。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>内存 </p> </td> 
-   <td colname="col2"> <p>HTTP或其主机的其他服务器计算机上的<span class="wintitle">传感器</span>必须有32 MB的RAM。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>网络性能 </p> </td> 
-   <td colname="col2"> <p>与中继服务器或<span class="keyword"> Data Workbench Server </span>的1 Mbps或更高网络连接。 <span class="wintitle"> 传感 </span> 器消耗的带宽通常比一(1)Mbps要少得多。您的Adobe顾问将帮助您估算日常所需的实际带宽量。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>网络端口和防火墙 </p> </td> 
-   <td colname="col2"> <p> <span class="wintitle"> 传感 </span> 器使用 <span class="keyword"> HTTPS(通 </span> 常为端口443，但可以配置)或HTTP（通常为端口80，但可以配置）连接到Data Workbench Server。 </p> <p>位于<span class="wintitle">传感器</span>和目标<span class="keyword"> Data Workbench Server </span>或中继服务器之间的防火墙上的相应端口应仅在相应的<span class="wintitle">传感器</span>托管计算机和<span class="keyword"> Data Workbench Server </span>或中继服务器之间打开，然后才开始<span class="wintitle">传感器</span>安装过程。 <span class="wintitle"> 传感 </span> 器与Data Workbench Server或中继器服务器建立单 <span class="keyword"> 向HTTPS </span> 或HTTP连接。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>网络管理系统 </p> </td> 
-   <td colname="col2"> <p>现有的网络管理系统应监视底层计算机硬件（例如磁盘空间、网络服务）和网络连接以及Windows事件日志或UNIX系统日志的运行状况。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>服务器时间同步 </p> </td> 
-   <td colname="col2"> <p>确保计算机系统时间在每台承载<span class="wintitle">传感器</span>的计算机上持续同步。 <span class="wintitle">传感器</span>监视的Web服务器应用程序和计算机必须具有同步的系统时间，才能从这些应用程序和计算机收集的事件数据准确。 请参阅操作系统的文档，了解如何持续将系统时间与NTP或其他此类时间同步工具同步的步骤。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>DNS名称用法 </p> </td> 
-   <td colname="col2"> <p>Adobe建议<span class="wintitle">传感器</span>使用DNS名称（而不是IP地址）来解析<span class="keyword"> Data Workbench Server </span>或中继服务器的网络地址。 当<span class="wintitle">传感器</span>使用DNS名称时，需要配置主机Web服务器的DNS或本地主机文件，以解析<span class="keyword"> Data Workbench Server </span>或中继服务器的名称。 </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>磁盘存储器 </p> </td>
+   <td colname="col2"> <p>最少512 MB。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>内存 </p> </td>
+   <td colname="col2"> <p>HTTP或其主机的其他服务器计算机上的<span class="wintitle">传感器</span>必须有32 MB的RAM。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>网络性能 </p> </td>
+   <td colname="col2"> <p>与中继服务器或<span class="keyword"> Data Workbench Server </span>的1 Mbps或更高网络连接。 <span class="wintitle"> 传感 </span> 器消耗的带宽通常比一(1)Mbps要少得多。您的Adobe顾问将帮助您估算日常所需的实际带宽量。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>网络端口和防火墙 </p> </td>
+   <td colname="col2"> <p> <span class="wintitle"> 传感 </span> 器使用 <span class="keyword"> HTTPS(通 </span> 常为端口443，但可以配置)或HTTP（通常为端口80，但可以配置）连接到Data Workbench Server。 </p> <p>位于<span class="wintitle">传感器</span>和目标<span class="keyword"> Data Workbench Server </span>或中继服务器之间的防火墙上的相应端口应仅在相应的<span class="wintitle">传感器</span>托管计算机和<span class="keyword"> Data Workbench Server </span>或中继服务器之间打开，然后才开始<span class="wintitle">传感器</span>安装过程。 <span class="wintitle"> 传感 </span> 器与Data Workbench Server或中继器服务器建立单 <span class="keyword"> 向HTTPS </span> 或HTTP连接。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>网络管理系统 </p> </td>
+   <td colname="col2"> <p>现有的网络管理系统应监视底层计算机硬件（例如磁盘空间、网络服务）和网络连接以及Windows事件日志或UNIX系统日志的运行状况。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>服务器时间同步 </p> </td>
+   <td colname="col2"> <p>确保计算机系统时间在每台承载<span class="wintitle">传感器</span>的计算机上持续同步。 <span class="wintitle">传感器</span>监视的Web服务器应用程序和计算机必须具有同步的系统时间，才能从这些应用程序和计算机收集的事件数据准确。 请参阅操作系统的文档，了解如何持续将系统时间与NTP或其他此类时间同步工具同步的步骤。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>DNS名称用法 </p> </td>
+   <td colname="col2"> <p>Adobe建议<span class="wintitle">传感器</span>使用DNS名称（而不是IP地址）来解析<span class="keyword"> Data Workbench Server </span>或中继服务器的网络地址。 当<span class="wintitle">传感器</span>使用DNS名称时，需要配置主机Web服务器的DNS或本地主机文件，以解析<span class="keyword"> Data Workbench Server </span>或中继服务器的名称。 </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### 支持服务器软件 {#section-d6071706539f49d9a861d87b98e6f382}
 
 下表列出了[!DNL Sensor]支持的最常见组合：
 
-<table id="table_99EA23BBC1A148B49643F4B5E4341C08"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Web服务器软件 </th> 
-   <th colname="col2" class="entry"> 操作系统 </th> 
-  </tr> 
+<table id="table_99EA23BBC1A148B49643F4B5E4341C08">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Web服务器软件 </th>
+   <th colname="col2" class="entry"> 操作系统 </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Apache Server / IBM HTTP Server 2.2 </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2003或更高版本；RedHat Enterprise Linux 6.x或更高版本；Sun Solaris 8.x或更高版本；IBM AIX 5.1x或更高版本。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Apache Server 2.4 </p> </td> 
-   <td colname="col2"> <p>RedHat Enterprise Linux 6.x或更高版本 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Microsoft IIS </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2003或更高版本 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Java应用程序服务器(Tomcat、JBoss、iPlanet、Weblogic) </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2003或更高版本；RedHat Enterprise Linux 6.x或更高版本；Sun Solaris 8.x或更高版本；IBM AIX 5.1x或更高版本。 </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Apache Server / IBM HTTP Server 2.2 </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2003或更高版本；RedHat Enterprise Linux 6.x或更高版本；Sun Solaris 8.x或更高版本；IBM AIX 5.1x或更高版本。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Apache Server 2.4 </p> </td>
+   <td colname="col2"> <p>RedHat Enterprise Linux 6.x或更高版本 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Microsoft IIS </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2003或更高版本 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Java应用程序服务器(Tomcat、JBoss、iPlanet、Weblogic) </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2003或更高版本；RedHat Enterprise Linux 6.x或更高版本；Sun Solaris 8.x或更高版本；IBM AIX 5.1x或更高版本。 </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 对于其他服务器和操作系统组合，请咨询Adobe以了解可用性。 [!DNL Sensor]的所有功能并非在Web/应用程序服务器和操作系统的所有组合中都可用。 有关特定[!DNL Sensor]版本的更多信息，请联系Adobe支持。
@@ -235,7 +235,7 @@ Data Workbench报表服务器是允许输出计划报表的组件。 输出的�
 
 * 访问文件系统以输出数据（网络共享或本地驱动器）。
 * 访问已配置的SMTP服务器。
-* 在[!DNL report]服务器上安装的Microsoft Excel 2003或更高版本。 有关其他信息，请参阅[Office服务器端自动化注意事项](http://support.microsoft.com/kb/257757)。
+* Microsoft Excel 2003或更高版本安装在[!DNL report]服务器上。 有关其他信息，请参阅[Office服务器端自动化注意事项](https://support.microsoft.com/kb/257757)。
 
 ## 网络管理{#network-management}
 
