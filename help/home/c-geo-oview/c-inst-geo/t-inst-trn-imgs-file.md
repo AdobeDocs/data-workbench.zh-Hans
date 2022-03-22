@@ -1,12 +1,12 @@
 ---
 description: 在Data Workbench Server上安装Terrain Images.cfg文件的步骤。
-title: 安装 Terrain Images.cfg 文件
+title: 安装Terrain Images.cfg文件（服务器）
 uuid: b692bff9-9356-4047-a2f7-f44310bf85fa
 exl-id: 4cc91839-ea36-4476-846a-59af4c5f684c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 10%
+source-wordcount: '92'
+ht-degree: 5%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->仅当要使新的地形图像层在地球可视化上显示时，才需要安装[!DNL Terrain Images.cfg]文件。
+>您需要安装 [!DNL Terrain Images.cfg] 文件。
 
-1. 从通过Adobe提供给您的[!DNL .zip]文件中复制[!DNL Terrain Images.cfg]文件。
+1. 复制 [!DNL Terrain Images.cfg] 文件 [!DNL .zip] 文件(由Adobe提供)。
 1. 将该文件粘贴到Data Workbench Server安装目录的Components文件夹中。
 
-   有关配置[!DNL Terrain Images.cfg]的信息，请参阅[使用地形图像层](../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md#concept-8a0a16013e824ac29f35a0349b5d8ccf)。
+   有关配置的信息 [!DNL Terrain Images.cfg]，请参阅 [使用地形图像图层](../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md#concept-8a0a16013e824ac29f35a0349b5d8ccf).

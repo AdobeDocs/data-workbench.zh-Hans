@@ -1,12 +1,12 @@
 ---
 description: 安装了 Insight 程序文件之后，您必须下载并安装 Adobe 为您提供的数字证书。
-title: 下载和安装数字证书
+title: 下载和安装数字证书(Insight)
 uuid: 93ab2222-a977-4279-9e1e-71038b1d1cfa
 exl-id: 0dff95ae-880b-45d5-96df-4eb6bea58891
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '2743'
-ht-degree: 92%
+source-wordcount: '2744'
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ Insight 提供此数字证书以获得对服务器组件的访问权限。服务
 
 如果安装在无法访问 Internet 的计算机上，则必须为您的 Insight 安装请求预先锁定的证书。预先锁定的证书是 Adobe 手动锁定到计算机的节点标识符的数字证书。
 
-要请求预锁定证书，您必须将节点标识符和证书编号发送到Adobe客户关怀团队。 要获取计算机的节点标识符，请联系Adobe客户关怀团队以请求Adobe[!DNL Node Identifier]实用程序。 还可以从 Insight 尝试连接到许可证服务器但无法连接时发出的警告中获取节点标识符。收到预锁定证书时，请按照[安装数字证书](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#task-1dad1e1d86d04100a7bcf87f26303c38)的最后两个步骤中所述进行安装。
+要请求预锁定证书，您必须将节点标识符和证书编号发送到Adobe客户关怀团队。 要获取您计算机的节点标识符，请联系Adobe客户关怀团队以请求Adobe [!DNL Node Identifier] 工具。 还可以从 Insight 尝试连接到许可证服务器但无法连接时发出的警告中获取节点标识符。当您收到预锁定证书时，请按照 [安装数字证书](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#task-1dad1e1d86d04100a7bcf87f26303c38).
 
 当需要重新验证证书时，您必须从许可证服务器下载新的已验证证书，然后在您的计算机上重新安装该证书（除非您与 Adobe 的协议另有说明）。
 
@@ -66,18 +66,18 @@ t_install_dgtl_crtf.xml
 
 **要下载并安装数字证书，请执行以下步骤：**
 
-1. 打开Web浏览器以访问[!DNL https:\\license.visualsciences.com]。
+1. 打开Web浏览器以 [!DNL https:\\license.visualsciences.com].
 
    >[!NOTE]
    >
-   >此时，您的浏览器可能会提示您提供数字证书。如果是，请单击&#x200B;**[!UICONTROL Cancel]**&#x200B;关闭该对话框。
+   >此时，您的浏览器可能会提示您提供数字证书。如果存在，请单击 **[!UICONTROL Cancel]** 关闭对话框。
 
 1. 在“登录”屏幕上，输入您从 Adobe 收到的 [!DNL Account Name] 和 [!DNL Password]，然后单击 **[!UICONTROL login]**。
-1. 找到为您的Insight实例颁发的证书（*您的名称*.pem），然后单击与该证书关联的![](assets/btn_save_certificatedownload.PNG)图标。
+1. 找到为您的Insight实例颁发的证书( *您的姓名*.pem)，然后单击 ![](assets/btn_save_certificatedownload.PNG) 与该证书关联的图标。
 1. 提示保存证书时，单击 **[!UICONTROL Save]**。
 1. 将文件下载到 [!DNL Certificates]Insight 安装目录中的  文件夹中。
 
-   此文件夹包含一个名为[!DNL trust_ca_cert.pem]的证书文件。 两个证书文件必须总是同时存在，Insight 才能正常工作。
+   此文件夹包含一个名为的证书文件 [!DNL trust_ca_cert.pem]. 两个证书文件必须总是同时存在，Insight 才能正常工作。
 
 ## Windows 证书存储 {#concept-4acb13b7de9340ea8cde8ad84b93358d}
 
@@ -98,7 +98,7 @@ crypto-api.xml
 1. 您必须具有 [!DNL certmgr.msc] 文件的访问权限，并且能够将证书和密钥导入 **Personal** 存储区。（对于大部分 Windows 用户而言，默认情况下应当将其设置为 True。）
 
 1. 执行配置的用户必须具有 **OpenSSL** 命令行工具的副本。
-1. 必须将服务器和客户端配置为使用自定义SSL证书，该证书指示将客户端证书存储在Windows证书存储区，而不是存储在&#x200B;**Certificates**&#x200B;目录中。
+1. 必须将服务器和客户端配置为使用自定义SSL证书，这些证书说明了如何将客户端证书存储在Windows证书存储区，而不是存储在 **证书** 目录访问Advertising Cloud的帮助。
 
 ## 配置 Windows 证书存储区 {#section-3629802122e947d4b4f63e8b732cfe27}
 
@@ -106,7 +106,7 @@ crypto-api.xml
 
 **步骤 1：将用户的 SSL 证书和私钥导入 Windows 证书存储区。**
 
-在  [使用Data Workbench中的自定](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd) 义证书，可指导您将SSL证书和密钥放在以下目录中：
+在 [在中使用自定义证书Data Workbench](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd) 系统会指导您将SSL证书和密钥放入以下目录：
 
 ```
 <
@@ -115,7 +115,7 @@ crypto-api.xml
 </filepath>>\Certificates\
 ```
 
-证书的名称为`<Common Name>.pem`，如Analytics Server 1.pem（不是trust_ca_cert.pem文件）。
+证书的名称为 `<Common Name>.pem` 例如Analytics Server 1.pem（不是trust_ca_cert.pem文件。）
 
 在可以导入证书和私钥之前，必须先将它们从 [!DNL pem] 格式转化为 [!DNL .pfx] 格式（如 [!DNL pkcs12.pfx]）。
 

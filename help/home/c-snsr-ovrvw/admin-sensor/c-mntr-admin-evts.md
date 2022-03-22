@@ -1,12 +1,12 @@
 ---
 description: 要尽快检测传感器错误并在导致重大问题或中断之前对其进行修复，您应定期监控事件日志。
-title: 监控管理事件
+title: 监控管理事件（传感器）
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 1%
+source-wordcount: '1093'
+ht-degree: 0%
 
 ---
 
@@ -16,31 +16,31 @@ ht-degree: 1%
 
 **推荐频率：** 至少每小时
 
-您可以使用Windows事件查看器或Unix Syslog文件以及默认位于[!DNL Sensor]安装目录[!DNL Logs]文件夹中的[!DNL *.sensor-log]文件来监视这些事件。 这些文件表示在数据收集期间出现错误，特别是当[!DNL Sensor]无法连接到目标[!DNL data workbench server]并开始排队数据时。
+您可以使用Windows事件查看器或Unix Syslog文件以及 [!DNL *.sensor-log] 默认位于 [!DNL Logs] 文件夹 [!DNL Sensor] 安装目录。 这些文件表示在数据收集期间出现错误，尤其是当 [!DNL Sensor] 无法连接到目标 [!DNL data workbench server] 和开始排队数据。
 
-## 在Windows {#section-7c0443a356af4381bf22259654f5cd17}上监视事件
+## 在Windows上监控事件 {#section-7c0443a356af4381bf22259654f5cd17}
 
 传感器将错误记录到源为“Adobe”的Windows事件查看器的应用程序日志。
 
 消息将记录为“信息”、“警告”或“错误”，具体取决于其严重性。
 
-**要打开Windows事件查看器**:
+**打开Windows事件查看器**:
 
-* 单击&#x200B;**开始>控制面板>管理工具>事件查看器**。
+* 单击 **开始>控制面板>管理工具>事件查看器**.
 
-## 在Unix上监视事件{#section-5de3947891fb47ac88b7c855e545d54a}
+## 在Unix上监控事件 {#section-5de3947891fb47ac88b7c855e545d54a}
 
-传感器将错误记录到[!DNL syslog]守护程序。
+传感器将错误记录到 [!DNL syslog] 守护程序。
 
 syslog守护程序根据您在syslog.conf文件中指定的规则将错误消息写入日志文件。 根据严重性，将记录错误并标记“LOG_DAEMON”和“LOG_NOTICE”或“LOG_ERR”。
 
 **打开Unix系统日志**
 
-Unix系统日志通常位于[!DNL /var/adm/messages]或[!DNL /var/log/messages]中。
+Unix系统日志通常位于 [!DNL /var/adm/messages] 或 [!DNL /var/log/messages].
 
 浏览到相应的位置并打开系统日志。
 
-## 了解消息格式{#section-a0899add30fd4b2da58a23b9e3324693}
+## 了解消息格式 {#section-a0899add30fd4b2da58a23b9e3324693}
 
 所有传感器消息都包含字符串“传感器”，并且编号反映所显示消息的重要性。
 
@@ -58,13 +58,13 @@ Unix系统日志通常位于[!DNL /var/adm/messages]或[!DNL /var/log/messages]�
 
 网络管理工具可设置为每5-10分钟监视一次消息，以检查“传感器”源是否出错，并提醒相应人员可能需要干预的问题。 您可以选择仅监视某些类型的事件消息（如“传感器错误”字符串）的系统。 或者，也可以将不同的规则应用于前面有“传感器信息”、“传感器警告”和“传感器错误”字符串的事件。
 
-## 识别重要消息{#section-5a20f5dc18ca4012931d194db855e54e}
+## 识别重要消息 {#section-5a20f5dc18ca4012931d194db855e54e}
 
 在事件日志中，您应特别注意并立即处理有关队列大小的任何消息。
 
-例如，诸如“ [!DNL Sensor Info 1012: Adobe disk queue is #% full]”之类的消息需要引起注意。
+例如，消息(如“ [!DNL Sensor Info 1012: Adobe disk queue is #% full]”需要注意。
 
-## 响应传感器事件消息{#section-0004c4a169dc4a8882d9bd87dd326ad4}
+## 响应传感器事件消息 {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
 描述受支持Web服务器平台的传感器事件和建议操作的表。
 
@@ -139,7 +139,7 @@ Unix系统日志通常位于[!DNL /var/adm/messages]或[!DNL /var/log/messages]�
    <td colname="col2"> 联系Adobe客户关怀。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 传感器错误4022:无法在偏移&lt;y&gt;处映射长度&lt;x&gt;的内存块 </td> 
+   <td colname="col1"> 传感器错误4022:无法映射长度的内存块 &lt;x&gt; 偏移 &lt;y&gt; </td> 
    <td colname="col2"> 联系Adobe客户关怀。 </td> 
   </tr> 
   <tr> 
@@ -193,10 +193,10 @@ Unix系统日志通常位于[!DNL /var/adm/messages]或[!DNL /var/log/messages]�
 
 | 事件消息 | 建议的操作 |
 |---|---|
-| 传感器错误3015:AOLServer配置文件中缺少ns/server/[server]/module/[module]部分。 | 这是配置错误。 正确无误。 |
+| 传感器错误3015:ns/server/[服务器]/module/[模块] AOLServer配置文件中缺少部分。 | 这是配置错误。 正确无误。 |
 | 传感器错误3019:vys-log之前未调用vys-cookie。 请联系支持人员。 联系Adobe客户关怀。 | 请联系支持人员。 联系Adobe客户关怀。 |
-| 传感器错误3020:AOLServer配置文件的[section]部分缺少作为第一个条目的VisualSciencesConfig。 | 这是配置错误。 正确无误。 |
-| 传感器错误3021:VisualSciencesConfig在AOLServer配置文件的[section]部分中缺少值。 | 这是配置错误。 正确无误。 |
+| 传感器错误3020:VisualSciencesConfig在 [部分] 部分。 | 这是配置错误。 正确无误。 |
+| 传感器错误3021:VisualSciencesConfig在 [部分] 部分。 | 这是配置错误。 正确无误。 |
 
 **iPlanet和Java系统Web服务器**
 
