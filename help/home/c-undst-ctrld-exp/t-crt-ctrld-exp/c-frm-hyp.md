@@ -1,10 +1,10 @@
 ---
 description: 假设是一个假设，在论证的目的上，可以认为是正确的，它提供了一个试探性的解释，可以通过进一步的调查加以检验。
-solution: Analytics,Analytics
+solution: Analytics
 title: 形成一个假设
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
 exl-id: d7e77d85-4655-49c5-adeb-15402e48dd7b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 此时，您还应将基于访客的成功量度定义为假设验证的一部分或附加矩阵。
 
-**假设：** 将“请求演示”图形链接移动到更靠近页面顶部的位置，可使访客转化至少增加1.5%。
+**假设：** 将“请求演示”图形链接更靠近页面顶部，则访客转化率至少增加1.5%。
 
 在我们的示例假设中，我们将此实验的成功标准定义为访客转化率至少提高1.5%。
 

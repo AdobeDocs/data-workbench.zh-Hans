@@ -1,17 +1,17 @@
 ---
 description: 此文件不仅可用作工作表，而且还用作您对实验所作决策的记录。
-solution: Analytics,Analytics
-title: 实验设计电子表格
+solution: Analytics
+title: 试验设计电子表格
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
 
 ---
 
-# 实验设计电子表格{#experiment-design-spreadsheet}
+# 试验设计电子表格{#experiment-design-spreadsheet}
 
 此文件不仅可用作工作表，而且还用作您对实验所作决策的记录。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 **使用实验设计文件设计实验**
 
-1. 如果您有Web或应用程序服务器的管理员访问权限，请导航到Web群集中任何[!DNL Sensor]计算机上的[!DNL Sensor]安装文件夹。 如果您没有管理员访问权限，请联系您的Adobe客户经理以请求文件。
+1. 如果您拥有Web或应用程序服务器的管理员访问权限，请导航到 [!DNL Sensor] 任何 [!DNL Sensor] 计算机。 如果您没有管理员访问权限，请联系您的Adobe客户经理以请求文件。
 1. 打开VS Controlled Experience Design.xls文件。 （您可以根据需要重命名此文件。）
 
    以下页面上的电子表格是一个示例，用于说明在准备测试本指南中使用的示例假设时如何填写电子表格。
@@ -56,7 +56,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> 量度定义 </td> 
-   <td colname="col2"> <p>实验所基于的量度的定义。 </p> <p>格式：访客[X]/访客 </p> <p>示例：<span class="filepath"> Visitors[URI='conversionpage.asp']/Visitors</span></p> </td> 
+   <td colname="col2"> <p>实验所基于的量度的定义。 </p> <p>格式：访客[X]/访客 </p> <p>示例： <span class="filepath"> Visitors[URI='conversionpage.asp']/Visitors</span></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 预期开始时间 </td> 
@@ -129,7 +129,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-其余字段均根据您输入的值计算，下表对其进行了说明。
+其余字段根据您输入的值计算，下表对其进行了说明。
 
 | 字段 | 描述 |
 |---|---|
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-并将其与[!DNL Visitors]列的“总计”字段中的值进行比较。
+并将其与 [!DNL Visitors] 列。
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 
@@ -164,4 +164,4 @@ ht-degree: 0%
 
 如果保持相同的天数，则只要访客总数继续达到或超过所需的最小值，就可以提高置信水平。
 
-1. 保存记录的文件，然后使用文件中的信息，使用实验配置电子表格来配置实验。 有关此电子表格的更多信息，请参阅[配置和部署实验](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429)。
+1. 保存记录的文件，然后使用文件中的信息，使用实验配置电子表格来配置实验。 有关此电子表格的详细信息，请参阅 [配置和部署实验](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429).
