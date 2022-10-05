@@ -3,7 +3,7 @@ description: 数据集架构界面显示在任何转换数据集配置文件中�
 title: 数据集架构
 uuid: 4ef5f14b-dc19-4118-a2f2-d680ded8092c
 exl-id: b80e6e8e-9147-46ec-8602-2d7e5d33f077
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 76%
@@ -12,9 +12,11 @@ ht-degree: 76%
 
 # 数据集架构{#dataset-schema}
 
+{{eol}}
+
 数据集架构界面显示在任何转换数据集配置文件中定义的扩展维度（可计数、简单、多对多、数值、非正规和时间维度）以及这些维度之间的关系。
 
-此外，[!DNL Dataset Schema]界面还显示您定义的任何派生维度，以及配置为隐藏的任何扩展维度。
+此外， [!DNL Dataset Schema] 界面显示您定义的任何派生维度，以及配置为隐藏的任何扩展维度。
 
 ![](assets/vis_DatasetSchema_Example.png)
 
@@ -26,7 +28,7 @@ ht-degree: 76%
 
 ## 使用数据集架构界面解释维度类型 {#section-16a0a12b11334c07bec558c0b7d260b1}
 
-下表列出了维度类型及其名称在[!DNL Dataset Schema]界面中显示的颜色。 示例维度（来自以上示例）的父项也有所提及。
+下表列出了维度类型及其名称在 [!DNL Dataset Schema] 界面。 示例维度（来自以上示例）的父项也有所提及。
 
 <table id="table_20D1A9EAAED247338476C475C63255F5"> 
  <thead> 
@@ -80,14 +82,14 @@ ht-degree: 76%
  </tbody> 
 </table>
 
-## 显示维度的默认可视化  {#section-1bbb73a5cbb34ffb844eb1932db85318}
+## 显示维度的默认可视化 {#section-1bbb73a5cbb34ffb844eb1932db85318}
 
-* 在[!DNL Dataset Schema]界面中，单击所需的维度。 将显示默认的可视化。例如，如果默认的可视化是显示“会话数”和选定维度的表格，则单击 URI 维度时，Data Workbench 将显示一个表格，其中的 URI 按“会话数”进行排列。
+* 在 [!DNL Dataset Schema] 界面中，单击所需的维度。 将显示默认的可视化。例如，如果默认的可视化是显示“会话数”和选定维度的表格，则单击 URI 维度时，Data Workbench 将显示一个表格，其中的 URI 按“会话数”进行排列。
 
 >[!NOTE]
 >
->如果要更改显示的默认可视化，请参阅《Data Workbench用户指南》*中的“配置界面和分析功能”一章。*
+>如果要更改显示的默认可视化，请参阅 *Data Workbench用户指南*.
 
 ## 显示维度的特定可视化 {#section-d46626df90bc4c44ae60c4b71eaeac7f}
 
-* 在[!DNL Dataset Schema]界面中，右键单击所需的维度，然后单击&#x200B;**[!UICONTROL Add Visualization]** > ***[!UICONTROL visualization type]**>*。
+* 在 [!DNL Dataset Schema] 界面中，右键单击所需的维度，然后单击 **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.

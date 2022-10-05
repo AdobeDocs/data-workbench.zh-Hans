@@ -3,7 +3,7 @@ description: Data Workbench Server中提供了多种类型的维度。 因此，
 title: 维度类型
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
 exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 67%
@@ -11,6 +11,8 @@ ht-degree: 67%
 ---
 
 # 维度类型{#dimension-types}
+
+{{eol}}
 
 Data Workbench Server中提供了多种类型的维度。 因此，在使用维度创建量度、过滤器或派生维度时，务必了解维度类型。
 
@@ -34,7 +36,7 @@ Insight Server可以创建和维护以下类型的维度：
   </tr> 
   <tr> 
    <td colname="col1"> 数值 </td> 
-   <td colname="col2">与父可计数维度具有有序、数值和一对多关系的维度。 数值维度可以认为是表示其父维度中元素的数值属性。数值维度通常用于定义“总和”量度。 <p>示例：数值维度“会话收入”定义每个会话的收入（以美元为单位）。每个“会话”拥有一个收入额，但多个“会话”可能拥有相同的收入，因此“会话收入”与“会话”之间是“一对多”的关系。量度“收入”可以定义为<span class="filepath"> sum(Session_Revenue， Session)</span>，其中提供选定会话的收入总额。 </p></td> 
+   <td colname="col2">与父可计数维度具有有序、数值和一对多关系的维度。 数值维度可以认为是表示其父维度中元素的数值属性。数值维度通常用于定义“总和”量度。 <p>示例：数值维度“会话收入”定义每个会话的收入（以美元为单位）。每个“会话”拥有一个收入额，但多个“会话”可能拥有相同的收入，因此“会话收入”与“会话”之间是“一对多”的关系。量度“收入”可定义为 <span class="filepath"> sum(Session_Revenue， Session)</span>，提供所选会话的总收入。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 多对多 </td> 

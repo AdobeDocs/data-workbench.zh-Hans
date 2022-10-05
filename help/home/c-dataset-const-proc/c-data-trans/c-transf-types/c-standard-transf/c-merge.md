@@ -1,16 +1,18 @@
 ---
 description: Merge 转换从输入字段（通常是字符串矢量）获取值，将它们组合为由给定分隔符分隔的单一字符串，并将结果字符串放在给定输出字段中。
-title: Merge
+title: 合并
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
 exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 100%
+source-wordcount: '253'
+ht-degree: 90%
 
 ---
 
 # 合并{#merge}
+
+{{eol}}
 
 Merge 转换从输入字段（通常是字符串矢量）获取值，将它们组合为由给定分隔符分隔的单一字符串，并将结果字符串放在给定输出字段中。
 
@@ -54,7 +56,7 @@ Merge 转换从输入字段（通常是字符串矢量）获取值，将它们�
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output（输出） </td> 
+   <td colname="col1"> 输出 </td> 
    <td colname="col2"> 输出字符串的名称。 </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -65,4 +67,4 @@ Merge 转换从输入字段（通常是字符串矢量）获取值，将它们�
 
 ![](assets/cfg_TransformationType_Merge.png)
 
-因此，如果输入字段 x-products 包含字符串值 B57481、C46355 和 Z97123，结果输出字符串 x-show-products 将为 B57481::C46355::Z97123。
+因此，如果输入字段x-products包含字符串值B57481、C46355和Z97123，则生成的输出字符串x-show-products将为B57481::C46355::Z97123。

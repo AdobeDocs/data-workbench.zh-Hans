@@ -3,7 +3,7 @@ description: 配置文件 Log Processing Mode.cfg 可让您暂停将数据处理
 title: Log Processing Mode.cfg
 uuid: 1f1e5d8b-80e7-4423-bb03-56e706a1b7b4
 exl-id: e252b815-e691-490d-9ac9-88bb1fd2c64d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 76%
@@ -12,27 +12,29 @@ ht-degree: 76%
 
 # Log Processing Mode.cfg{#log-processing-mode-cfg}
 
+{{eol}}
+
 配置文件 Log Processing Mode.cfg 可让您暂停将数据处理到数据集中、指定离线源或指定 Data Workbench Server 保存其状态文件的频率。
 
 对 [!DNL Log Processing Mode.cfg] 文件进行更改（包括添加或删除源）不会导致重新处理数据。
 
 **编辑数据集配置文件的 Log Processing Mode.cfg 文件**
 
-1. 在处理数据集配置文件时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示其内容。
+1. 在处理数据集配置文件时，打开 [!DNL Profile Manager] 单击 **[!UICONTROL Dataset]** 以显示其内容。
 
    >[!NOTE]
    >
-   >如果[!DNL Log Processing Mode.cfg]文件不在所需配置文件的目录中，则需要将此文件从Data Workbench Server计算机上的Base目录复制到配置文件的目录中。
+   >如果 [!DNL Log Processing Mode.cfg] 文件未位于所需配置文件的目录中，您需要将此文件从Data Workbench Server计算机上的Base目录复制到配置文件的目录中。
 
-   有关打开和使用[!DNL Profile Manager,]的信息，请参阅&#x200B;*Data Workbench用户指南*。
+   有关打开和使用的信息 [!DNL Profile Manager,] 请参阅 *Data Workbench用户指南*.
 
-1. 右键单击配置文件名称旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL User]列中将显示此文件的复选标记。
-1. 右键单击新创建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。 此时会出现配置窗口。
+1. 右键单击配置文件名称旁边的复选标记，然后单击 **[!UICONTROL Make Local]**. 此文件的复选标记将显示在 [!DNL User] 列。
+1. 右键单击新创建的复选标记，然后单击 **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. 此时会出现配置窗口。
 1. 参考下表，编辑该配置文件中的参数。
 
    >[!NOTE]
    >
-   >[!DNL Log Processing Mode.cfg]文件中的某些参数的名称包括[!DNL Fast Input]或[!DNL Fast Merge]。 [!DNL Fast Input]是指数据集构建的日志处理阶段，大约占数据集处理总时间的一半。[!DNL Fast Merge] 是指仅在进行日志处理之前的数据集构建的转换阶段。[!DNL Fast Merge] 在修改文件后导致的重新转换期间不 [!DNL Transformation Dataset Configuration] 发生。与[!DNL Fast Input]类似， [!DNL Fast Merge]也负责大约一半的数据集处理时间。
+   >中的一些参数 [!DNL Log Processing Mode.cfg] 文件的名称包括 [!DNL Fast Input] 或 [!DNL Fast Merge]. [!DNL Fast Input]是指数据集构建的日志处理阶段，大约占数据集处理总时间的一半。 [!DNL Fast Merge] 是指仅在进行日志处理之前的数据集构建的转换阶段。 [!DNL Fast Merge] 在重新转换过程中，不会发生因修改 [!DNL Transformation Dataset Configuration] 文件。 赞 [!DNL Fast Input], [!DNL Fast Merge] 大约一半的数据集处理时间也由此负责。
 
    <table id="table_1BF356E21C0E4119A277F40CEC5D7A21"> 
    <thead> 
@@ -63,7 +65,7 @@ ht-degree: 76%
       <td colname="col2"> <p>离线日志源的掩码。 </p> <p> <b> 指定离线源</b> 
       <ul id="ul_569B90E9A85246F88906FA5444F8A93E"> 
        <li id="li_3EF182CEF4A44106B5267175EC62B9AB"> 右键单击<span class="uicontrol">离线源</span>，然后单击<span class="uicontrol">新增</span> &gt; <span class="uicontrol">源</span>。 </li> 
-       <li id="li_E8FBA212F4784B1A830745A90BB3AF90"> 在新源的参数中，输入日志序列的掩码。对于文件名称格式为 YYYYMMDD-<i>SENSORID</i>.vsl 的“传感器”日志源，掩码为 <i>SENSORID.SENSORID</i>，并且此掩码区分大小写。对于日志文件日志源，掩码是由<span class="wintitle">掩码模式</span>提取的字符串。 请参阅<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e">日志文件</a>。 </li> 
+       <li id="li_E8FBA212F4784B1A830745A90BB3AF90"> 在新源的参数中，输入日志序列的掩码。对于文件名称格式为 YYYYMMDD-<i>SENSORID</i>.vsl 的“传感器”日志源，掩码为 <i>SENSORID.SENSORID</i>，并且此掩码区分大小写。对于日志文件日志源，掩码是 <span class="wintitle"> 蒙版图案</span>. 请参阅 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e"> 日志文件</a>. </li> 
       </ul> </p> <p> 向“离线源”中添加源或从中删除源不会导致重新处理数据集。 </p> <p> 为了处理配置文件的在线源，会持续进行“截至”时间测量。当离线源重新在线时，对该源的传入日志文件的处理便会恢复。 </p> <p> 只要源恢复到在线状态，您就应该从“离线源”中将其删除。如果您没有这样做，Data Workbench Server 会将该源视为在线源，并且只要该源发送数据，该服务器便会更新“截至”时间。如果该源重新变为离线状态，则“截至”时间测量将停止。 </p> </td> 
    </tr> 
    <tr> 
@@ -85,10 +87,10 @@ ht-degree: 76%
    </tbody> 
    </table>
 
-   在 Data Workbench 窗口内编辑 [!DNL Log Processing Mode.cfg] 文件时，可以使用快捷键实现基本编辑功能，包括剪切 (Ctrl+x)、复制 (Ctrl+c)、粘贴 (Ctrl+v)、撤消 (Ctrl+z)、恢复 (Ctrl+Shift+z)、选择部分（单击并拖动）以及选择全部 (Ctrl+a)。此外，您还可以使用快捷方式将文本从一个配置文件([!DNL .cfg])复制并粘贴到另一个配置文件。
+   在 Data Workbench 窗口内编辑 [!DNL Log Processing Mode.cfg] 文件时，可以使用快捷键实现基本编辑功能，包括剪切 (Ctrl+x)、复制 (Ctrl+c)、粘贴 (Ctrl+v)、撤消 (Ctrl+z)、恢复 (Ctrl+Shift+z)、选择部分（单击并拖动）以及选择全部 (Ctrl+a)。此外，您还可以使用快捷方式复制并粘贴一个配置文件( [!DNL .cfg])到另一个。
 
-1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]** ，然后单击&#x200B;**[!UICONTROL Save]**。
-1. 在[!DNL Profile Manager]中，右键单击[!DNL User]列中文件的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > **[!UICONTROL datasetprofile name]**。
+1. 右键单击 **[!UICONTROL (modified)]** ，然后单击 **[!UICONTROL Save]**.
+1. 在 [!DNL Profile Manager]，右键单击 [!DNL User] 列，然后单击 **[!UICONTROL Save to]** > **[!UICONTROL datasetprofile name]**.
 
    >[!NOTE]
    >

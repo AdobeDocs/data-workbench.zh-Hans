@@ -3,7 +3,7 @@ description: 有关为在AIX 5.1或更高版本上运行的WebSphere 5.x安装�
 title: AIX 上的 WebSphere
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 1%
@@ -12,15 +12,17 @@ ht-degree: 1%
 
 # AIX 上的 WebSphere{#websphere-on-aix}
 
+{{eol}}
+
 有关为在AIX 5.1或更高版本上运行的WebSphere 5.x安装和配置传感器的详细说明。
 
-[!DNL Sensor]的程序文件将打包在从Adobe下载站点获取的安装文件中。 如果您还没有特定Web服务器的[!DNL Sensor]安装文件，请先下载该文件(或从Adobe代表处获取)，然后再开始执行以下步骤。
+的程序文件 [!DNL Sensor] 将打包到从Adobe下载站点获取的安装文件中。 如果您尚未 [!DNL Sensor] 安装文件，请先下载(或从Adobe代表处获取)，然后再开始执行以下步骤。
 
 >[!NOTE]
 >
->WebSphere服务器的[!DNL Sensor]不支持对照实验。 有关对照实验的信息，请参阅&#x200B;*Data Workbench对照实验指南。*
+>的 [!DNL Sensor] for WebSphere服务器不支持对照实验。 有关对照实验的信息，请参阅 *Data Workbench对照实验指南。*
 
-## 安装程序文件{#section-86f69127278c41bc90b97b68bb40bc6e}
+## 安装程序文件 {#section-86f69127278c41bc90b97b68bb40bc6e}
 
 将Sensor的程序文件解压缩并安装到服务器计算机的过程。
 
@@ -99,7 +101,7 @@ ht-degree: 1%
 
 如果要使用除推荐默认值之外的其他权限，请查看传感器UNIX文件权限中的信息，以确保您了解这些文件的使用方式。
 
-## 编辑传感器配置文件{#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## 编辑传感器配置文件 {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 txlogd.conf文件包含传感器的配置参数。
 
@@ -115,7 +117,7 @@ txlogd.conf文件包含传感器的配置参数。
 1. 在文本编辑器中打开/etc/txlogd.conf文件，并设置所需参数以及任何所需的可选参数。
 1. 保存并关闭该文件。
 
-## 启动发送器并创建磁盘队列{#section-63285a2328604f20a2cb31b3d5cb80e6}
+## 启动发送器并创建磁盘队列 {#section-63285a2328604f20a2cb31b3d5cb80e6}
 
 配置txlogd.conf文件后创建磁盘队列的过程。
 
@@ -138,14 +140,14 @@ txlogd.conf文件包含传感器的配置参数。
    1. 检查为其分配磁盘队列的设备是否运行正常，并有足够的空间来存放QueueSize参数中指定大小的文件。
    1. 进行任何必要的更正并重复此过程。
 
-## 将收集器添加到Web应用程序{#section-d17297b1193f4e3cb150fb41f754ef12}
+## 将收集器添加到Web应用程序 {#section-d17297b1193f4e3cb150fb41f754ef12}
 
 对于WebSphere服务器，收集器在Servlet容器中用作过滤器。
 
 要将收集器添加到Web应用程序，请将过滤器添加到Web应用程序的web.xml部署描述符，然后重新启动Web应用程序。
 
 1. 使用文本编辑器，打开Sensor捕获其事件的Web服务器的web.xml文件。
-1. 将以下`<filter>`和`<filter-mapping>`元素添加到描述符文件中。 如果未在/etc目录中安装txlogd.conf，则需要在`<param-value>`元素中输入此文件的正确路径。
+1. 添加以下内容 `<filter>` 和 `<filter-mapping>` 元素。 如果您未在/etc目录中安装txlogd.conf，则需要在 `<param-value>` 元素。
 
    ```
    <filter>
@@ -173,7 +175,7 @@ txlogd.conf文件包含传感器的配置参数。
 
 1. 重新启动Web应用程序。 收集器随应用程序一起加载，并将开始收集事件数据并将其写入磁盘队列。
 
-## 声明收集器和共享对象文件的位置{#section-e641f08999d34a648aaee2111b69ca25}
+## 声明收集器和共享对象文件的位置 {#section-e641f08999d34a648aaee2111b69ca25}
 
 编辑Websphere启动脚本以声明J2EECollector.jar和libvisual_sciences.so文件的位置的过程。
 
@@ -190,9 +192,9 @@ txlogd.conf文件包含传感器的配置参数。
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. 保存[!DNL setupCmdLine.sh]文件。
+1. 保存 [!DNL setupCmdLine.sh] 文件。
 
-## 测试传感器{#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
+## 测试传感器 {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
 启动发送器并验证它是否可以成功连接到Insight Server并将事件数据发送到它的过程。
 
@@ -214,7 +216,7 @@ txlogd.conf文件包含传感器的配置参数。
    * 在txtlogd.conf中正确设置了ServerAddress和ServerPort参数。 如果您使用服务器名称指定了ServerAddress ，请尝试改用其数字IP地址。
    * CertName参数的值与目标Insight Server的数字证书上显示的通用名称完全匹配。
 
-## 将发送器添加到系统启动脚本{#section-23bb905100d04f018af93873dd4d5f68}
+## 将发送器添加到系统启动脚本 {#section-23bb905100d04f018af93873dd4d5f68}
 
 此信息可确保在重新启动Web服务器计算机时自动加载发送器。
 
@@ -226,7 +228,7 @@ txlogd.conf文件包含传感器的配置参数。
 
 此命令将发送器作为守护程序启动。 发送器生成的操作和错误消息将写入系统日志。
 
-## 捕获其他数据{#section-d5ccf8ee50914a87938e0c17480757e6}
+## 捕获其他数据 {#section-d5ccf8ee50914a87938e0c17480757e6}
 
 所有平台的传感器都可以收集HTTP请求和响应标头中可用的任何数据。
 
@@ -240,7 +242,7 @@ J2EE平台的传感器提供了一种收集其他平台上不可用数据的机�
 
 当J2EE平台的传感器收到请求时，它将调用一个用于导入appendToLog函数的收集器类。 appendToLog函数将在appendToLog函数中指定的查询字符串参数附加到初始请求。 这会导致初始请求的URI包含与正在捕获的数据的名称和值对应的其他查询字符串名称 — 值对。 例如，当特定广告投放或点进链接的值为20美分时，CPC=20会附加到初始请求中。 Insight Server会将这些值处理到数据集中以进行分析。 此收集方法的另一个好处是它允许收集其他数据，而不会创建额外的日志条目，使用页面标记方法可能会创建这些日志条目。
 
-有关处理的更多信息，请参阅&#x200B;*《数据集配置指南》*。
+有关处理的更多信息，请参阅 *数据集配置指南*.
 
 1. 将以下代码添加到要从中捕获数据的.jsp页的顶部：
 

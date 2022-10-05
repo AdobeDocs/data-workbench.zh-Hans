@@ -3,7 +3,7 @@ description: 有关DWB中不同文件传输方法的快速指南。
 title: 文件传输管理
 uuid: a3e19f8a-1cc4-437c-9661-408f675109c0
 exl-id: a0ecd8e1-6d6f-4811-9869-092837dc9e55
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # 文件传输管理{#file-transfer-governance}
+
+{{eol}}
 
 有关DWB中不同文件传输方法的快速指南。
 
@@ -20,8 +22,8 @@ ht-degree: 1%
 
 1. AWS(Amazon Web Services)
 
-   1. 如果尚未安装，请举出票证在服务器上安装AWS命令行界面(请参阅[https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html))。
-   1. 如何检查？ 尝试使用命令提示符配置AWS(请参阅[https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html))。
+   1. 如果尚未安装，请提出票证以在服务器上安装AWS命令行界面(请参阅 [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html))。
+   1. 如何检查？ 尝试使用命令提示符配置AWS(请参阅 [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html))。
 
 1. 将文件从FTP服务器传输到NAS目录。
 
@@ -53,10 +55,10 @@ ht-degree: 1%
 
       >[!NOTE]
       >
-      >如果“Scripository”文件夹不可用，请参阅[Weekly Reprocess](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295)以下载该文件夹。
+      >如果“Scripository”文件夹不可用，请参阅 [每周重新处理](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) 下载文件夹。
 
    1. 根据ftp_address处的文件可用性计划脚本。
-   1. 文件的命名约定应为YYYYMMDD-&lt;offline_feed_name>-00。*
+   1. 文件的命名约定应为YYYYMMDD-&lt;offline_feed_name>-00.&#42;
 
 1. 将文件从NAS目录传输到FTP服务器。
 
@@ -228,7 +230,7 @@ ht-degree: 1%
       ```
 
    1. 根据ftp_address处的文件可用性计划脚本。
-   1. 文件的命名约定应为YYYYMMDD-&lt;offline_feed_name>-00。*
+   1. 文件的命名约定应为YYYYMMDD-&lt;offline_feed_name>-00.&#42;
 
 1. 将文件从一个NAS目录传输到其他NAS目录。
 

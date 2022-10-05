@@ -3,7 +3,7 @@ description: 关联表格可视化让您能够借助 Cramer's V 算法，将量�
 title: 关联表可视化图表
 uuid: 4563c336-3377-4929-8694-8c0d00866825
 exl-id: 3fc2c025-d369-45ed-8c9e-eb4a0ac412b7
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 76%
@@ -11,6 +11,8 @@ ht-degree: 76%
 ---
 
 # 关联表可视化图表{#association-table-visualization}
+
+{{eol}}
 
 关联表格可视化让您能够借助 Cramer&#39;s V 算法，将量度与量度、维度和维度元素关联起来。
 
@@ -22,7 +24,7 @@ ht-degree: 76%
 
 1. 打开关联表格。
 
-   右键单击[!DNL Visualization] > [!DNL Predictive Analytics] > [!DNL Association Table]。
+   右键单击 [!DNL Visualization] > [!DNL Predictive Analytics] > [!DNL Association Table].
 
    ![](assets/association_table.png)
 
@@ -30,7 +32,7 @@ ht-degree: 76%
 
    ![](assets/association_table1.png)
 
-   关联表格将 Cramer&#39;s V 作为对称相关，得出选定的量度、维度和元素值，同时反映在关联表格的列和行中。例如，选择&#x200B;**Product**&#x200B;扩展维度时，会将&#x200B;**[!UICONTROL Visits]**&#x200B;量度用作表行和列中的关联量度，从而生成一个完美但无用的比较(1.00)，因为比较值相同。
+   关联表格将 Cramer&#39;s V 作为对称相关，得出选定的量度、维度和元素值，同时反映在关联表格的列和行中。例如，选择 **产品** 扩展维度使用 **[!UICONTROL Visits]** 量度作为表行和列中的关联量度，因此会进行完美但无用的比较(1.00)，因为比较的值是相同的。
 
 1. 向关联表格添加更多值。
 

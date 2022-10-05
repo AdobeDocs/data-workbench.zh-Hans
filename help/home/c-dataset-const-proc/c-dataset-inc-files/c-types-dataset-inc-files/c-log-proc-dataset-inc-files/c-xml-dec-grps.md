@@ -3,7 +3,7 @@ description: 将XML文件处理为日志源，以定义解码器以从XML文件�
 title: XML 解码器组
 uuid: 8fc9ab80-9a71-4fe2-a646-e830ffeb67b9
 exl-id: 0b0534b7-8596-4528-a643-8a9b41dcaa33
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 74%
@@ -11,6 +11,8 @@ ht-degree: 74%
 ---
 
 # XML 解码器组{#xml-decoder-groups}
+
+{{eol}}
 
 将XML文件处理为日志源，以定义解码器以从XML文件中提取数据。
 
@@ -33,7 +35,7 @@ XML 解码器的顶级是解码器组 (XMLDecoderGroup)，这是一组用于从�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 表格 </td> 
+   <td colname="col1"> 表  </td> 
    <td colname="col2"> <p>解码器组中的每个表都表示一级要从 XML 文件中提取的数据。例如，如果您想要提取有关访客的数据，则需要创建一个解码器表，其中包含要对每个访客提取的信息。您还可以在解码器表内创建解码器表（请参阅 Children（子项））。 </p> <p> <b>向解码器组中添加表</b> 
      <ul id="ul_C73CAD77440B4465B9FCE08BF4FA0749"> 
       <li id="li_C4B8CC5A85D942898F1EB76778105818"> 右键单击<span class="uicontrol">表</span>，然后单击<span class="uicontrol">新增</span> &gt; <span class="uicontrol">XMLDecoderTable</span>。 </li> 
@@ -56,17 +58,17 @@ XML 解码器的顶级是解码器组 (XMLDecoderGroup)，这是一组用于从�
    <td colname="col1"> 路径 </td> 
    <td colname="col2"> <p>解码器表包含其信息的结构化 XML 文件内的级别。对于子 XML 解码器表，路径是相对于父表路径的。请注意，路径区分大小写。 </p> <p> 例如，如果 XML 文件包含以下结构： </p> 
 
-    &amp;lt；访客&amp;gt;
+    &amp;lt;visitor&amp;gt;
     
     &amp;nbsp;
     
     ...
     
-    &amp;nbsp; 
+    &amp;nbsp;
     
-    &amp;lt;/visitor&amp;gt; 
+    &amp;lt;/visitor&amp;gt;
     
-    &amp;lt;/logdata&amp;gt;&amp;nbsp;   &lt;p> 则路径为logdata&lt;span class=&quot;filepath&quot;>.visitor&lt;/span>。&lt;/p> &lt;/td>
+    &amp;lt;/logdata&amp;gt;&amp;nbsp; &lt;/code> &lt;p> 则路径为logdata&lt;span class=&quot;filepath&quot;>.visitor&lt;/span>。 &lt;/p> &lt;/td>
 </tr> 
   <tr> 
    <td colname="col1"> Table（表） </td> 
@@ -98,7 +100,7 @@ XML 解码器的顶级是解码器组 (XMLDecoderGroup)，这是一组用于从�
 * 访客的 ID，我们将其存储在 x-trackingid 字段中。
 * 访客的电子邮件地址 (contact.email)，我们将其存储在 x-email 字段中。
 * 访客的注册状态。如果访客是已注册的用户，我们可以在 x-is-registered 字段中存储值“1”。
-* 路径值为[!DNL logdata.visitor]，表值为[!DNL Log Entry]。 有关这些参数的信息，请参阅上面的 XMLDecoderGroup 表。
+* 路径值为 [!DNL logdata.visitor]，且表值为 [!DNL Log Entry]. 有关这些参数的信息，请参阅上面的 XMLDecoderGroup 表。
 
 **用于子（页面查看）表的信息如下所示：**
 
@@ -108,7 +110,7 @@ XML 解码器的顶级是解码器组 (XMLDecoderGroup)，这是一组用于从�
 * 每次页面查看的 URI，存储在 cs-uri-stem 字段中。
 * “路径”值为 pageview，“表”值为“日志条目”。有关这些参数的信息，请参阅上面的 XMLDecoderGroup 表。
 
-以下屏幕捕获显示了[!DNL Log Processing Dataset Include]文件的一部分，其中包含基于父XML解码器表和子XML解码器表所讨论的结构的示例XML文件的生成XML解码器组。
+以下屏幕截图显示了 [!DNL Log Processing Dataset Include] 文件，其中根据父XML解码器表和子XML解码器表的讨论结构为示例XML文件生成XML解码器组。
 
 ![](assets/cft_LogProc_xmldecodergroup_top.png)
 
@@ -124,13 +126,13 @@ XML 解码器的顶级是解码器组 (XMLDecoderGroup)，这是一组用于从�
 
 您可以在 Data Workbench 中使用字段查看器界面创建与上面类似的表。有关字段查看器界面的信息，请参阅 [数据集配置工具](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5).
 
-## 使用#value on XML元素读取其属性值{#section-88758428afb94f0baa5a986604d53bc1}
+## 在XML元素#value用读取其属性值 {#section-88758428afb94f0baa5a986604d53bc1}
 
-现在，您可以在XML路径中使用&#x200B;**[!DNL #value]**&#x200B;标记来提取XML元素的值。
+您现在可以使用 **[!DNL #value]** 标记，以提取XML元素的值。
 
-例如，以前指定的路径为&#x200B;**`<Hit><Page name="Home Page" index="20">home.html</Page></Hit>`**，这样您便无法读取`<Page>`标记的值。 要读取`<Page>`标记的值及其属性，可以分别使用[!DNL Hit.Page.@name]和[!DNL Hit.Page.@index]。 您还可以使用&#x200B;**`Hit.Page.#value`**&#x200B;表达式提取标记的值。
+例如，以前指定的路径为 **`<Hit><Page name="Home Page" index="20">home.html</Page></Hit>`** 使您无法读取 `<Page>` 标记。 读取 `<Page>` 标记及其属性，您可以 [!DNL Hit.Page.@name] 和 [!DNL Hit.Page.@index] 分别进行。 您还可以使用 **`Hit.Page.#value`** 表达式。
 
-例如，您可以通过在解码器中添加以下字段来读取标记`<varValue>`的值：
+例如，您可以读取标记的值 `<varValue>` 通过在解码器中添加以下字段：
 
 ```
 7 = XMLDecoderField: 
@@ -142,7 +144,7 @@ Path = string: varValue
 Table = string: Log Entry
 ```
 
-同样，您也可以通过在解码器中添加以下字段来读取标记`<Rep>`的值：
+同样，您也可以读取标记的值 `<Rep>` 通过在解码器中添加以下字段：
 
 ```
 7 = XMLDecoderField: 
@@ -154,7 +156,7 @@ Path = string: Reps
 Table = string: Log Entry
 ```
 
-相反，要读取无属性元素标记的值，可通过在路径中提供“ [!DNL text]”或使用[!DNL line.text]直接读取`<line>`标记下的`<text>`标记及其值，具体取决于您构建解码器的方式。
+相反，要读取无属性的元素标记的值，请 `<text>` 标记下 `<line>` 标记，且其值可通过提供“ [!DNL text]“ ”，或使用 [!DNL line.text]，具体取决于您构建解码器的方式。
 
 ```
 2 = XMLDecoderField: 

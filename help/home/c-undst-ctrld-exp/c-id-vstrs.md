@@ -4,7 +4,7 @@ solution: Analytics
 title: 网站如何识别访客？
 uuid: e1e451b8-e827-4010-bda9-9147c3b09958
 exl-id: 2783ee11-6d6a-463d-86b5-dd63e490201f
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 3%
@@ -12,6 +12,8 @@ ht-degree: 3%
 ---
 
 # 网站如何识别访客？{#how-does-site-identify-visitors}
+
+{{eol}}
 
 网站的典型配置使用Cookie来唯一识别网站的访客并跟踪其随时间的行为。
 

@@ -3,7 +3,7 @@ description: 如果您在处理 Web 数据，则可以使用 ExtractValue 转换
 title: ExtractValue
 uuid: 305827a2-04e6-421f-82cb-923d62b02e70
 exl-id: 5bafe64f-081a-49ec-997e-68e8f6915a71
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 97%
@@ -11,6 +11,8 @@ ht-degree: 97%
 ---
 
 # ExtractValue{#extractvalue}
+
+{{eol}}
 
 如果您在处理 Web 数据，则可以使用 ExtractValue 转换从查询字符串、cookie 或网站数据中具有类似编码的字段提取值。
 
@@ -58,7 +60,7 @@ ht-degree: 97%
  </tbody> 
 </table>
 
-如果您希望提取搜索短语，则可以提取整个短语，如果需要，还可以使用 [!DNL Tokenize] 转换将短语拆分为搜索词。有关[!DNL Tokenize]转换的信息，请参阅[Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c)。
+如果您希望提取搜索短语，则可以提取整个短语，如果需要，还可以使用 [!DNL Tokenize] 转换将短语拆分为搜索词。有关 [!DNL Tokenize] 转换，请参阅 [Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c).
 
 此示例配置一个 [!DNL ExtractValue] 转换，用于从 cs(referrer-query) 提取 x-v-search-querynames 字段的值，并将它们存储在 x-search-phrase 字段中。
 

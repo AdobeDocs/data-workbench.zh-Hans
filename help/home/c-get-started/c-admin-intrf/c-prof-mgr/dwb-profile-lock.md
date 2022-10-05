@@ -2,13 +2,17 @@
 description: “配置文件管理器”中应用的 Internal.cfg 文件可防止用户通过配置文件、维度、报表、工作区、量度和过滤器管理器对您的自定义配置文件进行更改。
 title: 锁定工作站中的配置文件
 uuid: 6b65d7c1-dade-4c6e-9d59-09693e62f3f5
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 2604ceea-0e55-4ae7-a286-e5257e974a64
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 90%
 
 ---
 
-
 # 锁定工作站中的配置文件{#locking-profiles-in-the-workstation}
+
+{{eol}}
 
 “配置文件管理器”中应用的 Internal.cfg 文件可防止用户通过配置文件、维度、报表、工作区、量度和过滤器管理器对您的自定义配置文件进行更改。
 
@@ -18,9 +22,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. 在工作区中，右键单击&#x200B;**管理员** > **配置文件管理器**。
 
-1. In the **Profile Manager**, right-click **[!DNL Context > Internal.cfg]** and **Make Local**.
+1. 在 **配置文件管理器**，右键单击 **[!DNL Context > Internal.cfg]** 和 **制作本地副本**.
 
-1. Right-click checkmark in **User** column and save to a `<custom profile>`.
+1. 在中右键单击复选标记 **用户** 列并保存到 `<custom profile>`.
 
 ![](assets/dwb_lock_profiles.png)
 

@@ -3,7 +3,7 @@ description: 简单维度与其父可计数维度有一对多的关系。
 title: 简单维度
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
 exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 简单维度{#simple-dimensions}
+
+{{eol}}
 
 简单维度与其父可计数维度有一对多的关系。
 

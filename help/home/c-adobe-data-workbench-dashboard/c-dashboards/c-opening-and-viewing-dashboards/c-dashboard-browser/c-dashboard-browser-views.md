@@ -1,22 +1,24 @@
 ---
 description: 说明缩略图视图和列表视图。
-title: 功能板浏览器视图
+title: 仪表板浏览器视图
 uuid: 8e5ef06a-6c5a-4792-a732-fe7574aed8ab
 exl-id: 94da6ee1-30ab-426f-9be3-fd56f172aadb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
 
 ---
 
-# 功能板浏览器视图{#dashboard-browser-views}
+# 仪表板浏览器视图{#dashboard-browser-views}
+
+{{eol}}
 
 说明缩略图视图和列表视图。
 
 有两个视图可用于在功能板浏览器中导航功能板：缩略图视图和列表视图。 缩略图视图在您浏览时提供功能板的缩略图，而列表视图则是可用功能板的以表格为基础的、更详细的视图。
 
-## 缩略图视图{#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
+## 缩略图视图 {#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
 
 缩略图视图提供与您有权访问的功能板对应的缩略图库。 如果缩略图显示默认图标，请联系您的管理员为该功能板建立缩略图。 利用搜索栏左侧的图标，可在缩略图和列表视图之间切换。
 

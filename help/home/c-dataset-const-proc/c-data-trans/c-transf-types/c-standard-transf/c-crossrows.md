@@ -3,7 +3,7 @@ description: 与其他转换类似，CrossRows 转换也应用于日志源中的
 title: CrossRows
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
 exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 89%
@@ -12,15 +12,17 @@ ht-degree: 89%
 
 # CrossRows{#crossrows}
 
+{{eol}}
+
 与其他转换类似，CrossRows 转换也应用于日志源中的数据行（日志条目）。
 
-对于每行数据，转换将获取指定输入字段的值，执行一组处理步骤，并将结果记录到指定的输出字段。但是，当[!DNL CrossRows]转换对一行数据（此行称为输出行）工作时，它会考虑该行以及与同一跟踪ID关联的一个或多个其他数据行（这些行称为输入行）。 因此，对于给定的跟踪ID，每个输出行的输出字段值基于一个或多个输入行的输入字段值。
+对于每行数据，转换将获取指定输入字段的值，执行一组处理步骤，并将结果记录到指定的输出字段。但是，当 [!DNL CrossRows] 转换适用于一行数据（该行称为输出行），它会考虑该行以及与同一跟踪ID关联的一个或多个其他数据行（这些行称为输入行）。 因此，对于给定的跟踪ID，每个输出行的输出字段值基于一个或多个输入行的输入字段值。
 
 该转换提供多个条件和约束，使您能够限制转换的输入行。您可以根据 Data Workbench Server 的条件（请参阅[条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)）、相对于输出行的输入行范围或相对于输出行时间的时间范围来表示这些限制。对于那些满足转换条件和约束的输入行，可以应用运算（如 SUM）来确定输出字段的值。
 
 >[!NOTE]
 >
->若要使用 [!DNL CrossRows] 转换，数据必须按时间排序并按源数据中的跟踪 ID 分组。因此，[!DNL CrossRows]仅在[!DNL Transformation.cfg]文件或[!DNL Transformation Dataset Include]文件中定义时才起作用。
+>若要使用 [!DNL CrossRows] 转换，数据必须按时间排序并按源数据中的跟踪 ID 分组。因此， [!DNL CrossRows] 仅当在中定义时，才可使用 [!DNL Transformation.cfg] 文件或 [!DNL Transformation Dataset Include] 文件。
 
 在查看下表中的参数描述时，请切记以下事项：
 
@@ -78,7 +80,7 @@ ht-degree: 89%
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output（输出） </td> 
+   <td colname="col1"> 输出 </td> 
    <td colname="col2"> 输出字段的名称。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -105,7 +107,7 @@ ht-degree: 89%
 
 此示例中的 [!DNL CrossRows] 转换应用于 Web 数据行，以查找每次页面查看的下一页面查看时间。由于我们知道，[!DNL CrossRows] 仅在数据集构建过程的转换阶段应用，因此数据行按访客（每个访客有一个唯一的跟踪 ID）和时间排序。
 
-仅对那些填充了 x-is-page-view 字段的输入行（指示数据行表示一次页面查看）考虑输入字段 x-timestamp。为 Key（键）参数指定了 x-session-key 字段（每个会话都有一个唯一的值）。因此，转换的输入行（日志条目）限制为与输出行具有相同 x-session-key 值的连续行块。换句话说，若要考虑对某个输入行进行转换，该输入行必须表示与输出行中的页面查看发生在同一会话过程中的页面查看。第一行运算从满足[!DNL Input]条件且与输出行具有相同x-session-key值的第一个输入行获取输出字段的值。
+仅对那些填充了 x-is-page-view 字段的输入行（指示数据行表示一次页面查看）考虑输入字段 x-timestamp。为 Key（键）参数指定了 x-session-key 字段（每个会话都有一个唯一的值）。因此，转换的输入行（日志条目）限制为与输出行具有相同 x-session-key 值的连续行块。换句话说，若要考虑对某个输入行进行转换，该输入行必须表示与输出行中的页面查看发生在同一会话过程中的页面查看。第一行运算从满足 [!DNL Input] 条件，且其x-session-key值与输出行相同。
 
 ![](assets/cfg_TransformationType_CrossRows.png)
 

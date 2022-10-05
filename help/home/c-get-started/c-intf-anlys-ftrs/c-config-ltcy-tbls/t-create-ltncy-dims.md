@@ -3,7 +3,7 @@ description: 延迟维度是通过一个可计数父维度（如“会话”）�
 title: 创建延迟维度
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
 exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 88%
@@ -12,15 +12,17 @@ ht-degree: 88%
 
 # 创建延迟维度{#create-a-latency-dimension}
 
+{{eol}}
+
 延迟维度是通过一个可计数父维度（如“会话”）和一个时间维度（如“日”）构建的。
 
 在Data Workbench中创建延迟表格时，会自动向可视化文件(.vw)添加延迟维度。 您可以按照下列步骤编辑某个表格的延迟维度。
 
 **编辑延迟维度**
 
-1. 在文本编辑器（如记事本）中打开您创建的延迟表格。它位于Data Workbench安装目录的User > `working profile name` > Work文件夹中。
+1. 在文本编辑器（如记事本）中打开您创建的延迟表格。它位于用户>中 `working profile name` >工作文件夹。
 
-   定义的延迟维度包括以下示例所示的参数。（您的延迟维度定义可能包含其他参数。）[!DNL line entity = LatencyDim:]表示延迟维度定义的开始。
+   定义的延迟维度包括以下示例所示的参数。（您的延迟维度定义可能包含其他参数。）的 [!DNL line entity = LatencyDim:] 指示延迟维度定义的开始。
 
    ```
    entity = LatencyDim:
@@ -80,7 +82,7 @@ ht-degree: 88%
    </tbody> 
    </table>
 
-1. 将[!DNL .vw]文件保存到User\*工作配置文件名称*\Work文件夹。
+1. 保存 [!DNL .vw] 文件到User\*工作配置文件名称*\Work文件夹。
 
    以下是默认延迟维度的设置：
 

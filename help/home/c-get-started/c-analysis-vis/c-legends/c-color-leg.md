@@ -3,7 +3,7 @@ description: 颜色图例按量度（如“转化”和“维系”）对可视�
 title: 颜色图例
 uuid: 4f5ad93e-9128-464c-b5b7-9db454fa71a6
 exl-id: 0ecf5237-8d64-46a6-b73b-e59de69e5988
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 85%
@@ -11,6 +11,8 @@ ht-degree: 85%
 ---
 
 # 颜色图例{#color-legends}
+
+{{eol}}
 
 颜色图例按量度（如“转化”和“维系”）对可视化进行颜色编码，并且几乎可以在每个工作区中使用。
 
@@ -20,7 +22,7 @@ ht-degree: 85%
 >
 >如果未在颜色图例中选择量度，则所有可视化都将显示为蓝色。
 
-## 激活或更改量度{#section-694234fc79fd44c2a2ea2f677f74b3dc}
+## 激活或更改量度 {#section-694234fc79fd44c2a2ea2f677f74b3dc}
 
 * 右键单击量度名称，然后单击所需的量度。
 

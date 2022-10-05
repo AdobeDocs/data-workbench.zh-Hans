@@ -3,7 +3,7 @@ description: 显示维度的信息或选项的步骤。
 title: 显示“维度”菜单
 uuid: e2c4fa8d-3559-45bd-8ec5-d064c763b20b
 exl-id: 55b2cb3a-d82e-4e42-b1b6-079ca3667be8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 65%
@@ -11,6 +11,8 @@ ht-degree: 65%
 ---
 
 # 显示“维度”菜单{#display-the-dimension-menu}
+
+{{eol}}
 
 显示维度的信息或选项的步骤。
 

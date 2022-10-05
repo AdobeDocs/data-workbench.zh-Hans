@@ -1,16 +1,18 @@
 ---
 description: 如何从Worktop导出、复制和书签。
-title: 使用工作台缩略图菜单
+title: 使用操作台缩略图菜单
 uuid: bada2260-3ae7-4fb6-938a-40b7acb1ffa7
 exl-id: 2220051d-5c53-48ed-8e13-62883819f22a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 79%
 
 ---
 
-# 使用工作台缩略图菜单{#using-the-worktop-thumbnail-menu}
+# 使用操作台缩略图菜单{#using-the-worktop-thumbnail-menu}
+
+{{eol}}
 
 如何从Worktop导出、复制和书签。
 
@@ -18,9 +20,9 @@ ht-degree: 79%
 
 ![](assets/thumbnail_menu.png)
 
-## 接口描述{#section-fd027dd94b7d4cb6b933d70c08ccd3e2}
+## 界面描述 {#section-fd027dd94b7d4cb6b933d70c08ccd3e2}
 
-[!DNL Worktop]缩略图菜单中提供以下元素：
+在 [!DNL Worktop] 缩略图菜单：
 
 **服务器工作区:***名称*
 
@@ -67,14 +69,14 @@ ht-degree: 79%
 
 **删除**
 
-仅对用户工作区显示。删除仅存在于本地计算机上的用户工作区。有关从连接的Data Workbench服务器中删除工作区的信息，请参阅[从工作配置文件中删除文件](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b)。
+仅对用户工作区显示。删除仅存在于本地计算机上的用户工作区。有关从连接的Data Workbench服务器中删除工作区的信息，请参阅 [从工作配置文件中删除文件](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b).
 
 **保存到服务器**
 
-仅对本地版本的服务器工作区和用户工作区显示，并且仅适用于具有适当权限的用户。将工作区的本地副本保存到服务器。默认情况下，工作区会保存到相应的工作`<profile name>\Workspaces\<tab name>`文件夹中。
+仅对本地版本的服务器工作区和用户工作区显示，并且仅适用于具有适当权限的用户。将工作区的本地副本保存到服务器。默认情况下，工作区会保存到相应的工作区 `<profile name>\Workspaces\<tab name>` 文件夹。
 
 **书签**
 
 在工作区中添加书签以便日后快速检索。
 
-书签图标 ![](assets/bookmark_icon.png) 将显示在 Worktop 中工作区的上方，而工作区的名称将显示在“书签”面板中。  ![](assets/bookmark_worktop.png)
+书签图标 ![](assets/bookmark_icon.png) 将显示在 Worktop 中工作区的上方，而工作区的名称将显示在“书签”面板中。 ![](assets/bookmark_worktop.png)

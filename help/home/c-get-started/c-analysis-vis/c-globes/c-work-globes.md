@@ -3,7 +3,7 @@ description: 当在地图上移动鼠标时，与指针所在的地理位置对�
 title: 使用地球
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
 exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 93%
@@ -11,6 +11,8 @@ ht-degree: 93%
 ---
 
 # 使用地球{#working-with-globes}
+
+{{eol}}
 
 当在地图上移动鼠标时，与指针所在的地理位置对应的任何可用数据均会显示在可视化的右上角。
 
@@ -38,4 +40,4 @@ ht-degree: 93%
 
 可以根据给定时间的太阳的位置打开或关闭地球中的照明。时间由Data Workbench服务器设置。
 
-* 右键单击可视化，然后单击&#x200B;**[!UICONTROL Toggle Lighting]**。 菜单项左侧的 X 表示已启用照明。
+* 右键单击可视化，然后单击 **[!UICONTROL Toggle Lighting]**. 菜单项左侧的 X 表示已启用照明。

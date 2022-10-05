@@ -3,7 +3,7 @@ description: 在生成报表和警报之前，必须配置Report Server以指定
 title: 配置与 Insight Server 的连接
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
 exl-id: a398a665-fe09-448a-977c-b0f9de4add09
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 9%
@@ -11,6 +11,8 @@ ht-degree: 9%
 ---
 
 # 配置与 Insight Server 的连接{#configuring-the-connection-to-the-insight-server}
+
+{{eol}}
 
 在生成报表和警报之前，必须配置Report Server以指定Insight Server的地址并标识您希望它报告的配置文件。
 
@@ -21,9 +23,9 @@ ht-degree: 9%
 **配置报表服务器**
 
 1. 在Windows资源管理器中，导航到安装Report Server的目录。
-1. 在记事本中打开[!DNL ReportServer.cfg]文件，并根据需要修改该文件。
+1. 打开 [!DNL ReportServer.cfg] 文件，并根据需要修改文件。
 
-   以下示例[!DNL Report Server.cfg]默认仅包含[!DNL Report Server.cfg]文件中包含的参数（并突出显示所需的参数设置）。 如果您通过代理服务器与Adobe许可证服务器联系，则需要添加许可矢量及其参数。 有关详细说明，请参阅[Report Server.cfg参数](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06)。
+   以下示例 [!DNL Report Server.cfg] 仅包含 [!DNL Report Server.cfg] 文件（并突出显示所需的参数设置）。 如果您通过代理服务器与Adobe许可证服务器联系，则需要添加许可矢量及其参数。 请参阅 [Report Server.cfg参数](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) ，以了解详细描述。
 
    ```
    Fonts = vector: 0 items

@@ -3,7 +3,7 @@ description: Format 转换获取一组输入并设置它们的格式，以创建
 title: 格式
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
 exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 格式{#format}
+
+{{eol}}
 
 Format 转换获取一组输入并设置它们的格式，以创建与给定结构匹配的输出。
 
@@ -51,7 +53,7 @@ Format 转换获取一组输入并设置它们的格式，以创建与给定结�
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output（输出） </td> 
+   <td colname="col1"> 输出 </td> 
    <td colname="col2"> 创建的用于包含转换结果的字段名称。如果输入是字符串矢量，则输出字符串矢量的长度将是最长输入矢量的长度。如果某些输入字符串矢量长度较短，则会使用空字符串填充它们在格式字符串中的位置，直至达到输出矢量的长度。 </td> 
    <td colname="col3"></td> 
   </tr> 

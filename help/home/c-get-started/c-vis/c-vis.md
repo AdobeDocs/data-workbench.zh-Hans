@@ -3,7 +3,7 @@ description: 使用可视化时需要了解的概念和功能的概述。
 title: 可视化图表概述
 uuid: 34ddc55f-a037-45ec-b636-d05b1806442f
 exl-id: 2d600c4b-2923-4a85-8a8b-02771b7dc067
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 20%
@@ -11,6 +11,8 @@ ht-degree: 20%
 ---
 
 # 可视化图表{#visualizations}
+
+{{eol}}
 
 使用可视化时需要了解的概念和功能的概述。
 

@@ -3,7 +3,7 @@ description: 安装报表服务器程序文件的步骤。
 title: 安装报表程序文件
 uuid: 9c250783-7080-4c27-bd8c-add208b2b1bf
 exl-id: 8f871e5c-1267-4564-a168-398f9dc793a4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 10%
@@ -11,6 +11,8 @@ ht-degree: 10%
 ---
 
 # 安装报表程序文件{#installing-the-report-program-files}
+
+{{eol}}
 
 安装报表服务器程序文件的步骤。
 
@@ -24,11 +26,11 @@ ht-degree: 10%
 1. 将安装文件的内容解压缩到上面创建的目录。
 1. 要在Windows 2008系统中导出到Excel，请创建以下目录之一：
 
-   对于Windows 2008 Server 64位：[!DNL C:\Windows\SysWOW64\config\systemprofile\Desktop]。
+   对于Windows 2008 Server 64位： [!DNL C:\Windows\SysWOW64\config\systemprofile\Desktop].
 
 1. 右键单击文件夹。
 1. 选择 **[!UICONTROL Properties]**。
 1. 选择 **[!UICONTROL Security]**。
 1. 单击 **[!UICONTROL Edit]**。
 1. 添加 **[!UICONTROL Everyone]**.
-1. 授予&#x200B;**[!UICONTROL Everyone]**&#x200B;的完全控制权。
+1. 授予对 **[!UICONTROL Everyone]**.

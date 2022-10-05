@@ -1,14 +1,18 @@
 ---
 description: 您现在可以借助 FTP 和 SFTP 协议，用 CSV、TSV、区段导出和带标题区段导出，将区段文件从客户端（工作站）导出到服务器。
-title: 使用S/FTP交付导出区段
+title: 通过 S/FTP 传递导出区段
 uuid: 4d654368-cbf7-4e7f-8ab9-82f4e0261ac6
-translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+exl-id: 0f1dc0a1-f376-47fb-887c-612a654ed0f0
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 80%
 
 ---
 
+# 通过 S/FTP 传递导出区段{#export-a-segment-using-s-ftp-delivery}
 
-# 使用S/FTP交付导出区段{#export-a-segment-using-s-ftp-delivery}
+{{eol}}
 
 您现在可以借助 FTP 和 SFTP 协议，用 CSV、TSV、区段导出和带标题区段导出，将区段文件从客户端（工作站）导出到服务器。
 
@@ -18,7 +22,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 * 设置 **FTPServerInfo.cfg** 文件。
 
-   输入 FTP 服务器信息并设置工作站允许的连接重试次数。Edit from the workstation or the server at [!DNL Server\Addresses\Export\] **[!DNL FTPServerInfo.cfg]** file.
+   输入 FTP 服务器信息并设置工作站允许的连接重试次数。从工作站或服务器(位于&#x200B; [!DNL Server\Addresses\Export\] **[!DNL FTPServerInfo.cfg]**文件。
 
    ```
    FTP Servers = vector: 1 items 
@@ -34,7 +38,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 * 设置 **FTPUserCredentials.cfg** 文件。
 
-   Enter user credentials to connect to servers using the [!DNL Server\Admin\Export\] **[!DNL FTPUserCredentials.cfg]** file. 此文件包含连接服务器所必需的用户凭证，并且只能从服务器进行编辑，不能从工作站（客户端）进行编辑。
+   输入用户凭据以使用&#x200B; [!DNL Server\Admin\Export\] **[!DNL FTPUserCredentials.cfg]**文件。 此文件包含连接服务器所必需的用户凭证，并且只能从服务器进行编辑，不能从工作站（客户端）进行编辑。
 
    ```
    FTP User Credentials = vector: 1 items 
@@ -49,11 +53,12 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
    >[!NOTE]
    >
-   >确保您为验证生成的SSH密钥的格式与使用SSH Keygen命令生成的密钥的格式相同。
+   >确保您为身份验证生成的SSH密钥的格式与使用SSH Keygen命令时生成的密钥的格式相同。
    >
    >使用 keygen 生成 SSH 密钥的示例：
    >
-   >```
+   >
+   ```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
@@ -65,6 +70,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
    1. *Public Key Path*
    1. *私有密钥路径*
    1. *密码短语*
+
    <table id="table_4EB416DC770D4D1AA4FAD9676C0D680C"> 
     <thead> 
       <tr> 
@@ -92,7 +98,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 1. 打开导出表。
 
-   从工作站中，右键单击&#x200B;*明细表*&#x200B;并选择一种导出类型 - CSV、TSV、区段导出或带标题区段导出。或者，从命 [!DNL .export] 令提示符下打开文件并进行编辑(请参阅 [配置导出区段](../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372))。
+   从工作站中，右键单击&#x200B;*明细表*&#x200B;并选择一种导出类型 - CSV、TSV、区段导出或带标题区段导出。或者，打开 [!DNL .export] 命令提示符下的文件并进行编辑(请参阅 [配置导出区段](../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372))。
 
 1. 在&#x200B;*命令*&#x200B;字段中，设置为指向导出可执行文件：
 
@@ -129,28 +135,28 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 所有命令参数都必须输入，且输入时必须遵循上述要求。
 
-## S/FTP export using private/public keys {#section-0534424d79a54a47b82594cfa7b3c17f}
+## 使用私钥/公钥导出S/FTP {#section-0534424d79a54a47b82594cfa7b3c17f}
 
 若要使用私有密钥/公共密钥进行 FTP 和 SFTP 导出，请将配置文件放置在以下这些文件夹中：
 
-* Place **FTPServerInfo.cfg** in the [!DNL Server/Addresses/Export/] folder.
-* Place **FTPUserCredentials.cfg** in the [!DNL Server/Admin/Export/] folder.
+* 位置 **FTPServerInfo.cfg** 在 [!DNL Server/Addresses/Export/] 文件夹。
+* 位置 **FTPUserCredentials.cfg** 在 [!DNL Server/Admin/Export/] 文件夹。
 
 **FTPServerInfo.cfg** 文件包含下面六个参数：
 
-1. *User Name*
-1. *User Password*
-1. *Server Name*
-1. *Public Key Path*
+1. *用户名*
+1. *用户密码*
+1. *服务器名称*
+1. *公钥路径*
 1. *Private Key Path --* 将私有密钥路径放置在没有扩展名的配置文件中，例如：
 
 [!DNL Private Key Path = string: E:\\Server\\campaign\\campaignprivatekey]
 
-1. *Passphrase*
+1. *密码短语*
 
 FTP使用参数1、2和3。
 
-SFTP在传输使用密码身份验证时使用参数1、2和3。
+当传输使用密码身份验证时，SFTP会使用参数1、2和3。
 
 如果传输期间需要进行密钥验证，那么 SFTP 将使用所有这六个参数。例如，若要使用密钥进行验证：
 
@@ -160,4 +166,4 @@ SFTP在传输使用密码身份验证时使用参数1、2和3。
 
 >[!NOTE]
 >
->The public keys need to point to a **.pem** file and not to a folder location. 您可以使用各种应用程序（例如，Cygwin）中的 SSH 密钥生成函数来创建密钥。（Putty 生成的 .ppk 格式的密钥不受支持。）
+>公钥需要指向 **.pem** 文件，而不是文件夹位置。 您可以使用各种应用程序（例如，Cygwin）中的 SSH 密钥生成函数来创建密钥。（Putty 生成的 .ppk 格式的密钥不受支持。）

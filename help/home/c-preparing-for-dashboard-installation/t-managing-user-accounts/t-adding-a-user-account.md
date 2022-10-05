@@ -3,7 +3,7 @@ description: 添加用户帐户
 title: 添加用户帐户
 uuid: c322eeaa-a3f4-41e8-b38c-dd892ec29a87
 exl-id: c99f3189-4d89-443a-be5b-84352c4ec6e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 8%
@@ -12,7 +12,9 @@ ht-degree: 8%
 
 # 添加用户帐户{#adding-a-user-account}
 
-1. 单击&#x200B;**[!UICONTROL Add User]**&#x200B;以显示&#x200B;**[!UICONTROL New User]**&#x200B;提示。
+{{eol}}
+
+1. 单击 **[!UICONTROL Add User]** 提起 **[!UICONTROL New User]** 提示。
 
    ![](assets/add_user_account.png)
 
@@ -27,7 +29,7 @@ ht-degree: 8%
       | **LDAP** | 如果要通过LDAP验证用户，请选择此选项。 （用户必须已存在于目录中）。 |
       | **Windows** | 选择用户是否要使用Windows身份验证进行身份验证（用户必须已存在于Windows目录中）。 |
 
-1. **[!UICONTROL Assigned Groups]**:从默认的管理员组和已创建的任何其他组中进行选择。此时不需要任何组，并且可以随时修改用户的组成员资格。
-1. 正确配置表单后，单击&#x200B;**[!UICONTROL Add User]**&#x200B;将用户添加到系统中。
+1. **[!UICONTROL Assigned Groups]**:从默认的管理员组和已创建的任何其他组中进行选择。 此时不需要任何组，并且可以随时修改用户的组成员资格。
+1. 正确配置表单后，单击 **[!UICONTROL Add User]** 将用户添加到系统。
 
    如果操作成功，您将看到一条提示，指示用户已创建。

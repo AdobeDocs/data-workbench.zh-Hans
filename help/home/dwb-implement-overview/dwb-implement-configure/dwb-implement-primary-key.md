@@ -1,36 +1,39 @@
 ---
-description: 本节介绍如何为架构设计和实施的Data Workbench数据集创建主键（跟踪ID）。
-title: 数据处理——构建主密钥
+description: 本节介绍如何为架构设计和实施的Data Workbench数据集创建主键值（跟踪ID）。
+title: 数据处理 - 构建主密钥
 uuid: 7a12950e-6ac0-47d5-b4a8-0b50c48b04fa
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 9937038f-d011-4946-8a5b-cc724b611ae5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 2%
 
 ---
 
+# 数据处理 - 构建主密钥{#data-processing-building-primary-key}
 
-# 数据处理——构建主密钥{#data-processing-building-primary-key}
+{{eol}}
 
-本节介绍如何为架构设计和实施的Data Workbench数据集创建主键（跟踪ID）。
+本节介绍如何为架构设计和实施的Data Workbench数据集创建主键值（跟踪ID）。
 
 ## 了解跟踪ID {#section-24683031044a4af49988655ccb9a45fd}
 
-在DWB（使用解码器）中读取和解码数据后，第一步是定义跟踪ID和时间戳。 跟踪ID是唯一标识客户记录的标识符。 它可以是源中的任何字段，如电子邮件ID、社交安全号码、Cookie ID，等等。 用作跟踪ID的字段由客户端在发现会话期间决定。 跟踪ID和时间戳是必填字段，必须为每个记录定义。
+在DWB中读取和解码数据（使用解码器）后，第一步是定义跟踪ID和时间戳。 跟踪ID是唯一标识客户记录的标识符。 它可以是动态消息中的任意字段，如电子邮件ID、社交安全号、Cookie ID等。 用作跟踪ID的字段由客户端在发现会话期间决定。 跟踪ID和时间戳是必填字段，必须为每个记录定义。
 
-通常，对于在线数据，Cookie ID( *x-visid_high和* x-visid_low* *的组合)用作唯一客户标识的默认机制，但是，这可以根据客户的要求进行更改。 发生请求（或事件）的日期和时间是 *x-timestamp*。 DWB中的所有记录都按跟踪 *id分组* ，并按时间戳排序。 The Required Field [!DNL Definitions.cfg] file is a Log Processing Dataset Include file that defines the required fields : *x-trackingid* and *x-timestamp*.
+通常，对于在线数据，Cookie ID( *x_visid_high* 和* x-visid_low*)用作唯一客户标识的默认机制，但可根据客户的要求更改此机制。 发生请求（或事件）的日期和时间为 *x-timestamp*. DWB中的所有记录按 *trackingid* 并按时间戳排序。 必填字段 [!DNL Definitions.cfg] 文件是定义必填字段的日志处理数据集包含文件： *x-trackingid* 和 *x-timestamp*.
 
-注意：*x-trackingid *在DWB中是内置字段，此名称不应用于任何其他字段。
+注意：*x-trackingid *在DWB中是一个内置字段，此名称不应用于任何其他字段。
 
-**示例1**:使 *用Cookie ID创建x-trackingid* （当仅使用在线数据时）
+**示例1**:创建 *x-trackingid* 使用Cookie ID（仅使用在线数据时）
 
-要在DWB中使用Cookie ID创建*x-trackingid *，请使用Hash函数在文件中创建 *x-trackingid*[!DNL foundation.cfg][!DNL foundation.cfg][!DNL Dataset > log processing] （在中定义跟踪ID是最佳做法，但可以在文件夹下的任何其他配置文件中定义跟踪ID），如下所示：
+要在DWB中使用Cookie ID创建*x-trackingid *，请使用哈希函数创建 *x-trackingid* 在 [!DNL foundation.cfg] 文件(在 [!DNL foundation.cfg] 但是，它可以在 [!DNL Dataset > log processing] 文件夹)，如下所示：
 
 ![](assets/dwb_impl_primary_key1.png)
 
-**示例2**:使 *用电子邮件ID* （联机和脱机数据均可用时）创建x-trackingid
+**示例2**:创建 *x-trackingid* 使用电子邮件ID（当联机和离线数据均可用时）
 
-假设脱机和联机数据都可用（在本例中），并且电子邮件ID在两个数据源中都可用。 由于电子邮件ID可唯一标识客户，因此将用于创建 *x-trackingid*。
+假设离线和在线数据均可用（例如，此示例），并且电子邮件ID在两个数据源中均可用。 由于电子邮件ID是唯一标识客户的，因此它将用于创建 *x-trackingid*.
 
-使用Hash函数创建 *trackingId* ，如下所示：
+使用Hash函数创建 *trackingId* 如下所示：
 
 ![](assets/dwb_impl_primary_key2.png)
-

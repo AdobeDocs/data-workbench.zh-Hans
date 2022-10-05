@@ -3,7 +3,7 @@ description: 可以在工作表的任何单元格中输入文本或表达式。
 title: 在工作表中处理数据
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 76%
@@ -12,11 +12,13 @@ ht-degree: 76%
 
 # 在工作表中处理数据{#work-with-data-in-worksheets}
 
+{{eol}}
+
 可以在工作表的任何单元格中输入文本或表达式。
 
-工作表中的所有表达式前面都有等号(=)，除非使用[!DNL eval( )]，它将引用单元格中的文本视为表达式。
+工作表中的所有表达式前面都有一个等号(=)，除非使用 [!DNL eval( )]，将引用单元格中的文本视为表达式。
 
-有关量度、维度和过滤器语法规则的完整列表，请参阅[查询语言语法](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)。
+有关量度、维度和过滤器语法规则的完整列表，请参阅 [查询语言语法](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 **在工作表中键入数据**
 
@@ -25,34 +27,34 @@ ht-degree: 76%
 
 **从一个单元格复制并粘贴到另一个单元格**
 
-1. 右键单击包含要复制的数据的单元格，然后单击&#x200B;**[!UICONTROL Copy]**。
-1. 右键单击要将复制的数据粘贴到其中的单元格，然后单击&#x200B;**[!UICONTROL Paste]**。
+1. 右键单击包含要复制的数据的单元格，然后单击 **[!UICONTROL Copy]**.
+1. 右键单击要将复制的数据粘贴到其中的单元格，然后单击 **[!UICONTROL Paste]**.
 
 Data Workbench会自动更新新单元格中的引用以引用相应的列和行。
 
 **从一组单元格复制并粘贴到另一组单元格**
 
 1. 选择要复制的数据所在的单元格。
-1. 右键单击包含要复制的数据的单元格，然后单击&#x200B;**[!UICONTROL Copy]**。
-1. 右键单击要开始将复制的数据粘贴到其中的第一个单元格，然后单击&#x200B;**[!UICONTROL Paste]**。 数据便会粘贴到第一个单元格及其下面的单元格。
+1. 右键单击包含要复制的数据的单元格，然后单击 **[!UICONTROL Copy]**.
+1. 右键单击要开始将复制的数据粘贴到其中的第一个单元格，然后单击 **[!UICONTROL Paste]**. 数据便会粘贴到第一个单元格及其下面的单元格。
 
 Data Workbench会自动更新新单元格中的引用以引用相应的列和行。
 
 **插入列**
 
-* 右键单击列，然后单击&#x200B;**[!UICONTROL Insert Column]**。 此时便会在所选列的左侧插入新列。
+* 右键单击列，然后单击 **[!UICONTROL Insert Column]**. 此时便会在所选列的左侧插入新列。
 
 **删除列**
 
-* 右键单击要删除的列，然后单击&#x200B;**[!UICONTROL Delete Column]**。 此时该列便会被删除。
+* 右键单击要删除的列，然后单击 **[!UICONTROL Delete Column]**. 此时该列便会被删除。
 
 **插入行**
 
-* 右键单击某行，然后单击&#x200B;**[!UICONTROL Insert Row]**。 此时便会在所选行的上面插入新行。
+* 右键单击某行，然后单击 **[!UICONTROL Insert Row]**. 此时便会在所选行的上面插入新行。
 
 **删除行**
 
-* 右键单击要删除的行，然后单击&#x200B;**[!UICONTROL Delete Row]**。 此时该行便会被删除。
+* 右键单击要删除的行，然后单击 **[!UICONTROL Delete Row]**. 此时该行便会被删除。
 
 **调整列大小**
 
@@ -61,7 +63,7 @@ Data Workbench会自动更新新单元格中的引用以引用相应的列和行
 
 **设置单元格格式**
 
-1. 右键单击单元格，然后单击&#x200B;**[!UICONTROL Format]**。
+1. 右键单击单元格，然后单击 **[!UICONTROL Format]**.
 
    ![](assets/mnu_Worksheet_Format.png)
 
@@ -121,7 +123,7 @@ Data Workbench会自动更新新单元格中的引用以引用相应的列和行
    <td colname="col2"> <p>通过将光标放在所选的单元中来编辑单元格。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Enter </p> </td> 
+   <td colname="col1"> <p>回车键 </p> </td> 
    <td colname="col2"> <p>完成对所选单元格的编辑。从单元格中去除光标，此时单元格内容已反映出您的编辑。 </p> </td> 
   </tr> 
   <tr> 

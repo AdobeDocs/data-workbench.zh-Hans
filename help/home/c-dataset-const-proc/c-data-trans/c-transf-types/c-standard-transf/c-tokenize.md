@@ -3,7 +3,7 @@ description: Tokenize 转换针对输入字符串以迭代方式应用正则表�
 title: Tokenize
 uuid: f8430e6c-ec14-4ba6-aeae-92c9f2520a63
 exl-id: c1f39b5b-4717-44f6-99c7-4e6a215f3542
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 89%
@@ -12,9 +12,11 @@ ht-degree: 89%
 
 # Tokenize{#tokenize}
 
+{{eol}}
+
 Tokenize 转换针对输入字符串以迭代方式应用正则表达式。
 
-但是，与[!DNL RETransform]不同，[!DNL Tokenize]不必匹配整个字符串：用于[!DNL Tokenize]转换的正则表达式可以匹配输入的子集。 在找到匹配项之后，[!DNL Tokenize] 会从上个匹配项结束后的字符处开始再次应用正则表达式。
+但是，与 [!DNL RETransform], [!DNL Tokenize] 不必匹配整个字符串：用于 [!DNL Tokenize] 转换可以匹配输入的子集。 在找到匹配项之后，[!DNL Tokenize] 会从上个匹配项结束后的字符处开始再次应用正则表达式。
 
 | 参数 | 描述 | 默认 |
 |---|---|---|

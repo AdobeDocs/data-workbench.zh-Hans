@@ -3,7 +3,7 @@ description: 模型查看器让您可以使用倾向评分功能生成逻辑回�
 title: 模型查看器
 uuid: 7ee8ff29-21c2-4721-804a-c7a5d101b50b
 exl-id: e0e4acd4-76a2-436a-993b-2bb7ca91ae1a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 模型查看器{#model-viewer}
+
+{{eol}}
 
 模型查看器让您可以使用倾向评分功能生成逻辑回归模型。
 

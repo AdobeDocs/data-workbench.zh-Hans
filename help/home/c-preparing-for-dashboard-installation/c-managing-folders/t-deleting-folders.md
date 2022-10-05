@@ -3,7 +3,7 @@ description: 删除文件夹
 title: 删除文件夹
 uuid: 26126769-efa5-41a0-b9b1-dddb0bda149b
 exl-id: b903a177-0ac7-4bc6-ab72-e24a8cf68f6a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 11%
@@ -12,7 +12,9 @@ ht-degree: 11%
 
 # 删除文件夹{#deleting-folders}
 
-1. 右键单击要删除的文件夹并选择&#x200B;**[!UICONTROL Delete]**。
+{{eol}}
+
+1. 右键单击要删除的文件夹并选择 **[!UICONTROL Delete]**.
 
    ![](assets/delete_folder.png)
 

@@ -3,7 +3,7 @@ description: 添加新量度或更改量度的步骤。
 title: 添加和更改量度
 uuid: c0763e0e-081a-4f00-b655-359f5b790ead
 exl-id: b40ad2bc-410d-4c80-b9f3-bc7e7cc42407
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 78%
@@ -11,6 +11,8 @@ ht-degree: 78%
 ---
 
 # 添加和更改量度{#add-and-change-a-metrics}
+
+{{eol}}
 
 添加新量度或更改量度的步骤。
 
@@ -20,8 +22,8 @@ ht-degree: 78%
 
 **添加新量度**
 
-* 右键单击量度的元素或标签，然后单击&#x200B;**[!UICONTROL Add Metric]** > ***[!UICONTROL metric name]**>*。 此时该量度会添加到您最初选择的量度下面。
+* 右键单击量度的元素或标签，然后单击 **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*. 此时该量度会添加到您最初选择的量度下面。
 
 **更改量度**
 
-* 右键单击要更改的量度的元素或标签，然后单击&#x200B;**[!UICONTROL Change Metric]** > ***[!UICONTROL metric name]**>*。 新量度会替换原始量度。
+* 右键单击要更改的量度的元素或标签，然后单击 **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*. 新量度会替换原始量度。

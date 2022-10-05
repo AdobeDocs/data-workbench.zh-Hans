@@ -3,7 +3,7 @@ description: 要配置报表门户，必须将其应用程序文件映射到虚�
 title: 将报表门户页面映射到虚拟目录
 uuid: 75ca85d5-d526-48f9-b2c4-ca77c903c6af
 exl-id: 13e457d4-7039-491a-a65d-f23ad7e9fe77
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 18%
@@ -12,15 +12,17 @@ ht-degree: 18%
 
 # 将报表门户页面映射到虚拟目录{#map-the-report-portal-pages-to-virtual-directories}
 
+{{eol}}
+
 要配置报表门户，必须将其应用程序文件映射到虚拟目录。
 
-虚拟目录定义浏览器客户端在IIS应用程序服务器上查找物理资源时所使用的地址。 要访问[!DNL Report Portal]，客户端会将其浏览器指向您分配给门户的虚拟目录。
+虚拟目录定义浏览器客户端在IIS应用程序服务器上查找物理资源时所使用的地址。 访问 [!DNL Report Portal]，客户端会将其浏览器指向您分配给门户的虚拟目录。
 
-分配给[!DNL Report Portal]的虚拟目录的名称必须与上一部分步骤3中用于VSVirtualPortalName文件夹的名称匹配。 例如，如果要使用“Portal”作为[!DNL Report Portal]的名称，则必须将门户的文件映射到名为“Portal”的虚拟目录。 以下示例显示客户端用来访问名为myWebServer的服务器上分配给虚拟目录[!DNL VisualReportPortal]的[!DNL Report Portal]的URI:
+您分配到的虚拟目录的名称 [!DNL Report Portal] 必须匹配上一部分步骤3中用于VSVirtualPortalName文件夹的名称。 例如，如果要使用“Portal”作为 [!DNL Report Portal]，则必须将门户的文件映射到名为“Portal”的虚拟目录。 以下示例显示客户端用来访问 [!DNL Report Portal] 分配给虚拟目录 [!DNL VisualReportPortal] 在名为myWebServer的服务器上：
 
 [!DNL https://myWebServer/VisualReportPortal]
 
-以下过程描述如何将[!DNL Report Portal]映射到IIS 5.0、6.0和7.0或更高版本上的虚拟目录。
+以下过程说明了如何映射 [!DNL Report Portal] 到IIS 5.0、6.0和7.0或更高版本上的虚拟目录。
 
 按照您所使用的IIS版本的一组过程操作：
 

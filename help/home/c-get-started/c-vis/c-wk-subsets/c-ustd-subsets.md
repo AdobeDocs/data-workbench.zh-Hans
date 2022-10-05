@@ -3,7 +3,7 @@ description: 有关子集的概念性信息。
 title: 了解子集
 uuid: ed185b63-dbb3-4ed4-9403-cf4dc8be2ff1
 exl-id: a75b36f9-d34d-4a4a-8a2c-15ae5461823c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 67%
@@ -12,6 +12,8 @@ ht-degree: 67%
 
 # 了解子集{#understanding-subsets}
 
+{{eol}}
+
 有关子集的概念性信息。
 
 使用子集时，请记住以下事项：
@@ -19,7 +21,7 @@ ht-degree: 67%
 * 现在，所有您的基准都与子集有关，而不是与整个数据集有关，当分析具体的子集时该项更有用。请参阅 [了解基准](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914).
 * 使用子集会影响所有工作区，因为该子集会全局应用于Data Workbench。
 * 子集仅影响量度和非正规维度，对正规纬度不具影响。
-* 使用[!DNL Report]时，子集不会影响已发布以供他人查看的报表中的数据。
+* 使用 [!DNL Report]，子集不会影响已发布报表中的数据以供他人查看。
 * 应用后，子集对配置文件中的所有后续工作都有效，包括下次打开此Data Workbench实例时，直到将其删除为止。
 * 指示已应用子集的唯一位置就是通过右键单击工作区访问的上下文菜单。
 

@@ -3,7 +3,7 @@ description: Data Workbench允许您导出文件，以与“配置文件和受�
 title: 主营销配置文件导出
 uuid: bae0f0c5-a452-4afd-9f2c-5f3ab69a12d2
 exl-id: 9fc89815-d31d-41a7-a0c0-de1e84b24baa
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 67%
@@ -12,11 +12,13 @@ ht-degree: 67%
 
 # 主营销配置文件导出{#master-marketing-profile-export}
 
+{{eol}}
+
 Data Workbench允许您导出文件，以与Profiles &amp; Audiences集成，作为集成Adobe Experience Cloud的一部分。
 
 <!-- <a id="section_731922BC8628479198A41EF3EA72F2FF"></a> -->
 
-“配置文件和受众”是[Experience CloudIdentity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)的一部分，该服务是[!DNL Adobe Experience Cloud]的核心服务。 “配置文件和受众”导出允许在Experience Cloud之间使用分配给每个访客并由[Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=zh-Hans)使用的唯一Experience CloudID(ECID)共享受众。 使用[!DNL ExportIntegration.exe]应用程序([!DNL E:\Server\Scripts])生成MMP和Adobe Target导出。
+用户档案和受众是 [Experience Cloud标识服务](https://experienceleague.adobe.com/docs/id-service/using/home.html)，是 [!DNL Adobe Experience Cloud]. “配置文件和受众”导出允许受众在Experience Cloud之间使用分配给每位访客且由使用的唯一Experience CloudID(ECID)进行共享 [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html). 的 [!DNL ExportIntegration.exe] 应用程序( [!DNL E:\Server\Scripts])用于生成MMP和Adobe Target导出。
 
 **配置FSU服务器以使用配置文件和受众**
 
@@ -51,7 +53,7 @@ Data Workbench允许您导出文件，以与Profiles &amp; Audiences集成，作
 
    >[!NOTE]
    >
-   >[!DNL MMPExport.cfg]文件还允许您获取所有记录，将其拆分成一组，并创建记录块。 记录区块随后会被导出到 Amazon S3。创建记录块需要三个必需参数：[!DNL numRecordsPerChunk]、[!DNL numThreads]和[!DNL maxRetriesOnSendFailure]。
+   >的 [!DNL MMPExport.cfg]文件还允许您获取所有记录，将其拆分为一组，并创建记录块。 记录区块随后会被导出到 Amazon S3。创建记录块需要三个必需参数： [!DNL numRecordsPerChunk], [!DNL numThreads]和 [!DNL maxRetriesOnSendFailure].
 
 **参数的定义**
 
@@ -105,7 +107,7 @@ Data Workbench允许您导出文件，以与Profiles &amp; Audiences集成，作
   </tr> 
   <tr> 
    <td colname="col1"> <i>numRecordsPerChunk</i> </td> 
-   <td colname="col2"> <p>根据记录数确定区块大小。 </p> <p>该实施将用户指定的值剪辑为：最小= 1000条记录&amp;nbsp；（~50 KB区块）&amp;nbsp；和最大= 50000条记录（~2.5 MB区块）。&amp;nbsp；如果用户未指定此配置属性，则使用默认值10000。 </p> </td> 
+   <td colname="col2"> <p>根据记录数确定区块大小。 </p> <p>该实现将用户指定的值剪辑为最小= 1000条记录&amp;nbsp；（~50 KB区块）&amp;nbsp；和最大= 50000条记录（~2.5 MB区块）。&amp;nbsp；如果用户未指定此配置属性，则使用默认值10000。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>numThreads</i> </td> 
@@ -120,10 +122,10 @@ Data Workbench允许您导出文件，以与Profiles &amp; Audiences集成，作
 
 **从客户端生成 MMP 导出**
 
-1. 在客户端中，打开一个工作区，然后右键单击&#x200B;**[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**。
+1. 在客户端中，打开一个工作区并右键单击 **[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**.
 1. 添加&#x200B;**级别**。
 1. 右键单击标题并选择&#x200B;**添加属性**。
-1. 右键单击标题并选择&#x200B;**新建主营销配置文件导出**。  ![](assets/mmp_mmp_export.png)
+1. 右键单击标题并选择&#x200B;**新建主营销配置文件导出**。 ![](assets/mmp_mmp_export.png)
 1. 展开&#x200B;**查询**。
 
    ![](assets/mmp_mmp_query.png)
@@ -135,7 +137,7 @@ Data Workbench允许您导出文件，以与Profiles &amp; Audiences集成，作
 1. 在这些字段中输入值后，您可以通过右键单击导出内容的标题并选择“**另存为** User\.export”，以保存导出内容。
 1. 打开&#x200B;**管理员** > **配置文件管理器**，并将导出内容保存到配置文件。
 
-   如果输入的所有数据都正确，这将在 FSU ([!DNL Server/Exports]) 中生成一个导出文件，它还将使用 [!DNL MMPExport.cfg] 中的信息把导出内容传送到 AWS。[!DNL Server/Trace/]中提供了此日志。 例如， [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
+   如果输入的所有数据都正确，这将在 FSU ([!DNL Server/Exports]) 中生成一个导出文件，它还将使用 [!DNL MMPExport.cfg] 中的信息把导出内容传送到 AWS。此日志在 [!DNL Server/Trace/]. 例如， [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
 
 ```
 Query = SegmentExportQuery: 

@@ -3,7 +3,7 @@ description: Union 转换获取一组输入，并创建字符串矢量作为输�
 title: Union
 uuid: 2f8bd332-727e-4a4e-a3e7-a52ea2b0a33a
 exl-id: 841b5133-d587-409c-b39e-47169beb2ddf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 并集{#union}
+
+{{eol}}
 
 Union 转换获取一组输入，并创建字符串矢量作为输出。
 
@@ -23,7 +25,7 @@ Union 转换获取一组输入，并创建字符串矢量作为输出。
 | 条件 | 应用此转换的条件。 |  |
 | 默认 | 在满足条件但输入值不可用时所使用的默认值。 |  |
 | Inputs（输入） | 一个或多个输入值。 |  |
-| Output（输出） | 输出字段的名称。 |  |
+| 输出 | 输出字段的名称。 |  |
 
 此示例使用来自网站流量的数据字段创建与网站访客关联的邮政编码列表（即在每个日志条目中）。数据提供此信息的两个可能来源：一个在 cs-uri-query 中，另一个在 Cookie 的 [!DNL zipcode] 字段中。如果这些字段中都不包含邮政编码，则使用默认值 00000。
 

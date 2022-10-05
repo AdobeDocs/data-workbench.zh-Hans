@@ -3,7 +3,7 @@ description: 初始化和更新配置文件的架构定义
 title: 初始化和更新配置文件的架构定义
 uuid: 38e47ded-340e-4f65-b06c-f2e2254f0863
 exl-id: e8190909-4416-4d4a-8901-130d01906773
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 7%
@@ -12,9 +12,11 @@ ht-degree: 7%
 
 # 初始化和更新配置文件的架构定义{#initializing-and-updating-a-profile-s-schema-definition}
 
-1. 打开要设置的配置文件的&#x200B;**[!UICONTROL Schema Builder]**。
-1. 在从Insight配置文件中检索架构时，将显示&#x200B;**[!UICONTROL Loading]**&#x200B;消息。 加载架构的时间长短取决于加载的用户档案的复杂程度。
-1. 完成后，您将在左窗格中看到&#x200B;**[!UICONTROL Insight Schema]**&#x200B;与右窗格中&#x200B;**[!UICONTROL Dashboard Schema]**&#x200B;之间差异的摘要。 此摘要将显示在&#x200B;**[!UICONTROL Schema Builder]**&#x200B;窗口的左下部。
+{{eol}}
+
+1. 打开 **[!UICONTROL Schema Builder]** 要设置的用户档案。
+1. A **[!UICONTROL Loading]** 当从Insight配置文件中检索架构时，将显示消息。 加载架构的时间长短取决于加载的用户档案的复杂程度。
+1. 完成后，您将看到 **[!UICONTROL Insight Schema]** 的 **[!UICONTROL Dashboard Schema]** 中。 此摘要将显示在 **[!UICONTROL Schema Builder]** 窗口。
 
    >[!NOTE]
    >
@@ -22,7 +24,7 @@ ht-degree: 7%
 
    ![](assets/schema_builder2.png)
 
-1. 单击&#x200B;**[!UICONTROL Synchronize with Schema]**&#x200B;按钮可将“分析架构”视图中的所有量度、维度和过滤器与“功能板架构”视图同步。
+1. 单击 **[!UICONTROL Synchronize with Schema]** 按钮，以将“分析架构”视图中的所有量度、维度和过滤器与“功能板架构”视图同步。
 1. 完成后，您应会看到一条消息，指示未找到任何差异：
 
    ![](assets/diff_found.png)
@@ -31,7 +33,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >您可以从&#x200B;**[!UICONTROL Dashboard Schema]**&#x200B;中选择性删除您不希望向功能板最终用户显示的任何量度、维度或过滤器。 您将收到一则警告，指出功能板架构中不存在项目，但不会阻止您进行保存。
+   >您可以从 **[!UICONTROL Dashboard Schema]** 功能板的最终用户。 您将收到一则警告，指出功能板架构中不存在项目，但不会阻止您进行保存。
 
-1. 准备就绪后，单击&#x200B;**[!UICONTROL Save]**&#x200B;以保存对功能板架构所做的更改。
+1. 准备就绪后，单击 **[!UICONTROL Save]** 以保存对功能板架构所做的更改。
 1. 功能板系统将使用此架构定义来填充功能板界面最终用户可用的维度、量度和过滤器。

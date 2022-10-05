@@ -3,7 +3,7 @@ description: 安装并配置在Microsoft Windows Server 2008或更高版本下�
 title: Windows Server 2008 或更高版本上的 Microsoft IIS
 uuid: 7fd8da68-1553-4395-b13e-b08a6ee1948e
 exl-id: cc909daa-60c0-4188-8e90-035c41bf3105
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1589'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Windows Server 2008 或更高版本上的 Microsoft IIS{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 安装并配置在Microsoft Windows Server 2008或更高版本下运行的Microsoft IIS 7.x或8.x传感器。
 
@@ -83,20 +85,20 @@ txlogd.conf文件包含传感器的配置参数。
 
 您必须编辑文件以指定磁盘队列的大小、Insight Server的地址以及将附加到此传感器生成数据的ID等内容。 配置文件包含必需的参数和可选参数。
 
-* **必需** 参数是安装传感器时必须指定的设置。如果没有这些设置，传感器将无法成功运行。
-* **可选** 参数是默认为预定义值（您可以修改）或启用可选功能的设置。
+* **必需的参数** 是安装传感器时必须指定的设置。 如果没有这些设置，传感器将无法成功运行。
+* **可选参数** 是默认设置，用于预定义值（您可以对其进行修改）或启用可选功能。
 
 **编辑传感器配置文件**
 
-1. 在文本编辑器中打开`<SensorDirectory>/txlogd.conf`文件，并设置所需参数以及任何所需的可选参数。
+1. 打开 `<SensorDirectory>/txlogd.conf` 文件，并设置所需的参数以及任何所需的可选参数。
 
-   有关[!DNL txlogd.conf]参数的描述，请参阅[传感器Txlogd.conf文件参数](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed)。
+   有关的描述 [!DNL txlogd.conf] 参数，请参阅 [传感器Txlogd.conf文件参数](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
 
 1. 保存并关闭该文件。
 
 ## 启动发送器并创建磁盘队列 {#section-2b8dfd06996d4ab49998eeb99bd9f5f0}
 
-配置[!DNL txlogd.conf]文件后，可以启动发送程序，将其注册为Windows服务，并创建磁盘队列。
+配置 [!DNL txlogd.conf]文件中，可以启动发送程序，将其注册为Windows服务，并创建磁盘队列。
 
 1. 从Windows的“开始”菜单中，选择“附件”>“命令提示符”。
 1. 在命令提示符窗口中，导航到安装传感器的目录并执行以下命令：
@@ -147,15 +149,15 @@ txlogd.conf文件包含传感器的配置参数。
 
 对于IIS，收集器是IIS中添加到Web服务器的ISAPI过滤器。
 
-1. 使用&#x200B;**开始>管理工具> Internet Information Services(IIS)管理器**&#x200B;打开IIS管理器。
-1. 展开&#x200B;**本地计算机**&#x200B;和&#x200B;**站点**&#x200B;节点。
-1. 选择网站，然后在右窗格中双击&#x200B;**ISAPI过滤器**。
-1. 在&#x200B;**Actions**&#x200B;窗格下，单击&#x200B;**Add**。
+1. 使用打开IIS管理器 **开始>管理工具> Internet信息服务(IIS)管理器**.
+1. 展开 **本地计算机** 和 **站点** 节点。
+1. 选择网站，然后在右窗格中双击 **ISAPI过滤器**.
+1. 在 **操作** 窗格，单击 **添加**.
 
-1. 在&#x200B;**过滤器名称**&#x200B;字段中，输入过滤器的显示名称。 建议的过滤器名称为“传感器”。
-1. 单击&#x200B;**Browse**，选择qlog.dll文件（位于安装传感器的目录中），然后单击&#x200B;**OK**。
+1. 在 **过滤器名称** 字段，输入过滤器的显示名称。 建议的过滤器名称为“传感器”。
+1. 单击 **浏览**，选择qlog.dll文件（位于安装传感器的目录中），然后单击 **确定**.
 
-1. 单击&#x200B;**确定**&#x200B;以添加过滤器。
+1. 单击 **确定** 添加过滤器。
 
    添加过滤器后，收集器可立即运行并准备收集数据。
 
@@ -167,9 +169,9 @@ txlogd.conf文件包含传感器的配置参数。
    >
    >此命令序列可能因您使用的Windows版本而异。
 
-1. 在“事件查看器”窗口的左窗格中，选择&#x200B;**Application**&#x200B;日志。
-1. 在右侧窗格中，在&#x200B;**Source**&#x200B;列中查找包含“Adobe”的事件。
-1. 如果发现错误，请双击该错误以显示&#x200B;**事件属性**&#x200B;窗口。
+1. 在事件查看器窗口的左窗格中，选择 **应用程序** 日志。
+1. 在右侧窗格中，查找在 **来源** 列。
+1. 如果发现错误，请双击该错误以显示 **事件属性** 窗口。
 
 ## 捕获其他数据 {#section-98db9625efdc4b60bfd76f7adf4af74d}
 

@@ -3,7 +3,7 @@ description: 明细表可用于查看有关某个数据子集（通过在其他�
 title: 详细信息表
 uuid: 2becff5e-c78d-4ac7-8cda-814ad0193efd
 exl-id: d7f0b768-f341-41e8-904b-ec98a25f7aa9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 79%
@@ -11,6 +11,8 @@ ht-degree: 79%
 ---
 
 # 详细信息表{#detail-table}
+
+{{eol}}
 
 明细表可用于查看有关某个数据子集（通过在其他可视化中进行选择来定义）的其他信息。
 
@@ -53,41 +55,41 @@ ht-degree: 79%
 
 若要查看上述详细信息，必须完成以下步骤：
 
-1. 右键单击详细信息表，然后单击&#x200B;**[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**。
-1. 右键单击详细信息表，然后单击&#x200B;**[!UICONTROL Add Level]** > **[!UICONTROL Page View]**。
-1. 右键单击&#x200B;**[!UICONTROL Visitors]**&#x200B;级别标题，然后单击&#x200B;**[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**。
-1. 右键单击“访客”级别标题，然后单击&#x200B;**[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**。
-1. 右键单击“访客”级别标题，然后单击&#x200B;**[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**。
-1. 右键单击“页面查看次数”级别标题，然后单击&#x200B;**[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**。
+1. 右键单击详细信息表，然后单击 **[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**.
+1. 右键单击详细信息表，然后单击 **[!UICONTROL Add Level]** > **[!UICONTROL Page View]**.
+1. 右键单击 **[!UICONTROL Visitors]** 级别标题并单击 **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
+1. 右键单击“访客”级别标题，然后单击 **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**.
+1. 右键单击“访客”级别标题，然后单击 **[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**.
+1. 在页面查看次数级别标题中右键单击，然后单击 **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
 
 以下示例工作区显示了在您指定的时间段内随机抽取的访问网站的 6 个访客的相关详细信息。
 
 ![](assets/client-tab1.png)
 
-## 添加级别{#section-f948d3361fd84906ac4d9ebce520bfd0}
+## 添加级别 {#section-f948d3361fd84906ac4d9ebce520bfd0}
 
-* 右键单击明细表，然后单击&#x200B;**[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]**>*。
+* 右键单击明细表，然后单击 **[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 ![](assets/mnu_DetailsTable_AddLevel.png)
 
-## 删除级别{#section-a8c820e0b656451e98e5ea75373edefc}
+## 删除级别 {#section-a8c820e0b656451e98e5ea75373edefc}
 
-* 右键单击现有级别标题，然后单击&#x200B;**[!UICONTROL Remove Level]** > *&lt;**[!UICONTROL dimension name]**>*。
+* 右键单击现有级别标题，然后单击 **[!UICONTROL Remove Level]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 ![](assets/mnu_DetailsTable_Level.png)
 
-## 添加属性和量度{#section-cdda2df3c9a448d5b9770686c8b8efb3}
+## 添加属性和量度 {#section-cdda2df3c9a448d5b9770686c8b8efb3}
 
-* 右键单击属性或量度标题，然后单击&#x200B;**[!UICONTROL Add Attribute]** > ***[!UICONTROL attribute name]**>*&#x200B;或&#x200B;**[!UICONTROL Add Metric]** > ***[!UICONTROL metric name]**>*。
+* 右键单击属性或量度标题，然后单击 **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]**>* 或 **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 
-## 删除属性和量度{#section-4002ac957a2846678f9940270987d651}
+## 删除属性和量度 {#section-4002ac957a2846678f9940270987d651}
 
-* 右键单击要删除的列，然后单击&#x200B;**[!UICONTROL Remove Attribute]** > ***[!UICONTROL attribute name]**>*&#x200B;或&#x200B;**[!UICONTROL Remove Metric]** > ***[!UICONTROL metric name]**>*。
+* 右键单击要删除的列，然后单击 **[!UICONTROL Remove Attribute]** > *&lt;**[!UICONTROL attribute name]**>* 或 **[!UICONTROL Remove Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 
 ## 导出到 Microsoft Excel {#section-a9eaba63c88a4598836a34669ba8cac1}
 
-有关导出窗口的信息，请参阅[导出窗口数据](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)。
+有关导出窗口的信息，请参阅 [导出窗口数据](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

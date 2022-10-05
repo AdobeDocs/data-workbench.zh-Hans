@@ -3,7 +3,7 @@ description: AppendURI 转换提供了一种向默认值中添加信息的方法
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 84%
@@ -12,11 +12,13 @@ ht-degree: 84%
 
 # AppendURI{#appenduri}
 
+{{eol}}
+
 AppendURI 转换提供了一种向默认值中添加信息的方法，该默认值来自用于构建数据集的日志条目。
 
-该转换将名称-值对放在用于创建 URI 维度的内部字段末尾。名称-值对是使用 Query String Key（查询字符串键）参数作为名称，使用标识的 Input（输入）参数值作为对值构建的。[!DNL AppendURI]命令会添加任何相应的？ 和和符号，用于将名称 — 值对与[!DNL URI]主干以及之前可能已应用于URI的任何[!DNL AppendURI]操作分开。
+该转换将名称-值对放在用于创建 URI 维度的内部字段末尾。名称-值对是使用 Query String Key（查询字符串键）参数作为名称，使用标识的 Input（输入）参数值作为对值构建的。的 [!DNL AppendURI] 命令会添加任何适当的？ 和和符号，以将名称 — 值对与 [!DNL URI] 从任何以前的 [!DNL AppendURI] 可能已应用于URI的操作。
 
-[!DNL AppendURI]转换仅在[!DNL Transformation.cfg]文件或[!DNL Transformation Dataset Include]文件中定义时才起作用。
+的 [!DNL AppendURI] 仅当在 [!DNL Transformation.cfg] 文件或 [!DNL Transformation Dataset Include] 文件。
 
 | 参数 | 描述 | 默认 |
 |---|---|---|
@@ -39,4 +41,4 @@ modelview ASP 页面接收所有流量并基于查询中 id 字段的值确定�
 
 ![](assets/cfg_TransformationType_AppendURI.png)
 
-在此示例中，系统使用两个页面处理所有请求：[!DNL modelview.asp] 和 [!DNL xmlmodelview.asp]。一个页面用于浏览器流量，另一个页面用于系统到系统的 XML 通信。应用程序服务器进程使用 cs-uri-query 的 id 名称确定要采取的操作。因此，可以从 id 字段提取值并将其附加到 URI 后面。结果是一个 URI 集合，其中包含一系列反映网站访客流量的变体。在此，[!DNL String Match]条件通过搜索cs-uri-stem字段以找到两个感兴趣的网页并忽略所有其他网页来确定应用转换的日志条目。 输入（名称-值对的值）是 cs-uri-query(id) 的结果，即“login”。如 Query String Key（查询字符串键）参数中所指定的，要在后面附加的名称是“id”。因此，对于我们示例的传入cs-uri值，[!DNL URI]维度使用的生成URI是[!DNL /modelview.asp&id=login]。
+在此示例中，系统使用两个页面处理所有请求：[!DNL modelview.asp] 和 [!DNL xmlmodelview.asp]。一个页面用于浏览器流量，另一个页面用于系统到系统的 XML 通信。应用程序服务器进程使用 cs-uri-query 的 id 名称确定要采取的操作。因此，可以从 id 字段提取值并将其附加到 URI 后面。结果是一个 URI 集合，其中包含一系列反映网站访客流量的变体。这里，a [!DNL String Match] 条件通过在cs-uri-stem字段中搜索两个感兴趣的网页并忽略所有其他网页来确定应用转换的日志条目。 输入（名称-值对的值）是 cs-uri-query(id) 的结果，即“login”。如 Query String Key（查询字符串键）参数中所指定的，要在后面附加的名称是“id”。因此，对于示例的传入cs-uri值，生成的URI由 [!DNL URI] 维度 [!DNL /modelview.asp&id=login].

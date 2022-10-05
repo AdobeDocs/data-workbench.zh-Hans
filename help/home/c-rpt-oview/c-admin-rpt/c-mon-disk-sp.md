@@ -3,7 +3,7 @@ description: 您应定期监视可用磁盘空间，以便所有报表服务器�
 title: 监控磁盘空间（报表服务器）
 uuid: 590c8239-d20e-470e-b633-7785b75daaa6
 exl-id: 0debd601-494f-4d4e-9452-c4d32678dc95
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # 监控磁盘空间{#monitoring-disk-space}
+
+{{eol}}
 
 您应定期监视可用磁盘空间，以便所有报表服务器计算机都能够继续以尽可能高的级别执行。
 

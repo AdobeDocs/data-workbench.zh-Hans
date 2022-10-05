@@ -4,7 +4,7 @@ solution: Analytics
 title: 修改 Transformation.cfg
 uuid: c17e48db-8fd9-4640-b621-6963bb8223d7
 exl-id: a9c89789-8290-4a24-91c1-ca1c5b7b437a
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 2%
@@ -12,6 +12,8 @@ ht-degree: 2%
 ---
 
 # 修改 Transformation.cfg{#modifying-transformation-cfg}
+
+{{eol}}
 
 现在，x-experient字段可用，您必须创建一个扩展维度以在数据集中包含x-experient字段，以便在Insight中查看结果。
 

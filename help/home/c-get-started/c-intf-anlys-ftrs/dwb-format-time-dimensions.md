@@ -2,21 +2,25 @@
 description: 配置时间维度以正确显示区域设置。
 title: 本地化时间维度
 uuid: a2098522-bf05-4680-9b78-6fb284695a0a
-translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+exl-id: 950fe70b-a687-4b9c-b29f-555139740809
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 66%
 
 ---
 
-
 # 本地化时间维度{#localizing-time-dimensions}
+
+{{eol}}
 
 配置时间维度以正确显示区域设置。
 
-You can configure the displayed format of time dimensions based on locale in the **[!DNL Standard Time Dimensions.cfg]** file (located by default at **[!DNL Server/Profiles/`<my profile>`/Dataset/Transformation/Time/Standard Time Dimensions.cfg]**).
+您可以在 **[!DNL Standard Time Dimensions.cfg]** 文件(默认位于 **[!DNL Server/Profiles/`<my profile>`/Dataset/Transformation/Time/Standard TimeDimension.cfg]**)。
 
-For example, in North America you can express the date May 3rd, 2015 as 5/3/15, or **`%m/%d/%y`**. However, in other parts of the world this could be interpreted as `%d/%m/%y`, or March 5th, 2015 due to an ambiguity in the values. 为了避免出现这种情况，管理员可能需要更改显示格式以满足某个区域设置中用户的期望。
+例如，在北美，您可以将日期表示为2015年5月3日5/3/15，或 **`%m/%d/%y`**. 然而，在世界其他地区，这可以解释为 `%d/%m/%y`，或2015年3月5日，由于值存在歧义。 为了避免出现这种情况，管理员可能需要更改显示格式以满足某个区域设置中用户的期望。
 
-## 1. Override Default Time Dimensions in Standard Time Dimensions.cfg {#section-7d0b24657bef4b15abb3cbea66cb617f}
+## 1.覆盖Standard Time Services.cfg中的默认时间DimensionDimension {#section-7d0b24657bef4b15abb3cbea66cb617f}
 
 若要启用这项功能，管理员必须覆盖默认设置，具体方法是：编辑现有的时间维度，或者使用其他参数创建新的时间维度。
 
@@ -26,7 +30,7 @@ For example, in North America you can express the date May 3rd, 2015 as 5/3/15, 
 
 >[!NOTE]
 >
->如果忽略这些行，Data Workbench的行为将不会更改，维将使用默认值进行编译。
+>如果忽略这些行，Data Workbench的行为将不会更改，并且将使用默认值编译维度。
 
 ```
 Transformation Include = TransformationInclude:  

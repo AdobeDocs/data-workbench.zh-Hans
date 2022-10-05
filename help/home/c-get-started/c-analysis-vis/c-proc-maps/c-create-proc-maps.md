@@ -3,7 +3,7 @@ description: 可以通过将条形图、表格和层次视图中的元素拖放�
 title: 创建流程图
 uuid: dbcde637-0411-4296-99ca-5510e0285e4b
 exl-id: 2e417a8e-5b1c-4dce-9e4e-ac7ed044564c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 79%
@@ -11,6 +11,8 @@ ht-degree: 79%
 ---
 
 # 创建流程图{#create-a-process-map}
+
+{{eol}}
 
 可以通过将条形图、表格和层次视图中的元素拖放到空白流程图上来创建 2D 和 3D 流程图。
 
@@ -32,16 +34,16 @@ ht-degree: 79%
 >
 >Adobe建议您从要分析的层次结构的最高级别添加节点。
 
-1. 在与流程图具有相同基本维度的任何表或条形图中，右键单击基本维度的元素或标签，然后单击&#x200B;**[!UICONTROL Hierarchy View]**。
+1. 在与流程图具有相同基本维度的任何表或条形图中，右键单击基本维度的元素或标签，然后单击 **[!UICONTROL Hierarchy View]**.
 1. 按 Ctrl+Alt 的同时单击元素并将其拖动到流程图。鼠标光标会显示“否”一词，直到鼠标到达流程图为止。
 
    >[!NOTE]
    >
    >可以添加的元素必须是流程图基本维度的元素。
 
-   将单个元素拖动到流程图上会仅为该元素创建流程图节点，但如果您选择多个元素（一个组）或包含多个元素的文件夹，则从层次中拖动会为该组或文件夹创建单个节点。例如，如果您正在处理网站数据，则将名为[!DNL site.com/cgi-bin]的文件夹拖到映射上会创建一个名为[!DNL site.com/cgi-bin/*]的节点，该节点表示该文件夹的所有子页面和目录。
+   将单个元素拖动到流程图上会仅为该元素创建流程图节点，但如果您选择多个元素（一个组）或包含多个元素的文件夹，则从层次中拖动会为该组或文件夹创建单个节点。例如，如果您正在处理网站数据，请拖动名为 [!DNL site.com/cgi-bin] 映射上会生成一个名为 [!DNL site.com/cgi-bin/*]，表示该文件夹的所有子页面和目录。
 
-有关页面层次视图的更多信息，请参阅[应用层次视图](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff)。
+有关页面层次结构视图的更多信息，请参阅 [应用层次视图](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff).
 
 **从一个流程图向另一个流程图中添加节点**
 

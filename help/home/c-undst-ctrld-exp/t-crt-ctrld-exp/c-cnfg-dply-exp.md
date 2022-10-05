@@ -4,7 +4,7 @@ solution: Analytics
 title: 配置和部署试验
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
 exl-id: 957c2ea2-72a5-4bb2-af1d-65187613c26d
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 ---
 
 # 配置和部署试验{#configuring-and-deploying-the-experiment}
+
+{{eol}}
 
 定义目标、假设和实验详细信息并创建测试内容后，必须配置“传感器”以部署受控实验。
 

@@ -3,7 +3,7 @@ description: 创建新报表集的步骤。
 title: 创建报表集
 uuid: e6be8d13-d98c-40ef-83c5-af65b667de46
 exl-id: 978178b9-6a49-4cb3-b6af-3d8e78af1278
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 28%
@@ -11,6 +11,8 @@ ht-degree: 28%
 ---
 
 # 创建报表集{#creating-a-report-set}
+
+{{eol}}
 
 创建新报表集的步骤。
 

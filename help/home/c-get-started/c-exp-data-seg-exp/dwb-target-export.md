@@ -1,33 +1,37 @@
 ---
 description: 可以使用“明细表”中的 TargetBulkUpload.exe，将 Data Workbench 数据导出到 Adobe Target。
-title: 导出到Adobe Target
+title: 导出到 Adobe Target
 uuid: 0eb99e6f-f0b5-495e-a3b6-df30f61378a7
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 41e885bb-182a-4983-98e8-65eec1da9fe9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '329'
+ht-degree: 22%
 
 ---
 
+# 导出到 Adobe Target{#export-to-adobe-target}
 
-# 导出到Adobe Target{#export-to-adobe-target}
+{{eol}}
 
 可以使用“明细表”中的 TargetBulkUpload.exe，将 Data Workbench 数据导出到 Adobe Target。
 
-通过Data Workbench，您可以导出文件并作为集成Adobe Experience Cloud的一部分与Adobe Target集成。
+Data Workbench允许您导出文件，以将其作为集成Adobe Experience Cloud的一部分与Adobe Target集成。
 
 您可以在服务器安装文件中的“Server\Scripts”**[!DNL TargetBulkUpload]***文件夹找到* 文件。这个可执行文件具有重试逻辑和其他可优化性能的逻辑。
 
-运行上传脚本 `TargetBulkUpload.cfg` 之前，您可以修改文 *件并将其移到Server/Admin/Export* 文件夹。 例如，您可以将“最大超时间隔”设置为720分钟（默认），以在指定时间段后超时上传。
+您可以修改 `TargetBulkUpload.cfg` 将文件移到 *服务器/管理员/导出* 文件夹。 例如，您可以将“最大超时间隔”设置为720分钟（默认），以在指定的时间段后超时上传。
 
 **工作原理**
 
-数据成功发送到Target后，将持续监视上传状态。 如果上传成功，则会记录成功消息。 如果上传失败或处于挂起状态，则继续监视。 您可以在文件中配置超时间 `TargetBulkUpload.cfg` 隔。 如果上传卡在Target，则会记录一条消息，并且状态仍可被监视。
+数据成功发送到Target后，会持续监控上传状态。 如果上传成功，则会记录一条成功消息。 如果上传失败或挂起，则继续监控。 您可以在 `TargetBulkUpload.cfg` 文件。 如果上传卡在Target，则会记录一条消息，并且仍然可以监控状态。
 
-跟踪中为触发的导出生成了两个日志文件，位于 [!DNL /server/Trace/]:
+跟踪中为下的触发导出生成了两个日志文件 [!DNL /server/Trace/]:
 
 * `targetbulkuploadexportname.log`
 * `targetbulkuploadexportname.log.completed`
 
-该文 `targetbulkuploadexportname.log` 件具有多批记录的详细状态、要访问的边缘服务器以及状态（成功、失败、找不到配置文件、状态未知和卡住）。 如果发现任何批卡住，则不再处理该批。 滞留的批URL可用于跟踪状态。 请参阅文件中的以下示例数 `targetbulkuploadexportname.log.completed` 据：
+的 `targetbulkuploadexportname.log` 文件具有多批记录的详细状态、要访问的边缘服务器，以及状态（成功、失败、未找到配置文件、状态未知和卡住）。 如果发现任何批次卡住，则不再处理该批次。 滞后的批处理URL可用于跟踪状态。 请参阅 `targetbulkuploadexportname.log.completed` 文件：
 
 ```
 1205057 total rows 
@@ -38,9 +42,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 492339 stuck status
 ```
 
-卡住状态值随卡住批总大小递增，而不管上载成功或失败的数量。 总行值也会按相同数量的卡住批量大小递增。
+停滞状态值会随着批次总停滞大小而递增，无论上载成功或失败的次数是多少。 总行值也会按相同数量的停滞批量大小递增。
 
 >[!NOTE]
 >
->Previously, DWB data was exported using the [!DNL ExportIntegration.exe]. 目前，只有 MMP、CRS 和 S/FTP 导出使用该可执行文件。Adobe Target integration now uses the [!DNL TargetBulkUpload.exe] in Data Workbench.
-
+>以前，DWB数据是使用 [!DNL ExportIntegration.exe]. 目前，只有 MMP、CRS 和 S/FTP 导出使用该可执行文件。Adobe Target集成现在使用 [!DNL TargetBulkUpload.exe] Data Workbench。

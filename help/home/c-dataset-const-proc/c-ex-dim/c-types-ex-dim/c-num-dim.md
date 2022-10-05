@@ -3,7 +3,7 @@ description: 数值维度包含有序的数值元素，并且与其父可计数�
 title: 数值维度
 uuid: 19fab770-1535-41b2-bad1-811eba5f3575
 exl-id: 69a4dfa6-8402-4c2b-8b04-e6e1a0fd5ccb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 97%
@@ -11,6 +11,8 @@ ht-degree: 97%
 ---
 
 # 数值维度{#numeric-dimensions}
+
+{{eol}}
 
 数值维度包含有序的数值元素，并且与其父可计数维度有一对多的关系。
 
@@ -110,7 +112,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->如果[!DNL Operation]没有产生值，或[!DNL Clip Values]为false且值不在[!DNL Min]和[!DNL Max]之间，则数值维度的任何元素都与父维度的元素无关。
+>如果 [!DNL Operation] 没有值，或 [!DNL Clip Values] 为false，且值不介于 [!DNL Min] 和 [!DNL Max]，则数值维度的元素与父维度的元素无关。
 
 此示例使用从网站流量收集的事件数据来说明数值维度的定义。这个名为“广告查看计数器”的数值维度会对访客在指定会话期间查看广告的次数进行统计。假定所有广告资源都通过将 ad= 作为 cs-uri-query 的一部分从 Web 服务器请求。在该示例中，主要关注访客查看广告的次数 (COUNT) 值，而不是字段中的实际值。
 

@@ -3,7 +3,7 @@ description: Data Workbench 中的条形图当前可在多个图表之间对多�
 title: 回归分析图
 uuid: 8512890e-f42b-4dce-826a-2b4bf2a215f4
 exl-id: bfc76c4a-edd5-41fe-b875-c199ea3beab5
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 94%
@@ -11,6 +11,8 @@ ht-degree: 94%
 ---
 
 # 回归分析图{#regression-analysis-graph}
+
+{{eol}}
 
 Data Workbench 中的条形图当前可在多个图表之间对多个量度进行回归比较。
 
@@ -28,7 +30,7 @@ Data Workbench 中的[条形图](https://experienceleague.adobe.com/docs/data-wo
 
 1. 将其他量度图表设置为自变量。
 
-   右键单击量度并选择&#x200B;**[!UICONTROL Regress with `<base metric name>`]**&#x200B;作为其他量度。
+   右键单击量度并选择 **[!UICONTROL Regress with `<base metric name>`]** 的其他量度。
 
    ![](assets/c_graph_regression.png)
 

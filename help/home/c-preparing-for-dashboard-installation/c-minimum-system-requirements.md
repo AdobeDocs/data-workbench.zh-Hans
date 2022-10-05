@@ -3,7 +3,7 @@ description: 列出最低配置要求。
 title: 最低系统要求
 uuid: 15848e82-8c16-4ed8-a96f-d4293519203a
 exl-id: 6e679b17-99fc-40bc-b35c-0a0afbc4e807
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 ---
 
 # 最低系统要求{#minimum-system-requirements}
+
+{{eol}}
 
 列出最低配置要求。
 

@@ -3,7 +3,7 @@ description: 弦图可视化允许您同时显示量度之间的比例和关联�
 title: 和弦可视化图表
 uuid: 3f322f58-f8f5-4d91-bdf8-4b5f9d7fb072
 exl-id: d712f7b3-de2f-4ca4-a1bf-a2e4d42a084e
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 85%
@@ -12,13 +12,15 @@ ht-degree: 85%
 
 # 和弦可视化图表{#chord-visualization}
 
+{{eol}}
+
 弦图可视化允许您同时显示量度之间的比例和关联，从而将较大的弦图显示为一个更强关联的象征。
 
 弦图可视化可让您确定量度之间的关联，从而能够添加并轻松评估可能的关联。通过它还可以查看之前构建的任何[关联矩阵](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html)。使用弦图可视化时，您无法确定量度之间的关联是正还是负，只知道存在这种关联。在某些情况下，可通过应用计数器量度来确定直接或反向关系。
 
-1. **打开可&#x200B;**[!UICONTROL Chord]**视化**。
+1. **打开&#x200B;**[!UICONTROL Chord]**可视化**.
 
-   在工作区中，右键单击[!DNL Visualization > Predictive Analytics > Chord]。
+   在工作区中，右键单击 [!DNL Visualization > Predictive Analytics > Chord].
 
 1. **从菜单中选择一个维度**。
 
@@ -30,7 +32,7 @@ ht-degree: 85%
 
 1. **选择要关联的量度**。
 
-   通过单击&#x200B;**[!UICONTROL Ctrl-Alt]**&#x200B;将&#x200B;**[!UICONTROL Finder]**&#x200B;中的量度从表拖到图表中。 在选择两个或更多量度之后，图表将自动刷新并开始显示关联数据。根据需要，继续添加量度以关联数据点。
+   从 **[!UICONTROL Finder]** 单击 **[!UICONTROL Ctrl-Alt]** 将量度从表拖到图表。 在选择两个或更多量度之后，图表将自动刷新并开始显示关联数据。根据需要，继续添加量度以关联数据点。
 
    ![](assets/chord_drag_metric.png)
 

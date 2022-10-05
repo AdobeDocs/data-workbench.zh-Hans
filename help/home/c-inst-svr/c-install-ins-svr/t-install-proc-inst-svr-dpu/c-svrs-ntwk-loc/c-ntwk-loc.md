@@ -3,7 +3,7 @@ description: 从概念上讲，地址文件与联网计算机上的ETC&bsol;HOST
 title: 网络位置
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 3%
@@ -12,13 +12,15 @@ ht-degree: 3%
 
 # 网络位置{#network-locations}
 
+{{eol}}
+
 从概念上讲，地址文件与联网计算机上的ETC&amp;bsol;HOSTS文件具有相同的用途。
 
 但是，与描述单个名称集合的HOSTS文件不同，地址文件包含多个名称集合，称为网络位置。
 
 网络位置是地址定义的命名集合。 集合中的每个地址定义都将一个通用名称与一个IP地址关联。
 
-在地址文件中，网络位置在称为NetworkLocation的结构中定义。 下例中的NetworkLocation定义了一个名为“MyCorporate Intranet”的网络位置。 它包含一个地址定义，该定义将通用名称[!DNL VS01.myCompany.com]映射到IP地址“10.2.1.70”。
+在地址文件中，网络位置在称为NetworkLocation的结构中定义。 下例中的NetworkLocation定义了一个名为“MyCorporate Intranet”的网络位置。 它包含映射通用名称的地址定义 [!DNL VS01.myCompany.com] 到IP地址“10.2.1.70”。
 
 ```
 0 = NetworkLocation: 

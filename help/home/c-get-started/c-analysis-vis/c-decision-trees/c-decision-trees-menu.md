@@ -2,13 +2,17 @@
 description: “决策树”菜单包含各项功能，可以设置正类用例、过滤器、叶分配选项、混淆矩阵及其他高级选项。
 title: 决策树选项
 uuid: 6439c6d4-60ac-4324-b870-b452a63b7ba1
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: e139562d-4613-4159-a858-2a78a2e896dd
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 100%
 
 ---
 
-
 # 决策树选项{#decision-tree-options}
+
+{{eol}}
 
 “决策树”菜单包含各项功能，可以设置正类用例、过滤器、叶分配选项、混淆矩阵及其他高级选项。
 
@@ -115,4 +119,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-

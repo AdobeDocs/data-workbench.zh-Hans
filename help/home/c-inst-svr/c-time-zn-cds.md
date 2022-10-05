@@ -3,7 +3,7 @@ description: 有关Insight Server中基于时间的参数的格式说明。
 title: 时区代码(Insight Server)
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 exl-id: d8923b01-24fe-4a70-9800-f2eedf567c6a
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 60%
@@ -11,6 +11,8 @@ ht-degree: 60%
 ---
 
 # 时区代码{#time-zone-codes}
+
+{{eol}}
 
 有关Insight Server中基于时间的参数的格式说明。
 

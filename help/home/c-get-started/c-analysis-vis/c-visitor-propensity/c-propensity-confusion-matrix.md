@@ -1,16 +1,18 @@
 ---
 description: 对倾向评分的统计计算进行了定义。
-title: 计算倾向评分
+title: 计算倾向打分
 uuid: 67270864-0468-4cc9-b48b-0e880f813555
 exl-id: 679e1363-fd10-4a44-a85a-ef0daefaf303
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 100%
 
 ---
 
-# 计算倾向评分{#calculating-propensity-scoring}
+# 计算倾向打分{#calculating-propensity-scoring}
+
+{{eol}}
 
 对倾向评分的统计计算进行了定义。
 

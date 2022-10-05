@@ -3,7 +3,7 @@ description: 邮件XSL样式表的代码示例。
 title: 示例邮件 XSL 样式表
 uuid: 846ddf22-e6da-4d37-ba50-d75f850b9a3f
 exl-id: 4b868da4-1a3b-454c-940c-8ffd9644c92a
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '24'
 ht-degree: 41%
@@ -11,6 +11,8 @@ ht-degree: 41%
 ---
 
 # 示例邮件 XSL 样式表{#sample-mail-xsl-style-sheet}
+
+{{eol}}
 
 邮件XSL样式表的代码示例。
 

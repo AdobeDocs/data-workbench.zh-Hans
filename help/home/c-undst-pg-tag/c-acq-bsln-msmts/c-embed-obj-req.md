@@ -3,7 +3,7 @@ description: 在浏览器请求HTML页面后，浏览器从Web服务器请求在
 title: 获取嵌入式对象请求（页面标记）
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
 exl-id: 593e49bc-9619-4e85-8ce3-2e9d23d175c9
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 6%
@@ -12,15 +12,17 @@ ht-degree: 6%
 
 # 获取嵌入式对象请求（页面标记）{#acquiring-embedded-object-requests-page-tags}
 
+{{eol}}
+
 在浏览器请求HTML页面后，浏览器从Web服务器请求在该页面HTML中引用的嵌入对象来填充浏览器显示的页面。
 
 此类嵌入式对象请求是图像文件或JavaScript文件的最常见请求，尽管目前互联网上使用的嵌入式对象类型有成百上千种。 这些嵌入式对象请求中的许多请求通常对分析或报告互联网网站的业务活动没有用处；因此，许多此类请求在进行收购时并不理想，除非它们具有特定的业务目的，例如展示广告或对网站活动进行其他衡量。
 
-例如，图像可能是广告，您可能希望知道该广告对访客留下了深刻印象。 可以使用JavaScript代码片段测量特定浏览器具有特定特征，并将其传回[!DNL Sensor]进行获取。 网站上的每个页面可能有10个或100个嵌入的对象请求。 如果网站存储了这些请求中每个请求的日志信息，则保持日志数据可用以供将来分析所需的数据存储量乘以每个请求页面的嵌入式对象请求数。 因此，[!DNL Site]允许您保留对分析非常重要的请求，并放弃其他请求，以免产生不必要的存储成本。
+例如，图像可能是广告，您可能希望知道该广告对访客留下了深刻印象。 可以使用JavaScript代码片段测量特定浏览器具有特定特性，并将其传回 [!DNL Sensor] 收购。 网站上的每个页面可能有10个或100个嵌入的对象请求。 如果网站存储了这些请求中每个请求的日志信息，则保持日志数据可用以供将来分析所需的数据存储量乘以每个请求页面的嵌入式对象请求数。 因此， [!DNL Site] 允许您保留对分析非常重要的请求并放弃其他请求，以免产生不必要的存储成本。
 
-通过使用在[!DNL Sensor]的内容类型过滤功能中提供的覆盖功能（将&quot;Log=1&quot;附加到嵌入式对象请求URL的查询字符串），可以获取特定的嵌入式对象请求和相关测量数据，而无需站点管理器存储该类型的所有请求（例如，所有`<image>`请求）。
+通过使用 [!DNL Sensor] （将“Log=1”附加到嵌入式对象请求URL的查询字符串），可以获取该特定嵌入式对象请求和相关测量数据，而无需站点管理器存储该类型的所有请求(例如， `<image>` 请求)。
 
-[!DNL Sensor] 在下表中为web服务器发出的每个嵌入式对象请求收集测量数据，这假定 [!DNL Sensor] 未将其配置为过滤掉或过滤器已被覆盖。通过x-trackingid或cs(cookie)日志字段条目，收集的信息与访客和会话以及后续会话相关。
+[!DNL Sensor] 在下表中为web服务器发出的每个嵌入式对象请求收集测量数据，假定 [!DNL Sensor] 未配置为过滤掉该过滤器，或者该过滤器已被覆盖。 通过x-trackingid或cs(cookie)日志字段条目，收集的信息与访客和会话以及后续会话相关。
 
 <table id="table_11BE08A798E743EC8E76F738F0CE5884">
  <thead>
@@ -35,7 +37,7 @@ ht-degree: 6%
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> 跟踪标识符（独特访客） </td>
-   <td colname="col3"> 在初始请求中， <span class="wintitle">传感器</span>从用户浏览器中放置的Cookie中读取的标识符 </td>
+   <td colname="col3"> 从用户浏览器中放置的Cookie中读取的标识符 <span class="wintitle"> 传感器 </span> 初次请求 </td>
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
@@ -72,13 +74,13 @@ ht-degree: 6%
    <td colname="col1"> s-dns </td>
    <td colname="col2"> 服务器域名 </td>
    <td colname="col3"> 处理请求的Web服务器的域名 </td>
-   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer) </td>
    <td colname="col2"> 反向链接 URL </td>
    <td colname="col3"> 客户端发送的HTTP反向链接字段的内容 </td>
-   <td colname="col4"> <span class="filepath"> https://www.referringsite.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> https://www.referringsite.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(user-agent) </td>

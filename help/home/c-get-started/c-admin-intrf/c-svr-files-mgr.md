@@ -3,7 +3,7 @@ description: “服务器文件管理器”允许您从任何授权Data Workbenc
 title: 服务器文件管理器
 uuid: 62625b9d-587f-4a78-8328-2270869909f8
 exl-id: 9ac7e95d-47e5-4862-a16e-bee0df1d3d15
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 55%
@@ -12,33 +12,35 @@ ht-degree: 55%
 
 # 服务器文件管理器{#server-files-manager}
 
+{{eol}}
+
 “服务器文件管理器”允许您从任何授权Data Workbench远程管理Data Workbench服务器计算机，方法是提供对产品安装目录中所有目录和文件（包括配置和查找文件）的访问。
 
-您可以使用[!DNL Admin]菜单访问[!DNL Server Files Manager]，也可以右键单击[!DNL Servers Manager]中Data Workbench服务器计算机的节点，然后单击&#x200B;**[!UICONTROL Server Files]**。
+您可以访问 [!DNL Server Files Manager] 使用 [!DNL Admin] 菜单，并在 [!DNL Servers Manager] 单击 **[!UICONTROL Server Files]**.
 
 ![](assets/vis_FileManager.png)
 
 >[!NOTE]
 >
->您可以创建显示选定目录的新服务器文件管理器。 请参阅[创建新服务器文件管理器](../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md#concept-6e8f63273109443699a8f61b1a2ea816)。
+>您可以创建显示选定目录的新服务器文件管理器。 请参阅 [创建新的服务器文件管理器](../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md#concept-6e8f63273109443699a8f61b1a2ea816).
 
-[!DNL Server Files Manager]的左列列出了文件和文件夹名称。 中间和右侧列中的复选标记指示这些目录和文件在文件结构中所处的位置。
+的左列 [!DNL Server Files Manager] 列出文件和文件夹名称。 中间和右侧列中的复选标记指示这些目录和文件在文件结构中所处的位置。
 
-如果文件位于产品的安装目录中，则&#x200B;*服务器名称*(例如，Data Workbench服务器)列包含复选标记。 如果文件位于&#x200B;*Data Workbench安装目录*\Temp目录的Data Workbench用户计算机上，则[!DNL Temp]列包含复选标记。 复选标记的颜色指示位于不同位置的文件是否是在同时修改的。
+如果文件位于产品的安装目录中，则 *服务器名称* (例如，Data Workbench服务器)列包含复选标记。 如果文件位于Data Workbench用户的计算机上， *Data Workbench安装目录*\Temp目录， [!DNL Temp] 列包含复选标记。 复选标记的颜色指示位于不同位置的文件是否是在同时修改的。
 
 * 服务器名称列中的红色复选标记表示文件夹或文件位于Data Workbench服务器计算机上。
-* [!DNL Temp]列中的红色复选标记表示文件或文件夹的本地副本与Data Workbench服务器计算机上的文件或文件夹具有相同的修改日期和时间。
-* [!DNL Temp]列中的白色复选标记表示&#x200B;*Data Workbench安装目录*\Temp目录中的文件或文件夹与Data Workbench服务器计算机上的文件或文件夹具有不同的修改日期和时间。
+* 在 [!DNL Temp] 列指示文件或文件夹的本地副本与Data Workbench服务器计算机上的文件或文件夹具有相同的修改日期和时间。
+* 在 [!DNL Temp] 列表示 *Data Workbench安装目录*\Temp目录的修改日期和时间与Data Workbench服务器计算机上的文件或文件夹不同。
 
-下图显示了同时带有红色和白色复选标记的[!DNL Server Files Manager]:
+下图显示了 [!DNL Server Files Manager] 带有红色和白色复选标记：
 
 ![](assets/vis_FileManager_RedWhiteChecks.png)
 
 **使用[!DNL Server Files Manager]**
 
-您可以使用[!DNL Server Files Manager]在Data Workbench服务器计算机上处理目录和文件。
+您可以使用 [!DNL Server Files Manager] 在Data Workbench服务器计算机上处理目录和文件。
 
-下表列出了可使用[!DNL Server Files Manager]完成的任务：
+下表列出了可使用 [!DNL Server Files Manager]:
 
 <table id="table_D217AE5A878542EC8B604812A61819C3"> 
  <thead> 
@@ -95,7 +97,7 @@ ht-degree: 55%
   </tr> 
   <tr> 
    <td colname="col1"> <p>打开文件 </p> </td> 
-   <td colname="col2"> <p>右键单击<span class="wintitle">临时</span>列中文件的复选标记，单击<span class="uicontrol">打开</span>，然后单击<span class="uicontrol">Data Workbench</span>、<span class="uicontrol">在记事本</span>中或<span class="uicontrol">文件夹</span>中。 </p> </td> 
+   <td colname="col2"> <p>右键单击 <span class="wintitle"> 临时</span> 列，单击 <span class="uicontrol"> 打开</span>，然后单击 <span class="uicontrol"> Data Workbench</span>, <span class="uicontrol"> 在记事本中</span>或 <span class="uicontrol"> 文件夹</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>将目录的本地副本保存到Data Workbench服务器 </p> </td> 
@@ -110,7 +112,7 @@ ht-degree: 55%
    <td colname="col2"> <p>右键单击“<span class="wintitle">临时</span>”列中目录或文件的复选标记，然后单击<span class="uicontrol">删除</span>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>在Microsoft Outlook中将文件复制并粘贴为电子邮件附件 </p> </td> 
+   <td colname="col1"> <p>在Microsoft Outlook中，将文件复制并粘贴为电子邮件附件 </p> </td> 
    <td colname="col2"> <p>右键单击“<span class="wintitle">临时</span>”列中文件的复选标记，然后单击<span class="uicontrol">复制</span>。在电子邮件正文中，按 Ctrl+v 附加该文件。 </p> </td> 
   </tr> 
  </tbody> 

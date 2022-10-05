@@ -3,7 +3,7 @@ description: 分析报表是为 Adobe SC 配置文件用户提供的。这些 Da
 title: Analytics 报表
 uuid: 5fc26922-0687-464f-8c5d-d72d2a6078f0
 exl-id: 03bbf4a0-767c-4258-9512-2887f346bf0e
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 77%
@@ -11,6 +11,8 @@ ht-degree: 77%
 ---
 
 # Analytics 报表{#analytics-reports}
+
+{{eol}}
 
 分析报表是为 Adobe SC 配置文件用户提供的。这些 Data Workbench 报表（页面查看次数、流量、独特访客、反向链接域和其他重要报表类型）是 Adobe Analytics 中的标准报表。
 
@@ -22,7 +24,7 @@ ht-degree: 77%
 
 **要打开报表，请执行以下操作：**
 
-在工作台上，右键单击并选择&#x200B;**[!UICONTROL New]**&#x200B;以查看和打开报表模板。
+在工作台上，右键单击并选择 **[!UICONTROL New]** 查看和打开报表模板。
 
 ![](assets/template_reports.png)
 

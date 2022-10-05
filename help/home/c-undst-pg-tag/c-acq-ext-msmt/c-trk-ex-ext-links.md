@@ -3,7 +3,7 @@ description: 通过捕获第三方网站链接中的活动以启用退出目标�
 title: 跟踪外部链接的退出情况
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
 exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 ---
 
 # 跟踪外部链接的退出情况{#tracking-exits-to-external-links}
+
+{{eol}}
 
 通过捕获第三方网站链接中的活动以启用退出目标分析。
 
@@ -20,7 +22,7 @@ ht-degree: 6%
 <A HREF=”https://www.myserver.com/PageExit.htm?v_eurl=https://www.othersite.com”>
 ```
 
-必须创建引用的[!DNL PageExit.htm]文件，且其结构应包含以下脚本：
+引用的 [!DNL PageExit.htm] 必须创建文件，且其结构应包含以下脚本：
 
 ```
 <html>
@@ -51,7 +53,7 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-通过对[!DNL PageExit.htm]文件提出请求，收集v_eurl值以用于分析。 此外，在加载[!DNL PageExit.htm]时，它会立即重定向到指定的v_eurl目标位置。
+通过请求 [!DNL PageExit.htm] 文件中，将收集v_eurl值以进行分析。 此外，当 [!DNL PageExit.htm] 加载后，它会立即重定向到指定的v_eurl目标位置。
 
 | 收集的数据 | 说明 | 示例 |
 |---|---|---|

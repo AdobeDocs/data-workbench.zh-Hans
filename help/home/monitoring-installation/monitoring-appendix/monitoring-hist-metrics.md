@@ -3,7 +3,7 @@ description: 下面列出了Data Workbench历史监控配置文件中包含的�
 title: Data Workbench 历史监控配置文件中的量度
 uuid: 47b874f7-8acb-4593-9ac9-5997d5279e52
 exl-id: 65f0f605-f128-45bb-8f6c-95284b2da740
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Data Workbench 历史监控配置文件中的量度{#metrics-in-the-data-workbench-historical-monitoring-profile}
+
+{{eol}}
 
 下面列出了Data Workbench历史监控配置文件中包含的量度及其派生方式。
 
@@ -49,6 +51,6 @@ ht-degree: 2%
 | **输出行** | 每个ping的“输出行”维度的总和除以Ping量度，再乘以100000。 |
 | **实时模式** | 处理模式维度等于“实时”的Ping次数，除以Ping量度，然后全部乘以100。 |
 | **重新处理模式** | 100减去处理模式等于“实时”的Ping数除以Ping量度，再乘以100。 |
-| **停滞** | Insight [配置文件状态](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64)配置文件中的处理停止维度的总和。 |
+| **停滞** | Insight中处理停止维度的总和 [用户档案状态](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64) 配置文件。 |
 | **临时数据库** | 每个Ping的临时数据库空间百分比之和除以Ping量度。 |
 | **转换** | 每个Ping的转换百分比总和除以Ping量度，总和除以10。 |

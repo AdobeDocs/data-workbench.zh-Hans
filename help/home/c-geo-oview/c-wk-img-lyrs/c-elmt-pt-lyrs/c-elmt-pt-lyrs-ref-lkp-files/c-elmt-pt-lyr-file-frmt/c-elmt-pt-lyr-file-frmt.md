@@ -3,7 +3,7 @@ description: 有关元素点层文件的格式化信息。
 title: 元素点层文件格式
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
 exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 92%
@@ -12,9 +12,11 @@ ht-degree: 92%
 
 # 元素点层文件格式{#element-point-layer-file-format}
 
+{{eol}}
+
 有关元素点层文件的格式化信息。
 
-引用查找文件的每个元素点层[!DNL .layer]文件都必须使用以下模板进行格式化：
+每个元素点层 [!DNL .layer] 引用查找文件的文件必须使用以下模板进行格式化：
 
 ```
 Layer = ElementPointLayer:

@@ -1,16 +1,20 @@
 ---
-description: 支持的Web服务器/OS组合的txlogd.conf文件示例。
-title: Txlogd.conf文件示例
+description: 支持的Web服务器/操作系统组合的txlogd.conf文件示例。
+title: Txlogd.conf 文件示例
 uuid: ba8f3938-b7d6-44bd-93ca-eb66f509ef4e
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 3bbb794f-c771-43c6-9ebf-8892c1d9a707
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 
+# Txlogd.conf 文件示例{#txlogd-conf-file-samples}
 
-# Txlogd.conf文件示例{#txlogd-conf-file-samples}
+{{eol}}
 
-支持的Web服务器/OS组合的txlogd.conf文件示例。
+支持的Web服务器/操作系统组合的txlogd.conf文件示例。
 
 ## Microsoft Windows Server 2000或更高版本上的IIS {#section-d5d602c3e87b4ecf910e71772350e865}
 
@@ -115,7 +119,7 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Windows Server 2000或更高版本上的Lotus Sametime {#section-36265b8192484a268ebafc42e941fdf2}
+## Windows Server 2000 或更高版本上的 Lotus Sametime {#section-36265b8192484a268ebafc42e941fdf2}
 
 在Microsoft Windows Server 2000或更高版本下运行的Lotus Sametime传感器所需的txlogd.conf文件示例。
 
@@ -191,7 +195,7 @@ ExpPartialMatch on
 SiteTest http,localhost,80,/test.html
 ```
 
-## Windows Server 2000或更高版本上的Lotus Domino {#section-d2fd9e0684fe460bbccaaabc4197bb48}
+## Windows 2000 或更高版本上的 Lotus Domino Server {#section-d2fd9e0684fe460bbccaaabc4197bb48}
 
 运行在Microsoft Windows Server 2000或更高版本下的Lotus Domino传感器所需的txlogd.conf文件示例。
 
@@ -271,9 +275,9 @@ SpecialLogField cs(dn)=vars.X509SubjectName vys_log
 SpecialLogField cs(cert)=vars.certificate vys_log
 ```
 
-## IBM AIX 5.2上的IBM HTTP Server {#section-d7c88cc65b0b4c7a877bf7a084cbf4fb}
+## IBM HTTP Server on IBM AIX 5.2 {#section-d7c88cc65b0b4c7a877bf7a084cbf4fb}
 
-运行于IBM AIX 5.2下的IBM HTTP Server 2.0.x传感器所需的txlogd.conf文件示例。
+在IBM AIX 5.2下运行的IBM HTTP Server 2.0.x传感器所需的txlogd.conf文件示例。
 
 ```
 # sample txlogd configuration file for IHS 2.0.x
@@ -412,7 +416,7 @@ PrivacyID 0x1111111
 
 ## RedHat Linux、Sun Solaris、FreeBSD或Mac OSX上的Apache Server 1.3.x {#section-36d0b6d761424d358280226a16e643d2}
 
-运行于RedHat Linux 7.x、Sun Solaris 2.6或更高版本、FreeBSD 4或更高版本或Mac OS X PowerPC下的Apache Server 1.3.x传感器所需的txlogd.conf文件示例。
+运行在RedHat Linux 7.x、Sun Solaris 2.6或更高版本、FreeBSD 4或更高版本或Mac OS X PowerPC下的Apache Server 1.3.x传感器所需的txlogd.conf文件示例。
 
 ```
 # sample txlogd configuration file for Apache 1.3
@@ -554,7 +558,7 @@ CacheControl private,max-age=0,must-revalidate
 
 ## Windows 2000 Server或更高版本上的Apache Server 1.3.x {#section-d225f200da28441895fb90a64c2a2ffd}
 
-运行于Microsoft Windows Server 2000或更高版本下的Apache Server 1.3.x传感器所需的txlogd.conf文件示例。
+运行在Microsoft Windows Server 2000或更高版本下的Apache Server 1.3.x传感器所需的txlogd.conf文件示例。
 
 ```
 # sample txlogd configuration file for Apache 1.3
@@ -844,7 +848,7 @@ CacheControl private,max-age=0,must-revalidate
 
 ## Windows Server 2000或更高版本上的Apache Server 2.0.x或2.2 {#section-a1749d32a8aa4ca0b81f8b95c8dc511c}
 
-运行于Microsoft Windows Server 2000或更高版本下的Apache Server 2.0.x或2.2传感器所需的txlogd.conf文件示例。
+在Microsoft Windows Server 2000或更高版本下运行的Apache Server 2.0.x或2.2传感器所需的txlogd.conf文件示例。
 
 ```
 # sample txlogd configuration file for Apache 2.0.x or 2.2
@@ -990,4 +994,3 @@ CacheControl private,max-age=0,must-revalidate
 ```
 
 ## 章节标题 {#section-f25d181e181e4bb7bf46d4410756e945}
-

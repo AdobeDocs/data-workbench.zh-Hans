@@ -3,7 +3,7 @@ description: 借助具备新式采样和可视化功能的回归树选项，对�
 title: 决策树的回归树选项
 uuid: 1e3b5d5f-1fed-49c9-9a4d-d220c28075ac
 exl-id: e5f8d525-1530-4169-b246-cdaf30e984c0
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 97%
@@ -11,6 +11,8 @@ ht-degree: 97%
 ---
 
 # 决策树的回归树选项{#regression-tree-option-for-decision-tree}
+
+{{eol}}
 
 借助具备新式采样和可视化功能的回归树选项，对决策树进行评估。
 

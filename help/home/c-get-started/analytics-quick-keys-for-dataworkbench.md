@@ -1,18 +1,22 @@
 ---
 description: 可以对工作区和配置文件使用这些快捷键。
-title: Data Workbench Client的键盘快捷键
+title: Data Workbench 客户端的键盘快捷键
 uuid: 134bcf04-767c-4170-b375-545862b2d333
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 77b02661-d084-4860-8d28-97fb37b82332
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 96%
 
 ---
 
+# Data Workbench 客户端的键盘快捷键{#keyboard-shortcuts-for-the-data-workbench-client}
 
-# Keyboard shortcuts for the Data Workbench Client{#keyboard-shortcuts-for-the-data-workbench-client}
+{{eol}}
 
 可以对工作区和配置文件使用这些快捷键。
 
-## 工作台缩略图视图中的键盘快捷键{#section-7c5656d8e99446cca588b9da5bd68e8f}
+## 工作台缩略图视图中的键盘快捷键 {#section-7c5656d8e99446cca588b9da5bd68e8f}
 
 **Ctrl + N**
 
@@ -42,8 +46,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"><b>Ctrl +</b> <p>Ctrl +（在键盘上） </p> <p><i>或</i> </p> <p>Ctrl Shift +（在键盘上） </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
-     <li id="li_452B4C119B1A40038A408CFFC53653A9"><span class="uicontrol"> “文件</span> ”&gt;“ <span class="uicontrol"> 页面大小</span> ”&gt;“填 <span class="uicontrol"> 充屏幕”</span> <p><i>后跟</i> </p> </li> 
-     <li id="li_DE9B8B31B9F24A6AA68A1D0DB886B501"><span class="uicontrol"> “文件</span> ”&gt;“重 <span class="uicontrol"> 新调整工作区”</span> </li> 
+     <li id="li_452B4C119B1A40038A408CFFC53653A9"><span class="uicontrol"> 文件</span> &gt; <span class="uicontrol"> 页面大小</span> &gt; <span class="uicontrol"> 填充屏幕</span> <p><i>后跟</i> </p> </li> 
+     <li id="li_DE9B8B31B9F24A6AA68A1D0DB886B501"><span class="uicontrol"> 文件</span> &gt; <span class="uicontrol"> 重新调整工作区</span> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -74,7 +78,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ctrl + Z </p> </td> 
-   <td colname="col2"> <p>对之前键入的字符撤消操作 </p> </td> 
+   <td colname="col2"> <p>撤消 之前键入的字符操作 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ctrl + Shift + Z </p> </td> 

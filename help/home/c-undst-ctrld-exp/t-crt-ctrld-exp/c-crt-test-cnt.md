@@ -4,7 +4,7 @@ solution: Analytics
 title: 创建测试内容
 uuid: d7996522-38a6-4bb8-9736-d71157c17b45
 exl-id: fd46c6af-37e8-452a-880d-147b7d0cfe21
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 4%
@@ -12,6 +12,8 @@ ht-degree: 4%
 ---
 
 # 创建测试内容{#creating-the-test-content}
+
+{{eol}}
 
 在配置实验之前，应创建要在实验中使用的替代内容。
 

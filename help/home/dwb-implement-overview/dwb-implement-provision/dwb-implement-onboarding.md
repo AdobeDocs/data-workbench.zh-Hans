@@ -3,7 +3,7 @@ description: 按照以下步骤开始AdobeData Workbench(DWB)(Adobe Analytics Pr
 title: DWB Managed Services 的基本入门说明
 uuid: ad44a4eb-00ea-49c7-8401-58976d8fe39e
 exl-id: 49fb6afe-b417-4554-9238-fd6381c00029
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # DWB Managed Services 的基本入门说明{#basic-onboarding-instructions-for-dwb-managed-services}
+
+{{eol}}
 
 按照以下步骤开始AdobeData Workbench(DWB)(Adobe Analytics Premium(AAP)的一个组件)的载入流程。
 
@@ -55,14 +57,14 @@ Adobe将联系您，以：
    >
    >此时，您的浏览器可能会提示您提供数字证书。如果是这样，请单击“取消”关闭该对话框。
 
-1. 在“下载”部分中找到为AdobeData Workbench实例(`<PrimaryUser>`.pem)颁发的证书并下载。
+1. 找到为AdobeData Workbench实例颁发的证书(`<PrimaryUser>`.pem)。
 1. 在“下载”部分中找到标准客户端安装程序，以下载DWB安装向导(InsightSetup-x.xx.exe文件)。
 1. 从Adobe客户关怀团队接收和下载文件后，运行DWB安装向导，将工作站软件安装到客户端计算机。
 
 >[!NOTE]
-DWB安装向导将指导您完成DWB客户端工作站的安装，并帮助您找到要放入所需文件夹中的Insight.cfg和`<PrimaryUser>`.pem文件。 Insight.cfg文件与Insight.exe文件一起驻留在已安装的客户端工作站中。 `<PrimaryUser>`.pem文件位于Certificates文件夹中，并带有trust_ca_cert.pem文件。 DWB必须存在所有证书和配置文件才能正常运行。
+DWB安装向导将指导您完成DWB客户端工作站的安装，并帮助您找到Insight.cfg和 `<PrimaryUser>`.pem文件，以放置到所需的文件夹中。 Insight.cfg文件与Insight.exe文件一起驻留在已安装的客户端工作站中。 的 `<PrimaryUser>`.pem文件位于Certificates文件夹中，并带有trust_ca_cert.pem文件。 DWB必须存在所有证书和配置文件才能正常运行。
 
-有关其他信息，请参阅[DWB设置向导](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html)。
+有关其他信息，请参阅 [DWB安装向导](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
 
 ## 与DWB服务器的连接 {#section-8e79c4e07c2a4342a5bb8af6ee7be3c9}
 
@@ -83,4 +85,4 @@ DWB安装向导将指导您完成DWB客户端工作站的安装，并帮助您�
 
 ·Adobe技术运营将配置主生产群集以包含三个月的滚动数据，以便每月重置和重新处理。 在重新处理任务中，还将对查找(Geography、DeviceAtlas、Standard Classifications)进行更新。 默认情况下，该任务在每月的第一个星期五运行。 如有必要，客户关怀团队可以修改计划。
 
-有关其他信息，请联系[Adobe客户关怀](https://helpx.adobe.com/support/programs/enterprise-support-terms.html)。
+欲知其他信息，请联系 [Adobe客户关怀](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).

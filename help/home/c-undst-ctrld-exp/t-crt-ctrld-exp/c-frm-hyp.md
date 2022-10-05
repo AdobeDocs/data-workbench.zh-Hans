@@ -4,7 +4,7 @@ solution: Analytics
 title: 形成一个假设
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
 exl-id: d7e77d85-4655-49c5-adeb-15402e48dd7b
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 3%
@@ -12,6 +12,8 @@ ht-degree: 3%
 ---
 
 # 形成一个假设{#forming-a-hypothesis}
+
+{{eol}}
 
 假设是一个假设，在论证的目的上，可以认为是正确的，它提供了一个试探性的解释，可以通过进一步的调查加以检验。
 

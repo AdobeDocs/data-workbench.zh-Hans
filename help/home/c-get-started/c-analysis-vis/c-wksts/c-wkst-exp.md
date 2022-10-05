@@ -3,14 +3,16 @@ description: 有关工作表表达式和使用单元格引用的概念性信息�
 title: 工作表表达式
 uuid: be57d6bd-3e13-4c90-9034-8e0f2b8315aa
 exl-id: 1ff3ec24-0363-4b6c-8c91-31e49ed0f7c4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 92%
+source-wordcount: '539'
+ht-degree: 94%
 
 ---
 
 # 工作表表达式{#worksheet-expressions}
+
+{{eol}}
 
 有关工作表表达式和使用单元格引用的概念性信息。
 
@@ -53,7 +55,7 @@ ht-degree: 92%
   </tr> 
   <tr> 
    <td colname="col1"> <p>C3 </p> <p>查看立即申请页面和申请向导页面的推荐访客数 </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp"  </span> </p> <p> AND <span class="filepath">Page="/applynow/appwizard.asp"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp" </span> </p> <p> AND <span class="filepath">Page="/applynow/appwizard.asp"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C4 </p> <p>查看立即申请页面和申请向导页面的推荐人 A 推荐的访客数 </p> </td> 
@@ -80,12 +82,12 @@ ht-degree: 92%
 
 ![](assets/client-exp.png)
 
-## 使用单元格引用  {#section-0004e315c9c94d359b1a8a39794ba555}
+## 使用单元格引用 {#section-0004e315c9c94d359b1a8a39794ba555}
 
 不管是在工作表自身的表达式中还是在其他表达式中，都可以将任何字符串替换为单元格引用。
 
-* **简单单元格引用：**&#x200B;单元格 A2 包含 Visitors 一词，该单元格用作标题。单元格B2包含[!DNL eval(A1)]，其计算结果为[!DNL =Visitors]。
+* **简单单元格引用：**&#x200B;单元格 A2 包含 Visitors 一词，该单元格用作标题。单元格B2包含 [!DNL eval(A1)]，其计算结果为 [!DNL =Visitors].
 
-* **过滤单元格引用：**&#x200B;单元格 A5 包含昨天的日期。单元格B5包含[!DNL Visitors[ Day=A5 ]]，该单元格的计算结果为昨天的访客数。
+* **过滤单元格引用：**&#x200B;单元格 A5 包含昨天的日期。单元格B5包含 [!DNL Visitors[ Day=A5 ]]，它的计算结果为昨天的访客数。
 
-* **级联单元格引用：**&#x200B;单元格 A5 包含今天的日期，单元格 A6 包含 08:00 到 08:59 一个小时的时间段。单元格B6包含[!DNL Visitors[ Hour=A5+&quot; &quot;+A6 ]]，该单元格的计算结果是今天上午8:00到9:00之间的访客数。
+* **级联单元格引用：**&#x200B;单元格 A5 包含今天的日期，单元格 A6 包含 08:00 到 08:59 一个小时的时间段。单元格B6包含 [!DNL Visitors[ Hour=A5+” ”+A6 ]]，它评估的是今天上午8:00到9:00之间的访客数量。

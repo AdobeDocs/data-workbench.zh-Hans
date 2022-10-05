@@ -3,7 +3,7 @@ description: 通过依赖关系图，可以可视化和管理配置文件组件�
 title: 依赖关系图
 uuid: c869267c-5fa9-43b8-b4d4-06c7a36bfa8e
 exl-id: 4618c735-f507-4abc-a4b4-d52a37c64c60,733407ca-3326-406a-a642-a3ea3d3f6b8b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 87%
@@ -12,9 +12,11 @@ ht-degree: 87%
 
 # 依赖关系图{#dependency-maps}
 
+{{eol}}
+
 通过依赖关系图，可以可视化和管理配置文件组件的配置。
 
-* **数据集组件：** 在数据集的、和文件中定义的日志源、过滤器、字段、转换和扩 [!DNL Log Processing.cfg]展 [!DNL Transformation.cfg]维 [!DNL dataset include] 度。
+* **数据集组件：** 在数据集的 [!DNL Log Processing.cfg], [!DNL Transformation.cfg]和 [!DNL dataset include] 文件。
 
 * **查询模型组件：**&#x200B;在 Dimensions、Metrics 和 Filters 文件夹中定义的维度、量度和过滤器。
 * **工作区和可视化：**&#x200B;工作区、报表、菜单选项和全局层。
@@ -23,10 +25,10 @@ ht-degree: 87%
 
 配置文件组件在图中由彩色圆点（节点）表示。连接节点的直线描绘了依赖关系，即组件之间是如何彼此关联的。两个节点之间的直线表示左侧节点的输出是右侧节点的输入，即右侧节点依赖于左侧节点。
 
-## 显示数据集组件  {#section-3e51c09c23cc40aeade2e6ad0fa7c8d2}
+## 显示数据集组件 {#section-3e51c09c23cc40aeade2e6ad0fa7c8d2}
 
-1. 右键单击依赖关系图，然后单击&#x200B;**[!UICONTROL Display]**。
-1. 选择 **[!UICONTROL Dataset]**. 在[!DNL Dataset]的左侧出现X。
+1. 右键单击依赖关系图，然后单击 **[!UICONTROL Display]**.
+1. 选择 **[!UICONTROL Dataset]**. X在 [!DNL Dataset].
 
 有关其他显示选项的详细信息，请参阅《Data Workbench 用户指南》**。
 
@@ -35,7 +37,7 @@ ht-degree: 87%
 ![](assets/vis_DependencyMap.png)
 
 * 黄绿色节点表示数据集中定义的一个或多个日志源或过滤器。日志源的节点始终显示在图中的最左侧。
-* 灰色节点表示在[!DNL Log Processing.cfg]或[!DNL Log Processing Include]文件的Fields（字段）参数中列出的字段。
+* 灰色节点表示在 [!DNL Log Processing.cfg] 或 [!DNL Log Processing Include]文件。
 
 * 蓝色节点表示转换。
 * 绿色节点表示扩展维度。

@@ -3,7 +3,7 @@ description: 通过 insight.zbin 文件设置客户端应用程序的语言。
 title: 设置本地化语言insight.zbin
 uuid: 7735e183-7ba3-4e11-bfe2-7f87e4c55fc8
 exl-id: bb57887f-f213-48a4-9a10-8da7ea33eda5
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 65%
@@ -11,6 +11,8 @@ ht-degree: 65%
 ---
 
 # 设置本地化语言{#setting-up-localized-languages}
+
+{{eol}}
 
 通过 insight.zbin 文件设置客户端应用程序的语言。
 

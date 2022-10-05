@@ -3,7 +3,7 @@ description: 统计标注可对有意义的关系进行测量，以便为受众�
 title: 统计标注
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
 exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 95%
@@ -12,6 +12,8 @@ ht-degree: 95%
 
 # 统计标注{#statistical-callouts}
 
+{{eol}}
+
 统计标注可对有意义的关系进行测量，以便为受众聚类和访客响应评分方面的更高级数据挖掘功能发现隐藏的商机和兴趣变量。
 
 统计标注扩展了算法，这样就能关联更多类型的数据，例如，将二项式变量（是/否、0/1、或购买者/非购买者）与可计数的量度（访问次数、订购数、下载次数）进行关联。
@@ -19,7 +21,7 @@ ht-degree: 95%
 添加统计标注：
 
 1. 在表格中，右键单击量度标题。
-1. 选择&#x200B;**[!UICONTROL Statistics]**，然后为每个所需设置选择或清除复选标记。 默认情况下，“显示标注”中的所有项都被选中。
+1. 选择 **[!UICONTROL Statistics]** 然后，选择或清除每个所需设置的复选标记。 默认情况下，“显示标注”中的所有项都被选中。
 
    ![](assets/statistical_callouts.png)
 

@@ -3,7 +3,7 @@ description: 有关评估和监视地址空间负载的信息。
 title: 监控内存使用情况
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
 exl-id: b8c0b33b-dbec-4947-911b-11c8a83bbc9c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 2%
@@ -12,13 +12,15 @@ ht-degree: 2%
 
 # 监控内存使用情况{#monitoring-memory-usage}
 
+{{eol}}
+
 有关评估和监视地址空间负载的信息。
 
 **监控地址空间负载**
 
-**推荐频度：** 每日
+**推荐频率：** 每日
 
-地址空间负载是正确配置的[!DNL Insight Server]所使用的最大地址空间百分比的度量。 即使配置参数发生更改以减少内存使用，在重新启动[!DNL Insight Server]服务之前，配置参数通常也不会减少。
+地址空间负载是正确配置的最大地址空间的百分比的度量 [!DNL Insight Server] 使用。 即使配置参数发生更改以减少内存使用，它通常也不会减少，直到 [!DNL Insight Server] 服务重新启动。
 
 地址空间负载最大值中内置了安全裕度，以考虑地址空间利用率的意外增加。 你绝不该故意切掉这个安全裕度。 它存在于紧急情况，而不是用于支持添加到您的Adobe应用程序中的功能。
 
@@ -26,7 +28,7 @@ ht-degree: 2%
 >
 >要使更多地址空间可用并避免内存耗尽错误，请确保您的操作系统已启用/3GB交换机并且低碎片堆正在运行。
 
-记录到[!DNL Insight Server]事件数据日志的错误可以提示Address Space负载中出现问题：
+记录到 [!DNL Insight Server] 事件数据日志可以提供一条线索，指出地址空间负载出现问题：
 
 * “请求的X字节块太大”错误表示某些内容可能对地址空间负载、性能和网络带宽造成过大影响。 这样大的块可以极大地促进地址空间的使用，这既通过使用大量内存，也通过要求大量连续的地址空间块。
 
@@ -39,13 +41,13 @@ ht-degree: 2%
 
 **评估地址空间负载**
 
-为了准确评估系统的地址空间负载，Adobe建议重新处理数据集，执行一些常规查询而不随后重新启动[!DNL Insight Server]，然后按照以下步骤查看测量的地址空间负载。
+为准确评估系统的地址空间负载，Adobe建议重新处理数据集，执行一些常规查询，而无需随后重新启动 [!DNL Insight Server]，然后按照以下步骤查看测量的地址空间负载。
 
-如果自上次重新启动以来未对[!DNL Insight Server]进行重新处理和查询，则不应从地址空间负载中得出结论。
+如果 [!DNL Insight Server] 自上次重新启动以来未进行重新处理和查询，因此您不应从地址空间加载中得出结论。
 
-1. 在[!DNL Insight]的[!DNL Admin] > [!DNL Dataset and Profile]选项卡上，单击&#x200B;**[!UICONTROL Servers Manager]**&#x200B;缩略图以打开“服务器管理器”工作区。
-1. 右键单击要配置的[!DNL Insight Server]图标，然后单击&#x200B;**[!UICONTROL Detailed Status]**。
-1. 在详细状态界面中，单击&#x200B;**[!UICONTROL Memory Status]**&#x200B;以查看其内容。 在“地址空间加载”参数中，您可以看到“地址空间加载”以百分比表示，并以圆括号描述指示状态。
+1. 在 [!DNL Insight]，在 [!DNL Admin] > [!DNL Dataset and Profile] ，单击 **[!UICONTROL Servers Manager]** 缩略图以打开“服务器管理器”工作区。
+1. 右键单击 [!DNL Insight Server] 要配置并单击 **[!UICONTROL Detailed Status]**.
+1. 在详细状态界面中，单击 **[!UICONTROL Memory Status]** 查看其内容。 在“地址空间加载”参数中，您可以看到“地址空间加载”以百分比表示，并以圆括号描述指示状态。
 
    下表显示了地址空间负载的范围和状态。 每个范围都会列出建议的操作。
 

@@ -3,7 +3,7 @@ description: 通过单击来选择节点会使其他节点变暗，这样您便�
 title: 选择节点
 uuid: d63b39f6-edec-4b4c-b36b-f6e6881d3419
 exl-id: a483547f-e338-4d13-8a0b-6cb7971b7790
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 90%
@@ -11,6 +11,8 @@ ht-degree: 90%
 ---
 
 # 选择节点{#select-a-node}
+
+{{eol}}
 
 通过单击来选择节点会使其他节点变暗，这样您便可以方便地看到涉及突出显示节点的往返箭头。
 

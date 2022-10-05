@@ -3,7 +3,7 @@ description: 在创建引用查找文件以获取经纬度数据的元素点层�
 title: 定义引用查找文件的元素点层
 uuid: 32c8de7a-4316-4f91-9810-7f584bc7fb0b
 exl-id: 2275fa8e-82fe-49e4-ab3e-91ec6ecb6233
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 72%
@@ -12,15 +12,17 @@ ht-degree: 72%
 
 # 定义引用查找文件的元素点层{#define-element-point-layers-referencing-lookup-files}
 
+{{eol}}
+
 在创建引用查找文件以获取经纬度数据的元素点层时，可通过在查找文件中检索每个元素及其关联的经纬度来获取点的位置。
 
 >[!NOTE]
 >
->您可以使用动态点功能，而不是使用查找文件，该功能将位置的纬度和经度嵌入维度每个元素的名称中。 请参阅[使用动态点定义元素点层](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#concept-51adc5e1df8a48e7bd7a582967e4c512)。
+>您可以使用动态点功能，而不是使用查找文件，该功能将位置的纬度和经度嵌入维度每个元素的名称中。 请参阅 [定义使用动态点的元素点层](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#concept-51adc5e1df8a48e7bd7a582967e4c512).
 
 若要定义引用查找文件的元素点层，必须创建或已经具有以下信息：
 
-* **或** 文件中定 [!DNL Transformation.cfg file] 义的维 [!DNL transformation dataset include] 度。有关转换配置文件的信息，请参阅《数据集配置指南》**。
+* **维度** 在 [!DNL Transformation.cfg file] 或 [!DNL transformation dataset include] 文件。 有关转换配置文件的信息，请参阅《数据集配置指南》**。
 
 * **查找文件**，包含用于绘制每个数据点的数据。此文件必须针对每个数据点至少包含三个数据列：键、经度和纬度。有关查找文件所需格式的详细信息，请参阅[元素点层文件格式](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2)。
 
@@ -28,19 +30,19 @@ ht-degree: 72%
 
    >[!NOTE]
    >
-   >随[!DNL Geography]配置文件提供的[!DNL Zip Points.layer]文件是一个元素点层，用于标识[!DNL Zipcode.dim]文件、[!DNL Sessions.metric]文件、[!DNL Zip Points.txt]查找文件以及查找文件中键、经度、纬度和名称列的名称。
+   >的 [!DNL Zip Points.layer] 文件，随 [!DNL Geography] 轮廓，是标识 [!DNL Zipcode.dim] 文件， [!DNL Sessions.metric] 文件， [!DNL Zip Points.txt] 查找文件，以及查找文件中键、经度、纬度和名称列的名称。
 
-## 元素点查找文件格式{#section-0bc8c652c1bd40eb84078f2af71a5c06}
+## 元素点查找文件格式 {#section-0bc8c652c1bd40eb84078f2af71a5c06}
 
 元素点层查找文件必须至少包含以下三列：
 
-* **[!DNL Key]列：** 此列应包含常用键数据，这允许Data Workbench服务器将查找文件中的数据与数据集中的数据进行连接。[!DNL key]列必须是查找文件中的第一列。 此列中的每一行都标识维度中的一个元素。
+* **[!DNL Key]列：** 此列应包含通用键数据，这允许Data Workbench服务器将查找文件中的数据与数据集中的数据进行连接。 的 [!DNL key] 列必须是查找文件中的第一列。 此列中的每一行都标识维度中的一个元素。
 
-* **[!DNL Longitude]列：** 此列应包含列中每个数据点的经 [!DNL Key] 度。
+* **[!DNL Longitude]列：** 此列应包含中每个数据点的经度 [!DNL Key] 列。
 
-* **[!DNL Latitude]列：** 此列应包含列中每个数据点的纬 [!DNL Key] 度。
+* **[!DNL Latitude]列：** 此列应包含 [!DNL Key] 列。
 
-* **[!DNL Name]列（可选）：** 如果要指定要在映射中显示的每个数据点的名称，则可以在查 [!DNL Name] 找文件中包含列。
+* **[!DNL Name]列（可选）：** 如果要为每个数据点指定要在映射中显示的名称，您可以包括 [!DNL Name] 列。
 
 [!DNL Zip Points.txt] 查找文件中的每一行在第一列中包含邮政编码，随后是经度、纬度和关联的城市名称。
 
@@ -52,9 +54,9 @@ ZIP_CODE LATITUDE LONGITUDE NAME
 ...
 ```
 
-## 元素点层文件格式{#section-52d7e92be8354d979af9e7a2210b76f2}
+## 元素点层文件格式 {#section-52d7e92be8354d979af9e7a2210b76f2}
 
-引用查找文件的每个元素点层[!DNL .layer]文件都必须使用以下模板进行格式化：
+每个元素点层 [!DNL .layer] 引用查找文件的文件必须使用以下模板进行格式化：
 
 ```
 Layer = ElementPointLayer:

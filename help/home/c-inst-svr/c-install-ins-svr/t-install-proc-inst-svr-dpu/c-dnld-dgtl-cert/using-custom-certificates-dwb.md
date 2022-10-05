@@ -3,15 +3,16 @@ description: 有关使用自定义证书的说明。
 title: 使用 Data Workbench 中的自定义证书
 uuid: c3a2db27-bdb2-44b3-95dd-65eedd05c957
 exl-id: f813d599-723f-4b5d-a0b5-f4d71c1b1a22
-translation-type: ht
-source-git-commit: 233b04c65a45d3f92b8670bc244b907dc198b51d
-workflow-type: ht
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # 使用 Data Workbench 中的自定义证书{#using-custom-certificates-in-data-workbench}
+
+{{eol}}
 
 有关使用自定义证书的说明。
 
@@ -45,7 +46,7 @@ Data Workbench 客户端或服务器使用的证书需要由受信任的 CA（�
       ```
 
    1. Certificate 具有 CN、O、OU 等，这是根据服务器的 [!DNL Access Control.cfg] 文件中此客户端的要求来决定的。
-   1. 证书是通过 *client*（或 *server* **和** *client*）的 *purpose **** 颁发的。
+   1. 证书的颁发者为 *用途&#42;&#42;&#42;* of *客户端* (或同时 *服务器* **和** *客户端*)。
 
       要验证证书具有服务器和/或客户端的目的代码，可使用以下命令：
 

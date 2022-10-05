@@ -3,7 +3,7 @@ description: 为了帮助进行统计，Data Workbench在指导分析可视化�
 title: 统计对策
 uuid: a8782cd2-d657-4c04-9c5d-8e0af2a3b76e
 exl-id: 166ff98b-d531-4b31-897e-0c7fedbd2f4d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 82%
@@ -11,6 +11,8 @@ ht-degree: 82%
 ---
 
 # 统计对策{#statistical-measures}
+
+{{eol}}
 
 为了帮助进行统计，Data Workbench在指导分析可视化中提供了三个统计指标。
 

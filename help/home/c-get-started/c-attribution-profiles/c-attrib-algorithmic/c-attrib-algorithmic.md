@@ -1,18 +1,22 @@
 ---
 description: 最适合归因是一种机器学习方法，用于在一个成功转化事件的不同渠道之间分配归因值。Data Workbench 会自动评估每个渠道在一个时间窗口内对成功的贡献，然后根据您的客户的实际交互模式构建归因模型。
-title: 最适合归因
+title: 最佳拟合归因
 uuid: 0c51beb3-8f74-4f8e-9722-0c885140c8ce
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 225a54d0-370c-4274-8a87-dc287bbb8201
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 85%
 
 ---
 
+# 最佳拟合归因{#best-fit-attribution}
 
-# 最适合归因{#best-fit-attribution}
+{{eol}}
 
 最适合归因是一种机器学习方法，用于在一个成功转化事件的不同渠道之间分配归因值。Data Workbench 会自动评估每个渠道在一个时间窗口内对成功的贡献，然后根据您的客户的实际交互模式构建归因模型。
 
-**[!UICONTROL Best Fit Attribution]** 允许您比较促成成功销售、电子邮件注册或其他绩效指标的交互或接触。 这种归因分析可自动向最重要的接触分配权重，并根据您的数据以及客户对您的市场和内部协议做出的响应，提供每个渠道的归因模型。
+**[!UICONTROL Best Fit Attribution]** 允许您比较有助于成功销售、电子邮件注册或其他绩效指标的交互或接触。 这种归因分析可自动向最重要的接触分配权重，并根据您的数据以及客户对您的市场和内部协议做出的响应，提供每个渠道的归因模型。
 
 ![](assets/attrib_windows_5.png)
 
@@ -20,13 +24,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->To run **Best Fit Attribution** in Data Workbench, you need to update your server certificate ( [!DNL .pem file]) to support Adobe Analytics Premium. 您还需要向客户端的自定义 **添加**&#x200B;高级[!DNL Profile.cfg]，并从 Adobe ClientCare for Server 和报表服务器中接收新的证书。
+>运行 **最适合归因** 在Data Workbench中，您需要更新服务器证书( [!DNL .pem file])支持Adobe Analytics Premium。 您还需要向客户端的自定义 **添加**&#x200B;高级[!DNL Profile.cfg]，并从 Adobe ClientCare for Server 和报表服务器中接收新的证书。
 
 ## 基本设置 {#section-db597eaee462412ea7280d1426366c61}
 
-See [Build a Best Fit Attribution](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md#concept-fede6fc4f592475fa8b351b1765a522d) for step-by-step instructions.
+请参阅[构建最适合归因](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md#concept-fede6fc4f592475fa8b351b1765a522d)，以了解逐步操作的相关说明。
 
-**设置成功量度**&#x200B;定义表示成功事件的量度。
+**设置成功量度**
+定义表示成功事件的量度。
 
 ![](assets/attrib_windows_1.png)
 
@@ -38,11 +43,11 @@ See [Build a Best Fit Attribution](../../../../home/c-get-started/c-attribution-
 
 >[!NOTE]
 >
->只有在您使用触控量度从拖放维度元素中派生渠道量度，而不是使用现有渠道量度时，才需要设置触控量度。
+>只有在使用接触量度从拖放Dimension元素中派生渠道量度，而不是使用现有渠道量度时，才需要设置接触量度。
 
 如果您没有针对营销活动或渠道定义的量度，但却拥有表示渠道的维度，则最适合归因可基于接触量度为您自动构建它们。
 
-For example, with the Touch Metric set as *Hits*, and given a dimension called *Media Type* with elements that include *Email*, *Press Release*, *Print Ad*, and *Social Media*, the visualization will generate Channel metrics of the form [!DNL Hits where Media Type = Email] when you drag and drop the element(s) onto the visualization.
+例如，将“接触量度”设置为 *点击量*，并给定一个名为 *媒体类型* 包含的元素 *电子邮件*, *新闻稿*, *打印广告*&#x200B;和 *社交媒体*，则可视化图表将生成表单的渠道量度 [!DNL Hits where Media Type = Email] 将元素拖放到可视化图表时，会显示相应的变量。
 
 ![](assets/attrib_windows_2.png)
 
@@ -62,7 +67,7 @@ For example, with the Touch Metric set as *Hits*, and given a dimension called *
 
 >[!NOTE]
 >
->仅当您尝试通过将维元素拖动到可视化中来自动构建成功量度时，才需要设置触控量度。
+>仅当您尝试通过将维度元素拖动到可视化中来自动构建成功量度时，才需要设置接触量度。
 
 您可以设置日、月、年、或任何可用的时间段，以在销售周期内或针对访问您网站的特定受众，限制您的成功事件和接触事件的评估。创建用于限制归因的窗口，可让您集中分析与您的特定需求相关的时段。
 
@@ -94,7 +99,7 @@ For example, with the Touch Metric set as *Hits*, and given a dimension called *
 
 **选项 1：向渠道添加“接触量度”以及添加“维度元素”**。
 
-这是一个比较简单的方法。“最适合归因”可自动创建量度，以评估归因。In the example below the Touch Metric is ***Hits*** and Channels are: ***Display Campaigns***, ***Email Campaigns***, and ***SEM Campaigns***.
+这是一个比较简单的方法。“最适合归因”可自动创建量度，以评估归因。在以下示例中，接触量度为 ***点击量*** 渠道包括： ***显示营销活动***, ***电子邮件营销活动***&#x200B;和 ***SEM营销活动***.
 
 通过这种方法，“最适合归因”可在后台创建一个量度以用于评估渠道中的归因（不过，您看不到自动生成的量度，而且系统不会保存这些量度）。在下面的示例中，创建了三个量度，其中，为三个渠道中的每一个渠道（例如，*显示营销活动*、*电子邮件营销活动*&#x200B;以及 *SEM 营销活动*）都过滤了“点击量”。这是最简单的方法，因为您让“最适合归因”为您创建了量度。
 

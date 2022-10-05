@@ -3,7 +3,7 @@ description: 日志 (.vsl) 文件包含由传感器从服务器收集并由 Data
 title: 事件数据记录字段（.vsl文件）
 uuid: ad9e773c-a128-4094-9e20-45a6de025c8f
 exl-id: d48b593f-5a3a-4a4e-9a71-3b91024c9a48
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 54%
@@ -11,6 +11,8 @@ ht-degree: 54%
 ---
 
 # 事件数据记录字段{#event-data-record-fields}
+
+{{eol}}
 
 日志 (.vsl) 文件包含由传感器从服务器收集并由 Data Workbench Server 用于数据集构建过程的事件数据字段。
 

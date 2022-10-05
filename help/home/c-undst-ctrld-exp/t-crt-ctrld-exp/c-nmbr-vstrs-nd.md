@@ -4,7 +4,7 @@ solution: Analytics
 title: 确定需要的访客数
 uuid: 07fca0aa-031a-4335-bba4-fb00cb90e29d
 exl-id: c23f4c21-21e5-4694-a500-efe1369cd4bf
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 6%
@@ -12,6 +12,8 @@ ht-degree: 6%
 ---
 
 # 确定需要的访客数{#determining-the-number-of-visitors-needed}
+
+{{eol}}
 
 要创建具有统计意义的实验，您必须确定运行该实验的时长，以包含足够的访客以有效评估网站更改的结果。
 

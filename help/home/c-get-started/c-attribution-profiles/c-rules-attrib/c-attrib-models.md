@@ -2,13 +2,17 @@
 description: 共提供 7 个不同的归因模型，与归因配置文件一起用于帮助说明和量化客户营销过程。
 title: 归因模型
 uuid: 4c73629c-9d58-49d5-adeb-8175484709fa
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 35d3f491-a8ed-4d9d-8d48-fc5f20e977a5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 87%
 
 ---
 
-
 # 归因模型{#attribution-models}
+
+{{eol}}
 
 共提供 7 个不同的归因模型，与归因配置文件一起用于帮助说明和量化客户营销过程。
 
@@ -34,13 +38,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->根据订单的收入或发生情况将分配重新分配给营销互动是很常见的。 接下来的两个模型将不同的特性归因于营销互动，以评估其他成功力度。
+>很常见的做法是，根据订单的收入或发生情况将分配重新分配给营销交互。 接下来的两个模型将不同的特性归因于营销互动，以评估其他成功力度。
 
 **邻近性模型**
 
 ![](assets/attrib_model_adjacency.png)
 
-The Adjacency model provides visibility into the marketing position away from the conversion, answering the question: Is the marketing channel typically the 1`<sup>st</sup>` (closest), 5`<sup>th</sup>`, or 10`<sup>th</sup>` marketing channel interaction away from success?
+邻近性模型提供与转化之外的营销位置的可见性，回答了以下问题：营销渠道通常为`<sup>st</sup>` （最近）， 5`<sup>th</sup>`、或10`<sup>th</sup>` 营销渠道互动与成功无关？
 
 **延迟模型**
 
@@ -63,4 +67,3 @@ The Adjacency model provides visibility into the marketing position away from th
 **3D 流程图可视化**
 
 ![](assets/attrib_model_3Dprocess_map.png)
-

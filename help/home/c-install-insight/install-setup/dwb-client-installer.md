@@ -1,17 +1,18 @@
 ---
 description: Data Workbench 提供了一个安装工作站（客户端）应用程序的安装向导。
-title: 工作站安装向导
+title: 工作站设置向导
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
-translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+exl-id: bfd9f2ad-282a-4be8-9f66-53e045648ef1
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 83%
+source-wordcount: '563'
+ht-degree: 84%
 
 ---
 
+# 工作站设置向导{#workstation-setup-wizard}
 
-# 工作站安装向导{#workstation-setup-wizard}
+{{eol}}
 
 Data Workbench 提供了一个安装工作站（客户端）应用程序的安装向导。
 
@@ -53,7 +54,7 @@ Data Workbench 提供了一个安装工作站（客户端）应用程序的安�
 
       >[!IMPORTANT]
       >
-      >A generic ***Insight.cfg*** file without server details will be installed initially. 建议您使用新安装的 ***Insight.cfg*** 文件并对其进行自定义，而不是从以前的安装中移动文件。Because the path for installing the workstation has changed, the addition of fonts, removal of the *User Folder*, and the removal of the *TraceFileComponent * is recommended.
+      >通用 ***Insight.cfg*** 最初将安装没有服务器详细信息的文件。 建议您使用新安装的 ***Insight.cfg*** 文件并对其进行自定义，而不是从以前的安装中移动文件。由于安装工作站的路径已更改，因此添加了字体，删除了 *用户文件夹*，并建议删除*TraceFileComponent *。
 
 1. （可选）选择&#x200B;**自定义**&#x200B;以选取语言包和程序及数据文件的位置。
 1. 选择&#x200B;**“开始”菜单中快捷方式**&#x200B;的位置。
@@ -74,11 +75,11 @@ Data Workbench 提供了一个安装工作站（客户端）应用程序的安�
 
    >[!NOTE]
    >
-   >The default log location for the Workstation Set up Wizard at  `C:\Users\<userName>\AppData\Local\Temp`.
+   >工作站设置向导的默认日志位置：  `C:\Users\<userName>\AppData\Local\Temp`.
 
    选中&#x200B;**启动应用程序**&#x200B;复选框可在安装后打开 Workbench。
 
-1. **在文件中** ，配置与服务器 **[!DNL Insight.cfg]** 的连接。
+1. **配置连接** 到服务器 **[!DNL Insight.cfg]** 文件。
 
    安装工作站后，系统将会打开“增强的工作站配置体验”工作区，其中包含要在 *Insight.cfg* 文件中输入的其他[服务器连接信息](/help/home/c-get-started/c-insght-config-param.md)，以及一个可以从下拉菜单中选择配置文件的选项。您还可以查看服务器的连接状态。
 
@@ -112,10 +113,10 @@ Data Workbench 文件夹结构具有两个安装位置：
 
 ## 卸载工作站 {#section-5ce2e233fe4348469ef1b3c451dd5b70}
 
-Data Workbench now includes an executable to uninstall the workstation (located by default at **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**).
+Data Workbench现在包含用于卸载工作站的可执行文件(默认情况下位于 **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**)。
 
 启动可执行文件并遵循相关步骤，从您的硬盘驱动器中删除 Data Workbench 工作站文件。
 
 >[!NOTE]
 >
->You can launch the **unins000.exe** executable from the folder, using the **Uninstall Data Workbench** shortcut from Start Menu, or from **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
+>您可以启动 **unins000.exe** 可执行文件(使用 **卸载Data Workbench** 从“开始”菜单或从 **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.

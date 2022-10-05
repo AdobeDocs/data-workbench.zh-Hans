@@ -3,7 +3,7 @@ description: 有关传感器记录的基线事件数据记录字段的信息。
 title: 基线事件数据记录字段
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 65%
@@ -11,6 +11,8 @@ ht-degree: 65%
 ---
 
 # 基线事件数据记录字段{#baseline-event-data-record-fields}
+
+{{eol}}
 
 有关传感器记录的基线事件数据记录字段的信息。
 
@@ -72,7 +74,7 @@ ht-degree: 65%
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>服务器接收到请求的日期和时间 (GMT)。 </p> <p>该时间以从 1600 年 1 月 1 日算起的总时间数表示（以 100 纳秒为单位）。 </p> <p>示例：127710989320000000是2005年9月13日星期二11:28:52.0000000的x-timestamp值。 </p> </td>
+   <td colname="col2"> <p>服务器接收到请求的日期和时间 (GMT)。 </p> <p>该时间以从 1600 年 1 月 1 日算起的总时间数表示（以 100 纳秒为单位）。 </p> <p>示例：127710989320000000是11的x-timestamp值:28:52.0000000 2005年9月13日星期二。 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
@@ -81,4 +83,4 @@ ht-degree: 65%
  </tbody>
 </table>
 
-[!DNL data workbench server]可从基线事件数据记录字段派生多个变量。 有关更多信息，请参阅&#x200B;*《数据集配置指南》*。
+的 [!DNL data workbench server] 可以从基线事件数据记录字段派生多个变量。 有关更多信息，请参阅 *数据集配置指南*.

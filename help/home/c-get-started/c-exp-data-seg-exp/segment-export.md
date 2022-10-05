@@ -3,7 +3,7 @@ description: 使用区段导出向导导出区段
 title: 区段导出向导
 uuid: 705bdf00-54e5-4992-8978-91afda8c7543
 exl-id: 6f42c5c6-a158-4ddd-8949-4ef55a44ed1c
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 78%
@@ -12,9 +12,11 @@ ht-degree: 78%
 
 # 区段导出向导{#segment-export-wizard}
 
+{{eol}}
+
 使用区段导出向导导出区段
 
-区段导出向导提供了配置和导出区段的分步流程，而不是[从明细表](https://experienceleague.adobe.com/docs/data-workbench/using/client/export-data/c-sgmt-expt.html)导出区段。
+区段导出向导提供了配置和导出区段的分步流程，而不是 [从明细表导出区段](https://experienceleague.adobe.com/docs/data-workbench/using/client/export-data/c-sgmt-expt.html).
 
 ## 使用向导导出区段 {#section-b30f2699dbc7490bad18512b91cb0cb3}
 
@@ -57,7 +59,7 @@ ht-degree: 78%
 
    标题：如果标题为 True，则命名&#x200B;**输出文件**&#x200B;字段。
 
-   转义字段 — 设置为&#x200B;**True**&#x200B;或&#x200B;**False**。
+   转义字段 — 设置为 **True** 或 **False**.
 
    字段顺序：选择某个字段，然后上移或下移，可设置导出文件中字段的顺序。
 
@@ -81,7 +83,7 @@ ht-degree: 78%
 
 1. 单击&#x200B;**下一步**
 
-   **注意：** 如果选择的导出类型为“配置文 **件和受众导出”**、“ **自定义记录服务**”和“ **Adobe Target导出**”，则文本将基于选定的导出而处于静态状态。
+   **注意：** 如果选择的导出类型为 **用户档案和受众导出**, **自定义记录服务**&#x200B;和 **Adobe Target导出**，则根据选定的导出，文本将为静态文本。
 
 1. 配置计划参数。
 

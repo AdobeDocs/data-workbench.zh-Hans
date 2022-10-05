@@ -3,7 +3,7 @@ description: 数据集配置是指编辑配置文件（其参数为数据集构�
 title: 了解数据集配置
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 86%
@@ -11,6 +11,8 @@ ht-degree: 86%
 ---
 
 # 了解数据集配置{#understanding-dataset-configuration}
+
+{{eol}}
 
 数据集配置是指编辑配置文件（其参数为数据集构建提供规则）的过程。
 
@@ -30,15 +32,15 @@ c_req_config_files.xml
 
    有关将继承配置文件添加到数据集配置文件 [!DNL Profile.cfg] 文件的说明，请参阅《服务器产品安装和管理指南》**。有关安装 Insight Server 群集或将数据集配置文件配置为在 Insight Server 群集上运行的信息，请参阅《服务器产品安装和管理指南》**。
 
-* **Dataset\Log Processing.cfg：**&#x200B;控制数据集构建过程中的日志处理阶段。请参阅[日志处理](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-8a63892878004dc389c7dad784fcb061)。 有关[!DNL Log Processing.cfg]文件的更多信息，请参阅[日志处理配置文件](../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
+* **Dataset\Log Processing.cfg：**&#x200B;控制数据集构建过程中的日志处理阶段。请参阅 [日志处理](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-8a63892878004dc389c7dad784fcb061). 有关 [!DNL Log Processing.cfg] 文件，请参阅 [日志处理配置文件](../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md).
 
-* **Dataset\Transformation.cfg：**&#x200B;控制数据集构建过程中的转换阶段。请参阅[Transformation](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda)。 [!DNL Transformation.cfg] 文件通常配置数据集以进行特定于配置文件的分析。有关[!DNL Transformation.cfg]文件的更多信息，请参阅[转换配置文件](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md)。
+* **Dataset\Transformation.cfg：**&#x200B;控制数据集构建过程中的转换阶段。请参阅 [转换](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda). [!DNL Transformation.cfg] 文件通常配置数据集以进行特定于配置文件的分析。有关 [!DNL Transformation.cfg] 文件，请参阅 [转换配置文件](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md).
 
-* **数据集包含文件：**  [!DNL dataset include] 文件包含数据集配置文件或文件中包含 [!DNL Log Processing.cfg] 的一部分参数，但在继承配置 [!DNL Transformation.cfg] 文件中进行了存储和管理。[!DNL Dataset include] 文件是对主数据集配置文件的补充。有关更多信息，请参阅[数据集包含文件](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
+* **数据集包含文件：** A [!DNL dataset include] 文件包含 [!DNL Log Processing.cfg] 或 [!DNL Transformation.cfg] 文件，但会在继承配置文件中进行存储和管理。 [!DNL Dataset include] 文件是对主数据集配置文件的补充。 有关更多信息，请参阅 [数据集包含文件](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md).
 
-在Adobe应用程序实施期间提供给您的数据集配置文件包含一组数据集配置文件，您可以使用[!DNL Profile Manager]打开、编辑和保存这些文件。
+在Adobe应用程序实施期间提供给您的数据集配置文件包含一组数据集配置文件，您可以使用 [!DNL Profile Manager].
 
-有关[!DNL Profile Manager]的信息，请参阅&#x200B;*《Insight用户指南》*。
+有关 [!DNL Profile Manager]，请参阅 *Insight用户指南*.
 
 <!--
 c_addl_config_files.xml
@@ -46,11 +48,11 @@ c_addl_config_files.xml
 
 以下文件可让您控制数据集构建过程的其他方面（尽管并非所有数据集都需要）：
 
-* **：**[!DNL Log Processing Mode.cfg]Log Processing Mode.cfg 文件可让您暂停将数据处理到数据集中、指定离线源或指定 Data Workbench Server 保存其状态文件的频率。请参阅[其他配置文件](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)。
+* **：**[!DNL Log Processing Mode.cfg]Log Processing Mode.cfg 文件可让您暂停将数据处理到数据集中、指定离线源或指定 Data Workbench Server 保存其状态文件的频率。请参阅 [其他配置文件](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **：**[!DNL Server.cfg]Server.cfg 文件为连接到 Data Workbench Server 的 Data Workbench 计算机指定默认数据缓存大小（以字节为单位）。请参阅[其他配置文件](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)。
+* **：**[!DNL Server.cfg]Server.cfg 文件为连接到 Data Workbench Server 的 Data Workbench 计算机指定默认数据缓存大小（以字节为单位）。请参阅 [其他配置文件](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **Transform.cfg 和 Transform Mode.cfg：**&#x200B;仅当您获得在 Adobe 应用程序中使用数据转换功能的许可时，这些文件才可用。[!DNL Transform.cfg] 文件包含为转换功能定义日志源和数据转换的参数。您定义的转换可处理源数据，并将其输出为您指定的格式。[!DNL Insight Transform Mode.cfg] 文件可让您暂停将数据处理到数据集中、指定离线源或指定运行转换功能的 Insight Server 保存其状态文件的频率。请参阅[转换功能](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html)。
+* **Transform.cfg 和 Transform Mode.cfg：**&#x200B;仅当您获得在 Adobe 应用程序中使用数据转换功能的许可时，这些文件才可用。[!DNL Transform.cfg] 文件包含为转换功能定义日志源和数据转换的参数。您定义的转换可处理源数据，并将其输出为您指定的格式。[!DNL Insight Transform Mode.cfg] 文件可让您暂停将数据处理到数据集中、指定离线源或指定运行转换功能的 Insight Server 保存其状态文件的频率。请参阅 [转换功能](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
 
 <!--
 c_next_steps.xml

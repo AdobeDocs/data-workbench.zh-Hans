@@ -2,13 +2,17 @@
 description: Data Workbench安装包中包含的文件。
 title: 安装程序包中包含的文件
 uuid: 46cda536-ea71-4840-bd7f-3fe9e0242c33
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 086fb49c-d492-4670-938b-7ede70a7cd16
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 71%
 
 ---
 
-
 # 安装程序包中包含的文件{#files-included-in-the-installation-package}
+
+{{eol}}
 
 Data Workbench安装包中包含的文件。
 
@@ -69,15 +73,15 @@ C:\Program Files\Adobe\Adobe Analytics\Data Workbench
  <tbody> 
   <tr> 
    <td colname="col1"> <b> <span class="filepath"> Insight.cfg </span> </b> </td> 
-   <td colname="col2"> Data Workbench配置文件。 定义Data Workbench在其中运行的参数。 See <a href="../../../home/c-install-insight/install-setup/c-conn-isvr.md#concept-9f47b2cd7c12492693a2cf810cfc1d9e"> Configuring the Connection to Insight Server </a>. </td> 
+   <td colname="col2"> Data Workbench配置文件。 定义Data Workbench运行的参数。 请参阅 <a href="../../../home/c-install-insight/install-setup/c-conn-isvr.md#concept-9f47b2cd7c12492693a2cf810cfc1d9e"> 配置与Insight Server的连接 </a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b> <span class="filepath"> Base </span> </b> </td> 
-   <td colname="col2"> <p>包含Data Workbench的程序文件。 </p> <p> <p>注意：您不应该删除或更改这些文件中的任何文件。 </p> </p> </td> 
+   <td colname="col2"> <p>包含要Data Workbench的程序文件。 </p> <p> <p>注意：您不应该删除或更改这些文件中的任何文件。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b> <span class="filepath"> Certificates </span> </b> </td> 
-   <td colname="col2"> Contains the certificate file, <span class="filepath"> trust_ca_cert.pem </span>, and the named user digital certificate for Data Workbench. See <a href="../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#concept-4c6a900074d4464fb6ec7862f7e54f10"> Downloading and Installing the Digital Certificate </a>. </td> 
+   <td colname="col2"> 包含证书文件， <span class="filepath"> trust_ca_cert.pem </span>，以及用于Data Workbench的指定用户数字证书。 请参阅 <a href="../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#concept-4c6a900074d4464fb6ec7862f7e54f10"> 下载并安装数字证书 </a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b> <span class="filepath"> 配置 </span> </b> </td> 
@@ -92,7 +96,7 @@ C:\Program Files\Adobe\Adobe Analytics\Data Workbench
    <td colname="col2"> 从工作站生成的日志文件。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b> <span class="filepath"> Profiles </span></b> </td> 
+   <td colname="col1"> <b> <span class="filepath"> 配置文件 </span></b> </td> 
    <td colname="col2"> <i>AdobeSC</i>、<i>预测分析</i>和其他配置文件。 </td> 
   </tr> 
   <tr> 
@@ -101,4 +105,3 @@ C:\Program Files\Adobe\Adobe Analytics\Data Workbench
   </tr> 
  </tbody> 
 </table>
-

@@ -3,7 +3,7 @@ description: 通过关联矩阵中的二进制过滤器，您可以限制其中�
 title: 关联矩阵中的二进制过滤器
 uuid: 61c3ca37-cfa2-49dc-87de-4e9a44647eca
 exl-id: e693fc72-5697-4c47-a498-e0d4d875c688
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 55%
@@ -11,6 +11,8 @@ ht-degree: 55%
 ---
 
 # 关联矩阵中的二进制过滤器{#binary-filter-in-the-correlation-matrix}
+
+{{eol}}
 
 通过关联矩阵中的二进制过滤器，您可以限制其中一个或两个关联量度的值以更好地进行比较。
 
@@ -21,15 +23,15 @@ ht-degree: 55%
 
    ![](assets/correlation_matrix_binary_filter.png)
 
-   将打开&#x200B;**[!UICONTROL Edit Correlation Metric Details]**&#x200B;窗口。
+   的 **[!UICONTROL Edit Correlation Metric Details]** 窗口。
 
    ![](assets/correlation_matrix_metric_details.png)
 
 1. 设置二进制过滤器。
 
-   首先，单击&#x200B;**[!UICONTROL Inactive]**&#x200B;设置。 它将切换为将过滤器设置为&#x200B;**[!UICONTROL Active]**&#x200B;并显示&#x200B;**Comparison**&#x200B;和&#x200B;**Value**&#x200B;字段。
+   首先，单击 **[!UICONTROL Inactive]** 设置。 它将切换为 **[!UICONTROL Active]** 并显示 **比较** 和 **值** 字段。
 
-   然后，选择&#x200B;**[!UICONTROL Comparison]**&#x200B;运算符并设置其&#x200B;**[!UICONTROL Value]**&#x200B;以设置所选量度的过滤器。
+   然后，选择 **[!UICONTROL Comparison]** 运算符和设置 **[!UICONTROL Value]** 为所选量度设置过滤器。
 
 >[!IMPORTANT]
 >
@@ -41,4 +43,4 @@ ht-degree: 55%
 
 ![](assets/correlation_matrix_element.png)
 
-在工作区中右键单击并选择&#x200B;**表格**。打开维度及其元素，并拖到“编辑关联量度详细信息”窗口的&#x200B;**[!UICONTROL Element]**&#x200B;设置中，或拖放到关联矩阵中的量度上。
+在工作区中右键单击并选择&#x200B;**表格**。打开一个包含其元素的维度，然后拖动到 **[!UICONTROL Element]** 在“编辑关联量度详细信息”窗口中进行设置，或将量度拖放到关联矩阵中。

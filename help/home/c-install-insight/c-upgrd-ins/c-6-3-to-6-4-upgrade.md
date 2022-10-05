@@ -1,17 +1,18 @@
 ---
 description: 按照这些步骤升级至 Data Workbench v6.4。
-title: 将 6.3 升级至 6.4
+title: 从 6.3 升级至 6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
-translation-type: tm+mt
-source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+exl-id: 540deb86-2463-4820-b67a-a32d68b4346e
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 74%
 
 ---
 
+# 从 6.3 升级至 6.4{#upgrading-to}
 
-# 将 6.3 升级至 6.4{#upgrading-to}
+{{eol}}
 
 按照这些步骤升级至 Data Workbench v6.4。
 
@@ -21,23 +22,24 @@ ht-degree: 74%
 
 >[!IMPORTANT]
 >
->建议您使用新安装的默认配置文件并对其进行自定义，而不是从以前的安装中移动文件，但这些情况除外：
+>建议您使用新安装的默认配置文件并对其进行自定义，而不是从以前的安装中移动文件，但有以下例外：
 
 * 为下列可执行文件&#x200B;**添加** ***Windows Server 2012 中 MS 系统中心终端保护***&#x200B;的&#x200B;*已排除进程*：
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   这将为这些接口可执行文件启用允许列表权限。
 
-* **更新服务器上的&#x200B;*Trust_ca_cert.pem*证书**。
+   这将启用这些允许列表接口可执行文件的权限。
+
+* **更新服务器上的 *Trust_ca_cert.pem* 证书**。
 * **重新组织归因配置文件**。
 
-   * The *Attribution* folder was renamed to ***Attribution - Premium*** (found in the default installation at *Profiles*\*Attribution - Premium*).
+   * 的 *归因* 文件夹已重命名为 ***归因 — 高级*** (在默认安装中找到，位于 *用户档案*\*Attribution - Premium*)。
 
    * 删除了 *Premium* 配置文件，并将工作区移至新增的 ***Attribution - Premium*** 文件夹。
 
-* **更新&#x200B;*Attribution - Premium*设置**。如果您使用覆盖默认 *Adobe SC* 配置文件的参数设置对配置文件进行了自定义，则需要更新这些配置文件中的自定义字段：
+* **更新 *Attribution - Premium* 设置**。如果您使用覆盖默认 *Adobe SC* 配置文件的参数设置对配置文件进行了自定义，则需要更新这些配置文件中的自定义字段：
 
    * **[!DNL Decoding Instructions.cfg]**
    * **[!DNL SC Fields.cfg]**
@@ -74,7 +76,7 @@ ht-degree: 74%
 
 * **更新自定义的 Meta.cfg 文件**（如有必要）。
 
-   The **[!DNL Meta.cfg]** files in **[!DNL Base\Context and AdobeSC\Context]** folders have been updated in this release.
+   的 **[!DNL Meta.cfg]** 文件 **[!DNL Base\Context and AdobeSC\Context]** 此版本中更新了文件夹。
 
    如果您在安装期间覆盖了 **meta.cfg** 文件，则需要通过适当地输入这些参数以及&#x200B;**元数据矢量**，来更新您的配置文件副本：
 
@@ -99,7 +101,7 @@ ht-degree: 74%
 
 * **设置 Report Server 权限**，以便在 Windows Server 2012 上生成 Microsoft Excel 报表。
 
-   1. Set permission of the root folder (**[!DNL E:\ReportServer\]**) to *Everyone = full control*.
+   1. 设置根文件夹的权限(**[!DNL E:\ReportServer\]**) *每个人=完全控制*.
 
    1. 使用适当的权限，创建下面的文件夹：
 
@@ -112,11 +114,11 @@ ht-degree: 74%
 
       >[!NOTE]
       >
-      >如果在Windows Server 2012上运行报告服务器，则需要安装Windows Server 2012 R2。
+      >如果您在Windows Server 2012上运行报表服务器，则需要安装Windows Server 2012 R2。
 
    1. 指派“SYSTEM”作为这些文件夹的所有者。
 
-* **向 Report Server 添加字体。** 在***[!DNL ReportServer.cfg]*文件中，添加以下字体（适用于所有语言）:
+* **向 Report Server 添加字体。** 在**[!DNL ReportServer.cfg]**文件，添加以下字体（适用于所有语言）：
 
    ```
    Fonts = vector: 3 items 
@@ -125,7 +127,7 @@ ht-degree: 74%
      2 = string: MS Mincho
    ```
 
-* **更新Microsoft Excel **（如有必要）。
+* **更新您的Microsoft Excel **版本（如有必要）。
 
    随着 Data Workbench 6.4 的发布，对 Excel 2007 的支持已经终止。此外，由于 Data Workbench 只能在 Microsoft Windows 的 64 位体系结构中运行，因此建议您同时安装 Microsoft Excel 的 64 位版本。
 
@@ -156,4 +158,3 @@ ht-degree: 74%
      1 = string: SimSun 
      2 = string: MS Mincho
    ```
-

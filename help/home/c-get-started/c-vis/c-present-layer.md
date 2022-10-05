@@ -1,18 +1,22 @@
 ---
 description: 通过表示图层，您可以标记并批注工作区可视化，然后发布您的标注和注释。在叠加中增加了文本说明、图形对象、标注箭头、颜色编码、图像和其他功能，可添加批注并阐明重要的数据点，然后将其与利益相关方分享。
-title: 对可视化添加注释
+title: 在可视化图表中添加批注
 uuid: f296b04e-4c02-4ee3-93cb-dd1163b855de
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 6adb7971-ef09-4e90-873b-586ae1d55f96
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 95%
 
 ---
 
+# 在可视化图表中添加批注{#annotating-visualizations}
 
-# Annotating visualizations{#annotating-visualizations}
+{{eol}}
 
 通过表示图层，您可以标记并批注工作区可视化，然后发布您的标注和注释。在叠加中增加了文本说明、图形对象、标注箭头、颜色编码、图像和其他功能，可添加批注并阐明重要的数据点，然后将其与利益相关方分享。
 
-**为可视化添加注释：**
+**向可视化中添加注释：**
 
 1. 打开一个工作区。
 1. 转到&#x200B;**文件** > **表示图层**。
@@ -34,7 +38,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    >[!NOTE]
    >
-   >您还可以在工作区中右键单击以使用菜单命令更改模式。
+   >也可以在工作区中右键单击以使用菜单命令更改模式。
 
    ![](assets/6_4_presentation_layer_right_menu.png)
 

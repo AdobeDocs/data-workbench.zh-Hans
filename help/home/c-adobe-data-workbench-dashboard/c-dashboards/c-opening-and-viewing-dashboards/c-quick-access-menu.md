@@ -3,7 +3,7 @@ description: 打开功能板的最简单方法之一是使用功能板界面左�
 title: “快速访问”菜单
 uuid: 724a3cf5-94e9-4f4a-ba88-6e010015fe0d
 exl-id: 36717e0d-e0e4-4ec3-857c-59d01913363a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # “快速访问”菜单{#quick-access-menu}
+
+{{eol}}
 
 打开功能板的最简单方法之一是使用功能板界面左侧导航面板上的快速访问菜单。
 

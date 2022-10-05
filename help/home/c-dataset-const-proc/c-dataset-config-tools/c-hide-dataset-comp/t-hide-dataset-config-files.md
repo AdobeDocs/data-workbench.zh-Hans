@@ -3,7 +3,7 @@ description: 如果您不希望从内部配置文件或其他继承配置文件�
 title: 隐藏数据集配置文件
 uuid: eb33cf54-e067-4af2-a10e-7ffe43910e4f
 exl-id: 327847d1-421a-4ed1-9a5f-2491765a34bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 67%
@@ -12,17 +12,19 @@ ht-degree: 67%
 
 # 隐藏数据集配置文件{#hiding-dataset-configuration-files}
 
+{{eol}}
+
 如果您不希望从内部配置文件或其他继承配置文件中继承配置文件（也就是说，您希望在数据集构建期间忽略文件中的说明），但又不想要修改文件，则可以创建一个同名的空（零字节）文件，并将该文件存储在其他配置文件中。
 
 **将数据集配置文件设为零字节**
 
-1. 在[!DNL Profile Manager]中，打开必要的文件夹和子文件夹，以找到要设置零字节的文件。
-1. 右键单击文件名称旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。
+1. 在 [!DNL Profile Manager]，打开必要的文件夹和子文件夹以找到要设置零字节的文件。
+1. 右键单击文件名旁边的复选标记，然后单击 **[!UICONTROL Make Local]**.
 1. 在文本编辑器（例如记事本）中打开本地文件，然后删除其内容。
 1. 保存并关闭该文件。
-1. 在[!DNL Profile Manager]中，将零字节文件保存到原始文件所在配置文件右侧的配置文件中。 （您要使零字节文件优先于原始文件。）
+1. 在 [!DNL Profile Manager]，将零字节文件保存到原始文件所在配置文件右侧的配置文件中。 （您要使零字节文件优先于原始文件。）
 
-   在[!DNL Profile Manager]中，列中的连字符(-)（而不是复选标记）标识零字节文件，如以下示例所示。
+   在 [!DNL Profile Manager]，列中的连字符(-)（而不是复选标记）用于标识零字节文件，如以下示例中所示。
 
    ![](assets/vis_ProfileManager_ZeroByteFile.png)
 

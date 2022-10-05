@@ -1,16 +1,18 @@
 ---
 description: 介绍八种不同的可视化图表类型。
-title: 可视化类型
+title: 可视化图表类型
 uuid: f98a6ff5-19c9-46a1-958e-054e1b808c23
 exl-id: 3c0170c8-6b5e-4b8f-9353-a7eb699a37fa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 4%
 
 ---
 
-# 可视化图表类型{#visualization-types}
+# 可视化图表类型 {#visualization-types}
+
+{{eol}}
 
 介绍八种不同的可视化图表类型。
 

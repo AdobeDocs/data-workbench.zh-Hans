@@ -3,7 +3,7 @@ description: 有关如何安装和配置在Microsoft Windows Server 2000或更�
 title: Windows Server 2000 或更高版本上的 Microsoft IIS
 uuid: 26da0638-82c8-424f-9f00-aab3a940e5a9
 exl-id: e4b5ac44-b0ac-43be-9b9c-180a64354081
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Windows Server 2000 或更高版本上的 Microsoft IIS{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 有关如何安装和配置在Microsoft Windows Server 2000或更高版本下运行的Internet Information Services(IIS)5.x或6.x传感器的说明。
 
@@ -79,12 +81,12 @@ txlogd.conf文件包含传感器的配置参数。
 
 您必须编辑文件以指定磁盘队列的大小、Insight Server的地址以及将附加到此传感器生成数据的ID等内容。 配置文件包含必需的参数和可选参数。
 
-* **必需** 参数是安装传感器时必须指定的设置。如果没有这些设置，传感器将无法成功运行。
-* **可选** 参数是默认为预定义值（您可以修改）或启用可选功能的设置。
+* **必需的参数** 是安装传感器时必须指定的设置。 如果没有这些设置，传感器将无法成功运行。
+* **可选参数** 是默认设置，用于预定义值（您可以对其进行修改）或启用可选功能。
 
 **编辑传感器配置文件**
 
-1. 在文本编辑器中打开`<SensorDirectory>/txlogd.conf`文件，并设置所需参数以及任何所需的可选参数。
+1. 打开 `<SensorDirectory>/txlogd.conf` 文件，并设置所需的参数以及任何所需的可选参数。
 
    有关txlogd.conf参数的描述，请参阅传感器Txlogd.conf文件参数。
 

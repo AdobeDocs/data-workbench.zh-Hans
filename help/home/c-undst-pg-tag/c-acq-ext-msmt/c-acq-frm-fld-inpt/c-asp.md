@@ -3,7 +3,7 @@ description: 网页通常使用ASP(Active Server Pages)编程语言来构建。
 title: ASP 特定信息
 uuid: 552288cb-b775-4121-8869-322f2a26932b
 exl-id: f73235e1-d44a-4056-b1f4-a86879c19483
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # ASP 特定信息{#asp-specific-information}
+
+{{eol}}
 
 网页通常使用ASP(Active Server Pages)编程语言来构建。
 
@@ -32,7 +34,7 @@ Response.AppendToLog("&v_3=" +  sState);
 Response.AppendToLog("&v_4=" +  sZip);
 ```
 
-此过程会将定义的表单值附加到[!DNL Form Processing]页面的请求数据中。 在日志数据中，附加的值可用作[!DNL Form Processing]页面的查询字符串，如下图所示。 例如，v_1、v_2、v_3和v_4现在将是查询字符串，其中包含输入到相应表单字段中的数据。 您可以对要捕获的任何其他表单字段和值复制上述示例中描述的语法。
+此过程会将定义的表单值附加到 [!DNL Form Processing] 页面。 在日志数据中，附加的值将可用作 [!DNL Form Processing] 页面，如下所示。 例如，v_1、v_2、v_3和v_4现在将是查询字符串，其中包含输入到相应表单字段中的数据。 您可以对要捕获的任何其他表单字段和值复制上述示例中描述的语法。
 
 ```
 https://www.myserver.com/path/to/formprocessingpage.asp?v_1=John+Smith&v_2=Los+Angeles&v_3=California&v_4=90210
@@ -45,7 +47,7 @@ var formvalues = Response.Form;
 Response.AppendToLog(formvalues);
 ```
 
-此示例将采用HTML内存在的所有表单字段及其各自的值，并将它们作为查询字符串附加到[!DNL Form Processing]页面的日志条目中。 应当指出，这将包括表单中存在的任何隐藏字段。
+此示例将采用HTML内存在的所有表单字段及其各自的值，并将它们作为查询字符串附加到的日志条目中 [!DNL Form Processing] 页面。 应当指出，这将包括表单中存在的任何隐藏字段。
 
 日志数据将得到增强，如下表所示：
 

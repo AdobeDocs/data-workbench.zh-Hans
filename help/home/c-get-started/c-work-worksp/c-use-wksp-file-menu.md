@@ -3,7 +3,7 @@ description: 有关工作区“文件”菜单中可用菜单选项的信息。
 title: 工作区“文件”菜单
 uuid: abbdb2db-d918-4edf-977c-1daaf8a71721
 exl-id: b2bb7d89-249c-40f5-85aa-02fea0b0fc61
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 63%
@@ -12,9 +12,11 @@ ht-degree: 63%
 
 # 工作区“文件”菜单{#workspace-file-menu}
 
+{{eol}}
+
 有关工作区“文件”菜单中可用菜单选项的信息。
 
-在工作区中，单击&#x200B;**[!UICONTROL File]**。
+在工作区中，单击 **[!UICONTROL File]**.
 
 ![](assets/mnu_file.png)
 
@@ -40,11 +42,11 @@ ht-degree: 63%
 
 设置工作区的工作页面大小。可以为计算机屏幕、打印页面和报表选择“全屏”、“标准”或任何特定大小。“全屏”填充特定屏幕，“标准”是可以配置为适合您组织的标准屏幕大小的设置。默认“标准”设置填充使用 1024 x 768 分辨率时的屏幕。
 
-复制、另存为[!DNL .png]文件或打印的工作区也使用此页面大小进行输出。 大于Data Workbench可视化的页面大小使用滚动条，而小的页面大小在屏幕上居中，并在工作区周围显示浅灰色边框。
+复制、另存为的工作区 [!DNL .png] 文件或打印的页面大小也用于输出。 大于Data Workbench可视化的页面大小使用滚动条，而小的页面大小在屏幕上居中，并在工作区周围显示浅灰色边框。
 
 **描述**
 
-让您可以创建或编辑工作区的文本说明。该文本显示在 [!DNL Worktop] 中的缩略图下。请参阅[向工作区添加描述](../../../home/c-get-started/c-work-worksp/t-add-wksp-desc.md#task-163734487e8848dfa0a4d8da6323a963)。
+让您可以创建或编辑工作区的文本说明。该文本显示在 [!DNL Worktop] 中的缩略图下。请参阅 [向工作区添加描述](../../../home/c-get-started/c-work-worksp/t-add-wksp-desc.md#task-163734487e8848dfa0a4d8da6323a963).
 
 **在后台计算**
 
@@ -59,15 +61,15 @@ ht-degree: 63%
 
 **关闭**
 
-关闭工作区。单击&#x200B;**[!UICONTROL Close]** > **[!UICONTROL Save]**&#x200B;以保存您在工作区中所做的更改，或单击&#x200B;**[!UICONTROL Close]** > **[!UICONTROL Don’t Save]**&#x200B;以返回到[!DNL Worktop]，而不保存您在工作区中所做的更改。
+关闭工作区。单击 **[!UICONTROL Close]** > **[!UICONTROL Save]** 要保存您在工作区中所做的更改，请单击 **[!UICONTROL Close]** > **[!UICONTROL Don’t Save]** 返回 [!DNL Worktop] 而不保存您在工作区中所做的更改。
 
 您也可以使用以下任一方法保存更改、关闭工作区并返回 [!DNL Worktop]：
 
 * 单击工作区左上角的Data Workbench徽标。
 * 如果您的鼠标具有导航按钮，则单击您鼠标上的后退按钮。
 
-您也可以通过按&#x200B;**Ctrl+Backspace**&#x200B;关闭工作区而不保存来撤消更改。
+您还可以通过按关闭工作区而不保存来撤消更改 **Ctrl+Backspace**.
 
 **从模板导出到 Excel**
 
-如果Data Workbench机上安装了Microsoft Excel，则会自动启动Microsoft Excel，并将某些可视化、某些图例和文本批注中的数据导出到您选择的模板Excel文件（[!DNL .xls]或[!DNL .xlsx]）。 请参阅[导出到模板 Excel 文件](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302)。
+如果Data Workbench计算机上安装了Microsoft Excel，则会自动启动Microsoft Excel，并将某些可视化、某些图例和文本批注中的数据导出到模板Excel文件( [!DNL .xls]或 [!DNL .xlsx])。 请参阅[导出到模板 Excel 文件](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302)。

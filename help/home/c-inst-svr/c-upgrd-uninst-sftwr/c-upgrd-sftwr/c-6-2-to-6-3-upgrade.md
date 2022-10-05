@@ -3,7 +3,7 @@ description: 升级Data Workbench6.3的服务器组件。
 title: 从DWB服务器升级6.2到6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 exl-id: 5106d9a3-179a-49f1-915a-c03b36ed5257
-source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 56%
@@ -12,16 +12,18 @@ ht-degree: 56%
 
 # DWB 服务器升级：从 6.2 到 6.3{#dwb-server-upgrade-to}
 
+{{eol}}
+
 升级Data Workbench6.3的服务器组件。
 
 **升级服务器**
 
-如果您的自定义配置文件优先于[!DNL Base]包中提供的默认文件，则需要更新以下自定义文件：
+如果您的自定义用户档案优先于 [!DNL Base] 包中，则需要更新这些自定义文件：
 
-* **更新Meta.cfg文件** ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)])，为文件系统单元（FSU服务器）设置更新的密码加密，并为名称值对转换添加条目，以利用 [查询字符串分组](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0)。
+* **更新Meta.cfg文件** ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]为文件系统单元（FSU服务器）设置更新的密码加密，并为名称值对转换添加条目以利用 [查询字符串分组](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0).
 
    1. 打开 FSU 中的 [!DNL meta.cfg] 文件。
-   1. 在&#x200B;*工作站配置*&#x200B;部分中，将&#x200B;**[!UICONTROL Proxy Password]**&#x200B;的数据类型从“ [!DNL string"]”更改为“ [!DNL EncryptedString]”。
+   1. 更改的数据类型 **[!UICONTROL Proxy Password]** 从&quot; [!DNL string"] &quot; [!DNL EncryptedString]“ *工作站配置* 中。
 
       ```
         Proxy User Name = string:
@@ -57,7 +59,7 @@ ht-degree: 56%
       <new>)
       ```
 
-   * **Disk Files.cfg** (位 [!DNL E:\Server\Components] 于和 [!DNL E:\Server\Components for Processing Servers])
+   * **Disk Files.cfg** (在 [!DNL E:\Server\Components] 和 [!DNL E:\Server\Components for Processing Servers])
 
       ```
       Disk Cache Size (MB) = double: 1024
@@ -95,7 +97,7 @@ ht-degree: 56%
    >
    >若要利用快速合并改进，请确保您的每个 DPU 至少有 8 GB 的 RAM。
 
-* **具有 DWB 集成更新的 Adobe Target**。新的导出文件[!DNL ExportIntegration.exe]将替换Insight Server上的现有[!DNL TnTSend.exe]文件(`E:\Server\Scripts\TnTSend.exe`)。 这个新导出的文件同时支持 [Adobe Target](https://www.adobe.com/marketing/target.html) 与最新主营销配置文件 (MMP) 和 [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html) 的集成和协同。
+* **具有 DWB 集成更新的 Adobe Target**。新的导出文件， [!DNL ExportIntegration.exe]，替换现有 [!DNL TnTSend.exe] 文件(`E:\Server\Scripts\TnTSend.exe`)。 这个新导出的文件同时支持 [Adobe Target](https://www.adobe.com/marketing/target.html) 与最新主营销配置文件 (MMP) 和 [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html) 的集成和协同。
 
    您将需要为 Adobe Target 导出更新以下命令。
 
@@ -116,13 +118,13 @@ ht-degree: 56%
    您还可以尝试下列操作以使用旧的导出过程：
 
    * 在工作站中创建新的 Test&amp;Target 导出。
-   * 修改[!DNL Server/Profiles/`<your profile>`/Export.]中的旧Test和Target导出
+   * 修改旧的Test &amp; Target导出，该导出位于 [!DNL Server/Profiles/`<your profile>`/导出。]
 
-* **更新 Adobe SC 配置文件。** 对文件的更 [!DNL Exclude Hit.cfg] 改需要在关联的文件中声明一个 [!DNL Decoding Instructions.cfg] 字段。
+* **更新 Adobe SC 配置文件。** 对 [!DNL Exclude Hit.cfg] 文件要求在关联的 [!DNL Decoding Instructions.cfg] 文件。
 
    >[!NOTE]
    >
-   >如果您的AdobeSC配置文件包含自定义的[!DNL Decoding Instructions.cfg]文件，则需要在自定义文件中包含[!DNL DelimitedDecoder]参数。
+   >如果您的AdobeSC配置文件包含自定义 [!DNL Decoding Instructions.cfg] 文件，您将需要 [!DNL DelimitedDecoder] 参数添加到自定义文件。
 
    ```
    0 = DelimitedDecoder:

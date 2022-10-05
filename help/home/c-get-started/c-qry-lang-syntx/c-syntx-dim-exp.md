@@ -3,7 +3,7 @@ description: 维度表达式从不单独使用，但是可以在量度或过滤�
 title: 维度表达式的语法
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 92%
@@ -12,13 +12,15 @@ ht-degree: 92%
 
 # 维度表达式的语法{#syntax-for-dimension-expressions}
 
+{{eol}}
+
 维度表达式从不单独使用，但是可以在量度或过滤器表达式中调用维度的任何地方使用。
 
 1. 带下划线的字词应该在表达式文本中逐字输入。
-1. 表单`{TEXT}?`表示可选文本。
-1. 表单`{TEXT}*`表示可能出现零次或更多次的文本。
-1. 表单`{A | B | C |...}`表示只包含给定选项之一（如A、B或C...）的文本。.
-1. 表单`[A,B)`表示从A到B（但不包括B）的数字范围。
+1. 表单 `{TEXT}?` 表示可选文本。
+1. 表单 `{TEXT}*` 表示可能出现零次或更多次的文本。
+1. 表单 `{A | B | C |...}` 表示只包含给定选项之一（如A或B或C...）的文本。.
+1. 表单 `[A,B)` 表示从A到（但不包括B）的数字范围。
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
@@ -48,7 +50,7 @@ ht-degree: 92%
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Size}? }?) </p> </td> 
-   <td colname="col2"> <p>定义其元素是数字范围（固定大小，如 [0-9], [10-19],...）的维度。Level 的元素与存储段维度（范围包括该级别元素的 Metric 值）的元素相关联。Format 是用于格式化 Metric 元素的 printf 格式字符串。 </p> <p>示例：如果Page_Duration_Minutes是表示每页逗留分钟数的页面查看级别维度，则bucket(Session， sum(Page_Duration_Minutes， Page_View), 100, "%0.0f minutes", 0, 5)是表示每个会话所花费的分钟数的会话级别维度；其元素间隔为5分钟<code>{[0-5), [5-10),...,[495-500)}</code>。 </p> <p>Start 是第一个间隔的起始值（默认：0），Size 是间隔的大小（默认：1）。 </p> </td> 
+   <td colname="col2"> <p>定义其元素是数字范围（固定大小，如 [0-9], [10-19],...）的维度。Level 的元素与存储段维度（范围包括该级别元素的 Metric 值）的元素相关联。Format 是用于格式化 Metric 元素的 printf 格式字符串。 </p> <p>示例：如果Page_Duration_Minutes是表示每页逗留分钟数的页面查看级别维度，则bucket(Session， sum(Page_Duration_Minutes， Page_View), 100, "%0.0f minutes", 0, 5)是表示每个会话所花费的分钟数的会话级别维度；其元素间隔为5分钟 <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start 是第一个间隔的起始值（默认：0），Size 是间隔的大小（默认：1）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}* )}* ) </p> </td> 

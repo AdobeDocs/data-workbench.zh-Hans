@@ -1,16 +1,18 @@
 ---
 description: 如果使用 Categorize 或 FlatFileLookup 转换，对照表将加载到内存并从无格式文件填充，该文件的位置在定义转换时指定。
-title: 填充对照表
+title: 填充查找表
 uuid: a11f3902-8853-4d22-bbfd-b2a3d143cb7b
 exl-id: e83d9feb-44fe-4fa1-b559-e1f5606637b5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 95%
 
 ---
 
-# 填充对照表{#populating-the-lookup-table}
+# 填充查找表{#populating-the-lookup-table}
+
+{{eol}}
 
 如果使用 Categorize 或 FlatFileLookup 转换，对照表将加载到内存并从无格式文件填充，该文件的位置在定义转换时指定。
 

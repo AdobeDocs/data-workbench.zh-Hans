@@ -3,14 +3,16 @@ description: 服务器监视器界面可用于疑难解答或仅跟踪Data Workb
 title: 服务器监视器界面
 uuid: 609dd8ea-31a9-44c1-ab75-ca783ec85650
 exl-id: fb8baae9-ac1e-4355-ba38-fef6621e22bb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 63%
+source-wordcount: '361'
+ht-degree: 59%
 
 ---
 
 # 服务器监视器界面{#server-monitor-interface}
+
+{{eol}}
 
 服务器监视器界面可用于疑难解答或仅跟踪Data Workbench服务器计算机和作为Data Workbench服务器计算机客户端的报表计算机的性能参数。
 
@@ -18,19 +20,19 @@ ht-degree: 63%
 
 服务器监视器界面比较靠下的部分列出了每个可用配置文件的处理状态，以及有关该计算机的性能详细信息。
 
-有关[!DNL Data Workbench servers]的详细信息，请参阅&#x200B;*《服务器产品安装和管理指南》*。 有关[!DNL Report]的更多信息，请参阅&#x200B;*Data Workbench报表指南*。
+有关 [!DNL Data Workbench servers]，请参阅 *《服务器产品安装和管理指南》*. 有关 [!DNL Report]，请参阅 *Data Workbench报表指南*.
 
 **打开服务器监视器界面**
 
-* 在“服务器管理器”中，右键单击Data Workbench服务器或[!DNL Report]计算机的节点。 t
+* 在“服务器管理器”中，右键单击Data Workbench服务器的节点，或 [!DNL Report] 电脑。 t
 
-单击&#x200B;**[!UICONTROL Server Monitor]**&#x200B;查看有关一台服务器的详细信息，或单击&#x200B;**[!UICONTROL Related Servers]** > **[!UICONTROL Server Monitor List]**&#x200B;查看有关一组相关服务器的详细信息。
+单击 **[!UICONTROL Server Monitor]** 要查看有关一台服务器的详细信息，请单击 **[!UICONTROL Related Servers]** > **[!UICONTROL Server Monitor List]** 查看有关相关服务器群集的详细信息。
 
 ![](assets/vis_ServerMonitor.png)
 
-[!DNL Server Monitor]接口每10秒会自动更新一次。
+的 [!DNL Server Monitor]界面会每10秒自动更新一次。
 
-下表列出了可使用[!DNL Server Monitor]接口完成的任务。
+下表列出了可使用 [!DNL Server Monitor] 界面。
 
 <table id="table_A65426669ADE44B5A6BAD9D4E99A5CAC"> 
  <thead> 
@@ -50,7 +52,7 @@ ht-degree: 63%
   </tr> 
   <tr> 
    <td colname="col1"> <p>查看完成转换和查询大致所用的时间 </p> </td> 
-   <td colname="col2"> <p>查看扫描时间 (hh:mm:ss) 字段，它仅在转换或查询过程中出现。 </p> </td> 
+   <td colname="col2"> <p>查看扫描时间(hh):mm:ss)字段，该字段仅在转换或查询期间存在。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>确定计算机的当前网络连接数 </p> </td> 

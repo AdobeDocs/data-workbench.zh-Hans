@@ -1,9 +1,9 @@
 ---
 description: Math 转换允许对日志条目中的字段使用算术运算。
-title: Math
+title: 数学
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
 exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 97%
@@ -11,6 +11,8 @@ ht-degree: 97%
 ---
 
 # 数学{#math}
+
+{{eol}}
 
 Math 转换允许对日志条目中的字段使用算术运算。
 
@@ -63,7 +65,7 @@ Math 转换允许对日志条目中的字段使用算术运算。
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output（输出） </td> 
+   <td colname="col1"> 输出 </td> 
    <td colname="col2"> 包含算术运算结果的字段名称。 </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -74,4 +76,4 @@ Math 转换允许对日志条目中的字段使用算术运算。
 
 ![](assets/cfg_TransformationType_Math.png)
 
-有关[!DNL Not Empty]条件的信息，请参阅[条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。
+有关 [!DNL Not Empty] 条件，请参阅 [条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).

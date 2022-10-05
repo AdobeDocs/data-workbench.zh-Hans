@@ -3,7 +3,7 @@ description: 多对多维度与其父可计数维度有多对多的关系。
 title: 多对多维度
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
 exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 多对多维度{#many-to-many-dimensions}
+
+{{eol}}
 
 多对多维度与其父可计数维度有多对多的关系。
 

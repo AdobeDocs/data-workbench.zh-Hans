@@ -3,7 +3,7 @@ description: Flatten 转换获取字符串矢量，并将每个值映射到其�
 title: Flatten
 uuid: 00b06a5c-506b-45fe-9773-44d65b8ec233
 exl-id: 63f3e4bc-238f-4e15-8ae5-2f805bd080d3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 99%
@@ -11,6 +11,8 @@ ht-degree: 99%
 ---
 
 # Flatten{#flatten}
+
+{{eol}}
 
 Flatten 转换获取字符串矢量，并将每个值映射到其自身的字段中。
 
@@ -23,7 +25,7 @@ Flatten 转换获取字符串矢量，并将每个值映射到其自身的字段
 | Input（输入） | 要映射到输出字段名称的字符串值矢量。 |  |
 | Outputs（输出） | 一组输出字段名称。 |  |
 
-[!DNL Flatten]的注意事项
+注意事项 [!DNL Flatten]
 
 * 如果输入矢量包含的值比定义的输出字段多，则会直接删除额外的输入值。
 * 如果输入矢量包含的值比定义的输出字段少，则会为多余的输出字段指定默认值（如果定义），或者如果未定义默认值，则将指定空字符串。

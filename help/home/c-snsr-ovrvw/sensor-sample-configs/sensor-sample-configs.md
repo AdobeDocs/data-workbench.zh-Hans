@@ -2,19 +2,23 @@
 description: 配置文件的示例文件。
 title: 示例配置文件
 uuid: 9bc5c0a9-e67a-4c63-952d-9a39d75e6975
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 8a9abadb-228b-4da6-bfe6-8e828bb6ace9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 8%
 
 ---
 
-
 # 示例配置文件{#sample-configuration-files}
+
+{{eol}}
 
 配置文件的示例文件。
 
 ## Magnus.conf文件示例 {#section-aec81c734d0f483591c3ede1fe588b6a}
 
-用于Netscape Enterprise Server、iPlanet、Sun ONE和Sun Java System Web服务器安装和配置的完整magnus.conf文件示例。
+Netscape Enterprise Server、iPlanet、Sun ONE和Sun Java System Web服务器安装和配置的完整magnus.conf文件示例。
 
 ```
 #ServerRoot /usr/iplanet/servers/https-nova.visualsciences.net
@@ -44,7 +48,7 @@ Init fn="vys-init" config-file="/etc/txlogd.conf"
 
 ## Obj.conf文件示例 {#section-1acd3ae557074ee6a46492eb98f89805}
 
-用于Netscape Enterprise Server、iPlanet、Sun ONE和Sun Java System Web服务器安装和配置的完整obj.conf文件示例。
+Netscape Enterprise Server、iPlanet、Sun ONE和Sun Java System Web服务器安装和配置的完整obj.conf文件示例。
 
 ```
 <Object name=default>
@@ -94,4 +98,3 @@ Init fn="vys-init" config-file="/etc/txlogd.conf"
   PathCheck fn="check-acl" acl="es-internal"
 </Object>
 ```
-

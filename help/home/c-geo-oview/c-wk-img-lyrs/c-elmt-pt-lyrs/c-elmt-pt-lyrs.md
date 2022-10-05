@@ -3,7 +3,7 @@ description: 在 Data Workbench 中，元素点层在地球上针对维度的每
 title: 使用元素点层
 uuid: 71b58e7f-a9f5-479c-855b-7215eb5347f0
 exl-id: 8010474c-b673-4187-aaea-cbff2db1150b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 使用元素点层{#working-with-element-point-layers}
+
+{{eol}}
 
 在 Data Workbench 中，元素点层在地球上针对维度的每个元素显示一个点。
 

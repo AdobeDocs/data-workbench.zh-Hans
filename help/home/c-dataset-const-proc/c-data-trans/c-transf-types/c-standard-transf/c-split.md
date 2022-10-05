@@ -1,9 +1,9 @@
 ---
 description: Split 转换基于给定的分隔符将一个字符串拆分为子字符串矢量。
-title: Split
+title: 拆分
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
 exl-id: ea85b095-1306-4938-906d-35d421db6c98
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 90%
@@ -11,6 +11,8 @@ ht-degree: 90%
 ---
 
 # 拆分{#split}
+
+{{eol}}
 
 Split 转换基于给定的分隔符将一个字符串拆分为子字符串矢量。
 
@@ -51,7 +53,7 @@ Split 转换基于给定的分隔符将一个字符串拆分为子字符串矢�
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output（输出） </td> 
+   <td colname="col1"> 输出 </td> 
    <td colname="col2"> 输出字段的名称。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -62,7 +64,7 @@ Split 转换基于给定的分隔符将一个字符串拆分为子字符串矢�
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-cs-uri-stem 字段用于确定日志条目请求的页面是否为确认页面。客户购买的产品代码作为 prod_selected 名称的逗号分隔值在 cs-uri-query 中列出。如果cs-uri-stem的值与[!DNL String Match]条件中指定的值匹配，则可以使用[!DNL Split]转换通过以逗号拆分产品代码来提取此信息。 请参阅[字符串匹配](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)。以下转换详细说明了这一问题的解决方案。
+cs-uri-stem 字段用于确定日志条目请求的页面是否为确认页面。客户购买的产品代码作为 prod_selected 名称的逗号分隔值在 cs-uri-query 中列出。的 [!DNL Split] 如果cs-uri-stem的值与 [!DNL String Match] 条件。 请参阅[字符串匹配](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)。以下转换详细说明了这一问题的解决方案。
 
 ![](assets/cfg_TransformationType_Split.png)
 

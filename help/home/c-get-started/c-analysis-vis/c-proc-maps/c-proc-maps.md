@@ -3,7 +3,7 @@ description: 流程图可用于分析某个维度的元素之间的活动流。
 title: 流程图
 uuid: f1db41a9-400e-467a-ba59-39831fb166af
 exl-id: 019cee7b-a704-4b47-84c6-d3ddc277c43e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 81%
@@ -11,6 +11,8 @@ ht-degree: 81%
 ---
 
 # 流程图{#process-map}
+
+{{eol}}
 
 流程图可用于分析某个维度的元素之间的活动流。
 
@@ -28,7 +30,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->为了使这些映射最有效地工作，您应该在工作区中打开一个颜色图例。 有关在流程图中使用颜色图例的信息，请参阅[激活颜色链接](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md#concept-2c9b9f67f2bd4cd7a5431fa21c094edc)。 有关颜色图例的更多信息，请参阅[颜色图例](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358)。
+>为了使这些映射最有效地工作，您应该在工作区中打开一个颜色图例。 有关在流程图中使用颜色图例的信息，请参阅 [激活颜色链接](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md#concept-2c9b9f67f2bd4cd7a5431fa21c094edc). 有关颜色图例的更多信息，请参阅 [颜色图例](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
 
 每个流程图都具有关联的基本维度、组维度、级别维度和量度，它们为解释在流程图中显示的数据提供关键信息。
 
@@ -40,7 +42,7 @@ ht-degree: 81%
 
    * 两个节点之间的连接不能跨越组维度的多个元素。为了解此内容，请考虑使用 Web 数据的示例。假定流程图的基本、级别和组维度分别为“页面”、“页面查看”和“会话”。一个从页面 A 到页面 B 的连接告知您，在任何单个会话期间页面 A 的页面查看优先于页面 B 的页面查看发生，而不干涉该流程图上其他页面（节点）的页面查看。请注意，在同一会话期间网站的其他页面的页面查看可能会发生在页面 A 和页面 B 的页面查看之间，但这些页面不会显示在该流程图上。
    * 两个节点之间的连接可以表示组维度的多个元素。例如，可能有多个会话，在这些会话中页面 A 的页面查看优先于页面 B 的页面查看发生。因此，页面 A 和页面 B 之间的连接表示所有会话，在这些会话中页面 A 的页面查看优先于页面 B 的页面查看发生，而不会干涉该流程图上其他页面（节点）的页面查看。
-   * 当您在流程图中根据节点做出选择时，即选择了包含该节点的组维度的所有元素。请参阅[在可视化中进行选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。有关选择的信息，请参阅[在可视化中进行选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。
+   * 当您在流程图中根据节点做出选择时，即选择了包含该节点的组维度的所有元素。请参阅[在可视化中进行选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。有关选择的信息，请参阅 [在可视化中进行选择](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
 
 * **量度：**&#x200B;给定元素的节点大小与该元素的量度值成正比。节点越大，量度值就越大（与较小的节点相比）。
 
@@ -48,4 +50,4 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->您可以更改流程图的默认维度或量度。 有关配置流程图的步骤，请参阅[配置流程图](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6)。
+>您可以更改流程图的默认维度或量度。 有关配置流程图的步骤，请参阅 [配置流程图](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6).

@@ -3,18 +3,20 @@ description: “比较”条件和“范围”条件需要您指定对条件所�
 title: 测试运算的测试类型
 uuid: dc0433dd-a35e-472e-8975-f58347512c11
 exl-id: 8abed46e-e76d-47c0-bbe9-cf98cf2d61e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 98%
+source-wordcount: '423'
+ht-degree: 96%
 
 ---
 
 # 测试运算的测试类型{#test-types-for-test-operations}
 
+{{eol}}
+
 “比较”条件和“范围”条件需要您指定对条件所进行的比较类型。
 
-下表描述了可用类型（[!DNL LEXICAL]、[!DNL NUMERIC]和[!DNL DATETIME]）。
+下表介绍了可用类型( [!DNL LEXICAL], [!DNL NUMERIC]和 [!DNL DATETIME])。
 
 <table id="table_1B3AD8BDF0414D0AB8EE0E6D1B53E2CE"> 
  <thead> 
@@ -35,8 +37,8 @@ ht-degree: 98%
    <td colname="col2"> <p>首先将输入字段变为一个日期。如果输入字段无法变为一个有效日期，则条件测试返回 false。如果字段可以变为一个日期，则仅当输入日期不早于指定的最小日期且不晚于指定的最大日期时，测试才返回 true。 </p> </td> 
    <td colname="col3"> <p>如果最小日期和最大日期均无效，将不会构建数据集。 </p> <p> 如果未提供最小日期或最大日期，则系统会将其替换为相应的最小日期（1600 年 1 月 1 日）或最大日期（24 世纪的某个日期）。 </p> <p> Adobe 建议对 <span class="wintitle">DATETIME</span>（日期时间）使用下列格式之一： </p> 
     <ul id="ul_44F469CC5D974382AF70D7B1975CF077"> 
-     <li id="li_DB5FD4AFD6B34436ACD7C13282F64956"> January 1 2013 HH:MM:SS EDT </li> 
-     <li id="li_307580C3F97D495BB16F1212DB38CE37"> Jan 1 2013 HH:MM:SS GMT </li> 
+     <li id="li_DB5FD4AFD6B34436ACD7C13282F64956"> 2013年1月1日HH:MM:SS EDT </li> 
+     <li id="li_307580C3F97D495BB16F1212DB38CE37"> 2013年1月1日HH:MM:SS GMT </li> 
     </ul> <p> 时区在未指定的情况下会默认为 GMT。 </p> </td> 
   </tr> 
   <tr> 

@@ -3,7 +3,7 @@ description: RETransform（正则表达式）转换是一种模式匹配转换�
 title: RETransform
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
 exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 89%
@@ -12,13 +12,15 @@ ht-degree: 89%
 
 # RETransform{#retransform}
 
+{{eol}}
+
 RETransform（正则表达式）转换是一种模式匹配转换，该转换使用正则表达式指定一个要在输入中查找和捕获的模式，并将捕获的字符串存储在指定的输出字段中。
 
 正则表达式针对整个输入字符串进行计算。如果输入与正则表达式中指定的模式不匹配，则不会捕获任何数据。有关使用正则表达式的简要指南，请参阅 [正则表达式](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->[!DNL RETransform]转换的操作方式与[!DNL REMatch]转换类似（请参阅[REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)），该转换为正则表达式中的每个捕获子模式构建一个输出字段。 您可以将[!DNL RETransform]视为[!DNL REMatch]和[!DNL Format]转换的组合。 如果 Action（操作）参数（请参阅下表中的 Action（操作））设为“RESULTS”，则 [!DNL RETransform] 的运算方式类似于 [!DNL REMatch] 和 [!DNL Union] 转换的组合。
+>的 [!DNL RETransform] 转换的操作方式与 [!DNL REMatch] 转换(请参阅 [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e))，用于为正则表达式中的每个捕获子模式构建一个输出字段。 你可以想想 [!DNL RETransform] 作为 [!DNL REMatch] 和 [!DNL Format] 转换。 如果 Action（操作）参数（请参阅下表中的 Action（操作））设为“RESULTS”，则 [!DNL RETransform] 的运算方式类似于 [!DNL REMatch] 和 [!DNL Union] 转换的组合。
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 
@@ -65,7 +67,7 @@ RETransform（正则表达式）转换是一种模式匹配转换，该转换使
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output（输出） </td> 
+   <td colname="col1"> 输出 </td> 
    <td colname="col2"> 输出字符串的名称。 </td> 
    <td colname="col3"></td> 
   </tr> 

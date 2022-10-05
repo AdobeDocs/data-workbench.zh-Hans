@@ -3,14 +3,16 @@ description: 有关数字证书的常规信息及其下载和安装步骤。
 title: 下载并安装数字证书
 uuid: ac484e96-21dc-4643-ae74-01ac957e30ee
 exl-id: 8aae9b63-7df0-4725-9833-711246bbe746
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 100%
 
 ---
 
 # 下载并安装数字证书{#downloading-and-installing-the-digital-certificates}
+
+{{eol}}
 
 有关数字证书的常规信息及其下载和安装步骤。
 
@@ -52,7 +54,7 @@ Adobe 使用 X.509 数字证书来标识和验证构成实施的客户端和服�
 
 除了实现节点锁定之外，数字证书还必须是最新的。若要保持最新，必须定期（通常每隔 30 天，但具体情况可依据您与 Adobe 签署的协议而定）重新验证您的证书。如果您的计算机具有 Internet 访问权限，则重新验证过程将完全透明。您的 Adobe 产品会自动连接到许可证服务器，并在必要时重新验证证书。如果您的计算机没有 Internet 访问权限，则需要按照以下部分所述，手动安装更新的证书。
 
-## 在没有 Internet 访问权限的计算机上使用数字证书{#section-809366329a7d4e198f95fe06c1f534fa}
+## 在没有 Internet 访问权限的计算机上使用数字证书 {#section-809366329a7d4e198f95fe06c1f534fa}
 
 如果安装在无法访问 Internet 的计算机上，则必须为您的 [!DNL Insight Server] 安装请求预锁定证书。预锁定证书是 Adobe 手动锁定到计算机节点标识符的数字证书。
 

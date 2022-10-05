@@ -3,7 +3,7 @@ description: 通过右键单击可视化中的量度或维度区域访问的菜�
 title: 量度和维度菜单
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
 exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 96%
@@ -12,11 +12,13 @@ ht-degree: 96%
 
 # 量度和维度菜单{#metric-and-dimension-menus}
 
+{{eol}}
+
 通过右键单击可视化中的量度或维度区域访问的菜单提供对与该可视化中的量度或维度有关的操作的访问。
 
 有关将这些菜单选项用于特定可视化类型的详细信息，请参阅 [分析可视化](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
 
-## 量度菜单{#section-115db63a26f04b57ac954a69972c6291}
+## 量度菜单 {#section-115db63a26f04b57ac954a69972c6291}
 
 可以通过右键单击可视化中任何与量度有关的区域来访问量度菜单。
 
@@ -42,14 +44,14 @@ ht-degree: 96%
   </tr> 
   <tr> 
    <td colname="col1"> <p>缩放到所选内容 </p> </td> 
-   <td colname="col2"> <p>放大折线图中所选择的数据子集。请参阅 <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> 缩放可视化</a>. 有关选择的更多信息，请参阅<a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746">在可视化中进行选择</a>。 </p> </td> 
+   <td colname="col2"> <p>放大折线图中所选择的数据子集。请参阅 <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> 缩放可视化</a>. 有关选择的更多信息，请参阅 <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> 在可视化中进行选择</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>量度编辑器 </p> </td> 
    <td colname="col2"> <p>可用于编辑由量度名称字段标识的量度的定义。请参阅<a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797">编辑现有派生量度</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>量度 </p> </td> 
+   <td colname="col1"> <p>指标 </p> </td> 
    <td colname="col2"> <p>以下与量度有关的菜单选项的标题。 </p> </td> 
   </tr> 
   <tr> 
@@ -79,7 +81,7 @@ ht-degree: 96%
  </tbody> 
 </table>
 
-## 使用维度菜单{#section-e09de0aa6b74459a957b627ff7d07979}
+## 使用维度菜单 {#section-e09de0aa6b74459a957b627ff7d07979}
 
 可以通过右键单击可视化中任何与维度有关的区域来访问维度菜单。
 

@@ -3,7 +3,7 @@ description: 量度、维度和过滤器表达式可以使用标识符引用命�
 title: 标识符的语法
 uuid: 9cfa188a-05ca-4163-a268-e33fce9a1929
 exl-id: 79bc5585-7b21-4a9d-b044-28ff4bc5a885
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 标识符的语法{#syntax-for-identifiers}
+
+{{eol}}
 
 量度、维度和过滤器表达式可以使用标识符引用命名的量度、维度和过滤器。
 

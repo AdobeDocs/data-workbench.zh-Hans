@@ -2,19 +2,23 @@
 description: 查询字符串分组允许您将大量的字段集成在一起。
 title: 查询字符串分组
 uuid: 7dc5ba71-984f-4899-99d2-f79b57fb616d
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 4052cf7e-abdf-4e16-9f42-521c4e719786
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 84%
 
 ---
 
-
 # 查询字符串分组{#query-string-grouping}
+
+{{eol}}
 
 查询字符串分组允许您将大量的字段集成在一起。
 
 查询字符串分组特定于每个配置文件，但在如下示例显示的转换中也可正常工作。
 
-1. Create the pairs you wish to bundle by adding a custom configuration file ( [!DNL E:\...\Dataset\Log Processing\SC Fields.cfg]) and then adding the Transformation Type *BuildNameValuePair* as a parameter.
+1. 通过添加自定义配置文件( [!DNL E:\...\Dataset\Log Processing\SC Fields.cfg])，然后添加转换类型 *BuildNameValuePair* 作为参数。
 
    ```
    2 = BuildNameValuePair:  

@@ -3,7 +3,7 @@ description: 以下维度可在Data Workbench服务器状态配置文件中使�
 title: Data Workbench 服务器状态配置文件中的维度
 uuid: 4cfe882a-2797-4af9-bd6d-75bc31ee909c
 exl-id: 002f6b95-f151-41d9-ae28-9c01c1f621ee
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Data Workbench 服务器状态配置文件中的维度{#dimensions-in-the-data-workbench-server-status-profile}
+
+{{eol}}
 
 以下维度可在Data Workbench服务器状态配置文件中使用。
 
@@ -50,14 +52,14 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b>环境</b> </td> 
-   <td colname="col2">cs-uri-query(c)值用于环境ID。 块的最后一行将用作维度的值。 此简单Dimension将显示您的服务器正在运行的环境（如果已正确配置）。 <p><p>注意： 此维度在insight_monitor_agent.cfg中设置。 </p></p></td> 
+   <td colname="col2">cs-uri-query(c)值用于环境ID。 块的最后一行将用作维度的值。 此简单Dimension将显示您的服务器正在运行的环境（如果已正确配置）。 <p><p>注意：此维度在insight_monitor_agent.cfg中设置。 </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>估计扫描秒数</b> </td> 
-   <td colname="col2"> 此数值Dimension中使用x-estimated-sweep-dekaseconds字段。 这是服务器的估计扫描时间除以10（降低扫描测量分辨率以使维度更合理地大小）。 <p><p>注意： 此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></p></td> 
+   <td colname="col2"> 此数值Dimension中使用x-estimated-sweep-dekaseconds字段。 这是服务器的估计扫描时间除以10（降低扫描测量分辨率以使维度更合理地大小）。 <p><p>注意：此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></p></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>主机</b> </td> 
+   <td colname="col1"> <b>Host</b> </td> 
    <td colname="col2"> cs-uri-query(b)值用于此维度。 简单维度的值是块的最后一行。 </td> 
   </tr> 
   <tr> 
@@ -66,31 +68,31 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b>加载平均值</b> </td> 
-   <td colname="col2"> 这是使用给定服务器的cs-uri-query(i)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 此维度用于计算所监视系统中服务器的平均负载。 <p>注意： 此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
+   <td colname="col2"> 这是使用给定服务器的cs-uri-query(i)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 此维度用于计算所监视系统中服务器的平均负载。 <p>注意：此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>内存页文件百分比</b> </td> 
-   <td colname="col2"> 这是使用给定服务器的cs-uri-query(o)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 此维度用于计算页面文件内存使用率的百分比。 <p>注意： 此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
+   <td colname="col2"> 这是使用给定服务器的cs-uri-query(o)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 此维度用于计算页面文件内存使用率的百分比。 <p>注意：此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>内存物理兆字节总数</b> </td> 
-   <td colname="col2"> 这是使用给定服务器的cs-uri-query(ag)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 <p>注意： 此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
+   <td colname="col2"> 这是使用给定服务器的cs-uri-query(ag)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 <p>注意：此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>内存物理百分比</b> </td> 
-   <td colname="col2"> 这是使用给定服务器的cs-uri-query(ag)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 此维度用于计算每个服务器的物理内存使用率百分比。 <p>注意： 此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
+   <td colname="col2"> 这是使用给定服务器的cs-uri-query(ag)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 此维度用于计算每个服务器的物理内存使用率百分比。 <p>注意：此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>内存查询百分比</b> </td> 
-   <td colname="col2"> 这是使用给定服务器的cs-uri-query(s)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 此维度用于计算每个服务器的查询内存使用率百分比。 <p>注意： 此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
+   <td colname="col2"> 这是使用给定服务器的cs-uri-query(s)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 此维度用于计算每个服务器的查询内存使用率百分比。 <p>注意：此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>网络连接</b> </td> 
-   <td colname="col2"> 这是使用给定服务器的cs-uri-query(q)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 用于显示给定服务器的网络连接数。 <p>注意： 此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
+   <td colname="col2"> 这是使用给定服务器的cs-uri-query(q)值的最后一行的数字维度。 它以cs-uri-query(k)不为空为条件。 用于显示给定服务器的网络连接数。 <p>注意：此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>轮询延迟厘秒</b> </td> 
-   <td colname="col2"> 此维度用于计算投票延迟。 cs-uri-query(m)值除以10可减小维度大小，并复制到x-poll-latency-entiseconds字段中。 这是一个数值维度，用于获取给定服务器的最后一行。 <p>注意： 此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
+   <td colname="col2"> 此维度用于计算投票延迟。 cs-uri-query(m)值除以10可减小维度大小，并复制到x-poll-latency-entiseconds字段中。 这是一个数值维度，用于获取给定服务器的最后一行。 <p>注意：此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>快速检查成功</b> </td> 
@@ -98,7 +100,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b>临时数据库空间百分比</b> </td> 
-   <td colname="col2"> cs-uri-query(an)值的最后一行将复制到x-temp-db-space-percentage字段中。 这是一个数值Dimension，用于计算给定服务器上已用临时数据库空间的百分比。 <p>注意： 此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
+   <td colname="col2"> cs-uri-query(an)值的最后一行将复制到x-temp-db-space-percentage字段中。 这是一个数值Dimension，用于计算给定服务器上已用临时数据库空间的百分比。 <p>注意：此维度是隐藏的，因为仅当平均到量度时，此维度才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Insight版本</b> </td> 
@@ -106,10 +108,10 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b>群组</b> </td> 
-   <td colname="col2"> 对单词进行分组，以便您有另一种方法来过滤生成的数据集。 <p>注意： 此维度在insight_monitor_agent.cfg中设置。 </p></td> 
+   <td colname="col2"> 对单词进行分组，以便您有另一种方法来过滤生成的数据集。 <p>注意：此维度在insight_monitor_agent.cfg中设置。 </p></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>量度</b> </td> 
+   <td colname="col1"> <b>指标</b> </td> 
    <td colname="col2"> 下面列出了Data Workbench配置文件监控配置文件中包含的量度及其派生方式。 </td> 
   </tr> 
   <tr> 

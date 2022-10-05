@@ -3,7 +3,7 @@ description: 第一步是在功能板服务器上启用IIS角色。
 title: 启用 IIS
 uuid: fbd194db-3307-41ae-8ece-05eb261d74ad
 exl-id: 0d431302-1e69-49b6-8757-9823fd70a3b4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 4%
@@ -12,12 +12,14 @@ ht-degree: 4%
 
 # 启用 IIS{#enabling-iis}
 
+{{eol}}
+
 第一步是在功能板服务器上启用IIS角色。
 
-1. 在&#x200B;**[!UICONTROL Administrative Tools]**&#x200B;下，打开&#x200B;**[!UICONTROL Server Manager]**。
-1. 右键单击&#x200B;**[!UICONTROL Server Manager]**&#x200B;窗口左侧的“角色”菜单项。
+1. 在 **[!UICONTROL Administrative Tools]**，打开 **[!UICONTROL Server Manager]**.
+1. 右键单击 **[!UICONTROL Server Manager]** 窗口。
 1. 选择 **[!UICONTROL Add Roles]**。
-1. 选择&#x200B;**[!UICONTROL Web Server (IIS)]**&#x200B;并继续&#x200B;**[!UICONTROL Add Roles Wizard]**。 确保启用以下角色服务：
+1. 选择 **[!UICONTROL Web Server (IIS)]** 继续 **[!UICONTROL Add Roles Wizard]**. 确保启用以下角色服务：
 
    | 常见HTTP功能 |
    |---|

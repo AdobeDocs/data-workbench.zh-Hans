@@ -1,22 +1,24 @@
 ---
 description: Data Workbench功能板包括带有功能菜单的侧栏和工具栏，以及可在其中显示数据可视化的功能板画布。
-title: 功能板用户界面
+title: 仪表板用户界面
 uuid: cfa6c553-e223-4b0e-8b4a-255afa85c999
 exl-id: f80da6c7-02cb-4916-b139-617703cf27b6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
-# 功能板用户界面{#dashboard-user-interface}
+# 仪表板用户界面{#dashboard-user-interface}
+
+{{eol}}
 
 Data Workbench功能板包括带有功能菜单的侧栏和工具栏，以及可在其中显示数据可视化的功能板画布。
 
 ![](assets/dashboard_ui.png)
 
-## 功能板画布{#section-39c9352f5e8d407e8d76c7f2e6267b3d}
+## 功能板画布 {#section-39c9352f5e8d407e8d76c7f2e6267b3d}
 
 功能板画布是用于创建可视化并与之交互的界面区域。
 
@@ -43,6 +45,6 @@ Data Workbench功能板包括带有功能菜单的侧栏和工具栏，以及可
 | 功能板菜单 | 用于打开、创建、保存和导出功能板的下拉菜单。 |
 | “添加可视化”菜单 | 用于向功能板添加可视化的下拉菜单。 |
 | 功能板标题 | 显示当前功能板的标题。 |
-| 更新菜单 | 单击&#x200B;**[!UICONTROL Update]**&#x200B;指示器将更新当前功能板，同时考虑任何新选择和/或配置更改。 通过菜单，可以调整&#x200B;**[!UICONTROL Query-to]**&#x200B;参数以及管理员的一些高级功能。 |
+| 更新菜单 | 单击 **[!UICONTROL Update]** 指示器将更新当前功能板，同时考虑任何新选择和/或配置更改。 菜单提供了调整 **[!UICONTROL Query-to]** 参数，以及管理员的一些高级功能。 |
 | 帮助菜单 | 此下拉菜单用于访问应用程序的用户指南、常见问题解答和关于部分。 |
 | 用户菜单 | 用于注销、访问帐户设置和访问管理区域（仅适用于管理员）的下拉菜单。 |

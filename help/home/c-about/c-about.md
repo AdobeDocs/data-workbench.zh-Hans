@@ -3,14 +3,16 @@ description: 量度、维度和过滤器提供了一个框架，处理为 Data W
 title: Data Workbench 量度、维度和过滤器
 uuid: 3c0300a0-ae19-4817-aab8-7294e0eabdd9
 exl-id: 687d9695-e70c-49ff-ac11-1537e6309e16
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
-source-wordcount: '827'
-ht-degree: 100%
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 87%
 
 ---
 
 # Data Workbench 量度、维度和过滤器{#data-workbench-metrics-dimensions-and-filters}
+
+{{eol}}
 
 量度、维度和过滤器提供了一个框架，处理为 Data Workbench 数据集的数据将在此框架中进行计算。
 
@@ -45,10 +47,10 @@ Swedish_Average_Age=Average_Age[country = ‘Sweden’]
 请务必注意，当您通过某个维度来评估量度时，将会收到针对特定维度元素的相同数值结果，无论您是对整个维度评估该量度，还是定义与该特定维度元素对应的过滤器。使用上一个示例，在查找瑞典人的平均年龄时，以下任一方法都会得到相同的结果：
 
 * 通过“国家/地区”维度来评估“平均年龄”量度，然后查看维度元素“瑞典”的数字。
-* 使用“瑞典人”过滤器评估“平均年龄”量度（表达式为 [!DNL Average_Age[Country=&#39;Sweden&#39;]]）。
+* 使用“瑞典人”过滤器评估“平均年龄”量度(以 [!DNL Average_Age[Country='Sweden']])。
 
 过滤器是指引用一个或多个维度和维度元素的语法表达式。如上面的示例所示，使用表达式 [!DNL [dimension=element]] 是指定过滤器的一种简单方法。
 
-应用这类过滤器，使用诸如 [!DNL New_Metric=Metric[Filter]] 的表达式来定义新量度同样比较简单。这类过滤器可用于根据特定的维度元素来定义新量度。要使用上面的示例，[!DNL Average_Age[Country=&#39;Sweden&#39;]] 可指定瑞典人平均年龄的量度。如果我们要为此量度命名，例如 Swedis_Average_Age，则在其他计算中可以将它用作量度。例如，评估 [!DNL Swedish_Average_Age/Average_Age] 会得到一个数字：瑞典人的平均年龄与世界其他地区人口的比例。
+应用此类过滤器，使用如 [!DNL New_Metric=Metric[Filter]]. 这类过滤器可用于根据特定的维度元素来定义新量度。要使用上述示例， [!DNL Average_Age[Country='Sweden']]指定瑞典人平均年龄的量度。 如果我们要为此量度命名，例如 Swedis_Average_Age，则在其他计算中可以将它用作量度。例如，评估 [!DNL Swedish_Average_Age/Average_Age] 会得到一个数字：瑞典人的平均年龄与世界其他地区人口的比例。
 
-如果包含世界所有人口信息的数据集还包含一个“眼睛颜色”维度，则表达式 [!DNL Swedish_Average_Age[Eye_Color=&#39;green&#39;]] 会得到拥有绿色眼睛的瑞典人的平均年龄。此外，您还可以通过应用其他过滤器 ([!DNL Average_Age[Country=&#39;Sweden&#39; AND Eye_Color=&#39;green&#39;]]) 在不使用中间量度定义的情况下得到相同的结果。在这种情况下，[!DNL AND] 运算符会使用另外两个基本的过滤器表达式来指定过滤器表达式。
+如果包含世界上所有人口相关信息的数据集还包含一个“眼睛颜色”维度，则该表达式为 [!DNL Swedish_Average_Age[Eye_Color='green']] 会使瑞典人的平均年龄变得绿色。 您还可以通过应用其他过滤器在不使用中间量度定义的情况下获得相同的结果： [!DNL Average_Age[Country='Sweden' AND Eye_Color='green']]. 在这种情况下，[!DNL AND] 运算符会使用另外两个基本的过滤器表达式来指定过滤器表达式。

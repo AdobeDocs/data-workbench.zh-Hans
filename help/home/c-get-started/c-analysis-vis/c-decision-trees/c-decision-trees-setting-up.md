@@ -2,13 +2,17 @@
 description: 通过识别正类用例并添加量度和维度输入的方式来设置决策树，以评估数据和了解决策树。
 title: 构建决策树
 uuid: 5790d322-5460-444d-95d8-a06696f9a55f
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 06db9e77-72ea-44c7-8451-d3f195acd196
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1110'
+ht-degree: 78%
 
 ---
 
-
 # 构建决策树{#building-a-decision-tree}
+
+{{eol}}
 
 通过识别正类用例并添加量度和维度输入的方式来设置决策树，以评估数据和了解决策树。
 
@@ -18,41 +22,41 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    打开一个新工作区后，您需要单击&#x200B;**添加** > **临时解锁**。
 
-1. To open the Decision Tree Builder, right-click **[!UICONTROL Visualization]** > **Predictive Analytics** > **Classification** > **Decision Tree Builder**.
+1. 要打开决策树生成器，请右键单击 **[!UICONTROL Visualization]** > **预测分析** > **分类** > **决策树生成器**.
 
 1. 设置&#x200B;**正类用例**。
 
    您可以为决策树定义正类用例，方法是在“查找器”中选择维度，或在表格中选择维度元素，也可以在“设计过滤器”中设计一个过滤器。实际上，正类用例可以是工作区中多个选项的组合，包括过滤器、维度、元素和 Data Workbench 可视化值的所有类型。
 
-   * **设计和应用过滤器**&#x200B;作为正类用例。Right-click in the workspace and select **[!UICONTROL Tools]** > **[!UICONTROL Filter Editor]** to design and apply a filter.
+   * **设计和应用过滤器**&#x200B;作为正类用例。在工作区中右键单击并选择 **[!UICONTROL Tools]** > **[!UICONTROL Filter Editor]** 来设计和应用过滤器。
 
-   * 添加&#x200B;**维度**&#x200B;作为正类用例。In the workspace, right-click and select **Tools** > **Finders** (or select **[!UICONTROL Add]** > **[!UICONTROL Finders]** in the left pane). 在&#x200B;**搜索**&#x200B;字段中输入维度名称，然后选择一个维度。
+   * 添加&#x200B;**维度**&#x200B;作为正类用例。在工作区中，右键单击并选择 **工具** > **查找器** (或选择 **[!UICONTROL Add]** > **[!UICONTROL Finders]** )。 在&#x200B;**搜索**&#x200B;字段中输入维度名称，然后选择一个维度。
 
-   * 添加&#x200B;**量度**&#x200B;作为正类用例。右键单击并选择工 **具** >查找器 **，或在左窗格** 中选 **[!UICONTROL Add]****[!UICONTROL Finders]** 择>以打开度量表。 选择一个量度作为正类用例。
+   * 添加&#x200B;**量度**&#x200B;作为正类用例。右键单击并选择 **工具** > **查找器** 或选择 **[!UICONTROL Add]** > **[!UICONTROL Finders]** 以打开“量度”表。 选择一个量度作为正类用例。
 
-   * 添加&#x200B;**维度元素**&#x200B;作为正类用例。Right-click in the workspace and select **[!UICONTROL Table]** to open dimension elements, then select from the dimension elements to set your positive case.
+   * 添加&#x200B;**维度元素**&#x200B;作为正类用例。在工作区中右键单击并选择 **[!UICONTROL Table]** 要打开维度元素，请从维度元素中选择以设置正类用例。
 
 1. 单击 **[!UICONTROL Options]** > **[!UICONTROL Set Positive Case]**.
 
-   此操作将设置正类用例，并且您可以对它进行命名。The name will appear under the **[!UICONTROL Positive Case]** heading in the workspace.
+   此操作将设置正类用例，并且您可以对它进行命名。该名称将显示在 **[!UICONTROL Positive Case]** 标题。
 
    >[!NOTE]
    >
-   >设置正类用例时，决策树将使用当前工作区选择，该选择可以定义为与工作区中当前选择相匹配的访客（或任何顶级可计数的定义，但在大多数情况下为访客）。 一个正类用例的这些元素会合并为一个过滤器（并非针对多个正类用例）。
+   >在设置正类用例时，决策树会使用当前工作区选项，该选项可定义为与工作区中当前选项匹配的“访客”（或任何顶级可计数的定义，但在大多数情况下为“访客”）。 一个正类用例的这些元素会合并为一个过滤器（并非针对多个正类用例）。
 
-   Clicking **[!UICONTROL Set Positive Case]** when there is no selection will clear the positive case.
+   单击 **[!UICONTROL Set Positive Case]** 当没有选择时，将清除正类用例。
 
-1. (optional) Select **[!UICONTROL Set Population Filters]** to define the visitor population to be classified.
+1. （可选）选择 **[!UICONTROL Set Population Filters]** 定义要分类的访客群体。
 
    如果没有应用人群过滤器，培训集会从所有访客（默认为“每个人”）中进行选择。
 
    >[!NOTE]
    >
-   >Click the **[!UICONTROL Show Complex Filter Description]** to view the filtering scripts for the Positive Case and Population Filter.
+   >单击 **[!UICONTROL Show Complex Filter Description]** 查看“正类用例”和“群体过滤器”的过滤脚本。
 
 1. 添加&#x200B;**量度**、**维度**&#x200B;和&#x200B;**维度元素**&#x200B;作为输入。
 
-   您可以从“查找器”面板或各个维度元素的表格以拖放方式选择输入。You can also select from the **[!UICONTROL Metrics]** menu in the toolbar.
+   您可以从“查找器”面板或各个维度元素的表格以拖放方式选择输入。您还可以从 **[!UICONTROL Metrics]** 菜单。
 
    * 添加&#x200B;**量度**&#x200B;作为输入。
 
@@ -75,9 +79,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
       维度元素会显示在&#x200B;**输入（元素）**&#x200B;列表中，并使用一个唯一的颜色标示。
    >[!IMPORTANT]
    >
-   >最多可以选择14个要评估的输入。 如果添加的输入过多，那么会显示一则错误消息。
+   >您最多可以选择14个要评估的输入。 如果添加的输入过多，那么会显示一则错误消息。
 
-1. Select **[!UICONTROL Go]** from the toolbar.
+1. 选择 **[!UICONTROL Go]** 中。
 
    将根据所选的维度和量度构建决策树。简单量度（例如“购物车加货”）构建速度较快，复杂维度（例如包含多个数据点的“访问持续时间”）构建速度较慢，会在转化时显示完成百分比。然后会对树图进行修剪并打开以供用户交互。维度和量度输入将采用与节点名称相同的颜色标示。
 
@@ -87,11 +91,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    >[!NOTE]
    >
-   >从数据集中提取培训示例，以便树构建器使用。 Data Workbench 使用 80% 的采样来构建树，剩余 20% 用来评估树模型的准确度。
+   >从数据集中提取培训示例，以供树生成器使用。 Data Workbench 使用 80% 的采样来构建树，剩余 20% 用来评估树模型的准确度。
 
-1. 使用验证准确性 **[!UICONTROL Confusion Matrix]**。
+1. 使用 **[!UICONTROL Confusion Matrix]**.
 
-   Click **[!UICONTROL Options]** > **[!UICONTROL Confusion Matrix]** to view the Accuracy, Recall, Precision and F-Score values. 越接近 100%，分数越高。
+   单击 **[!UICONTROL Options]** > **[!UICONTROL Confusion Matrix]** 查看“精度”、“召回”、“精度”和“F分数”值。 越接近 100%，分数越高。
 
    混淆矩阵使用值的组合提供了模型的四项准确度：
 
@@ -99,9 +103,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * 预测正值 (PP)
    * 实际负值 (AN)
    * 预测负值 (PN)
+
    >[!TIP]
    >
-   >这些数字通过应用所保留的20%测试数据的结果评分模型获得，该模型已被称为真答案。 如果得分高于 50%，则预测为正类用例（与定义的过滤器匹配）。准确度 = (TP + TN)/(TP + FP + TN + FN)，取消 = TP / (TP + FN)，精度 = TP / (TP + FP)。
+   >这些数字是通过应用结果评分模型获得的，该模型对预扣的20%测试数据进行评分，并且已被称为真实答案。 如果得分高于 50%，则预测为正类用例（与定义的过滤器匹配）。准确度 = (TP + TN)/(TP + FP + TN + FN)，取消 = TP / (TP + FN)，精度 = TP / (TP + FP)。
 
 1. **了解决策树**。
 
@@ -132,4 +137,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * 预测标记语言 (**PMML**)，它是基于 XML 的文件格式，被应用程序用于描述和交换决策树模型。
    * **文本**，它显示简单列和行，其中包含 true 或 false、百分数、成员数和输入值。
    * **维度**&#x200B;以及与预测结果元素对应的分支。
-

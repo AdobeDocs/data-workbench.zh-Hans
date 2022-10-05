@@ -3,7 +3,7 @@ description: 聚类生成器当前包含 KMeans++ 算法（之前仅支持 KMean
 title: 聚类 2.0
 uuid: 14462bd3-06d1-4622-a2d8-f96aadb357f3
 exl-id: 6a779ddc-c8f1-4c55-9c17-1119fe1aa791
-source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 87%
@@ -12,11 +12,13 @@ ht-degree: 87%
 
 # 聚类 2.0{#clustering}
 
+{{eol}}
+
 聚类生成器当前包含 KMeans++ 算法（之前仅支持 KMeans 算法），该算法可使用更快的方法找到迅速生成聚类的中心。
 
 ## KMeans 算法 {#section-92383a1be1d6402c95a25c902e90b850}
 
-在[群集生成器](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en)中，您现在可以在定义群集时选择&#x200B;**[!UICONTROL Options]** > **[!UICONTROL Algorithm]**&#x200B;以选择算法。
+在 [聚类生成器](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en)，您现在可以选择 **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** 来选择算法。
 
 * **[!UICONTROL KMeans]**。此算法使用 Canopy 聚类来定义聚类的中心。
 * **[!UICONTROL KMeans++]**。此算法可在针对大量数据集运行时加快聚类构建。

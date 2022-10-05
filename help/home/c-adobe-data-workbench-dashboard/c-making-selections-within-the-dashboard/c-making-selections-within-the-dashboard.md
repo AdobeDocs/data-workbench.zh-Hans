@@ -1,16 +1,18 @@
 ---
 description: 功能板中的数据可以通过使用选择轻松进行分段和探索。
-title: 在功能板中选择
+title: 在仪表板中选择
 uuid: b28bcc11-8fd3-4431-98ba-8adbd42a73d5
 exl-id: 18475e5c-97f4-42fd-883a-f822432b5301
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 3%
 
 ---
 
-# 在功能板中选择{#making-selections-within-the-dashboard}
+# 在仪表板中选择{#making-selections-within-the-dashboard}
+
+{{eol}}
 
 功能板中的数据可以通过使用选择轻松进行分段和探索。
 

@@ -3,7 +3,7 @@ description: 使用量度维度向导创建新量度维度。
 title: 量度维度向导
 uuid: 77b9bc8e-7625-4fef-9de4-f113f9b2debd
 exl-id: 109fbefc-5608-493d-aec9-8337f21eaa70
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 90%
@@ -11,6 +11,8 @@ ht-degree: 90%
 ---
 
 # 量度维度向导{#metric-dim-wizard}
+
+{{eol}}
 
 使用量度维度向导创建新量度维度。
 
@@ -72,7 +74,7 @@ ht-degree: 90%
 
 1. 添加&#x200B;**存储段计数**&#x200B;表达式。
 
-   您可以定义一个具有各种范围或存储段的量度维度。这会根据大小返回元素的子集，如[0-4]、[5-10],...)。 维度级别的元素与范围中含有量度值的元素关联。请参阅[维度表达式的语法](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)中的存储段表达式说明。
+   您可以定义一个具有各种范围或存储段的量度维度。这会根据大小返回元素子集，例如 [0-4], [5-10],...)。 维度级别的元素与范围中含有量度值的元素关联。请参阅[维度表达式的语法](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)中的存储段表达式说明。
 
 1. 在保存前单击&#x200B;**预览**&#x200B;可打开量度维度值表。
 

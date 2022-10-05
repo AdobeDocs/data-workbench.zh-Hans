@@ -3,7 +3,7 @@ description: 可计数维度的元素可由系统计算。
 title: 可计数维度
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
 exl-id: c607c15d-de85-4daf-af76-79b460f51b38
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 96%
@@ -11,6 +11,8 @@ ht-degree: 96%
 ---
 
 # 可计数维度{#countable-dimensions}
+
+{{eol}}
 
 可计数维度的元素可由系统计算。
 
@@ -20,7 +22,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->如果您需要的维度仅提供某些内容的计数，则应使用运算为COUNT的数字维度。 请参阅[数字Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed)。
+>如果您需要的维度仅提供某些内容的计数，则应使用运算为COUNT的数字维度。 请参阅 [数值Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed).
 
 可计数维度由以下参数定义：
 

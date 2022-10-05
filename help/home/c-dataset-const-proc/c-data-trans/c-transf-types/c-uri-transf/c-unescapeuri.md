@@ -3,7 +3,7 @@ description: Unescape URI 转换取消转义字符串中任何已转义的字符
 title: UnescapeURI
 uuid: 25e87cc7-812d-4d77-be94-16093e8955fe
 exl-id: abf20906-5052-4bbe-9ffb-522b850669a6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 93%
@@ -11,6 +11,8 @@ ht-degree: 93%
 ---
 
 # UnescapeURI{#unescapeuri}
+
+{{eol}}
 
 Unescape URI 转换取消转义字符串中任何已转义的字符。
 
@@ -25,7 +27,7 @@ Unescape URI 转换取消转义字符串中任何已转义的字符。
 | 条件 | 应用此转换的条件。 |  |
 | 默认 | 在满足条件但输入值不可用时所使用的默认值。 |  |
 | Input（输入） | 要取消转义的 URI 字符串。 |  |
-| Output（输出） | 存储取消转义字符串的字段名称。 |  |
+| 输出 | 存储取消转义字符串的字段名称。 |  |
 
 以下转换取消转义 HTTP 标头字段中的 docname 值，并将输出存储到字段 x-docname-unescaped 中：
 

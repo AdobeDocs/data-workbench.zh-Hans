@@ -3,37 +3,39 @@ description: 编辑数据集配置文件的 Transformation.cfg 文件的步骤�
 title: 编辑转换配置文件
 uuid: 77b9e566-4a9a-4ea1-b5ab-63a4574c0fdb
 exl-id: 3fab17a4-d356-4548-b977-f5d409870753
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 78%
+source-wordcount: '1131'
+ht-degree: 74%
 
 ---
 
 # 编辑转换配置文件{#editing-the-transformation-configuration-file}
 
+{{eol}}
+
 编辑数据集配置文件的 Transformation.cfg 文件的步骤。
 
-1. 在处理数据集配置文件时，打开[!DNL Profile Manager]并单击&#x200B;**[!UICONTROL Dataset]**&#x200B;以显示其内容。
+1. 在处理数据集配置文件时，打开 [!DNL Profile Manager] 单击 **[!UICONTROL Dataset]** 以显示其内容。
 
-   有关打开和使用[!DNL Profile Manager]的信息，请参阅&#x200B;*Data Workbench用户指南*。
+   有关打开和使用的信息 [!DNL Profile Manager]，请参阅 *Data Workbench用户指南*.
 
    >[!NOTE]
    >
-   >Transformation子目录可能存在于Dataset目录内。 此子目录包含为一个或多个继承配置文件创建的[!DNL Transformation Dataset Include]文件。 有关[!DNL Transformation Dataset Include]文件的信息，请参阅[数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)。
+   >Transformation子目录可能存在于Dataset目录内。 此子目录包含 [!DNL Transformation Dataset Include] 已为一个或多个继承配置文件创建的文件。 有关 [!DNL Transformation Dataset Include] 文件，请参阅 [数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md).
 
-1. 右键单击[!DNL Transformation.cfg]旁边的复选标记，然后单击&#x200B;**[!UICONTROL Make Local]**。 [!DNL User]列中将显示此文件的复选标记。
-1. 右键单击新创建的复选标记，然后单击&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Workstation]**。 出现[!DNL Transformation.cfg]窗口。
+1. 右键单击旁边的复选标记 [!DNL Transformation.cfg] 单击 **[!UICONTROL Make Local]**. 此文件的复选标记将显示在 [!DNL User] 列。
+1. 右键单击新创建的复选标记，然后单击 **[!UICONTROL Open]** > **[!UICONTROL in Workstation]**. 的 [!DNL Transformation.cfg] 窗口。
 
-   您还可以从[!DNL Transformation Dependency Map]打开[!DNL Transformation.cfg]文件。 有关[!DNL transformation dependency maps]的信息，请参阅[数据集配置工具](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)。
+   您还可以打开 [!DNL Transformation.cfg] 文件 [!DNL Transformation Dependency Map]. 有关 [!DNL transformation dependency maps]，请参阅 [数据集配置工具](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5).
 
 1. 参考下表，编辑该配置文件中的参数。
 
-   在 Data Workbench 窗口内编辑 [!DNL Transformation.cfg] 文件时，可以使用快捷键实现基本编辑功能，包括剪切 (Ctrl+x)、复制 (Ctrl+c)、粘贴 (Ctrl+v)、撤消 (Ctrl+z)、恢复 (Ctrl+Shift+z)、选择部分（单击并拖动）以及选择全部 (Ctrl+a)。此外，您还可以使用快捷方式将文本从一个配置文件([!DNL .cfg])复制并粘贴到另一个配置文件。
+   在 Data Workbench 窗口内编辑 [!DNL Transformation.cfg] 文件时，可以使用快捷键实现基本编辑功能，包括剪切 (Ctrl+x)、复制 (Ctrl+c)、粘贴 (Ctrl+v)、撤消 (Ctrl+z)、恢复 (Ctrl+Shift+z)、选择部分（单击并拖动）以及选择全部 (Ctrl+a)。此外，您还可以使用快捷方式复制并粘贴一个配置文件( [!DNL .cfg])到另一个。
 
    >[!NOTE]
    >
-   >继承配置文件的[!DNL Transformation Dataset Include]文件包含下表中描述的参数子集以及一些其他参数。 有关[!DNL Transformation Dataset Include]文件的信息，请参阅[数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
+   >A [!DNL Transformation Dataset Include] 继承配置文件的文件包含下表所述参数的子集以及一些其他参数。 有关 [!DNL Transformation Dataset Include] 文件，请参阅 [数据集包含文件](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
 
    <table id="table_5E184F67CCEC4421B2BBD4261711A6FE"> 
    <thead> 
@@ -47,13 +49,13 @@ ht-degree: 78%
       <td colname="col1"> End Time（结束时间） </td> 
       <td colname="col2"> <p>可选。过滤数据以包含到此时间戳之前的日志条目，但不包含此时的日志条目。Adobe 建议使用以下时间格式之一： 
       <ul id="ul_1EC55DA4936946C98E447E1476E8280F"> 
-       <li id="li_F2D862833F4B451C965E1ED6C05DCE1B"> January 1 2013 HH:MM:SS EDT </li> 
-       <li id="li_EB7FFEB2E2C24EAFB8E4B14F2479DA3D"> Jan 1 2013 HH:MM:SS GMT </li> 
-      </ul> </p> <p> 例如，指定“July 29 2013 00:00:00 EDT”作为结束时间，将包含截至 2013 年 7 月 28 日美国东部时间晚上 11:59:59 的数据。 </p> <p> 必须指定时区。如果未指定，时区不会默认为 GMT。有关 Data Workbench Server 支持的时区缩写列表，请参阅 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> 时区代码 </a>. </p> <p> <p>注意：如果为结束时间指定了一个值，则系统会设置一个名为 End Time（结束时间）的参数，并在数据集构建的整个转换阶段应用该参数。有关参数的信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50">在数据集包含文件</a>中定义参数。 </p> </p> </td> 
+       <li id="li_F2D862833F4B451C965E1ED6C05DCE1B"> 2013年1月1日HH:MM:SS EDT </li> 
+       <li id="li_EB7FFEB2E2C24EAFB8E4B14F2479DA3D"> 2013年1月1日HH:MM:SS GMT </li> 
+      </ul> </p> <p> 例如，指定“2013年7月29日00:00:“美国东部夏令时”作为结束时间，包含截至2013年7月28日11日的数据:59:美国东部夏令时下午59点。 </p> <p> 必须指定时区。如果未指定，时区不会默认为 GMT。有关 Data Workbench Server 支持的时区缩写列表，请参阅 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> 时区代码 </a>. </p> <p> <p>注意：如果为结束时间指定了一个值，则系统会设置一个名为 End Time（结束时间）的参数，并在数据集构建的整个转换阶段应用该参数。有关参数的信息，请参阅 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50"> 在数据集包含文件中定义参数 </a>. </p> </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> 扩展维度 </td> 
-      <td colname="col2"> 可选。Adobe 建议在一个或多个<span class="wintitle">转换数据集包含</span>文件中定义扩展维度。有关信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace">转换数据集包含文件</a> 。 </td> 
+      <td colname="col2"> 可选。Adobe 建议在一个或多个<span class="wintitle">转换数据集包含</span>文件中定义扩展维度。有关信息，请参阅 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace"> 转换数据集包含文件 </a>. </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Hash Threshold（哈希阈值） </td> 
@@ -84,7 +86,7 @@ ht-degree: 78%
       </ul> </p> <p> <b>删除现有处理阶段</b> </p> <p> 
       <ul id="ul_2EFA5A40982A48919E9946BF1955110A"> 
        <li id="li_3B3829DA34FD4774B3F9F94074099794"> 右键单击要删除的阶段所对应的编号，然后单击<span class="uicontrol">删除</span><i>&lt;<span class="uicontrol">阶段编号</span>&gt;</i>。 </li> 
-      </ul> </p> <p> <p>注意：当您在<span class="wintitle">转换数据集包含</span>文件中指定阶段时，该阶段的名称必须与您在此处输入的名称完全匹配。有关数据集包含文件的更多信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md">数据集包含文件</a> 。 </p> </p> </td> 
+      </ul> </p> <p> <p>注意：当您在<span class="wintitle">转换数据集包含</span>文件中指定阶段时，该阶段的名称必须与您在此处输入的名称完全匹配。有关数据集包含文件的更多信息，请参阅 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"> 数据集包含文件 </a>. </p> </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Start Time（开始时间） </td> 
@@ -92,11 +94,11 @@ ht-degree: 78%
       <ul id="ul_6BC86CCB1FC447ACAC4045E08C8EF8F8"> 
        <li id="li_2151B3F7FAD54F38B6C33E25CDCACBBE"> 2013年1月1日HH:MM:SS EDT </li> 
        <li id="li_CA1BB675C1244104915FB9ED96A3013D"> 2013年1月1日HH:MM:SS GMT </li> 
-      </ul> </p> <p> 例如，指定“July 29 2013 00:00:00 EDT”作为“<span class="wintitle">开始时间</span>”，将包含从 2013 年 7 月 29 日美国东部时间凌晨 12:00:00 开始的数据。 </p> <p> 必须指定时区。如果未指定，时区不会默认为 GMT。有关 Data Workbench Server 支持的时区缩写列表，请参阅 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> 时区代码 </a>. </p> <p> <p>注意：如果为“开始时间”指定一个值，则系统会设置一个名为“开始时间”的参数，并在数据集构建的整个转换阶段应用该参数。有关参数的信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50">在数据集包含文件</a>中定义参数。 </p> </p> </td> 
+      </ul> </p> <p> 例如，指定2013年7月29日00:00:00 EDT作为 <span class="wintitle"> 开始时间 </span> 包括自2013年7月29日起，于:00:美国东部时间上午00点。 </p> <p> 必须指定时区。如果未指定，时区不会默认为 GMT。有关 Data Workbench Server 支持的时区缩写列表，请参阅 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> 时区代码 </a>. </p> <p> <p>注意：如果为“开始时间”指定一个值，则系统会设置一个名为“开始时间”的参数，并在数据集构建的整个转换阶段应用该参数。有关参数的信息，请参阅 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50"> 在数据集包含文件中定义参数 </a>. </p> </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Transformations（转换） </td> 
-      <td colname="col2"> 可选。Adobe 建议在一个或多个<span class="wintitle">转换数据集包含</span>文件中为数据集构建的转换阶段定义转换。有关信息，请参阅<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace">转换数据集包含文件</a> 。 </td> 
+      <td colname="col2"> 可选。Adobe 建议在一个或多个<span class="wintitle">转换数据集包含</span>文件中为数据集构建的转换阶段定义转换。有关信息，请参阅 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace"> 转换数据集包含文件 </a>. </td> 
    </tr> 
    <tr> 
       <td colname="col1"> 时区 </td> 
@@ -105,11 +107,11 @@ ht-degree: 78%
    </tbody> 
    </table>
 
-1. 右键单击窗口顶部的&#x200B;**[!UICONTROL (modified)]** ，然后单击&#x200B;**[!UICONTROL Save]**。
-1. 在[!DNL Profile Manager]中，右键单击[!DNL User]列中[!DNL Transformation.cfg]的复选标记，然后单击&#x200B;**[!UICONTROL Save to]** > * **[!UICONTROL dataset profile name]**&#x200B;以使本地所做的更改生效。 在数据集配置文件同步之后，系统便会开始重新转换数据。
+1. 右键单击 **[!UICONTROL (modified)]** ，然后单击 **[!UICONTROL Save]**.
+1. 在 [!DNL Profile Manager]，右键单击的复选标记 [!DNL Transformation.cfg]在 [!DNL User] 列，然后单击 **[!UICONTROL Save to]** > * **[!UICONTROL dataset profile name]** 以使本地所做的更改生效。 在数据集配置文件同步之后，系统便会开始重新转换数据。
 
    >[!NOTE]
    >
    >请勿将已修改的配置文件保存到 Adobe 提供的任何内部配置文件中，因为当您安装这些配置文件的更新时，系统会覆盖您所做的更改。
 
-   有关重新处理或重新转换数据的信息，请参阅[重新处理和重新转换](../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)。
+   有关重新处理或重新转换数据的信息，请参阅 [重新处理和重新转换](../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).

@@ -3,7 +3,7 @@ description: 从“高级”菜单中打开“最适合归因”，然后按照�
 title: 构建最佳拟合归因模型
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 58%
@@ -12,27 +12,29 @@ ht-degree: 58%
 
 # 构建最佳拟合归因模型{#build-a-best-fit-attribution-model}
 
+{{eol}}
+
 从“高级”菜单中打开“最适合归因”，然后按照这些步骤构建一个最适合归因模型。
 
-请参阅[最适合归因](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md#concept-237feb6e9c4d49efaf75399297dcb9d1)的概述。
+请参阅 [最适合归因](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md#concept-237feb6e9c4d49efaf75399297dcb9d1).
 
 1. 打开&#x200B;**最适合归因**。
 
-   打开工作区，然后单击&#x200B;**[!UICONTROL Premium]** > **[!UICONTROL Best Fit Attribution]**。
+   打开工作区并单击 **[!UICONTROL Premium]** > **[!UICONTROL Best Fit Attribution]**.
 
    ![](assets/attrib_windows_launch.png)
 
    >[!NOTE]
    >
-   >最适合归因是一项Adobe Analytics Premium功能，它要求您在配置文件中启用Premium。 它需要您更新证书，并将“高级”配置文件添加到您的 profile.cfg 文件中。请参阅[DWB服务器升级：适用于DWB 6.3的6.2至6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)。
+   >最适合归因是一项Adobe Analytics Premium功能，它要求您在配置文件中启用Premium。 它需要您更新证书，并将“高级”配置文件添加到您的 profile.cfg 文件中。请参阅 [DWB服务器升级：6.2 - 6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md) (DWB 6.3)。
 
-1. 设置&#x200B;**[!UICONTROL Success]**&#x200B;量度。
+1. 设置 **[!UICONTROL Success]** 量度。
 
    >[!NOTE]
    >
-   >您可以将量度从&#x200B;**[!UICONTROL Finder]**&#x200B;表拖到归因可视化的左窗格，或从&#x200B;**输入**&#x200B;菜单中选择。
+   >您可以从 **[!UICONTROL Finder]** 表格，或从 **输入** 菜单。
 
-   单击 **[!UICONTROL Inputs]** > **[!UICONTROL Set Success]**. 将打开量度菜单。![](assets/attrib_set_success_metric.png)
+   单击 **[!UICONTROL Inputs]** > **[!UICONTROL Set Success]**. 将打开量度菜单。 ![](assets/attrib_set_success_metric.png)
 
    选择可识别成功转化的量度。
 
@@ -46,13 +48,13 @@ ht-degree: 58%
    >
    >仅当您尝试通过将维度元素拖动到可视化中来自动构建成功量度时，才需要设置接触量度。
 
-   单击&#x200B;**[!UICONTROL Inputs]**&#x200B;菜单并选择&#x200B;**设置触屏**，或从Finder中拖动量度。![](assets/attrib_set_touch.png)
+   单击 **[!UICONTROL Inputs]** 菜单和选择 **设置触控**，或从“查找器”中拖动量度。 ![](assets/attrib_set_touch.png)
 
    这将在维度元素用作输入的情况下用于派生渠道量度。
 
 1. 设置&#x200B;**成功**&#x200B;窗口。
 
-   单击 [!DNL Inputs > Success Window]。从表格中选择一个日期范围，然后为成功窗口命名。单击&#x200B;**[!UICONTROL Workspace Selection]**，选定的日期将被分配为成功量度的时间范围。
+   单击 [!DNL Inputs > Success Window]。从表格中选择一个日期范围，然后为成功窗口命名。单击 **[!UICONTROL Workspace Selection]** 和选定日期将被分配为成功量度的时间范围。
 
    ![](assets/attrib_set_success_window.png)
 
@@ -60,13 +62,13 @@ ht-degree: 58%
    >
    >由于成功窗口是工作站选项，因此您可以在成功窗口中包含任何维度。
 
-1. 设置&#x200B;**[!UICONTROL Touch Window]**。
+1. 设置 **[!UICONTROL Touch Window]**.
 
-   单击 [!DNL Inputs > Touch Window]。从表格中选择一个日期范围，然后为该接触窗口命名。单击&#x200B;**[!UICONTROL Workspace Selection]**，选定的日期将被分配为成功量度的时间范围。
+   单击 [!DNL Inputs > Touch Window]。从表格中选择一个日期范围，然后为该接触窗口命名。单击 **[!UICONTROL Workspace Selection]** 和选定日期将被分配为成功量度的时间范围。
 
    ![](assets/attrib_set_touch_window.png)
 
-   默认情况下，将&#x200B;**Touch**&#x200B;窗口设置为与&#x200B;**[!UICONTROL Success]**&#x200B;窗口相同的时间段。
+   默认情况下， **触控** 窗口将设置为与 **[!UICONTROL Success]** 窗口。
 
 1. （可选）设置培训过滤器。
 
@@ -84,9 +86,9 @@ ht-degree: 58%
 
 1. 指定表示接触的渠道量度。
 
-   将量度拖动到可视化中，或从[!DNL Inputs] > [!DNL Add Channel]菜单中选择量度。 如果您还没有针对营销活动或渠道定义的量度，但却拥有表示渠道的维度，则可视化可基于指定的接触量度为您自动构建它们。
+   将量度拖动到可视化，或从 [!DNL Inputs] > [!DNL Add Channel] 菜单。 如果您还没有针对营销活动或渠道定义的量度，但却拥有表示渠道的维度，则可视化可基于指定的接触量度为您自动构建它们。
 
-   例如，如果“接触”量度设置为[!DNL Hits]，并且给定一个名为[!DNL Media Type]的[!DNL dimension]，且其元素包含[!DNL Email]、[!DNL Press Release]、[!DNL Print Ad]和[!DNL Social Media]等内容，则当您将元素拖放到可视化中时，该可视化将生成表单[!DNL Hits where Media Type = Email]的“渠道”量度。
+   例如，将“接触”量度设置为 [!DNL Hits]，并给定 [!DNL dimension] 调用 [!DNL Media Type] 包含 [!DNL Email], [!DNL Press Release], [!DNL Print Ad]和 [!DNL Social Media]，则可视化图表将生成表单的渠道量度 [!DNL Hits where Media Type = Email] 将元素拖放到可视化图表时，会显示相应的变量。
 
 1. 按“开始”****。
 
@@ -94,7 +96,7 @@ ht-degree: 58%
 
    >[!NOTE]
    >
-   >右键单击已完成分析中的&#x200B;**模型完整** ，以查看归因模型的统计信息。
+   >右键单击 **模型完成** ，以查看归因模型的统计信息。
 
    ![](assets/attrib_visualization.png)
 
@@ -102,7 +104,7 @@ ht-degree: 58%
 
 >[!NOTE]
 >
->**[!UICONTROL Streaming]**、和 **[!UICONTROL Online]** 模 **[!UICONTROL Offline]** 式在基于所评估数据的延迟构建归因模型时会产生不同的效果。在流模式下，将显示详细信息&#x200B;**[!UICONTROL Model Complete]**&#x200B;消息。 在“联机”和“脱机”模式下，将显示详细信息&#x200B;**[!UICONTROL Local Model Complete]**。
+>**[!UICONTROL Streaming]**, **[!UICONTROL Online]** 和 **[!UICONTROL Offline]** 当基于所评估数据的延迟构建归因模型时，这些模式会产生不同的效果。 在流模式下，详细信息 **[!UICONTROL Model Complete]** 将显示消息。 在“联机”和“脱机”模式下， **[!UICONTROL Local Model Complete]** 将显示。
 
 ## “选项”菜单 {#section-22288867f6c8483a8a38410f4b948346}
 
@@ -160,7 +162,7 @@ ht-degree: 58%
 
 | 重置和删除选项 | 描述 |
 |---|---|
-| **[!UICONTROL Reset Model]** | 从&#x200B;**[!UICONTROL Reset]**&#x200B;菜单中，选择&#x200B;**[!UICONTROL Reset Model]**&#x200B;以清除可视化图表，但保留输入量度。 |
-| **[!UICONTROL Reset All]** | 从&#x200B;**[!UICONTROL Reset]**&#x200B;菜单中，选择&#x200B;**[!UICONTROL Reset All]**&#x200B;以清除可视化和输入量度。 |
-| **[!UICONTROL Remove]** | 右键单击任何输入，然后选择&#x200B;**[!UICONTROL Remove]**&#x200B;以从选定的输入中清除量度。 |
-| **[!UICONTROL Remove All]** | 右键单击&#x200B;*渠道*&#x200B;并选择&#x200B;**[!UICONTROL Remove All]**&#x200B;以清除所有输入量度。 |
+| **[!UICONTROL Reset Model]** | 从 **[!UICONTROL Reset]** 菜单，选择 **[!UICONTROL Reset Model]** 以清除可视化图表，但保留输入量度。 |
+| **[!UICONTROL Reset All]** | 从 **[!UICONTROL Reset]** 菜单，选择 **[!UICONTROL Reset All]** 以清除可视化图表和输入量度。 |
+| **[!UICONTROL Remove]** | 右键单击任何输入并选择 **[!UICONTROL Remove]** 从选定的输入中清除量度。 |
+| **[!UICONTROL Remove All]** | 右键单击 *渠道* 选择 **[!UICONTROL Remove All]** 以清除所有输入量度。 |

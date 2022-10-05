@@ -3,7 +3,7 @@ description: Data Workbench Server (InsightServer64.exe) 可以从任何具有 O
 title: ODBC 数据源
 uuid: 5b37cd41-2d79-472c-8e6d-00ff894991a9
 exl-id: b22b1e27-9b6c-4708-b45c-a9605807689a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 89%
@@ -11,6 +11,8 @@ ht-degree: 89%
 ---
 
 # ODBC 数据源{#odbc-data-sources}
+
+{{eol}}
 
 Data Workbench Server (InsightServer64.exe) 可以从任何具有 ODBC 3.0 兼容驱动程序的 SQL 数据库（例如 Oracle 或 Microsoft SQL Server）中读取事件数据。
 
@@ -22,7 +24,7 @@ Data Workbench Server 的 ODBC 支持与当前支持从传感器或从外部流�
 
    >[!NOTE]
    >
-   >在[!DNL Increasing ID]列中，多行可能具有相同的值。 出现这种情况的一种可能性是时间戳列的精确度不高。
+   >在 [!DNL Increasing ID] 列。 出现这种情况的一种可能性是时间戳列的精确度不高。
 
 * Data Workbench Server 无法加载数据较长的列（数据超出了由正在使用的特定数据库应用程序确定的某个长度）。
 * 从数据库检索数据的速度要慢于从磁盘文件中读取数据。与数据来自“传感器”或其他磁盘文件且大小相等的数据集相比，从 ODBC 源加载数据的数据集花费的处理时间会更长些（尤其是在重新处理时）。
@@ -43,7 +45,7 @@ Data Workbench Server 的 ODBC 支持与当前支持从传感器或从外部流�
 
    请务必注意，Data Workbench Server (InsightServer64.exe) 必须作为一项 Windows 服务运行。因此，数据源通常必须配置为系统 DSN（而不是用户 DSN），以便 Data Workbench Server 能够使用它。您可以在数据库软件的相关文档中找到有关此配置步骤的详细信息。
 
-在相应的Data Workbench Server计算机上安装数据库客户端软件后，您可以通过编辑所需配置文件的[!DNL Log Processing]配置文件中的相应参数，将数据集配置为使用ODBC数据源。
+在相应的Data Workbench Server计算机上安装数据库客户端软件后，您可以通过在 [!DNL Log Processing] 配置文件。
 
 ## 参数 {#section-15c0218d93364693a565f2609a12f73e}
 
@@ -88,7 +90,7 @@ Data Workbench Server 的 ODBC 支持与当前支持从传感器或从外部流�
   </tr> 
   <tr> 
    <td colname="col1"> Log Source ID（日志源 ID） </td> 
-   <td colname="col2"> <p>此参数的值可以是任意字符串。如果指定了某个值，则此参数可让您将来自不同日志源的日志条目区分开，以便进行源识别或目标处理。x-log-source-id 字段填充了用于识别每个日志条目的日志源的值。例如，如果您想要识别名为 ODBCSource01 的 ODBC 源中的日志条目，则可以键入 <span class="filepath">from ODBCSource01</span>，然后该字符串将会传递到该源中每个日志条目的 x-log-source-id 字段。 </p> <p> 有关x-log-source-id字段的信息，请参阅<a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f">事件数据记录字段</a>。 </p> </td> 
+   <td colname="col2"> <p>此参数的值可以是任意字符串。如果指定了某个值，则此参数可让您将来自不同日志源的日志条目区分开，以便进行源识别或目标处理。x-log-source-id 字段填充了用于识别每个日志条目的日志源的值。例如，如果您想要识别名为 ODBCSource01 的 ODBC 源中的日志条目，则可以键入 <span class="filepath">from ODBCSource01</span>，然后该字符串将会传递到该源中每个日志条目的 x-log-source-id 字段。 </p> <p> 有关x-log-source-id字段的信息，请参阅 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> 事件数据记录字段</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Run On Server（运行服务器） </td> 
@@ -101,6 +103,6 @@ Data Workbench Server 的 ODBC 支持与当前支持从传感器或从外部流�
  </tbody> 
 </table>
 
-此示例显示了Data Workbench中具有ODBC数据源的[!DNL Log Processing]配置窗口。 此数据源从名为[!DNL VISUAL.VSL]的表中获取数据，该表位于具有[!DNL Data Source Name] &quot;VSTestO&quot;的数据库中。 五 (5) 个列对象（[!DNL Fields]（字段））将数据库中数据列的数据映射到 Data Workbench Server。
+此示例显示 [!DNL Log Processing] 配置窗口。 此数据源从名为 [!DNL VISUAL.VSL] 在 [!DNL Data Source Name] &quot;VSTestO.&quot; 五 (5) 个列对象（[!DNL Fields]（字段））将数据库中数据列的数据映射到 Data Workbench Server。
 
 ![](assets/cfg_LogProcessing_LogSources_ODBC.png)

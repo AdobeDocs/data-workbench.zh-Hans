@@ -1,9 +1,9 @@
 ---
-description: 在规划和实施系统之前，确定Data Workbench（以前称为 [!DNL Insight]）服务器组件的最低要求和建议。
+description: 确定Data Workbench(以前称为 [!DNL Insight])服务器组件。
 title: 服务器系统要求
 uuid: c4487c76-03b9-4755-893b-555d451b1e69
 exl-id: 6dd78331-8370-400e-b580-9b9bad13e62c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # 服务器系统要求{#server-system-requirements}
+
+{{eol}}
 
 在规划和实施系统之前，确定Data Workbench服务器组件的最低要求和建议。
 
@@ -20,15 +22,14 @@ ht-degree: 1%
 
 ### 许可容量 {#section-71850e13783443798b3df9eb22cc63dc}
 
-有关许可证容量信息，请参阅&#x200B;*Adobe[!DNL Data Workbench (Insight)]服务协议*&#x200B;中的服务说明。
+请参阅 *Adobe [!DNL Data Workbench (Insight)] 服务协议* 以了解许可证容量信息。
 
 >[!NOTE]
 >
->对于Windows 2012服务器中的&#x200B;*MS System Center端点保护*，需要将这些可执行文件添加到&#x200B;***排除的进程：*** >
+>对于 *MS System Center Endpoint Protection* 在Windows 2012服务器中，需要将这些可执行文件添加到 ***排除的流程：*** >
 >* [!DNL InsightServer64.exe]
 >* [!DNL ReportServer.exe]
 >* [!DNL ExportIntegration.exe]
-
 >
 
 
@@ -120,7 +121,7 @@ Adobe无法提供与已配置Data Workbench处理数据的速度有关的担保�
  <thead>
   <tr>
    <th colname="col1" class="entry"> FSU组件 </th>
-   <th colname="col2" class="entry"> 推荐 </th>
+   <th colname="col2" class="entry"> Recommendations </th>
    <th colname="col3" class="entry"> </th>
   </tr>
  </thead>
@@ -131,7 +132,7 @@ Adobe无法提供与已配置Data Workbench处理数据的速度有关的担保�
    <td colname="col3"> </td>
   </tr>
   <tr>
-   <td colname="col1"> <p>磁盘系统 </p> <p>FSU需要高可用、冗余的存储，以用于大量数据。 Adobe将与您一起确定您的确切要求。 </p> </td>
+   <td colname="col1"> <p>磁盘系统 </p> <p>FSU需要高可用、冗余的存储，以便存储大量数据。 Adobe将与您一起确定您的确切要求。 </p> </td>
    <td colname="col1"> <p>Adobe建议： </p>
     <ul id="ul_FFEEE5052FFD4876BA9A6476DD096539">
      <li id="li_F98750D509D640C68885D53FC691ED43">（12个或更多）*（750GB或更高）RAID 5/6配置中的SATA硬盘。 </li>
@@ -149,11 +150,11 @@ Adobe无法提供与已配置Data Workbench处理数据的速度有关的担保�
 
 ## 传感器要求{#sensor-requirements}
 
-Data Workbench传感器从Web、应用程序和数据收集服务器收集事件数据，以将其传输到任何服务器。 [!DNL Sensor’s] 该工具可确保始终如一地准确测量Internet渠道中发生的事件。[!DNL Sensor] 支持Web服务器软件和操作系统的多种组合。
+Data Workbench传感器从Web、应用程序和数据收集服务器收集事件数据，以将其传输到任何服务器。 [!DNL Sensor’s] 该工具可确保始终如一地准确测量Internet渠道中发生的事件。 [!DNL Sensor] 支持Web服务器软件和操作系统的多种组合。
 
 ### 传感器系统Recommendations {#section-0a981c3a47b644c1a1a56974ba033b9c}
 
-下表介绍了[!DNL Sensor]的系统建议：
+下表介绍了 [!DNL Sensor]:
 
 <table id="table_A132E06D6B8146C1B199B82464EA0898">
  <thead>
@@ -169,15 +170,15 @@ Data Workbench传感器从Web、应用程序和数据收集服务器收集事件
   </tr>
   <tr>
    <td colname="col1"> <p>内存 </p> </td>
-   <td colname="col2"> <p>HTTP或其主机的其他服务器计算机上的<span class="wintitle">传感器</span>必须有32 MB的RAM。 </p> </td>
+   <td colname="col2"> <p>必须有32 MB的RAM <span class="wintitle"> 传感器 </span> 在HTTP或其主机的其他服务器计算机上。 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>网络性能 </p> </td>
-   <td colname="col2"> <p>与中继服务器或<span class="keyword"> Data Workbench Server </span>的1 Mbps或更高网络连接。 <span class="wintitle"> 传感 </span> 器消耗的带宽通常比一(1)Mbps要少得多。您的Adobe顾问将帮助您估算日常所需的实际带宽量。 </p> </td>
+   <td colname="col2"> <p>与中继服务器或中继服务器的1 Mbps或更高网络连接 <span class="keyword"> data workbench server </span>. <span class="wintitle"> 传感器 </span> 通常消耗的带宽远小于一(1)Mbps。 您的Adobe顾问将帮助您估算日常所需的实际带宽量。 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>网络端口和防火墙 </p> </td>
-   <td colname="col2"> <p> <span class="wintitle"> 传感 </span> 器使用 <span class="keyword"> HTTPS(通 </span> 常为端口443，但可以配置)或HTTP（通常为端口80，但可以配置）连接到Data Workbench Server。 </p> <p>位于<span class="wintitle">传感器</span>和目标<span class="keyword"> Data Workbench Server </span>或中继服务器之间的防火墙上的相应端口应仅在相应的<span class="wintitle">传感器</span>托管计算机和<span class="keyword"> Data Workbench Server </span>或中继服务器之间打开，然后才开始<span class="wintitle">传感器</span>安装过程。 <span class="wintitle"> 传感 </span> 器与Data Workbench Server或中继器服务器建立单 <span class="keyword"> 向HTTPS </span> 或HTTP连接。 </p> </td>
+   <td colname="col2"> <p> <span class="wintitle"> 传感器 </span> 连接到 <span class="keyword"> data workbench server </span> 使用HTTPS（通常为端口443，但可以配置）或HTTP（通常为端口80，但可以配置）。 </p> <p>位于 <span class="wintitle"> 传感器 </span> 和目标 <span class="keyword"> data workbench server </span> 或中继服务器应仅在相应服务器之间打开 <span class="wintitle"> 传感器 </span> 托管计算机和 <span class="keyword"> data workbench server </span> 或中继服务器 <span class="wintitle"> 传感器 </span> 安装过程。 <span class="wintitle"> 传感器 </span> 对 <span class="keyword"> data workbench server </span> 或中继服务器。 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>网络管理系统 </p> </td>
@@ -185,18 +186,18 @@ Data Workbench传感器从Web、应用程序和数据收集服务器收集事件
   </tr>
   <tr>
    <td colname="col1"> <p>服务器时间同步 </p> </td>
-   <td colname="col2"> <p>确保计算机系统时间在每台承载<span class="wintitle">传感器</span>的计算机上持续同步。 <span class="wintitle">传感器</span>监视的Web服务器应用程序和计算机必须具有同步的系统时间，才能从这些应用程序和计算机收集的事件数据准确。 请参阅操作系统的文档，了解如何持续将系统时间与NTP或其他此类时间同步工具同步的步骤。 </p> </td>
+   <td colname="col2"> <p>确保计算机系统时间在承载 <span class="wintitle"> 传感器 </span>. 由监控的Web服务器应用程序和计算机 <span class="wintitle"> 传感器 </span> 必须已同步系统时间，才能从中收集事件数据。 请参阅操作系统的文档，了解如何持续将系统时间与NTP或其他此类时间同步工具同步的步骤。 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>DNS名称用法 </p> </td>
-   <td colname="col2"> <p>Adobe建议<span class="wintitle">传感器</span>使用DNS名称（而不是IP地址）来解析<span class="keyword"> Data Workbench Server </span>或中继服务器的网络地址。 当<span class="wintitle">传感器</span>使用DNS名称时，需要配置主机Web服务器的DNS或本地主机文件，以解析<span class="keyword"> Data Workbench Server </span>或中继服务器的名称。 </p> </td>
+   <td colname="col2"> <p>Adobe建议 <span class="wintitle"> 传感器 </span> 使用DNS名称（而不是IP地址）来解析 <span class="keyword"> data workbench server </span> 或中继服务器。 当 <span class="wintitle"> 传感器 </span> 使用DNS名称时，需要将主机Web服务器的DNS或本地主机文件配置为解析 <span class="keyword"> data workbench server </span> 或中继服务器。 </p> </td>
   </tr>
  </tbody>
 </table>
 
 ### 支持服务器软件 {#section-d6071706539f49d9a861d87b98e6f382}
 
-下表列出了[!DNL Sensor]支持的最常见组合：
+下表列出了 [!DNL Sensor] 支持：
 
 <table id="table_99EA23BBC1A148B49643F4B5E4341C08">
  <thead>
@@ -225,17 +226,17 @@ Data Workbench传感器从Web、应用程序和数据收集服务器收集事件
  </tbody>
 </table>
 
-对于其他服务器和操作系统组合，请咨询Adobe以了解可用性。 [!DNL Sensor]的所有功能并非在Web/应用程序服务器和操作系统的所有组合中都可用。 有关特定[!DNL Sensor]版本的更多信息，请联系Adobe支持。
+对于其他服务器和操作系统组合，请咨询Adobe以了解可用性。 并非 [!DNL Sensor] 可随web/应用程序服务器和操作系统的所有组合一起使用。 有关特定 [!DNL Sensor] 版本，请联系Adobe支持。
 
 ## 报表服务器要求{#report-server-requirements}
 
-Data Workbench报表服务器是允许输出计划报表的组件。 输出的报表可以是.PNG图像或.XLS电子表格形式（置于文件系统中），也可以是电子邮件形式。 其硬件要求与[Data Workbench客户端](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html?lang=zh-Hans)的要求相同。
+Data Workbench报表服务器是允许输出计划报表的组件。 输出的报表可以是.PNG图像或.XLS电子表格形式（置于文件系统中），也可以是电子邮件形式。 其硬件要求与 [Data Workbench客户端](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html?lang=zh-Hans).
 
-[!DNL report server]具有以下要求：
+对 [!DNL report server]:
 
 * 访问文件系统以输出数据（网络共享或本地驱动器）。
 * 访问已配置的SMTP服务器。
-* Microsoft Excel 2003或更高版本安装在[!DNL report]服务器上。 有关其他信息，请参阅[Office服务器端自动化注意事项](https://support.microsoft.com/kb/257757)。
+* Microsoft Excel 2003或更高版本安装在 [!DNL report] 服务器。 请参阅 [关于Office服务器端自动化的注意事项](https://support.microsoft.com/kb/257757) 以了解其他信息。
 
 ## 网络管理{#network-management}
 
@@ -249,7 +250,7 @@ Adobe建议现有网络管理系统监控Data Workbench平台所依赖的硬件�
 
 ## 数据可用性{#data-availability}
 
-服务器DPU处理数据并将其重新处理到新数据集或已刷新的数据集中，这是一种正常且必需的做法。
+服务器DPU处理数据并将其重新处理到新数据集或刷新的数据集中，这是一种正常且必需的做法。
 
 这可能是由于配置更改、数据源更改、硬件更改、不适当配置、硬件故障、软件故障、电源故障等原因而发生的。 在进行此类处理或重新处理时，所有数据集和系统数据都需要立即可供DPU和FSU组件使用。 如果不遵守此要求，则可能导致系统停机时间过长，而且不必要。
 
@@ -259,6 +260,6 @@ Adobe建议现有网络管理系统监控Data Workbench平台所依赖的硬件�
 
 * 对于网络日志文件分发，任何托管日志文件的网络存储系统都需要提供每DPU至少10MB的持续带宽。
 * DPU、FSU和Data Workbench在端口80或443上通过HTTP或HTTPS双向通信(默认情况下；端口也可以进行配置)。
-* Data Workbench[!DNL Sensor(s)]必须能够连接到服务器（单向）。
+* Data Workbench [!DNL Sensor(s)] 必须能够连接到服务器（单向）。
 * 要允许DPU通过SMTP发送警报消息，它必须能够联系配置的SMTP服务器。
 * Adobe建议为FSU和DPU指定网络名称（如FSU01.CLIENT.COM），以避免在IP地址发生更改时进行重新配置。

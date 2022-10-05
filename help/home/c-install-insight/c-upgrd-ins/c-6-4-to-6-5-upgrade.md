@@ -1,14 +1,18 @@
 ---
 description: 按照这些步骤升级至 Data Workbench v6.5。
-title: 将 6.4 升级至 6.5
+title: 从 6.4 升级至 6.5
 uuid: b90b7b0c-7467-405f-a5ca-c40e69975d49
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: bcfd1ab1-2fb8-4bcd-b6c9-329143274ca4
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 90%
 
 ---
 
+# 从 6.4 升级至 6.5{#upgrading-to}
 
-# 将 6.4 升级至 6.5{#upgrading-to}
+{{eol}}
 
 按照这些步骤升级至 Data Workbench v6.5。
 
@@ -16,7 +20,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 请在升级到 Data Workbench 6.5 时，遵循下面的要求和建议。
 
-* Changes in the **[!DNL Components for Processing Servers\Communications.cfg]** file require you to update this file for the DWB 6.5 release. *SourceListServer*、*SegmentExportServer* 和 *NormalizeServer* 条目已删除。（DPU 不应运行 *sourcelist*、*segment export* 或 *normalize servers*。）
+* 更改 **[!DNL Components for Processing Servers\Communications.cfg]** 文件要求您为DWB 6.5版本更新此文件。 *SourceListServer*、*SegmentExportServer* 和 *NormalizeServer* 条目已删除。（DPU 不应运行 *sourcelist*、*segment export* 或 *normalize servers*。）
 
 * 关联和弦、关联矩阵、联合和弦、联合矩阵、倾向得分和最适合归因可视化当前为多次传递可视化。
 
@@ -33,4 +37,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    ```
 
    其中，n 为 Report Server 在工作区内支持多次传递可视化的最大数量。
-

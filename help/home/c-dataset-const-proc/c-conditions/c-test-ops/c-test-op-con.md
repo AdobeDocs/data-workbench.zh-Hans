@@ -3,14 +3,16 @@ description: 关于测试运算条件的信息，包括比较、不为空、范�
 title: 测试运算条件
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 exl-id: 6c1f521b-a6b9-4bb7-bdfa-56c615b0c916
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 68%
+ht-degree: 67%
 
 ---
 
 # 测试运算条件{#test-operation-conditions}
+
+{{eol}}
 
 关于测试运算条件的信息，包括比较、不为空、范围、正则表达式和字符串匹配。
 
@@ -22,9 +24,9 @@ ht-degree: 68%
 
 ## 比较 {#section-fb2bdb3838504099b324b9838cdeeaac}
 
-[!DNL Compare]条件比较字符串值或数值。 对于字符串值的比较，可以指定是否应该考虑大小写。
+的 [!DNL Compare] 条件会比较字符串值或数值。 对于字符串值的比较，可以指定是否应该考虑大小写。
 
-下表描述了[!DNL Compare]条件的参数：
+的参数 [!DNL Compare] 下表描述了条件：
 
 <table id="table_05B1FBB2AED242D99081E62BE2FBEC60"> 
  <thead> 
@@ -70,21 +72,21 @@ ht-degree: 68%
   </tr> 
   <tr> 
    <td colname="col1"> 类型 </td> 
-   <td colname="col2">要进行的比较类型。可用类型为 <span class="wintitle">LEXICAL</span>（词法）、<span class="wintitle">NUMERIC</span>（数值）和 <span class="wintitle">DATETIME</span>（日期时间）。有关这些类型的描述，请参阅<a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a">测试运算的测试类型</a> 。 </td> 
+   <td colname="col2">要进行的比较类型。可用类型为 <span class="wintitle">LEXICAL</span>（词法）、<span class="wintitle">NUMERIC</span>（数值）和 <span class="wintitle">DATETIME</span>（日期时间）。有关类型的描述，请参阅 <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> 测试运算的测试类型</a>. </td> 
    <td colname="col3"> <span class="wintitle"> LEXICAL</span>（词法） </td> 
   </tr> 
  </tbody> 
 </table>
 
-此示例使用[!DNL Compare]条件来定义[!DNL Log Entry Condition]。 在 Data Workbench Server 读取每条事件数据记录时，将比较数值 x-age 和 55。对于给定的日志条目，如果 x-age 小于等于 55，则该日志条目包含在数据集构建过程中。
+此示例使用 [!DNL Compare] 定义条件 [!DNL Log Entry Condition]. 在 Data Workbench Server 读取每条事件数据记录时，将比较数值 x-age 和 55。对于给定的日志条目，如果 x-age 小于等于 55，则该日志条目包含在数据集构建过程中。
 
 ![](assets/cfg_Condition_CompareCondition.png)
 
-## 不为空  {#section-1decb9d887894073a1b6b3d985729ac8}
+## 不为空 {#section-1decb9d887894073a1b6b3d985729ac8}
 
-[!DNL Not Empty]条件会检查字段，以确定它是包含值还是为空。 对于[!DNL Input]字段的值不为空的任何日志条目，都满足该条件。
+的 [!DNL Not Empty] 条件会检查字段以确定它是包含值还是为空。 对于其值为 [!DNL Input] 字段不为空。
 
-下表描述了[!DNL Not Empty]条件的参数：
+的参数 [!DNL Not Empty] 下表描述了条件：
 
 | 参数 | 描述 | 默认 |
 |---|---|---|
@@ -97,9 +99,9 @@ ht-degree: 68%
 
 ## Range {#section-1db31583bb09418b8f49481a897b08a6}
 
-[!DNL Range]条件采用输入字段并确定该字段的值是否在给定的最小值(Min)和最大值(Max)参数值范围内，包括在内。
+的 [!DNL Range] 条件采用输入字段并确定该字段的值是否在给定的最小(Min)和最大(Max)参数值范围内（包括最小值和最大值）。
 
-下表描述了[!DNL Range]条件的参数：
+的参数 [!DNL Range] 下表描述了条件：
 
 <table id="table_1587D8D333804FC28024C0DFC2F2D4D3"> 
  <thead> 
@@ -137,13 +139,13 @@ ht-degree: 68%
   </tr> 
   <tr> 
    <td colname="col1"> 类型 </td> 
-   <td colname="col2">要进行的比较类型。可用类型为 <span class="wintitle">LEXICAL</span>（词法）、<span class="wintitle">NUMERIC</span>（数值）和 <span class="wintitle">DATETIME</span>（日期时间）。有关这些类型的描述，请参阅<a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a">测试运算的测试类型</a> 。 </td> 
+   <td colname="col2">要进行的比较类型。可用类型为 <span class="wintitle">LEXICAL</span>（词法）、<span class="wintitle">NUMERIC</span>（数值）和 <span class="wintitle">DATETIME</span>（日期时间）。有关类型的描述，请参阅 <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> 测试运算的测试类型</a>. </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-此示例使用[!DNL Range]条件来定义[!DNL Log Entry Condition]。 当Data Workbench Server读取每条[!DNL event data]记录时，它会比较数值x-age和55。 对于给定的日志条目，如果 x-age 至少为 55，则该日志条目包含在数据集构建过程中。此示例与[!DNL Compare]条件示例执行相同的函数。 请参阅[比较](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac)。
+此示例使用 [!DNL Range] 定义条件 [!DNL Log Entry Condition]. Data Workbench Server读取每个 [!DNL event data] 记录，它会比较数值x-age和55。 对于给定的日志条目，如果 x-age 至少为 55，则该日志条目包含在数据集构建过程中。此示例与 [!DNL Compare] 条件示例。 请参阅[比较](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac)。
 
 >[!NOTE]
 >
@@ -153,11 +155,11 @@ ht-degree: 68%
 
 ## 正则表达式 {#section-ae9c016502cb44128760c58f2d2d5297}
 
-[!DNL Regular Expression]条件测试使用正则表达式模式匹配（请参阅[正则表达式](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)）来确定指定输入字段的值是否包含与Matches（匹配）参数中指定的模式之一匹配的字符串。
+的 [!DNL Regular Expression] 条件测试使用正则表达式模式匹配(请参阅 [正则表达式](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c))，以确定指定输入字段的值是否包含与Matches（匹配）参数中指定的模式之一匹配的字符串。
 
-如果输入是字符串矢量，则只使用矢量中的第一个值进行测试。[!DNL Regular Expression]条件执行完整的字符串比较。 如果您要标识子字符串，则必须在字符串前后分别附加“.*”。
+如果输入是字符串矢量，则只使用矢量中的第一个值进行测试。的 [!DNL Regular Expression] 条件会执行完整的字符串比较。 如果要标识子字符串，必须在前面附加“”。&#42;“ ”。
 
-下表描述了[!DNL Regular Expression]条件的参数：
+的参数 [!DNL Regular Expression] 下表描述了条件：
 
 <table id="table_0BF5F89F87C9493B8DABA97620074FAD"> 
  <thead> 
@@ -196,13 +198,13 @@ ht-degree: 68%
  </tbody> 
 </table>
 
-此示例说明如何使用[!DNL Regular Expression]条件来匹配从网站流量收集的数据字段。 仅当cs(referrer-query)字段包含与正则表达式`campaign=C[1-9][0-9]{4}`匹配的字符串时，该条件才会返回true。 此正则表达式匹配包含`campaign=C12345`的任何字符串。 但是，该模式与字符串`campaign=C0123&`不匹配，因为`C`后面的第一个字符不在`1-9`范围内。
+此示例说明了 [!DNL Regular Expression] 匹配从网站流量收集的数据字段的条件。 仅当cs(referrer-query)字段包含与正则表达式匹配的字符串时，该条件才会返回true `campaign=C[1-9][0-9]{4}`. 此正则表达式匹配包含 `campaign=C12345`. 但是，模式与字符串不匹配 `campaign=C0123&` 因为 `C` 不在范围内 `1-9`.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
 ## 字符串匹配 {#section-f8d132085c6b4500bfbe4515b848142f}
 
-[!DNL String Match]条件测试字符串的等同性。 它采用某个指定字段作为输入，测试每个日志条目中该字段的值是否与该运算的 Matches（匹配）参数中指定的字符串匹配。如果这些区分大小写的匹配字符串中有任何一个与所提供的输入字段中的值相同，则运算将返回 true。如果 [!DNL StringCondition] 不包含任何匹配字符串，则条件将返回 false。如果输入是字符串矢量，则只使用矢量中的第一个值（字符串）进行测试。
+的 [!DNL String Match] 字符串相等的条件测试。 它采用某个指定字段作为输入，测试每个日志条目中该字段的值是否与该运算的 Matches（匹配）参数中指定的字符串匹配。如果这些区分大小写的匹配字符串中有任何一个与所提供的输入字段中的值相同，则运算将返回 true。如果 [!DNL StringCondition] 不包含任何匹配字符串，则条件将返回 false。如果输入是字符串矢量，则只使用矢量中的第一个值（字符串）进行测试。
 
 <table id="table_BD599BAA5DD54B278813B6C38AC8DE6B"> 
  <thead> 
@@ -241,6 +243,6 @@ ht-degree: 68%
  </tbody> 
 </table>
 
-此示例使用从网站流量收集的数据来说明[!DNL String Match]条件的使用。 该条件测试输入字段(cs-uri-stem)是否与Matches（匹配）参数中指定的两个字符串中的任一字符串匹配，如果字段cs-uri-stem是精确字符串[!DNL /navigation/footer.asp]或精确字符串[!DNL /navigation/header.asp]，则该条件会成功。
+此示例使用从网站流量收集的数据来说明 [!DNL String Match] 条件。 该条件测试输入字段(cs-uri-stem)是否与Matches（匹配）参数中指定的两个字符串中的任一字符串匹配，如果字段cs-uri-stem是精确字符串，则该条件会成功 [!DNL /navigation/footer.asp] 或精确的字符串 [!DNL /navigation/header.asp].
 
 ![](assets/cfg_Condition_StringMatch.png)

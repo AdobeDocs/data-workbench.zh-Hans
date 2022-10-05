@@ -3,7 +3,7 @@ description: 配置文件过滤器会限制数据集中可用数据的范围。
 title: 内置配置文件过滤器
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # 内置配置文件过滤器{#built-in-profile-filters}
+
+{{eol}}
 
 配置文件过滤器会限制数据集中可用数据的范围。
 
@@ -51,4 +53,4 @@ entity = derived_filter:
 
 默认情况下，工作区会将“无效会话”过滤器应用于其选择和基准，并且可以通过在工作区中右键单击并单击“数据”>“无效会话过滤器”来切换该过滤器。
 
-无效会话过滤器可在过滤器表达式中以Broken_Session_Filter的形式引用，即使未为当前工作区启用它也是如此。 有关其他信息，请参阅[过滤器表达式](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers)。
+无效会话过滤器可在过滤器表达式中以Broken_Session_Filter的形式引用，即使未为当前工作区启用它也是如此。 请参阅 [过滤器表达式](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) 以了解其他信息。

@@ -3,7 +3,7 @@ description: 工作区是一个用于特殊分析和可视化任务的容器。
 title: 显示工作区
 uuid: 848035e5-7b7f-4e33-b61d-3759335e459b
 exl-id: 18db0cd4-6cb0-4514-9056-1c1e82b2092e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 67%
@@ -11,6 +11,8 @@ ht-degree: 67%
 ---
 
 # 显示工作区{#display-workspaces}
+
+{{eol}}
 
 工作区是一个用于特殊分析和可视化任务的容器。
 
@@ -28,4 +30,4 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->打开新工作区后，您可能需要单击&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Temporarily Unlock]**&#x200B;来解锁屏幕。
+>打开新工作区后，您可能需要单击 **[!UICONTROL Add]** > **[!UICONTROL Temporarily Unlock]** 来解锁屏幕。

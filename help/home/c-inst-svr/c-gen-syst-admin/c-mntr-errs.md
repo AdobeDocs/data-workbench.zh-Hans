@@ -3,7 +3,7 @@ description: 要尽快检测系统和应用程序错误并在它们导致重大�
 title: 监控错误事件
 uuid: 09bb34db-e24d-4bc5-84d2-7fc37df60681
 exl-id: 88f48594-5c73-4ae3-8014-b8543e689426
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 ---
 
 # 监控错误事件{#monitoring-events-for-errors}
+
+{{eol}}
 
 要尽快检测系统和应用程序错误并在它们导致重大问题或中断之前解决它们，您应定期监控事件日志。
 

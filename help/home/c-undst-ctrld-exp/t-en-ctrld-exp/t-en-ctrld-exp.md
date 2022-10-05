@@ -4,7 +4,7 @@ solution: Analytics
 title: 启用控制试验
 uuid: 27d68fad-ae2d-4a2e-b449-fbaf88286cfa
 exl-id: 53c18524-6050-4708-af63-9e8ef8da389e
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 4%
@@ -12,6 +12,8 @@ ht-degree: 4%
 ---
 
 # 启用控制试验{#enabling-controlled-experimentation}
+
+{{eol}}
 
 要启用对照实验，对您的Web或应用程序服务器具有管理员访问权限的人员必须在安装传感器的Web群集中的每个Web或应用程序服务器上修改传感器配置文件（通常使用txlogd.conf命名）中的ExpFile参数。
 

@@ -3,7 +3,7 @@ description: 可以使用“导出”工作区菜单将工作区打印和导出�
 title: 共享工作区
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
 exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 74%
@@ -12,9 +12,11 @@ ht-degree: 74%
 
 # 共享工作区{#share-a-workspace}
 
+{{eol}}
+
 可以使用“导出”工作区菜单将工作区打印和导出到 .png 文件或 Excel。
 
-在工作区中，单击&#x200B;**[!UICONTROL Export]**。
+在工作区中，单击 **[!UICONTROL Export]**.
 
 ![](assets/mnu_export.png)
 
@@ -49,11 +51,11 @@ ht-degree: 74%
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> 如果Data Workbench机上安装了Microsoft Excel，则会自动启动Microsoft Excel，并将某些可视化、某些图例和文本批注中的数据导出到新的Excel文件(.xls或.xlsx)。 请参阅<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb">将工作区数据导出到 Microsoft Excel</a>。 </td> 
+   <td colname="col2"> 如果Data Workbench计算机上安装了Microsoft Excel，则会自动启动Microsoft Excel，并将某些可视化、某些图例和文本批注中的数据导出到新的Excel文件(.xls或.xlsx)。 请参阅<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb">将工作区数据导出到 Microsoft Excel</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 从模板导出 (Excel) </td> 
-   <td colname="col2"> 如果Data Workbench机上安装了Microsoft Excel，则会自动启动Microsoft Excel，并将某些可视化、某些图例和文本批注中的数据导出到您选择的模板Excel文件（<span class="filepath"> .xls</span>或<span class="filepath"> .xlsx</span>）。 请参阅<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302">导出到模板 Excel 文件</a>。 </td> 
+   <td colname="col2"> 如果Data Workbench计算机上安装了Microsoft Excel，则会自动启动Microsoft Excel，并将某些可视化、某些图例和文本批注中的数据导出到模板Excel文件(<span class="filepath"> .xls</span> 或 <span class="filepath"> .xlsx</span>)。 请参阅<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302">导出到模板 Excel 文件</a>。 </td> 
   </tr> 
  </tbody> 
 </table>

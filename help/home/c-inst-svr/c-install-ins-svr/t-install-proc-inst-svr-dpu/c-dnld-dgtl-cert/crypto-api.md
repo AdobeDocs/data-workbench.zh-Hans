@@ -3,15 +3,16 @@ description: 您可以将客户端的证书和私钥存储在 Windows 证书存�
 title: Windows 证书存储
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
 exl-id: 8613a941-6213-4bfa-9c35-dccc2acb6c17
-translation-type: ht
-source-git-commit: 233b04c65a45d3f92b8670bc244b907dc198b51d
-workflow-type: ht
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 100%
 
 ---
 
 # Windows 证书存储{#windows-certificate-store}
+
+{{eol}}
 
 您可以将客户端的证书和私钥存储在 Windows 证书存储区，以便与服务器进行 SSL 通信。
 
@@ -21,7 +22,7 @@ ht-degree: 100%
 >
 >许可证服务器的授权功能仍将通过使用现有的 `<Common Name>.pem` 文件来维护，并且从证书存储区获得的证书将只能用于同您指定的服务器通信。
 
-## 先决条件 {#section-69b18600052145ff8e5299b7123e69c5}
+## 前提条件 {#section-69b18600052145ff8e5299b7123e69c5}
 
 1. 您必须具有 [!DNL certmgr.msc] 文件的访问权限，并且能够将证书和密钥导入 **Personal** 存储区。（对于大部分 Windows 用户而言，默认情况下应当将其设置为 True。）
 

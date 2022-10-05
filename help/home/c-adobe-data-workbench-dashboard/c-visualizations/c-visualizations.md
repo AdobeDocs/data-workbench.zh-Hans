@@ -3,7 +3,7 @@ description: 可视化是添加到功能板画布中的元素，配置为显示�
 title: 可视化图表
 uuid: 1e15de30-7761-422a-a836-7a1b49b58daf
 exl-id: 7e8b23cd-5e95-4cd5-b07e-3aa53f26fac7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # 可视化图表{#visualizations}
+
+{{eol}}
 
 可视化是添加到功能板画布中的元素，配置为显示各种量度和基于维度的数据。
 
@@ -25,13 +27,13 @@ ht-degree: 3%
 * 柱状图
 * 条形图
 * 折线图
-* 表格
+* 表 
 * 量度图例
 * 饼状图
 * 散点图
 * 富文本
 
-## 可视化用户界面{#section-54a73865f00742268340cf9123d6c590}
+## 可视化用户界面 {#section-54a73865f00742268340cf9123d6c590}
 
 可视化的标题部分包含可视化标题和可视化工具，这些工具会因可视化的类型和状态而异。 可视化的正文包含内容，具体取决于所显示的可视化的类型和配置。 仅当鼠标进入可视化窗口时，才会显示可视化工具。 否则，它们会被隐藏。
 

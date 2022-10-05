@@ -3,7 +3,7 @@ description: 安装了 Insight 程序文件之后，您必须下载并安装 Ado
 title: 下载和安装数字证书(Insight)
 uuid: 93ab2222-a977-4279-9e1e-71038b1d1cfa
 exl-id: 0dff95ae-880b-45d5-96df-4eb6bea58891
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 91%
@@ -11,6 +11,8 @@ ht-degree: 91%
 ---
 
 # 下载和安装数字证书{#downloading-and-installing-the-digital-certificate}
+
+{{eol}}
 
 安装了 Insight 程序文件之后，您必须下载并安装 Adobe 为您提供的数字证书。
 
@@ -93,7 +95,7 @@ crypto-api.xml
 >
 >许可证服务器的授权功能仍将通过使用现有的 `<Common Name>.pem` 文件来维护，并且从证书存储区获得的证书将只能用于同您指定的服务器通信。
 
-## 先决条件 {#section-69b18600052145ff8e5299b7123e69c5}
+## 前提条件 {#section-69b18600052145ff8e5299b7123e69c5}
 
 1. 您必须具有 [!DNL certmgr.msc] 文件的访问权限，并且能够将证书和密钥导入 **Personal** 存储区。（对于大部分 Windows 用户而言，默认情况下应当将其设置为 True。）
 
@@ -240,7 +242,7 @@ Data Workbench 客户端或服务器使用的证书需要由受信任的 CA（�
       ```
 
    1. Certificate 具有 CN、O、OU 等，这是根据服务器的 [!DNL Access Control.cfg] 文件中此客户端的要求来决定的。
-   1. 证书是通过 *client*（或 *server* **和** *client*）的 *purpose **** 颁发的。
+   1. 证书的颁发者为 *用途&#42;&#42;&#42;* of *客户端* (或同时 *服务器* **和** *客户端*)。
 
       要验证证书具有服务器和/或客户端的目的代码，可使用以下命令：
 

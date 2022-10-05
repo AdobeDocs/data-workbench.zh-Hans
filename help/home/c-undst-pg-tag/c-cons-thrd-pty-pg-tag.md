@@ -3,7 +3,7 @@ description: 有关使用P3P标记和防止Cookie阻塞的概念信息。
 title: 第三方页面标记的 P3P 注意事项
 uuid: b88d0d22-0ff8-4b63-9be9-7acc12061146
 exl-id: 8eb521b6-802c-4d9f-a6b4-b1c4f694b8b8
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # 第三方页面标记的 P3P 注意事项{#p-p-considerations-for-third-party-page-tagging}
 
+{{eol}}
+
 有关使用P3P标记和防止Cookie阻塞的概念信息。
 
 ## 了解第三方页面标记 {#section-8dc5b6b99e454ef7a7cf578ebbf9efca}
 
 在大多数实施中，Adobe永久Cookie被视为第一方Cookie。 第一方Cookie被定义为与主机域关联的Cookie。
 
-假设用户访问https://www.example.com/。 假设在托管该域的Web服务器上安装了传感器并且该传感器可运行，则会设置Adobe永久Cookie并将其视为第一方Cookie。 但是，您可能希望通过使用嵌入式对象从第三方站点收集测量数据，这些对象是从运行[!DNL Sensor]的服务器中请求并加载的，而不是从托管页面或广告程序的第三方服务器中加载的。 例如，https://www.example2.com/提供网页，其中提供https://www.example.com/中提供的嵌入对象请求。 从https://www.example.com/请求嵌入对象会导致设置Cookie;但是，在此上下文中，Web浏览器或用户代理将Cookie视为第三方Cookie。
+假设用户访问https://www.example.com/。 假设在托管该域的Web服务器上安装了传感器并且该传感器可运行，则会设置Adobe永久Cookie并将其视为第一方Cookie。 但是，您可能希望通过使用嵌入式对象从第三方站点收集测量数据，这些对象会从运行的服务器中请求并加载 [!DNL Sensor] 而不是从托管页面或广告项目的第三方服务器中访问。 例如，https://www.example2.com/提供网页，其中提供https://www.example.com/中提供的嵌入对象请求。 从https://www.example.com/请求嵌入对象会导致设置Cookie;但是，在此上下文中，Web浏览器或用户代理将Cookie视为第三方Cookie。
 
 在Microsoft的IE6等较新的Web浏览器中，隐私功能会根据Cookie在Web服务器的HTTP响应标头中发送的压缩策略来过滤Cookie。 在大多数用户从不更改的默认IE6设置中，当第三方Cookie不存在或不符合要求的紧凑策略时，将会阻止这些Cookie。 大多数遇到Cookie拦截问题的网站的第三方Cookie在其网站上没有在HTTP响应标头中发送相应的压缩策略。 此外，当网站被另一个网站构建时，会出现一些Cookie阻止问题。 例如，作为在线购物门户一部分的在线商店可能显示在该门户提供的框架中。 从浏览器的角度来看，商店内容在门户设置框架时可能显示为第三方内容。 但是，如果访客直接转到在线商店而没有通过门户，则内容将是第一方内容。 因此，在线商店发现，只有当访客通过门户进入时，其Cookie才会被阻止。
 
@@ -41,7 +43,7 @@ P3P为网站提供了一种标准方式，以计算机可读的XML格式对其�
 P3P: policyref=” https://www.myserver.com/w3c/p3p.xml”, CP=”NOI DSP COR PSA PSD OUR IND COM NAV”
 ```
 
-在此示例中，文件[!DNL p3p.xml]用于引用驻留在Web服务器上的关联[!DNL policy.xml]文件，该文件表示您的网站收集的信息类型、您的组织遵守的争议解决方法、收集的数据的使用方式、数据的拥有者以及与Internet隐私相关的其他标准信息。 “CP”后面的三个字符代码是用于模拟[!DNL policy.xml]文件中所述内容的压缩策略代码。
+在本例中，文件 [!DNL p3p.xml] 用于引用关联的 [!DNL policy.xml] 驻留在Web服务器上的文件，它表示您的网站收集的信息类型、您的组织遵守的争议解决方法、收集的数据的使用方式、数据的所有者以及与Internet隐私相关的其他标准信息。 “CP”后面的三个字符代码是紧凑的策略代码，用于模拟 [!DNL policy.xml] 文件。
 
 所有紧凑的策略和策略XML文件都应针对其所部署的相应组织进行定制，以准确指定与网站数据收集有关的内部隐私政策。 您可以在线找到许多P3P政策编辑者，以及与在您的网站中实施适当隐私政策相关的更深入的信息。
 

@@ -3,7 +3,7 @@ description: Data Workbench Geography支持所有地形图像层源的经纬度�
 title: 指定地形图像的投影信息
 uuid: 4a476192-e749-4187-b64e-9794f39b0019
 exl-id: 400b9b59-f700-4b16-8549-fe93140cad1a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 65%
@@ -11,6 +11,8 @@ ht-degree: 65%
 ---
 
 # 指定地形图像的投影信息{#specifying-projection-information-for-terrain-images}
+
+{{eol}}
 
 Data Workbench Geography支持所有地形图像层源的经纬度投影和通用横轴墨卡托(UTM)投影。
 

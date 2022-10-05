@@ -3,14 +3,16 @@ description: 时间维度允许您基于为 Input Time (1970 epoch)（输入时�
 title: 时间维度
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
 exl-id: f9534b24-3a16-4220-bac2-bc541e121005
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # 时间维度{#time-dimensions}
+
+{{eol}}
 
 时间维度允许您基于为 Input Time (1970 epoch)（输入时间（1970 纪元））参数指定的任何时间戳字段，创建一组定期或绝对本地时间维度（例如“日”、“周日期”、“每天时间”、“预订时间”等）。
 
@@ -57,7 +59,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> Input Time (1970 epoch)（输入时间（1970 纪元）） </td> 
-   <td colname="col2"> <p>用作输入的时间戳字段的名称。 </p> <p> <p>注意：字段的值必须代表自 1970 年 1 月 1 日 00:00:01 之后的秒数。如果输入时间不是有效的时间（1970 年到 2037 年），转换过程将失败，并且 Data Workbench Server 将生成错误。 </p> </p> </td> 
+   <td colname="col2"> <p>用作输入的时间戳字段的名称。 </p> <p> <p>注意：字段的值必须表示自1970年1月1日00起的秒数:00:01. 如果输入时间不是有效的时间（1970 年到 2037 年），转换过程将失败，并且 Data Workbench Server 将生成错误。 </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

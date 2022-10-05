@@ -3,7 +3,7 @@ description: 您可以使用 Hidden（隐藏）参数或 Show（显示）参数�
 title: 隐藏扩展维度
 uuid: c32f47ad-0246-4611-b54c-0c9f0eb396bd
 exl-id: 5baccf39-6f3b-40a1-b1c0-a8e5d6a61211
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 79%
@@ -11,6 +11,8 @@ ht-degree: 79%
 ---
 
 # 隐藏扩展维度{#hiding-extended-dimensions}
+
+{{eol}}
 
 您可以使用 Hidden（隐藏）参数或 Show（显示）参数来隐藏扩展维度，使其不会显示在 Data Workbench 的维度菜单中。
 
@@ -25,9 +27,9 @@ ht-degree: 79%
 
 ## 使用 Hidden（隐藏）参数隐藏扩展维度 {#section-7167a6f6241a4bc78f2f322e048d65cf}
 
-Hidden（隐藏）参数是一个可选参数，在[!DNL Transformation Dataset Configuration]文件中定义扩展维度时，可以使用该参数。
+Hidden（隐藏）参数是一个可选参数，在中定义扩展维度时可使用该参数 [!DNL Transformation Dataset Configuration] 文件。
 
-1. 打开[!DNL Transformation Dataset Configuration]文件，其中定义了要隐藏的扩展维度。 请参阅[编辑现有数据集包含文件](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077)。
+1. 打开 [!DNL Transformation Dataset Configuration] 定义了要隐藏的扩展维度的文件。 请参阅 [编辑现有数据集包含文件](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077).
 
 1. 在配置窗口中找到所需维度对应的 Hidden（隐藏）参数，然后键入 *true*。
 1. 将该文件保存在本地，然后将其保存到服务器上的相应配置文件中。请参阅 [编辑现有数据集包含文件](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077).
@@ -36,9 +38,9 @@ Hidden（隐藏）参数是一个可选参数，在[!DNL Transformation Dataset 
 
 如果您更改了 Hidden（隐藏）参数的设置，则必须重新转换数据集才能使更改生效。
 
-## 使用 Show（显示）参数隐藏扩展维度  {#section-4dceb1079c7f40d2bffc686d1f73f8ad}
+## 使用 Show（显示）参数隐藏扩展维度 {#section-4dceb1079c7f40d2bffc686d1f73f8ad}
 
-Show（显示）参数不是可用于在[!DNL Transformation Dataset Configuration]文件中定义扩展维度的参数之一。 而是在[!DNL .dim]文件中为您创建的任何派生维度定义参数。 因此，若要使用 Show（显示）参数来隐藏扩展维度，必须首先按照以下过程所述，创建基于扩展维度的派生维度：
+Show（显示）参数不是用于在 [!DNL Transformation Dataset Configuration] 文件。 而是在 [!DNL .dim] 文件。 因此，若要使用 Show（显示）参数来隐藏扩展维度，必须首先按照以下过程所述，创建基于扩展维度的派生维度：
 
 1. 使用文本编辑器（例如记事本）创建一个名为&lt;*维度名称*>.dim 的空文件。该文件名应该与您要隐藏的维度名称匹配。例如，若要隐藏“下一页”维度，您将创建 [!DNL Next Page.dim] 文件。
 
@@ -49,6 +51,6 @@ Show（显示）参数不是可用于在[!DNL Transformation Dataset Configurati
 
 1. 将该文件保存到配置文件的 Dimensions 目录中。如果需要，可以将该文件保存到某个子目录中。
 
-当您使用 Show（显示）参数隐藏扩展维度时，不必重新转换数据集即可使更改生效。您可以选择隐藏或显示配置文件的本地版本中的维度（即，可以将[!DNL .dim]文件保存到User文件夹中），也可以将[!DNL .dim]文件保存到服务器以供配置文件的其他用户使用。
+当您使用 Show（显示）参数隐藏扩展维度时，不必重新转换数据集即可使更改生效。您可以选择隐藏或显示本地版本的配置文件中的维度(即，可以保存 [!DNL .dim] 文件到您的用户文件夹)，或者您可以保存 [!DNL .dim] 文件到服务器以供配置文件的其他用户使用。
 
 您也可以使用 Show（显示）参数来隐藏量度和过滤器。有关信息，请参阅《Data Workbench 用户指南》**&#x200B;中的“配置界面和分析功能”一章。

@@ -3,7 +3,7 @@ description: Data Workbench 利用正则表达式 (regex) 执行搜索和分类�
 title: 正则表达式
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 68%
@@ -12,9 +12,11 @@ ht-degree: 68%
 
 # 正则表达式{#regular-expressions}
 
+{{eol}}
+
 Data Workbench 利用正则表达式 (regex) 执行搜索和分类操作。
 
-在&#x200B;**[!UICONTROL Search]**&#x200B;字段中，您可以使用常用表达式执行“re：”语句后面的搜索，例如：
+在 **[!UICONTROL Search]** 字段中，您可以使用常用表达式执行“re：”语句后面的搜索，例如：
 
 ```
 <b>re: *.s</b>

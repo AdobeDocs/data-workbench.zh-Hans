@@ -1,16 +1,18 @@
 ---
 description: 选择可视化中的元素会动态过滤数据集。
-title: 在可视化图表中选择
+title: 在可视化图表中进行选择
 uuid: 3900354f-826b-41e8-9bc2-e4856928bad5
 exl-id: bb1dd7e4-a9f8-48b5-a12d-433c601b455b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 100%
 
 ---
 
-# 在可视化图表中选择{#make-selections-in-visualizations}
+# 在可视化图表中进行选择{#make-selections-in-visualizations}
+
+{{eol}}
 
 选择可视化中的元素会动态过滤数据集。
 

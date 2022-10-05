@@ -1,14 +1,18 @@
 ---
 description: 关联弦图可视化允许您同时显示量度、维度和元素之间的比例和关联，从而将较大的弦图显示为一个更强关联的指征。
-title: 关联弦图可视化
+title: 关联和弦可视化图表
 uuid: c656ffc8-e45a-44c0-a29b-cdc10dcbd1f2
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: e71394ef-4895-4a3e-912d-d6f56ca8f001
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 87%
 
 ---
 
+# 关联和弦可视化图表{#association-chord-visualization}
 
-# 关联弦图可视化{#association-chord-visualization}
+{{eol}}
 
 关联弦图可视化允许您同时显示量度、维度和元素之间的比例和关联，从而将较大的弦图显示为一个更强关联的指征。
 
@@ -24,11 +28,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    选择完毕后，会打开空白的关联表格，选择的维度会在标题中标出。 ![](assets/association_chord2.png)
 
-1. **选择度量、维或维元素**。
+1. **选择量度、维度或维度元素**.
 
    右键单击弦图可视化并选择&#x200B;**添加量度**&#x200B;或&#x200B;**添加维度**。从菜单中选择项目并添加到弦图中。
 
-   You can also drag metrics and dimensions from the **[!UICONTROL Finder]** by clicking **[!UICONTROL Ctrl-Alt]** and dragging metrics and dimensions to the chord. 或者从一个打开的表格，直接将维度元素拖放到弦图可视化中。
+   您还可以从 **[!UICONTROL Finder]** 单击 **[!UICONTROL Ctrl-Alt]** 和将量度和维度拖到弦图中。 或者从一个打开的表格，直接将维度元素拖放到弦图可视化中。
 
 1. **选择其他量度、维度和元素进行关联**。
 
@@ -51,5 +55,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!IMPORTANT]
 >
->从包含至少一个度量的关联弦图导出关联表将在关联表的行／列中产生重复的元素。 要避免出现重复元素，请创建新的关联表格并添加所需元素，而不是从关联弦图图表中导出元素。
-
+>从至少包含一个量度的关联弦图图中导出关联表格时，将导致关联表格的行/列中出现重复元素。 要避免出现重复元素，请创建新的关联表格并添加所需元素，而不是从关联弦图图表中导出元素。

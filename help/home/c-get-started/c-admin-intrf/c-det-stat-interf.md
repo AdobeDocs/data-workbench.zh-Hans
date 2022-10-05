@@ -3,7 +3,7 @@ description: “详细状态”界面可用于对Data Workbench服务器计算�
 title: 详细状态界面
 uuid: c4d375d9-431f-4b0a-ba15-b7a10501b2e2
 exl-id: 6a460ebd-fb8f-4486-9849-dad2ff745cb5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 75%
@@ -12,19 +12,21 @@ ht-degree: 75%
 
 # 详细状态界面{#detailed-status-interface}
 
+{{eol}}
+
 “详细状态”界面可用于对Data Workbench服务器计算机的错误或其他问题进行故障诊断。
 
-这包括运行在这些计算机或作为Data Workbench服务器客户端的[!DNL Report]计算机上的任何[!DNL Transform]配置文件。 您可以通过[!DNL Admin]菜单访问[!DNL Master Server]和[!DNL Query Server Detailed Status]接口。 要访问其他计算机的[!DNL Detailed Status]接口，请在[!DNL Servers Manager]中，右键单击要查看其状态的服务器节点，然后单击&#x200B;**[!UICONTROL Detailed Status]**。 请参阅[服务器管理器](../../../home/c-get-started/c-admin-intrf/c-svrs-mgr.md#concept-2dfff1ca5bce470a8ee854ed57cbe5ba)。
+这包括任何 [!DNL Transform] 在这些计算机上运行的配置文件，或 [!DNL Report] 作为Data Workbench服务器客户端的计算机。 您可以访问 [!DNL Master Server] 和 [!DNL Query Server Detailed Status] 通过 [!DNL Admin] 菜单。 访问 [!DNL Detailed Status] 界面中 [!DNL Servers Manager]，右键单击要查看其状态的服务器节点，然后单击 **[!UICONTROL Detailed Status]**. 请参阅 [服务器管理器](../../../home/c-get-started/c-admin-intrf/c-svrs-mgr.md#concept-2dfff1ca5bce470a8ee854ed57cbe5ba).
 
-有关Data Workbench服务器的详细信息，请参阅&#x200B;*《服务器产品安装和管理指南》*。
+有关Data Workbench服务器的更多信息，请参阅 *《服务器产品安装和管理指南》*.
 
 ![](assets/vis_DetailedStatus.png)
 
 >[!NOTE]
 >
->要更新[!DNL Detailed Status]界面中的信息，请右键单击&#x200B;**[!UICONTROL Detailed Status]**&#x200B;标题，然后单击&#x200B;**[!UICONTROL Refresh]**。
+>更新 [!DNL Detailed Status] 界面，右键单击 **[!UICONTROL Detailed Status]** 标题和单击 **[!UICONTROL Refresh]**.
 
-下表列出了可使用[!DNL Detailed Status]接口完成的任务。
+下表列出了可使用 [!DNL Detailed Status] 界面。
 
 <table id="table_E685F31DCDB343F49FFA1019F2E8DA85"> 
  <thead> 
@@ -105,8 +107,8 @@ ht-degree: 75%
    <td colname="col2"> <p>单击 <span class="uicontrol">Component Status（组件状态）</span>。 </p> <p>检查复制组件的状态。如果复制正在运行，即会显示正常。如果复制组件失败，则显示一条错误消息。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>查看连接到Data Workbench服务器的<span class="keyword">报表</span>计算机的<span class="wintitle">报表服务器</span>状态 </p> </td> 
-   <td colname="col2"> <p>单击 <span class="uicontrol">Report Server Status（报表服务器状态）</span>。 </p> <p><span class="wintitle">详细状态</span>界面的这一部分包含 <span class="filepath">Report Server.cfg</span> 文件的副本、有关正在运行的报表数量的信息（当前片段），以及有关最近错误的信息（上一个错误）。 </p> <p>有关编辑 <span class="filepath">Report Server.cfg</span> 文件的步骤，请参阅《Data Workbench 报表指南<i></i>》。 </p> <p> <p>注意：如果<span class="wintitle">报表服务器状态</span>部分未显示在<span class="wintitle">详细状态</span>界面中，则可能需要将Data Workbench服务器配置为显示<span class="wintitle">报表服务器状态</span>。 有关步骤，请参阅《Data Workbench 报表指南<i></i>》。 </p> </p> </td> 
+   <td colname="col1"> <p>要查看 <span class="wintitle"> 报表服务器</span> 状态 <span class="keyword"> 报表</span> 连接到Data Workbench服务器的计算机 </p> </td> 
+   <td colname="col2"> <p>单击 <span class="uicontrol">Report Server Status（报表服务器状态）</span>。 </p> <p><span class="wintitle">详细状态</span>界面的这一部分包含 <span class="filepath">Report Server.cfg</span> 文件的副本、有关正在运行的报表数量的信息（当前片段），以及有关最近错误的信息（上一个错误）。 </p> <p>有关编辑 <span class="filepath">Report Server.cfg</span> 文件的步骤，请参阅《Data Workbench 报表指南<i></i>》。 </p> <p> <p>注意：如果 <span class="wintitle"> 报表服务器状态</span> 部分未显示在 <span class="wintitle"> 详细状态</span> 界面中，您可能需要将Data Workbench服务器配置为显示 <span class="wintitle"> 报表服务器状态</span>. 有关步骤，请参阅《Data Workbench 报表指南<i></i>》。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>查看转换的内存使用信息 </p> </td> 

@@ -3,7 +3,7 @@ description: 价值图例显示定义的价值事件。
 title: 值图例
 uuid: 7779f442-2f45-4bf8-a62a-585aaceaeb3a
 exl-id: b28ba604-93ef-4081-ae55-937fb537c068
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 88%
@@ -11,6 +11,8 @@ ht-degree: 88%
 ---
 
 # 值图例{#value-legends}
+
+{{eol}}
 
 价值图例显示定义的价值事件。
 
@@ -35,7 +37,7 @@ ht-degree: 88%
 
 您可以很轻松地将访客在网站中执行的任何操作定义为一个价值事件：发布客户服务请求、完成应用、查看某一部分的内容或完成购买。每个价值事件都与访问网站上特定页面或页面集的用户相对应，并且与某个商业价值（以美元为单位）关联。例如，您可能假定访问“感谢购买”页面的每个用户产生的平均边际收益为 20 美元。那么您将为该页面定义一个价值为 20 美元的价值事件。
 
-## 定义新值事件{#section-2ea4d168336e4d2e98b22b636ed43853}
+## 定义新值事件 {#section-2ea4d168336e4d2e98b22b636ed43853}
 
 **在 HBX 或[!DNL Site]** 中定义新的价值事件
 
@@ -57,7 +59,7 @@ ht-degree: 88%
 
 1. 在价值图例中，为发生该事件的每个会话分配一个商业价值：
 
-   1. 在[!DNL Value per Event]列中，单击与作为值事件添加的页面对应的单元格。
+   1. 在 [!DNL Value per Event] 列中，单击与作为值事件添加的页面对应的单元格。
    1. 键入为该事件的价值分配的美元金额，然后按 Enter。
 
    ![](assets/lgd_ValueLegend_Value.png)
@@ -66,9 +68,9 @@ ht-degree: 88%
 
 至少定义一个价值事件后，“价值区段”维度将变为可用。该维度表示访客在所有会话中产生的总价值。
 
-## 删除值事件{#section-25cd90a859384ca183c0fc0998f888cf}
+## 删除值事件 {#section-25cd90a859384ca183c0fc0998f888cf}
 
-* 右键单击所需事件，然后单击&#x200B;**[!UICONTROL Delete Event]**。
+* 右键单击所需的事件，然后单击 **[!UICONTROL Delete Event]**.
 
    ![](assets/lgd_ValueLegend_deleteEvent.png)
 
@@ -78,4 +80,4 @@ ht-degree: 88%
 
 ## 导出到 Microsoft Excel {#section-feaa7a8eb8124fafbc74169bebaed6d8}
 
-有关导出窗口的信息，请参阅[导出窗口数据](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)。
+有关导出窗口的信息，请参阅 [导出窗口数据](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

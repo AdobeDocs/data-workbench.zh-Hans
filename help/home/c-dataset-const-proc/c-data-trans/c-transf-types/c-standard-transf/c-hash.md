@@ -1,16 +1,18 @@
 ---
 description: Hash 转换创建一个近乎唯一的字符串，表示一个来自输入值的 64 位数。
-title: Hash
+title: 哈希
 uuid: 13bc14e6-75e2-4711-8f98-50fd18802be5
 exl-id: 6912a1d2-9ae8-42ba-94bd-a7a28cbdfae6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 83%
 
 ---
 
-# Hash{#hash}
+# 哈希{#hash}
+
+{{eol}}
 
 Hash 转换创建一个近乎唯一的字符串，表示一个来自输入值的 64 位数。
 
@@ -27,7 +29,7 @@ Hash 转换创建一个近乎唯一的字符串，表示一个来自输入值的
 | 条件 | 应用此转换的条件。 |  |
 | 默认 | 在输入值不可用时所使用的默认值。 |  |
 | Inputs（输入） | 用于创建散列值的输入集。 |  |
-| Output（输出） | 输出字段的名称。 |  |
+| 输出 | 输出字段的名称。 |  |
 
 在此示例中，c-ip 和 cs(user-agent) 字段的值用于创建跟踪 ID，该跟踪 ID 存储在 x-trackingid 字段中。
 

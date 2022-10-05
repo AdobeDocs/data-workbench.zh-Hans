@@ -3,7 +3,7 @@ description: Insight Server 允许您定义要在数据集中包含的可计数�
 title: 扩展维度的类型
 uuid: 68f42903-0599-43f2-8b5b-da9e171d77b1
 exl-id: 13a52ece-b68b-45bc-ac2d-d68c91742c9d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 91%
@@ -11,6 +11,8 @@ ht-degree: 91%
 ---
 
 # 扩展维度的类型{#types-of-extended-dimensions}
+
+{{eol}}
 
 Insight Server 允许您定义要在数据集中包含的可计数、简单、多对多、数值、非正规和时间维度。
 

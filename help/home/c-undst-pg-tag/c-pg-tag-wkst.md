@@ -3,7 +3,7 @@ description: 包含常量和自定义变量列表的表。
 title: 页面标记变量映射工作表
 uuid: 1ecef047-5a04-401d-b3d5-f31fddb134e1
 exl-id: 647c6a14-58b4-4f87-bccf-fa7ac24811a5
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 13%
@@ -11,6 +11,8 @@ ht-degree: 13%
 ---
 
 # 页面标记变量映射工作表{#page-tag-variable-mapping-worksheet}
+
+{{eol}}
 
 包含常量和自定义变量列表的表。
 
