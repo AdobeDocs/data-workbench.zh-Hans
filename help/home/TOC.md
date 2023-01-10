@@ -17,7 +17,7 @@ ht-degree: 99%
 # Data Workbench 帮助 {#using}
 
 + [Data Workbench 帮助](home.md)
-+ [生命周期终止公告](eol.md)
++ [生命周期终止通知](eol.md)
 + 发行说明 {#release-notes}
    + [发行说明概述](c-release-notes-insight/release-notes.md)
    + [Data Workbench 6.74 发行说明](c-release-notes-insight/dwb-6-74-release-notes.md)
