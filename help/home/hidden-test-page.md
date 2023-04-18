@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
+source-git-commit: 3c3a0289ae50d407a83ca8878af59ecde5e86e8d
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '671'
 ht-degree: 1%
 
 ---
@@ -24,8 +24,6 @@ ht-degree: 1%
 
 * **元数据**  — 在页面顶部附近显示徽章
 * **内联**  — 显示语法所在的标记
-
-![徽章示例](assets/badge-examples.png "徽章示例"){width="200" zoomable="yes"}
 
 ### 元数据徽章
 
