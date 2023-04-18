@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 3c3a0289ae50d407a83ca8878af59ecde5e86e8d
+source-git-commit: c92c1e5688ca867caf1f3d4a6a3e44dafb5b3734
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 1%
+source-wordcount: '695'
+ht-degree: 2%
 
 ---
 
@@ -98,7 +98,7 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 
 Workfront团队要求能够使用黄色突出显示指示即将推出的功能的预览。 这是它的工作方式。
 
-示例：
+示例 1:
 
 ```
 This entire paragraph should NOT be highlighted. <span class="preview"> This word is **bold** inside a highlighted sentence.</span> And this is just the last sentence.
@@ -107,6 +107,42 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 已呈现:
 
 不应突出显示整个段落。 <span class="preview"> 这个词是 **粗体** 在突出显示的句子中。</span> 这只是最后一句。
+
+示例 2:
+
+```
+Highlighting should start after this paragraph.
+
+<div class="preview">
+
+**This is a test**
+
+>[!TIP]
+>
+>Drink 6 cups of water a day.
+
+Last highlighted paragraph
+
+<\div>
+
+Not highlighted
+```
+
+已呈现：突出显示应在此段后开始。
+
+<div class="preview">
+
+**这是个测试**
+
+>[!TIP]
+>
+>每天喝6杯水。
+
+上一个突出显示的段落
+
+&lt;\div>
+
+未突出显示
 
 通常，使用 `<span class="preview">` 突出显示段落中的段落或文本，并使用 `<div class="preview">` 用于多个段落和组件。
 
