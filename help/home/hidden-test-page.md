@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 73c7ad435917ab17022494f6f73d2c626363dcc2
+source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -113,7 +113,7 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 ```
 Highlighting should start after this paragraph.
 
-<div class="preview">
+<span class="preview">
 
 **This is a test**
 
@@ -123,14 +123,16 @@ Highlighting should start after this paragraph.
 
 Last highlighted paragraph
 
-</div>
+</span>
 
 Not highlighted
 ```
 
-已呈现：突出显示应在此段后开始。
+已呈现:
 
-<div class="preview">
+突出显示应在此段后开始。
+
+<span class="preview">
 
 **这是个测试**
 
@@ -140,11 +142,9 @@ Not highlighted
 
 上一个突出显示的段落
 
-</div>
+</span>
 
 未突出显示
-
-通常，使用 `<span class="preview">` 突出显示段落中的段落或文本，并使用 `<div class="preview">` 用于多个段落和组件。
 
 ## 代码块的语法突出显示
 
