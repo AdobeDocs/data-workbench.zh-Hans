@@ -5,14 +5,74 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 0cd0a201aa10e519fa9760a64ab95fa1a10a3799
+exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
+source-git-commit: 7f138d3a9372bc6662d1d54a2d026474a5eb8446
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '756'
+ht-degree: 3%
 
 ---
 
 # 隐藏的测试页
+
+## 注释类型
+
+
+所有支持的注释类型。
+
+>[!NOTE]
+>
+>This is a standard NOTE block.
+
+>[!TIP]
+>
+>This is a standard tip.
+
+>[!IMPORTANT]
+>
+>这是一个重要的注意事项。
+
+>[!WARNING]
+>
+>这是警告。
+
+>[!CAUTION]
+>
+>这是一个警告。
+
+>[!ADMIN]
+>
+>这是管理员说明。 仅限EXL。
+
+>[!ADMINISTRATION]
+>
+>这是管理说明。 仅限EXL。
+
+>[!AVAILABILITY]
+>
+>这是可用说明。 仅限EXL。
+
+>[!PREREQUISITES]
+>
+>这是先决条件说明。 仅限EXL。
+
+>[!INFO]
+>
+>这是“信息”注释。 仅限EXL。
+
+>[!ERROR]
+>
+>这是错误说明。 仅限EXL。
+
+>[!SUCCESS]
+>
+>这是成功说明。 仅限EXL。
+
+>[!MORELIKETHIS]
+>
+>* 页面 1
+>* 页面 2
+
 
 ## 徽章
 
