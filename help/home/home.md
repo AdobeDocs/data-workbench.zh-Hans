@@ -5,9 +5,9 @@ feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 source-git-commit: 541751e1b8966a0816b7a42e117f4c69db1ed002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 {{eol}}
 
-[Data Workbench](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) 是 [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html) 的一部分。它提供了高度灵活的强大多渠道功能，用于对各类联机和脱机客户交互数据（包括 Web、CRM、POS 和其他数据类型）进行收集、处理、分析和可视化。Data Workbench 中的交互式报表让您能够分析和响应相关的统计信息，以监控活动并预测客户趋势。
+[Data Workbench](https://www.adobe.com/cn/solutions/digital-analytics/data-workbench.html) 是 [Adobe Analytics](https://www.adobe.com/cn/solutions/digital-analytics.html) 的一部分。它提供了高度灵活的强大多渠道功能，用于对各类联机和脱机客户交互数据（包括 Web、CRM、POS 和其他数据类型）进行收集、处理、分析和可视化。Data Workbench 中的交互式报表让您能够分析和响应相关的统计信息，以监控活动并预测客户趋势。
 
 * ![Analytics 图标](assets/analytics-icon-24.png) [Analytics 文档](https://experienceleague.adobe.com/docs/analytics.html)
 * ![PDF 图标](assets/pdf_icon.png) [下载 PDF 格式的所有 Data Workbench 文档](/help/home/assets/data-workbench.pdf)
@@ -58,7 +58,7 @@ Data Workbench 包括以下预测分析功能、数据可视化图表和报表�
 
 * [导出到 Analytics 核心服务](/help/home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
 * [工作站设置向导](/help/home/c-install-insight/install-setup/dwb-client-installer.md)
-* [用于批注可视化的表示图层](/help/home/c-get-started/c-vis/c-present-layer.md)
+* [用于批注可视化图表的表示图层](/help/home/c-get-started/c-vis/c-present-layer.md)
 * [量度维度向导](/help/home/c-get-started/c-vis/dwb-create-metricdim/dwb-create-metricdim.md)
 
 *上次更新日期*：**2019 年 9 月 30 日**
