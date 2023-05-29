@@ -7,9 +7,9 @@ feature: Data Workbench
 user-guide-title: Data Workbench 帮助
 user-guide-description: 了解 Data Workbench 的多渠道功能，其中包括 Data Workbench 客户端指南、安装指南、数据集配置指南等内容。
 source-git-commit: 0939146f59b86437027606aeaa824adf0c6b591c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3501'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 # Data Workbench 帮助 {#using}
 
 + [Data Workbench 帮助](home.md)
-+ [生命周期终止通知](eol.md)
++ [终止使用公告](eol.md)
 + 发行说明 {#release-notes}
    + [发行说明概述](c-release-notes-insight/release-notes.md)
    + [Data Workbench 6.74 发行说明](c-release-notes-insight/dwb-6-74-release-notes.md)
@@ -859,7 +859,7 @@ ht-degree: 99%
          + [锁定和解锁可视化图表](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-locking-and-unlocking-visualizations.md)
          + [折叠和展开可视化图表](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-collapsing-and-expanding-visualizations.md)
          + [导出可视化图表](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-exporting-visualizations.md)
-         + [設定和重新設定視覺效果](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
+         + [配置和重新配置可视化图表](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
          + [删除可视化图表](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
          + [调整可视化图表大小](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
          + [移动可视化图表](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
@@ -902,7 +902,7 @@ ht-degree: 99%
    + 服务器通信 {#servers-communication}
       + [仪表板到 Data Workbench 服务器的通信](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [验证查询 API 是否启用](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
-      + [設定控制面板存取控制](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
+      + [配置仪表板访问控制](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + 仪表板部署 {#dashboard-deployment}
       + [仪表板部署](c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
       + [部署仪表板](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
@@ -963,4 +963,4 @@ ht-degree: 99%
 + [查询 API](https://www.adobe.io/)
 + [Data Workbench 与 Adobe Target 集成](dwb-adobe-target.md)
 + [Data Workbench 术语表](dwb-glossary.md)
-+ [隱藏的測試頁面](hidden-test-page.md)
++ [隐藏测试页面](hidden-test-page.md)
