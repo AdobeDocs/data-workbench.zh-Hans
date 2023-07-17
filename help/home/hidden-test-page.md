@@ -3,17 +3,23 @@ title: 隐藏测试页面
 description: 此页面在搜索和目录中隐藏
 hide: true
 hidefromtoc: true
-badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
-badgeExam: label="Exam ADO-E903" type="neutral"
+badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="下载Premium"
+badgeExam: label="考试ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 62b03629815f33344189c2562bc486301878a146
+source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '796'
 ht-degree: 4%
 
 ---
 
 # 隐藏测试页面
+
+## 预览问题
+
+以下段落无法在VSC预览中正确呈现。 我不知道为什么。
+
+如果您的密码由管理 [!DNL Adobe]，您可以 [更改Adobe帐户中的密码](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 ## 注释类型
 
@@ -110,7 +116,7 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 
 | 类型 | 徽章 |
 |---|---|
-| 信息（默认） | [!BADGE 测试版]{type=Informative url="https://www.example.com"} |
+| 信息（默认） | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
 | 正面 | [!BADGE 新功能]{type=Positive url="https://www.example.com" tooltip="转到example.com"} |
 | 负面 | [!BADGE 已终止]{type=negative tooltip="此功能现已终止使用"} |
 | 中性 | [!BADGE 也许]{type=Neutral tooltip="一个骑手从马上掉了下来……"} |
