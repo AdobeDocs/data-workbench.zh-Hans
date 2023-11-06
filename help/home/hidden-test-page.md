@@ -5,17 +5,17 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="下载Premium"
 badgeExam: label="检查ADO-E903" type="neutral"
-exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
+exl-id: 02245655-511e-4e89-8846-dac85681ea91
+source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '803'
 ht-degree: 4%
 
 ---
 
 # 隐藏测试页面
 
-激活?
+激活? 重复，这个自动激活时间是太平洋时间上午11:30吗？
 
 ## 预览问题
 
@@ -82,7 +82,7 @@ ht-degree: 4%
 
 [!BADGE 徽章示例]
 
-有两种类型的徽章，每种徽章的语法不同：
+有两种类型 of 徽章，每个徽章具有不同的语法：
 
 * **元数据**  — 在页面顶部附近显示徽章
 * **内嵌**  — 显示语法所在的徽章
