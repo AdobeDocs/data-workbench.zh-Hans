@@ -2,10 +2,10 @@
 title: Data Workbench 终止使用常见问题
 description: 详细了解 Data Workbench 的终止使用公告。
 exl-id: 0abb72f1-b68b-48cc-829c-cac7bd21a6de
-source-git-commit: 020a39b7f22d08b76e641e437c1ecaaf26f1b50a
-workflow-type: ht
-source-wordcount: '393'
-ht-degree: 100%
+source-git-commit: 9097a4ac8dc4339193d745c54c94129470a7c11f
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Data Workbench 的终止使用日期是 **2023 年 12 月 31 日**。
 
 ## 为什么要停用 Data Workbench？
 
-随着 Adobe Experience Platform 的发布和持续改进，客户可以跨渠道合并数据，并在多个 Adobe 解决方案中使用这些数据。具体而言，Customer Journey Analytics 可让您获取跨渠道数据来对该数据执行高级分析。
+随着 Adobe Experience Platform 的发布和持续改进，客户可以跨渠道合并数据，并在多个 Adobe 解决方案中使用这些数据。具体来说， [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html) 允许您获取跨渠道数据以对该数据执行高级分析。
 
 Data Workbench 中当前提供的大多数功能和用例目前都适用于 Adobe Experience Platform 解决方案。但是，在一些受限的情况下，Data Workbench 功能无法与相应的 Adobe Experience Platform 解决方案一起复制。请联系您组织的 Adobe 客户经理，讨论功能或用例兼容性的具体方面。
 
